@@ -1,0 +1,2606 @@
+{
+  "ID": "83c31bb2-712b-4569-9894-424f49133866",
+  "Version": "2.3.3.0",
+  "Name": "level_0",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 3,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "bg.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 400.0,
+              "Y": 225.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 5,
+            "ActionTag": 1335040539,
+            "Size": {
+              "X": 800.0,
+              "Y": 450.0
+            },
+            "Name": "bg",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kuang_bg.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 400.0,
+              "Y": 270.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.6
+            },
+            "PreSize": {
+              "X": 0.3613,
+              "Y": 0.6422
+            },
+            "LeftMargin": 255.5,
+            "RightMargin": 255.5,
+            "TopMargin": 35.5,
+            "BottomMargin": 125.5,
+            "Tag": 6,
+            "ActionTag": -284442935,
+            "Size": {
+              "X": 289.0,
+              "Y": 289.0
+            },
+            "Name": "kuang_bg",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lvkuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 266.0,
+            "RightMargin": 470.0,
+            "TopMargin": 46.5,
+            "BottomMargin": 340.5,
+            "Tag": 7,
+            "ActionTag": 731127704,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_30",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lvkuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 334.0,
+            "RightMargin": 402.0,
+            "TopMargin": 46.5,
+            "BottomMargin": 340.5,
+            "Tag": 8,
+            "ActionTag": -1322175266,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_31",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lvkuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 266.0,
+            "RightMargin": 470.0,
+            "TopMargin": 114.5,
+            "BottomMargin": 272.5,
+            "Tag": 9,
+            "ActionTag": -681363713,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_20",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lvkuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 334.0,
+            "RightMargin": 402.0,
+            "TopMargin": 114.5,
+            "BottomMargin": 272.5,
+            "Tag": 10,
+            "ActionTag": -605751122,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_21",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "baikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 402.0,
+            "RightMargin": 334.0,
+            "TopMargin": 46.5,
+            "BottomMargin": 340.5,
+            "Tag": 11,
+            "ActionTag": 84081263,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_32",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "baikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 470.0,
+            "RightMargin": 266.0,
+            "TopMargin": 46.5,
+            "BottomMargin": 340.5,
+            "Tag": 12,
+            "ActionTag": 1587914373,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_33",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "baikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 402.0,
+            "RightMargin": 334.0,
+            "TopMargin": 114.5,
+            "BottomMargin": 272.5,
+            "Tag": 13,
+            "ActionTag": 1089792863,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_22",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "baikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 470.0,
+            "RightMargin": 266.0,
+            "TopMargin": 114.5,
+            "BottomMargin": 272.5,
+            "Tag": 14,
+            "ActionTag": -382169543,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_23",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lvkuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 402.0,
+            "RightMargin": 334.0,
+            "TopMargin": 182.5,
+            "BottomMargin": 204.5,
+            "Tag": 15,
+            "ActionTag": 1854013498,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_12",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lvkuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 470.0,
+            "RightMargin": 266.0,
+            "TopMargin": 182.5,
+            "BottomMargin": 204.5,
+            "Tag": 16,
+            "ActionTag": -1876304708,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_13",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lvkuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 402.0,
+            "RightMargin": 334.0,
+            "TopMargin": 250.5,
+            "BottomMargin": 136.5,
+            "Tag": 17,
+            "ActionTag": -2015541391,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_02",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lvkuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 470.0,
+            "RightMargin": 266.0,
+            "TopMargin": 250.5,
+            "BottomMargin": 136.5,
+            "Tag": 18,
+            "ActionTag": 702873683,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_03",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "baikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 266.0,
+            "RightMargin": 470.0,
+            "TopMargin": 182.5,
+            "BottomMargin": 204.5,
+            "Tag": 19,
+            "ActionTag": -1618981866,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_10",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "baikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 334.0,
+            "RightMargin": 402.0,
+            "TopMargin": 182.5,
+            "BottomMargin": 204.5,
+            "Tag": 20,
+            "ActionTag": -1562147342,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_11",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "baikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 266.0,
+            "RightMargin": 470.0,
+            "TopMargin": 250.5,
+            "BottomMargin": 136.5,
+            "Tag": 21,
+            "ActionTag": 227384565,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_00",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "baikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 334.0,
+            "RightMargin": 402.0,
+            "TopMargin": 250.5,
+            "BottomMargin": 136.5,
+            "Tag": 22,
+            "ActionTag": 1258491524,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "kuang_01",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 266.0,
+            "RightMargin": 470.0,
+            "TopMargin": 250.5,
+            "BottomMargin": 136.5,
+            "Tag": 42,
+            "ActionTag": 1214278122,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_00",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 334.0,
+            "RightMargin": 402.0,
+            "TopMargin": 250.5,
+            "BottomMargin": 136.5,
+            "Tag": 43,
+            "ActionTag": -1919885552,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_01",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 402.0,
+            "RightMargin": 334.0,
+            "TopMargin": 250.5,
+            "BottomMargin": 136.5,
+            "Tag": 44,
+            "ActionTag": -956261610,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_02",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 470.0,
+            "RightMargin": 266.0,
+            "TopMargin": 250.5,
+            "BottomMargin": 136.5,
+            "Tag": 45,
+            "ActionTag": -732855646,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_03",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 266.0,
+            "RightMargin": 470.0,
+            "TopMargin": 182.5,
+            "BottomMargin": 204.5,
+            "Tag": 46,
+            "ActionTag": 137812415,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_10",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 334.0,
+            "RightMargin": 402.0,
+            "TopMargin": 182.5,
+            "BottomMargin": 204.5,
+            "Tag": 47,
+            "ActionTag": 1053947452,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_11",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 402.0,
+            "RightMargin": 334.0,
+            "TopMargin": 182.5,
+            "BottomMargin": 204.5,
+            "Tag": 48,
+            "ActionTag": -1874051494,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_12",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 470.0,
+            "RightMargin": 266.0,
+            "TopMargin": 182.5,
+            "BottomMargin": 204.5,
+            "Tag": 49,
+            "ActionTag": -515236132,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_13",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 266.0,
+            "RightMargin": 470.0,
+            "TopMargin": 114.5,
+            "BottomMargin": 272.5,
+            "Tag": 50,
+            "ActionTag": -66936800,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_20",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 334.0,
+            "RightMargin": 402.0,
+            "TopMargin": 114.5,
+            "BottomMargin": 272.5,
+            "Tag": 51,
+            "ActionTag": 2054687787,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_21",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 402.0,
+            "RightMargin": 334.0,
+            "TopMargin": 114.5,
+            "BottomMargin": 272.5,
+            "Tag": 52,
+            "ActionTag": -1294768083,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_22",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 470.0,
+            "RightMargin": 266.0,
+            "TopMargin": 114.5,
+            "BottomMargin": 272.5,
+            "Tag": 53,
+            "ActionTag": -1947897701,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_23",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 266.0,
+            "RightMargin": 470.0,
+            "TopMargin": 46.5,
+            "BottomMargin": 340.5,
+            "Tag": 54,
+            "ActionTag": -184229242,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_30",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 334.0,
+            "RightMargin": 402.0,
+            "TopMargin": 46.5,
+            "BottomMargin": 340.5,
+            "Tag": 55,
+            "ActionTag": -66928128,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_31",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 402.0,
+            "RightMargin": 334.0,
+            "TopMargin": 46.5,
+            "BottomMargin": 340.5,
+            "Tag": 56,
+            "ActionTag": -1349268972,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_32",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "heikuang.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.08,
+              "Y": 0.14
+            },
+            "LeftMargin": 470.0,
+            "RightMargin": 266.0,
+            "TopMargin": 46.5,
+            "BottomMargin": 340.5,
+            "Tag": 57,
+            "ActionTag": -1909308153,
+            "Size": {
+              "X": 64.0,
+              "Y": 63.0
+            },
+            "Name": "heikuang_33",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "tong_ku.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 650.0,
+              "Y": 200.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8125,
+              "Y": 0.4444
+            },
+            "PreSize": {
+              "X": 0.0775,
+              "Y": 0.1933
+            },
+            "LeftMargin": 619.0,
+            "RightMargin": 119.0,
+            "TopMargin": 206.5,
+            "BottomMargin": 156.5,
+            "Tag": 23,
+            "ActionTag": -1899826748,
+            "Size": {
+              "X": 62.0,
+              "Y": 87.0
+            },
+            "Name": "tong_ku",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "tong_xiao.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 650.0,
+              "Y": 200.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8125,
+              "Y": 0.4444
+            },
+            "PreSize": {
+              "X": 0.0775,
+              "Y": 0.1978
+            },
+            "LeftMargin": 619.0,
+            "RightMargin": 119.0,
+            "TopMargin": 205.5,
+            "BottomMargin": 155.5,
+            "Tag": 24,
+            "ActionTag": 952739031,
+            "Size": {
+              "X": 62.0,
+              "Y": 89.0
+            },
+            "VisibleForFrame": false,
+            "Name": "tong_xiao",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lv_2.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 360.0,
+              "Y": 55.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.45,
+              "Y": 0.1222
+            },
+            "PreSize": {
+              "X": 0.05,
+              "Y": 0.1
+            },
+            "LeftMargin": 340.0,
+            "RightMargin": 420.0,
+            "TopMargin": 372.5,
+            "BottomMargin": 32.5,
+            "Tag": 25,
+            "ActionTag": 460909638,
+            "Size": {
+              "X": 40.0,
+              "Y": 45.0
+            },
+            "Name": "option_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "hong_1.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 280.0,
+              "Y": 55.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.35,
+              "Y": 0.1222
+            },
+            "PreSize": {
+              "X": 0.0288,
+              "Y": 0.1022
+            },
+            "LeftMargin": 268.5,
+            "RightMargin": 508.5,
+            "TopMargin": 372.0,
+            "BottomMargin": 32.0,
+            "Tag": 26,
+            "ActionTag": 1219745502,
+            "Size": {
+              "X": 23.0,
+              "Y": 46.0
+            },
+            "Name": "option_0",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "lan_3.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 440.0,
+              "Y": 55.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.55,
+              "Y": 0.1222
+            },
+            "PreSize": {
+              "X": 0.04,
+              "Y": 0.1222
+            },
+            "LeftMargin": 424.0,
+            "RightMargin": 344.0,
+            "TopMargin": 367.5,
+            "BottomMargin": 27.5,
+            "Tag": 27,
+            "ActionTag": 292990679,
+            "Size": {
+              "X": 32.0,
+              "Y": 55.0
+            },
+            "Name": "option_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "huang_4.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 525.0,
+              "Y": 55.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6562,
+              "Y": 0.1222
+            },
+            "PreSize": {
+              "X": 0.045,
+              "Y": 0.1022
+            },
+            "LeftMargin": 507.0,
+            "RightMargin": 257.0,
+            "TopMargin": 372.0,
+            "BottomMargin": 32.0,
+            "Tag": 28,
+            "ActionTag": -1698513582,
+            "Size": {
+              "X": 36.0,
+              "Y": 46.0
+            },
+            "Name": "option_3",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 283.0,
+            "RightMargin": 487.0,
+            "TopMargin": 130.0,
+            "BottomMargin": 288.0,
+            "Tag": 56,
+            "ActionTag": 275318776,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_20",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 283.0,
+            "RightMargin": 487.0,
+            "TopMargin": 266.0,
+            "BottomMargin": 152.0,
+            "Tag": 57,
+            "ActionTag": -438898824,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_00",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 419.0,
+            "RightMargin": 351.0,
+            "TopMargin": 62.0,
+            "BottomMargin": 356.0,
+            "Tag": 58,
+            "ActionTag": -1309506858,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_32",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 487.0,
+            "RightMargin": 283.0,
+            "TopMargin": 130.0,
+            "BottomMargin": 288.0,
+            "Tag": 59,
+            "ActionTag": 790189496,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_23",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 351.0,
+            "RightMargin": 419.0,
+            "TopMargin": 62.0,
+            "BottomMargin": 356.0,
+            "Tag": 60,
+            "ActionTag": 364800021,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_31",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 283.0,
+            "RightMargin": 487.0,
+            "TopMargin": 198.0,
+            "BottomMargin": 220.0,
+            "Tag": 61,
+            "ActionTag": -294839966,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_10",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 351.0,
+            "RightMargin": 419.0,
+            "TopMargin": 266.0,
+            "BottomMargin": 152.0,
+            "Tag": 62,
+            "ActionTag": -552962246,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_01",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 419.0,
+            "RightMargin": 351.0,
+            "TopMargin": 266.0,
+            "BottomMargin": 152.0,
+            "Tag": 63,
+            "ActionTag": 194718977,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_02",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 487.0,
+            "RightMargin": 283.0,
+            "TopMargin": 198.0,
+            "BottomMargin": 220.0,
+            "Tag": 64,
+            "ActionTag": 1659124122,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_13",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 487.0,
+            "RightMargin": 283.0,
+            "TopMargin": 62.0,
+            "BottomMargin": 356.0,
+            "Tag": 65,
+            "ActionTag": 275257889,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_33",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 298.0,
+              "Y": 372.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3725,
+              "Y": 0.8267
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 283.0,
+            "RightMargin": 487.0,
+            "TopMargin": 62.0,
+            "BottomMargin": 356.0,
+            "Tag": 124,
+            "ActionTag": -177959843,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_30",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 351.0,
+            "RightMargin": 419.0,
+            "TopMargin": 130.0,
+            "BottomMargin": 288.0,
+            "Tag": 125,
+            "ActionTag": 920221804,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_21",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 304.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.6756
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 419.0,
+            "RightMargin": 351.0,
+            "TopMargin": 130.0,
+            "BottomMargin": 288.0,
+            "Tag": 126,
+            "ActionTag": 493820976,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_22",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 419.0,
+            "RightMargin": 351.0,
+            "TopMargin": 198.0,
+            "BottomMargin": 220.0,
+            "Tag": 127,
+            "ActionTag": -1374968004,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_12",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 366.0,
+              "Y": 236.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4575,
+              "Y": 0.5244
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 351.0,
+            "RightMargin": 419.0,
+            "TopMargin": 198.0,
+            "BottomMargin": 220.0,
+            "Tag": 128,
+            "ActionTag": 959976446,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_11",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "kong.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 502.0,
+              "Y": 168.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6275,
+              "Y": 0.3733
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0711
+            },
+            "LeftMargin": 487.0,
+            "RightMargin": 283.0,
+            "TopMargin": 266.0,
+            "BottomMargin": 152.0,
+            "Tag": 129,
+            "ActionTag": -474607497,
+            "Size": {
+              "X": 30.0,
+              "Y": 32.0
+            },
+            "Name": "sprite_03",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "tip_0.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 100.0,
+              "Y": 300.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.125,
+              "Y": 0.6667
+            },
+            "PreSize": {
+              "X": 0.1338,
+              "Y": 0.2444
+            },
+            "LeftMargin": 46.5,
+            "RightMargin": 646.5,
+            "TopMargin": 95.0,
+            "BottomMargin": 245.0,
+            "Tag": 58,
+            "ActionTag": 661395897,
+            "Size": {
+              "X": 107.0,
+              "Y": 110.0
+            },
+            "Name": "tipSprite",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 800.0,
+          "Y": 450.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "baikuang.png",
+        "bg.png",
+        "heikuang.png",
+        "hong_1.png",
+        "huang_4.png",
+        "kong.png",
+        "kuang_bg.png",
+        "lan_3.png",
+        "lv_2.png",
+        "lvkuang.png",
+        "tip_0.png",
+        "tong_ku.png",
+        "tong_xiao.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
