@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=bg2312" />
+<title>jQuery_1_my first pro</title>
+<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+    $("input[type='submit']").click(function(){
+		
+		var msg = "Hello," + $("input[name = 'friendName']").val();
+		alert(msg);
+		
+		});
+});
+</script>
+
+</head>
+
+<body>
+	
+    <input name = "friendName"/><br />
+    <input type = "submit" value="Say Hello" />
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
