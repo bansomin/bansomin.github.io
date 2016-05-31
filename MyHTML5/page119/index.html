@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sheet</title>
+</head>
+
+<body>
+	
+    <h3>插入一个表格</h3>
+    
+    <table>
+    	<caption>这是表题</caption>
+        
+        <tr>
+        	<td>00</td>
+            <td>01</td>
+            <td>02</td>
+        </tr>
+        
+        <tr>
+        	<td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        
+        <tr>
+        	<td>20</td>
+            <td>21</td>
+            <td>22</td>
+        </tr>
+        
+    </table>
+    
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+	<h3>成绩</h3>
+    
+	<table bgcolor="#33CCCC" width="400" height="200" align="center" border="2" bordercolor="#0033FF" cellspacing="1" cellpadding="5">
+    	<caption align="top">期中成绩</caption>
+        
+        <!--表头-->
+        <tr height="40" bordercolor="#FF0033" bgcolor="#00CC33" align="center" valign="center">
+        	<th background="images/3.gif">name</th>
+            <th>chinese</th>
+            <th>math</th>
+            <th>english</th>
+            <th>physic</th>
+        </tr>
+        
+        <tr>
+        	<td width="100" height="20">Li</td>
+            <td>23</td>
+            <td>43</td>
+            <td>45</td>
+            <td>56</td>
+        </tr>
+        
+           <tr>
+        	<td>Hu</td>
+            <td>63</td>
+            <td>56</td>
+            <td>75</td>
+            <td>56</td>
+        </tr>
+        
+        
+           <tr>
+        	<td colspan="2" bgcolor="#99CC33" rowspan="2" align="center" valign="top" bordercolor="#9900FF" bordercolorlight="#FF3399">Ni</td>
+            <td>43</td>
+            <td>45</td>
+            <td>43</td>
+            <td>76</td>
+        </tr>
+        
+        
+           <tr>
+        	<td>Xi</td>
+            <td>34</td>
+            <td>46</td>
+            <td>85</td>
+            <td>96</td>
+        </tr>
+        	
+    </table>
+    
+<br />
+<br />
+<br />
+
+    <center>
+    	<font size="+2" color="#00CCCC">单元格水平跨度--colspan</font>
+    </center>
+    <hr size="3" />
+    
+<br />
+<br />
+<br />
+
+	<table width="620" border="1" bgcolor="#00FF66" cellspacing="0" cellpadding="5">
+    
+    	<tr>
+        	<td colspan="3" align="center">古诗介绍</td>
+        </tr>
+        
+        <tr align="center">
+        	<td>作者</td>
+            <td>诗名</td>
+            <td>内容</td>
+        </tr>
+        
+        <tr align="center">
+        	<td>王维</td>
+            <td>积雨辋川庄作</td>
+            <td>  
+            积雨空林烟火迟， 蒸藜炊黍饷东灾。 
+			漠漠水田飞白鹭， 阴阴夏木啭黄鹂。 
+			山中习静观朝槿， 松下清斋折露葵。 
+			野老与人争席罢， 海鸥何事更相疑？
+            </td>
+        </tr>
+    </table>
+
+	<br />
+	<br />
+	<br />
+
+    <center>
+    	<font size="+2" color="#00CCCC">thead/tbody/tfoot标记</font>
+    </center>
+    <hr size="3" />
+    
+    
+    <table width="400" height="180" border="3" bordercolor="#000000" bgcolor="#CCCCCC" cellspacing="1" cellpadding="3">
+    	<caption>某单位的物品管理表</caption>
+        	<thead bgcolor="#00CC33" align="center" valign="middle">
+            	<tr>
+                	<td>物品名</td>
+                	<td>类型</td>
+                	<td>领取人</td>
+                	<td>领取人部门</td>
+                	<td>数量</td>
+                </tr>
+            </thead>
+            
+            <tbody bgcolor="#99CC33" align="left" valign="middle">
+            	<tr>
+                	<td>笔</td>
+                    <td>文具</td>
+                    <td>Lee</td>
+                    <td>PHP</td>
+                    <td>12</td>
+                </tr>
+                
+                <tr>
+                	<td>phone</td>
+                    <td>本</td>
+                    <td>XIA</td>
+                    <td>PHP</td>
+                    <td>12</td>
+                </tr>
+                
+                <tr>
+                	<td>pc</td>
+                    <td>pen</td>
+                    <td>HU</td>
+                    <td>Cocos</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+            
+            <tfoot bgcolor="#CC0000" align="right" valign="middle">
+            	<tr>
+                	<td colspan="5">表格创建时间:2016.05.31</td>
+                </tr>
+            </tfoot>
+            
+    </table>
+    
+    
+    <br />
+	<br />
+	<br />
+
+    <center>
+    	<font size="+2" color="#00CCCC">表格的嵌套</font>
+    </center>
+    <hr size="3" />
+    
+    <table bgcolor="#CCCCCC" border="3" width="560" height="300" align="center" cellspacing="1">
+    	
+        <thead bgcolor="#00CC00" align="center">
+        	<tr>
+            	<td>logo</td>
+            	<td>banner</td>
+            </tr>
+        </thead>
+        
+        <tbody align="center">
+        	<tr>
+            	<td width="160" align="center">
+                	<table bgcolor="#99CCFF"width="135" height="180" border="1" cellspacing="1">
+                    	<tr>
+                        	<td>首页</td>
+                        </tr>
+                        
+                        <tr>
+                        	<td>导航</td>
+                        </tr>
+                        
+                        <tr>
+                        	<td>返回</td>
+                        </tr>
+                        
+                        <tr>
+                        	<td>下一页</td>
+                        </tr>
+                        
+                        <tr>
+                        	<td>上一页</td>
+                        </tr>                      
+                    </table>
+                </td>
+                
+                <td width="400" headers="200" background="images/1.png">
+                	<table bgcolor="#6666FF" width="380" height="160" border="1" cellspacing="1">           
+                       <tbody align="center">         
+                    	<tr>
+                    		<td>内网</td>
+                        	<td>外网</td>
+                    	</tr>
+                    	<tr>
+                    		<td>建设</td>
+                        	<td>发展</td>
+                    	</tr>	
+                       </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+        	<tr align="center">
+            	<td height="30" colspan="2">
+                	<font color="#CC33FF">版权信息</font>
+                </td>
+            </tr>
+        </tfoot>
+       </table>
+
+	<br />
+	<br />
+	<br />
+    
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
