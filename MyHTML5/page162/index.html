@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DIV</title>
+</head>
+
+<body>
+	Before the first block.
+    <div name="layer1">
+    	<hr />
+        DIV1
+        <hr />
+    </div>
+    	After the first block.<br />
+	
+    Before the second block.
+    <div name="layer2">
+    	<h3><p>I am inside the second DIV block.</p></h3>
+    </div>
+    	After the second block.
+        
+        
+<br />
+<br />
+<br />
+<br />
+	<center>
+    	<font size="+3" color="#0099FF">display和visibility的对比</font>
+    </center>
+    <hr />
+
+
+  <script language="javascript">
+		function toggleVisibility(me){
+			alert("toggleVisibility");
+				if (me.style.visibility == "hidden"){
+						me.style.visibility="visible";
+				}
+				else{
+						me.style.visibility="hidden";
+				}
+		}
+		
+		function toggleDisplay(me){
+			alert("toggleDisplay");
+				me.style.display="none";
+			}
+		
+			
+	</script>
+	
+    <div onclick="toggleVisibility(this)" style="position:relative">
+    第一行文本将触发“hidden”和“visible”属性,注意第二行变化。</div>
+    <div>因为visibility会保留元素的位置,所以第二行不会移动(隐藏元素,但保持元素的浮注：元素被隐藏后,就不能接收其他事件了)</div>
+    <div onclick="toggleDisplay(this)">第三行（display="none",它下面的元素都会自动跟上填充）</div>
+    <div>第四行</div>
+    <div>第五行</div>
+    
+<br />
+<br />
+<br />
+	<hr />
+	<div id="scissors">
+    <p>This is <strong class="paper">crazy</strong></p>
+    </div>
+    
+<br />
+<br />
+<br />
+	 <hr />
+     <div id="client-boyera" class="client">
+     	<p><span class="client-title">client information:</span>
+        <table class="client-data">
+        	<tr>
+            	<th>last name:<td>boyera
+            </tr>
+            <tr>
+            	<th>first name:<td>stephane
+            </tr>
+            <tr>
+            	<th>tel:<td>13243223
+            </tr>
+        </table>
+     </div>
+     
+   	<br />
+	<br />
+	<br />
+    <center>
+    	<font size="+2" color="#CC9999">“div”自动换行,“span”不会</font>
+    </center>
+	<hr />
+    
+    <p>aaaaaaaaaaaaaaa<div>bbbbbbbbbbbb</div><div>cc<p>ccc</div>ddddd<span>dddddd</span>
+    
+    <br />
+	<br />
+	<br />
+    <center>
+    	<font size="+2" color="#CC9999">div——文字——图片</font>
+    </center>
+	<hr />
+    
+    <div id="mr" align="center">
+		BansominBansominBansominBansominBansominBansominBansominBansominBanso<br />
+minBansominBansominBansominBansominBansominBansominBansominBansominBa<br />
+nsominBansominBansominBansominBansominBansominBansominBansominBansomi<br />
+nBansominBansominBansominBansominBansominBansominBansominBansominBans<br />
+ominBansominBansominBansominBansominBansominBansominBansominBansominBan<br />
+sominBansominBansominBansominBansominBansominBansominBansominBansomin<br />
+BansominBansominBansominBansominBansominBansominBansominBansominBanso<br />
+minBansomin
+    </div>
+    
+    <div id="mr1" style="position:absolute; top:900pt; left:220pt">
+    	<img src="1.png" width="200" />
+    </div>
+    
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
