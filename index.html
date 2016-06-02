@@ -22,24 +22,55 @@
 	<script>
 		var video;
 		function init(){
+			
+			alert("init");
+			
 			video = document.getElementById("example_video_1"); //监听视频播放结束事件
 		/*	video.addEventListener("ended", function(){
 					//alert("播放完毕");
 				}, true);
 			}*/
 			
-			video.addEventListener("progress", function(e){
+			
+			video.addEventListener("error", function(){
 					
+					var error = video.error;
+					switch(error){
+							case 1:
+								alert("1");
+							break;
+							
+							case 2:
+								alert("2");
+							break;
+							
+							case 3:
+								alert("3");
+							break;
+							
+							case 4:
+								alert("4");
+							break;
+							
+							default:
+							break;
+						}
+				
+				}, false);
+			
+			
+	/*		video.addEventListener("progress", function(e){
+					alert("progress");
 					var netD = document.getElementById("networkState");
 					if(video.networkState==2){
-						alert(e.loaded);
+						alert("2");
 							netD.innerHTML = "加载中...[" + e.loaded + "/" + e.total +"byte]";
 						}
 					else if(video.networkState==3){
-						alert("error");
+						alert("3");
 							netD.innerHTML = "加载失败";
 						}
-				}, false);
+				}, false);*/
 			
 			
 			
