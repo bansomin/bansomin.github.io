@@ -19,8 +19,34 @@
 	</script>
 
 
+	<script>
+		var video;
+		function init(){
+			video = document.getElementById("example_video_1"); //监听视频播放结束事件
+		/*	video.addEventListener("ended", function(){
+					//alert("播放完毕");
+				}, true);
+			}*/
+			
+			video.addEventListener("progress", function(e){
+					
+					var netD = document.getElementById("networkState");
+					if(video.networkState==2){
+							netD.innerHTML = "加载中...[" + e.loaded + "/" + e.total +"byte]";
+						}
+					else if(video.networkState==3){
+							netD.innerHTML = "加载失败";
+						}
+				}, false);
+			
+			
+			
+			}			
+	</script>
+
+
   </head>
-  <body>
+  <body onLoad="init()">
   
    <!--
     <form action="http://github.com/">
@@ -72,7 +98,12 @@
     </center>-->
     
      <center>
-    
+     
+        <details>
+    		<summary>ClickMe</summary>
+        	Oops, happy!
+    	</details><br>
+
     <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
       poster="stylesheets/demo.png"
       data-setup="{}">
@@ -95,8 +126,7 @@
         myPlayer.play();
     });
 </script>
-    
-    
+
 <a id="clickme" class="anchor" href="#clickme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ClickMe:</h3>
 
 <p><a href="https://github.com/bansomin">MyGitHub</a></p>
