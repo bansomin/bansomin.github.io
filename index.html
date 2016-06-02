@@ -32,9 +32,11 @@
 					
 					var netD = document.getElementById("networkState");
 					if(video.networkState==2){
+						alert(e.loaded);
 							netD.innerHTML = "加载中...[" + e.loaded + "/" + e.total +"byte]";
 						}
 					else if(video.networkState==3){
+						alert("error");
 							netD.innerHTML = "加载失败";
 						}
 				}, false);
