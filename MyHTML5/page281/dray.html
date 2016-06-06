@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Drag</title>
+</head>
+
+<script type="text/javascript">
+	
+	function init(){
+		var source = document.getElementById("dragme");
+		var dest   = document.getElementById("text");
+		//开始拖放操作（被拖放的元素----dragstart）
+		source.addEventListener("dragstart", function(ev){
+			
+					//向dataTransfer对象中追加数据
+					var dt = ev.dataTransfer;
+					dt.effectAllowed = 'all';
+					
+					//拖动元素为dt.setData("text/plain", this.id);
+					dt.setData("text/plain", "YouDraged"); 
+				}, false);
+			
+			
+			//拖放结束操作（拖放的对象元素---dragend）
+			dest.addEventListener("dragend", function(ev){
+				
+					alert("dragend.");
+					//不执行默认处理（拒绝被拖放）
+					ev.preventDefault();
+				}, false);
+				
+			
+			//有其他元素被拖放到了本元素中（拖放的目标元素---drop）
+			dest.addEventListener("drop", function(ev){
+				
+					//从dataTransfer对象那里取得数据
+					var dt = ev.dataTransfer;
+					var text = dt.getData("text/plain");
+					
+					dest.textContent += text;
+					
+					//不执行默认处理（拒绝被拖放）
+					ev.preventDefault();
+					
+					//停止事件传播
+					ev.stopPropagation();
+					
+				}, false);
+				
+				
+			//设置页面属性, 不执行默认处理（拒绝被拖放）
+			document.ondragover = function(e){
+					e.preventDefault();
+				}
+			
+			document.ondrop = function(e){
+					e.preventDefault();
+				};
+	}
+	
+</script>
+
+
+<body onload="init()">
+	
+    <!--设置draggable为true-->
+    
+    <div id="dragme" draggable="true" style="width:60px; border:1px solid gray;" >
+    	DragMe(YouDraged)
+    </div>
+
+<br />
+<br />
+<br />
+	<div id="text" style="width:200px; height:200px; border:1px solid gray;">
+    </div>
+    
+</body>
+</html>
