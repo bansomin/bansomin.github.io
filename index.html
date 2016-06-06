@@ -8,15 +8,114 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+ 
+	<!--引入video-js.min样式和video.min.js-->
+	<link href="stylesheets/video-js.min.css" rel="stylesheet" type="text/css" />
+	<script src="stylesheets/video.min.js"></script>
+
+	<!--设置flash路径,video.js会在不支持html5的浏览器中使用flash播放-->
+	<script> 
+		videojs.options.flash.swf="video-js.swf";
+	</script>
+
+
+	<script>
+		var video;
+		function init(){
+			
+			alert("init");
+			
+			video = document.getElementById("example_video_1"); //监听视频播放结束事件
+			video.addEventListener("ended", function(){
+					//alert("播放完毕");
+				}, true);
+			}	
+		}			
+	</script>
+
+
   </head>
-  <body>
+  <body onLoad="init()">
+  
+   <!--
+    <form action="http://github.com/">
+      <input type="submit" value="sign  in" />
+    </form>
+    
+    <form action="http://github.com/join">
+      <input type="submit" value="sign up" />
+    </form>
+    -->
+    
+    <!--<bgsound src="bg.mp3"/>-->
+    
+    <!--背景音乐-->
+  	<audio controls width="100" height="100" autoplay="false">
+    	<source src="stylesheets/bg.mp3" type="audio/mp3" />
+   		<source src="stylesheets/bg.ogg" type="audio/ogg" />
+    	<embed src="stylesheets/bg.mp3" width="100" height="100">
+    	</embed>
+    </audio>
+    
+      <font size="+1">
+    &nbsp;&nbsp;
+    <a href="http://github.com/">sign in</a>
+	&nbsp;&nbsp;
+    <a href="http://github.com/join">sign up</a>
+    </font>
+
+	<!--滚动-->
     <section class="page-header">
-      <h1 class="project-name">Bansomin.GitHub.io</h1>
-      <h2 class="project-tagline">Welcome</h2>
+      <h1 class="project-name">
+      	<marquee scrollamount="15">
+              Bansomin.GitHub.io
+        </marquee>
+      </h1>
+      <h2 class="project-tagline">
+      	<marquee  width="100" height="30" direction="up" scrollamount="2" >
+      	Welcome
+        </marquee>
+      </h2>
     </section>
 
     <section class="main-content">
       <h3>
+      
+        <!--  <center>
+    	 <video src="stylesheets/logo.mp4" width="320" height="240" autoplay>
+ 		 </video>
+    </center>-->
+    
+     <center>
+     
+        <details>
+    		<summary>ClickMe</summary>
+        	Oops, happy!
+    	</details><br>
+
+    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      poster="stylesheets/demo.png"
+      data-setup="{}">
+<!--
+	<source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+    <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg' />
+-->
+    <source src="stylesheets/logo.mp4" type="video/mp4" />
+    <source src="stylesheets/logo.ogg" type="video/ogg" />
+    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+
+</center>
+
+<script type="text/javascript">
+    var myPlayer = videojs('example_video_1');
+    videojs("example_video_1").ready(function(){
+        var myPlayer = this;
+        myPlayer.play();
+    });
+</script>
+
 <a id="clickme" class="anchor" href="#clickme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ClickMe:</h3>
 
 <p><a href="https://github.com/bansomin">MyGitHub</a></p>
@@ -96,10 +195,6 @@
 <p>9.Video</p>
 
 <p><a href="http://bansomin.github.io/MyHTML5/jQuery-video5.8">Video</a></p>
-
-<p>10.API</p>
-
-<p><a href="http://bansomin.github.io/MyHTML5/page281">文件</a></p>
 
 <p>***<strong><em>Code</em></strong>******<strong><em>Code</em></strong>******<strong><em>Code</em></strong>******<strong><em>Code</em></strong>******<strong><em>Code</em></strong>******<strong><em>Code</em></strong>***</p>
 
