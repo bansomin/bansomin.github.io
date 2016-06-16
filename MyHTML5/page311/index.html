@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Canvas</title>
+
+	<script>
+	
+	
+		function drawDiagonal(){
+			
+			//取得canvas元素及其绘图上下文
+			var canvas = document.getElementById('djx');
+			var context= canvas.getContext('2d');
+			
+			//用绝对坐标来创建一条路径
+			context.beginPath();
+			context.moveTo(10, 40);	//起点 
+			context.lineTo(60, 160);//终点
+			
+			//将这条线绘制到canvas上(完成斜线的绘制)
+			context.stroke();
+		}
+		window.addEventListener("load", drawDiagonal, true);
+		
+		var bl;
+		var aa;
+		var ii;
+		var cc;
+		var ww,hh;
+		function draw(){
+			
+			/**********************************************/
+			/**********************************************/
+			//矩形
+			var rect = document.getElementById("rect");
+			if (rect == null){
+				return false;
+			}
+
+			var con_rect = rect.getContext('2d');
+			//背景
+			con_rect.fillStyle = "#EEEEFF";
+			con_rect.fillRect(0, 0, 400, 300);
+			//小绿
+			con_rect.fillStyle = "green";
+			con_rect.fillRect(50, 50, 100, 100);
+			//小框
+			con_rect.lineWidth = 5;
+			con_rect.strokeStyle = "red";
+			con_rect.strokeRect(50, 50, 100, 100);
+			//小黄
+			con_rect.fillStyle = "Yellow";
+			con_rect.fillRect(200, 200, 100, 100);
+			
+			/**********************************************/
+			/**********************************************/
+			
+			//圆形
+			var act = document.getElementById("act");
+			if (act == null){
+				return false;
+			}
+			var con_act = act.getContext('2d');
+			//背景
+			con_act.fillStyle = "#EEEEFF";
+			con_act.fillRect(0, 0, 200, 200);
+			//开始创建路径
+			con_act.beginPath();
+			//起点、半径、开始角度、结束角度、是否按顺时针方向进行绘制
+			con_act.arc(100, 100, 50, 0, Math.PI * 2, true);
+			//关闭路径
+			con_act.closePath();
+			//设置绘制方式,并进行绘图
+			con_act.fillStyle = 'rgba(255, 0, 0, 0.25)';
+			con_act.fill();
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var people = document.getElementById("people");
+			
+			var con_people = people.getContext('2d');
+			
+			con_people.fillStyle = "#EEEEFF";
+			con_people.fillRect(0, 0, 300, 300);
+			//头
+			con_people.beginPath();
+			con_people.strokeStyle = '#c00';
+			con_people.lineWidth   = 3;
+			con_people.arc(150, 50, 30, 0, Math.PI * 2, true);
+			con_people.fill();
+			con_people.stroke();
+			
+			//嘴
+			con_people.beginPath();
+			con_people.strokeStyle = '#c00';
+			con_people.lineWidth   = 3;
+			con_people.arc(150, 50, 20, 0, Math.PI, false);
+			con_people.fill();
+			con_people.stroke();
+			
+			//眼
+			con_people.beginPath();
+			con_people.fillStyle = '#c00';
+			con_people.arc(140, 45, 3, 0, Math.PI*2, true);
+			con_people.fill();
+			con_people.stroke();
+			con_people.moveTo(163, 45);
+			con_people.arc(160, 45, 3, 0, Math.PI*2, true);
+			con_people.fill();
+			con_people.stroke();
+			
+			con_people.beginPath();
+			
+			//脊柱
+			con_people.moveTo(150, 80);
+			con_people.lineTo(150, 180);
+			
+			//左腿
+			con_people.moveTo(150, 180);
+			con_people.lineTo(125, 250);
+			
+			//右腿
+			con_people.moveTo(150, 180);
+			con_people.lineTo(175, 250);
+			
+			//左手
+			con_people.moveTo(150, 90);
+			con_people.lineTo(125, 140);
+			
+			//右手
+			con_people.moveTo(150, 90);
+			con_people.lineTo(175, 140);
+		
+			con_people.stroke();
+			
+			con_people.closePath();	
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var bezier = document.getElementById("bezier");
+			var con_bezier = bezier.getContext('2d');
+			con_bezier.fillStyle = "#EEEEFF";
+			con_bezier.fillRect(0, 0, 200, 200);
+			
+			con_bezier.beginPath();
+			con_bezier.fillStyle = '#c00';
+			con_bezier.strokeStyle = '#c00';
+			
+			con_bezier.moveTo(75, 40);
+			
+			//第一个控制点x,y、第二个控制点x,y、终点x,y
+			con_bezier.bezierCurveTo(75, 37, 70,  25, 50,  25);
+			con_bezier.bezierCurveTo(20, 25, 20,62.5, 20,62.5);
+			con_bezier.bezierCurveTo(20, 80, 40, 102, 75, 120);
+			con_bezier.bezierCurveTo(110,102,130,80, 130,62.5);
+			con_bezier.bezierCurveTo(130,62.5,130, 25,100, 25);
+			con_bezier.bezierCurveTo(85,  25, 75,  37, 75, 40);
+			
+			con_bezier.fill();
+			con_bezier.stroke();
+			con_bezier.closePath();
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var quadratic = document.getElementById("quadratic");
+			var con_qua = quadratic.getContext('2d');
+			
+			con_qua.fillStyle = "#EEEEFF";
+			con_qua.fillRect(0, 0, 200, 200);
+			
+			con_qua.beginPath();
+			con_qua.moveTo(75, 25);
+			con_qua.strokeStyle = '#c00';
+			
+			con_qua.quadraticCurveTo(25, 25, 25, 62.5);
+			con_qua.quadraticCurveTo(25, 100, 50, 100);
+			con_qua.quadraticCurveTo(50, 120, 30, 125);
+			con_qua.quadraticCurveTo(60, 120, 65, 100);
+			con_qua.quadraticCurveTo(125,100,125,62.5);
+			con_qua.quadraticCurveTo(125,  25 ,75, 25);
+				
+			con_qua.fill();
+			con_qua.stroke();
+			con_qua.closePath();
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var fillstyle = document.getElementById("fillstyle");
+			var con_fill  = fillstyle.getContext('2d');
+			
+			for (var i = 0; i<10; i++){
+				for (var j = 0; j<10; j++){
+					con_fill.fillStyle = 'rgb('+Math.floor(255-25.5*i) +','+Math.floor(255-25.5*j)+', 0)';
+					con_fill.fillRect(j*20, i*20, 20, 20);
+				}
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var strokestyle = document.getElementById("strokestyle");
+			var con_str     = strokestyle.getContext('2d');
+			
+			for (var i = 0; i<10; i++){
+				for (var j = 0; j<10; j++){
+					con_str.fillStyle = 'rgb(0, '+Math.floor(255-25.5*i) +','+Math.floor(255-25.5*j)+')';
+					con_str.beginPath();
+					con_str.arc(12.5+j*20, 12.5+i*20, 10, 0, Math.PI*2, true);
+					con_str.stroke();
+					
+				}
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			//var globalalpha = document.getElementById("globalalpha");
+			//var con_glo = globalalpha.getContext('2d');
+			var con_glo = document.getElementById("globalalpha").getContext('2d');
+			
+			con_glo.fillStyle = '#FD0';
+			con_glo.fillRect(0, 0, 100, 100);
+			
+			con_glo.fillStyle = '#6C0';
+			con_glo.fillRect(100, 0, 100, 100);
+			
+			con_glo.fillStyle = '#09F';
+			con_glo.fillRect(0, 100, 100, 100);
+			
+			con_glo.fillStyle = '#F30';
+			con_glo.fillRect(100, 100, 100, 100);
+			
+			con_glo.fillStyle = '#FFF';
+			con_glo.globalAlpha = 0.3;
+			
+			for (var i = 0; i<7; i++){
+				con_glo.beginPath();
+				con_glo.arc(100, 100, 10+10*i, 0, Math.PI*2, true);
+				con_glo.fill();
+			}
+
+			/**********************************************/
+			/**********************************************/
+			
+			var con_lin = document.getElementById("linestyle").getContext('2d');
+			
+			for (var i = 0; i<10; i++){
+				con_lin.lineWidth = i+i;
+				con_lin.beginPath();
+				con_lin.strokeStyle = "#C00";
+				con_lin.moveTo( 5 + i*40, 5);
+				con_lin.lineTo( 5 + i*40, 195);
+				con_lin.stroke();
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var con_cap = document.getElementById("linecap").getContext('2d');
+			var lineCap = ["butt", "round", "square"];
+			
+			con_cap.strokeStyle = "#09F";
+			con_cap.beginPath();
+			//上辅助线
+			con_cap.moveTo(20,  20);
+			con_cap.lineTo(180, 20);
+			//下辅助线
+			con_cap.moveTo(20,  180);
+			con_cap.lineTo(180, 180);
+			con_cap.stroke();
+			
+			con_cap.strokeStyle = 'black';
+			for (var i = 0; i<lineCap.length; i++){	
+				con_cap.lineCap = lineCap[i];
+				
+				con_cap.lineWidth = 15;
+				con_cap.beginPath();
+				con_cap.moveTo(50 + 50*i,  10);
+				con_cap.lineTo(50 + 50*i, 180);
+				con_cap.stroke();
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var con_jon = document.getElementById("linejon").getContext('2d');
+			var lineJoinArray = ["round", "bevel", "miter"];
+			
+			con_jon.strokeStyle = "#09F";
+			con_jon.lineWidth   = 10;
+			
+			for (var i = 0; i<lineJoinArray.length; i++){
+				con_jon.lineJoin = lineJoinArray[i];
+				
+				con_jon.beginPath();
+				con_jon.moveTo(15,	50+i*40);
+    			con_jon.lineTo(55,	90+i*40);
+    			con_jon.lineTo(95,	50+i*40);
+   				con_jon.lineTo(135,	90+i*40);
+    			con_jon.lineTo(175,	50+i*40);
+				con_jon.stroke();
+			}
+				
+			/**********************************************/
+			/**********************************************/
+			
+			var con_lig = document.getElementById("lingrad").getContext('2d');
+			//创建LinearGradient对象
+			var lingrad = con_lig.createLinearGradient(0,0,0,180);
+			
+			lingrad.addColorStop(0, "black");//起点
+			lingrad.addColorStop(1, "yellow");//终点
+			
+			//设置图形的fillStyle属性
+			con_lig.fillStyle = lingrad;
+			con_lig.fillRect(0, 0, 200, 200);
+			
+			var con_lingradradius = document.getElementById("lingradradius").getContext('2d');
+			//创建径向渐变对象(圆心/半径/结束坐标/结束半径)
+			//绿圆
+			var radgrad_green = con_lingradradius.createRadialGradient(45,45,10,45,45,30);
+			radgrad_green.addColorStop(0, "#A7D30C");
+			radgrad_green.addColorStop(0.9, "#019F62");
+			radgrad_green.addColorStop(1, 'rgba(1, 159, 98, 0)');
+			con_lingradradius.fillStyle = radgrad_green;
+			con_lingradradius.fillRect(0, 0, 150, 150);
+			
+			var radgrad_red = con_lingradradius.createRadialGradient(105,105,20,112,120,50);
+  			radgrad_red.addColorStop(0, '#FF5F98');
+  			radgrad_red.addColorStop(0.75, '#FF0188');
+  			radgrad_red.addColorStop(1, 'rgba(255,1,136,0)');
+			con_lingradradius.fillStyle = radgrad_red;
+  			con_lingradradius.fillRect(0,0,150,150);
+			
+			var radgrad_blue = con_lingradradius.createRadialGradient(95, 15, 15, 102, 20, 40);
+			radgrad_blue.addColorStop(0, "#00C9FF");
+			radgrad_blue.addColorStop(0.8, "#00B5E2");
+			radgrad_blue.addColorStop(1, 'rgba(0, 201, 255, 0)');
+			con_lingradradius.fillStyle = radgrad_blue;
+			con_lingradradius.fillRect(0, 0, 150, 150);
+		
+			var radgrad_yellow = con_lingradradius.createRadialGradient(0, 150, 50, 0, 140, 90);
+			radgrad_yellow.addColorStop(0, "#F4F201");
+			radgrad_yellow.addColorStop(0.8, "#E4C700");
+			radgrad_yellow.addColorStop(1, "rgba(228, 199, 0, 0)");
+			con_lingradradius.fillStyle = radgrad_yellow;
+			con_lingradradius.fillRect(0, 0, 150, 150);
+		
+			/**********************************************/
+			/**********************************************/
+			
+			var change = document.getElementById("change");
+			if (change == null){
+				return false;
+			}
+			
+			var con_change = change.getContext('2d');
+			
+			//设置白色背景
+			con_change.fillStyle = "#FFF";
+			//创建白色画布
+			con_change.fillRect(0, 0, 400, 300);
+			
+			//图形绘制
+			con_change.translate(200, 50);
+			
+			
+			con_change.fillStyle = 'rgba(255, 0, 0, 0.25)';
+			for (var i = 0; i<50; i++){
+				//图形向左, 向下移动
+				con_change.translate(25, 25);
+				con_change.scale(0.95, 0.95);
+				con_change.rotate(Math.PI / 10);
+				con_change.fillRect(0, 0, 100, 50);
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var con_matone = document.getElementById("matone").getContext('2d');
+			
+			//自定义颜色
+			var colorsArray = ["red", "orange", "black", "blue", "yellow", "green", "navy", "purple"];
+			
+			con_matone.lineWidth = 10;
+			con_matone.transform(1, 0, 0, 1, 150, 50);
+			
+			//绘制
+			for (var i = 0; i<colorsArray.length; i++){
+				//定义每次向下移动10个像素的变换矩阵
+				con_matone.transform(1, 0, 0, 1, 0, 10);
+				//绘制圆弧
+				con_matone.beginPath();
+				//设置颜色
+				con_matone.strokeStyle = colorsArray[i];
+				con_matone.arc(50, 100, 100, 0, Math.PI, true);
+				con_matone.stroke();
+			}
+				
+			/**********************************************/
+			/**********************************************/
+			
+			var con_mattwo = document.getElementById("mattwo").getContext('2d');
+			
+			//绘制红色长方形
+			con_mattwo.strokeStyle = "red";
+			con_mattwo.strokeRect(30, 10, 60, 20);
+			
+			//顺45、blue
+			var rad = 45 * Math.PI / 180;
+			con_mattwo.setTransform(Math.cos(rad), Math.sin(rad), -Math.sin(rad), Math.cos(rad), 0, 0);
+			con_mattwo.strokeStyle = "blue";
+			con_mattwo.strokeRect(30, 10, 60, 20);
+			
+			//放大2.5、绿色
+			con_mattwo.setTransform(2.5, 0, 0, 2.5, 0, 0);
+			con_mattwo.strokeStyle="green";
+			con_mattwo.strokeRect(30, 10, 60, 20);
+			
+			//右80、下40、gray
+			con_mattwo.setTransform(1, 0, 0, 1, 40, 80);
+			con_mattwo.strokeStyle="gray";
+			con_mattwo.strokeRect(30, 10, 60, 20);
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var con_shadow = document.getElementById("shadow").getContext('2d');
+			con_shadow.shadowOffsetX = 2;
+			con_shadow.shadowOffsetY = 2;
+			con_shadow.shadowBlur 	 = 2;
+			con_shadow.shadowColor   = 'rgba(0, 0, 0, 0.5)';
+			
+			con_shadow.font = "20px Times New Roman";
+			con_shadow.fillStyle = "balck";
+			con_shadow.fillText("Bansomin", 50, 50);
+				
+			/**********************************************/
+			/**********************************************/
+			
+			var con_image = document.getElementById("imageone").getContext('2d');
+			
+			con_image.fillStyle = "red";
+			con_image.fillRect(0, 0, 400, 300);
+			
+			var image = new Image();
+			image.src = "imagemr.jpg";
+			image.onload = function(){
+				drawImage(con_image, image);
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var imagebig = document.getElementById("imagebig");
+			if (imagebig == null){
+				return false;
+			}
+			var con_imag = imagebig.getContext('2d');
+			
+			con_imag.fillStyle = "green";
+			con_imag.fillRect(0, 0, 400, 300);
+			
+			var image_big = new Image();
+			image_big.src = "imagemr.jpg";
+			image_big.onload = function(){
+				
+				drawImageBig(con_imag, image_big);
+			}	
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var drawimage = document.getElementById("drawimage");
+			var con_drawimage = drawimage.getContext('2d');
+			var image_draw = new Image();
+			image_draw.src = "imagemr.jpg";
+			image_draw.onload = function(){
+				drawImageDraw(drawimage, con_drawimage, image_draw);	
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var pattern = document.getElementById("pattern");
+			if (pattern == null){
+				return false;
+			}
+			var con_patternimage = pattern.getContext('2d');
+			
+			var image_pattern = new Image();
+			image_pattern.src = "imagemr.jpg";
+			image_pattern.onload = function (){
+				
+				//创建填充样式,全方向平铺
+				var pat = con_patternimage.createPattern(image_pattern, 'repeat');
+				//指定填充样式
+				con_patternimage.fillStyle = pat;
+				//填充画布
+				con_patternimage.fillRect(0, 0, 300, 300);	
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var clip = document.getElementById("clip");
+			if (clip == null){
+				return false;
+			}
+			var con_clip = clip.getContext('2d');
+			var gr = con_clip.createLinearGradient(0, 200, 150, 0);
+			gr.addColorStop(0, 'rgb(255, 255, 0)');
+			gr.addColorStop(1, 'rgb(0, 255, 255)');
+			con_clip.fillStyle = gr;
+			con_clip.fillRect(0, 0, 200, 200);
+			
+			var image_clip = new Image();
+			image_clip.src = "imagemr.jpg";
+			image_clip.onload = function (){
+				drawImageClip(con_clip, image_clip);
+			}
+				
+			/**********************************************/
+			/**********************************************/
+			
+			var imagedata = document.getElementById("imagedata");
+			if (imagedata == null){
+				return false;
+			}
+			var con_data = imagedata.getContext('2d');
+			
+			var image_data = new Image();
+			image_data.src = "imagemr.jpg";
+			image_data.onload = function (){
+				
+				con_data.drawImage(image_data, 0, 0);
+												//横纵坐标、宽度、高度
+				var imdata = con_data.getImageData(0, 0, image_data.width, image_data.height);
+				var num = imdata.data.length;
+				for (var i = 0; i<num; i+=4){//使用i+=4确保是像素
+					//得到反向的颜色红色
+					imdata.data[i+0] = 255 - imdata.data[i+0];
+					//得到反向的颜色绿色
+					imdata.data[i+1] = 255 - imdata.data[i+1];
+					//得到反向的颜色蓝色
+					imdata.data[i+2] = 255 - imdata.data[i+2];
+				}
+				con_data.putImageData(imdata, 0, 0);
+			}
+			
+			/**********************************************/
+			/**********************************************/
+			
+			var text = document.getElementById("text");
+			if (text == null){
+				return false;
+			}
+			var con_text = text.getContext('2d');
+			
+			con_text.fillStyle = "#00f";
+			con_text.font = "italic 30px sans-serif";
+			con_text.textBaseline = "top";
+			
+			//填充文字
+			con_text.fillText("Bansomin", 30, 50);
+			con_text.font = "bold 30px sans-serif";
+			//轮廓文字
+			con_text.strokeText("Bansomin", 30, 100);
+			
+			/**********************************************/
+			/**********************************************/
+			aa = document.getElementById("aa");
+			if (aa == null){
+				return false;
+			}
+			cc = aa.getContext('2d');
+
+			bl = true;
+			ii = 0;
+			ww = aa.width;
+			hh = aa.height;	
+			
+			cc.fillStyle = "blue";
+			cc.fillRect(ii, 0, 20, 20);
+			
+			setInterval(rotate, 100);
+		}
+		
+		function rotate(){
+			
+			cc.clearRect(0, 0, ww, hh);
+			
+			if (bl){
+				if (ii>=0 && ii <= 200){
+					cc.fillStyle = "blue";
+					cc.fillRect(ii, 0, 20, 20);
+					ii = ii + 20;
+				}
+				else {
+					bl = false;	
+					ii = 200;
+				}
+			}
+			else {
+				if (ii>=0){
+					cc.fillStyle = "blue";
+					cc.fillRect(ii, 0, 20, 20);
+					ii = ii - 20;
+				}
+				else {
+					bl = true;
+					ii = 0;
+				}
+			}
+		}
+
+		function drawImage(con,img)
+		{  
+			for(var i = 0;i < 7;i++){  
+			   con.drawImage(img, 0 + i * 50, 0 + i * 25, 100, 100);  
+			}
+		}
+		
+		function drawImageBig(con, img){
+			var i = 0;
+			con.drawImage(img, 0, 0, 100, 100);
+			con.drawImage(img, 23, 5, 57, 90, 110, 0, 100, 100);
+		}
+		
+		function drawImageDraw(doc, con, img){
+			//平铺比例
+			var scale = 1;
+			//缩小后图像宽度
+			var n1 = img.width / scale;
+			//缩小后图像高度
+			var h1 = img.height/ scale;
+			//平铺横向个数
+			var n2 = doc.width / n1;
+			//平铺纵向个数
+			var h2 = doc.height/ h1;
+			for (var i = 0; i<n2; i++){
+				for (var j = 0; j<h2; j++){
+					con.drawImage(img, i*n1, j*h1, n1, h1);
+				}
+			}
+		}
+		
+		function drawImageClip(con, img){
+			createyuanClip(con);
+			con.drawImage(img, -50, -80, 300, 300);
+		}
+		
+		function createyuanClip(con){
+			
+			con.beginPath();
+			con.arc(100, 100, 75, 0, Math.PI*2, true);
+			con.closePath();
+			con.clip();
+		}
+		
+	</script>
+
+</head>
+
+<body onload="draw()">
+
+	<center>
+    
+    	<br />
+		<br />
+		<br />
+		<h2>画线</h2>
+    	<canvas id="djx" style="border:1px solid;" width="200" height="200"></canvas>
+        
+        <br />
+		<br />
+		<br />
+		<h2>画矩形</h2>
+    	<canvas id="rect" style="border:1px solid" width="400" height="300"></canvas>
+    
+       	<br />
+		<br />
+		<br />
+		<h2>画圆形</h2>
+    	<canvas id="act" style="border:1px solid" width="200" height="200"></canvas>
+    
+     	<br />
+		<br />
+		<br />
+		<h2>画火柴人</h2>
+    	<canvas id="people" style="border:1px solid" width="300" height="300"></canvas>
+        
+        <br />
+		<br />
+		<br />
+		<h2>贝塞尔曲线</h2>
+    	<canvas id="bezier" style="border:1px solid" width="200" height="200"></canvas>
+	
+        <br />
+		<br />
+		<br />
+		<h2>二次方曲线</h2>
+    	<canvas id="quadratic" style="border:1px solid" width="200" height="200"></canvas>
+    
+        <br />
+		<br />
+		<br />
+		<h2>fillStyle实例</h2>
+    	<canvas id="fillstyle" style="border:1px solid" width="200" height="200"></canvas>
+	 
+        <br />
+		<br />
+		<br />
+		<h2>strokeStyle实例</h2>
+    	<canvas id="strokestyle" style="border:1px solid" width="200" height="200"></canvas>
+    
+        <br />
+		<br />
+		<br />
+		<h2>globalAlpha实例</h2>
+    	<canvas id="globalalpha" style="border:1px solid" width="200" height="200"></canvas>
+    
+        <br />
+		<br />
+		<br />
+		<h2>LineStyle实例</h2>
+    	<canvas id="linestyle" style="border:1px solid" width="400" height="200"></canvas>
+    
+        <br />
+		<br />
+		<br />
+		<h2>LineCap实例</h2>
+    	<canvas id="linecap" style="border:1px solid" width="200" height="200"></canvas>
+    
+        <br />
+		<br />
+		<br />
+		<h2>LineJoin实例</h2>
+    	<canvas id="linejon" style="border:1px solid" width="200" height="200"></canvas>
+    
+        <br />
+		<br />
+		<br />
+		<h2>绘制渐变图形</h2>
+    	<canvas id="lingrad" style="border:1px solid" width="200" height="200"></canvas>
+    
+  		<br />
+		<br />
+		<br />
+		<h2>绘制径向渐变图形</h2>
+    	<canvas id="lingradradius" style="border:1px solid" width="400" height="300"></canvas>
+    
+		<br />
+		<br />
+		<br />
+		<h2>绘制变形图形</h2>
+    	<canvas id="change" style="border:1px solid" width="400" height="300"></canvas>
+    
+		<br />
+		<br />
+		<br />
+		<h2>矩阵变换(1)</h2>
+    	<canvas id="matone" style="border:1px solid" width="400" height="300"></canvas>
+    
+		<br />
+		<br />
+		<br />
+		<h2>矩阵变换(2)</h2>
+    	<canvas id="mattwo" style="border:1px solid" width="300" height="200"></canvas>
+    
+		<br />
+		<br />
+		<br />
+		<h2>图形绘制阴影</h2>
+    	<canvas id="shadow" style="border:1px solid" width="200" height="200"></canvas>
+    
+    	<br />
+		<br />
+		<br />
+		<h2>应用图像</h2>
+    	<canvas id="imageone" style="border:1px solid" width="400" height="300"></canvas>
+    
+    	<br />
+		<br />
+		<br />
+		<h2>应用图像(放大)</h2>
+    	<canvas id="imagebig" style="border:1px solid" width="400" height="300"></canvas>
+    
+    	<br />
+		<br />
+		<br />
+		<h2>图像平铺（drawImage）</h2>
+    	<canvas id="drawimage" style="border:1px solid" width="300" height="300"></canvas>
+    
+   		<br />
+		<br />
+		<br />
+		<h2>图像平铺（createPattern）</h2>
+    	<canvas id="pattern" style="border:1px solid" width="300" height="300"></canvas>
+    
+   		<br />
+		<br />
+		<br />
+		<h2>图像裁剪（clip）</h2>
+    	<canvas id="clip" style="border:1px solid" width="200" height="200"></canvas>
+    
+     	<br />
+		<br />
+		<br />
+		<h2>图像反相</h2>
+    	<canvas id="imagedata" style="border:1px solid" width="200" height="200"></canvas>
+    
+     	<br />
+		<br />
+		<br />
+		<h2>绘制文字</h2>
+    	<canvas id="text" style="border:1px solid" width="200" height="200"></canvas>
+
+     	<br />
+		<br />
+		<br />
+		<h2>动画</h2>
+    	<canvas id="aa" style="border:1px solid" width="200" height="200"></canvas>
+
+
+    </center>
+	<blockquote>
+	  <p>
+	    <center>
+	      <br />
+	      <br />
+	      <br />
+	      <br />
+	      <br />
+	      <br />
+	      <br />
+	      
+        </center>
+	    
+      </p>
+</blockquote>
+</body>
+</html>
+
+
+
