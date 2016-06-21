@@ -12,30 +12,123 @@
 	<!--引入video-js.min样式和video.min.js-->
 	<link href="stylesheets/video-js.min.css" rel="stylesheet" type="text/css" />
 	<script src="stylesheets/video.min.js"></script>
+    
+    <!--baiduapi-->
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>   
+	<script src="http://api.map.baidu.com/api?v=2.0&ak=134db1b9cf1f1f2b4427210932b34dcb"></script> 
+	<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
 
 	<!--设置flash路径,video.js会在不支持html5的浏览器中使用flash播放-->
 	<script> 
 		videojs.options.flash.swf="video-js.swf";
 	</script>
-
+   
+<!--
 
 	<script>
 		var video;
 		function init(){
-			
-			alert("init");
-			
+			alert("init");	
 			video = document.getElementById("example_video_1"); //监听视频播放结束事件
 			video.addEventListener("ended", function(){
-					//alert("播放完毕");
+					alert("播放完毕");
 				}, true);
-			}	
-		}			
-	</script>
+			}
+		}
+	</script>-->
+    
+    
+  <script>
+  	
+		var gc;
+		var geo;
+		var map;
+		function initBaiduMap(){
+			if (navigator.geolocation){
+				navigator.geolocation.getCurrentPosition(showBaiduPosition);
+				
+				gc = new BMap.Geocoder();
+				geo = new BMap.Geolocation();  
+				map = new BMap.Map("baidumap");  
+				
+				geo.getCurrentPosition(function(r){
+					if (this.getStatus() == BMAP_STATUS_SUCCESS){
+												
+						map.centerAndZoom(r.point, 15);
+						
+						var mk = new BMap.Marker(r.point);	   	//标记
+						var ty = new BMap.MapTypeControl();	  	// 添加地图类型控件
+						var nav = new BMap.NavigationControl(); //导航
+						
+						map.addOverlay(mk);
+						map.addControl(ty);
+						map.addControl(nav);
+						  
+						// 开启鼠标滚轮缩放
+　						map.enableScrollWheelZoom(true); 
+				
+					    gc.getLocation(r.point, function (rs){
+							var add;
+							var addComp = rs.addressComponents;
+							if (addComp.province == addComp.city){
+								add 	= addComp.province     	+ "/" +
+										  addComp.district     	+ "/" +
+										  addComp.street   	   	+ "/" +
+										  addComp.streetNumber;
+							}
+							else {
+								add 	= 	addComp.province 	+ "/" + 
+								  			addComp.city 		+ "/" + 
+								  			addComp.district 	+ "/" + 
+								  			addComp.street 		+ "/" + 
+								  			addComp.streetNumber;
+							}
+							document.getElementById("baiduaddress").innerHTML = add;
+						});
+					}
+					else {
+						alert("使用baiduMap出错");
+						switch( this.getStatus() )  
+            			{  
+                			case 2:  
+                    			alert( '位置结果未知 获取位置失败.' );  
+               					break;  
+                			case 3:  
+                    			alert( '导航结果未知 获取位置失败..' );  
+                				break;  
+                			case 4:  
+                    			alert( '非法密钥 获取位置失败.' );  
+                				break;  
+                			case 5:  
+                    			alert( '对不起,非法请求位置  获取位置失败.' );  
+                				break;  
+                			case 6:  
+                    			alert( '对不起,当前 没有权限 获取位置失败.' );  
+                				break;  
+                			case 7:  
+                    			alert( '对不起,服务不可用 获取位置失败.' );  
+                				break;  
+                			case 8:  
+                    			alert( '对不起,请求超时 获取位置失败.' );  
+               					break;  
+            			}  
+					}
+				}, {enableHighAccuracy: true});				
+			}
+			else {
+				alert("该浏览器不支持获取地理位置");	
+			}
+		}
+		
+		function showBaiduPosition(pos){
+			alert("showBaiduPosition");
+		}
+  
+  </script>
 
 
   </head>
-  <body onLoad="init()">
+  <body onLoad="initBaiduMap()">
   
    <!--
     <form action="http://github.com/">
@@ -217,6 +310,14 @@
 <p>BaiDuYun</p>
 
 <p><a href="http://pan.baidu.com/s/1bpqgziZ">http://pan.baidu.com/s/1bpqgziZ</a></p>
+
+<br>
+<br>
+<center>
+	   <h3>BaiduMap</h3>
+       <div id="baidumap" style="width:960px; height:320px; border:5px solid gray"></div>
+       	<p><b>Address</b>: <span id="baiduaddress"></span></p><br />
+</center>
 
       <footer class="site-footer">
 
