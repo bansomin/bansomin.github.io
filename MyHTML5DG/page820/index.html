@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>离线Web应用程序</title>
+
+	<!--
+    	向浏览器Web服务器请求不同的图像
+        其中Banana100.png会在文档加载时载入,因为它是img元素src属性的初始值 
+        
+        **创建离线应用程序的目标是：确保所有需要的资源即使在离线状态下也可用, 从而让应用程序能正常工作   	
+        
+        清单（manifest）
+        浏览器下载index.appcache里面所有内容,无论现在是否需要。
+        创建一个离线Web应用程序是非常简单的,只需要创建清单,确保它包含应用程序所需要的资源,然后设置文档html元素的manifest属性值即可。
+        
+        第一行永远是CACHE MANIFEST
+        CACHE定义
+        FALLBACK定义备用区域 ： 如果需要未被缓存的png文件,就应当用offline.png代替
+    -->
+
+	<style>
+    	img {border:medium double black; padding:5px; margin:5px;}
+    </style>
+    
+    <script>
+    	var but = document.getElementsByTagName("button");
+		function init(){
+			for (var i = 0; i<but.length; i++){
+				but[i].onclick = handleButtonPressFunc;
+			}	
+		}
+		function handleButtonPressFunc(e){
+			document.getElementById("imgtarget").src = e.target.id + "100.png";
+		}
+    </script>
+
+</head>
+
+<body onload="init()">
+	<img id="imgtarget" src="banana100.png" />
+    
+    <div>
+    	<button id="banana">Banana</button>
+    	<button id="apple">Apple</button>
+        <button id="cherries">Cherries</button>    
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
