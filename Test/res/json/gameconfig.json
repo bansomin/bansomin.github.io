@@ -1,113 +1,127 @@
 {
     "1": [
         {
-            "music": [
-                "pipa1",
-                "changdi1",
-                "datiqin1"
-            ],
             "pic"  : [
-                "pipa",
-                "changdi",
-                "datiqin"
+                "youhuabu",
+                "youhuayanliao",
+                "youhuabi",
+                "guadao",
+                "tiaoseyou",
+                "tiaosepan",
+                "youmo",
+                "kedao"
+            ],
+            "answer" : [
+                "youhuabu",
+                "youhuayanliao",
+                "youhuabi",
+                "guadao",
+                "tiaoseyou"
             ]
         }
     ],
     "2": [
         {
-            "music": [
-                "pipa2",
-                "jiazigu1",
-                "gangqin1"
-            ],
             "pic"  : [
-                "pipa",
-                "jiazigu",
-                "gangqin"
+                "maobi",
+                "moshui",
+                "bixi",
+                "guohuayanliao",
+                "xuanzhi",
+                "youhuabu",
+                "youhuayanliao",
+                "youhuabi"
+            ],
+            "answer" : [
+                "maobi",
+                "moshui",
+                "bixi",
+                "guohuayanliao",
+                "xuanzhi"
             ]
         }
     ],
     "3": [
         {
-            "music": [
-                "pipa1",
-                "guqin1",
-                "zhudi1"
-            ],
             "pic"  : [
-                "pipa",
-                "guqin",
-                "zhudi"
+                "youmo",
+                "kedao",
+                "muban",
+                "zhi",
+                "banhuayouqi",
+                "youhuabu",
+                "youhuayanliao",
+                "guadao"
+            ],
+            "answer" : [
+                "youmo",
+                "kedao",
+                "muban",
+                "zhi",
+                "banhuayouqi"
             ]
         }
     ],
     "4": [
         {
-            "music": [
-                "pipa2",
-                "sakesi3",
-                "guzheng1"
-            ],
             "pic"  : [
-                "pipa",
-                "sakesi",
-                "guzheng"
+                "diaosudao",
+                "shuaizi",
+                "banhuachuizi",
+                "mudiaodao",
+                "zhuantai",
+                "youmo",
+                "guohuayanliao",
+                "xuanzhi"
+            ],
+            "answer" : [
+                "diaosudao",
+                "shuaizi",
+                "banhuachuizi",
+                "mudiaodao",
+                "zhuantai"
             ]
         }
     ],
     "5": [
         {
-            "music": [
-                "pipa1",
-                "guzheng1",
-                "jinghu1"
-            ],
             "pic"  : [
-                "pipa",
-                "guzheng",
-                "jinghu"
+                "rerongjiaoqiang",
+                "zhike",
+                "jiandao",
+                "yanliao",
+                "shuaizi",
+                "qianbi",
+                "tiaoseyou",
+                "banhuayouqi"
+            ],
+            "answer" : [
+                "rerongjiaoqiang",
+                "zhike",
+                "jiandao",
+                "yanliao",
+                "shuaizi"
             ]
         }
     ],
     "6": [
         {
-            "music": [
-                "pipa2",
-                "muqin1",
-                "erhu1"
+            "pic"  : [
+                "qianbi",
+                "zhenguanbi",
+                "makebi",
+                "zhichi",
+                "xiangpi",
+                "youhuabu",
+                "youhuayanliao",
+                "guadao"
             ],
-            "pic"  : [
-                "pipa",
-                "muqin",
-                "erhu"
-            ]
-        }
-    ],
-    "7": [
-        {
-           "music": [
-               "pipa1",
-               "sglfengqin1",
-               "xiaohao1"
-           ],
-            "pic"  : [
-                "pipa",
-                "sglfengqin",
-                "xiaohao"
-            ]
-        }
-    ],
-    "8": [
-        {
-            "music": [
-                "pipa2",
-                "xiaotiqin2",
-                "suona1"
-            ],
-            "pic"  : [
-                "pipa",
-                "xiaotiqin",
-                "suona"
+            "answer" : [
+                "qianbi",
+                "zhenguanbi",
+                "makebi",
+                "zhichi",
+                "xiangpi"
             ]
         }
     ]

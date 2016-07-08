@@ -1,6 +1,6 @@
 {
   "items": {
-    "count":4,
+    "count":5,
     "item1": {
       "t1": "res.Help_1_png",
       "t2": "res.Help_1_mp3"
@@ -16,6 +16,10 @@
     "item4": {
       "t1": "res.Help_4_png",
       "t2": "res.Help_4_mp3"
+    },
+    "item5": {
+      "t1": "res.Help_5_png",
+      "t2": "res.Help_5_mp3"
     }
   }
 }
