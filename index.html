@@ -8,207 +8,15 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
- 
-	<!--引入video-js.min样式和video.min.js-->
-	<link href="stylesheets/video-js.min.css" rel="stylesheet" type="text/css" />
-	<script src="stylesheets/video.min.js"></script>
-    
-    <!--baiduapi-->
-    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>   
-	<script src="http://api.map.baidu.com/api?v=2.0&ak=134db1b9cf1f1f2b4427210932b34dcb"></script> 
-	<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
-
-	<!--设置flash路径,video.js会在不支持html5的浏览器中使用flash播放-->
-	<script> 
-		videojs.options.flash.swf="video-js.swf";
-	</script>
-   
-<!--
-
-	<script>
-		var video;
-		function init(){
-			alert("init");	
-			video = document.getElementById("example_video_1"); //监听视频播放结束事件
-			video.addEventListener("ended", function(){
-					alert("播放完毕");
-				}, true);
-			}
-		}
-	</script>-->
-    
-    
-  <script>
-  	
-		var gc;
-		var geo;
-		var map;
-		function initBaiduMap(){
-			if (navigator.geolocation){
-				navigator.geolocation.getCurrentPosition(showBaiduPosition);
-				
-				gc = new BMap.Geocoder();
-				geo = new BMap.Geolocation();  
-				map = new BMap.Map("baidumap");  
-				
-				geo.getCurrentPosition(function(r){
-					if (this.getStatus() == BMAP_STATUS_SUCCESS){
-												
-						map.centerAndZoom(r.point, 15);
-						
-						var mk = new BMap.Marker(r.point);	   	//标记
-						var ty = new BMap.MapTypeControl();	  	// 添加地图类型控件
-						var nav = new BMap.NavigationControl(); //导航
-						
-						map.addOverlay(mk);
-						map.addControl(ty);
-						map.addControl(nav);
-						  
-						// 开启鼠标滚轮缩放
-　						map.enableScrollWheelZoom(true); 
-				
-					    gc.getLocation(r.point, function (rs){
-							var add;
-							var addComp = rs.addressComponents;
-							if (addComp.province == addComp.city){
-								add 	= addComp.province     	+ "/" +
-										  addComp.district     	+ "/" +
-										  addComp.street   	   	+ "/" +
-										  addComp.streetNumber;
-							}
-							else {
-								add 	= 	addComp.province 	+ "/" + 
-								  			addComp.city 		+ "/" + 
-								  			addComp.district 	+ "/" + 
-								  			addComp.street 		+ "/" + 
-								  			addComp.streetNumber;
-							}
-							document.getElementById("baiduaddress").innerHTML = add;
-						});
-					}
-					else {
-						alert("使用baiduMap出错");
-						switch( this.getStatus() )  
-            			{  
-                			case 2:  
-                    			alert( '位置结果未知 获取位置失败.' );  
-               					break;  
-                			case 3:  
-                    			alert( '导航结果未知 获取位置失败..' );  
-                				break;  
-                			case 4:  
-                    			alert( '非法密钥 获取位置失败.' );  
-                				break;  
-                			case 5:  
-                    			alert( '对不起,非法请求位置  获取位置失败.' );  
-                				break;  
-                			case 6:  
-                    			alert( '对不起,当前 没有权限 获取位置失败.' );  
-                				break;  
-                			case 7:  
-                    			alert( '对不起,服务不可用 获取位置失败.' );  
-                				break;  
-                			case 8:  
-                    			alert( '对不起,请求超时 获取位置失败.' );  
-               					break;  
-            			}  
-					}
-				}, {enableHighAccuracy: true});				
-			}
-			else {
-				alert("该浏览器不支持获取地理位置");	
-			}
-		}
-		
-		function showBaiduPosition(pos){
-			alert("showBaiduPosition");
-		}
-  
-  </script>
-
-
   </head>
-  <body onLoad="initBaiduMap()">
-  
-   <!--
-    <form action="http://github.com/">
-      <input type="submit" value="sign  in" />
-    </form>
-    
-    <form action="http://github.com/join">
-      <input type="submit" value="sign up" />
-    </form>
-    -->
-    
-    <!--<bgsound src="bg.mp3"/>-->
-    
-    <!--背景音乐-->
-  	<audio controls width="100" height="100" autoplay="false">
-    	<source src="stylesheets/bg.mp3" type="audio/mp3" />
-   		<source src="stylesheets/bg.ogg" type="audio/ogg" />
-    	<embed src="stylesheets/bg.mp3" width="100" height="100">
-    	</embed>
-    </audio>
-    
-      <font size="+1">
-    &nbsp;&nbsp;
-    <a href="http://github.com/">sign in</a>
-	&nbsp;&nbsp;
-    <a href="http://github.com/join">sign up</a>
-    </font>
-
-	<!--滚动-->
+  <body>
     <section class="page-header">
-      <h1 class="project-name">
-      	<marquee scrollamount="15">
-              Bansomin.GitHub.io
-        </marquee>
-      </h1>
-      <h2 class="project-tagline">
-      	<marquee  width="100" height="30" direction="up" scrollamount="2" >
-      	Welcome
-        </marquee>
-      </h2>
+      <h1 class="project-name">Bansomin.GitHub.io</h1>
+      <h2 class="project-tagline">Welcome</h2>
     </section>
 
     <section class="main-content">
       <h3>
-      
-        <!--  <center>
-    	 <video src="stylesheets/logo.mp4" width="320" height="240" autoplay>
- 		 </video>
-    </center>-->
-    
-     <center>
-     
-        <details>
-    		<summary>ClickMe</summary>
-        	Oops, happy!
-    	</details><br>
-
-    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
-      poster="stylesheets/demo.png"
-      data-setup="{}">
-<!--
-	<source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
-    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
-    <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg' />
--->
-    <source src="stylesheets/logo.mp4" type="video/mp4" />
-    <source src="stylesheets/logo.ogg" type="video/ogg" />
-    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
-    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
-
-</center>
-
-<script type="text/javascript">
-    var myPlayer = videojs('example_video_1');
-    videojs("example_video_1").ready(function(){
-        var myPlayer = this;
-        myPlayer.play();
-    });
-</script>
-
 <a id="clickme" class="anchor" href="#clickme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ClickMe:</h3>
 
 <p><a href="https://github.com/bansomin">MyGitHub</a></p>
@@ -234,6 +42,10 @@
 <p>5.2048Game</p>
 
 <p><a href="http://bansomin.github.io/MyGame/2048/">2048</a> </p>
+
+<p>6.StickHeroGame</p>
+
+<p><a href="http://bansomin.github.io/MyGame/StickHero/">2048</a> </p>
 
 <p>***<strong><em>jQuery</em></strong>******<strong><em>jQuery</em></strong>*****<strong><em>jQuery</em></strong>******<strong><em>jQuery</em></strong>*****<strong><em>jQuery</em></strong>******<strong><em>jQuery</em></strong>***</p>
 
@@ -289,22 +101,13 @@
 
 <p><a href="http://bansomin.github.io/MyHTML5/jQuery-video5.8">Video</a></p>
 
-<p>10.Files</p>
+<p>10.API</p>
 
 <p><a href="http://bansomin.github.io/MyHTML5/page281">文件</a></p>
 
-<p>11.绘制图形</p>
+<p>11.绘图</p>
 
-<p><a href="http://bansomin.github.io/MyHTML5/page311">Pictures</a></p>
-
-<p>12.时钟</p>
-
-<p><a href="http://bansomin.github.io/MyHTML5/page348">Clock</a></p>
-
-<p>13.离线Web应用程序</p>
-
-<p><a href="http://bansomin.github.io/MyHTML5DG/page820">Web</a></p>
-
+<p><a href="http://bansomin.github.io/MyHTML5/page311">绘图</a></p>
 
 <p>***<strong><em>Code</em></strong>******<strong><em>Code</em></strong>******<strong><em>Code</em></strong>******<strong><em>Code</em></strong>******<strong><em>Code</em></strong>******<strong><em>Code</em></strong>***</p>
 
@@ -315,14 +118,6 @@
 <p>BaiDuYun</p>
 
 <p><a href="http://pan.baidu.com/s/1bpqgziZ">http://pan.baidu.com/s/1bpqgziZ</a></p>
-
-<br>
-<br>
-<center>
-	   <h3>BaiduMap</h3>
-       <div id="baidumap" style="width:960px; height:320px; border:5px solid gray"></div>
-       	<p><b>Address</b>: <span id="baiduaddress"></span></p><br />
-</center>
 
       <footer class="site-footer">
 
