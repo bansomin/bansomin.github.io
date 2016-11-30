@@ -40,12 +40,13 @@ function getNumber() {
         dataType: "json",
         async: true,
         data: {
-            "userId":123123134,
+            "userId":778899,
             "userNick":nickName
         },
         type: "POST",
         success: function(req) {
             var num=req["result"]["overplusTimes"];
+
             RCCommon.UpdateLives(num);
         },
         error: function() {
@@ -118,7 +119,7 @@ function showDiv(score){
         url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/updateVGameList",
         dataType: "json",
         async: true,
-        data: { "userId":123123134,
+        data: { "userId":778899,
                 "userNick":"这是二测试",
                 "score":score
         },
@@ -145,7 +146,7 @@ function showDiv(score){
             $(".shengyuNum")[0].innerHTML=shengyuNum;
             RCCommon.Lives=shengyuNum;
 
-            
+            // cc.game.run();
 
             
         },
