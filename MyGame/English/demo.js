@@ -35,10 +35,10 @@
         dataType: "json",
         async: true,
         data: {
-            "userId":'user-test-Id',
-            "userNick":decodeURI("特色嗯嗯嗯嗯嗯嗯")
-        },             //参数值
-        type: "POST",                   //请求方式
+            "userId":uId,
+            "userNick":nickName
+        },
+        type: "POST",
         success: function(req) {
             // 游戏剩余次数;
             var num=req["result"]["overplusTimes"];
@@ -99,7 +99,7 @@ function showDiv(time){
         url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/updateWGameList",
         dataType: "json",
         async: true,
-        data: { "userId":'user-test-Id',
+        data: { "userId":uId,
                 "gameTime":time,
         },
         type: "POST",
@@ -118,7 +118,7 @@ function showDiv(time){
 
             //得分;
             var  _score =  req["result"]["user"]["game_time"];
-            $(".scoreBG_P")[0].innerHTML=_score;
+            $(".scoreBG_P")[0].innerHTML=_score+"秒";
 
             //剩余次数;
             var  shengyuNum =  req["result"]["user"]["overplus_times"];

@@ -40,7 +40,7 @@ body{
 
 
 .share_Div{
-    width: 7.2rem;
+    /*width: 7.2rem;*/
     /*height: 12.8rem;*/
     /*background: url("../images/jisuan.png") no-repeat center center;*/
     background-size: 100% 100%;
@@ -49,10 +49,20 @@ body{
 .share_Div .text_Div{
     /*height: 1rem;*/
     height: 8%;
-    background: url("../images/fenxiang.png") no-repeat center center;
-    background-size: 85% 100%;
+    /*background: url("../images/fenxiang.png") no-repeat center center;*/
+    /*background-size: 85% 100%;*/
     /*background: deeppink;*/
     border: none;
+}
+
+.share_Div .text_Div .text_img_Div
+{
+    background: url("../images/fenxiang.png") no-repeat center center;
+    background-size: 100% 100%;
+    width: 96%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
