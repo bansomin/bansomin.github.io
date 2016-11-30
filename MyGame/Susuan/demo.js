@@ -20,9 +20,7 @@
 )();
 
 
-window.onload=function () {
-    getNumber();
-};
+
 
 
 //从后端得到次数;
@@ -50,6 +48,8 @@ function getNumber() {
             var num=req["result"]["overplusTimes"];
 
             RCCommon.UpdateLives(num);
+			
+			cc.game.run();
         },
         error: function() {
             alert("ee");
