@@ -18,37 +18,32 @@
     }
 )();
 
-window.onload=function () {
-    getNumber();
-}
 
 
 //从后端得到次数;
-function getNumber() {
+    function getNumber() {
 
     var uId= GetQueryString('userId');
     var nickName=decodeURI(GetQueryString('nickname'));
     if(nickName=="null"){
         nickName="测试";
     }
-    // alert("name:"+nickName);
-
     $.ajax({
 
         //英语拼写第一次请求;
-        // url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/getUserWGameMessage",
         url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/getUserWGameMessage",
         dataType: "json",
         async: true,
         data: {
-            "userId":11122233,
-            "userNick":decodeURI("英语测试专用")
+            "userId":'user-test-Id',
+            "userNick":decodeURI("特色嗯嗯嗯嗯嗯嗯")
         },             //参数值
         type: "POST",                   //请求方式
         success: function(req) {
             // 游戏剩余次数;
             var num=req["result"]["overplusTimes"];
             RCCommon.UpdateLives(num);
+            cc.game.run();
         },
         error: function() {
             alert("ee");
@@ -104,7 +99,7 @@ function showDiv(time){
         url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/updateWGameList",
         dataType: "json",
         async: true,
-        data: { "userId":11122233,
+        data: { "userId":'user-test-Id',
                 "gameTime":time,
         },
         type: "POST",
@@ -122,7 +117,7 @@ function showDiv(time){
             $(".scoreBG_span")[0].innerHTML=rank;
 
             //得分;
-            var  _score =  req["result"]["user"]["gameTime"];
+            var  _score =  req["result"]["user"]["game_time"];
             $(".scoreBG_P")[0].innerHTML=_score;
 
             //剩余次数;

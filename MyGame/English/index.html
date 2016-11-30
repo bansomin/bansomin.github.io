@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/demo.css">
     <script src="jquery-3.1.1.min.js"></script>
-    <script cocos src="game.min.js"></script>
-    <script src="src/common/CommonConfig.js"></script>
+
     <style>
         body, canvas, div {
             -moz-user-select: none;
@@ -28,8 +27,10 @@
 <body style="padding:0; margin: 0; background: #FFF;">
 <script src="res/loading.js"></script>
 <canvas id="gameCanvas" width="480" height="720"></canvas>
-<div id="myDiv" style="width: 100%;height: 100%;position: fixed;margin: 0;padding: 0;top: 0;left: 0;border: none;overflow:hidden;display: none">
 
+<script cocos src="game.min.js"></script>
+
+<div id="myDiv" style="width: 100%;height: 100%;position: fixed;margin: 0;padding: 0;top: 0;left: 0;border: none;overflow:hidden;display: none">
     <div class="share_Div" id="share_Div">
         <!--分享文字-->
         <div class="text_Div">
@@ -102,9 +103,6 @@
 
 
     </div>
-
-
-
 </div>
 
 <div id="noNet" style="width: 100%;height: 100%;position: fixed;margin: 0;padding: 0;top: 0;left: 0;border: none;overflow:hidden;display: none">
@@ -121,6 +119,12 @@
 <script src="demo.js"></script>
 
 
-<script cocos src="game.min.js"></script>
+
+<script>
+    window.onload=function () {
+        getNumber();
+    }
+</script>
+
 </body>
 </html>
