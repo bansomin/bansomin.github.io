@@ -31,7 +31,7 @@ function getNumber() {
     var uId= GetQueryString('userId');
     var nickName=decodeURI(GetQueryString('nickname'));
     if(nickName=='null'){
-        nickName=decodeURI("这是二测试");
+        nickName=decodeURI("测试");
     }
     // alert("name:"+nickName);
 
@@ -42,7 +42,7 @@ function getNumber() {
         dataType: "json",
         async: true,
         data: {
-            "userId":778899,
+            "userId":uId,
             "userNick":nickName
         },
         type: "POST",
@@ -111,18 +111,18 @@ var residueNum=0;
 //像服务器发送得分，请求得到得分、排名、排行榜、可以玩次数数据;
 function showDiv(score){
     var uId= GetQueryString('userId');
-    // var nickName=decodeURI(GetQueryString('nickname'));
-    // if(nickName=="null"){
-    //     nickName="测试111";
-    // }
+    var nickName=decodeURI(GetQueryString('nickname'));
+    if(nickName=='null'){
+        nickName=decodeURI("这是百测试");
+    }
 
     $.ajax({
         // url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/updateVGameList",
         url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/updateVGameList",
         dataType: "json",
         async: true,
-        data: { "userId":778899,
-                "userNick":"这是二测试",
+        data: { "userId":uId,
+                // "userNick":nickName,
                 "score":score
         },
         type: "POST",
