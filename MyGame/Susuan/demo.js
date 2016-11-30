@@ -15,12 +15,14 @@
         }else{
             document.documentElement.style.fontSize = document.documentElement.clientWidth/7.2+ "px";
         }
-        getNumber();
+
     }
 )();
 
 
-
+window.onload=function () {
+    getNumber();
+};
 
 
 //从后端得到次数;
