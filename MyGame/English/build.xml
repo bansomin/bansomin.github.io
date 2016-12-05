@@ -138,11 +138,11 @@
                 <file name="cocos2d/compression/zlib.min.js"/>
                 <file name="cocos2d/menus/CCMenuItem.js"/>
                 <file name="cocos2d/menus/CCMenu.js"/>
-                <file name="cocos2d/audio/CCAudio.js"/>
 
             </sources>
             <sources dir="${basedir}">
                 <file name="src/resource/resource.js"/>
+                <file name="src/howler.js"/>
                 <file name="src/utilities/LoadingScene.js"/>
                 <file name="src/common/CommonConfig.js"/>
                 <file name="src/ui/layers/StartLayer.js"/>
@@ -158,7 +158,6 @@
                 <file name="src/model/LevelInforModel.js"/>
                 <file name="src/model/SoundManager.js"/>
                 <file name="res/config/GameConfig.js"/>
-                <file name="src/howler.js"/>
                 <file name="main.js"/>
 
             </sources>
