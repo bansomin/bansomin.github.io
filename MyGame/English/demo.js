@@ -35,7 +35,11 @@
         dataType: "json",
         async: true,
         data: {
+<<<<<<< HEAD
             "userId":uId,
+=======
+            "userId":345343,
+>>>>>>> origin/master
             "userNick":nickName
         },
         type: "POST",
@@ -99,7 +103,11 @@ function showDiv(time){
         url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/updateWGameList",
         dataType: "json",
         async: true,
+<<<<<<< HEAD
         data: { "userId":uId,
+=======
+        data: { "userId":345343,
+>>>>>>> origin/master
                 "gameTime":time,
         },
         type: "POST",
