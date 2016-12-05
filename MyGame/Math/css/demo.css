@@ -46,13 +46,21 @@ body{
     background-size: 100% 100%;
 }
 
+
+
 .share_Div .text_Div{
-    /*height: 1rem;*/
     height: 8%;
-    background: url("../images/fenxiang.png") no-repeat center center;
-    background-size: 85% 100%;
-    /*background: deeppink;*/
     border: none;
+}
+
+.share_Div .text_Div .text_img_Div
+{
+    background: url("../images/fenxiang.png") no-repeat center center;
+    background-size: 100% 100%;
+    width: 96%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 

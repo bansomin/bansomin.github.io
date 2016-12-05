@@ -138,7 +138,7 @@ function showDiv(score){
 
             //得分;
             var  _score =  req["result"]["user"]["score"];
-            $(".scoreBG_P")[0].innerHTML=_score;
+            $(".scoreBG_P")[0].innerHTML=_score+"分";
 
             //剩余次数;
             var  shengyuNum =  req["result"]["user"]["overplus_times"];
