@@ -35,7 +35,7 @@
         dataType: "json",
         async: true,
         data: {
-            "userId":23423,
+            "userId":uId,
             "userNick":nickName
         },
         type: "POST",
@@ -43,7 +43,7 @@
             // 游戏剩余次数;
             var num=req["result"]["overplusTimes"];
             RCCommon.UpdateLives(num);
-
+            cc.game.run();
         },
         error: function() {
             alert("ee");
@@ -99,7 +99,7 @@ function showDiv(time){
         url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/updateWGameList",
         dataType: "json",
         async: true,
-        data: { "userId":23423,
+        data: { "userId":uId,
                 "gameTime":time,
         },
         type: "POST",
