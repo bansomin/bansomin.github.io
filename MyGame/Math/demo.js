@@ -38,18 +38,17 @@ function getNumber() {
         dataType: "json",
         async: true,
         data: {
-            "userId":3145345324,
+            "userId":uId,
             "userNick":nickName
         },
         type: "POST",
         success: function(req) {
             var num=req["result"]["overplusTimes"];
-
             RCCommon.UpdateLives(num);
             cc.game.run();
         },
-        error: function() {
-            alert("ee");
+        error: function(){
+
         }
     });
 }
@@ -118,8 +117,7 @@ function showDiv(score){
         url: "http://211.157.179.218:8780/hxs_personaltutor_wechat/gameController/updateVGameList",
         dataType: "json",
         async: true,
-        data: { "userId":3145345324,
-                // "userNick":nickName,
+        data: { "userId":uId,
                 "score":score
         },
         type: "POST",
@@ -186,9 +184,9 @@ function GetQueryString(name)
 
 //再来一次btn回调;
 function  restartGame(){
-    RCCommon.RestartGame(residueNum);
     var div=document.getElementById('myDiv');
     div.style.display='none';
+    cc.director.runScene(new StartScene());
 }
 
 function noNetworkBack(){
@@ -196,4 +194,5 @@ function noNetworkBack(){
     netDiv.style.display='none';
     showDiv();
 }
+
 
