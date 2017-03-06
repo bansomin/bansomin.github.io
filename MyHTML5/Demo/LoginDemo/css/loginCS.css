@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*添加一个灰色背景*/
+body {
+	background-color: #F2F2F2;
+}
+
+/*内容模块距离上有距离*/
+.content {
+	margin-top: 100px;
+}
+
+/*登录|注册两个整体样式*/
+.content button {
+	height: 30px;		/*两个按钮高度*/
+	color: white;		/*字体颜色*/
+	font-size: 20px;	/*两个按钮上字体大小*/
+	border: none;		/*两个按钮无边框*/
+	padding: 0px;		/*无内边距*/
+	cursor: pointer;	/*手形状*/
+}
+
+/*信息面板的设计*/
+.panel_info{
+	background-color: orange;	/*背景颜色*/
+	width: 300px;				/*宽度*/
+	margin: 0px auto;			/*自身居中*/
+	text-align: center;			/*子内容居中*/
+	border: 1px solid black;	/*边框颜色为灰色*/
+	border-radius: 5px;			/*圆角*/
+	padding-top: 20px;			/*顶部的内边距为20px*/
+	padding-bottom: 20px;		/*底部的内边距为20px*/
+}
+
+/*登录模块*/
+.cell {
+	width: 262px;			/*宽度*/
+	text-align: left;		/*子内容左*/
+	margin: 0px auto 20px;	/*自身居中，并距离底部20px的间距*/
+}
+
+.cell label {
+	line-height: 30px;	/*高度30*/
+	font-size: 18px;
+}
+
+.cell input {
+	display: block;		/*设置为块,是为了让输入框独占一行*/
+	width: 250px;		/*宽度*/
+	height: 30px;		/*高度*/
+	border: 1px solid black;
+	padding: 0px 0px 0px 10px;	/*左边内边距为10*/
+	font-size: 16px;			
+}
+
+.cell input:focus {
+	border: 2px solid yellow;	/*当前输入框高亮显示*/
+}
+
+.btn_login {
+	text-align: center;	/*子内容居中*/
+	margin-top: 20px;
+}
+
+.btn_login button {
+	background-color: green;
+	width: 200px;
+}
+
+.btn_login button:hover {
+	background-color: white;
+	color: green;
+	border: 2px solid green;
+}
+
+/*注册*/
+.btn_register {
+	text-align: center;	/*子内容居中*/
+	margin-top: 20px;	/*顶部的内边距为20px*/
+}
+
+.btn_register button {
+	background-color: blue;	/*背景色*/
+	width: 180px;
+}
+
+.btn_register button:hover {
+	background-color: white;	/*选中后背景颜色为白色*/
+	color: blue;				/*选中后字体颜色为蓝色*/
+	border: 2px solid blue;
+}
