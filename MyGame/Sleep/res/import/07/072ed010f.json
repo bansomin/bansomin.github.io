@@ -1,0 +1,79 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "5三角豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        78,
+        452,
+        71,
+        68
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        71,
+        68
+      ]
+    }
+  },
+  [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "monster5",
+      "data": {
+        "__id__": 1
+      },
+      "asyncLoadAssets": null
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "monster5",
+      "_components": [
+        {
+          "__type__": "cc.Animation",
+          "node": {
+            "__id__": 1
+          },
+          "_defaultClip": {
+            "__uuid__": "6ewSVkk7pI777yOxqQyFl9"
+          },
+          "_clips": [
+            {
+              "__uuid__": "6ewSVkk7pI777yOxqQyFl9"
+            }
+          ],
+          "playOnLoad": true
+        },
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 1
+          },
+          "_spriteFrame": {
+            "__uuid__": "5dYmeXj8ZBgbFTdsn1gpdN"
+          },
+          "_sizeMode": 2
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__id__": 0
+        },
+        "fileId": "cfoaLsCzpPu5CTqH6/ZIt+"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 71,
+        "height": 68
+      }
+    }
+  ]
+]
