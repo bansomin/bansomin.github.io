@@ -1,0 +1,131 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "4泥巴豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        433,
+        383,
+        76,
+        60
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        76,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "monster4_walk",
+    "_duration": 1.25,
+    "sample": 4,
+    "wrapMode": 2,
+    "curveData": {
+      "comps": {
+        "cc.Sprite": {
+          "spriteFrame": [
+            {
+              "frame": 0,
+              "value": {
+                "__uuid__": "828/U0E3dHxJ6LfDxo/zcy"
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__uuid__": "5fwM8j9lxLKYIQcGrP6Exo"
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__uuid__": "bd4OtiEfBO0qp8CPx6i1HZ"
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "__uuid__": "df5xkm/6BFb4t8ZZJWLHxe"
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__uuid__": "828/U0E3dHxJ6LfDxo/zcy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "4泥巴豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        262,
+        375,
+        76,
+        54
+      ],
+      "offset": [
+        0,
+        -3
+      ],
+      "originalSize": [
+        76,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "4泥巴豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        340,
+        395,
+        74,
+        58
+      ],
+      "offset": [
+        1,
+        1
+      ],
+      "originalSize": [
+        76,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "4泥巴豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        433,
+        321,
+        76,
+        60
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        76,
+        60
+      ]
+    }
+  }
+]

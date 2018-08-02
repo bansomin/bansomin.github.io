@@ -1,0 +1,133 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "monster7_walk",
+    "_duration": 1.25,
+    "sample": 4,
+    "wrapMode": 2,
+    "curveData": {
+      "comps": {
+        "cc.Sprite": {
+          "spriteFrame": [
+            {
+              "frame": 0,
+              "value": {
+                "__uuid__": "263wOP9ChDD7EQFqv9zd9G"
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__uuid__": "bbm5lmZFBB9ak6NwAz/GFM"
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__uuid__": "3bIGZqd9VOwIlJp0zz3SuZ"
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "__uuid__": "8aKkWrXbBGdaRlzZul/g9K"
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__uuid__": "263wOP9ChDD7EQFqv9zd9G"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "7天线宝宝豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        177,
+        311,
+        63,
+        83
+      ],
+      "offset": [
+        0,
+        -4
+      ],
+      "originalSize": [
+        63,
+        91
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "7天线宝宝豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        407,
+        186,
+        61,
+        89
+      ],
+      "offset": [
+        1,
+        1
+      ],
+      "originalSize": [
+        63,
+        91
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "7天线宝宝豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        445,
+        2,
+        63,
+        91
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        63,
+        91
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "7天线宝宝豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        445,
+        95,
+        63,
+        89
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        63,
+        91
+      ]
+    }
+  }
+]

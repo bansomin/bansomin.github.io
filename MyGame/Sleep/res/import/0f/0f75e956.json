@@ -1,0 +1,135 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "monster12_walk",
+    "_duration": 1.25,
+    "sample": 4,
+    "wrapMode": 2,
+    "curveData": {
+      "comps": {
+        "cc.Sprite": {
+          "spriteFrame": [
+            {
+              "frame": 0,
+              "value": {
+                "__uuid__": "35NzToEJpI7oTrB7/m0inp"
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__uuid__": "a6YVEQwxdCWaBv2a9wVsOB"
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__uuid__": "f44HF1qANAUqfqa8aB7tNz"
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "__uuid__": "3apCCrKapPtbTnYs0KfnGZ"
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__uuid__": "35NzToEJpI7oTrB7/m0inp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "12虎纹豆升级walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        84,
+        78,
+        95
+      ],
+      "offset": [
+        -1,
+        -8
+      ],
+      "originalSize": [
+        80,
+        111
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "12虎纹豆升级walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        115,
+        2,
+        78,
+        111
+      ],
+      "offset": [
+        -1,
+        0
+      ],
+      "originalSize": [
+        80,
+        111
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "12虎纹豆升级walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        228,
+        2,
+        78,
+        111
+      ],
+      "offset": [
+        -1,
+        0
+      ],
+      "originalSize": [
+        80,
+        111
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "12虎纹豆升级walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        2,
+        80,
+        111
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        80,
+        111
+      ],
+      "rotated": 1
+    }
+  }
+]

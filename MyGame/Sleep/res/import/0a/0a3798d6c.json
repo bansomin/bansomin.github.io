@@ -1,0 +1,158 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        233,
+        88,
+        68
+      ],
+      "offset": [
+        0,
+        -1
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0004",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        194,
+        163,
+        88,
+        70
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "monster9_walk",
+    "_duration": 1.2,
+    "sample": 5,
+    "wrapMode": 2,
+    "curveData": {
+      "comps": {
+        "cc.Sprite": {
+          "spriteFrame": [
+            {
+              "frame": 0,
+              "value": {
+                "__uuid__": "06I5LS+NZA/IUxhleVpRW5"
+              }
+            },
+            {
+              "frame": 0.2,
+              "value": {
+                "__uuid__": "1dwhs5s8hFiYdBEb9IGfgw"
+              }
+            },
+            {
+              "frame": 0.4,
+              "value": {
+                "__uuid__": "6flpjRZYtEYrhm1i2GYGWa"
+              }
+            },
+            {
+              "frame": 0.6,
+              "value": {
+                "__uuid__": "71zR471vdNFqEze67oopSw"
+              }
+            },
+            {
+              "frame": 0.8,
+              "value": {
+                "__uuid__": "0fqXMoovBEAplewmP9dYz7"
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__uuid__": "06I5LS+NZA/IUxhleVpRW5"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        303,
+        86,
+        60
+      ],
+      "offset": [
+        -1,
+        -5
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        374,
+        249,
+        88,
+        70
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        284,
+        227,
+        88,
+        70
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  }
+]
