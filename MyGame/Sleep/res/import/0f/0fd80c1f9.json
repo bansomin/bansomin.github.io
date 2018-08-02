@@ -1,0 +1,1229 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "8疯狂豆 walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        180,
+        235,
+        74,
+        85
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        74,
+        85
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "5三角豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        416,
+        445,
+        71,
+        60
+      ],
+      "offset": [
+        0,
+        -4
+      ],
+      "originalSize": [
+        71,
+        68
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        233,
+        88,
+        68
+      ],
+      "offset": [
+        0,
+        -1
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "1粉绿豆豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        371,
+        569,
+        56,
+        55
+      ],
+      "offset": [
+        0,
+        1
+      ],
+      "originalSize": [
+        56,
+        57
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0004",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        194,
+        163,
+        88,
+        70
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "3粽子豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        151,
+        521,
+        56,
+        67
+      ],
+      "offset": [
+        0,
+        -2
+      ],
+      "originalSize": [
+        62,
+        71
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "2黄豆豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        75,
+        575,
+        60,
+        60
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        60,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "8疯狂豆 walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        352,
+        321,
+        72,
+        79
+      ],
+      "offset": [
+        1,
+        -3
+      ],
+      "originalSize": [
+        74,
+        85
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteAtlas",
+    "_name": "allMonster.plist",
+    "_spriteFrames": {
+      "10虚空豆升级walk0000": {
+        "__uuid__": "c0pjK76dVPiaghXinro1Ch"
+      },
+      "10虚空豆升级walk0001": {
+        "__uuid__": "ccuIV2bWhOBriT4NliHlNj"
+      },
+      "10虚空豆升级walk0002": {
+        "__uuid__": "a9o2uFaOhPQYJTtU3w320i"
+      },
+      "10虚空豆升级walk0003": {
+        "__uuid__": "45SU7xYW5HBZ5aeRJ/+iY/"
+      },
+      "11虎纹豆walk0000": {
+        "__uuid__": "45aOHpM6pIWY/YXCxqYT4M"
+      },
+      "11虎纹豆walk0001": {
+        "__uuid__": "69YDL8imdHModEEYh/UwHC"
+      },
+      "11虎纹豆walk0002": {
+        "__uuid__": "9da3rmJc1E5qY559rNRorn"
+      },
+      "11虎纹豆walk0003": {
+        "__uuid__": "5egBSgMDpFQ63QxqG2ZEJq"
+      },
+      "12虎纹豆升级walk0000": {
+        "__uuid__": "35NzToEJpI7oTrB7/m0inp"
+      },
+      "12虎纹豆升级walk0001": {
+        "__uuid__": "a6YVEQwxdCWaBv2a9wVsOB"
+      },
+      "12虎纹豆升级walk0002": {
+        "__uuid__": "f44HF1qANAUqfqa8aB7tNz"
+      },
+      "12虎纹豆升级walk0003": {
+        "__uuid__": "3apCCrKapPtbTnYs0KfnGZ"
+      },
+      "1粉绿豆豆walk0000": {
+        "__uuid__": "17xI4x4sxNFb3cKwvgaf+X"
+      },
+      "1粉绿豆豆walk0001": {
+        "__uuid__": "5fybIhBqhH3LlUH0wLlTzN"
+      },
+      "1粉绿豆豆walk0002": {
+        "__uuid__": "0bO2pzbbtKeLJjYeFTHD9G"
+      },
+      "1粉绿豆豆walk0003": {
+        "__uuid__": "20/Xr5k8lLyKmqkEeX6Lou"
+      },
+      "2黄豆豆walk0000": {
+        "__uuid__": "75fC5iNuNEWrHLK4uzh2yV"
+      },
+      "2黄豆豆walk0001": {
+        "__uuid__": "2a87WJ8A9Mp5+JbGPFQyPR"
+      },
+      "2黄豆豆walk0002": {
+        "__uuid__": "270PJUHBNJYbNGvSdOYfeJ"
+      },
+      "2黄豆豆walk0003": {
+        "__uuid__": "12v++e+ypP5InNujlZdh7h"
+      },
+      "3粽子豆walk0000": {
+        "__uuid__": "ebX5+GMjhHXqCayR9OjRhX"
+      },
+      "3粽子豆walk0001": {
+        "__uuid__": "36+/OWHbZIIpFEfBSe2dmf"
+      },
+      "3粽子豆walk0002": {
+        "__uuid__": "3bvaQBAWBG66vxsbVyyv3Q"
+      },
+      "3粽子豆walk0003": {
+        "__uuid__": "0f2i4X1RlKX6W3VDerRIMs"
+      },
+      "4泥巴豆walk0000": {
+        "__uuid__": "828/U0E3dHxJ6LfDxo/zcy"
+      },
+      "4泥巴豆walk0001": {
+        "__uuid__": "5fwM8j9lxLKYIQcGrP6Exo"
+      },
+      "4泥巴豆walk0002": {
+        "__uuid__": "bd4OtiEfBO0qp8CPx6i1HZ"
+      },
+      "4泥巴豆walk0003": {
+        "__uuid__": "df5xkm/6BFb4t8ZZJWLHxe"
+      },
+      "5三角豆walk0000": {
+        "__uuid__": "05YRZFW79L6rM7isAm7wFa"
+      },
+      "5三角豆walk0001": {
+        "__uuid__": "5dm2II+B1LqZgPcNqqkmOh"
+      },
+      "5三角豆walk0002": {
+        "__uuid__": "5dYmeXj8ZBgbFTdsn1gpdN"
+      },
+      "5三角豆walk0003": {
+        "__uuid__": "1efLc+2ppNgaPNhqAmrWaz"
+      },
+      "6冰激凌豆walk0000": {
+        "__uuid__": "5edgV9fG9DcaV52Hsb2gXv"
+      },
+      "6冰激凌豆walk0001": {
+        "__uuid__": "edKVxUSGBMl7wNgYFArrIF"
+      },
+      "6冰激凌豆walk0002": {
+        "__uuid__": "93A2LvBRZEKIr23xLoW5DD"
+      },
+      "6冰激凌豆walk0003": {
+        "__uuid__": "94ztPQPINFDaJnFat2Et6C"
+      },
+      "6冰激凌豆walk0004": {
+        "__uuid__": "cdrpJ/MUlAzr3BoXYl3t3A"
+      },
+      "7天线宝宝豆walk0000": {
+        "__uuid__": "263wOP9ChDD7EQFqv9zd9G"
+      },
+      "7天线宝宝豆walk0001": {
+        "__uuid__": "bbm5lmZFBB9ak6NwAz/GFM"
+      },
+      "7天线宝宝豆walk0002": {
+        "__uuid__": "3bIGZqd9VOwIlJp0zz3SuZ"
+      },
+      "7天线宝宝豆walk0003": {
+        "__uuid__": "8aKkWrXbBGdaRlzZul/g9K"
+      },
+      "8疯狂豆 walk0000": {
+        "__uuid__": "15g//aR8pPNYQGpQnwRtfy"
+      },
+      "8疯狂豆 walk0001": {
+        "__uuid__": "4cEVR9N6dMZ5z063q7glJy"
+      },
+      "8疯狂豆 walk0002": {
+        "__uuid__": "d6lH3agfhCiboiPe1EsMNn"
+      },
+      "8疯狂豆 walk0003": {
+        "__uuid__": "00IFrvcxtIW5WXbe/pN1Xg"
+      },
+      "9虚空豆walk0000": {
+        "__uuid__": "06I5LS+NZA/IUxhleVpRW5"
+      },
+      "9虚空豆walk0001": {
+        "__uuid__": "1dwhs5s8hFiYdBEb9IGfgw"
+      },
+      "9虚空豆walk0002": {
+        "__uuid__": "6flpjRZYtEYrhm1i2GYGWa"
+      },
+      "9虚空豆walk0003": {
+        "__uuid__": "71zR471vdNFqEze67oopSw"
+      },
+      "9虚空豆walk0004": {
+        "__uuid__": "0fqXMoovBEAplewmP9dYz7"
+      }
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "1粉绿豆豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        429,
+        569,
+        56,
+        53
+      ],
+      "offset": [
+        0,
+        -2
+      ],
+      "originalSize": [
+        56,
+        57
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        303,
+        86,
+        60
+      ],
+      "offset": [
+        -1,
+        -5
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "5三角豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        165,
+        451,
+        71,
+        68
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        71,
+        68
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "1粉绿豆豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        220,
+        563,
+        56,
+        57
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        56,
+        57
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "7天线宝宝豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        177,
+        311,
+        63,
+        83
+      ],
+      "offset": [
+        0,
+        -4
+      ],
+      "originalSize": [
+        63,
+        91
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "2黄豆豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        578,
+        60,
+        60
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        60,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "2黄豆豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        401,
+        507,
+        60,
+        60
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        60,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "12虎纹豆升级walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        84,
+        78,
+        95
+      ],
+      "offset": [
+        -1,
+        -8
+      ],
+      "originalSize": [
+        80,
+        111
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "3粽子豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        238,
+        505,
+        56,
+        69
+      ],
+      "offset": [
+        0,
+        -1
+      ],
+      "originalSize": [
+        62,
+        71
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "12虎纹豆升级walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        115,
+        2,
+        78,
+        111
+      ],
+      "offset": [
+        -1,
+        0
+      ],
+      "originalSize": [
+        80,
+        111
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "7天线宝宝豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        407,
+        186,
+        61,
+        89
+      ],
+      "offset": [
+        1,
+        1
+      ],
+      "originalSize": [
+        63,
+        91
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "3粽子豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        328,
+        455,
+        60,
+        71
+      ],
+      "offset": [
+        1,
+        0
+      ],
+      "originalSize": [
+        62,
+        71
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "10虚空豆升级walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        314,
+        146,
+        91,
+        79
+      ],
+      "offset": [
+        1,
+        0
+      ],
+      "originalSize": [
+        93,
+        79
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "11虎纹豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        92,
+        233,
+        70,
+        86
+      ],
+      "offset": [
+        0,
+        -8
+      ],
+      "originalSize": [
+        70,
+        102
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "8疯狂豆 walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        90,
+        305,
+        74,
+        85
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        74,
+        85
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "5三角豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        78,
+        452,
+        71,
+        68
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        71,
+        68
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "5三角豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        508,
+        71,
+        68
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        71,
+        68
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        177,
+        376,
+        74,
+        73
+      ],
+      "offset": [
+        0,
+        -5
+      ],
+      "originalSize": [
+        74,
+        83
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "11虎纹豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        341,
+        2,
+        70,
+        102
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        70,
+        102
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "4泥巴豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        433,
+        383,
+        76,
+        60
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        76,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "1粉绿豆豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        137,
+        579,
+        56,
+        57
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        56,
+        57
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "11虎纹豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        115,
+        82,
+        70,
+        102
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        70,
+        102
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        374,
+        249,
+        88,
+        70
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "9虚空豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        284,
+        227,
+        88,
+        70
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        90,
+        70
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "2黄豆豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        309,
+        517,
+        60,
+        54
+      ],
+      "offset": [
+        0,
+        -3
+      ],
+      "originalSize": [
+        60,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "4泥巴豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        262,
+        375,
+        76,
+        54
+      ],
+      "offset": [
+        0,
+        -3
+      ],
+      "originalSize": [
+        76,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "7天线宝宝豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        445,
+        2,
+        63,
+        91
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        63,
+        91
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        253,
+        431,
+        72,
+        73
+      ],
+      "offset": [
+        -1,
+        -5
+      ],
+      "originalSize": [
+        74,
+        83
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        89,
+        381,
+        74,
+        69
+      ],
+      "offset": [
+        0,
+        -7
+      ],
+      "originalSize": [
+        74,
+        83
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "11虎纹豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        341,
+        74,
+        70,
+        102
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        70,
+        102
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "12虎纹豆升级walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        228,
+        2,
+        78,
+        111
+      ],
+      "offset": [
+        -1,
+        0
+      ],
+      "originalSize": [
+        80,
+        111
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "10虚空豆升级walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        99,
+        154,
+        93,
+        77
+      ],
+      "offset": [
+        0,
+        1
+      ],
+      "originalSize": [
+        93,
+        79
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "7天线宝宝豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        445,
+        95,
+        63,
+        89
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        63,
+        91
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "4泥巴豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        340,
+        395,
+        74,
+        58
+      ],
+      "offset": [
+        1,
+        1
+      ],
+      "originalSize": [
+        76,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "10虚空豆升级walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        164,
+        93,
+        67
+      ],
+      "offset": [
+        0,
+        -6
+      ],
+      "originalSize": [
+        93,
+        79
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "10虚空豆升级walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        219,
+        82,
+        93,
+        79
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        93,
+        79
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0004",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        267,
+        299,
+        74,
+        83
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        74,
+        83
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "8疯狂豆 walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        365,
+        72,
+        85
+      ],
+      "offset": [
+        1,
+        0
+      ],
+      "originalSize": [
+        74,
+        85
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "4泥巴豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        433,
+        321,
+        76,
+        60
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        76,
+        60
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "3粽子豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        75,
+        522,
+        62,
+        51
+      ],
+      "offset": [
+        0,
+        -10
+      ],
+      "originalSize": [
+        62,
+        71
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        439,
+        74,
+        67
+      ],
+      "offset": [
+        0,
+        -8
+      ],
+      "originalSize": [
+        74,
+        83
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "12虎纹豆升级walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        2,
+        80,
+        111
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        80,
+        111
+      ],
+      "rotated": 1
+    }
+  }
+]

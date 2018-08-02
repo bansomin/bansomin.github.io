@@ -1,0 +1,160 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0000",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        177,
+        376,
+        74,
+        73
+      ],
+      "offset": [
+        0,
+        -5
+      ],
+      "originalSize": [
+        74,
+        83
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0002",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        253,
+        431,
+        72,
+        73
+      ],
+      "offset": [
+        -1,
+        -5
+      ],
+      "originalSize": [
+        74,
+        83
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0003",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        89,
+        381,
+        74,
+        69
+      ],
+      "offset": [
+        0,
+        -7
+      ],
+      "originalSize": [
+        74,
+        83
+      ]
+    }
+  },
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "monster6_walk",
+    "_duration": 1.2,
+    "sample": 5,
+    "wrapMode": 2,
+    "curveData": {
+      "comps": {
+        "cc.Sprite": {
+          "spriteFrame": [
+            {
+              "frame": 0,
+              "value": {
+                "__uuid__": "5edgV9fG9DcaV52Hsb2gXv"
+              }
+            },
+            {
+              "frame": 0.2,
+              "value": {
+                "__uuid__": "edKVxUSGBMl7wNgYFArrIF"
+              }
+            },
+            {
+              "frame": 0.4,
+              "value": {
+                "__uuid__": "93A2LvBRZEKIr23xLoW5DD"
+              }
+            },
+            {
+              "frame": 0.6,
+              "value": {
+                "__uuid__": "94ztPQPINFDaJnFat2Et6C"
+              }
+            },
+            {
+              "frame": 0.8,
+              "value": {
+                "__uuid__": "cdrpJ/MUlAzr3BoXYl3t3A"
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__uuid__": "5edgV9fG9DcaV52Hsb2gXv"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0004",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        267,
+        299,
+        74,
+        83
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        74,
+        83
+      ],
+      "rotated": 1
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "6冰激凌豆walk0001",
+      "texture": "51uFiM/sNO/6+/TBIeD2Cc",
+      "rect": [
+        2,
+        439,
+        74,
+        67
+      ],
+      "offset": [
+        0,
+        -8
+      ],
+      "originalSize": [
+        74,
+        83
+      ]
+    }
+  }
+]
