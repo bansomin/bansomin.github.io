@@ -2211,6 +2211,12 @@ require = function() {
         cc.log("当前等级 ： " + this._myVipLvl + " ** " + this._nextIndex);
         this.onSetData(VIPData);
       },
+      scrollViewBegin: function scrollViewBegin() {
+        cc.log("scrollViewBegin");
+      },
+      scrollViewEnd: function scrollViewEnd() {
+        cc.log("scrollViewEnd");
+      },
       onSetData: function onSetData(_data) {
         this.vipPageView.removeAllPages();
         var iconPath = "resources/textures/icon/vip" + this._myVipLvl + ".png";
