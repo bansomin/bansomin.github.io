@@ -1,0 +1,132 @@
+
+布丁正面.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+右腿
+  rotate: false
+  xy: 1, 182
+  size: 58, 61
+  orig: 58, 61
+  offset: 0, 0
+  index: -1
+左腿
+  rotate: false
+  xy: 198, 182
+  size: 29, 63
+  orig: 29, 63
+  offset: 0, 0
+  index: -1
+左手
+  rotate: false
+  xy: 61, 212
+  size: 47, 46
+  orig: 47, 46
+  offset: 0, 0
+  index: -1
+右手
+  rotate: false
+  xy: 149, 182
+  size: 47, 46
+  orig: 47, 46
+  offset: 0, 0
+  index: -1
+左臂
+  rotate: false
+  xy: 110, 212
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
+右臂
+  rotate: false
+  xy: 148, 230
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+头
+  rotate: false
+  xy: 1, 1
+  size: 227, 179
+  orig: 227, 179
+  offset: 0, 0
+  index: -1
+身体
+  rotate: false
+  xy: 230, 1
+  size: 156, 213
+  orig: 156, 213
+  offset: 0, 0
+  index: -1
+嘴1
+  rotate: false
+  xy: 1, 245
+  size: 34, 9
+  orig: 34, 9
+  offset: 0, 0
+  index: -1
+嘴3
+  rotate: false
+  xy: 477, 113
+  size: 34, 21
+  orig: 34, 21
+  offset: 0, 0
+  index: -1
+嘴4
+  rotate: false
+  xy: 477, 136
+  size: 22, 30
+  orig: 34, 34
+  offset: 7, 2
+  index: -1
+嘴2
+  rotate: false
+  xy: 477, 168
+  size: 34, 14
+  orig: 34, 14
+  offset: 0, 0
+  index: -1
+眼2
+  rotate: false
+  xy: 1, 260
+  size: 85, 7
+  orig: 85, 7
+  offset: 0, 0
+  index: -1
+眼1
+  rotate: false
+  xy: 61, 182
+  size: 86, 28
+  orig: 86, 28
+  offset: 0, 0
+  index: -1
+呼气/2
+  rotate: false
+  xy: 388, 212
+  size: 75, 77
+  orig: 152, 127
+  offset: 63, 46
+  index: -1
+呼气/4
+  rotate: false
+  xy: 388, 1
+  size: 123, 110
+  orig: 152, 127
+  offset: 27, 5
+  index: -1
+呼气/1
+  rotate: false
+  xy: 110, 252
+  size: 29, 30
+  orig: 152, 127
+  offset: 104, 92
+  index: -1
+呼气/3
+  rotate: false
+  xy: 388, 113
+  size: 87, 97
+  orig: 152, 127
+  offset: 53, 23
+  index: -1

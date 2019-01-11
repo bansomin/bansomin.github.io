@@ -1,0 +1,41 @@
+
+手指点击.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+光标
+  rotate: false
+  xy: 1, 83
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+光标2
+  rotate: false
+  xy: 37, 83
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+光标4
+  rotate: false
+  xy: 69, 106
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+光标3
+  rotate: false
+  xy: 69, 83
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+手指
+  rotate: false
+  xy: 1, 1
+  size: 104, 80
+  orig: 113, 101
+  offset: 6, 1
+  index: -1

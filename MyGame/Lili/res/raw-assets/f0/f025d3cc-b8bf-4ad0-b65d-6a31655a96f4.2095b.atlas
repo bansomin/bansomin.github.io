@@ -1,0 +1,90 @@
+
+爷爷.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+投影
+  rotate: false
+  xy: 1, 396
+  size: 137, 13
+  orig: 137, 13
+  offset: 0, 0
+  index: -1
+左腿
+  rotate: false
+  xy: 49, 146
+  size: 46, 125
+  orig: 46, 125
+  offset: 0, 0
+  index: -1
+右腿
+  rotate: false
+  xy: 1, 146
+  size: 46, 128
+  orig: 46, 128
+  offset: 0, 0
+  index: -1
+拐杖
+  rotate: false
+  xy: 97, 267
+  size: 26, 125
+  orig: 26, 125
+  offset: 0, 0
+  index: -1
+左胳膊
+  rotate: false
+  xy: 97, 146
+  size: 48, 119
+  orig: 48, 119
+  offset: 0, 0
+  index: -1
+右胳膊2
+  rotate: false
+  xy: 147, 129
+  size: 61, 116
+  orig: 82, 128
+  offset: 12, 6
+  index: -1
+右胳膊
+  rotate: false
+  xy: 147, 247
+  size: 48, 116
+  orig: 48, 116
+  offset: 0, 0
+  index: -1
+身子
+  rotate: false
+  xy: 147, 1
+  size: 89, 126
+  orig: 89, 126
+  offset: 0, 0
+  index: -1
+头
+  rotate: false
+  xy: 1, 1
+  size: 144, 143
+  orig: 144, 143
+  offset: 0, 0
+  index: -1
+眼睛2
+  rotate: false
+  xy: 1, 288
+  size: 67, 4
+  orig: 67, 10
+  offset: 0, 3
+  index: -1
+眼睛
+  rotate: false
+  xy: 1, 276
+  size: 60, 10
+  orig: 60, 10
+  offset: 0, 0
+  index: -1
+嘴张
+  rotate: false
+  xy: 125, 365
+  size: 71, 29
+  orig: 71, 29
+  offset: 0, 0
+  index: -1

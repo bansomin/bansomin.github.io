@@ -1,0 +1,251 @@
+
+正面动画.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dizuo
+  rotate: false
+  xy: 295, 94
+  size: 85, 110
+  orig: 85, 110
+  offset: 0, 0
+  index: -1
+zuo2
+  rotate: false
+  xy: 447, 264
+  size: 57, 116
+  orig: 57, 116
+  offset: 0, 0
+  index: -1
+you2
+  rotate: false
+  xy: 1, 332
+  size: 54, 115
+  orig: 54, 115
+  offset: 0, 0
+  index: -1
+zuo1
+  rotate: false
+  xy: 57, 382
+  size: 119, 45
+  orig: 119, 47
+  offset: 0, 0
+  index: -1
+you1
+  rotate: false
+  xy: 1, 449
+  size: 119, 49
+  orig: 119, 49
+  offset: 0, 0
+  index: -1
+gan
+  rotate: false
+  xy: 178, 363
+  size: 56, 62
+  orig: 56, 62
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 1, 1
+  size: 292, 279
+  orig: 292, 279
+  offset: 0, 0
+  index: -1
+lunyou
+  rotate: false
+  xy: 429, 1
+  size: 80, 79
+  orig: 80, 79
+  offset: 0, 0
+  index: -1
+lunzuo
+  rotate: false
+  xy: 164, 282
+  size: 80, 79
+  orig: 80, 79
+  offset: 0, 0
+  index: -1
+dongtu/说话/5
+  rotate: false
+  xy: 236, 382
+  size: 139, 22
+  orig: 432, 238
+  offset: 145, 118
+  index: -1
+zui2
+  rotate: false
+  xy: 382, 321
+  size: 30, 5
+  orig: 31, 17
+  offset: 1, 11
+  index: -1
+dongtu/说话/6
+  rotate: false
+  xy: 295, 264
+  size: 150, 55
+  orig: 432, 238
+  offset: 137, 102
+  index: -1
+dongtu/说话/高兴说话/2
+  rotate: false
+  xy: 382, 94
+  size: 111, 73
+  orig: 111, 73
+  offset: 0, 0
+  index: -1
+dongtu/说话/3
+  rotate: false
+  xy: 1, 282
+  size: 161, 48
+  orig: 432, 238
+  offset: 128, 104
+  index: -1
+dongtu/说话/1
+  rotate: false
+  xy: 236, 406
+  size: 99, 21
+  orig: 432, 238
+  offset: 169, 118
+  index: -1
+dongtu/说话/4
+  rotate: false
+  xy: 382, 169
+  size: 121, 30
+  orig: 432, 238
+  offset: 154, 113
+  index: -1
+dongtu/说话/7
+  rotate: false
+  xy: 377, 363
+  size: 66, 37
+  orig: 432, 238
+  offset: 184, 114
+  index: -1
+dongtu/说话/2
+  rotate: false
+  xy: 295, 206
+  size: 152, 56
+  orig: 432, 238
+  offset: 135, 100
+  index: -1
+dongtu/liulei/zui3
+  rotate: false
+  xy: 339, 321
+  size: 41, 5
+  orig: 43, 17
+  offset: 1, 10
+  index: -1
+dongtu/说话/高兴说话/1
+  rotate: false
+  xy: 122, 429
+  size: 173, 28
+  orig: 173, 28
+  offset: 0, 0
+  index: -1
+zui
+  rotate: false
+  xy: 129, 363
+  size: 31, 17
+  orig: 31, 17
+  offset: 0, 0
+  index: -1
+dongtu/liulei/zui4
+  rotate: false
+  xy: 246, 355
+  size: 42, 5
+  orig: 43, 17
+  offset: 2, 10
+  index: -1
+dongtu/说话/高兴说话/3
+  rotate: false
+  xy: 295, 1
+  size: 132, 91
+  orig: 132, 91
+  offset: 0, 0
+  index: -1
+yanyou2
+  rotate: false
+  xy: 57, 332
+  size: 70, 47
+  orig: 71, 56
+  offset: 0, 4
+  index: -1
+dongtu/说话/高兴说话/yan
+  rotate: false
+  xy: 339, 328
+  size: 85, 20
+  orig: 85, 20
+  offset: 0, 0
+  index: -1
+dongtu/liulei/yanzuo1
+  rotate: false
+  xy: 449, 201
+  size: 49, 48
+  orig: 63, 59
+  offset: 7, 4
+  index: -1
+yanzuo
+  rotate: false
+  xy: 293, 321
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+dongtu/liulei/yanyou1
+  rotate: false
+  xy: 377, 402
+  size: 49, 48
+  orig: 63, 59
+  offset: 7, 4
+  index: -1
+yanyou
+  rotate: false
+  xy: 246, 282
+  size: 45, 44
+  orig: 45, 44
+  offset: 0, 0
+  index: -1
+dongtu/liulei/zuoyanhei1
+  rotate: false
+  xy: 246, 328
+  size: 42, 25
+  orig: 63, 59
+  offset: 12, 7
+  index: -1
+yanheizuo
+  rotate: false
+  xy: 162, 363
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+yanheiyou
+  rotate: false
+  xy: 268, 362
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+dongtu/liulei/youyanhei1
+  rotate: false
+  xy: 339, 350
+  size: 26, 25
+  orig: 63, 59
+  offset: 10, 7
+  index: -1
+chiyou
+  rotate: false
+  xy: 236, 363
+  size: 30, 15
+  orig: 30, 15
+  offset: 0, 0
+  index: -1
+chizuo
+  rotate: false
+  xy: 129, 332
+  size: 30, 15
+  orig: 30, 15
+  offset: 0, 0
+  index: -1
