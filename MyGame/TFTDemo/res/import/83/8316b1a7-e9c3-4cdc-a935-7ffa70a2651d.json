@@ -1,0 +1,11 @@
+{
+  "__type__": "dragonBones.DragonBonesAtlasAsset",
+  "_name": "chunxiang_tex",
+  "_atlasJson": "{\"width\":307,\"SubTexture\":[{\"width\":100,\"y\":160,\"height\":50,\"name\":\"chunxiang/ying\",\"x\":62},{\"width\":52,\"y\":1,\"height\":157,\"name\":\"chunxiang/toufa\",\"x\":111},{\"width\":21,\"y\":238,\"height\":13,\"name\":\"chunxiang/zuoshou2\",\"x\":161},{\"width\":14,\"y\":212,\"height\":24,\"name\":\"chunxiang/zuoshou\",\"x\":161},{\"width\":23,\"y\":88,\"height\":82,\"name\":\"chunxiang/zuobi\",\"x\":265},{\"width\":15,\"y\":88,\"height\":88,\"name\":\"chunxiang/piaodai\",\"x\":290},{\"width\":37,\"y\":135,\"height\":120,\"name\":\"chunxiang/zuotui\",\"x\":201},{\"width\":43,\"y\":1,\"height\":132,\"name\":\"chunxiang/youtui\",\"x\":201},{\"width\":59,\"y\":150,\"height\":104,\"name\":\"chunxiang/shenti\",\"x\":1},{\"width\":15,\"y\":212,\"height\":26,\"name\":\"chunxiang/youshou\",\"x\":144},{\"width\":28,\"y\":1,\"height\":85,\"name\":\"chunxiang/youbi\",\"x\":265},{\"width\":34,\"y\":1,\"height\":184,\"name\":\"chunxiang/toufa2\",\"x\":165},{\"width\":17,\"y\":1,\"height\":175,\"name\":\"chunxiang/toufa1\",\"x\":246},{\"width\":108,\"y\":1,\"height\":147,\"name\":\"chunxiang/tou\",\"x\":1},{\"width\":17,\"y\":150,\"height\":7,\"name\":\"chunxiang/zui\",\"x\":62},{\"width\":18,\"y\":187,\"height\":9,\"name\":\"chunxiang/zui_2\",\"x\":164},{\"width\":13,\"y\":240,\"height\":13,\"name\":\"chunxiang/zui_3\",\"x\":140},{\"width\":76,\"y\":239,\"height\":12,\"name\":\"chunxiang/mei\",\"x\":62},{\"width\":80,\"y\":212,\"height\":25,\"name\":\"chunxiang/yan\",\"x\":62},{\"width\":22,\"y\":178,\"height\":55,\"name\":\"chunxiang/hua\",\"x\":240},{\"width\":23,\"y\":172,\"height\":55,\"name\":\"chunxiang/hua1\",\"x\":265}],\"height\":257,\"name\":\"chunxiang\",\"imagePath\":\"chunxiang_tex.png\"}",
+  "_texture": {
+    "__uuid__": "3f9sMROv9B9pFmKb46JN7p"
+  },
+  "texture": {
+    "__uuid__": "3f9sMROv9B9pFmKb46JN7p"
+  }
+}
