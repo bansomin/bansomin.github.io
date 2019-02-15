@@ -1,0 +1,149 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "n_4",
+      "texture": "85ypM/PE1KNL6Gnl4jJZ+k",
+      "rect": [
+        3,
+        3,
+        81,
+        81
+      ],
+      "offset": [
+        0,
+        0.5
+      ],
+      "originalSize": [
+        87,
+        88
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "n_3",
+      "texture": "07FzFkANxDxZ91Fs6OICAh",
+      "rect": [
+        3,
+        3,
+        82,
+        81
+      ],
+      "offset": [
+        0.5,
+        0.5
+      ],
+      "originalSize": [
+        87,
+        88
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "n_2",
+      "texture": "b88CNrRs1GuZ/F0u94VUlE",
+      "rect": [
+        2,
+        3,
+        81,
+        82
+      ],
+      "offset": [
+        -1,
+        -0.5
+      ],
+      "originalSize": [
+        87,
+        87
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "n_1",
+      "texture": "7bQBBNPvpE96F9IsuVdWI/",
+      "rect": [
+        2,
+        3,
+        82,
+        82
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        87,
+        88
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "hornAnima",
+    "_duration": 1,
+    "sample": 4,
+    "wrapMode": "2",
+    "curveData": {
+      "comps": {
+        "cc.Sprite": {
+          "spriteFrame": [
+            {
+              "frame": 0,
+              "value": {
+                "__uuid__": "aaE9vSxbBCRbACsmdcw0sy"
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__uuid__": "8b6nV1//BIh4cL+27cLapU"
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__uuid__": "6bwomApUVH6bKQ/JNXpnkx"
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "__uuid__": "5a3DtYWABKnpHcp4iP2IQK"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

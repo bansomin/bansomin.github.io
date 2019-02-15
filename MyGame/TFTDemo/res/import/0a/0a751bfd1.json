@@ -1,0 +1,96 @@
+[
+  [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "hornAnima ",
+      "data": {
+        "__id__": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "hornAnima",
+      "_level": 4,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 1
+          },
+          "_spriteFrame": {
+            "__uuid__": "5a3DtYWABKnpHcp4iP2IQK"
+          },
+          "_sizeMode": 2,
+          "_isTrimmedMode": false
+        },
+        {
+          "__type__": "cc.Animation",
+          "node": {
+            "__id__": 1
+          },
+          "_defaultClip": {
+            "__uuid__": "d0F6yFGB5MLJsgkQ6Eo/mL"
+          },
+          "_clips": [
+            {
+              "__uuid__": "d0F6yFGB5MLJsgkQ6Eo/mL"
+            }
+          ],
+          "playOnLoad": true
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__id__": 0
+        },
+        "fileId": "5dDOqDls1HnasyBkRogSmi"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 87,
+        "height": 88
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": -280
+      },
+      "_scale": {
+        "__type__": "cc.Vec3",
+        "x": 1,
+        "y": 1,
+        "z": 1
+      }
+    }
+  ],
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "n_4",
+      "texture": "85ypM/PE1KNL6Gnl4jJZ+k",
+      "rect": [
+        3,
+        3,
+        81,
+        81
+      ],
+      "offset": [
+        0,
+        0.5
+      ],
+      "originalSize": [
+        87,
+        88
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

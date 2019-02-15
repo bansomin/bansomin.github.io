@@ -110,12 +110,14 @@ window.__require = function e(t, n, r) {
         pointerLayout: cc.Node,
         pointerNode: cc.Node,
         pointerPreb: cc.Prefab,
-        hornBtn: cc.Button,
+        hornAnimNode: cc.Node,
+        hornNode: cc.Node,
         beanLab: cc.Label,
         _pointerList: null
       },
       onLoad: function onLoad() {
         this._pointerList = [];
+        this._hornAnima = this.hornAnimNode.getComponent(cc.Animation);
       },
       initBarUI: function initBarUI(_data) {
         this.onReset();
@@ -157,8 +159,18 @@ window.__require = function e(t, n, r) {
       onSetBeanNum: function onSetBeanNum() {
         this.beanLab.string = "X" + Global.gameInfo.beanNum;
       },
-      onClickHornBtn: function onClickHornBtn() {},
+      playAnimation: function playAnimation(_isPlay) {
+        if (this._hornAnima) if (_isPlay) {
+          this.hornNode.active = false;
+          this._hornAnima.play("hornAnima");
+        } else {
+          this._hornAnima.stop();
+          this._hornAnima.setCurrentTime("hornAnima", 0);
+          this.hornNode.active = true;
+        }
+      },
       onReset: function onReset() {
+        this.hornNode.active = true;
         var obj = void 0, item = void 0;
         while (this._pointerList.length > 0) {
           obj = this._pointerList.pop();
@@ -240,6 +252,7 @@ window.__require = function e(t, n, r) {
         this.gotoAction();
       },
       gotoAction: function gotoAction() {
+        var _this2 = this;
         var self = this;
         var soundPath = CourseData[this._curIndex].Sound + ".mp3";
         cc.log("soundPath : " + soundPath);
@@ -247,6 +260,7 @@ window.__require = function e(t, n, r) {
           return new Promise(function(resolve, reject) {
             cc.log("\u6e38\u620f0");
             self.onSetBtnStatus(false);
+            _this2._barCtrl && _this2._barCtrl.playAnimation(true);
             Global.musicManager.playEffectOnly(soundPath, function() {
               resolve();
             });
@@ -255,6 +269,7 @@ window.__require = function e(t, n, r) {
         var promise2 = function promise2() {
           return new Promise(function(resolve, reject) {
             self.onSetBtnStatus(true);
+            _this2._barCtrl && _this2._barCtrl.playAnimation(false);
           });
         };
         var promiseArr = [ promise1, promise2 ];
@@ -389,28 +404,6 @@ window.__require = function e(t, n, r) {
     module.exports = data;
     cc._RF.pop();
   }, {} ],
-  CourseOne: [ function(require, module, exports) {
-    "use strict";
-    cc._RF.push(module, "6323egtIcRM3qKqaeDy4DQI", "CourseOne");
-    "use strict";
-    cc.Class({
-      extends: cc.Component,
-      properties: {},
-      onLoad: function onLoad() {}
-    });
-    cc._RF.pop();
-  }, {} ],
-  CourseTwo: [ function(require, module, exports) {
-    "use strict";
-    cc._RF.push(module, "aa1458AP1lA/44b1NmR/e/Z", "CourseTwo");
-    "use strict";
-    cc.Class({
-      extends: cc.Component,
-      properties: {},
-      onLoad: function onLoad() {}
-    });
-    cc._RF.pop();
-  }, {} ],
   GameConfig: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "2205ejlHw5OmYEUMB09Kzm3", "GameConfig");
@@ -462,12 +455,16 @@ window.__require = function e(t, n, r) {
     "use strict";
     cc._RF.push(module, "5b57cRzx91BHrVzrUm7nlFn", "Global");
     "use strict";
+    var isNative = function isNative() {
+      return false === cc.sys.isBrowser || void 0 === cc.sys.isBrowser;
+    };
     window.Global = {
       gameInfo: null,
       guideCtrl: null,
       mainSceneCtrl: null,
       musicManager: null,
-      animationManager: null
+      animationManager: null,
+      isNative: isNative
     };
     cc._RF.pop();
   }, {} ],
@@ -550,6 +547,16 @@ window.__require = function e(t, n, r) {
         };
         var promiseArr = [ promise1, promise2 ];
         UITools.runPromiseArray(promiseArr);
+      },
+      onClickNextBtn: function onClickNextBtn(evn, type) {
+        if (false == Global.isNative()) {
+          cc.log("AAAAAAAAAAAAAAAAAAA");
+          var myVideo = document.getElementById("myVideo");
+          if (null != myVideo && void 0 != myVideo) {
+            myVideo.pause();
+            myVideo.style.display = "none";
+          }
+        }
       },
       onReset: function onReset() {
         for (var i = 0; i < this.rootNodeList.length; i++) this.rootNodeList[i] && (this.rootNodeList[i].active = false);
@@ -881,4 +888,4 @@ window.__require = function e(t, n, r) {
     };
     cc._RF.pop();
   }, {} ]
-}, {}, [ "ActionData", "CourseData", "GameConfig", "GameManager", "Global", "MusicManager", "UITools", "BarCtrl", "PointerCell", "CourseCtrl", "CourseOne", "CourseTwo", "GuideCtrl", "LoadingScene", "MainScene", "ResultCtrl", "RoleBaseJS", "TopNodeCtrl" ]);
+}, {}, [ "ActionData", "CourseData", "GameConfig", "GameManager", "Global", "MusicManager", "UITools", "BarCtrl", "PointerCell", "CourseCtrl", "GuideCtrl", "LoadingScene", "MainScene", "ResultCtrl", "RoleBaseJS", "TopNodeCtrl" ]);
