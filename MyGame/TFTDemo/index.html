@@ -39,6 +39,17 @@
 
   <link rel="stylesheet" type="text/css" href="style-mobile.css"/>
 
+  <style type="text/css">
+    #myVideo{
+      position:absolute;
+      left:0px;
+      top:0px;
+      bottom: 0px;
+      margin: auto 0;
+      z-index:100
+    }
+  </style>
+
 </head>
 <body>
   <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
@@ -47,6 +58,20 @@
       <span style="width: 0%"></span>
     </div>
   </div>
+
+  <video id="myVideo" preload="auto" onended="video()" visibility="hidden" controls="controls" src="http://uniugame.cn/MjGame/WX0804/VideoPlayer/a.mp4" width="100%" x5-playsinline playsinline webkit-playsinline  x-webkit-airplay='true' x5-video-player-type='h5' x5-video-player-fullscreen='true'x5-video-ignore-metadata='true'>
+    <p>不支持Video</p>
+  </video>
+
+  <script type="text/javascript">
+    function video() {
+      // var myVideo = document.getElementById('myVideo')
+      // myVideo.load()
+      // myVideo.style.visibility="hidden"
+      // myVideo.style.display="none"
+    }
+  </script>
+
 <script src="src/settings.js" charset="utf-8"></script>
 
 <script src="main.js" charset="utf-8"></script>
