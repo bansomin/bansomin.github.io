@@ -98,15 +98,90 @@ window.__require = function e(t, n, r) {
     module.exports = data;
     cc._RF.pop();
   }, {} ],
+  BarCtrl: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "cbd9ddLCPxCRbQpKbz5m0oR", "BarCtrl");
+    "use strict";
+    var UITools = require("UITools");
+    var const_offset = 20;
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        pointerLayout: cc.Node,
+        pointerNode: cc.Node,
+        pointerPreb: cc.Prefab,
+        hornBtn: cc.Button,
+        beanLab: cc.Label,
+        _pointerList: null
+      },
+      onLoad: function onLoad() {
+        this._pointerList = [];
+      },
+      initBarUI: function initBarUI(_data) {
+        this.onReset();
+        var totalWidth = 0;
+        var item = void 0, itemJS = void 0, data = void 0;
+        for (var i = 0; i < _data.length; i++) {
+          data = _data[i];
+          if (void 0 == data || null == data) continue;
+          item = cc.instantiate(this.pointerPreb);
+          if (null == item || void 0 == item) continue;
+          totalWidth += item.getContentSize().width;
+          this.pointerLayout.addChild(item);
+          itemJS = UITools.onGetNodeCompontent(item, "PointerCell");
+          if (itemJS) {
+            itemJS.onSetParent(this);
+            itemJS.onReset();
+          }
+          var obj = new Object();
+          obj.PID = data.PID;
+          obj.item = item;
+          obj.js = itemJS;
+          this._pointerList.push(obj);
+        }
+        this.pointerLayout.parent.width = totalWidth + const_offset;
+        console.log(this._pointerList);
+      },
+      updatePointerCellData: function updatePointerCellData(_gamePid, _type) {
+        var pointerJS = this.getPointerJSByPid(_gamePid);
+        pointerJS && pointerJS.updatePointerCellData(_type);
+      },
+      getPointerJSByPid: function getPointerJSByPid(_gamePid) {
+        var obj = void 0, item = void 0;
+        for (var i = 0; i < this._pointerList.length; i++) {
+          obj = this._pointerList[i];
+          if (obj && obj.PID == _gamePid) return obj.js;
+        }
+        return null;
+      },
+      onSetBeanNum: function onSetBeanNum() {
+        this.beanLab.string = "X" + Global.gameInfo.beanNum;
+      },
+      onClickHornBtn: function onClickHornBtn() {},
+      onReset: function onReset() {
+        var obj = void 0, item = void 0;
+        while (this._pointerList.length > 0) {
+          obj = this._pointerList.pop();
+          item = obj.item;
+          this.pointerLayout.removeChild(item);
+        }
+      }
+    });
+    cc._RF.pop();
+  }, {
+    UITools: "UITools"
+  } ],
   CourseCtrl: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "b22e3Yv6gtLO7G+uvDxsrA6", "CourseCtrl");
     "use strict";
+    var GameConfig = require("GameConfig");
     var CourseData = require("CourseData");
     var UITools = require("UITools");
     cc.Class({
       extends: cc.Component,
       properties: {
+        barNode: cc.Node,
         layout: cc.Layout,
         itemIcon: cc.Sprite,
         btnList: [ cc.Button ],
@@ -114,6 +189,7 @@ window.__require = function e(t, n, r) {
       },
       onLoad: function onLoad() {
         this._curIndex = 0;
+        this._barCtrl = UITools.onGetNodeCompontent(this.barNode, "BarCtrl");
         this.onReset();
       },
       onSetParent: function onSetParent(_parent) {
@@ -128,6 +204,14 @@ window.__require = function e(t, n, r) {
       },
       initGame: function initGame(_data) {
         var _this = this;
+        if ("1" == _data.IsFirst) {
+          var typeGameData = [];
+          for (var i = 0; i < CourseData.length; i++) {
+            var courseData = CourseData[i];
+            courseData && _data.Type == courseData.Type && typeGameData.push(courseData);
+          }
+          this._barCtrl && this._barCtrl.initBarUI(typeGameData);
+        }
         var self = this;
         cc.loader.loadRes("Img/icon/" + _data.ItemIcon, cc.SpriteFrame, function(err, spriteFrame) {
           self.itemIcon.spriteFrame = spriteFrame;
@@ -135,9 +219,9 @@ window.__require = function e(t, n, r) {
         var optionIconData = _data.OptionIcon.split("|");
         console.log(optionIconData);
         2 == optionIconData.length && (this.layout.spacingX = 130);
-        var _loop = function _loop(i) {
-          var data = optionIconData[i];
-          var btn = _this.btnList[i];
+        var _loop = function _loop(_i) {
+          var data = optionIconData[_i];
+          var btn = _this.btnList[_i];
           if (btn) {
             var url = "Img/" + data;
             cc.log("URL : " + url);
@@ -152,7 +236,7 @@ window.__require = function e(t, n, r) {
             btn.node.parent.active = true;
           }
         };
-        for (var i = 0; i < optionIconData.length; i++) _loop(i);
+        for (var _i = 0; _i < optionIconData.length; _i++) _loop(_i);
         this.gotoAction();
       },
       gotoAction: function gotoAction() {
@@ -186,9 +270,11 @@ window.__require = function e(t, n, r) {
           this.onSetBtnStatus(false);
           this._curIndex++;
           this._parentCtrl && this._parentCtrl.showResult();
+          this._barCtrl && this._barCtrl.updatePointerCellData(courseData.PID, GameConfig.STATUS_TYPE.RIGHT);
         } else {
           cc.log("\u56de\u7b54\u9519\u8bef\uff01");
           Global.musicManager.playWrongEffect(courseData.Type);
+          this._barCtrl && this._barCtrl.updatePointerCellData(courseData.PID, GameConfig.STATUS_TYPE.WRONG);
         }
       },
       onReset: function onReset() {
@@ -212,6 +298,7 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     CourseData: "CourseData",
+    GameConfig: "GameConfig",
     UITools: "UITools"
   } ],
   CourseData: [ function(require, module, exports) {
@@ -226,7 +313,8 @@ window.__require = function e(t, n, r) {
       OptionIcon: "3_06|3_09|3_12",
       Answer: "0",
       ItemIcon: "0",
-      Sound: "4"
+      Sound: "4",
+      IsFirst: "1"
     };
     data["1"] = {
       PID: "1",
@@ -235,7 +323,8 @@ window.__require = function e(t, n, r) {
       OptionIcon: "4_05|4_08|4_14",
       Answer: "1",
       ItemIcon: "1",
-      Sound: "5"
+      Sound: "5",
+      IsFirst: "0"
     };
     data["2"] = {
       PID: "2",
@@ -244,7 +333,8 @@ window.__require = function e(t, n, r) {
       OptionIcon: "5_06|5_09|3_12",
       Answer: "0",
       ItemIcon: "2",
-      Sound: "6"
+      Sound: "6",
+      IsFirst: "0"
     };
     data["3"] = {
       PID: "3",
@@ -253,7 +343,8 @@ window.__require = function e(t, n, r) {
       OptionIcon: "7_06|7_12",
       Answer: "0",
       ItemIcon: "3",
-      Sound: "7"
+      Sound: "7",
+      IsFirst: "1"
     };
     data["4"] = {
       PID: "4",
@@ -262,7 +353,8 @@ window.__require = function e(t, n, r) {
       OptionIcon: "7_06|7_12",
       Answer: "1",
       ItemIcon: "4",
-      Sound: "8"
+      Sound: "8",
+      IsFirst: "0"
     };
     data["5"] = {
       PID: "5",
@@ -271,7 +363,8 @@ window.__require = function e(t, n, r) {
       OptionIcon: "7_06|7_12",
       Answer: "0",
       ItemIcon: "5",
-      Sound: "9"
+      Sound: "9",
+      IsFirst: "0"
     };
     data["6"] = {
       PID: "6",
@@ -280,7 +373,8 @@ window.__require = function e(t, n, r) {
       OptionIcon: "7_06|7_12",
       Answer: "0",
       ItemIcon: "6",
-      Sound: "10"
+      Sound: "10",
+      IsFirst: "0"
     };
     data["7"] = {
       PID: "7",
@@ -289,7 +383,8 @@ window.__require = function e(t, n, r) {
       OptionIcon: "7_06|7_12",
       Answer: "0",
       ItemIcon: "7",
-      Sound: "11"
+      Sound: "11",
+      IsFirst: "0"
     };
     module.exports = data;
     cc._RF.pop();
@@ -330,9 +425,15 @@ window.__require = function e(t, n, r) {
     var ROLE_NAME = cc.Enum({
       XIANGXIANG: "xiangxiang"
     });
+    var STATUS_TYPE = cc.Enum({
+      NORMAL: 0,
+      WRONG: 1,
+      RIGHT: 2
+    });
     module.exports = {
       GuideType: GuideType,
-      ROLE_NAME: ROLE_NAME
+      ROLE_NAME: ROLE_NAME,
+      STATUS_TYPE: STATUS_TYPE
     };
     cc._RF.pop();
   }, {} ],
@@ -346,6 +447,8 @@ window.__require = function e(t, n, r) {
       extends: cc.Component,
       properties: {},
       onLoad: function onLoad() {
+        Global.gameInfo = new Object();
+        Global.gameInfo.beanNum = 0;
         Global.musicManager = new MusicManager();
         Global.mainSceneCtrl = new MainScene();
       }
@@ -360,6 +463,7 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "5b57cRzx91BHrVzrUm7nlFn", "Global");
     "use strict";
     window.Global = {
+      gameInfo: null,
       guideCtrl: null,
       mainSceneCtrl: null,
       musicManager: null,
@@ -418,7 +522,7 @@ window.__require = function e(t, n, r) {
             this.sureBtn.node.active = true;
             res = "Sound/action";
           }
-          this._curIndex != GameConfig.GuideType.Type_action && this.gotoAction(res);
+          this.gotoAction(res);
         }
         this._curIndex++;
       },
@@ -584,6 +688,43 @@ window.__require = function e(t, n, r) {
     });
     cc._RF.pop();
   }, {} ],
+  PointerCell: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "1cae0YLplVIAZrsy5LHcdhW", "PointerCell");
+    "use strict";
+    var GameConfig = require("GameConfig");
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        itemIcon: cc.Sprite,
+        itemSF: [ cc.SpriteFrame ],
+        _curStatus: 0
+      },
+      onLoad: function onLoad() {
+        this.onReset();
+      },
+      onSetParent: function onSetParent(_parent) {
+        this._parentCtrl = _parent;
+      },
+      updatePointerCellData: function updatePointerCellData(_type) {
+        cc.log("updatePointerCellData : " + _type);
+        if (this._curStatus != GameConfig.STATUS_TYPE.NORMAL) return;
+        this.itemIcon.spriteFrame = this.itemSF[_type];
+        this._curStatus = _type;
+        if (_type == GameConfig.STATUS_TYPE.RIGHT && this._parentCtrl) {
+          Global.gameInfo.beanNum++;
+          this._parentCtrl.onSetBeanNum();
+        }
+      },
+      onReset: function onReset() {
+        this._curStatus = GameConfig.STATUS_TYPE.NORMAL;
+        this.itemIcon.spriteFrame = this.itemSF[GameConfig.STATUS_TYPE.NORMAL];
+      }
+    });
+    cc._RF.pop();
+  }, {
+    GameConfig: "GameConfig"
+  } ],
   ResultCtrl: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "c29c78+f/pATJT/WRUW1y8P", "ResultCtrl");
@@ -739,17 +880,5 @@ window.__require = function e(t, n, r) {
       runPromiseArray: runPromiseArray
     };
     cc._RF.pop();
-  }, {} ],
-  hornCtrl: [ function(require, module, exports) {
-    "use strict";
-    cc._RF.push(module, "cbd9ddLCPxCRbQpKbz5m0oR", "hornCtrl");
-    "use strict";
-    cc.Class({
-      extends: cc.Component,
-      properties: {},
-      onLoad: function onLoad() {},
-      onClickBtn: function onClickBtn() {}
-    });
-    cc._RF.pop();
   }, {} ]
-}, {}, [ "ActionData", "CourseData", "GameConfig", "GameManager", "Global", "MusicManager", "UITools", "hornCtrl", "CourseCtrl", "CourseOne", "CourseTwo", "GuideCtrl", "LoadingScene", "MainScene", "ResultCtrl", "RoleBaseJS", "TopNodeCtrl" ]);
+}, {}, [ "ActionData", "CourseData", "GameConfig", "GameManager", "Global", "MusicManager", "UITools", "BarCtrl", "PointerCell", "CourseCtrl", "CourseOne", "CourseTwo", "GuideCtrl", "LoadingScene", "MainScene", "ResultCtrl", "RoleBaseJS", "TopNodeCtrl" ]);
