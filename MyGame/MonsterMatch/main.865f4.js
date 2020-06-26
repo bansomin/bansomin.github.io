@@ -62,23 +62,21 @@ window.boot = function () {
     function setLoadingDisplay () {
         // Loading splash scene
         var splash = document.getElementById('splash');
-        // var progressBar = splash.querySelector('.progress-bar span');
+        var progressBar = splash.querySelector('.progress-bar span');
         cc.loader.onProgress = function (completedCount, totalCount, item) {
-            /*var percent = 100 * completedCount / totalCount;
+            var percent = 100 * completedCount / totalCount;
             if (progressBar) {
                 progressBar.style.width = percent.toFixed(2) + '%';
-            }*/
+            }
         };
         splash.style.display = 'block';
-        // progressBar.style.width = '0%';
-        cc.director.setClearColor(new cc.Color(0,0,0, 0));
+        progressBar.style.width = '0%';
 
         cc.director.once(cc.Director.EVENT_AFTER_SCENE_LAUNCH, function () {
             splash.style.display = 'none';
         });
     }
 
-    cc.macro.ENABLE_TRANSPARENT_CANVAS = true;
     var onStart = function () {
         cc.loader.downloader._subpackages = settings.subpackages;
 
@@ -189,7 +187,7 @@ window.boot = function () {
     cc.game.run(option, onStart);
 };
 
-// main.5b1da.js is qqplay and jsb platform entry file, so we must leave platform init code here
+// main.865f4.js is qqplay and jsb platform entry file, so we must leave platform init code here
 if (false) {
     BK.Script.loadlib('GameRes://src/settings.js');
     BK.Script.loadlib();

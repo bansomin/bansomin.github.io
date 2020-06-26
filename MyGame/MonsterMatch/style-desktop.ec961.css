@@ -62,11 +62,11 @@ p.footer {
   height: 100%;
 
   background: #171717 url(./splash.03ce1.png) no-repeat center;
-  background-size: 100%;
+  background-size: 40%;
 }
 
 .progress-bar {
-    background-color: #1a1a1a00;
+    background-color: #1a1a1a;
     position: absolute;
     left: 50%;
     top: 80%;
@@ -74,17 +74,17 @@ p.footer {
     padding: 5px;
     width: 350px;
     margin: 0 -175px;         
-    border-radius: 15px;
-    box-shadow: 0 1px 5px #ffffff inset, 0 1px 0 #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
 }
 
 .progress-bar span {
     display: block;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
     transition: width .4s ease-in-out; 
-    background-color: #f16624;
+    background-color: #34c2e3;    
 }
 
 .stripes span {
