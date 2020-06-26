@@ -175,7 +175,7 @@ window.__require = function e(t, n, r) {
         }
       });
       monsterMatch.emitter = require("emitter")();
-      monsterMatch.resourceManager = require("resourceManager")();
+      monsterMatch.resourceManager = require("ResourceManager")();
       monsterMatch.musicManager = require("MusicManager")();
       monsterMatch.panel = require("Panel")();
       require("PreLoadManager");
@@ -190,8 +190,8 @@ window.__require = function e(t, n, r) {
     MusicManager: "MusicManager",
     Panel: "Panel",
     PreLoadManager: "PreLoadManager",
-    emitter: "emitter",
-    resourceManager: void 0
+    ResourceManager: "ResourceManager",
+    emitter: "emitter"
   } ],
   MainScene: [ function(require, module, exports) {
     "use strict";
