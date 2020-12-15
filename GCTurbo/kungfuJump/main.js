@@ -62,15 +62,19 @@ window.boot = function () {
     function setLoadingDisplay () {
         // Loading splash scene
         var splash = document.getElementById('splash');
-        var progressBar = splash.querySelector('.progress-bar span');
+        var label = document.getElementById('label')
+        // var progressBar = splash.querySelector('.progress-bar span');
         cc.loader.onProgress = function (completedCount, totalCount, item) {
             var percent = 100 * completedCount / totalCount;
-            if (progressBar) {
-                progressBar.style.width = percent.toFixed(2) + '%';
-            }
+            // if (progressBar) {
+            //     progressBar.style.width = percent.toFixed(2) + '%';
+            // }
+            label.innerHTML = percent.toFixed(2) + '%'
         };
         splash.style.display = 'block';
-        progressBar.style.width = '0%';
+        // progressBar.style.width = '0%';
+
+        label.innerHTML = "0.00%"
 
         cc.director.once(cc.Director.EVENT_AFTER_SCENE_LAUNCH, function () {
             splash.style.display = 'none';
