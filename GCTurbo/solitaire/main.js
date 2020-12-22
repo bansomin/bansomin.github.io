@@ -71,7 +71,7 @@ window.boot = function () {
         bundle.loadScene(launchScene, null, onProgress,
             function (err, scene) {
                 if (!err) {
-                    // cc.director.runSceneImmediate(scene);
+                    cc.director.runSceneImmediate(scene);
                     if (cc.sys.isBrowser) {
                         // show canvas
                         var canvas = document.getElementById('GameCanvas');
