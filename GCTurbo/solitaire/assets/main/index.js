@@ -3639,7 +3639,7 @@ window.__require = function e(t, n, r) {
         Global.pokerManager.getPlayGroupPokers().forEach(function(group) {
           group.group.forEach(function(poker) {
             var flag = Global.pokerManager.isLocaltionPlayArea(group, poker);
-            console.log("flag:", flag);
+            console.log("flag:", flag, group, poker);
           });
         });
       },
@@ -4280,7 +4280,7 @@ window.__require = function e(t, n, r) {
         }
       },
       onLoad: function onLoad() {
-        "en" == Global.language ? this.playLab.string = '<color=#00ff00>"2048" is a number puzzle game where numbers are piled up and enlarged.\n</c><color=#0fffff>\u2460 Select your favorite mode from 3 modes: 4 squares, 6 squares, and 8 squares.\n\u2461 Move all the number cells up, down, left and right.\n\u2462 When two squares with the same number overlap, it will change to one larger square.\n\u2463 The game is over when all the squares cannot move.\n</c>' : this.playLab.string = "<color=#00ff00>\u300c2048\u300d\u306f\u3001\u6570\u5b57\u3092\u91cd\u306d\u3066\u5927\u304d\u304f\u3059\u308b\u6570\u5b57\u30d1\u30ba\u30eb\u30b2\u30fc\u30e0\u3067\u3059\u3002\n</c><color=#0fffff>\u2460 4\u30de\u30b9\u30016\u30de\u30b9\u30018\u30de\u30b9\u306e3\u3064\u306e\u30e2\u30fc\u30c9\u304b\u3089\u597d\u304d\u306a\u30e2\u30fc\u30c9\u3092\u9078\u629e\u3057\u307e\u3059\u3002\n\u2461 \u4e0a\u4e0b\u5de6\u53f3\u306b\u3059\u3079\u3066\u306e\u6570\u5b57\u30de\u30b9\u3092\u52d5\u304b\u3057\u307e\u3059\u3002\n\u2462 \u540c\u3058\u6570\u5b57\u306e\u30de\u30b9\u304c\uff12\u3064\u91cd\u306a\u308b\u3068\u3001\u3088\u308a\u5927\u304d\u306a\uff11\u3064\u306e\u6570\u5b57\u306e\u30de\u30b9\u306b\u5909\u308f\u308a\u307e\u3059\u3002\n\u2463 \u5168\u3066\u306e\u30de\u30b9\u304c\u79fb\u52d5\u3067\u304d\u306a\u304f\u306a\u308b\u3068\u30b2\u30fc\u30e0\u30aa\u30fc\u30d0\u30fc\u3067\u3059\u3002\n</c>";
+        this.playLab.string = "<color=#00ff00>How to Play ?</c > ";
       },
       onClickCloseBtn: function onClickCloseBtn(evn, type) {
         Global.musicManager.playClickEffect();
