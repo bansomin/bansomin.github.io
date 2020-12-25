@@ -564,6 +564,15 @@
             "cc.SpriteFrame",
             1
         ],
+        "c7gIOnoARKr4lMkyhEVCCq": [
+            "card/cards_edge",
+            "cc.Texture2D"
+        ],
+        "e5bG/gvzxMw6mrgkV9mhc9": [
+            "card/cards_edge",
+            "cc.SpriteFrame",
+            1
+        ],
         "2cp2bnZo1OlKeivrwGCntm": [
             "localized-image/en/1 Draw",
             "cc.Texture2D"
@@ -1011,6 +1020,7 @@
         "c4IacWOAdDc6H/zzDs5kTK",
         "c6VcXjsmpC06yb6jvPtHAV",
         "c6oWVWtuJMNIjiGhG41I5A",
+        "c7gIOnoARKr4lMkyhEVCCq",
         "cbR3EbcylIL5YW2uPpe0Og",
         "ccNOEuhatHFa5MZsyeL5Xh",
         "cdVS2i0v1D+rz94VJHd3gT",
@@ -1030,6 +1040,7 @@
         "ddycQNDaBEFqz6/TkMoNsw",
         "e4BwOrS5pP5oM2w4jLJ68F",
         "e4Lrw99N1JUbioKO2pUnEw",
+        "e5bG/gvzxMw6mrgkV9mhc9",
         "e6iV7Ggj1Ir7LiNsxlqZdo",
         "e8SvC1ZidGD7a2e0HtHFJ0",
         "e8Ueib+qJEhL6mXAHdnwbi",
@@ -1103,19 +1114,7 @@
             "b417GlUL5BCZXrzO+oCCgu",
             "dbFIKFMLpOELKvZvXdv02I"
         ],
-        "079face45": [
-            "4fynpXzjZEd6tvk3hiWOYv",
-            "5aODqgnn5PX5deMuX2+aq8",
-            "a2MjXRFdtLlYQ5ouAFv/+R"
-        ],
-        "084ecdcf4": [
-            "29FYIk+N1GYaeWH/q1NxQO",
-            "5cO7kybDxGj4ipyMYdRYZB",
-            "5f5dyqtRNNxaFmVzYns6FZ",
-            "e97GVMl6JHh5Ml5qEDdSGa",
-            "f0BIwQ8D5Ml7nTNQbh1YlS"
-        ],
-        "08547e248": [
+        "0532882eb": [
             "00AY5HD+VKkbVw4lTQwvSH",
             "07unl2ayBOH73cs7yQQPbR",
             "096PGjaQROoqWA46HhGeZY",
@@ -1202,6 +1201,7 @@
             "c3U3WmoYFLloFA1BNRe3N0",
             "c4IacWOAdDc6H/zzDs5kTK",
             "c6VcXjsmpC06yb6jvPtHAV",
+            "c7gIOnoARKr4lMkyhEVCCq",
             "cbR3EbcylIL5YW2uPpe0Og",
             "ccNOEuhatHFa5MZsyeL5Xh",
             "d241LAh/dMV6Rj3ocLxN0V",
@@ -1229,6 +1229,18 @@
             "f7Ca93ZhBF7KSMp47+MCYB",
             "f9yFH5qbdM1qbD+AapGbDz",
             "fb5wkXrxBFj5IA3Tu4kBos"
+        ],
+        "079face45": [
+            "4fynpXzjZEd6tvk3hiWOYv",
+            "5aODqgnn5PX5deMuX2+aq8",
+            "a2MjXRFdtLlYQ5ouAFv/+R"
+        ],
+        "084ecdcf4": [
+            "29FYIk+N1GYaeWH/q1NxQO",
+            "5cO7kybDxGj4ipyMYdRYZB",
+            "5f5dyqtRNNxaFmVzYns6FZ",
+            "e97GVMl6JHh5Ml5qEDdSGa",
+            "f0BIwQ8D5Ml7nTNQbh1YlS"
         ],
         "0c7ea8670": [
             "0cUrDzDpBPt7LfW+4QEJaQ",
