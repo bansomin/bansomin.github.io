@@ -91,14 +91,6 @@ p.footer {
   background-size: 45%;
 }
 
-#label{
-  position: absolute;
-  top:80%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .progress-bar {
     position: absolute;
     left: 27.5%;
