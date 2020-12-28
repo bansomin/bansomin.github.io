@@ -1940,30 +1940,40 @@ window.__require = function e(t, n, r) {
         this.scoreLab.string = Global.player.curScore;
       },
       onClickHomeBtn: function onClickHomeBtn(evn, type) {
-        Global.musicManager.playClickEffect();
-        this.node.destroy();
-        Global.gameCtrl.gotoHome();
-      },
-      onClickRePlayBtn: function onClickRePlayBtn(evn, type) {
         var _this = this;
         Global.musicManager.playClickEffect();
+        this.callAD("next", "game_restart", function() {
+          Global.gameCtrl.gotoHome();
+          _this.node.destroy();
+        });
+      },
+      onClickRePlayBtn: function onClickRePlayBtn(evn, type, _callback) {
+        var _this2 = this;
+        Global.musicManager.playClickEffect();
+        this.callAD("next", "game_restart", function() {
+          Global.gameCtrl.onClickPlayBtn();
+          _this2.node.destroy();
+        });
+      },
+      callAD: function callAD(_type, _name, _callback) {
+        var _this3 = this;
         this.unscheduleAllCallbacks();
-        this.scheduleOnce(this["continue"].bind(this), 1);
+        this.scheduleOnce(_callback.bind(this), 1);
         try {
           adBreak({
-            type: "next",
-            name: "game_restart",
+            type: _type,
+            name: _name,
             beforeBreak: function() {
-              _this.unscheduleAllCallbacks();
+              _this3.unscheduleAllCallbacks();
             }.bind(this),
             afterBreak: function() {
-              _this["continue"]();
+              _callback();
             }.bind(this)
           });
         } catch (e) {
           console.error(e);
           this.unscheduleAllCallbacks();
-          this["continue"]();
+          _callback();
         }
       },
       continue: function _continue(data) {
