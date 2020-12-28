@@ -1,1 +1,21 @@
-window._CCSettings={platform:"web-mobile",groupList:["default"],collisionMatrix:[[true]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/scenes/MainScene.fire",orientation:"",jsList:["assets/scripts/server/gc-turbo-analytics.js"]};
+window._CCSettings = {
+    platform: "web-mobile",
+    groupList: [
+        "default"
+    ],
+    collisionMatrix: [
+        [
+            true
+        ]
+    ],
+    hasResourcesBundle: true,
+    hasStartSceneBundle: false,
+    remoteBundles: [],
+    subpackages: [],
+    launchScene: "db://assets/scenes/MainScene.fire",
+    orientation: "",
+    debug: true,
+    jsList: [
+        "assets/scripts/server/gc-turbo-analytics.js"
+    ]
+};
