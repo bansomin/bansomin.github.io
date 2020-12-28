@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Solitaire</title>
+  <title>Cocos Creator | solitaire</title>
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
@@ -45,51 +45,63 @@
 <body>
   <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
   <div id="splash">
-    <!-- <div class="progress-bar stripes">
+    <div class="progress-bar stripes">
       <span style="width: 0%"></span>
-    </div> -->
-    <div id="label">
-      0.00%
     </div>
   </div>
+
+  <!--(1)、Create a simple HTML5 canvas game---BEGIN-->
+  <!-- <canvas id='gameContainer' height="100%" width="100%"></canvas> -->
+  <!--(1)、Create a simple HTML5 canvas game---END-->
+
+  <!--(2)、Import the Ad Placement API---BEGIN-->
+  <!-- data-adbreak-test="on" -->
+  <script async data-ad-client="pub-3901483273906883"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-adbreak-test="on">
+    </script>
+  <script>
+    window.adsbygoogle = window.adsbygoogle || [];
+    const adBreak = adConfig = function (o) { adsbygoogle.push(o); }
+  </script>
+  <!--(2)、Import the Ad Placement API---END-->
 
   <script src="src/settings.js" charset="utf-8"></script>
 
   <script src="main.js" charset="utf-8"></script>
 
   <script type="text/javascript">
-    (function () {
-      // open web debugger console
-      if (typeof VConsole !== 'undefined') {
-        window.vConsole = new VConsole();
-      }
-
-      var debug = window._CCSettings.debug;
-      var splash = document.getElementById('splash');
-      splash.style.display = 'block';
-
-      function loadScript(moduleName, cb) {
-        function scriptLoaded() {
-          document.body.removeChild(domScript);
-          domScript.removeEventListener('load', scriptLoaded, false);
-          cb && cb();
-        };
-        var domScript = document.createElement('script');
-        domScript.async = true;
-        domScript.src = moduleName;
-        domScript.addEventListener('load', scriptLoaded, false);
-        document.body.appendChild(domScript);
-      }
-
-      loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js', function () {
-        if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-          loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+      (function () {
+        // open web debugger console
+        if (typeof VConsole !== 'undefined') {
+          window.vConsole = new VConsole();
         }
-        else {
-          window.boot();
+
+        var debug = window._CCSettings.debug;
+        var splash = document.getElementById('splash');
+        splash.style.display = 'block';
+
+        function loadScript(moduleName, cb) {
+          function scriptLoaded() {
+            document.body.removeChild(domScript);
+            domScript.removeEventListener('load', scriptLoaded, false);
+            cb && cb();
+          };
+          var domScript = document.createElement('script');
+          domScript.async = true;
+          domScript.src = moduleName;
+          domScript.addEventListener('load', scriptLoaded, false);
+          document.body.appendChild(domScript);
         }
-      });
-    })();
+
+        loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js', function () {
+          if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+            loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+          }
+          else {
+            window.boot();
+          }
+        });
+      })();
   </script>
 </body>
 

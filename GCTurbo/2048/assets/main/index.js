@@ -707,18 +707,34 @@ window.__require = function e(t, n, r) {
           default: null,
           type: cc.Toggle
         },
+        maskNode: {
+          default: null,
+          type: cc.Node
+        },
         _isResult: false
       },
       onLoad: function onLoad() {
+        var _this = this;
         Global.emitter.on(gameCFG.clientEvent.EnterBackground, this.EnterBackground, this);
         Global.emitter.on(gameCFG.clientEvent.EnterForeground, this.EnterForeground, this);
         this.registerEvent();
         this.isBackGround = false;
+        try {
+          adBreak({
+            type: "next",
+            name: "popup_start"
+          });
+        } catch (e) {
+          console.error(e);
+        }
+        this.callAD("next", "res", function() {
+          _this.maskNode.active = false;
+        });
         Global.musicManager.playBGM(gameCFG.PERLOAD_NAME.bgMusic);
         var localStatus = cc.sys.localStorage.getItem(gameCFG.KEY.soundStatus);
         null == localStatus || void 0 == localStatus || 0 == localStatus ? this.soundToggle.uncheck() : 1 == localStatus && this.soundToggle.check();
         Global.gameCtrl = this;
-        this.homePageNode.active = true;
+        this.homePageNode.active = this.maskNode.active = true;
         this.score = 0;
       },
       EnterBackground: function EnterBackground() {
@@ -743,6 +759,27 @@ window.__require = function e(t, n, r) {
         this.node.off(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
         this.node.off(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+      },
+      callAD: function callAD(_type, _name, _callback) {
+        var _this2 = this;
+        this.unscheduleAllCallbacks();
+        this.scheduleOnce(_callback.bind(this), 1);
+        try {
+          adBreak({
+            type: _type,
+            name: _name,
+            beforeBreak: function() {
+              _this2.unscheduleAllCallbacks();
+            }.bind(this),
+            afterBreak: function() {
+              _callback();
+            }.bind(this)
+          });
+        } catch (e) {
+          console.error(e);
+          this.unscheduleAllCallbacks();
+          _callback();
+        }
       },
       playGame: function playGame() {
         this.row = CONST_GRIDLIST[Global.curLevel][0];
@@ -973,45 +1010,45 @@ window.__require = function e(t, n, r) {
         this.randomCell();
       },
       moveActionHorizonal: function moveActionHorizonal(row, col, k, hasNewValue) {
-        var _this = this;
+        var _this3 = this;
         var cell = this.boardCells[row][col];
         if (cell) {
           this.boardCells[row][col] = null;
           cell.node.stopAllActions();
           this.moving = true;
           if (hasNewValue) cell.node.runAction(cc.sequence(cc.moveTo(ACTION_TIME, this.getPanelPos(row, k)), cc.callFunc(function() {
-            _this.boardCells[row][k].num = _this.board[row][k];
-            _this.boardCells[row][k].bg.runAction(cc.sequence(cc.scaleTo(.4 * ACTION_TIME, 1.2), cc.delayTime(.2 * ACTION_TIME), cc.scaleTo(.3 * ACTION_TIME, 1)));
+            _this3.boardCells[row][k].num = _this3.board[row][k];
+            _this3.boardCells[row][k].bg.runAction(cc.sequence(cc.scaleTo(.4 * ACTION_TIME, 1.2), cc.delayTime(.2 * ACTION_TIME), cc.scaleTo(.3 * ACTION_TIME, 1)));
             cell.node.destroy();
-            _this.moving = false;
-            _this.getGameResult(_this.board[row][k]);
+            _this3.moving = false;
+            _this3.getGameResult(_this3.board[row][k]);
           }))); else {
             this.boardCells[row][k] = cell;
             cell.node.runAction(cc.sequence(cc.moveTo(ACTION_TIME, this.getPanelPos(row, k)), cc.callFunc(function() {
-              _this.moving = false;
-              _this.getGameResult(_this.board[row][k]);
+              _this3.moving = false;
+              _this3.getGameResult(_this3.board[row][k]);
             })));
           }
         }
       },
       moveActionVertical: function moveActionVertical(row, col, k, hasNewValue) {
-        var _this2 = this;
+        var _this4 = this;
         var cell = this.boardCells[row][col];
         if (cell) {
           this.boardCells[row][col] = null;
           cell.node.stopAllActions();
           this.moving = true;
           if (hasNewValue) cell.node.runAction(cc.sequence(cc.moveTo(ACTION_TIME, this.getPanelPos(k, col)), cc.callFunc(function() {
-            _this2.boardCells[k][col].num = _this2.board[k][col];
-            _this2.boardCells[k][col].bg.runAction(cc.sequence(cc.scaleTo(.4 * ACTION_TIME, 1.2), cc.delayTime(.2 * ACTION_TIME), cc.scaleTo(.3 * ACTION_TIME, 1)));
+            _this4.boardCells[k][col].num = _this4.board[k][col];
+            _this4.boardCells[k][col].bg.runAction(cc.sequence(cc.scaleTo(.4 * ACTION_TIME, 1.2), cc.delayTime(.2 * ACTION_TIME), cc.scaleTo(.3 * ACTION_TIME, 1)));
             cell.node.destroy();
-            _this2.moving = false;
-            _this2.getGameResult(_this2.board[k][col]);
+            _this4.moving = false;
+            _this4.getGameResult(_this4.board[k][col]);
           }))); else {
             this.boardCells[k][col] = cell;
             cell.node.runAction(cc.sequence(cc.moveTo(ACTION_TIME, this.getPanelPos(k, col)), cc.callFunc(function() {
-              _this2.moving = false;
-              _this2.getGameResult(_this2.board[k][col]);
+              _this4.moving = false;
+              _this4.getGameResult(_this4.board[k][col]);
             })));
           }
         }
