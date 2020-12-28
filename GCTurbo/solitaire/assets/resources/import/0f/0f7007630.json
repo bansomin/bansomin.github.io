@@ -1,1 +1,137 @@
-[1,["71mEEIpJtNNY1Y4askVX5R","40AzQKgEpN+JTFJTVSp35y","40S2rdCdtG8aG5N7g6ih7B"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"文本框","rect":[0,0,832,612],"offset":[0,0],"originalSize":[832,612],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"singleColor","rect":[0,0,2,2],"offset":[0,0],"originalSize":[2,2],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[1]],[[{"name":"弹窗","rect":[0,0,930,983],"offset":[0,0],"originalSize":[930,983],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[2]]]]
+[
+  1,
+  [
+    "71mEEIpJtNNY1Y4askVX5R",
+    "40AzQKgEpN+JTFJTVSp35y",
+    "40S2rdCdtG8aG5N7g6ih7B"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "文本框",
+          "rect": [
+            0,
+            0,
+            832,
+            612
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            832,
+            612
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "singleColor",
+          "rect": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            2,
+            2
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "弹窗",
+          "rect": [
+            0,
+            0,
+            930,
+            983
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            930,
+            983
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]
