@@ -3565,12 +3565,7 @@ window.__require = function e(t, n, r) {
     var CONST_MOVETIME = .1;
     var CONST_RECEIVE_GROUPS = 4;
     var CONST_PLAY_GROUPS = 7;
-    var CONST_ORDER = {
-      play: 3,
-      send: 2,
-      receive: 1,
-      default: 10
-    };
+    var CONST_ORDER = [ 1, 2, 3, 10 ];
     var moment = require("moment");
     cc.Class({
       extends: cc.Component,
@@ -3764,23 +3759,24 @@ window.__require = function e(t, n, r) {
       },
       adjustzIndex: function adjustzIndex(_poker) {
         console.log("adjustzIndex:", _poker);
-        this.sendRootNode.zIndex = 1;
-        this.playRootNode.zIndex = 2;
-        this.receiveRootNode.zIndex = 3;
+        this.sendRootNode.zIndex = CONST_ORDER[0];
+        this.playRootNode.zIndex = CONST_ORDER[1];
+        this.receiveRootNode.zIndex = CONST_ORDER[2];
         var location;
         _poker && (location = _poker.parent.location);
         switch (location) {
          case gameCFG.LOCALTION_TYPE.CLOSE:
          case gameCFG.LOCALTION_TYPE.OPEN:
-          this.sendRootNode.zIndex = 10;
+          this.sendRootNode.zIndex = CONST_ORDER[3];
           break;
 
          case gameCFG.LOCALTION_TYPE.RECEIVE:
-          this.receiveRootNode.zIndex = 10;
+          this.receiveRootNode.zIndex = CONST_ORDER[3];
+          if (_poker.parent) for (var i = 0; i < this.receiveGroupList.length; i++) this.receiveGroupList[i].zIndex = i == _poker.parent.index ? CONST_ORDER[3] : CONST_ORDER[0];
           break;
 
          case gameCFG.LOCALTION_TYPE.PLAY:
-          this.playRootNode.zIndex = 10;
+          this.playRootNode.zIndex = CONST_ORDER[3];
         }
       },
       onClickGoBackBtn: function onClickGoBackBtn(evn, type) {
