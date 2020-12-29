@@ -3661,6 +3661,10 @@ window.__require = function e(t, n, r) {
           default: null,
           type: cc.Node
         },
+        handAnim: {
+          default: null,
+          type: cc.Node
+        },
         _curTimer: 0
       },
       onLoad: function onLoad() {
@@ -3741,7 +3745,7 @@ window.__require = function e(t, n, r) {
         this.timerNum = this.scoreNum = this.stepNum = 0;
         this._curTimer = Date.now();
         this.pauseBtn.active = true;
-        this.resumeBtn.active = false;
+        this.resumeBtn.active = this.handAnim.active = false;
         this.playRootNode.removeAllChildren();
         this.closeSendNode.removeAllChildren();
         this.openSendNodeList.removeAllChildren();
@@ -3790,6 +3794,7 @@ window.__require = function e(t, n, r) {
           pokers.push(poker);
         }
         for (var i = 0; i < pokers.length; i++) this.poker_move_fromOpen_toClose(pokers[i], i);
+        this.checkHandStatus();
       },
       poker_move_fromOpen_toClose: function poker_move_fromOpen_toClose(_poker, _index) {
         this.stepNum++;
@@ -4279,6 +4284,10 @@ window.__require = function e(t, n, r) {
             Global.panel.closeLoading();
           });
         }
+      },
+      checkHandStatus: function checkHandStatus() {
+        var group = Global.pokerManager.getCloseGroup();
+        this.handAnim.active = 0 == group.length;
       },
       onClickSettingBtn: function onClickSettingBtn() {
         Global.musicManager.playClickEffect();
@@ -5203,6 +5212,7 @@ window.__require = function e(t, n, r) {
         Global.gameCtrl.adjustzIndex(this._poker);
         var endPos = event.getLocation();
         var dis = Math.pow(endPos.x - this._startPos.x, 2) + Math.pow(endPos.y - this._startPos.y, 2);
+        var isClose = Global.pokerManager.isLocationClose(this._poker);
         if (dis <= CONST_DIS) {
           console.log("\u70b9\u51fb");
           Global.gameCtrl.onTouchEnd_poker(event, this._poker);
@@ -5211,6 +5221,7 @@ window.__require = function e(t, n, r) {
           console.log("\u79fb\u52a8");
           Global.gameCtrl.onDragUIPoker(this);
         }
+        isClose && Global.gameCtrl.checkHandStatus();
       },
       init: function init(_poker) {
         this._poker = _poker;
