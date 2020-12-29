@@ -3763,6 +3763,7 @@ window.__require = function e(t, n, r) {
         this.init();
       },
       adjustzIndex: function adjustzIndex(_poker) {
+        console.log("adjustzIndex:", _poker);
         this.sendRootNode.zIndex = 1;
         this.playRootNode.zIndex = 2;
         this.receiveRootNode.zIndex = 3;
@@ -3771,8 +3772,15 @@ window.__require = function e(t, n, r) {
         switch (location) {
          case gameCFG.LOCALTION_TYPE.CLOSE:
          case gameCFG.LOCALTION_TYPE.OPEN:
+          this.sendRootNode.zIndex = 10;
+          break;
+
          case gameCFG.LOCALTION_TYPE.RECEIVE:
+          this.receiveRootNode.zIndex = 10;
+          break;
+
          case gameCFG.LOCALTION_TYPE.PLAY:
+          this.playRootNode.zIndex = 10;
         }
       },
       onClickGoBackBtn: function onClickGoBackBtn(evn, type) {
@@ -3961,7 +3969,9 @@ window.__require = function e(t, n, r) {
       },
       movePoker: function movePoker(_poker) {
         var pokerNode = _poker.uiPoker.node;
-        pokerNode.runAction(cc.moveTo(CONST_MOVETIME, this.getPokerTargetPosition(_poker)));
+        pokerNode.runAction(cc.sequence(cc.moveTo(CONST_MOVETIME, this.getPokerTargetPosition(_poker)), cc.callFunc(function() {
+          pokerNode.ctrl && (pokerNode.zIndex = pokerNode.ctrl.getOriginalzIndex());
+        })));
       },
       poker_drag_fromPlay_toReceive: function poker_drag_fromPlay_toReceive(_data) {
         this.poker_move_fromPlay_toReceive(_data);
@@ -3970,13 +3980,11 @@ window.__require = function e(t, n, r) {
         this.poker_move_fromOpen_toReceive(_data);
       },
       poker_drag_no_change: function poker_drag_no_change(_data) {
-        if (_data.poker.parent.getTopPoker() == _data.poker) this.movePoker(_data.poker); else {
-          var index = _data.poker.indexInGroup();
-          var len = _data.poker.parent.group.length;
-          for (var i = index; i < len; i++) {
-            var otherPoker = _data.poker.parent.getPoker(i);
-            this.movePoker(otherPoker);
-          }
+        var index = _data.poker.indexInGroup();
+        var len = _data.poker.parent.group.length;
+        for (var i = index; i < len; i++) {
+          var otherPoker = _data.poker.parent.getPoker(i);
+          this.movePoker(otherPoker);
         }
       },
       poker_drag_fromPlay_toPlay: function poker_drag_fromPlay_toPlay(_data) {
@@ -5149,8 +5157,18 @@ window.__require = function e(t, n, r) {
         if (cc.director.isPaused()) return;
         if (null != this._touchID) return;
         this._touchID = event.getID();
-        this._originalZindex = this.node.zIndex;
-        this._poker.parent && this._poker.parent.location == gameCFG.LOCALTION_TYPE.PLAY && this._poker.parent.getTopPoker() == this._poker && (this.node.zIndex = CONST_ZINDEX);
+        if (this._poker.parent && Global.pokerManager.isLocationPlay(this._poker)) {
+          var index = this._poker.indexInGroup();
+          var len = this._poker.parent.group.length;
+          for (var i = index; i < len; i++) {
+            var otherPoker = this._poker.parent.getPoker(i);
+            var otherNode = otherPoker.uiPoker.node;
+            if (otherNode && otherNode.ctrl) {
+              otherNode.ctrl.setOriginalzIndex(otherNode.zIndex);
+              otherNode.zIndex += CONST_ZINDEX;
+            }
+          }
+        }
         Global.gameCtrl.adjustzIndex(this._poker);
         this._startPos = event.getLocation();
         this._originalPos = this.node.getPosition();
@@ -5224,6 +5242,12 @@ window.__require = function e(t, n, r) {
         this.node.runAction(cc.sequence(cc.delayTime(2), cc.callFunc(function() {
           self.shink.active = false;
         })));
+      },
+      setOriginalzIndex: function setOriginalzIndex(_zIndex) {
+        this._originalZindex = _zIndex;
+      },
+      getOriginalzIndex: function getOriginalzIndex() {
+        return this._originalZindex;
       },
       getPokerTargetPosition: function getPokerTargetPosition() {
         return this._originalPos;
