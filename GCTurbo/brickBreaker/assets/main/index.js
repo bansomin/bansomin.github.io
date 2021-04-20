@@ -38,7 +38,7 @@ window.__require = function e(t, n, r) {
       init: function init(gameCtl) {
         this._isReady = true;
         this.gameCtl = gameCtl;
-        this.node.position = cc.v2(0, 50);
+        this.node.position = cc.v2(221, 50);
         this.rigidbody.linearVelocity = cc.v2(0, 0);
       },
       onLoad: function onLoad() {
@@ -60,7 +60,6 @@ window.__require = function e(t, n, r) {
       },
       onBeginContact: function onBeginContact(contact, self, other) {
         if (!this.gameCtl) return;
-        console.log("onBeginContact:" + other.tag);
         switch (other.tag) {
          case 1:
           this.gameCtl.onBallContactBrick(self.node, other.node);
@@ -84,7 +83,6 @@ window.__require = function e(t, n, r) {
       },
       onEndContact: function onEndContact(contact, self, other) {
         if (!this.gameCtl) return;
-        console.log("onEndContact:" + other.tag);
         switch (other.tag) {
          case 3:
           this.rigidbody.linearVelocity = this._ballDirectionn.mul(400);
@@ -551,18 +549,6 @@ window.__require = function e(t, n, r) {
         pausePanel: require("PausePanel"),
         levelConfig: [ cc.JsonAsset ],
         loading: cc.Node,
-        physicsNode: {
-          default: null,
-          type: cc.Node
-        },
-        bgNode: {
-          default: null,
-          type: cc.Node
-        },
-        canvas: {
-          default: null,
-          type: cc.Node
-        },
         isStopGame: false,
         brickHitSound: cc.AudioClip,
         brickBreakSound: cc.AudioClip,
@@ -572,18 +558,7 @@ window.__require = function e(t, n, r) {
         bgmAudioClip: cc.AudioClip
       },
       onLoad: function onLoad() {
-        var widget = this.physicsNode.getComponent(cc.Widget);
-        if (widget) {
-          if (cc.view.getVisibleSize().width >= 450) {
-            console.log("using bgNode");
-            widget.target = this.bgNode;
-          } else {
-            console.log("using canvas");
-            widget.target = this.canvas;
-          }
-          var left = cc.director.getWinSize();
-          console.log("left:", left);
-        }
+        utils.fit(this.node.getComponent(cc.Canvas));
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, function(event) {
           event.keyCode === cc.macro.KEY.back && cc.director.end();
         });
@@ -978,9 +953,8 @@ window.__require = function e(t, n, r) {
         speed: 500
       },
       onLoad: function onLoad() {
-        var width = cc.view.getVisibleSize().width > this.node.parent.width ? this.node.parent.width : cc.view.getVisibleSize().width;
-        this._minX = this.node.width / 2 - width / 2;
-        this._maxX = width / 2 - this.node.width / 2;
+        this._minX = this.node.width / 2;
+        this._maxX = 450 - this.node.width / 2;
         this.node.parent.on("touchmove", this.onTouchMove, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
@@ -1021,7 +995,7 @@ window.__require = function e(t, n, r) {
         this.node.x = Math.max(this._minX, Math.min(this._maxX, newPos));
       },
       init: function init(gameCtl) {
-        this.node.x = 0;
+        this.node.x = 221;
         this._gameCtrl = gameCtl;
       }
     });
