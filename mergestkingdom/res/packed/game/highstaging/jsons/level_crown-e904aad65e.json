@@ -1,0 +1,40 @@
+{
+"skeleton": { "hash": "+UuO5kokmN2J4rbnKYJNoUtrB70", "spine": "3.7.91", "width": 60, "height": 64, "images": "./images/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone2", "parent": "root", "color": "17ff00ff" }
+],
+"slots": [
+	{ "name": "level_crown2", "bone": "bone2", "attachment": "level_crown1" }
+],
+"skins": {
+	"default": {
+		"level_crown2": {
+			"level_crown1": { "width": 60, "height": 64 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"bone2": {
+				"scale": [
+					{ "time": 0, "x": 0.8, "y": 0.8 },
+					{ "time": 0.0667, "x": 1.1, "y": 1.1, "curve": "stepped" },
+					{ "time": 0.2333, "x": 1.1, "y": 1.1 },
+					{ "time": 0.3333, "x": 0.8, "y": 0.8 }
+				]
+			}
+		}
+	},
+	"idle": {
+		"bones": {
+			"bone2": {
+				"scale": [
+					{ "time": 0, "x": 0.8, "y": 0.8 }
+				]
+			}
+		}
+	}
+}
+}

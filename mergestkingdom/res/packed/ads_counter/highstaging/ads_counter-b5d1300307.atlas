@@ -1,0 +1,34 @@
+
+ads_counter-b5d1300307.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ads_counter-counter-underscore
+  rotate: false
+  xy: 1, 289
+  size: 143, 19
+  orig: 143, 19
+  offset: 0, 0
+  index: -1
+brain
+  rotate: false
+  xy: 1, 1
+  size: 369, 284
+  orig: 369, 284
+  offset: 0, 0
+  index: -1
+heart
+  rotate: false
+  xy: 374, 136
+  size: 105, 92
+  orig: 105, 92
+  offset: 0, 0
+  index: -1
+ogorod_shine
+  rotate: false
+  xy: 374, 1
+  size: 131, 131
+  orig: 131, 131
+  offset: 0, 0
+  index: -1

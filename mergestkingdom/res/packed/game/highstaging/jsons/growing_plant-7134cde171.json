@@ -1,0 +1,511 @@
+{
+"skeleton": { "hash": "YulZ3wNsYvTdhOUSLLYSYdvQ/2o", "spine": "3.7.94", "width": 204.74, "height": 157.45, "images": "./growing_plant/images/", "audio": "C:/Work/EverMerge/merge/growing" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "growing_light", "parent": "root", "x": 74.97, "y": -87.33 },
+	{ "name": "growing_light2", "parent": "root", "x": 74.97, "y": -87.33 },
+	{ "name": "growing_light3", "parent": "root", "x": 74.97, "y": -87.33 },
+	{ "name": "growing_light4", "parent": "root", "x": 74.97, "y": -87.33 },
+	{ "name": "growing_light5", "parent": "root", "x": 74.97, "y": -87.33 },
+	{ "name": "growing_light6", "parent": "root", "x": 74.97, "y": -87.33 },
+	{ "name": "growing_light_track", "parent": "growing_light", "length": 7.32, "rotation": -88.46, "x": -0.16, "y": -0.3 },
+	{ "name": "growing_light_track2", "parent": "growing_light_track", "length": 8.51, "rotation": 0.15, "x": 7.42, "y": -0.1 },
+	{ "name": "growing_light_track3", "parent": "growing_light_track2", "length": 8.84, "x": 8.51 },
+	{ "name": "growing_light_track4", "parent": "growing_light_track3", "length": 9.02, "rotation": -0.6, "x": 8.84 },
+	{ "name": "growing_light_track5", "parent": "growing_light_track4", "length": 10.76, "rotation": 0.35, "x": 9.02 },
+	{ "name": "growing_light_track6", "parent": "growing_light2", "length": 7.32, "rotation": 74.38, "x": -0.49, "y": 1.37 },
+	{ "name": "growing_light_track7", "parent": "growing_light_track6", "length": 8.51, "rotation": 0.15, "x": 7.42, "y": -0.1 },
+	{ "name": "growing_light_track8", "parent": "growing_light_track7", "length": 8.84, "x": 8.51 },
+	{ "name": "growing_light_track9", "parent": "growing_light_track8", "length": 9.02, "rotation": -0.6, "x": 8.84 },
+	{ "name": "growing_light_track10", "parent": "growing_light_track9", "length": 10.76, "rotation": 0.35, "x": 9.02 },
+	{ "name": "growing_light_track11", "parent": "growing_light3", "length": 7.32, "rotation": -90.15, "x": 0.29, "y": -1.53 },
+	{ "name": "growing_light_track12", "parent": "growing_light_track11", "length": 8.51, "rotation": 0.15, "x": 7.42, "y": -0.1 },
+	{ "name": "growing_light_track13", "parent": "growing_light_track12", "length": 8.84, "x": 8.51 },
+	{ "name": "growing_light_track14", "parent": "growing_light_track13", "length": 9.02, "rotation": -0.6, "x": 8.84 },
+	{ "name": "growing_light_track15", "parent": "growing_light_track14", "length": 10.76, "rotation": 0.35, "x": 9.02 },
+	{ "name": "growing_light_track16", "parent": "growing_light4", "length": 7.32, "rotation": -90.15, "x": 0.29, "y": -1.53 },
+	{ "name": "growing_light_track17", "parent": "growing_light_track16", "length": 8.51, "rotation": 0.15, "x": 7.42, "y": -0.1 },
+	{ "name": "growing_light_track18", "parent": "growing_light_track17", "length": 8.84, "x": 8.51 },
+	{ "name": "growing_light_track19", "parent": "growing_light_track18", "length": 9.02, "rotation": -0.6, "x": 8.84 },
+	{ "name": "growing_light_track20", "parent": "growing_light_track19", "length": 10.76, "rotation": 0.35, "x": 9.02 },
+	{ "name": "growing_light_track21", "parent": "growing_light5", "length": 7.32, "rotation": -90.15, "x": 0.29, "y": -1.53 },
+	{ "name": "growing_light_track22", "parent": "growing_light_track21", "length": 8.51, "rotation": 0.15, "x": 7.42, "y": -0.1 },
+	{ "name": "growing_light_track23", "parent": "growing_light_track22", "length": 8.84, "x": 8.51 },
+	{ "name": "growing_light_track24", "parent": "growing_light_track23", "length": 9.02, "rotation": -0.6, "x": 8.84 },
+	{ "name": "growing_light_track25", "parent": "growing_light_track24", "length": 10.76, "rotation": 0.35, "x": 9.02 },
+	{ "name": "growing_light_track26", "parent": "growing_light6", "length": 7.32, "rotation": -90.15, "x": 0.29, "y": -1.53 },
+	{ "name": "growing_light_track27", "parent": "growing_light_track26", "length": 8.51, "rotation": 0.15, "x": 7.42, "y": -0.1 },
+	{ "name": "growing_light_track28", "parent": "growing_light_track27", "length": 8.84, "x": 8.51 },
+	{ "name": "growing_light_track29", "parent": "growing_light_track28", "length": 9.02, "rotation": -0.6, "x": 8.84 },
+	{ "name": "growing_light_track30", "parent": "growing_light_track29", "length": 10.76, "rotation": 0.35, "x": 9.02 },
+	{ "name": "growing_light7", "parent": "root", "x": 104.15, "y": 61.06 },
+	{ "name": "growing_light8", "parent": "root", "x": 104.15, "y": 61.06 },
+	{ "name": "growing_light9", "parent": "root", "x": 104.15, "y": 61.06 },
+	{ "name": "growing_light10", "parent": "root", "x": 104.15, "y": 61.06 }
+],
+"slots": [
+	{ "name": "growing_light", "bone": "growing_light", "attachment": "growing_light" },
+	{ "name": "growing_light2", "bone": "growing_light2", "attachment": "growing_light" },
+	{ "name": "growing_light3", "bone": "growing_light3", "attachment": "growing_light" },
+	{ "name": "growing_light4", "bone": "growing_light4", "attachment": "growing_light" },
+	{ "name": "growing_light5", "bone": "growing_light5", "attachment": "growing_light" },
+	{ "name": "growing_light6", "bone": "growing_light6", "attachment": "growing_light" },
+	{ "name": "track1", "bone": "root", "attachment": "track1" },
+	{ "name": "track2", "bone": "root", "attachment": "track2" },
+	{ "name": "track3", "bone": "root", "attachment": "track3" },
+	{ "name": "track4", "bone": "root", "attachment": "track4" },
+	{ "name": "track5", "bone": "root", "attachment": "track5" },
+	{ "name": "track6", "bone": "root", "attachment": "track6" },
+	{ "name": "growing_light_track", "bone": "growing_light_track", "color": "ffffff60", "attachment": "growing_light_track" },
+	{ "name": "growing_light_track2", "bone": "growing_light_track6", "color": "ffffff60", "attachment": "growing_light_track" },
+	{ "name": "growing_light_track3", "bone": "growing_light_track11", "color": "ffffff60", "attachment": "growing_light_track" },
+	{ "name": "growing_light_track4", "bone": "growing_light_track16", "color": "ffffff60", "attachment": "growing_light_track" },
+	{ "name": "growing_light_track5", "bone": "growing_light_track21", "color": "ffffff60", "attachment": "growing_light_track" },
+	{ "name": "growing_light_track6", "bone": "growing_light_track26", "color": "ffffff60", "attachment": "growing_light_track" },
+	{ "name": "growing_light7", "bone": "growing_light7", "attachment": "growing_light" },
+	{ "name": "growing_light8", "bone": "growing_light8", "attachment": "growing_light" },
+	{ "name": "growing_light9", "bone": "growing_light9", "attachment": "growing_light" },
+	{ "name": "growing_light10", "bone": "growing_light10", "attachment": "growing_light" },
+	{ "name": "tracks", "bone": "root", "color": "ffffff30", "attachment": "tracks" }
+],
+"path": [
+	{
+		"name": "track1",
+		"order": 0,
+		"bones": [ "growing_light", "growing_light_track", "growing_light_track2", "growing_light_track3", "growing_light_track4", "growing_light_track5" ],
+		"target": "track1"
+	},
+	{
+		"name": "track2",
+		"order": 1,
+		"bones": [ "growing_light2", "growing_light_track6", "growing_light_track7", "growing_light_track8", "growing_light_track9", "growing_light_track10" ],
+		"target": "track2"
+	},
+	{
+		"name": "track3",
+		"order": 2,
+		"bones": [ "growing_light3", "growing_light_track11", "growing_light_track12", "growing_light_track13", "growing_light_track14", "growing_light_track15" ],
+		"target": "track3"
+	},
+	{
+		"name": "track4",
+		"order": 3,
+		"bones": [ "growing_light4", "growing_light_track16", "growing_light_track17", "growing_light_track18", "growing_light_track19", "growing_light_track20" ],
+		"target": "track4"
+	},
+	{
+		"name": "track5",
+		"order": 4,
+		"bones": [ "growing_light5", "growing_light_track21", "growing_light_track22", "growing_light_track23", "growing_light_track24", "growing_light_track25" ],
+		"target": "track5"
+	},
+	{
+		"name": "track6",
+		"order": 5,
+		"bones": [ "growing_light6", "growing_light_track26", "growing_light_track27", "growing_light_track28", "growing_light_track29", "growing_light_track30" ],
+		"target": "track6"
+	}
+],
+"skins": {
+	"default": {
+		"growing_light": {
+			"growing_light": { "x": -0.09, "y": 0.08, "scaleX": 0.767, "scaleY": 0.767, "width": 14, "height": 14 }
+		},
+		"growing_light10": {
+			"growing_light": { "x": -0.16, "y": -0.09, "rotation": -0.34, "width": 14, "height": 14 }
+		},
+		"growing_light2": {
+			"growing_light": { "x": -0.09, "y": 0.08, "scaleX": 0.771, "scaleY": 0.771, "width": 14, "height": 14 }
+		},
+		"growing_light3": {
+			"growing_light": { "x": -0.09, "y": 0.08, "scaleX": 0.729, "scaleY": 0.729, "width": 14, "height": 14 }
+		},
+		"growing_light4": {
+			"growing_light": { "x": -0.09, "y": 0.08, "scaleX": 0.8, "scaleY": 0.8, "width": 14, "height": 14 }
+		},
+		"growing_light5": {
+			"growing_light": { "x": -0.09, "y": 0.08, "scaleX": 0.787, "scaleY": 0.787, "width": 14, "height": 14 }
+		},
+		"growing_light6": {
+			"growing_light": { "x": -0.09, "y": 0.08, "scaleX": 0.79, "scaleY": 0.79, "width": 14, "height": 14 }
+		},
+		"growing_light7": {
+			"growing_light": { "x": -0.16, "y": -0.09, "rotation": -0.34, "width": 14, "height": 14 }
+		},
+		"growing_light8": {
+			"growing_light": { "x": -0.16, "y": -0.09, "rotation": -0.34, "width": 14, "height": 14 }
+		},
+		"growing_light9": {
+			"growing_light": { "x": -0.16, "y": -0.09, "rotation": -0.34, "width": 14, "height": 14 }
+		},
+		"growing_light_track": {
+			"growing_light_track": {
+				"type": "mesh",
+				"uvs": [ 1, 0.42715, 1, 0.81254, 1, 1, 0, 1, 0, 0.63351, 0, 0.24265, 0, 0, 1, 0 ],
+				"triangles": [ 4, 0, 1, 3, 4, 1, 3, 1, 2, 4, 5, 0, 5, 6, 7, 5, 7, 0 ],
+				"vertices": [ 4, 7, 17.16, 7.11, 0.16838, 8, 9.75, 7.19, 0.07651, 9, 1.24, 7.19, 0.69997, 10, -7.67, 7.11, 0.05514, 2, 10, 15.46, 7.35, 0.03739, 11, 6.48, 7.31, 0.96261, 1, 11, 17.72, 7.36, 1, 1, 11, 17.78, -6.64, 1, 3, 9, 13.63, -6.81, 0.06476, 10, 4.86, -6.76, 0.82638, 11, -4.21, -6.74, 0.10886, 3, 7, 6.12, -6.92, 0.06942, 8, -1.32, -6.81, 0.92939, 9, -9.83, -6.81, 0.00119, 2, 7, -8.44, -6.96, 0.97491, 8, -15.88, -6.81, 0.02509, 1, 7, -8.47, 7.04, 1 ],
+				"hull": 8,
+				"edges": [ 4, 6, 12, 14, 10, 12, 0, 14, 6, 8, 8, 10, 0, 2, 2, 4 ],
+				"width": 14,
+				"height": 60
+			}
+		},
+		"growing_light_track2": {
+			"growing_light_track": {
+				"type": "mesh",
+				"uvs": [ 1, 0.42715, 1, 0.81254, 1, 1, 0, 1, 0, 0.63351, 0, 0.24265, 0, 0, 1, 0 ],
+				"triangles": [ 4, 0, 1, 3, 4, 1, 3, 1, 2, 4, 5, 0, 5, 6, 7, 5, 7, 0 ],
+				"vertices": [ 4, 12, 17.16, 7.11, 0.16838, 13, 9.75, 7.19, 0.07651, 14, 1.24, 7.19, 0.69997, 15, -7.67, 7.11, 0.05514, 2, 15, 15.46, 7.35, 0.03739, 16, 6.48, 7.31, 0.96261, 1, 16, 17.72, 7.36, 1, 1, 16, 17.78, -6.64, 1, 3, 14, 13.63, -6.81, 0.06476, 15, 4.86, -6.76, 0.82638, 16, -4.21, -6.74, 0.10886, 3, 12, 6.12, -6.92, 0.06942, 13, -1.32, -6.81, 0.92939, 14, -9.83, -6.81, 0.00119, 2, 12, -8.44, -6.96, 0.97491, 13, -15.88, -6.81, 0.02509, 1, 12, -8.47, 7.04, 1 ],
+				"hull": 8,
+				"edges": [ 4, 6, 12, 14, 10, 12, 0, 14, 6, 8, 8, 10, 0, 2, 2, 4 ],
+				"width": 14,
+				"height": 60
+			}
+		},
+		"growing_light_track3": {
+			"growing_light_track": {
+				"type": "mesh",
+				"uvs": [ 1, 0.42715, 1, 0.81254, 1, 1, 0, 1, 0, 0.63351, 0, 0.24265, 0, 0, 1, 0 ],
+				"triangles": [ 4, 0, 1, 3, 4, 1, 3, 1, 2, 4, 5, 0, 5, 6, 7, 5, 7, 0 ],
+				"vertices": [ 4, 17, 17.16, 7.11, 0.16838, 18, 9.75, 7.19, 0.07651, 19, 1.24, 7.19, 0.69997, 20, -7.67, 7.11, 0.05514, 2, 20, 15.46, 7.35, 0.03739, 21, 6.48, 7.31, 0.96261, 1, 21, 17.72, 7.36, 1, 1, 21, 17.78, -6.64, 1, 3, 19, 13.63, -6.81, 0.06476, 20, 4.86, -6.76, 0.82638, 21, -4.21, -6.74, 0.10886, 3, 17, 6.12, -6.92, 0.06942, 18, -1.32, -6.81, 0.92939, 19, -9.83, -6.81, 0.00119, 2, 17, -8.44, -6.96, 0.97491, 18, -15.88, -6.81, 0.02509, 1, 17, -8.47, 7.04, 1 ],
+				"hull": 8,
+				"edges": [ 4, 6, 12, 14, 10, 12, 0, 14, 6, 8, 8, 10, 0, 2, 2, 4 ],
+				"width": 14,
+				"height": 60
+			}
+		},
+		"growing_light_track4": {
+			"growing_light_track": {
+				"type": "mesh",
+				"uvs": [ 1, 0.42715, 1, 0.81254, 1, 1, 0, 1, 0, 0.63351, 0, 0.24265, 0, 0, 1, 0 ],
+				"triangles": [ 4, 0, 1, 3, 4, 1, 3, 1, 2, 4, 5, 0, 5, 6, 7, 5, 7, 0 ],
+				"vertices": [ 4, 22, 17.16, 7.11, 0.16838, 23, 9.75, 7.19, 0.07651, 24, 1.24, 7.19, 0.69997, 25, -7.67, 7.11, 0.05514, 2, 25, 15.46, 7.35, 0.03739, 26, 6.48, 7.31, 0.96261, 1, 26, 17.72, 7.36, 1, 1, 26, 17.78, -6.64, 1, 3, 24, 13.63, -6.81, 0.06476, 25, 4.86, -6.76, 0.82638, 26, -4.21, -6.74, 0.10886, 3, 22, 6.12, -6.92, 0.06942, 23, -1.32, -6.81, 0.92939, 24, -9.83, -6.81, 0.00119, 2, 22, -8.44, -6.96, 0.97491, 23, -15.88, -6.81, 0.02509, 1, 22, -8.47, 7.04, 1 ],
+				"hull": 8,
+				"edges": [ 4, 6, 12, 14, 10, 12, 0, 14, 6, 8, 8, 10, 0, 2, 2, 4 ],
+				"width": 14,
+				"height": 60
+			}
+		},
+		"growing_light_track5": {
+			"growing_light_track": {
+				"type": "mesh",
+				"uvs": [ 1, 0.42715, 1, 0.81254, 1, 1, 0, 1, 0, 0.63351, 0, 0.24265, 0, 0, 1, 0 ],
+				"triangles": [ 4, 0, 1, 3, 4, 1, 3, 1, 2, 4, 5, 0, 5, 6, 7, 5, 7, 0 ],
+				"vertices": [ 4, 27, 17.16, 7.11, 0.16838, 28, 9.75, 7.19, 0.07651, 29, 1.24, 7.19, 0.69997, 30, -7.67, 7.11, 0.05514, 2, 30, 15.46, 7.35, 0.03739, 31, 6.48, 7.31, 0.96261, 1, 31, 17.72, 7.36, 1, 1, 31, 17.78, -6.64, 1, 3, 29, 13.63, -6.81, 0.06476, 30, 4.86, -6.76, 0.82638, 31, -4.21, -6.74, 0.10886, 3, 27, 6.12, -6.92, 0.06942, 28, -1.32, -6.81, 0.92939, 29, -9.83, -6.81, 0.00119, 2, 27, -8.44, -6.96, 0.97491, 28, -15.88, -6.81, 0.02509, 1, 27, -8.47, 7.04, 1 ],
+				"hull": 8,
+				"edges": [ 4, 6, 12, 14, 10, 12, 0, 14, 6, 8, 8, 10, 0, 2, 2, 4 ],
+				"width": 14,
+				"height": 60
+			}
+		},
+		"growing_light_track6": {
+			"growing_light_track": {
+				"type": "mesh",
+				"uvs": [ 1, 0.42715, 1, 0.81254, 1, 1, 0, 1, 0, 0.63351, 0, 0.24265, 0, 0, 1, 0 ],
+				"triangles": [ 4, 0, 1, 3, 4, 1, 3, 1, 2, 4, 5, 0, 5, 6, 7, 5, 7, 0 ],
+				"vertices": [ 4, 32, 17.16, 7.11, 0.16838, 33, 9.75, 7.19, 0.07651, 34, 1.24, 7.19, 0.69997, 35, -7.67, 7.11, 0.05514, 2, 35, 15.46, 7.35, 0.03739, 36, 6.48, 7.31, 0.96261, 1, 36, 17.72, 7.36, 1, 1, 36, 17.78, -6.64, 1, 3, 34, 13.63, -6.81, 0.06476, 35, 4.86, -6.76, 0.82638, 36, -4.21, -6.74, 0.10886, 3, 32, 6.12, -6.92, 0.06942, 33, -1.32, -6.81, 0.92939, 34, -9.83, -6.81, 0.00119, 2, 32, -8.44, -6.96, 0.97491, 33, -15.88, -6.81, 0.02509, 1, 32, -8.47, 7.04, 1 ],
+				"hull": 8,
+				"edges": [ 4, 6, 12, 14, 10, 12, 0, 14, 6, 8, 8, 10, 0, 2, 2, 4 ],
+				"width": 14,
+				"height": 60
+			}
+		},
+		"track1": {
+			"track1": {
+				"type": "path",
+				"closed": true,
+				"lengths": [ 88.7, 179.98, 275.15, 317.97 ],
+				"vertexCount": 12,
+				"vertices": [ 50.39, -12.69, -4.63, -11.07, -53.69, -9.62, -75.94, 7.94, -74.38, 28.92, -73.23, 44.32, -49.34, 69.95, 0.64, 68.6, 57.83, 67.06, 76.96, 36.81, 74.11, 22.41, 70.98, 6.61 ]
+			}
+		},
+		"track2": {
+			"track2": {
+				"type": "path",
+				"closed": true,
+				"lengths": [ 70.84, 142.85, 217.83, 253.07 ],
+				"vertexCount": 12,
+				"vertices": [ 38.63, 49.95, -3.2, 38.37, -37.05, 29, -67.46, 34.16, -69.14, 46.71, -70.83, 59.28, -54.16, 77.92, -15.78, 88.77, 32.36, 102.37, 52.94, 90.76, 53.64, 81.37, 54.46, 70.52 ]
+			}
+		},
+		"track3": {
+			"track3": {
+				"type": "path",
+				"closed": true,
+				"lengths": [ 69.46, 157.66, 243.71, 309.74 ],
+				"vertexCount": 12,
+				"vertices": [ 63.74, 7.73, 70.48, 27.79, 77.09, 47.5, 55.51, 67.48, 32.87, 80.87, 6.37, 96.54, -36.05, 107.93, -49.24, 87.77, -62.43, 67.6, -20.19, 34.59, 0.03, 24.46, 20.24, 14.33 ]
+			}
+		},
+		"track4": {
+			"track4": {
+				"type": "path",
+				"closed": true,
+				"lengths": [ 55.01, 132.14, 208.39, 272.65 ],
+				"vertexCount": 12,
+				"vertices": [ 6.26, 3.35, -29.01, 15.65, -56.53, 25.25, -66.24, 42.37, -60.19, 53.97, -48.06, 77.19, -11.49, 76.32, 10.26, 71.11, 32.01, 65.9, 71.04, 48.95, 63.81, 25.89, 57.19, 4.76 ]
+			}
+		},
+		"track5": {
+			"track5": {
+				"type": "path",
+				"closed": true,
+				"lengths": [ 61.07, 120.24, 173.11, 207.9 ],
+				"vertexCount": 12,
+				"vertices": [ -28.88, 96.37, -30.44, 76.34, -33.02, 43.1, -9.31, 31.26, 1.22, 31.12, 21.99, 30.86, 34.01, 56.15, 35.25, 73.73, 36.68, 93.98, 22.76, 108.02, 3.36, 108.24, -12.43, 108.41 ]
+			}
+		},
+		"track6": {
+			"track6": {
+				"type": "path",
+				"closed": true,
+				"lengths": [ 58.1, 117.42, 177.78, 214.28 ],
+				"vertexCount": 12,
+				"vertices": [ -26.23, 84.58, -1.16, 84.44, 14, 84.34, 54.25, 82.09, 54.53, 73.25, 54.77, 65.67, 27.25, 58.82, -1.16, 59.21, -40.28, 59.74, -58.62, 65.76, -59, 70.87, -59.58, 78.83 ]
+			}
+		},
+		"tracks": {
+			"tracks": { "x": -1.19, "y": 45.84, "scaleX": 1.022, "scaleY": 1.022, "width": 181, "height": 154 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"growing_light7": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.2333, "color": "ffffffff" },
+					{ "time": 1.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3667, "color": "ffffff00" },
+					{ "time": 1.6, "color": "ffffffff" },
+					{ "time": 2.7, "color": "ffffff00" }
+				]
+			},
+			"growing_light8": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.6333, "color": "ffffffff" },
+					{ "time": 1.7667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8, "color": "ffffff00" },
+					{ "time": 2.0333, "color": "ffffffff" },
+					{ "time": 3.1333, "color": "ffffff00" }
+				]
+			},
+			"growing_light9": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 1.3333, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1.3667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.5, "color": "ffffffff" },
+					{ "time": 2.7, "color": "ffffff00" }
+				]
+			},
+			"growing_light10": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffa3" },
+					{ "time": 1, "color": "ffffff00" },
+					{ "time": 1.5, "color": "ffffffa3" },
+					{ "time": 2, "color": "ffffff00" },
+					{ "time": 2.5, "color": "ffffffa3" },
+					{ "time": 3, "color": "ffffff00" }
+				]
+			},
+			"tracks": {
+				"color": [
+					{ "time": 0, "color": "ffffff31" },
+					{ "time": 1.6667, "color": "ffffffa6" },
+					{ "time": 3.3333, "color": "ffffff31" }
+				]
+			}
+		},
+		"bones": {
+			"growing_light_track": {
+				"rotate": [
+					{ "time": 0, "angle": -100.78 }
+				],
+				"scale": [
+					{ "time": 0, "x": 2.376, "y": 1 },
+					{ "time": 0.5, "x": 1.398, "y": 1 },
+					{ "time": 1.3333, "x": 2.376, "y": 1 },
+					{ "time": 2.3333, "x": 1.398, "y": 1 },
+					{ "time": 3.3333, "x": 2.376, "y": 1 }
+				]
+			},
+			"growing_light6": {
+				"scale": [
+					{ "time": 1.5, "x": 1, "y": 1 },
+					{ "time": 2.4, "x": 0.616, "y": 0.616 },
+					{ "time": 3.3333, "x": 1, "y": 1 }
+				]
+			},
+			"growing_light": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 1.1667, "x": 0.567, "y": 0.567 },
+					{ "time": 2.8333, "x": 1, "y": 1 }
+				]
+			},
+			"growing_light4": {
+				"scale": [
+					{ "time": 1, "x": 1, "y": 1 },
+					{ "time": 2, "x": 0.657, "y": 0.657 },
+					{ "time": 2.8333, "x": 1, "y": 1 }
+				]
+			},
+			"growing_light5": {
+				"scale": [
+					{ "time": 0, "x": 0.615, "y": 0.615 },
+					{ "time": 1.5, "x": 1, "y": 1 },
+					{ "time": 3.1667, "x": 0.615, "y": 0.615 }
+				]
+			},
+			"growing_light2": {
+				"scale": [
+					{ "time": 0, "x": 0.634, "y": 0.634 },
+					{ "time": 1.8333, "x": 1, "y": 1 },
+					{ "time": 3.3333, "x": 0.634, "y": 0.634 }
+				]
+			},
+			"growing_light7": {
+				"translate": [
+					{ "time": 0, "x": -130.85, "y": 11.07 },
+					{ "time": 1.3333, "x": -130.85, "y": 69.55 },
+					{ "time": 1.3667, "x": -136.88, "y": -58.16 },
+					{ "time": 2.7, "x": -136.88, "y": 7.69 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.635, "y": 0.635 }
+				]
+			},
+			"growing_light8": {
+				"translate": [
+					{ "time": 0.4333, "x": -104.31, "y": -49.36 },
+					{ "time": 1.7667, "x": -104.31, "y": 59.08 },
+					{ "time": 1.8, "x": -49.56, "y": -43.93 },
+					{ "time": 3.1333, "x": -49.56, "y": 10.2 }
+				],
+				"scale": [
+					{ "time": 0.4333, "x": 0.635, "y": 0.635 }
+				]
+			},
+			"growing_light9": {
+				"translate": [
+					{ "time": 0, "x": -77.52, "y": -17.28 },
+					{ "time": 1.3333, "x": -77.52, "y": 66.93, "curve": "stepped" },
+					{ "time": 1.3667, "x": -94.04, "y": -70.4 },
+					{ "time": 2.7, "x": -94.04, "y": 52.36 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.635, "y": 0.635 }
+				]
+			},
+			"growing_light10": {
+				"translate": [
+					{ "time": 0, "x": -42.66, "y": 18.02, "curve": "stepped" },
+					{ "time": 1, "x": -42.66, "y": 18.02, "curve": "stepped" },
+					{ "time": 1.0333, "x": -136.52, "y": 12.59, "curve": "stepped" },
+					{ "time": 2, "x": -136.52, "y": 12.59 },
+					{ "time": 2.0333, "x": -124.07, "y": 42.72 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.501, "y": 0.501 },
+					{ "time": 0.5, "x": 0.85, "y": 0.85 },
+					{ "time": 1, "x": 0.501, "y": 0.501 },
+					{ "time": 1.5, "x": 0.85, "y": 0.85 },
+					{ "time": 2, "x": 0.501, "y": 0.501 },
+					{ "time": 2.5, "x": 0.85, "y": 0.85 },
+					{ "time": 3, "x": 0.501, "y": 0.501 }
+				]
+			}
+		},
+		"paths": {
+			"track1": {
+				"position": [
+					{ "time": 0, "position": -0.17 },
+					{ "time": 3.3333, "position": -1.17 }
+				]
+			},
+			"track2": {
+				"position": [
+					{ "time": 0, "position": -0.44 },
+					{ "time": 3.3333, "position": -1.44 }
+				]
+			},
+			"track3": {
+				"position": [
+					{ "time": 0, "position": -0.27 },
+					{ "time": 3.3333, "position": -1.27 }
+				]
+			},
+			"track4": {
+				"position": [
+					{ "time": 0 },
+					{ "time": 3.3333, "position": -1 }
+				]
+			},
+			"track5": {
+				"position": [
+					{ "time": 0, "position": -0.2792 },
+					{ "time": 3.3333, "position": -1.28 }
+				]
+			},
+			"track6": {
+				"position": [
+					{ "time": 0, "position": -0.3 },
+					{ "time": 3.3333, "position": -1.3 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"growing_light_track": {
+					"growing_light_track": [
+						{
+							"time": 0,
+							"vertices": [ -2.19337, 2.79546, -2.46499, 2.10396, -2.62853, 1.49631, -2.72116, 1.01862, -1.53212, 3.29825, -1.68425, 3.08032, 0, 0, 0, 0, 0.07214, -0.44063, 0.10422, -0.42493, 0.12416, -0.40955, 0.27483, -0.85239, 0.36407, -0.75768, 0.42834, -0.66296, 1.5262, -1.21544, 1.63525, -0.7469, 1.11398, 2.48608 ]
+						},
+						{
+							"time": 0.5,
+							"vertices": [ -1.16655, 0.54787, -1.07904, 0.44693, -0.90534, 1.51968, -1.22896, 2.39884, -12.84445, 7.07372, -13.10654, 0.55902, 2.64216, -3.36868, -0.09307, -5.4761, -0.37408, -0.9963, -0.11505, -1.26195, 0.08527, -1.31953, 0.27483, -0.85239, 0.36407, -0.75768, 0.42834, -0.66296, 2.17839, 1.42181, 1.78442, 2.08498, 4.64782, 5.36517 ],
+							"curve": "stepped"
+						},
+						{
+							"time": 2.8333,
+							"vertices": [ -1.16655, 0.54787, -1.07904, 0.44693, -0.90534, 1.51968, -1.22896, 2.39884, -12.84445, 7.07372, -13.10654, 0.55902, 2.64216, -3.36868, -0.09307, -5.4761, -0.37408, -0.9963, -0.11505, -1.26195, 0.08527, -1.31953, 0.27483, -0.85239, 0.36407, -0.75768, 0.42834, -0.66296, 2.17839, 1.42181, 1.78442, 2.08498, 4.64782, 5.36517 ]
+						},
+						{
+							"time": 3.3333,
+							"vertices": [ -2.19337, 2.79546, -2.46499, 2.10396, -2.62853, 1.49631, -2.72116, 1.01862, -1.53212, 3.29825, -1.68425, 3.08032, 0, 0, 0, 0, 0.07214, -0.44063, 0.10422, -0.42493, 0.12416, -0.40955, 0.27483, -0.85239, 0.36407, -0.75768, 0.42834, -0.66296, 1.5262, -1.21544, 1.63525, -0.7469, 1.11398, 2.48608 ]
+						}
+					]
+				},
+				"growing_light_track6": {
+					"growing_light_track": [
+						{
+							"time": 0,
+							"vertices": [ -1.54836, 2.04065, -2.15709, 1.3817, -0.68243, -2.46901, 0.04463, -2.56121, -8.54845, 2.9676, -8.80193, 2.10029, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -7.67924, -0.89694, -6.89929, -3.48953, 5.37262, -5.56019, -5.1227, -0.02875, -4.79879, -1.7932, 13.12533, 4.17296 ]
+						},
+						{
+							"time": 0.1667,
+							"vertices": [ 0.65993, 3.39192, -0.05674, 2.89555, 1.08582, -0.57773, -2.0815, -1.08374, -29.87848, 4.28944, -26.87875, -9.30356, -14.87558, -1.21872, -3.72134, 9.59992, -0.39838, -2.22467, 2.25935, -0.07323, 1.87456, 1.26191, -3.62589, 2.18625, -3.08941, -0.10942, 8.45744, -1.50707, -5.1227, -0.02875, -4.79879, -1.7932, 6.3734, 0.83743 ]
+						},
+						{ "time": 0.5 }
+					]
+				}
+			}
+		}
+	}
+}
+}
