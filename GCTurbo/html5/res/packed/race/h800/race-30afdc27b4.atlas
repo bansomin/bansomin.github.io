@@ -1,0 +1,104 @@
+
+race-30afdc27b4.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+level_crown1
+  rotate: false
+  xy: 1, 215
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
+race-level-level_round
+  rotate: false
+  xy: 111, 38
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1
+race-level-progressbar
+  rotate: false
+  xy: 1, 113
+  size: 53, 41
+  orig: 53, 41
+  offset: 0, 0
+  index: -1
+race-menubar-bar_bg
+  rotate: false
+  xy: 1, 1
+  size: 106, 55
+  orig: 106, 55
+  offset: 0, 0
+  index: -1
+race-menubar-bar_timer
+  rotate: false
+  xy: 111, 1
+  size: 73, 33
+  orig: 73, 33
+  offset: 0, 0
+  index: -1
+race-menubar-coin
+  rotate: false
+  xy: 1, 158
+  size: 50, 53
+  orig: 50, 53
+  offset: 0, 0
+  index: -1
+race-menubar-energy
+  rotate: false
+  xy: 58, 108
+  size: 39, 57
+  orig: 39, 57
+  offset: 0, 0
+  index: -1
+race-menubar-plus
+  rotate: false
+  xy: 41, 215
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+race-menubar-plus_on
+  rotate: false
+  xy: 55, 169
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+race-menubar-ruby
+  rotate: false
+  xy: 1, 60
+  size: 53, 49
+  orig: 53, 49
+  offset: 0, 0
+  index: -1
+race-menubar-timer
+  rotate: false
+  xy: 76, 204
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+race-menubar-wand
+  rotate: false
+  xy: 188, 1
+  size: 56, 62
+  orig: 56, 62
+  offset: 0, 0
+  index: -1
+race-menubar-worker
+  rotate: false
+  xy: 187, 67
+  size: 55, 57
+  orig: 55, 57
+  offset: 0, 0
+  index: -1
+race-orderswindow-attention_exclamation_large
+  rotate: false
+  xy: 58, 60
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1

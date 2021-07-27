@@ -1,0 +1,84 @@
+{
+"skeleton": { "hash": "rZlOMJCzyiIMaC55A9TuvI0X/vw", "spine": "3.7.91", "width": 0, "height": 0, "images": "D:/Anna/work/for spine/merge/icones/pack1/images", "audio": "C:/Users/Админ/Desktop/sale_icon" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "icon", "parent": "root", "x": -5.5, "y": 27 },
+	{ "name": "pack_down", "parent": "icon", "x": 5.74, "y": -38.2, "color": "ff0000ff" },
+	{
+		"name": "pack_up",
+		"parent": "pack_down",
+		"x": 50.87,
+		"y": 68.32,
+		"scaleX": 0.853,
+		"scaleY": 0.699,
+		"shearX": -3.98,
+		"shearY": -1.01,
+		"color": "ff0000ff"
+	},
+	{ "name": "lights", "parent": "icon", "color": "ffda00ff" },
+	{ "name": "starter_ruby_icon", "parent": "icon", "x": 31.1, "y": -1.04 },
+	{ "name": "starter_energy__icon", "parent": "icon", "x": -35.6, "y": 8.98 }
+],
+"slots": [
+	{ "name": "pack_up", "bone": "pack_up", "attachment": "pack_up" },
+	{ "name": "pack_down", "bone": "pack_down", "attachment": "pack_down" },
+	{ "name": "starter_energy__icon", "bone": "starter_energy__icon", "attachment": "starter_energy__icon" },
+	{ "name": "starter_ruby_icon", "bone": "starter_ruby_icon", "attachment": "starter_ruby_icon" }
+],
+"skins": {
+	"default": {
+		"pack_down": {
+			"pack_down": { "x": -8.71, "y": -9.76, "width": 170, "height": 142 }
+		},
+		"pack_up": {
+			"pack_up": { "x": -9.54, "y": -5.93, "scaleX": 1.005, "scaleY": 1.043, "width": 152, "height": 122 }
+		},
+		"starter_energy__icon": {
+			"starter_energy__icon": { "x": -10.42, "y": -3.78, "width": 59, "height": 69 }
+		},
+		"starter_ruby_icon": {
+			"starter_ruby_icon": { "x": 0.08, "y": -5, "width": 66, "height": 58 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"starter_energy__icon": {
+				"scale": [
+					{
+						"time": 0.9667,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{
+						"time": 1.3,
+						"x": 1.13,
+						"y": 1.13,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{ "time": 1.6, "x": 1, "y": 1 }
+				]
+			},
+			"starter_ruby_icon": {
+				"scale": [
+					{
+						"time": 1.3333,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{
+						"time": 1.6667,
+						"x": 1.098,
+						"y": 1.098,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{ "time": 1.9667, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

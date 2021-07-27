@@ -1,0 +1,40 @@
+{
+"skeleton": { "hash": "OyOPml+2aBQAvFHczANplJs2Fjk", "spine": "3.7.91", "width": 285.3, "height": 255, "images": "C:\\Users\\Админ\\Desktop\\wagon\\stage10\\images", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "wagon10_1", "bone": "root", "attachment": "wagon10_1" },
+	{ "name": "wagon10_2", "bone": "root", "attachment": "wagon10_2" }
+],
+"skins": {
+	"default": {
+		"wagon10_1": {
+			"wagon10_1": { "x": -0.3, "width": 285, "height": 255 }
+		},
+		"wagon10_2": {
+			"wagon10_2": { "width": 285, "height": 255 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"wagon10_2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"animation2": {
+		"slots": {
+			"wagon10_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	}
+}
+}

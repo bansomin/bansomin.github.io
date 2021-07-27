@@ -1,0 +1,62 @@
+
+dialogues_minimal-d656e37a9e.png
+size: 512,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dialogues_minimal-dialogues-bg
+  rotate: false
+  xy: 414, 450
+  size: 89, 89
+  orig: 89, 89
+  offset: 0, 0
+  index: -1
+minimal_bear
+  rotate: false
+  xy: 245, 1
+  size: 233, 202
+  orig: 233, 202
+  offset: 0, 0
+  index: -1
+minimal_dwarf
+  rotate: false
+  xy: 1, 1
+  size: 240, 210
+  orig: 240, 210
+  offset: 0, 0
+  index: -1
+minimal_elf
+  rotate: false
+  xy: 1, 421
+  size: 204, 234
+  orig: 204, 234
+  offset: 0, 0
+  index: -1
+minimal_king
+  rotate: false
+  xy: 209, 450
+  size: 201, 202
+  orig: 201, 202
+  offset: 0, 0
+  index: -1
+minimal_rider
+  rotate: false
+  xy: 1, 215
+  size: 208, 202
+  orig: 208, 202
+  offset: 0, 0
+  index: -1
+troll_minimal
+  rotate: false
+  xy: 209, 656
+  size: 192, 209
+  orig: 192, 209
+  offset: 0, 0
+  index: -1
+warlock_minimal
+  rotate: false
+  xy: 245, 207
+  size: 214, 239
+  orig: 214, 239
+  offset: 0, 0
+  index: -1

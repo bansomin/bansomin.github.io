@@ -1,0 +1,19 @@
+{
+"skeleton": { "hash": "RksYGk0V3+DDwgKKDp/OIAgDSuA", "spine": "3.7.91", "width": 284, "height": 252, "images": "./images/", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "stone11", "bone": "root", "attachment": "stone11" }
+],
+"skins": {
+	"default": {
+		"stone11": {
+			"stone11": { "width": 284, "height": 252 }
+		}
+	}
+},
+"animations": {
+	"animation": {}
+}
+}

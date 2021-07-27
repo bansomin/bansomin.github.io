@@ -1,0 +1,19 @@
+{
+"skeleton": { "hash": "Wr5qE1oBu8dSC5WMUT9n+AEB5hY", "spine": "3.7.91", "width": 285, "height": 255, "images": "C:\\Users\\Админ\\Desktop\\wagon\\stage11\\images", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "wagon11", "bone": "root", "attachment": "wagon11" }
+],
+"skins": {
+	"default": {
+		"wagon11": {
+			"wagon11": { "width": 285, "height": 255 }
+		}
+	}
+},
+"animations": {
+	"animation": {}
+}
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#E57704">
+    <title>MergeCraft</title>
+    <link rel="icon" type="image/GIF" href="favicon.ico"/>
+    <style type="text/css">html{-ms-touch-action:none;width:100%;height:100%;border:0;}body{width:100%;height:100%;border:0;cursor:default;color:#888;background-color:#fff;text-align:center;font-family:Helvetica,Verdana,Arial,sans-serif;display:flex;flex-direction:column}body,canvas,div{margin:0;padding:0;outline:0;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-tap-highlight-color:transparent}</style></head>
+</head>
+
+<body>
+
+<script src="https://login-sdk.xsolla.com/latest/"></script>
+
+<div id="loginForm" style="display: none; height:100%; width:100%; background: white; border: none;"></div>
+<iframe id="xsollaCanvas" style="display: none; height:100%; width:100%; background: white; border: none;"></iframe>
+
+<script defer>
+    var config = {
+        projectId: "9e48b5cc-b306-11eb-bc85-42010aa80004",
+        gameLink: "https://mergecraft.cleverappssg.com/publish/html5/?Xsolla=true&token="
+    };
+
+    var loadSearch = function (name) {
+        if (window.location.search.indexOf(name)!==-1) {
+            return window.location.search.substring(1).split('&').filter(function(param) {
+                return param.startsWith(name);
+            })[0].split('=')[1];
+        }
+    };
+
+    var loadCookie = function (name) {
+        if (document.cookie.length > 0) {
+            var startIndex = document.cookie.indexOf(name + '=');
+            if (startIndex != -1) {
+                startIndex = startIndex + name.length + 1;
+                var endIndex = document.cookie.indexOf(";", startIndex);
+                if (endIndex == -1) {
+                    endIndex = document.cookie.length;
+                }
+                return unescape(document.cookie.substring(startIndex, endIndex));
+            }
+        }
+    };
+
+    var xsollaToken = loadSearch('token'), channel = loadSearch('channel');
+    if (channel) {
+        document.cookie="channel=" + channel + "; path=/";
+    } else {
+        channel = loadCookie('channel');
+    }
+
+    if (xsollaToken) {
+        document.cookie = "token=" + xsollaToken + "; path=/";
+        history.pushState("", document.title, window.location.pathname);
+    } else {
+        xsollaToken = loadCookie('token');
+    }
+
+    if (xsollaToken) {
+        var src = config.gameLink + xsollaToken;
+        if (channel) {
+            src += '&channel=' + channel;
+        }
+
+        document.getElementById('xsollaCanvas').src = src;
+        document.getElementById('xsollaCanvas').style.display = 'block';
+    } else {
+        new XsollaLogin.Widget({projectId: config.projectId, preferredLocale: 'en_US'}).mount("loginForm");
+        document.getElementById('loginForm').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

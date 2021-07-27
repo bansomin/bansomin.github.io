@@ -1,0 +1,377 @@
+
+minesweeper-43908de263.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg_blik
+  rotate: false
+  xy: 805, 298
+  size: 23, 39
+  orig: 23, 39
+  offset: 0, 0
+  index: -1
+bg_lantern
+  rotate: false
+  xy: 98, 1
+  size: 219, 386
+  orig: 219, 386
+  offset: 0, 0
+  index: -1
+bg_light
+  rotate: false
+  xy: 918, 514
+  size: 90, 91
+  orig: 90, 91
+  offset: 0, 0
+  index: -1
+black
+  rotate: false
+  xy: 379, 655
+  size: 51, 40
+  orig: 51, 40
+  offset: 0, 0
+  index: -1
+board
+  rotate: false
+  xy: 321, 1
+  size: 286, 284
+  orig: 286, 284
+  offset: 0, 0
+  index: -1
+bonus_cup
+  rotate: false
+  xy: 845, 1
+  size: 171, 152
+  orig: 171, 152
+  offset: 0, 0
+  index: -1
+dust
+  rotate: false
+  xy: 98, 391
+  size: 147, 129
+  orig: 147, 129
+  offset: 0, 0
+  index: -1
+mine_thermometer
+  rotate: false
+  xy: 65, 1
+  size: 29, 520
+  orig: 29, 520
+  offset: 0, 0
+  index: -1
+mine_wooden_plate
+  rotate: false
+  xy: 1, 1
+  size: 60, 590
+  orig: 60, 590
+  offset: 0, 0
+  index: -1
+minesweep_prt
+  rotate: false
+  xy: 805, 390
+  size: 14, 16
+  orig: 14, 16
+  offset: 0, 0
+  index: -1
+minesweep_stone1
+  rotate: false
+  xy: 805, 222
+  size: 35, 30
+  orig: 35, 30
+  offset: 0, 0
+  index: -1
+minesweep_stone2
+  rotate: false
+  xy: 805, 256
+  size: 34, 38
+  orig: 34, 38
+  offset: 0, 0
+  index: -1
+minesweeper_bomb
+  rotate: false
+  xy: 321, 289
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: -1
+minesweeper_cell_a
+  rotate: false
+  xy: 282, 659
+  size: 91, 91
+  orig: 91, 91
+  offset: 0, 0
+  index: -1
+minesweeper_cell_b
+  rotate: false
+  xy: 823, 514
+  size: 91, 91
+  orig: 91, 91
+  offset: 0, 0
+  index: -1
+minesweeper_expl_a
+  rotate: false
+  xy: 186, 524
+  size: 71, 67
+  orig: 71, 67
+  offset: 0, 0
+  index: -1
+minesweeper_expl_b
+  rotate: false
+  xy: 521, 376
+  size: 79, 78
+  orig: 79, 78
+  offset: 0, 0
+  index: -1
+minesweeper_expl_c
+  rotate: false
+  xy: 509, 602
+  size: 93, 85
+  orig: 93, 85
+  offset: 0, 0
+  index: -1
+pickaxe
+  rotate: false
+  xy: 640, 458
+  size: 114, 179
+  orig: 114, 179
+  offset: 0, 0
+  index: -1
+piggy_arrow
+  rotate: false
+  xy: 514, 516
+  size: 98, 82
+  orig: 98, 82
+  offset: 0, 0
+  index: -1
+piggy_full_blik
+  rotate: false
+  xy: 805, 298
+  size: 23, 39
+  orig: 23, 39
+  offset: 0, 0
+  index: -1
+red_honey
+  rotate: false
+  xy: 697, 641
+  size: 40, 44
+  orig: 40, 44
+  offset: 0, 0
+  index: -1
+red_light
+  rotate: false
+  xy: 261, 391
+  size: 180, 181
+  orig: 180, 181
+  offset: 0, 0
+  index: -1
+redtour_arbuzz
+  rotate: false
+  xy: 758, 603
+  size: 43, 42
+  orig: 43, 42
+  offset: 0, 0
+  index: -1
+redtour_arm1
+  rotate: false
+  xy: 282, 576
+  size: 93, 79
+  orig: 93, 79
+  offset: 0, 0
+  index: -1
+redtour_arm2
+  rotate: false
+  xy: 845, 157
+  size: 168, 174
+  orig: 168, 174
+  offset: 0, 0
+  index: -1
+redtour_body
+  rotate: false
+  xy: 1, 595
+  size: 277, 420
+  orig: 277, 420
+  offset: 0, 0
+  index: -1
+redtour_brow1
+  rotate: false
+  xy: 445, 386
+  size: 72, 26
+  orig: 72, 26
+  offset: 0, 0
+  index: -1
+redtour_brow2
+  rotate: false
+  xy: 758, 458
+  size: 65, 28
+  orig: 65, 28
+  offset: 0, 0
+  index: -1
+redtour_cristall
+  rotate: false
+  xy: 445, 416
+  size: 68, 85
+  orig: 68, 85
+  offset: 0, 0
+  index: -1
+redtour_eye1
+  rotate: false
+  xy: 606, 641
+  size: 87, 88
+  orig: 87, 88
+  offset: 0, 0
+  index: -1
+redtour_eye2
+  rotate: false
+  xy: 422, 289
+  size: 95, 93
+  orig: 95, 93
+  offset: 0, 0
+  index: -1
+redtour_hand1_1
+  rotate: false
+  xy: 430, 726
+  size: 39, 69
+  orig: 39, 69
+  offset: 0, 0
+  index: -1
+redtour_hand1_2
+  rotate: false
+  xy: 445, 561
+  size: 60, 71
+  orig: 60, 71
+  offset: 0, 0
+  index: -1
+redtour_hand2_1
+  rotate: false
+  xy: 434, 664
+  size: 50, 58
+  orig: 50, 58
+  offset: 0, 0
+  index: -1
+redtour_hand2_2
+  rotate: false
+  xy: 379, 576
+  size: 55, 75
+  orig: 55, 75
+  offset: 0, 0
+  index: -1
+redtour_light
+  rotate: false
+  xy: 611, 1
+  size: 230, 217
+  orig: 230, 217
+  offset: 0, 0
+  index: -1
+redtour_mouth1
+  rotate: false
+  xy: 438, 636
+  size: 52, 24
+  orig: 52, 24
+  offset: 0, 0
+  index: -1
+redtour_mouth2
+  rotate: false
+  xy: 488, 691
+  size: 40, 37
+  orig: 40, 37
+  offset: 0, 0
+  index: -1
+redtour_mouth3
+  rotate: false
+  xy: 758, 526
+  size: 48, 20
+  orig: 48, 20
+  offset: 0, 0
+  index: -1
+redtour_pickaxe
+  rotate: false
+  xy: 832, 335
+  size: 181, 175
+  orig: 181, 175
+  offset: 0, 0
+  index: -1
+redtour_pupel1
+  rotate: false
+  xy: 805, 341
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+redtour_pupel2
+  rotate: false
+  xy: 805, 368
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+redtour_redred
+  rotate: false
+  xy: 611, 222
+  size: 190, 232
+  orig: 190, 232
+  offset: 0, 0
+  index: -1
+redtour_veko
+  rotate: false
+  xy: 65, 525
+  size: 117, 60
+  orig: 117, 60
+  offset: 0, 0
+  index: -1
+rock_1
+  rotate: false
+  xy: 532, 691
+  size: 37, 56
+  orig: 37, 56
+  offset: 0, 0
+  index: -1
+rock_2
+  rotate: false
+  xy: 377, 699
+  size: 49, 30
+  orig: 49, 30
+  offset: 0, 0
+  index: -1
+rock_3
+  rotate: false
+  xy: 758, 550
+  size: 47, 49
+  orig: 47, 49
+  offset: 0, 0
+  index: -1
+rock_4
+  rotate: false
+  xy: 758, 490
+  size: 61, 32
+  orig: 61, 32
+  offset: 0, 0
+  index: -1
+rock_5
+  rotate: false
+  xy: 445, 505
+  size: 65, 52
+  orig: 65, 52
+  offset: 0, 0
+  index: -1
+score_rays
+  rotate: false
+  xy: 521, 289
+  size: 83, 83
+  orig: 83, 83
+  offset: 0, 0
+  index: -1
+tour_red_purple
+  rotate: false
+  xy: 377, 733
+  size: 39, 45
+  orig: 39, 45
+  offset: 0, 0
+  index: -1
+zp
+  rotate: false
+  xy: 517, 458
+  size: 119, 54
+  orig: 119, 54
+  offset: 0, 0
+  index: -1

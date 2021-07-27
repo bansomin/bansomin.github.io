@@ -1,0 +1,107 @@
+{
+"skeleton": { "hash": "+rpYLaZzXLkXQfIOVEWZT1ubpeQ", "spine": "3.5.35", "width": 57.62, "height": 58.25, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "halloween_decore_fire", "parent": "root", "x": 0.46, "y": -9 },
+	{
+		"name": "halloween_fire2",
+		"parent": "halloween_decore_fire",
+		"length": 41.4,
+		"rotation": 91.01,
+		"x": -1.02,
+		"y": -4.8,
+		"scaleY": 0.993
+	},
+	{ "name": "halloween_fire_light2", "parent": "halloween_fire2", "rotation": -91.01, "x": 12.83, "y": -1.03 }
+],
+"slots": [
+	{ "name": "halloween_fire2", "bone": "halloween_fire2", "attachment": "halloween_fire" },
+	{ "name": "halloween_fire_light2", "bone": "halloween_fire_light2", "attachment": "halloween_fire_light" }
+],
+"skins": {
+	"default": {
+		"halloween_fire2": {
+			"halloween_fire": { "x": 19.84, "y": 0.09, "rotation": -90, "width": 21, "height": 45 }
+		},
+		"halloween_fire_light2": {
+			"halloween_fire_light": { "x": -0.58, "y": 0.42, "width": 58, "height": 58 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"halloween_fire2": {
+				"color": [
+					{ "time": 0, "color": "ffb717ee" },
+					{ "time": 0.7333, "color": "ffffffff" },
+					{ "time": 1.4667, "color": "ffb717ee" },
+					{ "time": 2.1333, "color": "ffffffff" },
+					{ "time": 2.6667, "color": "ffb717ee" }
+				]
+			},
+			"halloween_fire_light2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 1.2333, "color": "ff87625b" },
+					{ "time": 2.6667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"halloween_fire2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.7333, "angle": 0, "curve": "stepped" },
+					{ "time": 1.4667, "angle": 0, "curve": "stepped" },
+					{ "time": 2.1333, "angle": 0, "curve": "stepped" },
+					{ "time": 2.6667, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.7333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.4667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.1333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.6667, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.896, "y": 0.995 },
+					{ "time": 0.7333, "x": 1.052, "y": 0.789 },
+					{ "time": 1.4667, "x": 0.896, "y": 0.995 },
+					{ "time": 2.1333, "x": 1.052, "y": 0.789 },
+					{ "time": 2.6667, "x": 0.896, "y": 0.995 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.7333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.4667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.1333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.6667, "x": 0, "y": 0 }
+				]
+			},
+			"halloween_fire_light2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.2333, "angle": 0, "curve": "stepped" },
+					{ "time": 2.6667, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.2333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.6667, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 3.07, "y": 3.07 },
+					{ "time": 1.2333, "x": 1.013, "y": 1.013 },
+					{ "time": 2.6667, "x": 3.07, "y": 3.07 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.2333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.6667, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
