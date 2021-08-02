@@ -1,0 +1,83 @@
+
+subscription_window-7607e50faf.png
+size: 512,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+subscription_particle_1
+  rotate: false
+  xy: 483, 44
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+subscription_particle_2
+  rotate: false
+  xy: 276, 457
+  size: 88, 32
+  orig: 88, 32
+  offset: 0, 0
+  index: -1
+subscription_ribbon
+  rotate: false
+  xy: 1, 457
+  size: 171, 111
+  orig: 171, 111
+  offset: 0, 0
+  index: -1
+subscription_upper_light
+  rotate: false
+  xy: 1, 284
+  size: 363, 169
+  orig: 363, 169
+  offset: 0, 0
+  index: -1
+subscription_upper_light2
+  rotate: false
+  xy: 483, 1
+  size: 20, 39
+  orig: 20, 39
+  offset: 0, 0
+  index: -1
+subscription_window-subscription-starter_letter
+  rotate: false
+  xy: 176, 457
+  size: 96, 34
+  orig: 96, 34
+  offset: 0, 0
+  index: -1
+subscription_window-subscription-subscription_chest
+  rotate: false
+  xy: 368, 284
+  size: 127, 121
+  orig: 127, 121
+  offset: 0, 0
+  index: -1
+subscription_window-subscription-subscription_dworf
+  rotate: false
+  xy: 1, 1
+  size: 428, 279
+  orig: 428, 279
+  offset: 0, 0
+  index: -1
+subscription_window-subscription-subscription_energy
+  rotate: false
+  xy: 368, 409
+  size: 121, 115
+  orig: 121, 115
+  offset: 0, 0
+  index: -1
+subscription_window-subscription-timer_icon
+  rotate: false
+  xy: 433, 1
+  size: 46, 47
+  orig: 46, 47
+  offset: 0, 0
+  index: -1
+subscription_window-subscription-timer_substrate
+  rotate: false
+  xy: 433, 52
+  size: 42, 26
+  orig: 42, 26
+  offset: 0, 0
+  index: -1

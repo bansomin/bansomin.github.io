@@ -1,1190 +1,0 @@
-{
-	"en": "English",
-	"de": "Deutsche",
-	"es": "Español",
-	"pt": "Português",
-	"fr": "Français",
-	"it": "Italiano",
-	"nl": "Nederlands",
-	"ar": "عربى",
-	"ja": "日本語",
-	"ko": "한국어",
-	"ru": "Русский",
-	"tr": "Türkçe",
-	"zh": "中文",
-	"pl": "Polskie",
-	"lv": "Latvijas",
-	"RestartWindow.AnErrorOccured": "الرجاء التحقق من اتصال الانترنت الخاص بك",
-	"RestartWindow.Title": "خطأ",
-	"dayTimeString": "%{day}d.%{hr}h.",
-	"PeriodicBonusView.ReadyText": "فتح صندوق هدية للحصول على مكافأة!",
-	"PeriodicBonusView.ClosedText": "مربع الحالي مغلق!",
-	"Hint": "ملحوظة",
-	"Loading": "جار التحميل...",
-	"HelpButton.text1": "يطلب",
-	"HelpButton.text2": "للمساعدة",
-	"Shop": "متجر العملات",
-	"Shop.Coins.Title": "متجر العملات",
-	"Language": "لغة",
-	"Number_of_letters": "عدد الحروف",
-	"EpisodeView.ComingSoonDescription": "نحن نستعد مستويات جديدة بالنسبة لك",
-	"EpisodeView.ComingSoonTitle": "قريبا",
-	"SettingsWindow.title": "إعدادات",
-	"SettingsWindow.Effects": "تأثيرات",
-	"SettingsWindow.InviteFriends": "ادعو أصدقاء",
-	"SettingsWindow.InviteFriends.title": "هيّا بنا لنلعب",
-	"SettingsWindow.InviteFriends.message": "انضم إلى هذه اللعبة الرائعة!",
-	"SignIn": "تسجيل الدخول",
-	"RateWindow.title": "قيم اللعبة!",
-	"RateWindow.text": "!يرجى أخذ لحظة لتقييم ذلك , %{gameTitle} إذا كنت تحب اللعب",
-	"helpInviteFriends.title": "هيّا بنا لنلعب",
-	"helpInviteFriends.message": "شكرا للمساعدة! الانضمام إلى هذه اللعبة ، دعونا نلعب معا!",
-	"bagInviteFriends.title": "قم بتشغيل اللعبة",
-	"bagInviteFriends.message": "أنا في انتظاركم في هذه اللعبة المثيرة!",
-	"BagWindow.title": "الذهب مجانا!",
-	"ClaimPrize.Button.text": "المطالبة بالجائزة",
-	"BagWindow.prizeText1": "أكمل كل المهام",
-	"BagWindow.prizeText2": "{amount}% مجانا",
-	"BagWindow.Tasks.Complete5Levels": "استكمال 5 مستويات",
-	"BagWindow.Tasks.Share": "أخبر الأصدقاء",
-	"BagWindow.Tasks.Community": "\"أعجبني\" صفحة اللعبة",
-	"BagWindow.Tasks.Friend": "أدع صديقا",
-	"helpFromFriends.showhint.Button.text": "دعا",
-	"helpFromFriends.addlivesvideo.title": "الطاقة مجانا",
-	"helpFromFriends.addlivesvideo.text": "Get +%{amount} energy charge for watching ads!",
-	"helpFromFriends.addlivesvideo.Button.text": "راقب",
-	"helpFromFriends.addcoinsvideo.title": "الذهب مجانا",
-	"helpFromFriends.addcoinsvideo.text": "!عملات معدنية لمشاهدة الإعلانات +%{amount} كسب",
-	"helpFromFriends.addcoinsvideo.Button.text": "راقب",
-	"Friends.You": "أنت",
-	"Forces.Bag": "يمكنك الحصول على الذهب مجانا ، ومعرفة كيف!",
-	"PeriodicBonusWindow.title": "صندوق الهدايا!",
-	"PeriodicBonusInviteView.ExtraBonus": "مكافأة إضافية",
-	"PeriodicBonusInviteView.ForFriends": "لعدد من الأصدقاء يلعبون",
-	"Difficulty": "صعوبة",
-	"LevelFriendBeatWindow.title": "أحسنت!",
-	"LevelFriendBeatWindow.Request.title": "لا تتوقف!",
-	"LevelFriendBeatWindow.Request.message": "!حاول أن تفهمني . %{gameTitle} في %{levelNo} لقد هزمتك على المستوى",
-	"FriendRequestsWindow.title": "رسائل",
-	"sentHelpRequest.title": "لقد ارسلت لك المساعدة",
-	"sentHelpRequest.message": "لنلعب معا!",
-	"thanksForHelpRequest.title": "شكرا لمساعدتك",
-	"thanksForHelpRequest.message": "شكرا جزيلا!",
-	"sendLiveRequest.title": "قبض على الحياة!",
-	"sendLiveRequest.message": "لقد أرسلت لك حياة ، وأطلق اللعبة للحصول عليها!",
-	"askLiveRequest.title": "ارسل لي حياة ، من فضلك!",
-	"askLiveRequest.message": "أحتاج لمساعدتكم ، ابدأوا اللعبة وأرسلوا لي حياة!",
-	"thanksForLiveRequest.title": "شكرا على الحياة!",
-	"thanksForLiveRequest.message": "شكرا لك على إرسال لي الحياة ، لقد ساعدتني كثيرا!",
-	"sendStarRequest.title": "قبض على نجمة!",
-	"sendStarRequest.message": "لقد أرسلت لك نجمةًا ، وأطلق اللعبة للحصول عليها!",
-	"askStarRequest.title": "ارسل لي نجمة ، من فضلك!",
-	"askStarRequest.message": "أحتاج إلى مساعدتك وابدأ اللعبة وأرسل لي نجمة!",
-	"thanksForStarRequest.title": "شكرا للنجمة!",
-	"thanksForStarRequest.message": "أشكرك على إرسال النجم إلي ، لقد ساعدتني كثيرًا!",
-	"sendCoinsRequest.title": "النقود المعدنية!",
-	"sendCoinsRequest.message": "لقد أرسلت لك عملات معدنية ، وأطلق اللعبة للحصول عليها!",
-	"askCoinsRequest.title": "أرسل لي عملات معدنية ، من فضلك!",
-	"askCoinsRequest.message": "أنا بحاجة لمساعدتكم ، ابدأ اللعبة وأرسل لي عملات معدنية!",
-	"thanksForCoinsRequest.title": "شكرا لك على العملات!",
-	"thanksForCoinsRequest.message": "أشكرك على إرسال عملات معدنية لي ، لقد ساعدتني كثيرًا!",
-	"bountyGold.title": "الذهب مجانا",
-	"bountyGold.message": "نظرة! حصلت على الذهب مجانا بمساعدتكم! جربها بنفسك",
-	"bountyLife.title": "شكرا على الحياة",
-	"bountyLife.message": "دعونا نلعب معا وجمع المزيد من المكافآت",
-	"bountyStar.title": "شكرا لكم!",
-	"bountyStar.message": "أصبحت قوي جدا بمساعدتكم!",
-	"stuckHelpGold.title": "النقود المعدنية!",
-	"stuckHelpGold.message": "لقد أرسلت لك عملات معدنية ، وأطلق اللعبة للحصول عليها!",
-	"Next": "التالى",
-	"Close": "قريب",
-	"Play": "لعب",
-	"Replay": "إعادة",
-	"GotIt": "فهمتك!",
-	"Take": "يأخذ",
-	"ShareBonusView.ShareButton.text": "صفر",
-	"Share": "شارك",
-	"WatchAd": "مشاهدة الإعلان",
-	"AdsUnavailable": "الإعلانات غير متاحة",
-	"Cancelled": "ألغيت",
-	"GameScene.AskedHelp": "اطلب المساعدة!",
-	"FinisherWindow.title": "ممتاز!",
-	"FinisherWindow.Button.text": "اتبع الصفحة",
-	"FinisherWindow.AllPassedText": "أنت فعلت ذلك! يتم تمرير جميع الحلقات!",
-	"FinisherWindow.StoreText": "هل لديك هاتف أو جهاز لوحي؟",
-	"FinisherWindow.AllAndStoreText": "أنت فعلت ذلك! يتم تمرير جميع الحلقات! تحقق من وجود تحديثات في متجرك للحصول على تحديثات جديدة!",
-	"FbConnectWindow.TryAgain": "الدخول الفاشلة. حاول ثانية.",
-	"FakePayments.Buying": "شراء؟",
-	"FakePayments.Cancelled": "دفع وهمية تم إلغاؤها",
-	"Product.YouBought": "!عملة  %{coins} انت اشتريت",
-	"Product.PurchaseCancelled": "الشراء ملغى. حاول ثانية",
-	"ShareBonus.ShareFailed": "فشلت المشاركة ، الخطأ رقم #",
-	"SocialManager.Welcome": "!%{userName}, مرحبا",
-	"Synchronizer.LoadingFailed": "فشل تحميل التحديث!",
-	"Synchronizer.ErrorSavingProgress": "خطأ في حفظ التقدم!",
-	"CurrentView.Extra": "كلمة اضافية!",
-	"CurrentView.BoardFound": "لقد وجدت هذه الكلمة بالفعل",
-	"CurrentView.ExtraFound": "لقد وجدت بالفعل هذه الكلمة الإضافية",
-	"CurrentView.Short": "قصير جدا!",
-	"ReloadWindow.UpdateLoaded": "تحديث تحميل!",
-	"ReloadWindow.YouHaveSavedGame": "لديك لعبة أكثر تقدما محفوظ على الخادم الخاص بنا.",
-	"ReloadWindow.WeStoreGames": "!على أي جهاز %{gameTitle} حتى تتمكن من التمتع بها , نحن نخزن الألعاب في السحابة",
-	"ReloadWindow.Title": "تم العثور على اللعبة المحفوظة!",
-	"ReloadWindow.Downloading": "جارى التحميل...",
-	"ReloadWindow.UpdateNow": "تحديث الان!",
-	"TutorialFinishWindow.title": "أحسنت!",
-	"TutorialFinishWindow.text": ".لا تنس أن تخمن الكلمة الأخيرة \n اكتمال البرنامج التعليمي%{gameTitle} ",
-	"ExtraWords": "كلمات إضافية",
-	"Bonus!": "علاوة!",
-	"Cancel": "إلغاء",
-	"Submit": "خضع",
-	"OK": "حسنا",
-	"TimeLeft": "الوقت المتبقي:",
-	"BonusRound.Go!": "اذهب!",
-	"BonusRound.ClosedText": "لعبة مكافأة غير متوفرة!",
-	"Share.Victory1.Name": "!اكتمال المستوى %{gameTitle}",
-	"Share.Victory1.Description": "!{gameTitle}% - مررت بمستوى وحصلت على جائزة في اللعبة المثيرة",
-	"Share.Victory2.Name": "!اكتمال المستوى %{gameTitle} ",
-	"Share.Victory2.Description": "لقد عثرت على كلمات من مجموعات حروف في اللعبة المذهلة - %{gameTitle}!",
-	"Share.Victory3.Name": "!اكتمال المستوى %{gameTitle}",
-	"Share.Victory3.Description": "!{gameTitle}% أنا حل لغز الدماغ في لعبة لا تصدق",
-	"Share.Bag.Name": "لعبة مذهلة!",
-	"Share.Bag.Description": "الانضمام إلى هذه اللعبة المثيرة ، دعونا نلعب معا!",
-	"Shop.Gold500.Title": "كومة من الذهب",
-	"Shop.Gold500.Description": "كومة من الذهب - 500 قطعة نقدية ذهبية!",
-	"Shop.Gold1800.Title": "كومة من الذهب",
-	"Shop.Gold1800.Description": "كومة من الذهب - 1800 عملة ذهبية!",
-	"Shop.Gold6000.Title": "جبل الذهب",
-	"Shop.Gold6000.Description": "جبل الذهب - 6000 عملات ذهبية!",
-	"Shop.Gold25000.Title": "كنز الذهب",
-	"Shop.Gold25000.Description": "الكنز الذهبي - 25،000 العملات الذهبية!",
-	"Shop.Ask.Description": "أو اطلب من اللاعبين إرسال عملات معدنية",
-	"Shop.NoAds": "* لا إعلانات بعد أي عملية شراء",
-	"congratulations": [
-		"ممتاز!",
-		"رائع!",
-		"في احسن الاحوال!",
-		"أحسنت!",
-		"عمل جيد!",
-		"ممتاز!",
-		"عمل جيد!",
-		"عظيم!",
-		"رائع!",
-		"متألق!"
-	],
-	"LoadingEpisode": "تحميل الحلقة",
-	"LoadingPromo": "تحميل العرض",
-	"EpisodeView.TooOldEpisode": "هذه الحلقة غير متوفرة",
-	"SelectFriendWindow.askLives.title": "اسأل الحياة",
-	"SelectFriendWindow.askLives.noFriendsText": "أنت بحاجة إلى صديق واحد على الأقل في اللعبة ليطلب منك حياة!",
-	"SelectFriendWindow.askStars.title": "اسأل النجوم",
-	"SelectFriendWindow.askStars.noFriendsText": "أنت بحاجة إلى صديق واحد على الأقل في اللعبة لطلب النجوم!",
-	"TryAgain": "حاول ثانية",
-	"Quit": "استقال",
-	"Back": "الى الخلف",
-	"Exit": "ىخرج",
-	"PlayOn": "اللعب على",
-	"Yes": "نعم فعلا",
-	"No": "لا",
-	"GiveUp": "استسلم",
-	"Accept": "قبول",
-	"ask": "يطلب",
-	"Ask": "يطلب",
-	"AskCoins": "{coins}% تطلب",
-	"ASK": "يطلب",
-	"Send": "إرسال",
-	"EXIT": "ىخرج",
-	"OPEN": "افتح",
-	"FREE": "حر",
-	"Selected": "المحدد:",
-	"on": "على",
-	"off": "إيقاف",
-	"high": "متوسط",
-	"low": "منخفض",
-	"ONE_DAY": "يوم 1",
-	"AMOUNT_HOURS": "ساعات %{amount}",
-	"ASKS_PLAYERS": "اطلب من اللاعبين",
-	"YouHaveAmount": "عندك:",
-	"SendLiveRequest": "ارسل الحياة",
-	"AskLiveRequest": "يسأل عن الحياة",
-	"SendStarRequest": "ارسل نجمة",
-	"AskStarRequest": "يسأل عن النجم",
-	"SendCoinsRequest": "عملات مرسلة",
-	"SendStuckHelpRequest": "أرسل مساعدة",
-	"AskCoinsRequest": "يسأل عن العملات",
-	"SentHelpRequest": "ساعدتك",
-	"AskHelpRequest": "يحتاج لمساعدتكم",
-	"BountyRequest": "الهدايا جاهزة!",
-	"AdminGiftsText": "أرسلت مديري اللعبة هدية خاصة لك!",
-	"ExitGame": "الخروج من اللعبة",
-	"FinishEpisodeWindow.Title": "اكتملت الحلقة",
-	"FinishEpisodeWindow.Text": "أنت رائع! تم العثور على جميع الكلمات في الحلقة!",
-	"Share.FinishEpisode1.Name": "!منجز %{episodeTitle} حادثة",
-	"Share.FinishEpisode1.Description": "لقد أنهيت %{episodeTitle} حلقة! هل يمكنك أن تصل إلى حد ما فعلت؟",
-	"helpFromFriends.showhint.title": "تلميح مجانا",
-	"helpFromFriends.showhint.text": "اللعب مع أصدقائك. الحصول على تلميح لدعوة!",
-	"message.yeah": "YEAH!",
-	"message.super": "SUPER!",
-	"message.yay": "YAY!",
-	"message.lets_go": "LET'S GO!",
-	"message.ohyeah": "OH YEAH!",
-	"message.oh": "OH!",
-	"message.wow": "WOW!",
-	"message.Letsgo": "لنذهب!",
-	"message.KeepGoing": "استمر امضي قدما!",
-	"message.MovesLeft": "5 تحركات اليسار!",
-	"message.Shuffle": "لا تحركات. خلط",
-	"message.YouWin": "فزت!",
-	"shopHintTabTutorialMessage": "هل تعلم ، يمكنك شراء علب تلميحات بالقطع النقدية في علامة التبويب هذه؟",
-	"shopBoosterTabTutorialMessage": "هل تعلم ، يمكنك شراء حزم معززة مع عملات معدنية في علامة التبويب هذه؟",
-	"Collect": "تجميع",
-	"BountyWindow.Title": "هدايا للأصدقاء",
-	"BountyWindow.Text": "المكافآت سوف ينعش قريبا!",
-	"BountyWindow.noFriendsText": "تحتاج إلى صديق واحد على الأقل في اللعبة لطلب هدايا!",
-	"LocalPushes.Bounty.Title": [
-		"تحقق من الهدايا الخاصة بك",
-		"هناك هدايا في صندوق الوارد الخاص بك",
-		"لديك هدية من صديق",
-		"يمكنك أن تصدق ذلك",
-		"تنبيه صديق جيد"
-	],
-	"LocalPushes.Lives.Title": [
-		"هل أنت مستعد للعب؟",
-		"تم يموت للعب؟",
-		"تستنفد كل حياتك؟",
-		"الجميع يستحق فرصة ثانية",
-		"هل تفوت اللعبة؟"
-	],
-	"LocalPushes.MiniGame.Title": [
-		"لا تشعر بالملل دون جوائز",
-		"جربها!",
-		"امنح حظك فرصة",
-		"لا يوجد شيء أسهل",
-		"يمكن أن يكون أكثر بساطة؟"
-	],
-	"LocalPushes.LetsPlay.Title": [
-		"لا يمكننا الانتظار لرؤيتك في العمل",
-		"وصفة لوقت جيد"
-	],
-	"LocalPushes.Bounty": [
-		"🎀 لقد تلقيت هدايا من أصدقائك!",
-		"يبدو أن عيد الميلاد جاء في وقت مبكر من هذا العام! 🎁",
-		"🎂 كل يوم يبدو وكأنه عيد ميلادك مع أصدقاء من هذا القبيل!",
-		"استمتع بالهدايا التي قدمها أصدقاؤك!",
-		"إنه تقليد هنا لتقديم الهدايا! خذ لك في اللعبة!"
-	],
-	"LocalPushes.Lives": [
-		"لقد تم إعادة ملء حياتك!",
-		"تستطيع الآن! عادت حياتك! 😇",
-		"لا تقلق! لديك المزيد متاح الآن!",
-		"خذ حياتك! استفد من هذه الأرواح!",
-		"لا تحزن أكثر! حياتك هنا"
-	],
-	"LocalPushes.MiniGame": [
-		"اللعبة اليومية متاحة للعب!",
-		"العب اللعبة اليومية واجمع الجوائز الخاصة بك!",
-		"اختر الجائزة واستمتع بمزاياها!",
-		"ببساطة خذ ما تريد وكن مندهشا!",
-		"ما عليك سوى اختيار جائزة وشاهدها تصبح لك! 🙌"
-	],
-	"LocalPushes.LetsPlay": [
-		"حدث شيء ما أثناء غيابك! اكتشف ما في اللعبة!",
-		"إنه وقت مثالي لبدء تنمية دماغك! 🌱"
-	],
-	"Later": "تخطى",
-	"LastChanceToBuy": "آخر فرصة للشراء:",
-	"InternetConnectionError": "خطأ في اتصال الإنترنت",
-	"ShareError": "مشاركة الخطأ",
-	"InviteFriendsError": "دعوة أصدقاء الخطأ",
-	"SendRequestError": "إرسال خطأ في الطلب",
-	"StarterPack0.Title": "حزمة المبتدئين",
-	"StarterPack1.Title": "حزمة سوبر",
-	"StarterPack2.Title": "حزمة ضخمة",
-	"StarterPack.Bought": "!%{title} انت اشتريت",
-	"StarterPack0.Description": "يجب أن يكون لديك حزمة للمبتدئين!",
-	"StarterPack1.Description": "حزمة سوبر للاعب جيد!",
-	"StarterPack2.Description": "صفقة رائعة للاعب عظيم!",
-	"Versions": "إصدارات:",
-	"TournamentVictoryWindow.place.1": "المركز الاول",
-	"TournamentVictoryWindow.place.2": "2nd مكان",
-	"TournamentVictoryWindow.place.3": "المركز الثالث",
-	"TournamentVictoryWindow.place.4": "المركز الرابع",
-	"LivesShopWindow.products.refillLives": "5 أرواح",
-	"LivesShopWindow.products.unlimitedLives": "حياة غير محدودة لمدة ثلاثة أيام",
-	"LivesShopWindow.products.askLives": "اسأل اللاعبين عن حياتهم",
-	"Forces.Tournament": "بدأت البطولة! تنافس مع لاعبين آخرين لتلقي المزيد من العملات المعدنية!",
-	"LeadersLoadFailed": "فشل تحميل القادة!",
-	"League0": "دوري خشبي",
-	"League1": "الدوري البرونزي",
-	"League2": "الدوري الفضي",
-	"League3": "دوري الذهب",
-	"League4": "الدوري البلاتيني",
-	"League5": "روبي دوري",
-	"League6": "رابطة الماس",
-	"WorldTopName": "العالمية",
-	"FriendsTopName": "اصحاب",
-	"LeadersWindowTitle": "قادة",
-	"LeadersWindow.rank": "مرتبة",
-	"LeadersWindow.player": "لاعب",
-	"LeadersWindow.rating": "تقييم",
-	"noFriendsInLeadersText": "ليس لديك أصدقاء يلعبون اللعبة!",
-	"NewLeagueWindow.Title": "دوري جديد!",
-	"Share.newLeague.Name": "!الدوري الجديد %{gameTitle}",
-	"Share.newLeague.Description": "!{leagueName}% - انتقلت إلى دوري جديد",
-	"Forces.LeaderBoard": "هنا قد تجد لاعبين كبار في كل الدوري! جرب هذا الآن!",
-	"NewLeagueWindow.text": "!{league}% لقد دخلت !مبارك",
-	"Forces.DailyTasks": "اربح جوائز من خلال تحقيق أهدافك اليومية!",
-	"DailyTasksWindow.title": "الأهداف اليومية",
-	"DailyTasksWindow.TimeToRefresh": "وقت للتحديث:",
-	"MiniGame.ClosedText": "اللعبة اليومية ليست جاهزة!",
-	"Forces.PeriodicBonus": "هنا يمكنك أن تجد مكافأة! اجمع هدايا مجانية كل يوم!",
-	"InstantPayments.NotAvailable": "لا توجد مدفوعات متاحة",
-	"PeriodicBonus.DoubleRewardButton.Text": "مزدوج",
-	"DailyTask.1.Title": "مثل صفحة اللعبة",
-	"DailyTask.2.Title": "شارك",
-	"DailyTask.3.Title": "ادعو أصدقاء",
-	"DailyTask.4.Title": "اجتياز المستوى",
-	"DailyTask.5.Title": "جمع النجوم",
-	"DailyTask.6.Title": "أرسل مساعدة لصديق",
-	"DailyTask.7.Title": "مشاهدة الإعلانات",
-	"DailyTask.8.Title": "استخدم كعكة قوس قزح",
-	"DailyTask.9.Title": "استخدم %{booster}",
-	"DailyTask.10.Title": "عامل جبري %{color} جمع",
-	"DailyTask.11.Title": "تمرير مستويات في صف واحد",
-	"DailyTask.12.Title": "أصبح بطلا على مستوى",
-	"DailyTask.13.Title": "انفاق العملات",
-	"DailyTask.14.Title": "{elements}% جمع",
-	"DailyTask.14.Element.cell_fish": "أكواب الصودا",
-	"DailyTask.14.Element.flower_cell": "شوكولاتة",
-	"DailyTask.14.Element.nut_cell_0": "البرغر",
-	"DailyTask.14.Element.!": "الفراشات",
-	"DailyTask.14.Element.mouse_cell": "يصطاد الفئران",
-	"DailyTask.14.Element.@": "عسل",
-	"DailyTask.14.Element.dragon_cell": "معبأة مصاصة",
-	"DailyTask.14.Element.cookie_man": "كوكي من الرجال",
-	"DailyTask.14.Element.cake_cell": "قطعة من كعكة",
-	"DailyTask.14.Element.muffin_goal_cell": "الكعك",
-	"DailyTask.14.Element.waffle": "الفطائر",
-	"DailyTask.15.Title": "تخمين الكلمات الإضافية",
-	"DailyTask.16.Title": "'%{letter}' تخمين الكلمات بحرف",
-	"DailyTask.17.Title": "استخدم التلميحات",
-	"DailyTask.18.Title": "خذ المركز الأول في البطولة",
-	"DailyTask.19.Title": "أكمل الحلقة",
-	"DailyTask.20.Title": "الحصول على علبة هدية",
-	"DailyTask.21.Title": "اطلب عملات معدنية",
-	"DailyTask.22.Title": "فاز صديق",
-	"DailyTask.23.Title": "لعب المكافأة المستديرة",
-	"ColorCell.a.Title": "أزرق",
-	"ColorCell.b.Title": "أخضر",
-	"ColorCell.c.Title": "أرجواني",
-	"ColorCell.d.Title": "أحمر",
-	"ColorCell.e.Title": "الأصفر",
-	"ColorCell.w.Title": "أبيض",
-	"DailyTaskView.Go": "اذهب",
-	"DailyTaskView.Get": "احصل على",
-	"DailyTaskView.level.low": "سهل",
-	"DailyTaskView.level.mid": "متوسط",
-	"DailyTaskView.level.hard": "الصعب",
-	"Go": "اذهب",
-	"FBLoginOrInvite.login": "للعب مع أصدقائك يرجى تسجيل الدخول",
-	"FBLoginOrInvite.invite": "ادعُ صديقًا للتنافس معهم!",
-	"FBLoginOrInvite.Button.Invite": "دعا",
-	"FBLoginOrInvite.Button.Login": "تسجيل الدخول",
-	"RewardWindow.title": "مكافأتك",
-	"DailyTaskRewardWindow.title": "تمت المهمة!",
-	"DailyTaskRewardWindow.text": "تهانينا!",
-	"StuckWindow.title": "أصدقاء عالقون!",
-	"StuckWindow.button.text": "إرسال المساعدة",
-	"StuckWindow.text": "كن صديقا جيدا! أعطهم يد العون!",
-	"Forces.Gun": "هل تريد بعض المساعدة السحرية؟ المرة الأولى مجانية!",
-	"Shop.GunShot.Title": "مساعدة السحر",
-	"Shop.GunShot.Description": "يزيل سحرية حفنة من الحلوى لك!",
-	"Shop.GunShot.BoughtMessage": "اشتريت ماجيك مساعدة!",
-	"Shop.Energy.Title": "متجر الطاقة",
-	"GetIt": "احصل عليه!",
-	"PiggyBankWindow.Title": "مصرف خنزيري",
-	"PiggyBankWindow.Title.Full": "البنك أصبع ممتلئ!",
-	"PiggyBankWindow.text1": "تغلب على المستويات واكسب الذهب لشراء بنك أصبع بسعر منخفض للغاية: %{price}",
-	"PiggyBankWindow.text1.Full": "البنك أصبع ممتلئ! اسرع لشرائه بسعر رائع: %{price}!",
-	"PiggyBankWindow.text2": "ينتهي العرض في:",
-	"Balance": "توازن:",
-	"EpisodeView.Description": "عدد الحروف: %{letters}. الصعوبة: 5/%{difficulty}",
-	"EpisodeView.Title": "الحلقة %{episodeNo}",
-	"StuckWindow.player.text": "عالق في المستوى %{level}",
-	"Shop.AddMoves.Title": "إضافة التحركات",
-	"Shop.AddMoves.Description": "5 حركات اضافية",
-	"PiggyBankRulesWindow.Title": "كيف يعمل؟",
-	"PiggyBankRulesWindow.text1": "شراء البنك أصبع",
-	"PiggyBankRulesWindow.text2": "فاز مستويات لجمع العملات مكافأة. إضافة المزيد من العملات المعدنية إلى البنك أصبع وشرائه بسعر رائع!",
-	"PiggyBankRulesWindow.text3": "مستويات الضرب",
-	"PiggyBankRulesWindow.text4": "جمع العملات المعدنية",
-	"LevelStartWindow.Button.Invite": "دعا",
-	"NewVersionWindow.Title": "التحديث متاح!",
-	"NewVersionWindow.text1": "الإصدار الجديد %{version} من %{title} متوفر.",
-	"NewVersionWindow.text2": "يرجى تحديث الآن!",
-	"Shop.PiggyBank1.Title": "البنك أصبع صغير",
-	"Shop.PiggyBank1.Description": "البنك أصبع صغير كامل من العملات!",
-	"Shop.PiggyBank2.Title": "البنك أصبع المتوسطة",
-	"Shop.PiggyBank2.Description": "البنك أصبع المتوسطة مليئة العملات!",
-	"Shop.PiggyBank3.Title": "البنك أصبع كبير",
-	"Shop.PiggyBank3.Description": "البنك أصبع كبير كامل من العملات!",
-	"Shop.PiggyBank4.Title": "البنك أصبع ضخم",
-	"Shop.PiggyBank4.Description": "البنك أصبع ضخم كامل من العملات!",
-	"message.hardLevel": "مستوى صعب!",
-	"AdminSetProgress.Title": "تحديث متقدم",
-	"AdminSetProgress": "تحديث متقدم",
-	"Heroes.Info.MaxLevel": "اعلى مستوى",
-	"Heroes.Upgrade.Button": "تطوير",
-	"Heroes.Unlock.Button": "فتح",
-	"Forces.HeroesAvailable": "ميزة جديدة! صفحة الأبطال متاحة الآن!",
-	"wordsoupPromo": "جرب أذكى لعبة لغز الكلمة! الألغاز الدماغ صعبة مجانا!",
-	"wordsoupPromoTitle": "صلصة الكلمة",
-	"crocwordPromo": "حاول تحدي لغز الكلمات المتقاطعة مجانا! البحث وتهجئة كل كلمة هناك!",
-	"crocwordPromoTitle": "Crocword",
-	"riddlesPromo": "جرب أحلى مباراة 3 لعبة! سوف الحبيب لطيف تحصل على مدمن مخدرات!",
-	"riddlesPromoTitle": "الحلوى الألغاز",
-	"heroesPromo": "جرب لعبة جديدة مذهلة 3 المباراة! انضم إلى لاعبين آخرين حول العالم وكن الأفضل!",
-	"heroesPromoTitle": "أبطال السكر",
-	"Forces.UpgradeFirstHero": "أبطالك لديهم المزيد من المستويات للترقية. دعونا تعزيز بطل كرواسون!",
-	"Shop.AddMoves.BoughtMessage": "اشتريت تحركات اضافية!",
-	"ExpInfoWindow.Title": "مصاصات",
-	"ExpInfoWindow.Message": "تجاوز المستويات ، والعب الألعاب اليومية ، وتحقيق الأهداف اليومية والفوز بالبطولات لجمع المصاصات. المستويات الصعبة تمنحك المزيد من المصاصات!",
-	"SocialManager.Initialization": "جارٍ الاتصال قيد التقدم ...",
-	"FBLoginOrInvite.Button.Connecting": "توصيل",
-	"Shop.AddMoves1.Title": "أضف 5 خطوات",
-	"Shop.AddMoves1.Description": "5 خطوات وكعكة قوس قزح الحرة!",
-	"Shop.AddMoves2.Title": "أضف 10 حركات",
-	"Shop.AddMoves2.Description": "10 التحركات وكعكة قوس قزح الحرة!",
-	"Shop.AddMoves3.Title": "إضافة 15 التحركات",
-	"Shop.AddMoves3.Description": "15 التحركات وكعكة قوس قزح الحرة!",
-	"Shop.AddMoves5.Title": "إضافة 15 التحركات",
-	"Shop.AddMoves5.Description": "15 حركات و 2 كعك قوس قزح مجاني!",
-	"facebook": "فيس بوك",
-	"ok": "Odnoklassniki",
-	"vk": "فكونتاكتي",
-	"mbga": "ياهو Mobage",
-	"nk": "طبقتنا",
-	"FinisherWindow.GroupText": "تريد المزيد من المستويات؟ تابع صفحة اللعبة الرسمية الخاصة بنا على %{facebook} للاطلاع على المزيد من الأخبار حول اللعبة وإصدارات الحلقات الجديدة!",
-	"FbConnectWindow.text": "للعب مع أصدقائك ، اطلب مساعدتهم وتلقي المكافآت وحفظ تقدمك على جميع أجهزتك ، يرجى ربط حساب %{facebook} الخاص بك!",
-	"SocialManager.FailedLogging": "فشل التسجيل في %{facebook}!",
-	"SocialManager.Connected": "متصل بـ %{facebook}!",
-	"DailyTask.0.Title": "تسجيل الدخول باستخدام %{facebook}",
-	"AdminSetProgress.Text": "غيّر مسؤولو اللعبة تقدمك إلى المستوى %{levelNo}. قبول التغييرات؟",
-	"SettingsWindow.UserID.copied": "معرف اللعبة المنسوخة إلى الحافظة",
-	"SettingsWindow.UserID.text": "معرف اللعبة الخاص بي: %{id}",
-	"SkipButton": "تخطي >>",
-	"TapToSkip": "انقر للتخطي >>",
-	"waitPlayers": "البحث عن لاعبين البطولة",
-	"VictoryWindowBase.rewards": "المكافآت:",
-	"PackWindow.Text": "شجعتني أرواح الغابة على مساعدتك في رحلتك. حاولت جهدي لجعل حياتك أسهل!",
-	"VictoryWindowBase.piggyBankFull": "ممتلئ",
-	"Forces.UnlockHero": "هنا يمكنك عرض وفتح الأبطال. دعونا فتح البوب ​​المصاصة!",
-	"Christmas.Title": "عيد الميلاد",
-	"Heroes.CanActivateByDblClick": "يمكنك تفعيل البطل من خلال النقر المزدوج عليه!",
-	"Heroes.CanActivateByDblClickNoMove": "لن تفقد تحركاتك عند تنشيط Charmer بالنقر المزدوج عليها!",
-	"LocalStorageDisabledWindow.title": "لا يمكن حفظ التقدم!",
-	"LocalStorageDisabledWindow.text1": "يبدو أن المتصفح يحظر ملفات تعريف الارتباط الخاصة بنا!",
-	"LocalStorageDisabledWindow.text2": "يرجى تحديث إعداداتك ، أو قد يتم فقد تقدم اللعبة!",
-	"SubscriptionWindow.Title": "PREMIUM",
-	"SubscriptionWindow.MonthlyAdditional": "كل شهر",
-	"SubscriptionWindow.AnimationLeftText": "3 معززات عشوائية",
-	"Help": "تواصل اجتماعي",
-	"Shop.BuyExp10.Title": "10 مصاصات",
-	"Shop.BuyExp10.Description": "حزمة مصاصة صغيرة - 10 مصاصة",
-	"Shop.BuyExp10.BoughtMessage": "اشتريت 10 مصاصة",
-	"Shop.BuyExp150.Title": "150 مصاصة",
-	"Shop.BuyExp150.Description": "حزمة مصاصة ضخمة - 150 مصاصة",
-	"Shop.BuyExp150.BoughtMessage": "قمت بشراء 150 مصاصة",
-	"ExpInfoWindow.BuyMessage": "أو يمكنك شراء الحلويات في الوقت الحالي!",
-	"DailyTask.14.Element.lollipop": "مصاصات",
-	"DailyTask.14.Element.color_cookie_man": "كوكي الرجال الملونة",
-	"DailyTask.14.Element.truffle": "الزنابق",
-	"DailyTask.14.Element.dog_cell": "الكلاب",
-	"DailyTask.24.Title": "تنشيط %{heroes}",
-	"DailyTask.24.a": "الازرق الابطال",
-	"DailyTask.24.b": "أبطال الخضراء",
-	"DailyTask.24.c": "أبطال الأرجواني",
-	"DailyTask.24.d": "الأحمر الأبطال",
-	"DailyTask.24.e": "أبطال الصفراء",
-	"DailyTask.24.w": "أبطال بيضاء",
-	"SubscriptionRewardWindow.title": "مكافأة الاشتراك",
-	"SubscriptionWindow.AnimationMainText": "كل يوم ستحصل عليه:",
-	"SubscriptionIcon.premium": "علاوة",
-	"SubscriptionIcon.ready": "جاهز",
-	"SubscriptionWindow.AnimationMainTextReward": "المكافأة الخاصة بك:",
-	"SubscriptionRewardLaterButton.text": "حسنا",
-	"SubscriptionWindow.RewardIsReadyText": "المكافأة الخاصة بك جاهزة ، فقط خذها!",
-	"SubscriptionWindow.RewardTimerText": "الوقت المتبقي:",
-	"SubscriptionWindow.MainText": "يتيح لك Premium الحصول على الكثير من المكافآت كل يوم! فقط أدخل اللعبة مرة واحدة في اليوم للحصول عليها!",
-	"SubscriptionWindow.AnimationRightText": "1 حلوى",
-	"Shop.SubsMonth.Title": "القسط الشهري",
-	"Shop.SubsMonth.Description": "الاشتراك الشهري الممتاز",
-	"Shop.SubsMonth.BoughtMessage": "اشتريت اشتراك شهري!",
-	"mobileNotAvailable": "غير متاح على الجوال!",
-	"Wait": "انتظر...",
-	"LevelCompleted": "اكتمال المستوى",
-	"DailyCup.icon": "كوب يوميا",
-	"DailyCup.title": "كوب يومي!",
-	"DailyCup.finished": "يتم الانتهاء من كوب يوميا",
-	"DailyCup.force": "شارك في الكأس اليومية كل ساعة للحصول على جوائز!",
-	"DailyCupRulesWindow.Title": "كيف يعمل؟",
-	"DailyCupRulesWindow.text2": "الكأس يبدأ كل ساعة. يتم منح جميع اللاعبين نفس المستوى حتى لو لم يصلوا بعد.",
-	"DailyCupRulesWindow.text3": "مستويات الضرب",
-	"DailyCupRulesWindow.text4": "جمع النجوم",
-	"DailyCupRulesWindow.text1": "أصبح بطلا!",
-	"EpisodeView.DailyCup": "شارك في كوب يومي أثناء انتظار المستويات الجديدة!",
-	"DailyCup.reward": "جائزتك:",
-	"DailyCupLeadersWindow.Title": "الأفضل من الأفضل!",
-	"Share.Reward.Name": "يعرض من %{gameTitle}!",
-	"Share.Reward.Description": "انظر إلى ما حصلت عليه في %{rewardName} أثناء لعب اللغز المذهل - %{gameTitle}!",
-	"RewardWindow.tournament": "المسابقة",
-	"RewardWindow.miniGame": "لعبة يومية",
-	"RewardWindow.dailyCup": "كوب يومي",
-	"RewardWindow.subscription": "مكافأة متميزة",
-	"RewardWindow.dailyTasks": "مكافأة الهدف اليومي",
-	"RewardWindow.starChest": "نجمة الصدر",
-	"RewardWindow.pack": "حزمة مفيدة",
-	"Missions.finished": "تم الانتهاء من",
-	"Missions.windowRunning": "الترتيب الحالي",
-	"Missions.windowFinished": "انتهت البطولة",
-	"Missions.windowStarting": "انطلاق البطولة ...",
-	"Missions.RulesTitle": "قواعد",
-	"Missions.LetterTournament.Title": "حلوى الماسك",
-	"Missions.LetterTournament.Rules1": "تخمين الكلمات للقبض على العديد من الحلوى كما يمكنك!",
-	"Missions.BoardgameTournament.Title": "المسابقة",
-	"Missions.BoardgameTournament.Rules1": "لديك لاعبين على مستويات تتنافس معهم. تخمين الكلمات أسرع من غيرها والحصول على الذهب مكافأة.",
-	"Share.DailyCup.Name": "اكتمال مستوى الكأس اليومي!",
-	"Share.DailyCup.Description": "جمعت %{stars} على مستوى الكأس اليومي! تنافس معي في اللعبة المذهلة - %{gameTitle}!",
-	"Missions.Rules2": " %{header} فقط على مستويات أو مستويات جديدة بأقل من 3 نجوم. تنافس مع اللاعبين حول العالم والفوز بجوائز.",
-	"Missions.BoardGame.Rules2": " %{header} فقط على مستويات جديدة. تنافس مع لاعبين آخرين في جميع أنحاء العالم والفوز بجوائز. حظا سعيدا!",
-	"PurchaseRewardWindow.title": "مشترياتك",
-	"DailyTasksWindow.finished.title": "النتائج",
-	"DailyTasksWindow.Refresh": "الحصول على الجديد",
-	"Missions.MagicTournament.Title": "بطولة البرسيم",
-	"Missions.MagicTournament.Rules1": "اصنع مجموعات من 4 أو أكثر من الحلوى لكسب البرسيم!",
-	"Missions.RoseTournament.Title": "الماس راش",
-	"Missions.RoseTournament.Rules1": "جمع أكبر عدد ممكن من الماس لتصبح ملك الماس!",
-	"Missions.TulpanTournament.Title": "وجبات خفيفة بوم",
-	"Missions.TulpanTournament.Rules1": "تطابق الحلويات بجوار الوجبات الخفيفة لجمعها!",
-	"VICTORY": "فوز!",
-	"Missions.MagicTournament.AnimationMainTextWin": "أنت لطيف جدا! MOOO! سأصنع أفضل حليب الآن! شكرا لك والتمتع بالجائزة!",
-	"Missions.MagicTournament.AnimationMainTextLose": "لقد فعلت ذلك تقريبا! شكرا لكم لجمع البرسيم بالنسبة لي. لا تقلق ، سوف تفوز بالجائزة في المرة القادمة!",
-	"Missions.MagicTournament.AnimationMainTextInfo0": "البرسيم يجعل الحليب لذيذ جدا! أريد أن أحضر أفضل الحليب في Candyland.",
-	"Missions.MagicTournament.AnimationMainTextInfo1": "لهذا السبب أحتاج إلى الكثير من أوراق البرسيم! لنرى من يمكنه الحصول على المزيد!",
-	"Missions.RoseTournament.AnimationMainTextWin": "أوه! لقد حاولت حقا أفضل ما لديكم! الماس لامعة جدا! خذ هذا كمكافأة لجهدك!",
-	"Missions.RoseTournament.AnimationMainTextLose": "أوه ، هذا لا يكفي بالنسبة لي! احتاج المزيد. آمل أن تحاول أكثر صعوبة في المرة القادمة!",
-	"Missions.RoseTournament.AnimationMainTextInfo0": "أنا التنين رب الماس! أبحث عن مسافرين لا يعرف الخوف لجمع أكبر عدد ممكن من الماس!",
-	"Missions.RoseTournament.AnimationMainTextInfo1": "هل أنت واحد منهم؟ لدي مكافأة مذهلة لأفضل هواة جمع العملات!",
-	"Missions.TulpanTournament.AnimationMainTextWin": "اللحمة! أنت أفضل صديق لي وسيد للوجبات الخفيفة! اللحمة! اللحمة! خذ جائزتك!",
-	"Missions.TulpanTournament.AnimationMainTextLose": "اللحمة! لدي بعض الوجبات الخفيفة ، شكرا! لا تقلق بشأن الجائزة ، فستحصل عليها في المرة القادمة!",
-	"Missions.TulpanTournament.AnimationMainTextInfo0": "اللحمة! أنا أحب الوجبات الخفيفة كثيرا! أنا أرتب مسابقة للاعبين!",
-	"Missions.TulpanTournament.AnimationMainTextInfo1": "اللحمة! أحضر لي أكبر عدد ممكن من الوجبات الخفيفة ، وقد تحصل على جائزة خاصة جدًا!",
-	"Missions.CommonText": "تثبت أنك تستحق الفوز بجائزة في هذه المسابقة! فقط أفضل خمسة لاعبين سيحصلون عليها!",
-	"CurrentView.Wrong": "%{word} ليس هنا!",
-	"Compete": "تنافس",
-	"Join": "انضم",
-	"EpisodeView.ComingSoonEpisode.activities": "ستأتي حلقات جديدة قريبًا ، وفي الوقت نفسه يمكنك:",
-	"EpisodeView.ComingSoonEpisode": "حلقات جديدة تأتي قريبا!",
-	"EpisodeView.ComingSoonEpisode.cup": "في الكأس",
-	"EpisodeView.ComingSoonEpisode.join": "مجتمعنا",
-	"Shop.Gold3800.Title": "كومة من الذهب",
-	"Shop.Gold3800.Description": "كومة من الذهب - 3800 الذهب!",
-	"Minigame.items.pickaxe": "المعاول",
-	"NotEnoughWindow.Title": "لا يكفي %{minigameItem}",
-	"NotEnoughWindow.text": "العب اكثر",
-	"runesPromo": "جرب لعبتنا الملحمية الجديدة! الأبطال في العصور الوسطى والمضحك الحقيقي لا يتركونك غير مبالين!",
-	"runesPromoTitle": "أبطال المباراة 3",
-	"Share.DailyCup.stars1": "نجمة واحدة",
-	"Share.DailyCup.stars2": "2 نجوم",
-	"Share.DailyCup.stars3": "3 نجوم",
-	"Share.DailyCup.stars4": "4 نجوم",
-	"Share.DailyCup.stars5": "5 نجوم",
-	"Share.DailyCup.stars0": "0 نجوم",
-	"Share.DailyCup.stars6": "6 نجوم",
-	"Share.DailyCup.stars7": "7 نجوم",
-	"Share.DailyCup.stars8": "8 نجوم",
-	"SettingsWindow.ResolutionId": "القرار:  %{resolution} %",
-	"FavoriteSaleWindow.title": "عرض لوقت محدود!",
-	"FavoriteSaleWindow.bonus": "علاوة",
-	"FavoriteSaleWindow.text": "أفضل وقت لإجراء عملية شراء والحصول على مكافأة ضخمة!",
-	"FavoriteSaleWindow.lastChance": "آخر فرصة!",
-	"FavoriteSaleWindow.Expires": "ينتهي في:",
-	"PlayNow": "العب الان",
-	"adventurePromo": "لا توجد لعبة حلوة على الإطلاق! الغوص في عالم شارملاند والبدء في التمتع به الجمال!",
-	"adventurePromoTitle": "أسرار شارملاند",
-	"MiniGameWindow.Title": "لعبة يومية",
-	"MiniGameWindow.Text": "اختيار واحد من الصناديق!",
-	"MiniGameWindow.Text2": "أراك غدا!",
-	"MiniGameRewardWindow.title": "جائزتك",
-	"MiniGameRewardWindow.text": "أراك غدا!",
-	"LevelFriendBeatWindow.text": "لقد تغلبت على صديقك %{friendName}!",
-	"ShopWindow.showMore": "المزيد من العروض",
-	"ShopWindow.title": "متجر",
-	"Badge.bestSeller": "الأفضل",
-	"Badge.save": "حفظ!",
-	"Lottery.info": "قم بزيارة مجتمعنا للحصول على تفاصيل اليانصيب",
-	"Lottery.iconText": "يفوز",
-	"FavoriteSaleWindow.badge1": "مجانا",
-	"FavoriteSaleWindow.badge2": "علاوة",
-	"BuildingLockedWindow.text": "هذا المبنى خطير للغاية الآن ، حاول الانتقال إلى %{currentBuilding}",
-	"MissionRulesWindow.TreasureSearch.text2": "احصل على كمية معينة من الملصقات لتكتمل في المراكز الثلاثة الأولى كلما ارتفع مكانك على المنصة ، زاد عدد الملصقات التي ستحصل عليها!",
-	"MissionRulesWindow.TreasureSearch.text3": "الحصول على المنصة",
-	"MissionRulesWindow.TreasureSearch.text4": "تلقي ملصقات",
-	"MissionRulesWindow.TreasureSearch.text1": "يربح جوائز!",
-	"MissionRulesWindow.LetterTournament.text2": "تخمين الكلمات للقبض على الحلوى في مجال الألعاب ومستويات كاملة للتأكد من أنها الفضل.",
-	"MissionRulesWindow.LetterTournament.text3": "قبض على الحلوى",
-	"MissionRulesWindow.LetterTournament.text4": "تغلب على الآخرين",
-	"MissionRulesWindow.LetterTournament.text1": "الحصول على جوائز!",
-	"inviteFriends.noUsers": "الأصدقاء في اللعبة",
-	"ConfirmExitWindow.title": "الخروج من اللعبة؟",
-	"ConfirmExitWindow.message": "سوف تفقد حياة واحدة",
-	"ConfirmExitWindow.nopenalty": "هل أنت واثق؟",
-	"RewardWindow.vkpromo": "عجلة وضع ثروة",
-	"QuestWindow.text2": "مع بعض سويا:",
-	"ProvidesComponent.maybe.text": "يمكنك الحصول:",
-	"BuildingStartWindow.subTitle": "المستوى %{level}",
-	"ProvidesComponent.have.text": "عندك:",
-	"Complete": "اكتمال",
-	"tournament_Jim": "Jim",
-	"tournament_Bob": "Bob",
-	"tournament_Jack": "Jack",
-	"MissionRulesWindow.TreasureSearch.Title": "كيف يعمل؟",
-	"MissionRulesWindow.LetterTournament.Title": "كيف يعمل؟",
-	"RewardWindow.default": "جائزة او مكافاة",
-	"RestartWindow.LocalStorageCorrupted": "اللعبة المحفوظة محليًا تالفة ، يرجى إعادة تحميل اللعبة لاستعادة البيانات من خادمنا",
-	"MissionRulesWindow.TreasureSearch.leftToPrize": "من اليسار إلى الجائزة:",
-	"RestartWindow.ButtonMessage": "إعادة تحميل",
-	"DailyLevel.Status": [
-		"رقم قياسي جديد: أكمل المستوى في 12 ثانية! نحن مثل هذه الوحدة!",
-		"أبدا قبل ذلك مرت بسرعة المستوى! أنا في ضربة اليوم!",
-		"أنا انقر فوق الكلمات مثل المكسرات! سجل آخر مكسور!",
-		"لقد خمنت الكلمات على المستوى لأول مرة وواصلت سلسلتي!",
-		"مسيرتي المنتصرة تستمر! لا أستطيع مواكبة لي!",
-		"خمنت كل الكلمات في ثوان! من غير المرجح أن يكرر أي شخص هذا!",
-		"مرحى! كنت أسرع من 98  %من الناس الذين تجاوزوا هذا المستوى!",
-		"من الجيد أن تكون في 1 %من اللاعبين الذين تجاوزوا المستوى بشكل أسرع من أي شخص آخر!",
-		"أنا مرة أخرى من بين أفضل اللاعبين! كم هو لطيف!",
-		"أنا شخصياً لا أعرف أي شخص يمكنه اجتياز هذا المستوى بشكل أسرع!"
-	],
-	"AllDoneWindow.title": "الانتهاء من الفصل",
-	"AllDoneWindow.text": "انتهى الفصل ولكن القصة لم تتواصل بعد. ترقبوا المزيد!",
-	"SubscriptionWindow.OneDayAdditional": "جربها! يوما ما",
-	"SubscriptionWindow.Free": "مجانا",
-	"SubscriptionWindow.RewardTwoHours": "ساعاتين",
-	"SubscriptionWindow.AnimationLeftMiddleText": "300 قطعة نقدية",
-	"SubscriptionWindow.UnlimitedLivesTwoHourText": "ساعتان من الحياة غير المحدودة",
-	"RestartWindow.OnError": "حدث خطأ",
-	"CollectStarsWindow.title": "لا يكفي نجوم",
-	"CommonCollectStarsWindow.title": "جمع النجوم",
-	"CollectStarsWindow.text": "اجتياز المستويات للحصول على المزيد من النجوم وإكمال المهام!",
-	"Shop.SubsWeek.Title": "قسط الاشتراك 1 يوم المحاكمة",
-	"Shop.SubsWeek.Description": "الاشتراك المميز لمدة أسبوعين ويوم واحد مجانًا!",
-	"Shop.SubsWeek.BoughtMessage": "اشتريت قسط الاشتراك!",
-	"Valentine.Missions.LetterTournament.Title": "عيد الحب مفتوح",
-	"Valentine.Missions.LetterTournament.Rules1": "تخمين الكلمات لتلقي أكبر عدد ممكن من الأحبة!",
-	"Valentine.MissionRulesWindow.LetterTournament.text2": "تخمين الكلمات لتلقي الأحبة في مجال الألعاب ومستويات كاملة للتأكد من أنها تقيد.",
-	"Valentine.MissionRulesWindow.LetterTournament.text3": "تلقي الأحبة",
-	"BoostersSaleWindow.textTop": "عرض لوقت محدود!",
-	"BoostersSaleWindow.textLeft.14": "عملات مع",
-	"BoostersSaleWindow.textMiddle.14": "ضخم",
-	"BoostersSaleWindow.textRight.14": "خصم!",
-	"BoostersSaleWindow.title": "تخفيض السعر",
-	"BoostersSaleWindow.oldPrice": "سعر قديم",
-	"BoostersSaleWindow.badge.text": "تخفيض السعر",
-	"BoostersSaleWindow.progressBarText": "مشتريات حتى الجائزة:",
-	"Finished": "تم الانتهاء من",
-	"Valentine.Missions.TulpanTournament.Title": "نشر الفرح",
-	"Valentine.Missions.TulpanTournament.Rules1": "تطابق الحلويات بجانب الورود لاختيارهم!",
-	"Valentine.Missions.TulpanTournament.AnimationMainTextWin": "رائعة حقا! هذه المجموعة من الورود ستجعل الكثير من الناس سعداء! هنا ، خذ جائزتك!",
-	"Valentine.Missions.TulpanTournament.AnimationMainTextLose": "شكرا لكم! سوف أتأكد من تسليم هذه الورود! حظا سعيدا مع الجائزة في المرة القادمة!",
-	"Valentine.Missions.TulpanTournament.AnimationMainTextInfo0": "الجميع يحب الزهور! دعنا نلتقطهم وننشر الفرح!",
-	"Valentine.Missions.TulpanTournament.AnimationMainTextInfo1": "الكثير من الناس يريدون مساعدتي! إذا كانت مساهمتك في القضية كبيرة فسأحرص على تكريمها بمكافأة!",
-	"DailyLevelWindow.title": "التحدي اليومي",
-	"DailyLevelWindow.text": "كل لاعب خمن كل الكلمات على المستوى يشارك في سحب 10 جوائز من 50 موافق لكل منهما!",
-	"WardrobeCompleteText": "تم جمعها",
-	"WardrobeStageTaskText": "تجاوز %{amount} المستويات",
-	"WardrobeCurrentText": "مستويات مرت:",
-	"WardrobeBuyText": "اشتر الآن",
-	"WardrobeRecieveText": "لقد استلمت قطعة ملابس جديدة:",
-	"HomefixRulesWindow.Title": "كيف يعمل؟",
-	"HomefixRulesWindow.text1": "إصلاح الكائنات",
-	"HomefixRulesWindow.text2": "اربح عددًا كافيًا من النجوم لمساعدة كلو في استعادة مطعم العائلة!",
-	"HomefixRulesWindow.text3": "فوز المستويات",
-	"HomefixRulesWindow.text4": "جمع النجوم",
-	"LevelStartWindow.title": "المستوى %{levelNo}",
-	"LevelStartWindow.HighScoresTitle": "نتائج عالية",
-	"LevelStartWindow.YourScore": "درجاتك:",
-	"tournament_Dave": "ديف",
-	"tournament_Charlie": "تشارلي",
-	"tournament_Bill": "مشروع قانون",
-	"tournament_Chris": "كريس",
-	"Forces.BonusRound": "جولة مكافأة متاح! جمع الذهب كل يوم مجانا!",
-	"WeeklyCupTable.timerText": "ينتهي بـ:",
-	"WeeklyCupTable.title": "كأس أسبوعي",
-	"WeeklyCupTable.topText": "أبطال سابقون",
-	"Race.dialogue.stage_0.0": "كلوي ، هل تريدين أن تصبحي جزء من التاريخ؟ أنا وأصدقائي نقوم بتنظيم سباق ايروستات وأريدك أن تكون ملاحًا لي!",
-	"Race.dialogue.stage_0.1": "أنت تراهن جدي! أود أن أنضم إليكم. من المضحك أني شاهدت إعلانًا لحيوان عظيم منذ وقت ليس ببعيد.",
-	"RaceChestWindow.title": "جائزة او مكافاة",
-	"RaceChestWindow.text": "اجتياز المستويات للتقدم إلى الصدر والحصول على المكافأة.",
-	"RaceChestWindow.textPremium": "تحتاج المفتاح الذهبي لفتح هذا الصندوق.",
-	"Race.product.title": "مفتاح ذهبي",
-	"Race.product.description": "المفتاح الذهبي لفتح الصناديق الذهبية",
-	"Race.product.bought": "المفتاح الذهبي اشترى",
-	"RaceBuyWindow.title": "المفتاح الذهبي للكنوز",
-	"RaceBuyWindow.title2": "آخر فرصة",
-	"RaceBuyWindow.text1": "جميع المكافآت من الصناديق الذهبية!",
-	"RaceBuyWindow.text2": "Unigue الذهبي Zepellin كما سفينة الهواء الخاص بك!",
-	"RaceBuyWindow.text3": "الحصول على المكافآت الصدر فتحها بعد الشراء!",
-	"RaceFinishWindow.title": "لقد أنهيت السباق!",
-	"RaceFinishWindow.text": "انتهى السباق. ستفوز بالتأكيد في المرة القادمة!",
-	"RaceChestWindow.button": "احصل على",
-	"Race.force": "عندما زرت جدي في المرة الأخيرة ذكر شيئًا عن إعداد مفاجأة لي. حان الوقت لمعرفة ما كان يتحدث عنه!",
-	"Race.dialogue.free_stage_9.0": "هل تتذكر أنك أخبرتني عن ذلك الهوى القابل للتطبيق؟ الجيل الجديد. كيف نحصل عليه؟",
-	"Race.dialogue.free_stage_9.1": "اتذكر بالطبع! إنه جميل جدا ... دعنا نضغط على المفتاح الذهبي الفوار في الزاوية العلوية اليسرى!",
-	"AreYouSure": "هل أنت واثق؟",
-	"Race.dialogue.stage_0.2": "في الواقع ، كنت أفكر في منطاد الهواء الساخن القديم الذي كان في مرآبي منذ سنوات. لكن فكرتك تبدو أفضل!",
-	"Race.dialogue.stage_50.0": "شكرا لك كلو! لم أكن لأفعل ذلك بدونك. لقد شكلنا فريقًا رائعًا ، ألا تعتقد ذلك؟",
-	"Race.dialogue.stage_50.1": "أفضل فريق من أي وقت مضى! سوف أتطلع إلى دعوتي للسباق التالي!",
-	"Race.dialogue.stage_7.0": "عمل رائع ، كلو! هل أنت سعيد لأنك قررت المشاركة في السباق؟",
-	"Race.dialogue.stage_7.1": "لا يمكنني أن أكون أكثر سعادة يا جدي! هذا هو مثير جدا. أنا فضولي كم عدد الصناديق الأخرى التي سنفتحها على طول الطريق؟",
-	"Race.dialogue.free_stage_9.2": "المفتاح الذي يأتي مع القابلة للفتح ويسمح لك بفتح الصناديق الذهبية المليئة بالكنوز؟ أنا متأكد من أن محتوياتها تستحق العناء.",
-	"Race.dialogue.prem_stage_9.0": "أنا سعيد لأننا ذهبنا لذلك! لا أستطيع حتى أن أتخيل الطيران في البالون الآن.",
-	"Race.dialogue.prem_stage_9.1": "شكرا لك يا جدي! لقد كان حلمي دائمًا أن أبحر في السماء في مثل هذه الطائرة الجميلة!",
-	"Race.dialogue.free_stage_16.0": "سوء الحظ! الصناديق تستمر في الانزلاق من خلال أصابعنا. ماذا يمكننا أن نفعل لتغيير ذلك؟",
-	"Race.dialogue.free_stage_16.1": "كان سيكون من الأسهل الاقتراب منهم إذا كان لدينا نوع آخر من الطائرات. لحسن الحظ ، احتفظت بالنشرة القابلة للتحرير!",
-	"Race.rules.text2": "تنافس مع لاعبين آخرين خلال سباق المنطاد واحصل على مراوح لكل مستوى مكتمل. أنهي في المراكز الثلاثة الأولى للحصول على المزيد من المكافآت!",
-	"Race.rules.text4": "اجمع المراوح",
-	"RaceFinishWindow.rewarded_text": "تهنئة! انتهى السباق. جائزتك في انتظارك!",
-	"DailyTask.25.Title": "اربح البطولة",
-	"Easter.Missions.RoseTournament.Title": "مجموعة عيد الفصح!",
-	"Easter.Missions.RoseTournament.Rules1": "اجمع أكبر عدد ممكن من بيض عيد الفصح لتنمية المجموعة!",
-	"Easter.Missions.RoseTournament.AnimationMainTextWin": "اوه! لقد حاولت حقا أفضل ما لديكم! البيض جميل جدا! خذ هذا كمكافأة على مجهودك!",
-	"Easter.Missions.RoseTournament.AnimationMainTextLose": "أوه ، هذا لا يكفي بالنسبة لي! احتاج المزيد. آمل أن تحاول بجد المرة القادمة!",
-	"Easter.Missions.RoseTournament.AnimationMainTextInfo0": "أنا لست التنين المعتاد الخاص بك لأنني متعة عيد الفصح ضخمة! أقوم بجمع أطباقًا مختلفة طوال العام لاستبدالها لاحقًا بالبيض الملون!",
-	"Easter.Missions.RoseTournament.AnimationMainTextInfo1": "ساعدني في تنمية مجموعتي وسأغسل لك الهدايا!",
-	"Easter.Missions.LetterTournament.Title": "بيض عيد الفصح",
-	"Easter.Missions.LetterTournament.Rules1": "تخمين الكلمات للحصول على أكبر عدد ممكن من البيض!",
-	"Easter.MissionRulesWindow.LetterTournament.text2": "تخمين الكلمات لجمع البيض في مجال الألعاب واستكمال المستويات للتأكد من أن الفضل في ذلك.",
-	"Easter.MissionRulesWindow.LetterTournament.text3": "اجمع البيض",
-	"UnlimitedLives.1 day": "يوم 1",
-	"UnlimitedLives.2 day": "2 أيام",
-	"UnlimitedLives.3 day": "3 أيام",
-	"UnlimitedLives.5 day": "5 ايام",
-	"UnlimitedLives.9 day": "9 أيام",
-	"UnlimitedLives.10 day": "10 أيام",
-	"UnlimitedLives.6 hours": "6 ساعات",
-	"UnlimitedLives.12 hours": "12 ساعة",
-	"UnlimitedLives.OneHour": "ساعة واحدة",
-	"UnlimitedLives.TwoHours": "ساعاتين",
-	"UnlimitedLives.ThreeHours": "3 ساعات",
-	"UnlimitedLives.30 minutes": "30 دقيقة",
-	"UnlimitedLives.15 minutes": "15 دقيقة",
-	"BoostersSaleWindow.textMiddle.12": "ضخم",
-	"BoostersSaleWindow.textRight.12": "خصم!",
-	"TileShop.gold1.Title": "1000 ذهب",
-	"TileShop.gold1.Description": "1000 ذهب بخصم مذهل!",
-	"Shop.gold1.boughtMessage": "لقد اشتريت 1000 ذهب!",
-	"TileShop.gold4.Title": "5000 ذهب",
-	"TileShop.gold4.Description": "5000 ذهب بخصم مذهل!",
-	"Shop.gold4.boughtMessage": "لقد اشتريت 5000 ذهب!",
-	"NotEnoughCoins": "لا توجد عملات كافية",
-	"RaffleWindow.title": "اللعب من المنزل",
-	"RaffleWindow.subTitle": "احصل على فرصة للفوز بجهاز iPhone 11! *",
-	"RaffleWindow.description": "فقط من 27 أبريل إلى 10 مايو ، تحصل المستويات الكاملة على التذاكر المحظوظة. سيتم الإعلان عن الفائزين في 11 مايو 2020.",
-	"RaffleWindow.balance": "توازن",
-	"RaffleWindow.annotation": "* سعر طلب iPhone 11 وتسليمه للفائز هو 1 روبل روسي.",
-	"RaffleRulesWindow.Title": "كيف يعمل؟",
-	"RaffleRulesWindow.text2": "احصل على تذكرة واحدة لكل 15 مستوى. كلما كان لديك المزيد من التذاكر ، زادت فرصك في الفوز بالجائزة!",
-	"RaffleRulesWindow.text3": "مستويات الضرب",
-	"RaffleRulesWindow.text4": "اجمع التذاكر",
-	"RaffleRulesWindow.text1": "اربح iPhone 11!",
-	"cryptexWindow.title": "كريبتكس",
-	"cryptexWindow.text": "تخمين الكلمات لفتح cryptex ومعرفة سرها! على عجل ، ستزول خلال خمس دقائق.",
-	"BuildingInfoWindow.redoButton": "يتغيرون",
-	"HomeTasksWindow.title": "مهام",
-	"Lottery.infoSaleDay": "شارك في 300000 صوت هبت من فكونتاكتي!",
-	"ClientSessionExpired.title": "انتباه",
-	"ClientSessionExpired.message": "لا يمكنك اللعب في علامتي تبويب!",
-	"RaceBuyWindow.price": "فقط",
-	"RaceBuyWindow.subTitle": "إجمالي المكافأة 9000",
-	"RaceStartWindow.priceText": "الشراء مقابل %{price}",
-	"RaceStartWindow.title": "ماذا سيكون؟",
-	"RaceStartWindow.prem_card.title": "وضع البرق الذهبي",
-	"RaceStartWindow.card.title": "وضع سبيكة",
-	"RaceStartWindow.card.text1": "- الوصول إلى الصناديق العادية",
-	"RaceStartWindow.card.text2": "- البالون القديم والغبار من المرآب",
-	"RaceStartWindow.card.text3": "- سرعة عادية",
-	"RaceStartWindow.premButton": "الأفضل",
-	"RaceStartWindow.freeButton": "مجانا",
-	"RestartWindow.NewVersionAvailable": "يتوفر إصدار جديد. يرجى إعادة تحميل اللعبة.",
-	"RestartWindow.NewVersionTitle": "التحديث متاح!",
-	"Select": "تحديد",
-	"Race.rules.Title": "كيف يعمل؟",
-	"Race.rules.text3": "مستويات الضرب",
-	"Race.rules.text1": "كن بطلا!",
-	"RoundCountdownComponent.text": "العودة إلى البطولة ...",
-	"RaceStartWindow.prem_card.text1": "- الوصول إلى الصناديق الذهبية!",
-	"RaceStartWindow.prem_card.text2": "- فرصة للطيران الأكثر تطوراً ورائعة!",
-	"RaceStartWindow.prem_card.text3": "- سرعة البرق",
-	"TempGoodsFinishWindow.title": "انتهى الوقت!",
-	"TempGoodsFinishWindow.unlimitedLivesText": "لقد انتهى زمن حياة غير محدودة! تمديده لمدة 3 أيام أخرى الآن!",
-	"RaffleWindow.teaser": "متاح من المستوى 31!",
-	"NoConnectionWindow.title": "انقطع الاتصال",
-	"TreasureSearchWindow.Title": "اصابع خضراء!",
-	"TreasureSearchWindow.text": "يتم تقييم الزهور في Candyland. أي شخص سيدفع لك بشكل رائع مقابل مجموعة من هذه النباتات الجميلة. ينمو أربعة منهم ويكافأ!",
-	"TreasureSearchWindow.Help.Title": "كيف يعمل؟",
-	"TreasureSearchWindow.Help.Text": "1) احصل على علبة سقاية واحدة لإكمال المستوى العادي وثلاث علب سقاية للتغلب على العسر! 2) استخدمها لسقي أقسام حديقتك! 3) ازرع أربع أزهار واستبدل تلك الباقة الرائعة في صندوق مليء بالأشياء الجيدة!",
-	"TreasureSearchWindow.Currency.Title": "لم يبق علب سقي",
-	"TreasureSearchWindow.Currency.Text": "ليس لديك علب سقي لري النباتات. أكمل المستويات العادية للحصول عليها!",
-	"olympicsPromo": "جرب لعبة لغز العمل مع لاعبين حقيقيين مجانًا!",
-	"olympicsPromoTitle": "الكلمات المتقاطعة اون لاين",
-	"Memorial.Missions.TulpanTournament.Title": "زهرة الصيف",
-	"Memorial.Missions.TulpanTournament.Rules1": "تطابق الحلويات بجانب الزهور لاختيارهم!",
-	"Memorial.Missions.TulpanTournament.AnimationMainTextWin": "لا اصدق عيناي! كل هذه الزهور لي! كنت لا تصدق هناك وهناك مكافأتك التي تستحقها!",
-	"Memorial.Missions.TulpanTournament.AnimationMainTextLose": "شكرا لك! جهدك يعني الكثير بالنسبة لي ولكن هذه ليست كافية للاحتفال بالصيف. حظ أوفر في المرة القادمة!",
-	"Memorial.Missions.TulpanTournament.AnimationMainTextInfo0": "ليس هناك وقت أفضل لاختيار الزهور من الصيف! دعنا نختارهم معًا للاحتفال ببداية هذا الوقت الرائع!",
-	"Memorial.Missions.TulpanTournament.AnimationMainTextInfo1": "لسوء الحظ ، ليس هناك ما يكفي من الزهور للجميع! ساعدني في اختيار أكبر عدد ممكن وسأحرص على رد الجميل!",
-	"Memorial.Race.force": "لا استطيع الانتظار لزيارة جدي! قال أنه أعد شيئًا مميزًا ليوم الذكرى. حان الوقت لمعرفة ما كان يتحدث عنه!",
-	"Memorial.Race.dialogue.stage_0.0": "كلو! ننظم أنا وأصدقائي سباقًا جويًا للاحتفال بيوم الذكرى وأريدك أن تكون ملاحًا لي!",
-	"Memorial.Race.dialogue.stage_0.1": "سيكون شرف يا جدي! كنت أعلم أنه كان علامة عندما رأيت هذا العرض الخاص على منطاد عظيم. هل يمكننا التحليق بها؟",
-	"Memorial.Race.dialogue.stage_0.2": "في الواقع ، كنت أفكر في منطاد الهواء الساخن القديم الذي طرت به لأول سباق يوم الذكرى قبل سنوات. لكني أحب فكرتك!",
-	"Memorial.Race.dialogue.stage_7.0": "عمل رائع ، كلو! هل أنت سعيد لأنك قررت المشاركة في سباق يوم الذكرى؟",
-	"Memorial.Race.dialogue.stage_7.1": "لم أستطع أن أكون أكثر سعادة يا جدي! من الرائع أن تكون جزءًا من التاريخ. أنا فضولي كم عدد الصناديق الأخرى التي سنفتحها على طول الطريق؟",
-	"Memorial.Race.dialogue.stage_50.0": "شكرا لك كلو! هذا يعني لي الكثير أن أكون بجانبك في هذا اليوم الخاص.",
-	"Memorial.Race.dialogue.stage_50.1": "كل السعادة ملكي! لدينا موسم الصيف كله أمامنا لممارسة السباق القادم!",
-	"Memorial.Missions.LetterTournament.Title": "هدايا تذكارية لا تنسى",
-	"Memorial.Missions.LetterTournament.Rules1": "تخمين الكلمات لجمع أكبر عدد ممكن من قذائف!",
-	"Memorial.MissionRulesWindow.LetterTournament.text2": "تخمين الكلمات لجمع الأصداف في مجال الألعاب وإكمال المستويات للتأكد من أنها ستنسب إليها.",
-	"Memorial.MissionRulesWindow.LetterTournament.text3": "اجمع القذائف",
-	"Memorial.BoostersSaleWindow.title": "تخفيضات الصيف",
-	"BonusRoundWindow.GoldCollected": "إجمالي الذهب الذي تم جمعه: %{coins} عملات معدنية!",
-	"BonusRoundWindow.Info.Lost": "انتهت جولة المكافأة هذه! لديك 24 ساعة لتحضير نفسك للمرحلة التالية!",
-	"BonusRoundWindow.Info.Victory": "عمل جيد جمع كل الذهب! عد خلال 24 ساعة لتحصل على المزيد!",
-	"BonusRoundWindow.Title.Lost": "انتهى الوقت!",
-	"BonusRoundWindow.Title.Victory": "تهانينا!",
-	"ConfirmExitWindow.BonusRound.message": "هل أنت متأكد أنك تريد الخروج من جولة المكافأة هذه؟ لن تتمكن من إعادة إدخاله.",
-	"KnockoutWindow.Title.Victory": "فوز!",
-	"KnockoutWindow.Title.Round": "الجولة %{roundId}",
-	"KnockoutWindow.Title.Final": "نهائي",
-	"Shop.SubsWeek.ThreeDays.Title": "اشتراك بريميوم تجريبي لمدة 3 أيام",
-	"Shop.SubsWeek.ThreeDays.Description": "اشتراك مميز في الأسبوع وثلاثة أيام مجانًا!",
-	"SubscriptionWindow.ThreeDaysAdditional": "جربها! ثلاثة ايام",
-	"BoostersSaleWindow.descriptionText": "قم بشراء %{purchasesCount} من المنتجات للبيع للحصول على مكافأة!",
-	"Terms.TermsOfService": "شروط الخدمة",
-	"Terms.and": "و",
-	"Terms.PrivacyPolicy": "سياسة خاصة",
-	"SubscriptionWindow.iOSThreeDaysAdditional": "3 أيام مجانًا. بعد %{price} في الأسبوع",
-	"BoostersBeforeComponent.Title": "حدد التعزيزات:",
-	"tripeaksPromo": "حاول حل ألغاز سوليتير الأكثر تحديًا مجانًا!",
-	"tripeaksPromoTitle": "الملوك والملكات",
-	"VictoryWindow.rewardsAhead": "المكافآت تنتظرك على مستويات جديدة!",
-	"comboExclamationText": "كومبو!",
-	"Combo.force": "لقد خمنت كلمتين على التوالي! 2 أكثر والمكافأة لك. فقط تأكد من تخمين كل كلمة جديدة في غضون 60 ثانية دون أخطاء.",
-	"Cryptex.force": "انظروا ، انها قبو! أراهن أن هناك شيئًا ذا قيمة في الداخل. دعونا فك شفرة التعليمات البرمجية عن طريق تخمين الكلمات. إذا تمكنا من فتحه في الوقت المناسب ، فستكون المكافأة لنا!",
-	"cryptexWindow.textProgress": "تم تخمين الكلمات: %{openedCount} من %{wordsCount}",
-	"androidsocial-facebook": "جوجل أو الفيسبوك",
-	"androidsocial": "جوجل",
-	"applesocial-facebook": "التفاح أو الفيسبوك",
-	"applesocial": "Apple",
-	"KnockoutRulesWindow.title": "عن البطولة",
-	"KnockoutRulesWindow.firstPlace": "مكان واحد",
-	"KnockoutRulesWindow.secondPlace": "2 مكان",
-	"KnockoutRulesWindow.thirdPlace": "3 مكان",
-	"KnockoutRulesWindow.fourthPlace": "4-10 أماكن",
-	"KnockoutRulesWindow.text": "اربح البطولات لكسب المكافآت!",
-	"KnockoutWindow.loading": "البحث عن لاعبين",
-	"KnockoutWindow.waitingForPlayers": "في انتظار اللاعبين",
-	"message.regularLevel": "المستوى العادي",
-	"SubscriptionWindow.iosWeekButton": "%{price} / الأسبوع",
-	"SubscriptionWindow.iosMonthButton": "%{price} / الشهر",
-	"SubscriptionWindow.weekButtonTitle": "قسط أسبوعي",
-	"SubscriptionWindow.monthButtonTitle": "القسط الشهري",
-	"BuildingStartWindow.itemTitle": "مكافأة:",
-	"scramblePromo": "جرب لعبة البحث عن الكلمات مجانا! البحث عن كل الكلمات المدافعة!",
-	"scramblePromoTitle": "Kitty Scramble",
-	"RestorePurchases": "استعادة المشتريات",
-	"message.lastRound": "الجولة النهائية",
-	"message.round": "الجولة %{roundId}",
-	"UnlockOnLevel": "من المستوى %{level}",
-	"Shop.sweetPack.boughtMessage": "اشتريت حزمة Newbie Pack!",
-	"Shop.jamPack.boughtMessage": "لقد اشتريت مبتدئ باك!",
-	"Shop.tastyPack.boughtMessage": "اشتريت حزمة Pro!",
-	"Shop.honeyPack.boughtMessage": "اشتريت حزمة ماستر!",
-	"Shop.epicPack.boughtMessage": "لقد اشتريت حزمة Champion Pack!",
-	"CloversTooltip": "عناصر البطولة المجمعة",
-	"RewardGoldTooltip": "جمع الذهب على هذا المستوى",
-	"PassLevelRewardTooltip": "المستوى الكامل للحصول على هذه المكافأة",
-	"ProvidedItemTooltip": "احصل على هذا العنصر عند الانتهاء من المستوى",
-	"LevelNotPassedTooltip": "أنت لم تصل إلى هذا المستوى بعد",
-	"PrizeTooltip": "مكافأة عند الانتهاء من البطولة",
-	"ResultTooltip": "تم جمع عناصر البطولة",
-	"KnockoutYouTooltip": "درجاتك",
-	"KnockoutEnemyTooltip": "نقاط الخصم",
-	"BoosterAmount": "%{amount} قطعة",
-	"TileShop.sweetPack.Title": "مبتدئ حزمة",
-	"TileShop.jamPack.Title": "حزمة المتدربين",
-	"TileShop.tastyPack.Title": "حزمة برو",
-	"TileShop.honeyPack.Title": "حزمة رئيسية",
-	"TileShop.epicPack.Title": "حزمة بطل",
-	"TileShop.sweetPack.Description": "حزمة رائعة مليئة بالعملات المعدنية والمعززات!",
-	"TileShop.jamPack.Description": "الكثير من العملات المعدنية والمعززات لمتعة اللعب!",
-	"TileShop.tastyPack.Description": "مزيج لا يصدق من العملات المعدنية والعديد من التعزيزات!",
-	"TileShop.honeyPack.Description": "مزيج مثالي من العملات المعدنية والتعزيزات المتعددة!",
-	"TileShop.epicPack.Description": "مزيج غير عادي من العملات الذهبية والمعززات الرائعة!",
-	"WeeklyCupVictoryWindow.place0": "المركز الأول!",
-	"WeeklyCupVictoryWindow.place1": "المكان الثاني!",
-	"WeeklyCupVictoryWindow.place2": "المكان الثالث!",
-	"WeeklyCupVictoryWindow.place3": "المركز الرابع!",
-	"WeeklyCupVictoryWindow.place4": "المركز الخامس!",
-	"WeeklyCupVictoryWindow.place5": "المركز السادس!",
-	"WeeklyCupVictoryWindow.place6": "المركز السابع!",
-	"WeeklyCupVictoryWindow.place7": "المركز الثامن!",
-	"WeeklyCupVictoryWindow.place8": "المركز التاسع!",
-	"WeeklyCupVictoryWindow.place9": "المركز العاشر!",
-	"WeeklyCupVictoryWindow.text": "تهانينا! الجائزة في انتظارك!",
-	"Share.WeeklyCup.Name": "لقد أكملت التحدي!",
-	"Share.WeeklyCup.Description": "استعد لتندهش من المكان %{place} الذي ربحته خلال الأسبوع التنافسي!",
-	"PhotoClover.force": "اضغط على العقيق لجمعهم والمشاركة في البطولة.",
-	"PaintAreaTooltip": "هذه المنطقة ليس لها اختلافات.",
-	"differencesPromo": "جرب لغز العمل هذا وتنافس مع لاعبين حقيقيين مجانًا!",
-	"differencesPromoTitle": "راشيل هولمز",
-	"ShovelsTooltip": "جمع معاول من خلال استكمال المستويات",
-	"Halloween.BoostersSaleWindow.title": "بيع الهالووين",
-	"LevelStartWindow.ComingSoonTitle": "مستوى إضافي",
-	"PlayButton.text": "المستوى %{levelNo}",
-	"BoostersSaleWindow.textLeft.13": "معززات مع",
-	"BoostersSaleWindow.textMiddle.13": "ضخم",
-	"BoostersSaleWindow.textRight.13": "خصم!",
-	"BackgroundsWindow.title": "رحلة بحرية",
-	"BackgroundsWindow.text": "اجمع النجوم لفتح أماكن رائعة جديدة",
-	"BackgroundsWindow.tapeText": "منجز",
-	"UnlimitedLives.10 minutes": "10 دقائق",
-	"StarsProgressBar.prizeTooltip": "جائزة عند الانتهاء",
-	"BackgroundsWindow.Get": "احصل على",
-	"Cup1PlaceTooltip": "جائزة المركز الأول",
-	"Cup2PlaceTooltip": "جائزة المركز الثاني",
-	"Cup3PlaceTooltip": "جائزة المركز الثالث",
-	"Cup4PlaceTooltip": "جائزة المركز الرابع",
-	"Cup5PlaceTooltip": "جائزة المركز الخامس",
-	"OpenBackgroundTooltip": "هدية هووسورمينغ",
-	"TreasureSearch.prizeTooltip": "جائزة",
-	"Rotate.device": "قم بتدوير جهازك",
-	"UnlimitedLivesShort.1 day": "1 د.",
-	"UnlimitedLivesShort.2 day": "2 د.",
-	"UnlimitedLivesShort.3 day": "3D.",
-	"UnlimitedLivesShort.5 day": "5d.",
-	"UnlimitedLivesShort.9 day": "9d.",
-	"UnlimitedLivesShort.10 day": "10 د.",
-	"UnlimitedLivesShort.6 hours": "6 ح.",
-	"UnlimitedLivesShort.12 hours": "12 ح.",
-	"UnlimitedLivesShort.OneHour": "1 ساعة.",
-	"UnlimitedLivesShort.TwoHours": "2 ح.",
-	"UnlimitedLivesShort.ThreeHours": "3h.",
-	"UnlimitedLivesShort.30 minutes": "30m.",
-	"UnlimitedLivesShort.15 minutes": "15 م.",
-	"UnlimitedLivesShort.10 minutes": "10 م.",
-	"UnlimitedLives.45 minutes": "45 دقيقة",
-	"UnlimitedLivesShort.45 minutes": "45 م.",
-	"SupportButton": "الدعم",
-	"Xmas.Missions.LetterTournament.Title": "القليل من ندفة الثلج",
-	"Xmas.Missions.LetterTournament.Rules1": "تخمين الكلمات للقبض على أكبر عدد ممكن من رقاقات الثلج!",
-	"Xmas.MissionRulesWindow.LetterTournament.text2": "تخمين الكلمات للقبض على رقاقات الثلج في ميدان اللعب وإكمال المستويات للتأكد من أنها تقيد الفضل.",
-	"Xmas.MissionRulesWindow.LetterTournament.text3": "قبض على رقاقات الثلج",
-	"UnlimitedLives.Title": "3 أيام من الحياة غير المحدودة",
-	"UnlimitedLives.Description": "حياة غير محدودة لمدة 3 أيام!",
-	"UnlimitedLivesBought": "اشتريت حياة غير محدود!",
-	"LoseWindow.title": "فشل المستوى",
-	"LoseWindow.livesLeft": "حياة اليسار:",
-	"LoseWindow.livesLeftUnlimited": "حياة اليسار: غير محدود",
-	"ChatTitle": "دعم CleverApps",
-	"BetBonus.ClosedText": "المكافأة غير متوفرة!",
-	"message.trickyLevel": "مستوى صعب!",
-	"Forces.BetBonus": "هنا يمكنك العثور على مكافأة للعب المستوى التالي",
-	"Simple.Force": "مستويات كاملة لكسب النجوم. استخدمها لفتح مواقع جديدة رائعة والحصول على مكافآت رائعة!",
-	"Claim": "يطالب",
-	"BonusWorldNotPassedLevelTooltip": "أنت لم تصل إلى هذا المستوى بعد",
-	"BonusWorldPassedLevelTooltip": "اكتمل هذا المستوى",
-	"background_name_0": "سان فرانسيسكو",
-	"background_name_1": "باريس",
-	"background_name_2": "موسكو",
-	"background_name_3": "روما",
-	"background_name_4": "مدينة البندقية",
-	"background_name_5": "برشلونة",
-	"background_name_6": "طوكيو",
-	"background_name_7": "لندن",
-	"background_name_8": "اوبرستدورف",
-	"background_name_9": "أمستردام",
-	"background_name_10": "القاهرة",
-	"background_name_11": "كيب تاون",
-	"background_name_12": "سيدني",
-	"background_name_13": "لشبونة",
-	"background_name_14": "ريو دي جانيرو",
-	"background_name_15": "سانتوريني",
-	"background_name_16": "اجرا",
-	"background_name_17": "بيزا",
-	"background_name_18": "كابادوكيا",
-	"background_name_19": "البطالة",
-	"background_name_20": "بانكوك",
-	"background_name_21": "برلين",
-	"background_name_22": "ستونهنج",
-	"background_name_23": "سنغافورة",
-	"background_name_24": "كوبنهاغن",
-	"background_name_25": "الدار البيضاء",
-	"background_name_26": "فرانكفورت",
-	"background_name_27": "هونج كونج",
-	"background_name_28": "مارساشلوك",
-	"background_name_29": "الجبال",
-	"background_name_30": "أمالفي",
-	"background_name_31": "Abu Dhabi",
-	"background_name_32": "المنامة",
-	"Soon": "هكذا!",
-	"Now": "حاليا!",
-	"background_name_33": "سياتل",
-	"background_name_34": "كيوتو",
-	"WordsAmount": "%{amount} كلمة",
-	"message.bonusLevel": "مستوى المكافأة",
-	"background_name_35": "دبي",
-	"IconLocked.TextDefault": "المستوى %{levelNo}",
-	"RewardsListComponent.rewardTitle": "مكافأة:",
-	"background_name_36": "فالنسيا",
-	"background_name_37": "أوتاوا",
-	"Claimed": "ادعى",
-	"Badge.discount": "مجانا",
-	"background_name_38": "قذر",
-	"mergecraftPromo": "جرب لعبة ألغاز الدمج المذهلة هذه! بناء عالمك الخاص!",
-	"mergecraftPromoTitle": "المملكة الأكبر",
-	"magicwordsPromo": "جرب لعبة تهجئة الكلمات مجانا! انتقد وربط الكلمات!",
-	"magicwordsPromoTitle": "كلمات السيرك",
-	"IconLocked.TipDefault": "متاح من المستوى %{level}",
-	"IconLocked.TipTimer": "متوفر قريبا!",
-	"background_name_39": "فلورنسا",
-	"background_name_40": "كانيوهي",
-	"ChatGreetingMessage": "أهلا! شكر لتواصلك معنا. يرجى وصف المشكلة التي تواجهها حتى نتمكن من البدء في العمل عليها.",
-	"ChatGiftDone": "منتهي",
-	"background_name_41": "مكسيكو سيتي",
-	"background_name_42": "بودابست",
-	"AdminGiftsHeroes": "أرسل مديرو اللعبة لك أبطالًا جددًا!",
-	"LocalPushes.FreeChest.Title": [
-		"يقدم الوقت!",
-		"الهدايا جاهزة!",
-		"ادعي ما هو لك!"
-	],
-	"LocalPushes.EnergyLottery.Title": [
-		"أشعر أنني محظوظ؟",
-		"إنه يومك!",
-		"حان الوقت للفوز!"
-	],
-	"LocalPushes.Energy.Title": [
-		"هل أنت مستعد للعب؟",
-		"هل كنت متشوق للعب؟",
-		"استهلكت كل طاقتك؟"
-	],
-	"LocalPushes.FreeChest": [
-		"قم بزيارة اللعبة لفتح صندوق المكافآت!",
-		"صندوق المكافآت في انتظارك. افتحه الآن!",
-		"احصل على عناصر المكافأة من الصندوق لإنقاذ المملكة"
-	],
-	"LocalPushes.EnergyLottery": [
-		"قم بزيارة اللعبة للفوز ببعض الطاقة المجانية!",
-		"الحظ في صفك. - استخدمه لكسب بعض الطاقة!",
-		"الطاقة المجانية في انتظارك ⚡️ خذها الآن!"
-	],
-	"LocalPushes.Energy": [
-		"تم إعادة ملء طاقتك! هيا نلعب!",
-		"تستطيع الآن! تمت استعادة طاقتك! 🔌",
-		"لا تحزن أكثر! تم إعادة ملء طاقتك! 🔋"
-	],
-	"Activity.BeatFriend.title": "أصدقاء ، اتبعني!",
-	"Activity.BeatFriend.body1": "المسافر العظيم %{userName} تسلم البطولة من %{friendName}!",
-	"Activity.DailyTask.title": "أنت قادر على أي شيء!",
-	"Activity.DailyTask.body1": "أظهر %{userName} مهاراته مرة أخرى من خلال إكمال المهمة!",
-	"Activity.DailyTask.body2": "تم تنفيذ المهمة بسهولة من قبل السيد %{userName}!",
-	"Activity.PassLevel.title": "يمر المستويات سهلاً مثل قصف البازلاء!",
-	"Activity.PassLevel.body1": "بلغت نسبة إجادة %{userName} على مستوى %{levelNo} %{score} نقطة!",
-	"Activity.PassLevel.body2": "أنا سيد مستوى %{levelNo}! هل يمكنك الفوز على %{score} من النقاط؟",
-	"Activity.PassLevel.body3": "My journey will not stop the %{levelNo} level! He was left behind with a score of %{score}!",
-	"hoursMinutesString": "%{hr}h.%{min}m.",
-	"LocalPushes.FruitRipe.Title": [
-		"وقت الحصاد - المحاصيل ناضجة!"
-	],
-	"LocalPushes.FruitRipe": [
-		"🌾 قم بزيارة اللعبة لجني المحاصيل والفاكهة وإعداد المزيد من الوصفات!"
-	],
-	"LocalPushes.CastlePrize.Title": [
-		"جائزة القلعة جاهزة!"
-	],
-	"LocalPushes.CastlePrize": [
-		"لا تنس زيارة اللعبة وجمع المكافآت التي أنتجتها قلعتك!"
-	],
-	"LocalPushes.OrderReady.Title": [
-		"طلبك جاهز!"
-	],
-	"LocalPushes.OrderReady": [
-		"⏰ أسرع! اجمع الطلبات المستوفاة واستبدلها بالمكافآت!"
-	],
-	"LocalPushes.TreeChopped.Title": [
-		"تم قطع العقبة!"
-	],
-	"LocalPushes.TreeChopped": [
-		"لقد حان الوقت لزيارة اللعبة وجمع المكافآت من العدو الذي سقط!"
-	],
-	"LocalPushes.BuildingBuilt.Title": [
-		"تم تشييد المبنى!"
-	],
-	"LocalPushes.BuildingBuilt": [
-		"🏠 قم بزيارة اللعبة للتحقق من المبنى الذي تم تشييده حديثًا!"
-	],
-	"AdminSetMethaProgress.Text": "لقد غيّر مسؤولو اللعبة رقم الخلفية لديك إلى %{bgIndex}. قبول التغييرات؟",
-	"AdminSetFarmProgress.Text": "قام مسؤولو اللعبة بتغيير المبنى الحالي الخاص بك إلى %{buildingName}. قبول التغييرات؟",
-	"AdminSetFarmProgress.Text.Unavailable": "قام مسؤولو اللعبة بتغيير تقدمك الحالي في البناء. قم بتحديث إصدار اللعبة لتطبيق تقدم جديد.",
-	"AdminSetFarmProgress.Text.Quest": "قام مسؤولو اللعبة بتغيير المبنى الحالي الخاص بك إلى %{buildingName} ، %{questName}. قبول التغييرات؟",
-	"AdminSetMethaProgress.Text.Unavailable": "قام مسؤولو اللعبة بتغيير رقم الخلفية الخاص بك. قم بتحديث إصدار اللعبة لتطبيق تقدم جديد.",
-	"LocalPushes.MagicPlantReady.Title": [
-		"بعض السحر ينتظر!"
-	],
-	"LocalPushes.MagicPlantReady": [
-		"احصل على العنصر السحري المصنوع حديثًا الآن!"
-	],
-	"Shop.Coins150.Title": "كومة من القطع النقدية",
-	"Shop.Coins150.Description": "Stack of Coins - 150 قطعة نقدية!",
-	"Shop.Coins1000.Title": "كومة من العملات المعدنية",
-	"Shop.Coins1000.Description": "كومة من العملات - 1000 قطعة نقدية!",
-	"Shop.Coins2500.Title": "كومة من العملات المعدنية",
-	"Shop.Coins2500.Description": "كومة من العملات المعدنية - 2500 قطعة نقدية!",
-	"Product.SoftCurrencyBought": "لقد اشتريت %{coins}!",
-	"background_name_43": "بورا بورا",
-	"background_name_44": "جزر المالديف",
-	"Watch": "يشاهد",
-	"BattlePassProduct.Title": "قسيمة الموسم",
-	"BattlePassWindow.title": "مهام لذيذة",
-	"BattlePassWindow.description": "أكمل المهام للحصول على الجوائز. مع Season Pass ، ستحصل على مكافأة مذهلة لكل مهمة مكتملة.",
-	"BattlePassWindow.timer": "الوقت المتبقي:",
-	"BattlePassWindow.finished": "انتهى الموسم",
-	"BattlePassWindow.progress": "الكافاءة التالية",
-	"BattlePassWindow.ticket.hint": "أنت بحاجة إلى التذكرة الذهبية للوصول إلى مكافآت أفضل!",
-	"BattlePassWindow.ticket.hint.active": "التذكرة الذهبية نشطة!",
-	"BattlePassWindow.moreStarsToolTip": "أنت بحاجة إلى المزيد من النجوم!",
-	"BattlePassWindow.needPremiumToolTip": "تحتاج تذكرة ذهبية!",
-	"BattlePassRulesWindow.title": "موسم البناء",
-	"BattlePassRulesWindow.description": "قم بشراء التذكرة الذهبية للمشاركة في هذا الحدث! احصل على المزيد من الجوائز كلما تقدمت!",
-	"BattlePassRulesWindow.firstStage": "تشييد المباني",
-	"BattlePassRulesWindow.secondStage": "جمع النجوم",
-	"BattlePassRulesWindow.thirdStage": "احصل على الجوائز",
-	"AdminSetHomeProgress.Text": "قام مسؤولو اللعبة بتغيير أثاثك الحالي إلى %{furnitureName}. قبول التغييرات؟",
-	"AdminSetHomeProgress.Text.Stage": "قام مسؤولو اللعبة بتغيير أثاثك الحالي إلى مهمة %{furnitureName} و %{stageName}. قبول التغييرات؟",
-	"AdminSetHomeProgress.Text.Unavailable": "قام مسؤولو اللعبة بتغيير تقدم الأثاث الحالي الخاص بك. قم بتحديث إصدار اللعبة لتطبيق تقدم جديد.",
-	"SlotMachine.IconForce": "جرب حظك مع آلة القمار!",
-	"SlotMachine.Force": "اضغط على الزر للعب!",
-	"LocalPushes.MineSweeperReady.Title": [
-		"هل أنت على مستوى التحدي؟"
-	],
-	"LocalPushes.MineSweeperReady": [
-		"تم فتح عرين التنين مرة أخرى! 🐉 تغلب عليه للحصول على مكافآتك!"
-	],
-	"background_name_45": "نيويورك",
-	"background_name_46": "بافاريا",
-	"background_name_47": "براغ",
-	"background_name_48": "الملائكة",
-	"background_name_49": "شيكاغو",
-	"background_name_50": "واشنطن العاصمة"
-}

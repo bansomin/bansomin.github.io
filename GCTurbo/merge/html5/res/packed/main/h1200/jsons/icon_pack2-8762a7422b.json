@@ -1,0 +1,128 @@
+{
+"skeleton": { "hash": "fTvMp7WrhKGpKeToiKPPT2VgRlE", "spine": "3.7.91", "width": 200.79, "height": 192.64, "images": "C:/Users/Админ/OneDrive/Desktop/pack2/images", "audio": "C:/Users/Админ/Desktop/sale_icon" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "icon", "parent": "root", "x": -5.5, "y": 27 },
+	{ "name": "pack_down", "parent": "icon", "x": 5.74, "y": -38.2, "color": "ff0000ff" },
+	{
+		"name": "pack_up",
+		"parent": "pack_down",
+		"x": 49.49,
+		"y": 66.47,
+		"scaleX": 0.853,
+		"scaleY": 0.699,
+		"shearX": -3.98,
+		"shearY": -1.01,
+		"color": "ff0000ff"
+	},
+	{ "name": "lights", "parent": "icon", "color": "ffda00ff" },
+	{ "name": "starter_ruby_icon", "parent": "icon", "x": 36.93, "y": 12.8, "scaleX": 1.035, "scaleY": 1.035 },
+	{ "name": "starter_energy__icon", "parent": "icon", "x": -48.64, "y": 11.4, "scaleX": 1.049, "scaleY": 1.049 },
+	{ "name": "starter_wand_icon", "parent": "icon", "x": -5.73, "y": 44.17 },
+	{ "name": "starter_worker_icon", "parent": "icon", "x": 13.81, "y": -17.49, "color": "0036ffff" }
+],
+"slots": [
+	{ "name": "pack_up", "bone": "pack_up", "attachment": "pack_up" },
+	{ "name": "pack_down", "bone": "pack_down", "attachment": "pack_down" },
+	{ "name": "starter_wand_icon", "bone": "starter_wand_icon", "attachment": "starter_wand_icon" },
+	{ "name": "starter_energy__icon", "bone": "starter_energy__icon", "attachment": "starter_energy__icon" },
+	{ "name": "starter_ruby_icon", "bone": "starter_ruby_icon", "attachment": "starter_ruby_icon" },
+	{ "name": "starter_worker_icon", "bone": "starter_worker_icon", "attachment": "starter_worker_icon" }
+],
+"skins": {
+	"default": {
+		"pack_down": {
+			"pack_down": { "x": -8.71, "y": -9.76, "width": 170, "height": 142 }
+		},
+		"pack_up": {
+			"pack_up": { "x": -9.54, "y": -5.93, "scaleX": 1.005, "scaleY": 1.043, "width": 152, "height": 122 }
+		},
+		"starter_energy__icon": {
+			"starter_energy__icon": { "x": -10.42, "y": -3.78, "width": 52, "height": 62 }
+		},
+		"starter_ruby_icon": {
+			"starter_ruby_icon": { "x": 0.08, "y": -5, "width": 59, "height": 52 }
+		},
+		"starter_wand_icon": {
+			"starter_wand_icon": { "x": -14.4, "y": -15.67, "width": 88, "height": 75 }
+		},
+		"starter_worker_icon": {
+			"starter_worker_icon": { "x": -15.37, "y": -11.16, "width": 68, "height": 58 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"starter_energy__icon": {
+				"scale": [
+					{
+						"time": 1.5,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{
+						"time": 1.7667,
+						"x": 1.13,
+						"y": 1.13,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{ "time": 2.0333, "x": 1, "y": 1 }
+				]
+			},
+			"starter_ruby_icon": {
+				"scale": [
+					{
+						"time": 1.8,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{
+						"time": 2.0667,
+						"x": 1.098,
+						"y": 1.098,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{ "time": 2.3333, "x": 1, "y": 1 }
+				]
+			},
+			"starter_worker_icon": {
+				"scale": [
+					{
+						"time": 2.3667,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{
+						"time": 2.6333,
+						"x": 1.13,
+						"y": 1.13,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{ "time": 2.9, "x": 1, "y": 1 }
+				]
+			},
+			"starter_wand_icon": {
+				"scale": [
+					{
+						"time": 2.1,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{
+						"time": 2.4,
+						"x": 1.13,
+						"y": 1.13,
+						"curve": [ 0.496, 0.5, 0.499, 0.5 ]
+					},
+					{ "time": 2.6333, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

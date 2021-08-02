@@ -1,0 +1,2183 @@
+
+tiles-b194f8cb3d.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blick
+  rotate: false
+  xy: 1954, 226
+  size: 89, 23
+  orig: 89, 23
+  offset: 0, 0
+  index: -1
+blick_particle
+  rotate: false
+  xy: 303, 99
+  size: 119, 109
+  orig: 119, 109
+  offset: 0, 0
+  index: -1
+blick_star
+  rotate: false
+  xy: 129, 204
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+growing_light
+  rotate: false
+  xy: 289, 117
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+tiles-blue-ground_1
+  rotate: false
+  xy: 1, 794
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-ground_2
+  rotate: false
+  xy: 1241, 527
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-grounded
+  rotate: false
+  xy: 1940, 477
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-blue-grow12_both
+  rotate: false
+  xy: 812, 70
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: -1
+tiles-blue-grow12_corner
+  rotate: false
+  xy: 1, 727
+  size: 108, 63
+  orig: 108, 63
+  offset: 0, 0
+  index: -1
+tiles-blue-grow12_left
+  rotate: false
+  xy: 928, 70
+  size: 110, 63
+  orig: 110, 63
+  offset: 0, 0
+  index: -1
+tiles-blue-grow12_right
+  rotate: false
+  xy: 1510, 1
+  size: 109, 62
+  orig: 109, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_down_both
+  rotate: false
+  xy: 1129, 531
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_down_corner
+  rotate: false
+  xy: 1017, 587
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_down_left_only
+  rotate: false
+  xy: 905, 596
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_down_right_only
+  rotate: false
+  xy: 793, 597
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_left_corner
+  rotate: false
+  xy: 680, 639
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_left_inner
+  rotate: false
+  xy: 1828, 339
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_left_inner_last
+  rotate: false
+  xy: 812, 1
+  size: 114, 65
+  orig: 114, 65
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_right_corner
+  rotate: false
+  xy: 567, 680
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_right_inner
+  rotate: false
+  xy: 1828, 420
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_right_inner_last
+  rotate: false
+  xy: 337, 781
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_up_both
+  rotate: false
+  xy: 1712, 422
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_up_corner
+  rotate: false
+  xy: 1129, 729
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_up_left_only
+  rotate: false
+  xy: 1824, 501
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_up_left_only_last
+  rotate: false
+  xy: 1936, 541
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_up_right_only
+  rotate: false
+  xy: 405, 265
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+tiles-blue-level1_up_right_only_last
+  rotate: false
+  xy: 569, 516
+  size: 108, 79
+  orig: 108, 79
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_left_inner
+  rotate: false
+  xy: 1, 542
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_left_inner_last
+  rotate: false
+  xy: 113, 559
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_right_inner
+  rotate: false
+  xy: 569, 231
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_right_inner_last
+  rotate: false
+  xy: 1623, 67
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_up_both
+  rotate: false
+  xy: 1506, 133
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_up_corner
+  rotate: false
+  xy: 1618, 163
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_up_left_only
+  rotate: false
+  xy: 1492, 229
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_up_left_only_last
+  rotate: false
+  xy: 1, 635
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_up_right_only
+  rotate: false
+  xy: 1282, 68
+  size: 108, 93
+  orig: 108, 93
+  offset: 0, 0
+  index: -1
+tiles-blue-level2_up_right_only_last
+  rotate: false
+  xy: 1735, 67
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-cloud2-cloud_2
+  rotate: false
+  xy: 1166, 1
+  size: 112, 67
+  orig: 112, 67
+  offset: 0, 0
+  index: -1
+tiles-decorators-bush5
+  rotate: false
+  xy: 258, 383
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_acorn
+  rotate: false
+  xy: 108, 1024
+  size: 77, 76
+  orig: 77, 76
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_blue_rock10
+  rotate: false
+  xy: 449, 830
+  size: 51, 67
+  orig: 51, 67
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_break_left
+  rotate: false
+  xy: 1353, 725
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_break_right
+  rotate: false
+  xy: 1016, 785
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_bumps
+  rotate: false
+  xy: 1210, 895
+  size: 34, 19
+  orig: 34, 19
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_bush
+  rotate: false
+  xy: 961, 952
+  size: 29, 16
+  orig: 29, 16
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_bush2
+  rotate: false
+  xy: 189, 1063
+  size: 73, 74
+  orig: 73, 74
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_bush3
+  rotate: false
+  xy: 116, 368
+  size: 23, 19
+  orig: 23, 19
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_bush4
+  rotate: false
+  xy: 563, 1034
+  size: 37, 28
+  orig: 37, 28
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_bush6
+  rotate: false
+  xy: 1034, 905
+  size: 46, 37
+  orig: 46, 37
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_cactus
+  rotate: false
+  xy: 1160, 850
+  size: 46, 63
+  orig: 46, 63
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_cactus2
+  rotate: false
+  xy: 381, 1058
+  size: 30, 67
+  orig: 30, 67
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_cactus_1
+  rotate: false
+  xy: 1, 1261
+  size: 68, 85
+  orig: 68, 85
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_cactus_2
+  rotate: false
+  xy: 497, 1065
+  size: 35, 50
+  orig: 35, 50
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_cave
+  rotate: false
+  xy: 801, 960
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_cave2
+  rotate: false
+  xy: 1801, 869
+  size: 62, 52
+  orig: 62, 52
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_cave3
+  rotate: false
+  xy: 1109, 892
+  size: 46, 49
+  orig: 46, 49
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_columns
+  rotate: false
+  xy: 1801, 810
+  size: 62, 55
+  orig: 62, 55
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_crystal
+  rotate: false
+  xy: 1084, 945
+  size: 29, 35
+  orig: 29, 35
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_door
+  rotate: false
+  xy: 266, 1063
+  size: 32, 45
+  orig: 32, 45
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_dragon_tale
+  rotate: false
+  xy: 1, 1
+  size: 145, 159
+  orig: 145, 159
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_eggs
+  rotate: false
+  xy: 1759, 797
+  size: 38, 45
+  orig: 38, 45
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_eggs2
+  rotate: false
+  xy: 504, 862
+  size: 56, 31
+  orig: 56, 31
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_fence
+  rotate: false
+  xy: 1034, 946
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_frozen_tree
+  rotate: false
+  xy: 563, 942
+  size: 78, 88
+  orig: 78, 88
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem1
+  rotate: false
+  xy: 1959, 71
+  size: 86, 80
+  orig: 86, 80
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem2
+  rotate: false
+  xy: 497, 992
+  size: 62, 69
+  orig: 62, 69
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem3
+  rotate: false
+  xy: 258, 353
+  size: 25, 26
+  orig: 25, 26
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem4
+  rotate: false
+  xy: 258, 288
+  size: 26, 32
+  orig: 26, 32
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem5
+  rotate: false
+  xy: 545, 189
+  size: 19, 34
+  orig: 19, 34
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem6
+  rotate: false
+  xy: 1532, 915
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem7
+  rotate: false
+  xy: 1568, 873
+  size: 64, 76
+  orig: 64, 76
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem8
+  rotate: false
+  xy: 150, 1
+  size: 149, 92
+  orig: 149, 92
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem9
+  rotate: false
+  xy: 115, 464
+  size: 19, 25
+  orig: 19, 25
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem10
+  rotate: false
+  xy: 289, 97
+  size: 10, 16
+  orig: 10, 16
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_gem11
+  rotate: false
+  xy: 898, 858
+  size: 82, 63
+  orig: 82, 63
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_green_stone
+  rotate: false
+  xy: 604, 1034
+  size: 35, 57
+  orig: 35, 57
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_green_stone1
+  rotate: false
+  xy: 1159, 917
+  size: 30, 49
+  orig: 30, 49
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_arc
+  rotate: false
+  xy: 150, 97
+  size: 135, 113
+  orig: 135, 113
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_cave
+  rotate: false
+  xy: 1, 164
+  size: 124, 116
+  orig: 124, 116
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_crystall
+  rotate: false
+  xy: 1954, 253
+  size: 82, 91
+  orig: 82, 91
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_crystall_2
+  rotate: false
+  xy: 692, 1
+  size: 116, 107
+  orig: 116, 107
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_eggs
+  rotate: false
+  xy: 1688, 797
+  size: 67, 89
+  orig: 67, 89
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_fir
+  rotate: false
+  xy: 1640, 791
+  size: 44, 47
+  orig: 44, 47
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_siderock
+  rotate: false
+  xy: 415, 991
+  size: 78, 71
+  orig: 78, 71
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_stairway
+  rotate: false
+  xy: 157, 1141
+  size: 72, 77
+  orig: 72, 77
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_ice_waterfall
+  rotate: false
+  xy: 233, 1156
+  size: 65, 109
+  orig: 65, 109
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_1
+  rotate: false
+  xy: 520, 332
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_2
+  rotate: false
+  xy: 520, 275
+  size: 45, 53
+  orig: 45, 53
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_3
+  rotate: false
+  xy: 443, 1
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_4
+  rotate: false
+  xy: 220, 992
+  size: 78, 67
+  orig: 78, 67
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_5
+  rotate: false
+  xy: 1962, 1
+  size: 85, 66
+  orig: 85, 66
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_6
+  rotate: false
+  xy: 1237, 791
+  size: 98, 100
+  orig: 98, 100
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_7
+  rotate: false
+  xy: 1568, 791
+  size: 68, 78
+  orig: 68, 78
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_8
+  rotate: false
+  xy: 80, 1151
+  size: 71, 95
+  orig: 71, 95
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_9
+  rotate: false
+  xy: 1561, 953
+  size: 49, 74
+  orig: 49, 74
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_icerock_10
+  rotate: false
+  xy: 916, 925
+  size: 41, 34
+  orig: 41, 34
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_iglu
+  rotate: false
+  xy: 504, 897
+  size: 55, 54
+  orig: 55, 54
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_island
+  rotate: false
+  xy: 785, 859
+  size: 81, 97
+  orig: 81, 97
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_lava
+  rotate: false
+  xy: 1940, 348
+  size: 106, 55
+  orig: 106, 55
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_leaf
+  rotate: false
+  xy: 545, 121
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_leaf2
+  rotate: false
+  xy: 1117, 945
+  size: 29, 32
+  orig: 29, 32
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_leaf3
+  rotate: false
+  xy: 258, 324
+  size: 26, 25
+  orig: 26, 25
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_leaf4
+  rotate: false
+  xy: 379, 1129
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_leaf_stone
+  rotate: false
+  xy: 258, 407
+  size: 22, 17
+  orig: 22, 17
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_leaf_stone2
+  rotate: false
+  xy: 454, 1108
+  size: 35, 23
+  orig: 35, 23
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_light_plant
+  rotate: false
+  xy: 266, 1112
+  size: 32, 40
+  orig: 32, 40
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_light_plant1
+  rotate: false
+  xy: 645, 1024
+  size: 37, 44
+  orig: 37, 44
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_lilies
+  rotate: false
+  xy: 504, 955
+  size: 55, 33
+  orig: 55, 33
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_mushroom1
+  rotate: false
+  xy: 155, 1222
+  size: 71, 67
+  orig: 71, 67
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_mushroom2
+  rotate: false
+  xy: 505, 721
+  size: 57, 54
+  orig: 57, 54
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_pillar1
+  rotate: false
+  xy: 129, 164
+  size: 14, 36
+  orig: 14, 36
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_pillar2
+  rotate: false
+  xy: 116, 430
+  size: 22, 30
+  orig: 22, 30
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_pillar3
+  rotate: false
+  xy: 116, 391
+  size: 22, 35
+  orig: 22, 35
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_pillar4
+  rotate: false
+  xy: 258, 428
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_plant
+  rotate: false
+  xy: 1532, 852
+  size: 32, 29
+  orig: 32, 29
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_plant2
+  rotate: false
+  xy: 545, 169
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_plant3
+  rotate: false
+  xy: 302, 1108
+  size: 73, 70
+  orig: 73, 70
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_purple_rock10
+  rotate: false
+  xy: 449, 901
+  size: 51, 67
+  orig: 51, 67
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock
+  rotate: false
+  xy: 1109, 850
+  size: 47, 38
+  orig: 47, 38
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock2
+  rotate: false
+  xy: 511, 484
+  size: 54, 53
+  orig: 54, 53
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock3
+  rotate: false
+  xy: 157, 1104
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock4
+  rotate: false
+  xy: 1636, 937
+  size: 47, 87
+  orig: 47, 87
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock5
+  rotate: false
+  xy: 1959, 155
+  size: 86, 67
+  orig: 86, 67
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock6
+  rotate: false
+  xy: 984, 905
+  size: 46, 43
+  orig: 46, 43
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock7
+  rotate: false
+  xy: 1461, 776
+  size: 103, 72
+  orig: 103, 72
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock8
+  rotate: false
+  xy: 756, 960
+  size: 41, 27
+  orig: 41, 27
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock9
+  rotate: false
+  xy: 116, 284
+  size: 23, 44
+  orig: 23, 44
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock10
+  rotate: false
+  xy: 1339, 853
+  size: 53, 70
+  orig: 53, 70
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock11
+  rotate: false
+  xy: 449, 777
+  size: 52, 49
+  orig: 52, 49
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock12
+  rotate: false
+  xy: 1, 992
+  size: 103, 86
+  orig: 103, 86
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock13
+  rotate: false
+  xy: 113, 931
+  size: 103, 89
+  orig: 103, 89
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock14
+  rotate: false
+  xy: 302, 1058
+  size: 75, 46
+  orig: 75, 46
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock15
+  rotate: false
+  xy: 542, 227
+  size: 23, 44
+  orig: 23, 44
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock16
+  rotate: false
+  xy: 116, 332
+  size: 23, 32
+  orig: 23, 32
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock17
+  rotate: false
+  xy: 258, 214
+  size: 27, 32
+  orig: 27, 32
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock18
+  rotate: false
+  xy: 454, 1066
+  size: 35, 38
+  orig: 35, 38
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock19
+  rotate: false
+  xy: 756, 991
+  size: 40, 35
+  orig: 40, 35
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_rock20
+  rotate: false
+  xy: 415, 1066
+  size: 35, 48
+  orig: 35, 48
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_roots
+  rotate: false
+  xy: 115, 522
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_roots2
+  rotate: false
+  xy: 545, 145
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_roots3
+  rotate: false
+  xy: 115, 493
+  size: 19, 25
+  orig: 19, 25
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_roots4
+  rotate: false
+  xy: 1759, 846
+  size: 38, 36
+  orig: 38, 36
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sand_cracks
+  rotate: false
+  xy: 1011, 849
+  size: 94, 52
+  orig: 94, 52
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sand_cracks2
+  rotate: false
+  xy: 1640, 842
+  size: 44, 29
+  orig: 44, 29
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sand_cracks3
+  rotate: false
+  xy: 645, 999
+  size: 39, 21
+  orig: 39, 21
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sand_rock
+  rotate: false
+  xy: 1, 450
+  size: 110, 88
+  orig: 110, 88
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sand_rock10
+  rotate: false
+  xy: 1688, 890
+  size: 53, 82
+  orig: 53, 82
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sand_waterfall
+  rotate: false
+  xy: 1, 1082
+  size: 75, 107
+  orig: 75, 107
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandcave_1
+  rotate: false
+  xy: 515, 385
+  size: 50, 95
+  orig: 50, 95
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandcave_2
+  rotate: false
+  xy: 76, 1250
+  size: 69, 70
+  orig: 69, 70
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandcave_3
+  rotate: false
+  xy: 258, 250
+  size: 26, 34
+  orig: 26, 34
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandcave_4
+  rotate: false
+  xy: 505, 618
+  size: 58, 99
+  orig: 58, 99
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandcave_5
+  rotate: false
+  xy: 672, 901
+  size: 80, 94
+  orig: 80, 94
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandcave_6
+  rotate: false
+  xy: 1636, 875
+  size: 48, 58
+  orig: 48, 58
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandrock_1
+  rotate: false
+  xy: 1, 1193
+  size: 71, 64
+  orig: 71, 64
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandrock_2
+  rotate: false
+  xy: 1124, 793
+  size: 94, 53
+  orig: 94, 53
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandrock_3
+  rotate: false
+  xy: 333, 977
+  size: 78, 77
+  orig: 78, 77
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandrock_4
+  rotate: false
+  xy: 426, 121
+  size: 115, 72
+  orig: 115, 72
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_sandstone
+  rotate: false
+  xy: 870, 925
+  size: 42, 53
+  orig: 42, 53
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_slope
+  rotate: false
+  xy: 1460, 852
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_snow_rock
+  rotate: false
+  xy: 303, 1
+  size: 136, 94
+  orig: 136, 94
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_snow_rock10
+  rotate: false
+  xy: 1396, 853
+  size: 53, 68
+  orig: 53, 68
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_snowdrift
+  rotate: false
+  xy: 445, 972
+  size: 55, 15
+  orig: 55, 15
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_snowman
+  rotate: false
+  xy: 505, 541
+  size: 59, 73
+  orig: 59, 73
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_stairs
+  rotate: false
+  xy: 1507, 945
+  size: 50, 59
+  orig: 50, 59
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_stairs2
+  rotate: false
+  xy: 1453, 920
+  size: 50, 85
+  orig: 50, 85
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_stone1
+  rotate: false
+  xy: 415, 1118
+  size: 34, 37
+  orig: 34, 37
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_stone2
+  rotate: false
+  xy: 688, 999
+  size: 37, 56
+  orig: 37, 56
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_stone4
+  rotate: false
+  xy: 536, 1066
+  size: 35, 49
+  orig: 35, 49
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_stone5
+  rotate: false
+  xy: 449, 714
+  size: 52, 59
+  orig: 52, 59
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_tree
+  rotate: false
+  xy: 80, 1104
+  size: 73, 43
+  orig: 73, 43
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_tumbleweed
+  rotate: false
+  xy: 1532, 885
+  size: 32, 26
+  orig: 32, 26
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_water_grid
+  rotate: false
+  xy: 1396, 925
+  size: 50, 64
+  orig: 50, 64
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_water_stone
+  rotate: false
+  xy: 1867, 810
+  size: 42, 85
+  orig: 42, 85
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_water_stone1
+  rotate: false
+  xy: 1507, 1008
+  size: 47, 62
+  orig: 47, 62
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_waterfall
+  rotate: false
+  xy: 1759, 886
+  size: 37, 68
+  orig: 37, 68
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_waterfall2
+  rotate: false
+  xy: 505, 779
+  size: 56, 79
+  orig: 56, 79
+  offset: 0, 0
+  index: -1
+tiles-decorators-decorator_waterice
+  rotate: false
+  xy: 569, 73
+  size: 116, 86
+  orig: 116, 86
+  offset: 0, 0
+  index: -1
+tiles-green-ground_1
+  rotate: false
+  xy: 225, 796
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-ground_2
+  rotate: false
+  xy: 113, 799
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-grounded
+  rotate: false
+  xy: 1940, 477
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-green-grow12_both
+  rotate: false
+  xy: 689, 112
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: -1
+tiles-green-grow12_corner
+  rotate: false
+  xy: 337, 714
+  size: 108, 63
+  orig: 108, 63
+  offset: 0, 0
+  index: -1
+tiles-green-grow12_left
+  rotate: false
+  xy: 1042, 70
+  size: 110, 63
+  orig: 110, 63
+  offset: 0, 0
+  index: -1
+tiles-green-grow12_right
+  rotate: false
+  xy: 1623, 1
+  size: 109, 62
+  orig: 109, 62
+  offset: 0, 0
+  index: -1
+tiles-green-level1_down_both
+  rotate: false
+  xy: 1, 860
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-level1_down_corner
+  rotate: false
+  xy: 1353, 527
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-level1_down_left_only
+  rotate: false
+  xy: 1465, 578
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-level1_down_right_only
+  rotate: false
+  xy: 1577, 593
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-level1_left_corner
+  rotate: false
+  xy: 1241, 593
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-level1_left_inner
+  rotate: false
+  xy: 1589, 431
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-green-level1_left_inner_last
+  rotate: false
+  xy: 930, 1
+  size: 114, 65
+  orig: 114, 65
+  offset: 0, 0
+  index: -1
+tiles-green-level1_right_corner
+  rotate: false
+  xy: 1129, 597
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-level1_right_inner
+  rotate: false
+  xy: 1701, 503
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-green-level1_right_inner_last
+  rotate: false
+  xy: 1017, 653
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-green-level1_up_both
+  rotate: false
+  xy: 1813, 582
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-green-level1_up_corner
+  rotate: false
+  xy: 903, 794
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-green-level1_up_left_only
+  rotate: false
+  xy: 1925, 622
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-green-level1_up_left_only_last
+  rotate: false
+  xy: 1245, 446
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-green-level1_up_right_only
+  rotate: false
+  xy: 143, 214
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+tiles-green-level1_up_right_only_last
+  rotate: false
+  xy: 1017, 423
+  size: 108, 79
+  orig: 108, 79
+  offset: 0, 0
+  index: -1
+tiles-green-level2_left_inner
+  rotate: false
+  xy: 1264, 261
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-green-level2_left_inner_last
+  rotate: false
+  xy: 1604, 256
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-green-level2_right_inner
+  rotate: false
+  xy: 1847, 67
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-green-level2_right_inner_last
+  rotate: false
+  xy: 1268, 165
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-green-level2_up_both
+  rotate: false
+  xy: 1152, 169
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-green-level2_up_corner
+  rotate: false
+  xy: 1376, 261
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-green-level2_up_left_only
+  rotate: false
+  xy: 1141, 265
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-green-level2_up_left_only_last
+  rotate: false
+  xy: 1488, 322
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-green-level2_up_right_only
+  rotate: false
+  xy: 1394, 68
+  size: 108, 93
+  orig: 108, 93
+  offset: 0, 0
+  index: -1
+tiles-green-level2_up_right_only_last
+  rotate: false
+  xy: 1380, 165
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-ice-ground_1
+  rotate: false
+  xy: 905, 662
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-ground_2
+  rotate: false
+  xy: 1353, 593
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-grounded
+  rotate: false
+  xy: 790, 795
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-ice-grow12_both
+  rotate: false
+  xy: 569, 163
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: -1
+tiles-ice-grow12_corner
+  rotate: false
+  xy: 225, 729
+  size: 108, 63
+  orig: 108, 63
+  offset: 0, 0
+  index: -1
+tiles-ice-grow12_left
+  rotate: false
+  xy: 1282, 1
+  size: 110, 63
+  orig: 110, 63
+  offset: 0, 0
+  index: -1
+tiles-ice-grow12_right
+  rotate: false
+  xy: 1736, 1
+  size: 109, 62
+  orig: 109, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_down_both
+  rotate: false
+  xy: 1465, 644
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_down_corner
+  rotate: false
+  xy: 792, 663
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_down_left_only
+  rotate: false
+  xy: 679, 705
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_down_right_only
+  rotate: false
+  xy: 566, 746
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_left_corner
+  rotate: false
+  xy: 337, 847
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_left_inner
+  rotate: false
+  xy: 1129, 450
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_left_inner_last
+  rotate: false
+  xy: 1017, 506
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_right_corner
+  rotate: false
+  xy: 225, 862
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_right_inner
+  rotate: false
+  xy: 288, 280
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_right_inner_last
+  rotate: false
+  xy: 1716, 256
+  size: 108, 79
+  orig: 108, 79
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_up_both
+  rotate: false
+  xy: 905, 515
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_up_corner
+  rotate: false
+  xy: 677, 837
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_up_left_only
+  rotate: false
+  xy: 793, 516
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_up_left_only_last
+  rotate: false
+  xy: 681, 558
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_up_right_only
+  rotate: false
+  xy: 1, 284
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+tiles-ice-level1_up_right_only_last
+  rotate: false
+  xy: 1828, 256
+  size: 108, 79
+  orig: 108, 79
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_left_inner
+  rotate: false
+  xy: 1730, 163
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_left_inner_last
+  rotate: false
+  xy: 1253, 354
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_right_inner
+  rotate: false
+  xy: 1156, 72
+  size: 108, 93
+  orig: 108, 93
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_right_inner_last
+  rotate: false
+  xy: 917, 234
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_up_both
+  rotate: false
+  xy: 797, 235
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_up_corner
+  rotate: false
+  xy: 1842, 163
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_up_left_only
+  rotate: false
+  xy: 909, 330
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_up_left_only_last
+  rotate: false
+  xy: 1133, 358
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_up_right_only
+  rotate: false
+  xy: 928, 137
+  size: 108, 93
+  orig: 108, 93
+  offset: 0, 0
+  index: -1
+tiles-ice-level2_up_right_only_last
+  rotate: false
+  xy: 681, 277
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-purple-ground_1
+  rotate: false
+  xy: 113, 865
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-ground_2
+  rotate: false
+  xy: 1, 926
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-grounded
+  rotate: false
+  xy: 564, 878
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-purple-grow12_both
+  rotate: false
+  xy: 426, 197
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: -1
+tiles-purple-grow12_corner
+  rotate: false
+  xy: 113, 732
+  size: 108, 63
+  orig: 108, 63
+  offset: 0, 0
+  index: -1
+tiles-purple-grow12_left
+  rotate: false
+  xy: 1396, 1
+  size: 110, 63
+  orig: 110, 63
+  offset: 0, 0
+  index: -1
+tiles-purple-grow12_right
+  rotate: false
+  xy: 1849, 1
+  size: 109, 62
+  orig: 109, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_down_both
+  rotate: false
+  xy: 1577, 659
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_down_corner
+  rotate: false
+  xy: 1689, 665
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_down_left_only
+  rotate: false
+  xy: 1241, 659
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_down_right_only
+  rotate: false
+  xy: 1129, 663
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_left_corner
+  rotate: false
+  xy: 1017, 719
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_left_inner
+  rotate: false
+  xy: 568, 599
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_left_inner_last
+  rotate: false
+  xy: 1048, 1
+  size: 114, 65
+  orig: 114, 65
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_right_corner
+  rotate: false
+  xy: 1353, 659
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_right_inner
+  rotate: false
+  xy: 1357, 446
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_right_inner_last
+  rotate: false
+  xy: 1465, 710
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_up_both
+  rotate: false
+  xy: 1469, 497
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_up_corner
+  rotate: false
+  xy: 337, 913
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_up_left_only
+  rotate: false
+  xy: 1581, 512
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_up_left_only_last
+  rotate: false
+  xy: 1693, 584
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_up_right_only
+  rotate: false
+  xy: 143, 297
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+tiles-purple-level1_up_right_only_last
+  rotate: false
+  xy: 1716, 339
+  size: 108, 79
+  orig: 108, 79
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_left_inner
+  rotate: false
+  xy: 793, 331
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_left_inner_last
+  rotate: false
+  xy: 1365, 354
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_right_inner
+  rotate: false
+  xy: 569, 327
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_right_inner_last
+  rotate: false
+  xy: 403, 348
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_up_both
+  rotate: false
+  xy: 287, 363
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_up_corner
+  rotate: false
+  xy: 681, 373
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_up_left_only
+  rotate: false
+  xy: 569, 423
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_up_left_only_last
+  rotate: false
+  xy: 905, 423
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_up_right_only
+  rotate: false
+  xy: 1040, 137
+  size: 108, 93
+  orig: 108, 93
+  offset: 0, 0
+  index: -1
+tiles-purple-level2_up_right_only_last
+  rotate: false
+  xy: 399, 444
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-sand-ground_1
+  rotate: false
+  xy: 1577, 725
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-ground_2
+  rotate: false
+  xy: 904, 728
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-grounded
+  rotate: false
+  xy: 225, 928
+  size: 104, 60
+  orig: 104, 60
+  offset: 0, 0
+  index: -1
+tiles-sand-grow12_both
+  rotate: false
+  xy: 289, 212
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: -1
+tiles-sand-grow12_corner
+  rotate: false
+  xy: 1353, 789
+  size: 103, 60
+  orig: 103, 60
+  offset: 0, 0
+  index: -1
+tiles-sand-grow12_left
+  rotate: false
+  xy: 791, 729
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-grow12_right
+  rotate: false
+  xy: 1510, 67
+  size: 109, 62
+  orig: 109, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_down_both
+  rotate: false
+  xy: 678, 771
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_down_corner
+  rotate: false
+  xy: 565, 812
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_down_left_only
+  rotate: false
+  xy: 1689, 731
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_down_right_only
+  rotate: false
+  xy: 1801, 744
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_left_corner
+  rotate: false
+  xy: 1913, 784
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_left_inner
+  rotate: false
+  xy: 1805, 663
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_left_inner_last
+  rotate: false
+  xy: 1917, 703
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_right_corner
+  rotate: false
+  xy: 1241, 725
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_right_inner
+  rotate: false
+  xy: 1, 367
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_right_inner_last
+  rotate: false
+  xy: 1600, 348
+  size: 108, 79
+  orig: 108, 79
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_up_both
+  rotate: false
+  xy: 366, 633
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_up_corner
+  rotate: false
+  xy: 1940, 407
+  size: 104, 66
+  orig: 104, 66
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_up_left_only
+  rotate: false
+  xy: 225, 648
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_up_left_only_last
+  rotate: false
+  xy: 113, 651
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_up_right_only
+  rotate: false
+  xy: 143, 380
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+tiles-sand-level1_up_right_only_last
+  rotate: false
+  xy: 1477, 414
+  size: 108, 79
+  orig: 108, 79
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_left_inner
+  rotate: false
+  xy: 393, 540
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_left_inner_last
+  rotate: false
+  xy: 793, 424
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_right_inner
+  rotate: false
+  xy: 805, 138
+  size: 108, 93
+  orig: 108, 93
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_right_inner_last
+  rotate: false
+  xy: 281, 459
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_up_both
+  rotate: false
+  xy: 1029, 234
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_up_corner
+  rotate: false
+  xy: 1021, 330
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_up_left_only
+  rotate: false
+  xy: 254, 555
+  size: 108, 89
+  orig: 108, 89
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_up_left_only_last
+  rotate: false
+  xy: 681, 466
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_up_right_only
+  rotate: false
+  xy: 685, 180
+  size: 108, 93
+  orig: 108, 93
+  offset: 0, 0
+  index: -1
+tiles-sand-level2_up_right_only_last
+  rotate: false
+  xy: 142, 463
+  size: 108, 92
+  orig: 108, 92
+  offset: 0, 0
+  index: -1
+tiles-terrain-water
+  rotate: false
+  xy: 569, 1
+  size: 119, 68
+  orig: 119, 68
+  offset: 0, 0
+  index: -1
