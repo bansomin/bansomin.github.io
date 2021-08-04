@@ -77,7 +77,7 @@
 </div>
 
 
-<script>var ttscripts=['https://mergecraft-staging.labsystech.ru/publish/html5-staging/cleverapps/res/cocoslib-3_17_2-bd47614909.js','https://mergecraft-staging.labsystech.ru/publish/html5-staging/game-v1.227.10.421367666.js'];var next = function(id) {
+<script>var ttscripts=['https://mergecraft-staging.labsystech.ru/publish/html5-staging/cleverapps/res/cocoslib-3_17_2-bd47614909.js','https://mergecraft-staging.labsystech.ru/publish/html5-staging/game-v1.227.10.480268031.js'];var next = function(id) {
     if (id === ttscripts.length) {
         return;
     }
