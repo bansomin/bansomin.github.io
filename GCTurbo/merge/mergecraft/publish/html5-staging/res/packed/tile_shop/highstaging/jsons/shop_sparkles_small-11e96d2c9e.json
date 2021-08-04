@@ -1,0 +1,255 @@
+{
+"skeleton": { "hash": "Emi5drTvhkZ50mMm3cv4/4TBrwc", "spine": "3.7.94", "width": 169.92, "height": 160.57, "images": "C:/Work/Kitty/shop_sparkles/images", "audio": "D:/Dina/Solitaire/ОКНА/SHOP/анимация магазин" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" },
+	{ "name": "shop_coins_light", "parent": "bone", "x": -1.01, "y": 0.44 },
+	{ "name": "shop_coins_light2", "parent": "bone", "x": -21.49, "y": -60.79 },
+	{ "name": "shop_coins_light_sparkles", "parent": "bone" },
+	{ "name": "shop_coins_light3", "parent": "bone", "x": -59.41, "y": 37, "scaleX": 1.396, "scaleY": 1.396 },
+	{ "name": "shop_coins_light4", "parent": "bone", "x": 15.69, "y": 71.18, "scaleX": 0.535, "scaleY": 0.535 },
+	{ "name": "shop_coins_light_sparkles2", "parent": "bone", "x": -8.21, "y": 34.98, "scaleX": 0.481, "scaleY": 0.481 },
+	{ "name": "shop_coins_light_sparkles3", "parent": "bone", "x": 49.41, "y": -41.77, "scaleX": 0.641, "scaleY": 0.641 },
+	{ "name": "shop_coins_light_sparkles4", "parent": "bone", "x": -72.05, "y": -22.38, "scaleX": 0.481, "scaleY": 0.481 },
+	{ "name": "shop_coins_light5", "parent": "bone", "x": 60.25, "y": 33.17, "scaleX": 1.396, "scaleY": 1.396 }
+],
+"slots": [
+	{ "name": "shop_coins_light", "bone": "shop_coins_light", "attachment": "shop_coins_light_sparkles" },
+	{ "name": "shop_coins_light3", "bone": "shop_coins_light3", "attachment": "shop_coins_light" },
+	{ "name": "shop_coins_light5", "bone": "shop_coins_light5", "attachment": "shop_coins_light" },
+	{ "name": "shop_coins_light4", "bone": "shop_coins_light4", "attachment": "shop_coins_light" },
+	{ "name": "shop_coins_light2", "bone": "shop_coins_light2", "attachment": "shop_coins_light" },
+	{ "name": "shop_coins_light_sparkles", "bone": "shop_coins_light_sparkles", "color": "ffffff63", "attachment": "shop_coins_light_sparkles" },
+	{ "name": "shop_coins_light_sparkles2", "bone": "shop_coins_light_sparkles2", "attachment": "shop_coins_light_sparkles" },
+	{ "name": "shop_coins_light_sparkles4", "bone": "shop_coins_light_sparkles4", "color": "ffffff71", "attachment": "shop_coins_light_sparkles" },
+	{ "name": "shop_coins_light_sparkles3", "bone": "shop_coins_light_sparkles3", "color": "ffffff6e", "attachment": "shop_coins_light_sparkles" }
+],
+"skins": {
+	"default": {
+		"shop_coins_light": {
+			"shop_coins_light_sparkles": { "x": 1.01, "y": -0.44, "width": 36, "height": 37 }
+		},
+		"shop_coins_light2": {
+			"shop_coins_light": { "path": "shop_coins_light_sparkles", "x": 1.01, "y": -0.44, "width": 36, "height": 37 }
+		},
+		"shop_coins_light3": {
+			"shop_coins_light": { "path": "shop_coins_light_sparkles", "x": 1.01, "y": -0.44, "width": 36, "height": 37 }
+		},
+		"shop_coins_light4": {
+			"shop_coins_light": { "path": "shop_coins_light_sparkles", "x": 1.01, "y": -0.44, "width": 36, "height": 37 }
+		},
+		"shop_coins_light5": {
+			"shop_coins_light": { "path": "shop_coins_light_sparkles", "x": 1.01, "y": -0.44, "width": 36, "height": 37 }
+		},
+		"shop_coins_light_sparkles": {
+			"shop_coins_light_sparkles": { "x": 0.99, "y": -0.25, "width": 36, "height": 37 }
+		},
+		"shop_coins_light_sparkles2": {
+			"shop_coins_light_sparkles": { "x": 0.99, "y": -0.25, "width": 36, "height": 37 }
+		},
+		"shop_coins_light_sparkles3": {
+			"shop_coins_light_sparkles": { "x": 0.99, "y": -0.25, "width": 36, "height": 37 }
+		},
+		"shop_coins_light_sparkles4": {
+			"shop_coins_light_sparkles": { "x": 0.99, "y": -0.25, "width": 36, "height": 37 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"shop_coins_light": {
+				"rotate": [
+					{ "time": 0.9667, "angle": 0 },
+					{ "time": 1.4333, "angle": 180 },
+					{ "time": 2.9, "angle": 0 },
+					{ "time": 3.3333, "angle": 180 }
+				],
+				"translate": [
+					{ "time": 0, "x": 27.26, "y": -10.4 },
+					{
+						"time": 0.9667,
+						"x": -74.44,
+						"y": 110.79,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.4333, "x": -22.31, "y": 88.73 },
+					{ "time": 2.9, "x": 27.26, "y": -10.4 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.9667, "x": 0, "y": 0 },
+					{ "time": 1.2, "x": 2, "y": 2 },
+					{ "time": 1.4333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.9, "x": 0, "y": 0 },
+					{ "time": 3.1, "x": 2, "y": 2 },
+					{ "time": 3.3333, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light2": {
+				"rotate": [
+					{ "time": 3.3333, "angle": 0 },
+					{ "time": 3.8, "angle": 180 },
+					{ "time": 5.5333, "angle": 0 },
+					{ "time": 5.9667, "angle": 180 }
+				],
+				"translate": [
+					{ "time": 0, "x": 27.26, "y": -10.4, "curve": "stepped" },
+					{ "time": 3.8, "x": 27.26, "y": -10.4 },
+					{ "time": 5.5333, "x": 66.45, "y": -50.42 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3.3333, "x": 0, "y": 0 },
+					{ "time": 3.5667, "x": 2, "y": 2 },
+					{ "time": 3.8, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 5.5333, "x": 0, "y": 0 },
+					{ "time": 5.7333, "x": 2, "y": 2 },
+					{ "time": 5.9667, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light3": {
+				"rotate": [
+					{ "time": 4, "angle": 0 },
+					{ "time": 4.4667, "angle": 180 },
+					{ "time": 6.2333, "angle": 0 },
+					{ "time": 6.6667, "angle": 180 }
+				],
+				"translate": [
+					{ "time": 0, "x": 27.26, "y": -10.4 },
+					{ "time": 4, "x": -37.81, "y": -88.7, "curve": "stepped" },
+					{ "time": 4.4667, "x": -37.81, "y": -88.7 },
+					{ "time": 6.2333, "x": 27.26, "y": -10.4 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4, "x": 0, "y": 0 },
+					{ "time": 4.2333, "x": 2, "y": 2 },
+					{ "time": 4.4667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 6.2333, "x": 0, "y": 0 },
+					{ "time": 6.4667, "x": 2, "y": 2 },
+					{ "time": 6.6667, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light4": {
+				"rotate": [
+					{ "time": 2.5667, "angle": 0 },
+					{ "time": 3.0333, "angle": 180 },
+					{ "time": 4.6, "angle": 0 },
+					{ "time": 5.0333, "angle": 180 }
+				],
+				"translate": [
+					{ "time": 0, "x": 27.26, "y": -10.4, "curve": "stepped" },
+					{ "time": 3.0333, "x": 27.26, "y": -10.4 },
+					{ "time": 4.6, "x": -4.15, "y": 32.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.5667, "x": 0, "y": 0 },
+					{ "time": 2.8, "x": 2, "y": 2 },
+					{ "time": 3.0333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4.6, "x": 0, "y": 0 },
+					{ "time": 4.8, "x": 2, "y": 2 },
+					{ "time": 5.0333, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light_sparkles": {
+				"rotate": [
+					{ "time": 0.4333, "angle": 0 },
+					{ "time": 0.7667, "angle": 180 },
+					{ "time": 1.0667, "angle": 0, "curve": "stepped" },
+					{ "time": 4.3667, "angle": 0 },
+					{ "time": 4.6667, "angle": 180 },
+					{ "time": 5, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4333, "x": 0, "y": 0 },
+					{ "time": 0.7667, "x": 2, "y": 2 },
+					{ "time": 1.0667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4.3667, "x": 0, "y": 0 },
+					{ "time": 4.6667, "x": 2, "y": 2 },
+					{ "time": 5, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light_sparkles2": {
+				"rotate": [
+					{ "time": 2.1, "angle": 0 },
+					{ "time": 2.4, "angle": 180 },
+					{ "time": 2.7, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.1, "x": 0, "y": 0 },
+					{ "time": 2.4, "x": 2, "y": 2 },
+					{ "time": 2.7, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light_sparkles3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3, "angle": 180 },
+					{ "time": 0.6333, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.3, "x": 2, "y": 2 },
+					{ "time": 0.6333, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light_sparkles4": {
+				"rotate": [
+					{ "time": 1.5667, "angle": 0 },
+					{ "time": 1.8667, "angle": 180 },
+					{ "time": 2.1667, "angle": 0, "curve": "stepped" },
+					{ "time": 3.1667, "angle": 0 },
+					{ "time": 3.4667, "angle": 180 },
+					{ "time": 3.8, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5667, "x": 0, "y": 0 },
+					{ "time": 1.8667, "x": 2, "y": 2 },
+					{ "time": 2.1667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3.1667, "x": 0, "y": 0 },
+					{ "time": 3.4667, "x": 2, "y": 2 },
+					{ "time": 3.8, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light5": {
+				"rotate": [
+					{ "time": 1.0667, "angle": 0 },
+					{ "time": 1.4667, "angle": 180 },
+					{ "time": 3.9333, "angle": 0 },
+					{ "time": 4.4, "angle": 180 }
+				],
+				"translate": [
+					{ "time": 0, "x": 27.26, "y": -10.4, "curve": "stepped" },
+					{ "time": 1.4667, "x": 27.26, "y": -10.4 },
+					{
+						"time": 3.9333,
+						"x": -4.15,
+						"y": 32.58,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 4.4, "x": -45.25, "y": 26.57 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.0667, "x": 0, "y": 0 },
+					{ "time": 1.3, "x": 2, "y": 2 },
+					{ "time": 1.4667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3.9333, "x": 0, "y": 0 },
+					{ "time": 4.1667, "x": 2, "y": 2 },
+					{ "time": 4.4, "x": 0, "y": 0 }
+				]
+			},
+			"bone": {
+				"scale": [
+					{ "time": 0, "x": 0.4, "y": 0.4 }
+				]
+			}
+		}
+	}
+}
+}

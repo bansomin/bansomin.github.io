@@ -1,0 +1,54 @@
+{
+"skeleton": { "hash": "oY2OO27WRhvM7tRWHh20ijeATCY", "spine": "3.7.94", "width": 58, "height": 55, "images": "C:/Work/Soliter/Jackpot/coins_reward/images", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "jackpot_light19", "parent": "root", "rotation": 90, "x": 1.12, "y": -156.89 }
+],
+"slots": [
+	{ "name": "jackpot_light19", "bone": "jackpot_light19", "attachment": "jackpot_light" }
+],
+"skins": {
+	"default": {
+		"jackpot_light19": {
+			"jackpot_light": { "x": -0.35, "y": 1.27, "width": 55, "height": 58 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"jackpot_light19": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffffff" },
+					{ "time": 0.6, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "jackpot_light" }
+				]
+			}
+		},
+		"bones": {
+			"jackpot_light19": {
+				"translate": [
+					{ "time": 0, "x": 6.77, "y": 162.6, "curve": "stepped" },
+					{ "time": 0.0667, "x": 6.77, "y": 162.6 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0667, "x": 7.452, "y": 7.452 },
+					{ "time": 0.3333, "x": 34.169, "y": 34.169 },
+					{
+						"time": 0.4667,
+						"x": 19.649,
+						"y": 19.649,
+						"curve": [ 0.106, 0.78, 0.75, 1 ]
+					},
+					{ "time": 0.7333, "x": 48.316, "y": 48.316 }
+				]
+			}
+		}
+	}
+}
+}

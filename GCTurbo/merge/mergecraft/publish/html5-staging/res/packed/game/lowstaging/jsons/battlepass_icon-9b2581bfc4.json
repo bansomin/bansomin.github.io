@@ -1,0 +1,191 @@
+{
+"skeleton": { "hash": "IcTTh5PN+ObvIavoIHfXigRzObE", "spine": "3.7.91", "width": 209, "height": 211, "images": "./images/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -5.06, "y": -18.4 },
+	{ "name": "mission_ruby_blick", "parent": "bone", "x": -58.35, "y": 5.43, "scaleX": 0.582, "scaleY": 0.582 },
+	{ "name": "mission_ruby_blick2", "parent": "bone", "rotation": 77.16, "x": 35.54, "y": 16.81 },
+	{ "name": "bone2", "parent": "root" },
+	{ "name": "battlepass_ticket", "parent": "bone2", "length": 118.42, "rotation": 67.81, "x": -37.48, "y": -44.43 },
+	{ "name": "battlepass_ticket2", "parent": "bone2", "length": 111.17, "rotation": 49.47, "x": -31.47, "y": -43.95 }
+],
+"slots": [
+	{ "name": "battlepass_light", "bone": "battlepass_ticket", "attachment": "battlepass_light" },
+	{ "name": "battlepass_light2", "bone": "battlepass_ticket2", "attachment": "battlepass_light" },
+	{ "name": "battlepass_ticket2", "bone": "battlepass_ticket2", "attachment": "battlepass_ticket2" },
+	{ "name": "battlepass_ticket", "bone": "battlepass_ticket", "attachment": "battlepass_ticket" },
+	{ "name": "sale_icon_blick", "bone": "mission_ruby_blick", "attachment": "battlepass_blick" },
+	{ "name": "sale_icon_blick2", "bone": "mission_ruby_blick2", "attachment": "battlepass_blick" }
+],
+"skins": {
+	"default": {
+		"battlepass_light": {
+			"battlepass_light": {
+				"x": 56.15,
+				"y": -3.16,
+				"scaleX": 2,
+				"scaleY": 2,
+				"rotation": -67.81,
+				"width": 75,
+				"height": 83
+			}
+		},
+		"battlepass_light2": {
+			"battlepass_light": {
+				"x": 55.79,
+				"y": -1.42,
+				"scaleX": 2,
+				"scaleY": 2,
+				"rotation": -65,
+				"width": 75,
+				"height": 83
+			}
+		},
+		"battlepass_ticket": {
+			"battlepass_ticket": { "x": 53.99, "y": -3.25, "rotation": -67.81, "width": 117, "height": 132 }
+		},
+		"battlepass_ticket2": {
+			"battlepass_ticket2": { "x": 54.7, "y": -1.56, "rotation": -49.47, "width": 133, "height": 127 }
+		},
+		"sale_icon_blick": {
+			"battlepass_blick": { "x": -0.43, "y": -0.63, "width": 44, "height": 49 }
+		},
+		"sale_icon_blick2": {
+			"battlepass_blick": { "x": -0.43, "y": -0.63, "width": 44, "height": 49 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"sale_icon_blick": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 0.8, "color": "ffffff00" }
+				]
+			},
+			"sale_icon_blick2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" },
+					{ "time": 0.4667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.7, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" },
+					{ "time": 0.9667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"mission_ruby_blick": {
+				"rotate": [
+					{ "time": 0.5, "angle": 0 },
+					{ "time": 0.8333, "angle": -45 }
+				],
+				"translate": [
+					{ "time": 0.5, "x": 0.92, "y": 26.06 }
+				],
+				"scale": [
+					{ "time": 0.5, "x": 0.306, "y": 0.306 },
+					{ "time": 0.6667, "x": 1.718, "y": 1.718 },
+					{ "time": 0.8333, "x": 0.306, "y": 0.306 }
+				]
+			},
+			"mission_ruby_blick2": {
+				"rotate": [
+					{ "time": 0.1667, "angle": 0 },
+					{ "time": 0.5, "angle": -98 },
+					{ "time": 0.6667, "angle": 0 },
+					{ "time": 1, "angle": -98 }
+				],
+				"translate": [
+					{ "time": 0, "x": -3.83, "y": 0.8, "curve": "stepped" },
+					{ "time": 0.1667, "x": -3.83, "y": 0.8 },
+					{ "time": 0.5, "x": -6.84, "y": 23.98, "curve": "stepped" },
+					{ "time": 0.6667, "x": 24.76, "y": -34.87 },
+					{ "time": 1, "x": 19.19, "y": -24.25 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.306, "y": 0.306, "curve": "stepped" },
+					{ "time": 0.1667, "x": 0.306, "y": 0.306 },
+					{ "time": 0.3333, "x": 1.2, "y": 1.2 },
+					{ "time": 0.5, "x": 0.306, "y": 0.306, "curve": "stepped" },
+					{ "time": 0.6667, "x": 0.306, "y": 0.306 },
+					{ "time": 0.8333, "x": 1.2, "y": 1.2 },
+					{ "time": 1, "x": 0.306, "y": 0.306 }
+				]
+			},
+			"battlepass_ticket": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "angle": 15.12, "curve": "stepped" },
+					{
+						"time": 0.8333,
+						"angle": 15.12,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 0, "y": -3.07, "curve": "stepped" },
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -3.07,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 1.2, "y": 1.2, "curve": "stepped" },
+					{
+						"time": 0.8333,
+						"x": 1.2,
+						"y": 1.2,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "x": 1, "y": 1 }
+				]
+			},
+			"battlepass_ticket2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": -10.75, "curve": "stepped" },
+					{ "time": 0.8333, "angle": -10.75 },
+					{ "time": 1.1667, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": -0.51, "y": -3.58, "curve": "stepped" },
+					{ "time": 0.8333, "x": -0.51, "y": -3.58 },
+					{ "time": 1.1667, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.3333, "x": 1.1, "y": 1.1, "curve": "stepped" },
+					{ "time": 0.8333, "x": 1.1, "y": 1.1 },
+					{ "time": 1.1667, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

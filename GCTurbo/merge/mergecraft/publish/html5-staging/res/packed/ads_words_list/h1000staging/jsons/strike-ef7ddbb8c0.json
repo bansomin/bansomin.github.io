@@ -1,0 +1,55 @@
+{
+"skeleton": { "hash": "JFF924ZWX8si486aQQ3UUvhkLGg", "spine": "3.7.91", "width": 15.16, "height": 6, "images": "./strike/images/", "audio": "C:/Users/User/Desktop/Новая папка (2)" },
+"bones": [
+	{ "name": "root", "x": 5.89, "y": 1.96 },
+	{ "name": "stripe", "parent": "root", "length": 42.29, "x": -104.86, "y": -4.51 }
+],
+"slots": [
+	{ "name": "stripe", "bone": "stripe", "attachment": "stripe" }
+],
+"skins": {
+	"default": {
+		"stripe": {
+			"stripe": { "x": 7.57, "y": 0.52, "scaleX": 0.758, "width": 20, "height": 6 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"stripe": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 2.72,
+						"y": 0,
+						"curve": [ 0.689, 0.01, 0.287, 1 ]
+					},
+					{ "time": 0.2667, "x": 2.88, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1.094,
+						"y": 1,
+						"curve": [ 0.689, 0.01, 0.287, 1 ]
+					},
+					{ "time": 0.2667, "x": 11.775, "y": 1 }
+				]
+			}
+		}
+	},
+	"idle": {
+		"bones": {
+			"stripe": {
+				"translate": [
+					{ "time": 0, "x": 2.88, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 11.775, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

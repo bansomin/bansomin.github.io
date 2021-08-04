@@ -1,0 +1,63 @@
+{
+"skeleton": { "hash": "fAaNWuRRXZcGuR+Zx4QiNlM+KbI", "spine": "3.7.91", "width": 163.75, "height": 163.75, "images": "C:/Users/User/Desktop/День Св. Валентина/реклама/heart/images", "audio": "" },
+"bones": [
+	{ "name": "root", "scaleX": 1.25, "scaleY": 1.25 },
+	{ "name": "heart", "parent": "root", "x": -8.39, "y": 24.97 },
+	{ "name": "ogorod_shine", "parent": "root", "x": -0.1, "y": 0.25 }
+],
+"slots": [
+	{ "name": "ogorod_shine", "bone": "ogorod_shine", "attachment": "ogorod_shine" },
+	{ "name": "heart", "bone": "heart", "attachment": "heart" }
+],
+"skins": {
+	"default": {
+		"heart": {
+			"heart": { "x": 8.39, "y": -24.97, "width": 105, "height": 92 }
+		},
+		"ogorod_shine": {
+			"ogorod_shine": { "x": 0.1, "y": -0.25, "width": 131, "height": 131 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"bones": {
+			"ogorod_shine": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"idle2": {
+		"bones": {
+			"ogorod_shine": {
+				"rotate": [
+					{ "time": 0.1, "angle": 0 },
+					{ "time": 1.6667, "angle": -81.89 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0.1, "y": -0.25 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.1, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"heart": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.1667, "x": 0.781, "y": 0.781 },
+					{ "time": 0.3667, "x": 1, "y": 1 },
+					{ "time": 0.5667, "x": 0.781, "y": 0.781 },
+					{ "time": 0.8667, "x": 1, "y": 1 },
+					{ "time": 1.1, "x": 0.781, "y": 0.781 },
+					{ "time": 1.2667, "x": 1, "y": 1 },
+					{ "time": 1.4667, "x": 0.781, "y": 0.781 },
+					{ "time": 1.6667, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

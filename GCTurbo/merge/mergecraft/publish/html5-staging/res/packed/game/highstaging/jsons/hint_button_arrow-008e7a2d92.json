@@ -1,0 +1,74 @@
+{
+"skeleton": { "hash": "sPrakEe2wCv6y2Sf389MCZa4fZs", "spine": "3.7.91", "width": 82, "height": 86, "images": "D:\\1\\1111\\3\\бустеры и колонны\\стрелка\\images", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "hint_button_arrow", "parent": "root", "length": 86.22, "rotation": 90.63, "x": 0.43, "y": -147.7 }
+],
+"slots": [
+	{ "name": "hint_button_arrow", "bone": "hint_button_arrow", "attachment": "hint_button_arrow_1" },
+	{ "name": "hint_button_arrow2", "bone": "hint_button_arrow", "attachment": "hint_button_arrow_1", "blend": "screen" }
+],
+"skins": {
+	"default": {
+		"hint_button_arrow": {
+			"hint_button_arrow_1": { "x": 41.06, "y": -0.02, "rotation": -90.63, "width": 82, "height": 86 }
+		},
+		"hint_button_arrow2": {
+			"hint_button_arrow_1": { "x": 41.06, "y": -0.02, "rotation": -90.63, "width": 82, "height": 86 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"hint_button_arrow": {
+				"color": [
+					{ "time": 0, "color": "ff5500ff" },
+					{ "time": 0.5, "color": "ff0000ff" },
+					{ "time": 0.7667, "color": "ff651fff" },
+					{ "time": 0.9667, "color": "ffffffff" },
+					{
+						"time": 1,
+						"color": "fefcfbff",
+						"curve": [ 0.492, 0.28, 0.75, 1 ]
+					},
+					{ "time": 1.2, "color": "ffffffff" },
+					{ "time": 1.3667, "color": "ff6620ff" },
+					{ "time": 2, "color": "ff5500ff" }
+				]
+			}
+		},
+		"bones": {
+			"hint_button_arrow": {
+				"translate": [
+					{
+						"time": 0,
+						"x": -0.66,
+						"y": 56.59,
+						"curve": [ 0.395, 0.23, 0.573, 0.56 ]
+					},
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 7.01,
+						"curve": [ 0.132, 0.13, 1, 0.84 ]
+					},
+					{
+						"time": 1,
+						"x": -0.55,
+						"y": 56.53,
+						"curve": [ 0.212, 0.02, 0.659, 0.67 ]
+					},
+					{
+						"time": 1.5,
+						"x": -0.04,
+						"y": 11,
+						"curve": [ 0.221, 0.15, 0.667, 0.67 ]
+					},
+					{ "time": 2, "x": -0.66, "y": 56.59 }
+				]
+			}
+		}
+	}
+}
+}
