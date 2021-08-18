@@ -86,7 +86,7 @@
 </div>
 
 
-<script>var ttscripts=['https://mergecraft-staging.labsystech.ru/publish/html5-staging/cleverapps/res/cocoslib-3_17_2-bd47614909.js','https://mergecraft-staging.labsystech.ru/publish/html5-staging/game-v1.227.10.798796275.js'];var next = function(id) {
+<script>var ttscripts=['https://mergecraft-staging.labsystech.ru/publish/html5-staging/cleverapps/res/cocoslib-3_17_2-bd47614909.js','https://mergecraft-staging.labsystech.ru/publish/html5-staging/game-v1.227.10.322433601.js'];var next = function(id) {
     if (id === ttscripts.length) {
         return;
     }
