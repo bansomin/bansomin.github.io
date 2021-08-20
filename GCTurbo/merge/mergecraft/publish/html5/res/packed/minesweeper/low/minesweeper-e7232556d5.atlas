@@ -1,0 +1,874 @@
+
+minesweeper-e7232556d5.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+level_crown1
+  rotate: false
+  xy: 312, 30
+  size: 30, 32
+  orig: 30, 32
+  offset: 0, 0
+  index: -1
+mine_bg_lantern
+  rotate: false
+  xy: 0, 394
+  size: 93, 189
+  orig: 93, 189
+  offset: 0, 0
+  index: -1
+mine_bg_light
+  rotate: false
+  xy: 535, 69
+  size: 50, 51
+  orig: 50, 51
+  offset: 0, 0
+  index: -1
+mine_black
+  rotate: false
+  xy: 329, 0
+  size: 29, 22
+  orig: 29, 22
+  offset: 0, 0
+  index: -1
+mine_blik
+  rotate: false
+  xy: 95, 394
+  size: 247, 230
+  orig: 247, 230
+  offset: 0, 0
+  index: -1
+mine_blik2
+  rotate: false
+  xy: 360, 0
+  size: 13, 22
+  orig: 13, 22
+  offset: 0, 0
+  index: -1
+mine_dust
+  rotate: false
+  xy: 379, 136
+  size: 82, 72
+  orig: 82, 72
+  offset: 0, 0
+  index: -1
+mine_dust2
+  rotate: false
+  xy: 665, 394
+  size: 5, 316
+  orig: 5, 316
+  offset: 0, 0
+  index: -1
+mine_dust3
+  rotate: false
+  xy: 672, 394
+  size: 71, 485
+  orig: 71, 485
+  offset: 0, 0
+  index: -1
+mine_shadow
+  rotate: false
+  xy: 0, 251
+  size: 259, 118
+  orig: 259, 118
+  offset: 0, 0
+  index: -1
+mine_track
+  rotate: false
+  xy: 261, 251
+  size: 436, 135
+  orig: 436, 135
+  offset: 0, 0
+  index: -1
+mine_vagon
+  rotate: false
+  xy: 344, 394
+  size: 319, 289
+  orig: 319, 289
+  offset: 0, 0
+  index: -1
+miner_banner
+  rotate: false
+  xy: 463, 136
+  size: 307, 96
+  orig: 307, 96
+  offset: 0, 0
+  index: -1
+minesweep_prt
+  rotate: false
+  xy: 0, 0
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+minesweep_stone1
+  rotate: false
+  xy: 10, 0
+  size: 20, 17
+  orig: 20, 17
+  offset: 0, 0
+  index: -1
+minesweep_stone2
+  rotate: false
+  xy: 51, 0
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+minesweeper-guide_button
+  rotate: false
+  xy: 860, 69
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+minesweeper-guide_button_on
+  rotate: false
+  xy: 927, 69
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+minesweeper-level-level_round
+  rotate: false
+  xy: 798, 69
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+minesweeper-level-progressbar
+  rotate: false
+  xy: 421, 30
+  size: 44, 34
+  orig: 44, 34
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-0
+  rotate: false
+  xy: 72, 0
+  size: 16, 21
+  orig: 16, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-1
+  rotate: false
+  xy: 90, 0
+  size: 11, 21
+  orig: 11, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-2
+  rotate: false
+  xy: 103, 0
+  size: 14, 21
+  orig: 14, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-3
+  rotate: false
+  xy: 119, 0
+  size: 16, 21
+  orig: 16, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-4
+  rotate: false
+  xy: 137, 0
+  size: 16, 21
+  orig: 16, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-5
+  rotate: false
+  xy: 155, 0
+  size: 16, 21
+  orig: 16, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-6
+  rotate: false
+  xy: 173, 0
+  size: 16, 21
+  orig: 16, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-7
+  rotate: false
+  xy: 191, 0
+  size: 14, 21
+  orig: 14, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-8
+  rotate: false
+  xy: 207, 0
+  size: 17, 21
+  orig: 17, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-9
+  rotate: false
+  xy: 226, 0
+  size: 16, 21
+  orig: 16, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-asterisk
+  rotate: false
+  xy: 244, 0
+  size: 14, 21
+  orig: 14, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-colon
+  rotate: false
+  xy: 260, 0
+  size: 9, 21
+  orig: 9, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-minus
+  rotate: false
+  xy: 271, 0
+  size: 11, 21
+  orig: 11, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-plus
+  rotate: false
+  xy: 284, 0
+  size: 13, 21
+  orig: 13, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-slash
+  rotate: false
+  xy: 299, 0
+  size: 15, 21
+  orig: 15, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-space
+  rotate: false
+  xy: 316, 0
+  size: 11, 21
+  orig: 11, 21
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-45pt-x
+  rotate: false
+  xy: 375, 0
+  size: 15, 22
+  orig: 15, 22
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-0
+  rotate: false
+  xy: 524, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-1
+  rotate: false
+  xy: 547, 0
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-2
+  rotate: false
+  xy: 563, 0
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-3
+  rotate: false
+  xy: 584, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-4
+  rotate: false
+  xy: 607, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-5
+  rotate: false
+  xy: 630, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-6
+  rotate: false
+  xy: 653, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-7
+  rotate: false
+  xy: 676, 0
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-8
+  rotate: false
+  xy: 697, 0
+  size: 22, 28
+  orig: 22, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-9
+  rotate: false
+  xy: 721, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-asterisk
+  rotate: false
+  xy: 744, 0
+  size: 18, 28
+  orig: 18, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-colon
+  rotate: false
+  xy: 764, 0
+  size: 11, 28
+  orig: 11, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-minus
+  rotate: false
+  xy: 777, 0
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-plus
+  rotate: false
+  xy: 793, 0
+  size: 17, 28
+  orig: 17, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-slash
+  rotate: false
+  xy: 812, 0
+  size: 20, 28
+  orig: 20, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-space
+  rotate: false
+  xy: 834, 0
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-62pt-x
+  rotate: false
+  xy: 850, 0
+  size: 18, 28
+  orig: 18, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-0
+  rotate: false
+  xy: 467, 30
+  size: 26, 36
+  orig: 26, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-1
+  rotate: false
+  xy: 495, 30
+  size: 17, 36
+  orig: 17, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-2
+  rotate: false
+  xy: 514, 30
+  size: 23, 36
+  orig: 23, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-3
+  rotate: false
+  xy: 539, 30
+  size: 26, 36
+  orig: 26, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-4
+  rotate: false
+  xy: 567, 30
+  size: 27, 36
+  orig: 27, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-5
+  rotate: false
+  xy: 596, 30
+  size: 26, 36
+  orig: 26, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-6
+  rotate: false
+  xy: 624, 30
+  size: 26, 36
+  orig: 26, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-7
+  rotate: false
+  xy: 652, 30
+  size: 24, 36
+  orig: 24, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-8
+  rotate: false
+  xy: 678, 30
+  size: 27, 36
+  orig: 27, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-9
+  rotate: false
+  xy: 707, 30
+  size: 25, 36
+  orig: 25, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-asterisk
+  rotate: false
+  xy: 734, 30
+  size: 22, 36
+  orig: 22, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-colon
+  rotate: false
+  xy: 758, 30
+  size: 11, 36
+  orig: 11, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-minus
+  rotate: false
+  xy: 771, 30
+  size: 15, 36
+  orig: 15, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-plus
+  rotate: false
+  xy: 788, 30
+  size: 19, 36
+  orig: 19, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-slash
+  rotate: false
+  xy: 809, 30
+  size: 23, 36
+  orig: 23, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-space
+  rotate: false
+  xy: 834, 30
+  size: 19, 36
+  orig: 19, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-76pt-x
+  rotate: false
+  xy: 855, 30
+  size: 24, 36
+  orig: 24, 36
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-0
+  rotate: false
+  xy: 870, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-1
+  rotate: false
+  xy: 893, 0
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-2
+  rotate: false
+  xy: 909, 0
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-3
+  rotate: false
+  xy: 930, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-4
+  rotate: false
+  xy: 953, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-5
+  rotate: false
+  xy: 976, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-6
+  rotate: false
+  xy: 999, 0
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-7
+  rotate: false
+  xy: 0, 30
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-8
+  rotate: false
+  xy: 21, 30
+  size: 22, 28
+  orig: 22, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-9
+  rotate: false
+  xy: 45, 30
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-colon
+  rotate: false
+  xy: 68, 30
+  size: 11, 28
+  orig: 11, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-minus
+  rotate: false
+  xy: 81, 30
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-plus
+  rotate: false
+  xy: 97, 30
+  size: 17, 28
+  orig: 17, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-slash
+  rotate: false
+  xy: 116, 30
+  size: 20, 28
+  orig: 20, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-space
+  rotate: false
+  xy: 138, 30
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+minesweeper-marvin-round-nostroke-62pt-x
+  rotate: false
+  xy: 154, 30
+  size: 24, 28
+  orig: 24, 28
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-bar_bg
+  rotate: false
+  xy: 262, 69
+  size: 89, 46
+  orig: 89, 46
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-bar_timer
+  rotate: false
+  xy: 180, 30
+  size: 61, 28
+  orig: 61, 28
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-coin
+  rotate: false
+  xy: 172, 69
+  size: 42, 44
+  orig: 42, 44
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-energy
+  rotate: false
+  xy: 452, 69
+  size: 33, 48
+  orig: 33, 48
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-plus
+  rotate: false
+  xy: 392, 0
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-plus_on
+  rotate: false
+  xy: 420, 0
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-ruby
+  rotate: false
+  xy: 125, 69
+  size: 45, 41
+  orig: 45, 41
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-timer
+  rotate: false
+  xy: 32, 0
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-wand
+  rotate: false
+  xy: 693, 69
+  size: 47, 52
+  orig: 47, 52
+  offset: 0, 0
+  index: -1
+minesweeper-menubar-worker
+  rotate: false
+  xy: 487, 69
+  size: 46, 48
+  orig: 46, 48
+  offset: 0, 0
+  index: -1
+minesweeper-minesweeper_bucket
+  rotate: false
+  xy: 838, 136
+  size: 118, 113
+  orig: 118, 113
+  offset: 0, 0
+  index: -1
+minesweeper-minesweeper_flag
+  rotate: false
+  xy: 353, 69
+  size: 43, 46
+  orig: 43, 46
+  offset: 0, 0
+  index: -1
+minesweeper-orderswindow-attention_exclamation_large
+  rotate: false
+  xy: 960, 30
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+minesweeper-orderswindow-icon_background
+  rotate: false
+  xy: 881, 30
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+minesweeper-progressbar
+  rotate: false
+  xy: 243, 30
+  size: 36, 28
+  orig: 36, 28
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-coin
+  rotate: false
+  xy: 0, 136
+  size: 63, 65
+  orig: 63, 65
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-coin_shop
+  rotate: false
+  xy: 368, 30
+  size: 32, 33
+  orig: 32, 33
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-coin_small
+  rotate: false
+  xy: 85, 69
+  size: 38, 39
+  orig: 38, 39
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-energy
+  rotate: false
+  xy: 65, 136
+  size: 45, 65
+  orig: 45, 65
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-energy_shop
+  rotate: false
+  xy: 344, 30
+  size: 22, 32
+  orig: 22, 32
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-exp
+  rotate: false
+  xy: 112, 136
+  size: 74, 65
+  orig: 74, 65
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-ruby
+  rotate: false
+  xy: 188, 136
+  size: 71, 65
+  orig: 71, 65
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-ruby_shop
+  rotate: false
+  xy: 919, 30
+  size: 39, 36
+  orig: 39, 36
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-ruby_small
+  rotate: false
+  xy: 0, 69
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-wand
+  rotate: false
+  xy: 261, 136
+  size: 60, 65
+  orig: 60, 65
+  offset: 0, 0
+  index: -1
+minesweeper-reward_icons-worker
+  rotate: false
+  xy: 323, 136
+  size: 54, 65
+  orig: 54, 65
+  offset: 0, 0
+  index: -1
+minesweeper_bomb
+  rotate: false
+  xy: 742, 69
+  size: 54, 55
+  orig: 54, 55
+  offset: 0, 0
+  index: -1
+minesweeper_bomb_sh
+  rotate: false
+  xy: 281, 30
+  size: 29, 30
+  orig: 29, 30
+  offset: 0, 0
+  index: -1
+minesweeper_cell_a
+  rotate: false
+  xy: 587, 69
+  size: 51, 51
+  orig: 51, 51
+  offset: 0, 0
+  index: -1
+minesweeper_cell_b
+  rotate: false
+  xy: 640, 69
+  size: 51, 51
+  orig: 51, 51
+  offset: 0, 0
+  index: -1
+minesweeper_expl_a
+  rotate: false
+  xy: 43, 69
+  size: 40, 37
+  orig: 40, 37
+  offset: 0, 0
+  index: -1
+minesweeper_expl_b
+  rotate: false
+  xy: 216, 69
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+minesweeper_expl_c
+  rotate: false
+  xy: 398, 69
+  size: 52, 47
+  orig: 52, 47
+  offset: 0, 0
+  index: -1
+particle_2
+  rotate: false
+  xy: 448, 0
+  size: 74, 27
+  orig: 74, 27
+  offset: 0, 0
+  index: -1
+pickaxe
+  rotate: false
+  xy: 772, 136
+  size: 64, 100
+  orig: 64, 100
+  offset: 0, 0
+  index: -1
+upper_light
+  rotate: false
+  xy: 699, 251
+  size: 303, 141
+  orig: 303, 141
+  offset: 0, 0
+  index: -1
+upper_light2
+  rotate: false
+  xy: 402, 30
+  size: 17, 33
+  orig: 17, 33
+  offset: 0, 0
+  index: -1

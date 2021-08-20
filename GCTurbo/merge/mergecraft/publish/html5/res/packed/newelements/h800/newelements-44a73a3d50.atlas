@@ -1,0 +1,55 @@
+
+newelements-44a73a3d50.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lvlup_light1
+  rotate: false
+  xy: 0, 0
+  size: 190, 218
+  orig: 190, 218
+  offset: 0, 0
+  index: -1
+lvlup_light2
+  rotate: false
+  xy: 192, 0
+  size: 39, 38
+  orig: 39, 38
+  offset: 0, 0
+  index: -1
+newelements-icon_bg
+  rotate: false
+  xy: 233, 0
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: -1
+quests_scroll
+  rotate: false
+  xy: 0, 220
+  size: 223, 205
+  orig: 223, 205
+  offset: 0, 0
+  index: -1
+quests_scroll_bg
+  rotate: false
+  xy: 225, 220
+  size: 222, 232
+  orig: 222, 232
+  offset: 0, 0
+  index: -1
+quests_scroll_down
+  rotate: false
+  xy: 0, 454
+  size: 244, 44
+  orig: 244, 44
+  offset: 0, 0
+  index: -1
+quests_up
+  rotate: false
+  xy: 246, 454
+  size: 40, 43
+  orig: 40, 43
+  offset: 0, 0
+  index: -1

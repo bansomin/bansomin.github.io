@@ -1,0 +1,55 @@
+
+lose_window-775dae63d5.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lose_heart
+  rotate: false
+  xy: 0, 0
+  size: 130, 205
+  orig: 130, 205
+  offset: 0, 0
+  index: -1
+lose_heart2
+  rotate: false
+  xy: 132, 0
+  size: 131, 205
+  orig: 131, 205
+  offset: 0, 0
+  index: -1
+lose_heart_1
+  rotate: false
+  xy: 265, 0
+  size: 57, 67
+  orig: 57, 67
+  offset: 0, 0
+  index: -1
+lose_heart_patch
+  rotate: false
+  xy: 0, 207
+  size: 254, 220
+  orig: 254, 220
+  offset: 0, 0
+  index: -1
+lose_heart_patch_shadow
+  rotate: false
+  xy: 256, 207
+  size: 49, 22
+  orig: 49, 22
+  offset: 0, 0
+  index: -1
+lose_heart_small
+  rotate: false
+  xy: 307, 207
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+lose_heart_splinter
+  rotate: false
+  xy: 373, 207
+  size: 20, 68
+  orig: 20, 68
+  offset: 0, 0
+  index: -1

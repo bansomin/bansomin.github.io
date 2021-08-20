@@ -1,0 +1,83 @@
+
+levelupwindow-ebd799a8e5.png
+size: 512,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+feathers
+  rotate: false
+  xy: 118, 0
+  size: 110, 97
+  orig: 110, 97
+  offset: 0, 0
+  index: -1
+lvlup_crown
+  rotate: false
+  xy: 39, 0
+  size: 77, 65
+  orig: 77, 65
+  offset: 0, 0
+  index: -1
+lvlup_light1
+  rotate: false
+  xy: 226, 364
+  size: 237, 272
+  orig: 237, 272
+  offset: 0, 0
+  index: -1
+lvlup_ribbon
+  rotate: false
+  xy: 199, 201
+  size: 214, 139
+  orig: 214, 139
+  offset: 0, 0
+  index: -1
+lvlup_shield
+  rotate: false
+  xy: 342, 0
+  size: 164, 199
+  orig: 164, 199
+  offset: 0, 0
+  index: -1
+lvlup_shield_light
+  rotate: false
+  xy: 0, 364
+  size: 224, 257
+  orig: 224, 257
+  offset: 0, 0
+  index: -1
+lvlup_wing
+  rotate: false
+  xy: 0, 201
+  size: 197, 161
+  orig: 197, 161
+  offset: 0, 0
+  index: -1
+particle_1
+  rotate: false
+  xy: 0, 0
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+particle_2
+  rotate: false
+  xy: 230, 0
+  size: 110, 41
+  orig: 110, 41
+  offset: 0, 0
+  index: -1
+upper_light
+  rotate: false
+  xy: 0, 638
+  size: 454, 211
+  orig: 454, 211
+  offset: 0, 0
+  index: -1
+upper_light2
+  rotate: false
+  xy: 11, 0
+  size: 26, 49
+  orig: 26, 49
+  offset: 0, 0
+  index: -1

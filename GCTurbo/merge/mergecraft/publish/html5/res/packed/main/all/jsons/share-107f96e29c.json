@@ -1,0 +1,99 @@
+{
+    "victory": {
+        "en": [
+            "/res/share/en/victory1.jpg?v=671f4b51a3",
+            "/res/share/en/victory2.jpg?v=c5a6c8e4f5",
+            "/res/share/en/victory3.jpg?v=e4549883e3"
+        ],
+        "vk": [
+            "photo-189521609_457239094",
+            "photo-189521609_457239095",
+            "photo-189521609_457239096"
+        ],
+        "texts": [
+            {
+                "name": "messages:Share.Victory1.Name",
+                "description": "messages:Share.Victory1.Description"
+            },
+            {
+                "name": "messages:Share.Victory2.Name",
+                "description": "messages:Share.Victory2.Description"
+            },
+            {
+                "name": "messages:Share.Victory3.Name",
+                "description": "messages:Share.Victory3.Description"
+            }
+        ]
+    },
+    "beatFriend": {
+        "texts": [
+            {
+                "to": "%{friendId}",
+                "message": "messages:LevelFriendBeatWindow.Request.message",
+                "title": "messages:LevelFriendBeatWindow.Request.title"
+            }
+        ]
+    },
+    "share": {
+        "en": [
+            "/res/share/en/logo1.jpg?v=7be1d05fc0",
+            "/res/share/en/logo2.jpg?v=db09528fa9",
+            "/res/share/en/logo3.jpg?v=59b52e1102"
+        ],
+        "vk": [
+            "photo-189521609_457239092"
+        ],
+        "texts": [
+            {
+                "name": "messages:Share.Bag.Name",
+                "description": "messages:Share.Bag.Description"
+            }
+        ]
+    },
+    "newLeague": {
+        "en": [
+            "/res/share/en/new_league/league_1.jpg?v=37309b4e33"
+        ],
+        "vk": [
+            "photo-189521609_457239093"
+        ],
+        "texts": [
+            {
+                "name": "messages:Share.newLeague.Name",
+                "description": "messages:Share.newLeague.Description"
+            }
+        ]
+    },
+    "reward": {
+        "en": [
+            "/res/share/en/logo1.jpg?v=7be1d05fc0",
+            "/res/share/en/logo2.jpg?v=db09528fa9",
+            "/res/share/en/logo3.jpg?v=59b52e1102"
+        ],
+        "vk": [
+            "photo-189521609_457239092"
+        ],
+        "texts": [
+            {
+                "name": "messages:Share.Reward.Name",
+                "description": "messages:Share.Reward.Description"
+            }
+        ]
+    },
+    "dailyCup": {
+        "en": [
+            "/res/share/en/victory1.jpg?v=671f4b51a3",
+            "/res/share/en/victory2.jpg?v=c5a6c8e4f5",
+            "/res/share/en/victory3.jpg?v=e4549883e3"
+        ],
+        "vk": [
+            "photo-189521609_457239092"
+        ],
+        "texts": [
+            {
+                "name": "messages:Share.DailyCup.Name",
+                "description": "messages:Share.DailyCup.Description"
+            }
+        ]
+    }
+}

@@ -1,0 +1,412 @@
+
+energylotterywindow-6bd5925a2f.png
+size: 1024,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lottery_15
+  rotate: false
+  xy: 99, 34
+  size: 40, 35
+  orig: 40, 35
+  offset: 0, 0
+  index: -1
+lottery_25
+  rotate: false
+  xy: 509, 34
+  size: 46, 38
+  orig: 46, 38
+  offset: 0, 0
+  index: -1
+lottery_45
+  rotate: false
+  xy: 200, 34
+  size: 48, 37
+  orig: 48, 37
+  offset: 0, 0
+  index: -1
+lottery_55
+  rotate: false
+  xy: 557, 34
+  size: 42, 38
+  orig: 42, 38
+  offset: 0, 0
+  index: -1
+lottery_85
+  rotate: false
+  xy: 601, 34
+  size: 47, 38
+  orig: 47, 38
+  offset: 0, 0
+  index: -1
+lottery_100
+  rotate: false
+  xy: 44, 34
+  size: 53, 33
+  orig: 53, 33
+  offset: 0, 0
+  index: -1
+lottery_125
+  rotate: false
+  xy: 141, 34
+  size: 57, 36
+  orig: 57, 36
+  offset: 0, 0
+  index: -1
+lottery_150
+  rotate: false
+  xy: 656, 0
+  size: 53, 29
+  orig: 53, 29
+  offset: 0, 0
+  index: -1
+lottery_arrow
+  rotate: false
+  xy: 811, 82
+  size: 48, 52
+  orig: 48, 52
+  offset: 0, 0
+  index: -1
+lottery_arrow_shadow
+  rotate: false
+  xy: 952, 136
+  size: 19, 77
+  orig: 19, 77
+  offset: 0, 0
+  index: -1
+lottery_axe
+  rotate: false
+  xy: 0, 1063
+  size: 173, 609
+  orig: 173, 609
+  offset: 0, 0
+  index: -1
+lottery_axe_hand
+  rotate: false
+  xy: 175, 1063
+  size: 214, 609
+  orig: 214, 609
+  offset: 0, 0
+  index: -1
+lottery_back
+  rotate: false
+  xy: 434, 136
+  size: 57, 59
+  orig: 57, 59
+  offset: 0, 0
+  index: -1
+lottery_blick
+  rotate: false
+  xy: 559, 0
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+lottery_board
+  rotate: false
+  xy: 337, 380
+  size: 281, 170
+  orig: 281, 170
+  offset: 0, 0
+  index: -1
+lottery_defender
+  rotate: false
+  xy: 435, 570
+  size: 425, 487
+  orig: 425, 487
+  offset: 0, 0
+  index: -1
+lottery_energy
+  rotate: false
+  xy: 680, 34
+  size: 25, 39
+  orig: 25, 39
+  offset: 0, 0
+  index: -1
+lottery_flag
+  rotate: false
+  xy: 352, 570
+  size: 81, 452
+  orig: 81, 452
+  offset: 0, 0
+  index: -1
+lottery_flag_energy
+  rotate: false
+  xy: 284, 570
+  size: 66, 233
+  orig: 66, 233
+  offset: 0, 0
+  index: -1
+lottery_frame_down
+  rotate: false
+  xy: 765, 0
+  size: 245, 32
+  orig: 245, 32
+  offset: 0, 0
+  index: -1
+lottery_frame_side
+  rotate: false
+  xy: 862, 570
+  size: 36, 491
+  orig: 36, 491
+  offset: 0, 0
+  index: -1
+lottery_frame_up
+  rotate: false
+  xy: 250, 34
+  size: 257, 37
+  orig: 257, 37
+  offset: 0, 0
+  index: -1
+lottery_guardian_body
+  rotate: false
+  xy: 875, 380
+  size: 115, 188
+  orig: 115, 188
+  offset: 0, 0
+  index: -1
+lottery_guardian_eye
+  rotate: false
+  xy: 10, 0
+  size: 38, 11
+  orig: 38, 11
+  offset: 0, 0
+  index: -1
+lottery_guardian_hand_left
+  rotate: false
+  xy: 648, 136
+  size: 155, 66
+  orig: 155, 66
+  offset: 0, 0
+  index: -1
+lottery_guardian_hand_right
+  rotate: false
+  xy: 212, 570
+  size: 70, 221
+  orig: 70, 221
+  offset: 0, 0
+  index: -1
+lottery_guardian_head
+  rotate: false
+  xy: 805, 136
+  size: 70, 66
+  orig: 70, 66
+  offset: 0, 0
+  index: -1
+lottery_guardian_legs
+  rotate: false
+  xy: 620, 380
+  size: 253, 182
+  orig: 253, 182
+  offset: 0, 0
+  index: -1
+lottery_guardian_pupil
+  rotate: false
+  xy: 0, 0
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+lottery_guardian_sword
+  rotate: false
+  xy: 829, 215
+  size: 40, 163
+  orig: 40, 163
+  offset: 0, 0
+  index: -1
+lottery_light
+  rotate: false
+  xy: 877, 136
+  size: 73, 76
+  orig: 73, 76
+  offset: 0, 0
+  index: -1
+lottery_ring_light
+  rotate: false
+  xy: 335, 215
+  size: 110, 107
+  orig: 110, 107
+  offset: 0, 0
+  index: -1
+lottery_rubbish_1
+  rotate: false
+  xy: 0, 215
+  size: 134, 81
+  orig: 134, 81
+  offset: 0, 0
+  index: -1
+lottery_rubbish_2
+  rotate: false
+  xy: 208, 136
+  size: 179, 54
+  orig: 179, 54
+  offset: 0, 0
+  index: -1
+lottery_rubbish_3
+  rotate: false
+  xy: 763, 34
+  size: 116, 44
+  orig: 116, 44
+  offset: 0, 0
+  index: -1
+lottery_rubbish_4
+  rotate: false
+  xy: 389, 136
+  size: 43, 56
+  orig: 43, 56
+  offset: 0, 0
+  index: -1
+lottery_rubbish_5
+  rotate: false
+  xy: 493, 136
+  size: 107, 62
+  orig: 107, 62
+  offset: 0, 0
+  index: -1
+lottery_seller
+  rotate: false
+  xy: 391, 1063
+  size: 466, 653
+  orig: 466, 653
+  offset: 0, 0
+  index: -1
+lottery_seller_hand
+  rotate: false
+  xy: 774, 215
+  size: 53, 119
+  orig: 53, 119
+  offset: 0, 0
+  index: -1
+lottery_stick
+  rotate: false
+  xy: 136, 215
+  size: 197, 87
+  orig: 197, 87
+  offset: 0, 0
+  index: -1
+lottery_substrate
+  rotate: false
+  xy: 0, 136
+  size: 206, 52
+  orig: 206, 52
+  offset: 0, 0
+  index: -1
+lottery_table
+  rotate: false
+  xy: 0, 380
+  size: 335, 164
+  orig: 335, 164
+  offset: 0, 0
+  index: -1
+lottery_target
+  rotate: false
+  xy: 447, 215
+  size: 107, 107
+  orig: 107, 107
+  offset: 0, 0
+  index: -1
+lottery_target_close
+  rotate: false
+  xy: 556, 215
+  size: 107, 107
+  orig: 107, 107
+  offset: 0, 0
+  index: -1
+lottery_target_crashed
+  rotate: false
+  xy: 0, 570
+  size: 210, 203
+  orig: 210, 203
+  offset: 0, 0
+  index: -1
+lottery_target_lighte
+  rotate: false
+  xy: 665, 215
+  size: 107, 107
+  orig: 107, 107
+  offset: 0, 0
+  index: -1
+lottery_wood_slit
+  rotate: false
+  xy: 50, 0
+  size: 507, 13
+  orig: 507, 13
+  offset: 0, 0
+  index: -1
+lottery_wood_texture_1
+  rotate: false
+  xy: 272, 82
+  size: 500, 50
+  orig: 500, 50
+  offset: 0, 0
+  index: -1
+lottery_wood_texture_2
+  rotate: false
+  xy: 0, 82
+  size: 270, 48
+  orig: 270, 48
+  offset: 0, 0
+  index: -1
+target_part_1
+  rotate: false
+  xy: 910, 34
+  size: 35, 46
+  orig: 35, 46
+  offset: 0, 0
+  index: -1
+target_part_2
+  rotate: false
+  xy: 707, 34
+  size: 54, 40
+  orig: 54, 40
+  offset: 0, 0
+  index: -1
+target_part_3
+  rotate: false
+  xy: 881, 34
+  size: 27, 44
+  orig: 27, 44
+  offset: 0, 0
+  index: -1
+target_part_4
+  rotate: false
+  xy: 587, 0
+  size: 67, 27
+  orig: 67, 27
+  offset: 0, 0
+  index: -1
+target_part_5
+  rotate: false
+  xy: 711, 0
+  size: 52, 31
+  orig: 52, 31
+  offset: 0, 0
+  index: -1
+target_part_6
+  rotate: false
+  xy: 650, 34
+  size: 28, 38
+  orig: 28, 38
+  offset: 0, 0
+  index: -1
+target_part_7
+  rotate: false
+  xy: 0, 34
+  size: 42, 32
+  orig: 42, 32
+  offset: 0, 0
+  index: -1
+target_part_8
+  rotate: false
+  xy: 774, 82
+  size: 35, 50
+  orig: 35, 50
+  offset: 0, 0
+  index: -1
+target_part_9
+  rotate: false
+  xy: 602, 136
+  size: 44, 62
+  orig: 44, 62
+  offset: 0, 0
+  index: -1

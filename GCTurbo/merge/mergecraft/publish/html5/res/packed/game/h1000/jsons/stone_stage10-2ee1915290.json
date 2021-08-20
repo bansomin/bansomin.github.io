@@ -1,0 +1,40 @@
+{
+"skeleton": { "hash": "W/DAlT81wmYlQnTn654d2C2yFhk", "spine": "3.7.91", "width": 298.6, "height": 270, "images": "C:\\Users\\Админ\\Desktop\\stone\\stage10\\images", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "stone10_1", "bone": "root", "attachment": "stone10_1" },
+	{ "name": "stone10_2", "bone": "root", "attachment": "stone10_2" }
+],
+"skins": {
+	"default": {
+		"stone10_1": {
+			"stone10_1": { "x": 0.6, "width": 298, "height": 270 }
+		},
+		"stone10_2": {
+			"stone10_2": { "width": 298, "height": 270 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"stone10_2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"animation2": {
+		"slots": {
+			"stone10_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	}
+}
+}

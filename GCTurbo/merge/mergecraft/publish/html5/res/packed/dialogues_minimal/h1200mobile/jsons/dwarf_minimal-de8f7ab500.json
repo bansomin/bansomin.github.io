@@ -1,0 +1,68 @@
+{
+	"skeleton": {
+		"hash": "y6hMo3B2EC5tBRdcDZvK7XXIX9I",
+		"spine": "3.7.94",
+		"width": 263,
+		"height": 253,
+		"images": "./images/",
+		"audio": ""
+	},
+	"bones": [
+		{
+			"name": "root"
+		}
+	],
+	"slots": [
+		{
+			"name": "minimal_rider",
+			"bone": "root",
+			"attachment": "minimal_rider"
+		}
+	],
+	"skins": {
+		"default": {
+			"minimal_rider": {
+				"minimal_rider": {
+					"x": -2.33,
+					"width": 263,
+					"height": 253
+				}
+			}
+		}
+	},
+	"animations": {
+		"minimal_showup": {
+			"slots": {
+				"minimal_rider": {
+					"color": [
+						{
+							"time": 0,
+							"color": "ffffff00"
+						},
+						{
+							"time": 0.3333,
+							"color": "ffffffff"
+						}
+					]
+				}
+			}
+		},
+		"talk_minimal": {},
+		"minimal_hide": {
+			"slots": {
+				"minimal_rider": {
+					"color": [
+						{
+							"time": 0,
+							"color": "ffffffff"
+						},
+						{
+							"time": 0.3333,
+							"color": "ffffff00"
+						}
+					]
+				}
+			}
+		}
+	}
+}

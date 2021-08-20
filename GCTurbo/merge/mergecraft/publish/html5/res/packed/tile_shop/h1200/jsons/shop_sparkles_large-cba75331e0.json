@@ -1,0 +1,116 @@
+{
+"skeleton": { "hash": "zckYhc1ONy1gLP4K8g8SMfWmBbY", "spine": "3.7.94", "width": 1968, "height": 1670, "images": "C:/Work/Kitty/shop_sparkles/images", "audio": "D:/Dina/Solitaire/ОКНА/SHOP/анимация магазин" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "shop_coins_light", "parent": "root", "x": -1.01, "y": 0.44 },
+	{ "name": "shop_coins_light2", "parent": "root", "x": -1.01, "y": 0.44 },
+	{ "name": "shop_coins_light3", "parent": "root", "x": -91.01, "y": -69.56 }
+],
+"slots": [
+	{ "name": "shop_coins_light", "bone": "shop_coins_light", "attachment": "shop_coins_light_sparkles" },
+	{ "name": "shop_coins_light2", "bone": "shop_coins_light2", "attachment": "shop_coins_light_sparkles" },
+	{ "name": "shop_coins_light3", "bone": "shop_coins_light3", "attachment": "shop_coins_light_sparkles" }
+],
+"skins": {
+	"default": {
+		"shop_coins_light": {
+			"shop_coins_light_sparkles": { "x": 1.01, "y": -0.44, "width": 36, "height": 37 }
+		},
+		"shop_coins_light2": {
+			"shop_coins_light_sparkles": { "x": 1.01, "y": -0.44, "width": 36, "height": 37 }
+		},
+		"shop_coins_light3": {
+			"shop_coins_light_sparkles": { "x": 1.01, "y": -0.44, "width": 36, "height": 37 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"shop_coins_light": {
+				"rotate": [
+					{ "time": 0.1667, "angle": 0 },
+					{ "time": 0.4, "angle": 180 },
+					{ "time": 0.6667, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 },
+					{ "time": 1.7667, "angle": 180 },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 27.26, "y": -10.4, "curve": "stepped" },
+					{ "time": 0.6667, "x": 27.26, "y": -10.4 },
+					{ "time": 1.5, "x": -4.15, "y": 32.58 },
+					{ "time": 2, "x": 67.98, "y": 46.69 },
+					{ "time": 2.5, "x": -12.74, "y": 32.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.1667, "x": 0, "y": 0 },
+					{ "time": 0.4, "x": 2, "y": 2 },
+					{ "time": 0.6667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 },
+					{ "time": 1.7667, "x": 2, "y": 2 },
+					{ "time": 2, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light2": {
+				"rotate": [
+					{ "time": 1.1, "angle": 0 },
+					{ "time": 1.3667, "angle": 180 },
+					{ "time": 1.6, "angle": 0, "curve": "stepped" },
+					{ "time": 2.4667, "angle": 0 },
+					{ "time": 2.7, "angle": 180 },
+					{ "time": 2.9667, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 15.35, "y": 110.25, "curve": "stepped" },
+					{ "time": 1.6, "x": 15.35, "y": 110.25 },
+					{ "time": 2.4667, "x": 107.32, "y": -85.05, "curve": "stepped" },
+					{ "time": 2.9667, "x": 107.32, "y": -85.05 },
+					{ "time": 3.4667, "x": 15.35, "y": 110.25 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.1, "x": 0, "y": 0 },
+					{ "time": 1.3667, "x": 2, "y": 2 },
+					{ "time": 1.6, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.4667, "x": 0, "y": 0 },
+					{ "time": 2.7, "x": 2, "y": 2 },
+					{ "time": 2.9667, "x": 0, "y": 0 }
+				]
+			},
+			"shop_coins_light3": {
+				"rotate": [
+					{ "time": 2.6667, "angle": 0 },
+					{ "time": 2.9, "angle": 180 },
+					{ "time": 3.1667, "angle": 0, "curve": "stepped" },
+					{ "time": 4, "angle": 0 },
+					{ "time": 4.2667, "angle": 180 },
+					{ "time": 4.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 15.35, "y": 110.25, "curve": "stepped" },
+					{ "time": 3.1667, "x": 15.35, "y": 110.25 },
+					{ "time": 4, "x": 107.32, "y": -85.05, "curve": "stepped" },
+					{ "time": 4.5, "x": 107.32, "y": -85.05 },
+					{ "time": 5, "x": 15.35, "y": 110.25 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2.6667, "x": 0, "y": 0 },
+					{ "time": 2.9, "x": 2, "y": 2 },
+					{ "time": 3.1667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4, "x": 0, "y": 0 },
+					{ "time": 4.2667, "x": 2, "y": 2 },
+					{ "time": 4.5, "x": 0, "y": 0 }
+				]
+			},
+			"root": {
+				"scale": [
+					{ "time": 0, "x": 0.5, "y": 0.5 }
+				]
+			}
+		}
+	}
+}
+}

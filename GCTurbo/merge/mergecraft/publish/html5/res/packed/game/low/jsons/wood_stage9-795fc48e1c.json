@@ -1,0 +1,40 @@
+{
+"skeleton": { "hash": "SjuitRJUScrnXxMoJj+obGBoR0o", "spine": "3.7.91", "width": 299.57, "height": 253, "images": "./images/", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "wood9_1", "bone": "root", "attachment": "wood9_1" },
+	{ "name": "wood9_2", "bone": "root", "attachment": "wood9_2" }
+],
+"skins": {
+	"default": {
+		"wood9_2": {
+			"wood9_2": { "width": 285, "height": 253 }
+		},
+		"wood9_1": {
+			"wood9_1": { "x": -7.57, "width": 299, "height": 252 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"wood9_2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"animation2": {
+		"slots": {
+			"wood9_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	}
+}
+}
