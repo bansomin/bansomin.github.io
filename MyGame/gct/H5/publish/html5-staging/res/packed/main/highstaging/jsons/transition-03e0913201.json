@@ -1,0 +1,304 @@
+{
+  "skeleton": {
+    "hash": "2iqp2ks1vQ3fvZ47JcZC074bVW4",
+    "spine": "3.7.94",
+    "width": 4058.38,
+    "height": 2652.48,
+    "images": "./images/",
+    "audio": ""
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "fon",
+      "parent": "root",
+      "y": -55
+    },
+    {
+      "name": "char_solitaire",
+      "parent": "fon",
+      "x": 16.05,
+      "y": 157.48
+    },
+    {
+      "name": "back_solitaire",
+      "parent": "fon",
+      "x": 38.17,
+      "y": 975.14
+    },
+    {
+      "name": "fon2",
+      "parent": "fon",
+      "y": 55,
+      "scaleX": 0.9,
+      "scaleY": 0.9
+    },
+    {
+      "name": "char_solitaire3",
+      "parent": "char_solitaire",
+      "x": -17.34,
+      "y": -145.96
+    },
+    {
+      "name": "char_solitaire4",
+      "parent": "char_solitaire",
+      "x": -17.34,
+      "y": -145.96
+    }
+  ],
+  "slots": [
+    {
+      "name": "back_solitaire",
+      "bone": "back_solitaire",
+      "attachment": "back_merge"
+    },
+    {
+      "name": "light_rays",
+      "bone": "fon2",
+      "color": "ffffff34",
+      "attachment": "light_merge_rays"
+    },
+    {
+      "name": "char_solitaire2",
+      "bone": "char_solitaire3",
+      "attachment": "char_merge2_2"
+    },
+    {
+      "name": "char_solitaire3",
+      "bone": "char_solitaire4",
+      "attachment": "char_merge2_2part2"
+    },
+    {
+      "name": "char_solitaire",
+      "bone": "char_solitaire",
+      "attachment": "char_merge_2"
+    }
+  ],
+  "skins": {
+    "default": {
+      "back_solitaire": {
+        "back_merge": {
+          "x": -38.16,
+          "y": -920.14,
+          "scaleX": 507.297,
+          "scaleY": 22.104,
+          "width": 8,
+          "height": 120
+        }
+      },
+      "char_solitaire": {
+        "char_merge_2": {
+          "path": "minimal_rider",
+          "x": -15.34,
+          "y": -156.77,
+          "scaleX": 1.3,
+          "scaleY": 1.3,
+          "width": 270,
+          "height": 280
+        }
+      },
+      "char_solitaire2": {
+        "char_merge2_2": {
+          "x": -77.92,
+          "y": -15.65,
+          "width": 149,
+          "height": 300
+        }
+      },
+      "char_solitaire3": {
+        "char_merge2_2part2": {
+          "x": 71.22,
+          "y": -15.65,
+          "width": 153,
+          "height": 300
+        }
+      },
+      "light_rays": {
+        "light_merge_rays": {
+          "x": -14.51,
+          "y": -32.64,
+          "scaleX": 100,
+          "scaleY": 100,
+          "width": 18,
+          "height": 18
+        }
+      }
+    }
+  },
+  "animations": {
+    "close": {
+      "slots": {
+        "back_solitaire": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffff00"
+            },
+            {
+              "time": 1.6667,
+              "color": "ffffffff"
+            }
+          ]
+        },
+        "char_solitaire": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffff00"
+            },
+            {
+              "time": 1.6667,
+              "color": "ffffffff"
+            }
+          ]
+        },
+        "char_solitaire2": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffff00"
+            },
+            {
+              "time": 1.6667,
+              "color": "ffffffff"
+            }
+          ]
+        },
+        "char_solitaire3": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffff00"
+            },
+            {
+              "time": 1.6667,
+              "color": "ffffffff"
+            }
+          ]
+        },
+        "light_rays": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffff00"
+            },
+            {
+              "time": 1.6667,
+              "color": "ffffff33"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "root": {
+          "scale": [
+            {
+              "time": 0,
+              "x": 1.2,
+              "y": 1.2,
+              "curve": [
+                0.329,
+                0,
+                0.429,
+                0.95
+              ]
+            },
+            {
+              "time": 1.6667,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      }
+    },
+    "open": {
+      "slots": {
+        "back_solitaire": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.8333,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "char_solitaire": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.8333,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "char_solitaire2": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.8333,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "char_solitaire3": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.8333,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "light_rays": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffff33"
+            },
+            {
+              "time": 0.8333,
+              "color": "ffffff00"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "fon": {
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1,
+              "curve": [
+                0.528,
+                0.4,
+                0.789,
+                0.7
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": 1.2,
+              "y": 1.2
+            }
+          ]
+        }
+      }
+    }
+  }
+}

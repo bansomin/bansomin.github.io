@@ -1,0 +1,118 @@
+
+specialenergyofferwindow-3284fc2aa6.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+energy_dispenser
+  rotate: false
+  xy: 1, 1
+  size: 693, 415
+  orig: 693, 415
+  offset: 0, 0
+  index: -1
+rabbit_arm_left
+  rotate: false
+  xy: 970, 1
+  size: 48, 111
+  orig: 48, 111
+  offset: 0, 0
+  index: -1
+rabbit_arm_right
+  rotate: false
+  xy: 169, 480
+  size: 51, 30
+  orig: 51, 30
+  offset: 0, 0
+  index: -1
+rabbit_body
+  rotate: false
+  xy: 698, 233
+  size: 108, 165
+  orig: 108, 165
+  offset: 0, 0
+  index: -1
+rabbit_chocoegg
+  rotate: false
+  xy: 895, 233
+  size: 73, 93
+  orig: 73, 93
+  offset: 0, 0
+  index: -1
+rabbit_ear_right
+  rotate: false
+  xy: 810, 233
+  size: 63, 132
+  orig: 63, 132
+  offset: 0, 0
+  index: -1
+rabbit_egg
+  rotate: false
+  xy: 224, 480
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+rabbit_eyeball
+  rotate: false
+  xy: 169, 420
+  size: 56, 56
+  orig: 56, 56
+  offset: 0, 0
+  index: -1
+rabbit_eyelids
+  rotate: false
+  xy: 229, 420
+  size: 119, 53
+  orig: 119, 53
+  offset: 0, 0
+  index: -1
+rabbit_hand_right
+  rotate: false
+  xy: 59, 420
+  size: 47, 86
+  orig: 47, 86
+  offset: 0, 0
+  index: -1
+rabbit_head
+  rotate: false
+  xy: 698, 1
+  size: 268, 228
+  orig: 268, 228
+  offset: 0, 0
+  index: -1
+rabbit_iris
+  rotate: false
+  xy: 252, 477
+  size: 25, 34
+  orig: 25, 34
+  offset: 0, 0
+  index: -1
+rabbit_legs
+  rotate: false
+  xy: 763, 402
+  size: 128, 100
+  orig: 128, 100
+  offset: 0, 0
+  index: -1
+rabbit_shoulder_left
+  rotate: false
+  xy: 110, 420
+  size: 55, 74
+  orig: 55, 74
+  offset: 0, 0
+  index: -1
+rabbit_shoulder_right
+  rotate: false
+  xy: 1, 420
+  size: 54, 88
+  orig: 54, 88
+  offset: 0, 0
+  index: -1
+rabbit_strap
+  rotate: false
+  xy: 698, 402
+  size: 61, 107
+  orig: 61, 107
+  offset: 0, 0
+  index: -1

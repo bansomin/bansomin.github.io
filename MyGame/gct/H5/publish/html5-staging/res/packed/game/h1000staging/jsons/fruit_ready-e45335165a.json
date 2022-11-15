@@ -1,0 +1,1598 @@
+{
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "effect_light1_1",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light2",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 34.88,
+      "y": 0.33,
+      "x": 0.46,
+      "rotation": 180
+    },
+    {
+      "name": "effect_light1_2",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_3",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_4",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_5",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_6",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_7",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_8",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_9",
+      "parent": "root",
+      "scaleX": 0.2,
+      "scaleY": 0.2,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_10",
+      "parent": "root",
+      "scaleX": 0.2,
+      "scaleY": 0.2,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_11",
+      "parent": "root",
+      "scaleX": 0.2,
+      "scaleY": 0.2,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_12",
+      "parent": "root",
+      "scaleX": 0.2,
+      "scaleY": 0.2,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_13",
+      "parent": "root",
+      "scaleX": 0.5,
+      "scaleY": 0.5,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light1_14",
+      "parent": "root",
+      "scaleX": 0.5,
+      "scaleY": 0.5,
+      "length": 10.5,
+      "y": 2.68,
+      "x": -0.49,
+      "rotation": 89.1
+    },
+    {
+      "name": "effect_light3",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 34.88,
+      "y": 0.33,
+      "x": 0.46,
+      "rotation": 180
+    },
+    {
+      "name": "effect_boomlight",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 29.48,
+      "y": -0.28,
+      "x": 0.88,
+      "rotation": -89.38
+    },
+    {
+      "name": "effect_boomlight2",
+      "parent": "root",
+      "scaleX": 0.3,
+      "scaleY": 0.3,
+      "length": 29.48,
+      "y": -0.28,
+      "x": 0.88,
+      "rotation": -89.38
+    }
+  ],
+  "slots": [
+    {
+      "name": "M8QSC6{M7D)]%J]658SPJZS",
+      "bone": "root"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_1",
+      "bone": "effect_light1_1"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_11",
+      "bone": "effect_light1_11"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_12",
+      "bone": "effect_light1_12"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_13",
+      "bone": "effect_light1_13"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_14",
+      "bone": "effect_light1_14"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_7",
+      "bone": "effect_light1_7"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_8",
+      "bone": "effect_light1_8"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_9",
+      "bone": "effect_light1_9"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_10",
+      "bone": "effect_light1_10"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_2",
+      "bone": "effect_light1_2"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_3",
+      "bone": "effect_light1_3"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_4",
+      "bone": "effect_light1_4"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_5",
+      "bone": "effect_light1_5"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light1_6",
+      "bone": "effect_light1_6"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light2",
+      "bone": "effect_light2"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_light3",
+      "bone": "effect_light3"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_boomlight",
+      "bone": "effect_boomlight"
+    },
+    {
+      "blend": "additive",
+      "name": "effect_boomlight2",
+      "bone": "effect_boomlight2"
+    }
+  ],
+  "animations": {
+    "animation": {
+      "bones": {
+        "effect_light3": {
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.6667
+            },
+            {
+              "y": 1.75,
+              "x": 1.75,
+              "time": 0.8333
+            },
+            {
+              "y": 1.716,
+              "x": 1.716,
+              "time": 1.1667
+            }
+          ]
+        },
+        "effect_light1_11": {
+          "translate": [
+            {
+              "y": -1.94,
+              "x": 0.82,
+              "time": 0.6667
+            },
+            {
+              "y": -12.54,
+              "x": 0.73,
+              "time": 0.8
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.6667
+            },
+            {
+              "y": 1.5,
+              "x": 1.5,
+              "time": 1
+            }
+          ]
+        },
+        "effect_light1_10": {
+          "translate": [
+            {
+              "y": -4.26,
+              "x": 0.33,
+              "time": 0.6667
+            },
+            {
+              "y": -4.75,
+              "x": -13.51,
+              "time": 0.8
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 1
+            }
+          ]
+        },
+        "effect_light1_8": {
+          "translate": [
+            {
+              "y": 40.13,
+              "x": -5.15,
+              "time": 0.5
+            },
+            {
+              "y": 17.32,
+              "x": 14.62,
+              "time": 0.6333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_12": {
+          "translate": [
+            {
+              "y": -4.33,
+              "x": 0.82,
+              "time": 0.6667
+            },
+            {
+              "y": -3.79,
+              "x": 13.27,
+              "time": 0.8
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.6667
+            },
+            {
+              "y": 1.5,
+              "x": 1.5,
+              "time": 1
+            }
+          ]
+        },
+        "effect_light1_9": {
+          "translate": [
+            {
+              "y": -3.43,
+              "x": 0.33,
+              "time": 0.6667
+            },
+            {
+              "y": 31.36,
+              "x": -4.05,
+              "time": 0.8
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 1
+            }
+          ]
+        },
+        "effect_light2": {
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 1.5,
+              "x": 1.5,
+              "time": 0.6667
+            },
+            {
+              "y": 1.716,
+              "x": 1.716,
+              "time": 1
+            }
+          ]
+        },
+        "effect_boomlight2": {
+          "translate": [
+            {
+              "y": 5.91,
+              "x": -10.35,
+              "time": 0.7667
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.1333
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 0.2333
+            },
+            {
+              "y": 1.2,
+              "x": 1.2,
+              "time": 0.3333
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 0.4333
+            }
+          ]
+        },
+        "effect_boomlight": {
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 0.1333
+            },
+            {
+              "y": 1.1,
+              "x": 1.1,
+              "time": 0.2333
+            }
+          ]
+        },
+        "effect_light1_1": {
+          "translate": [
+            {
+              "time": 0.5
+            },
+            {
+              "y": 22.9,
+              "x": -0.15,
+              "time": 0.6333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 0.75,
+              "x": 0.75,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_3": {
+          "translate": [
+            {
+              "y": -4.12,
+              "x": 1.03,
+              "time": 0.5
+            },
+            {
+              "y": -3.24,
+              "x": -22.74,
+              "time": 0.6333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 0.75,
+              "x": 0.75,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_2": {
+          "translate": [
+            {
+              "y": -4.12,
+              "time": 0.5
+            },
+            {
+              "y": 17.12,
+              "x": -12.79,
+              "time": 0.6333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 0.75,
+              "x": 0.75,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_5": {
+          "translate": [
+            {
+              "y": -3.09,
+              "time": 0.5
+            },
+            {
+              "y": -24.16,
+              "x": 0.49,
+              "time": 0.6333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 0.75,
+              "x": 0.75,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_4": {
+          "translate": [
+            {
+              "y": -5.14,
+              "x": -2.06,
+              "time": 0.5
+            },
+            {
+              "y": -18.66,
+              "x": -15.18,
+              "time": 0.6333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 0.75,
+              "x": 0.75,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_7": {
+          "translate": [
+            {
+              "y": -2.06,
+              "x": -1.03,
+              "time": 0.5
+            },
+            {
+              "y": 2.45,
+              "x": 23.57,
+              "time": 0.6333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_6": {
+          "translate": [
+            {
+              "y": -2.06,
+              "time": 0.5
+            },
+            {
+              "y": -16.88,
+              "x": 20.36,
+              "time": 0.6333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.5
+            },
+            {
+              "y": 0.75,
+              "x": 0.75,
+              "time": 0.8333
+            }
+          ]
+        }
+      },
+      "slots": {
+        "effect_boomlight": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0.1333
+            },
+            {
+              "color": "ffffff00",
+              "time": 0.2333
+            }
+          ],
+          "attachment": [
+            {
+              "name": "effect_boomlight",
+              "time": 0
+            },
+            {
+              "name": null,
+              "time": 0.2333
+            }
+          ]
+        },
+        "effect_light1_11": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0.8
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            }
+          ],
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.6667
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.7333
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.8
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.8667
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.9333
+            },
+            {
+              "name": null,
+              "time": 1
+            }
+          ]
+        },
+        "effect_light1_10": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0.8
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            }
+          ],
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.6667
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.7333
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.8
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.8667
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.9333
+            },
+            {
+              "name": null,
+              "time": 1
+            }
+          ]
+        },
+        "effect_light3": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0.6667
+            },
+            {
+              "color": "ffffff00",
+              "time": 1.1667
+            }
+          ],
+          "attachment": [
+            {
+              "name": "effect_light2",
+              "time": 0.6667
+            }
+          ]
+        },
+        "effect_light1_12": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0.8
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            }
+          ],
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.6667
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.7333
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.8
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.8667
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.9333
+            },
+            {
+              "name": null,
+              "time": 1
+            }
+          ]
+        },
+        "effect_light2": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0.6667
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            }
+          ],
+          "attachment": [
+            {
+              "name": "effect_light2",
+              "time": 0.5
+            }
+          ]
+        },
+        "effect_boomlight2": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0.1333
+            },
+            {
+              "color": "ffffff00",
+              "time": 0.4333
+            }
+          ],
+          "attachment": [
+            {
+              "name": "effect_boomlight",
+              "time": 0.1333
+            },
+            {
+              "name": null,
+              "time": 0.4333
+            }
+          ]
+        },
+        "effect_light1_8": {
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.5
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.5667
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.6333
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.7
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.7667
+            },
+            {
+              "name": null,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_9": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0.8
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            }
+          ],
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.6667
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.7333
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.8
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.8667
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.9333
+            },
+            {
+              "name": null,
+              "time": 1
+            }
+          ]
+        },
+        "effect_light1_1": {
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.5
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.5667
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.6333
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.7
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.7667
+            },
+            {
+              "name": null,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_3": {
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.5
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.5667
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.6333
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.7
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.7667
+            },
+            {
+              "name": null,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_2": {
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.5
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.5667
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.6333
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.7
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.7667
+            },
+            {
+              "name": null,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_5": {
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.5
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.5667
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.6333
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.7
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.7667
+            },
+            {
+              "name": null,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_4": {
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.5
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.5667
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.6333
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.7
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.7667
+            },
+            {
+              "name": null,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_7": {
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.5
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.5667
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.6333
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.7
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.7667
+            },
+            {
+              "name": null,
+              "time": 0.8333
+            }
+          ]
+        },
+        "effect_light1_6": {
+          "attachment": [
+            {
+              "name": "effect_light1_1",
+              "time": 0.5
+            },
+            {
+              "name": "effect_light1_2",
+              "time": 0.5667
+            },
+            {
+              "name": "effect_light1_3",
+              "time": 0.6333
+            },
+            {
+              "name": "effect_light1_4",
+              "time": 0.7
+            },
+            {
+              "name": "effect_light1_5",
+              "time": 0.7667
+            },
+            {
+              "name": null,
+              "time": 0.8333
+            }
+          ]
+        }
+      }
+    }
+  },
+  "skeleton": {
+    "hash": "6tOY3/DYDym4jCmkq+LdPCSHUfk",
+    "spine": "3.8.99",
+    "images": "./images/",
+    "height": 184.5,
+    "width": 284.7,
+    "y": -54.93,
+    "x": -140.64,
+    "audio": "C:/Users/PC/Desktop/\u4f7f\u7528\u8d44\u6599/effect"
+  },
+  "skins": {
+    "default": {
+      "effect_boomlight": {
+        "effect_boomlight": {
+          "y": -3.44,
+          "x": -2.15,
+          "rotation": 89.38,
+          "height": 318,
+          "width": 330
+        }
+      },
+      "effect_light1_11": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_10": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_13": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_12": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light3": {
+        "effect_light2": {
+          "y": -3.48,
+          "x": 0.83,
+          "rotation": -90.9,
+          "height": 171,
+          "width": 171
+        }
+      },
+      "effect_light2": {
+        "effect_light2": {
+          "y": -3.48,
+          "x": 0.83,
+          "rotation": -90.9,
+          "height": 171,
+          "width": 171
+        }
+      },
+      "effect_boomlight2": {
+        "effect_boomlight": {
+          "y": -3.44,
+          "x": -2.15,
+          "rotation": 89.38,
+          "height": 318,
+          "width": 330
+        }
+      },
+      "effect_light1_8": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_14": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_9": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_1": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_3": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_2": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_5": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_4": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_7": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      },
+      "effect_light1_6": {
+        "effect_light1_1": {
+          "width": 43,
+          "rotation": -89.1,
+          "height": 42
+        },
+        "effect_light1_3": {
+          "width": 69,
+          "rotation": -89.1,
+          "height": 61
+        },
+        "effect_light1_2": {
+          "width": 62,
+          "rotation": -89.1,
+          "height": 60
+        },
+        "effect_light1_5": {
+          "width": 77,
+          "rotation": -89.1,
+          "height": 77
+        },
+        "effect_light1_4": {
+          "y": -0.5,
+          "x": 0.01,
+          "rotation": -89.1,
+          "height": 75,
+          "width": 74
+        }
+      }
+    }
+  }
+}

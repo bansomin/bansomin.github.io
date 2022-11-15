@@ -1,0 +1,576 @@
+{
+"skeleton": { "hash": "OfByt6xbroVCrq7mR4WWPvdUIKI", "spine": "3.7.94", "width": 113, "height": 109, "images": "D:\\Dina\\MERGE\\images", "audio": "D:\\Dina\\MERGE" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" },
+	{ "name": "goldpass_star", "parent": "bone" },
+	{ "name": "goldpass_star_blik", "parent": "bone" },
+	{ "name": "goldpass_star_blik2", "parent": "bone" },
+	{ "name": "goldpass_star_blik3", "parent": "bone" },
+	{ "name": "goldpass_star_blik4", "parent": "bone" },
+	{ "name": "goldpass_star_blik5", "parent": "bone" },
+	{ "name": "goldpass_star_blik6", "parent": "bone" },
+	{ "name": "goldpass_star_blik7", "parent": "bone" },
+	{ "name": "goldpass_star_blik8", "parent": "bone" },
+	{ "name": "goldpass_star_blik9", "parent": "bone" },
+	{ "name": "goldpass_star_blik10", "parent": "bone" }
+],
+"slots": [
+	{ "name": "goldpass_star_blik", "bone": "goldpass_star_blik", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik7", "bone": "goldpass_star_blik7", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik10", "bone": "goldpass_star_blik10", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik4", "bone": "goldpass_star_blik4", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik3", "bone": "goldpass_star_blik3", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik5", "bone": "goldpass_star_blik5", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik8", "bone": "goldpass_star_blik8", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik2", "bone": "goldpass_star_blik2", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik6", "bone": "goldpass_star_blik6", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star_blik9", "bone": "goldpass_star_blik9", "attachment": "goldpass_star_blik" },
+	{ "name": "goldpass_star", "bone": "goldpass_star", "attachment": "goldpass_star" }
+],
+"skins": {
+	"default": {
+		"goldpass_star": {
+			"goldpass_star": { "x": 2.3, "y": -0.2, "width": 38, "height": 38 }
+		},
+		"goldpass_star_blik": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik10": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik2": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik3": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik4": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik5": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik6": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik7": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik8": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		},
+		"goldpass_star_blik9": {
+			"goldpass_star_blik": { "width": 113, "height": 109 }
+		}
+	}
+},
+"animations": {
+	"disappearance": {
+		"slots": {
+			"goldpass_star": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik3": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik4": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.2333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik5": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik6": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik7": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik8": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik9": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"goldpass_star_blik10": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"goldpass_star_blik3": {
+				"translate": [
+					{ "time": 0, "x": -11.8, "y": 17.98 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.1333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.2667, "x": 0, "y": 0 },
+					{ "time": 0.3, "x": 0.3, "y": 0.3 },
+					{ "time": 0.3333, "x": 0, "y": 0 },
+					{ "time": 0.4, "x": 0.3, "y": 0.3 },
+					{ "time": 0.4667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5667, "x": 0, "y": 0 },
+					{ "time": 0.6333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.7, "x": 0, "y": 0 },
+					{ "time": 0.7667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.8, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.8667, "x": 0, "y": 0 },
+					{ "time": 0.9, "x": 0.3, "y": 0.3 },
+					{ "time": 0.9333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.0333, "x": 0, "y": 0 },
+					{ "time": 1.1, "x": 0.3, "y": 0.3 },
+					{ "time": 1.1667, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik2": {
+				"translate": [
+					{ "time": 0, "x": -12.36, "y": -15.17, "curve": "stepped" },
+					{ "time": 0.1667, "x": -12.36, "y": -15.17, "curve": "stepped" },
+					{ "time": 0.8333, "x": -12.36, "y": -15.17 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.0667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.1667, "x": 0, "y": 0 },
+					{ "time": 0.2, "x": 0.3, "y": 0.3 },
+					{ "time": 0.2333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0 },
+					{ "time": 0.4, "x": 0.3, "y": 0.3 },
+					{ "time": 0.4667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5667, "x": 0, "y": 0 },
+					{ "time": 0.6333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.7, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.8333, "x": 0, "y": 0 },
+					{ "time": 0.8667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.9, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.0333, "x": 0, "y": 0 },
+					{ "time": 1.1, "x": 0.3, "y": 0.3 },
+					{ "time": 1.1667, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik": {
+				"translate": [
+					{ "time": 0, "x": 14.61, "y": -12.93 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.1333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.2333, "x": 0, "y": 0 },
+					{ "time": 0.3, "x": 0.3, "y": 0.3 },
+					{ "time": 0.3667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4333, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": 0.3, "y": 0.3 },
+					{ "time": 0.5667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6333, "x": 0, "y": 0 },
+					{ "time": 0.7, "x": 0.3, "y": 0.3 },
+					{ "time": 0.7667, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik4": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.6333, "angle": 180 },
+					{ "time": 1.1667, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 1.1667, "x": 1.5, "y": 1.5 }
+				]
+			},
+			"goldpass_star_blik5": {
+				"translate": [
+					{ "time": 0, "x": 11.8, "y": 24.73 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.1333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.2667, "x": 0, "y": 0 },
+					{ "time": 0.3, "x": 0.3, "y": 0.3 },
+					{ "time": 0.3333, "x": 0, "y": 0 },
+					{ "time": 0.4, "x": 0.3, "y": 0.3 },
+					{ "time": 0.4667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5667, "x": 0, "y": 0 },
+					{ "time": 0.6333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.7, "x": 0, "y": 0 },
+					{ "time": 0.7667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.8, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.8667, "x": 0, "y": 0 },
+					{ "time": 0.9, "x": 0.3, "y": 0.3 },
+					{ "time": 0.9333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.0333, "x": 0, "y": 0 },
+					{ "time": 1.1, "x": 0.3, "y": 0.3 },
+					{ "time": 1.1667, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik6": {
+				"translate": [
+					{ "time": 0, "x": -23.6, "y": 2.25 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.0667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.1667, "x": 0, "y": 0 },
+					{ "time": 0.2, "x": 0.3, "y": 0.3 },
+					{ "time": 0.2333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0 },
+					{ "time": 0.4, "x": 0.3, "y": 0.3 },
+					{ "time": 0.4667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5667, "x": 0, "y": 0 },
+					{ "time": 0.6333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.7, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.8333, "x": 0, "y": 0 },
+					{ "time": 0.8667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.9, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.0333, "x": 0, "y": 0 },
+					{ "time": 1.1, "x": 0.3, "y": 0.3 },
+					{ "time": 1.1667, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik7": {
+				"translate": [
+					{ "time": 0, "x": 26.41, "y": 11.24 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.1333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.2333, "x": 0, "y": 0 },
+					{ "time": 0.3, "x": 0.3, "y": 0.3 },
+					{ "time": 0.3667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5333, "x": 0, "y": 0 },
+					{ "time": 0.5667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.6, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6333, "x": 0, "y": 0 },
+					{ "time": 0.7, "x": 0.3, "y": 0.3 },
+					{ "time": 0.7667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.9667, "x": 0, "y": 0 },
+					{ "time": 1.0333, "x": 0.3, "y": 0.3 },
+					{ "time": 1.1, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik8": {
+				"translate": [
+					{ "time": 0, "x": -5.06, "y": 31.47, "curve": "stepped" },
+					{ "time": 0.1, "x": -5.06, "y": 31.47 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.1, "x": 0, "y": 0 },
+					{ "time": 0.1667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.2333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0 },
+					{ "time": 0.3667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.4, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.7333, "x": 0, "y": 0 },
+					{ "time": 0.7667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.8, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.9333, "x": 0, "y": 0 },
+					{ "time": 1, "x": 0.3, "y": 0.3 },
+					{ "time": 1.0667, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik9": {
+				"translate": [
+					{ "time": 0, "x": -1.12, "y": -5.62 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.0667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.1667, "x": 0, "y": 0 },
+					{ "time": 0.2333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.3, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5333, "x": 0, "y": 0 },
+					{ "time": 0.5667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.6, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.8333, "x": 0, "y": 0 },
+					{ "time": 0.8667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.9, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik10": {
+				"translate": [
+					{ "time": 0, "x": 10.68, "y": 7.31 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.1333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3, "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": 0.3, "y": 0.3 },
+					{ "time": 0.3667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4333, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": 0.3, "y": 0.3 },
+					{ "time": 0.5667, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.8333, "x": 0, "y": 0 },
+					{ "time": 0.8667, "x": 0.3, "y": 0.3 },
+					{ "time": 0.9, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.1, "x": 0, "y": 0 },
+					{ "time": 1.1333, "x": 0.3, "y": 0.3 },
+					{ "time": 1.1667, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.1667, "x": 1.5, "y": 1.5 }
+				]
+			}
+		}
+	},
+	"emergence": {
+		"slots": {
+			"goldpass_star_blik": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik3": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik4": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik5": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik6": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik7": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik8": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik9": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"goldpass_star_blik10": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": 1.5, "y": 1.5 },
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"goldpass_star_blik3": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik4": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik5": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik6": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik7": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik8": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik9": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik10": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"idle": {
+		"slots": {
+			"goldpass_star_blik": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 1.6667, "color": "ffffff63" },
+					{ "time": 3.3333, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6667,
+						"x": 0,
+						"y": 16.86,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 3.3333, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.6667, "angle": 180 },
+					{ "time": 3.3333, "angle": 0 }
+				]
+			},
+			"goldpass_star_blik2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.8333, "angle": 90 },
+					{ "time": 1.6667, "angle": 180 },
+					{ "time": 2.5, "angle": -80.22 },
+					{ "time": 3.3333, "angle": 0 }
+				]
+			},
+			"goldpass_star_blik10": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik9": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik8": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik7": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik6": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik5": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik4": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"goldpass_star_blik3": {
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

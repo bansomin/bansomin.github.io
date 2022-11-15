@@ -1,0 +1,83 @@
+
+energylotterywindow-2eaa0505c6.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+card
+  rotate: false
+  xy: 1, 294
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+card_cat
+  rotate: false
+  xy: 1, 568
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+card_click
+  rotate: false
+  xy: 1, 1
+  size: 224, 289
+  orig: 224, 289
+  offset: 0, 0
+  index: -1
+card_dog
+  rotate: false
+  xy: 211, 294
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+card_fox
+  rotate: false
+  xy: 229, 1
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+card_mai
+  rotate: false
+  xy: 211, 568
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+card_monkey
+  rotate: false
+  xy: 439, 1
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+card_panda
+  rotate: false
+  xy: 649, 1
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+card_racoon
+  rotate: false
+  xy: 421, 275
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+card_tiger
+  rotate: false
+  xy: 631, 275
+  size: 206, 270
+  orig: 206, 270
+  offset: 0, 0
+  index: -1
+energylotterywindow-box
+  rotate: false
+  xy: 1, 842
+  size: 182, 147
+  orig: 182, 147
+  offset: 0, 0
+  index: -1

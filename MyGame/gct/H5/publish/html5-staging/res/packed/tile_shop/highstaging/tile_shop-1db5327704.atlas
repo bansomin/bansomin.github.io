@@ -1,0 +1,1028 @@
+
+tile_shop-1db5327704.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shop_coins_light
+  rotate: false
+  xy: 1082, 966
+  size: 50, 39
+  orig: 50, 39
+  offset: 0, 0
+  index: -1
+shop_coins_light_sparkles
+  rotate: false
+  xy: 1893, 501
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+tile_shop-energy_for_coins
+  rotate: false
+  xy: 1335, 1
+  size: 238, 210
+  orig: 238, 210
+  offset: 0, 0
+  index: -1
+tile_shop-energy_for_coins_off
+  rotate: false
+  xy: 662, 471
+  size: 238, 210
+  orig: 238, 210
+  offset: 0, 0
+  index: -1
+tile_shop-energy_for_video
+  rotate: false
+  xy: 935, 245
+  size: 234, 200
+  orig: 234, 200
+  offset: 0, 0
+  index: -1
+tile_shop-energy_for_video_off
+  rotate: false
+  xy: 1173, 228
+  size: 234, 200
+  orig: 234, 200
+  offset: 0, 0
+  index: -1
+tile_shop-energy_lottery
+  rotate: false
+  xy: 1577, 1
+  size: 238, 210
+  orig: 238, 210
+  offset: 0, 0
+  index: -1
+tile_shop-energy_lottery_off
+  rotate: false
+  xy: 662, 685
+  size: 238, 210
+  orig: 238, 210
+  offset: 0, 0
+  index: -1
+tile_shop-feature_tile_button
+  rotate: false
+  xy: 1524, 623
+  size: 184, 125
+  orig: 184, 125
+  offset: 0, 0
+  index: -1
+tile_shop-feature_tile_button_on
+  rotate: false
+  xy: 1524, 752
+  size: 184, 125
+  orig: 184, 125
+  offset: 0, 0
+  index: -1
+tile_shop-feature_tile_button_on_small
+  rotate: false
+  xy: 805, 899
+  size: 155, 105
+  orig: 155, 105
+  offset: 0, 0
+  index: -1
+tile_shop-feature_tile_button_small
+  rotate: false
+  xy: 1082, 857
+  size: 155, 105
+  orig: 155, 105
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-0
+  rotate: false
+  xy: 1656, 215
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-1
+  rotate: false
+  xy: 904, 471
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-2
+  rotate: false
+  xy: 904, 675
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-3
+  rotate: false
+  xy: 1059, 449
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-4
+  rotate: false
+  xy: 1059, 653
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-5
+  rotate: false
+  xy: 1214, 432
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-6
+  rotate: false
+  xy: 1214, 636
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-7
+  rotate: false
+  xy: 1369, 432
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-8
+  rotate: false
+  xy: 1369, 636
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-9
+  rotate: false
+  xy: 1524, 419
+  size: 151, 200
+  orig: 151, 200
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-colon
+  rotate: false
+  xy: 1971, 618
+  size: 17, 41
+  orig: 17, 41
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-minus
+  rotate: false
+  xy: 1867, 495
+  size: 22, 41
+  orig: 22, 41
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-plus
+  rotate: false
+  xy: 1494, 970
+  size: 25, 41
+  orig: 25, 41
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-slash
+  rotate: false
+  xy: 1877, 372
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-space
+  rotate: false
+  xy: 2025, 234
+  size: 22, 41
+  orig: 22, 41
+  offset: 0, 0
+  index: -1
+tile_shop-goldFont-200pt-x
+  rotate: false
+  xy: 1811, 372
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1
+tile_shop-infoview-game_ui_clock
+  rotate: false
+  xy: 1494, 931
+  size: 26, 35
+  orig: 26, 35
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-0
+  rotate: false
+  xy: 1990, 234
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-1
+  rotate: false
+  xy: 1935, 675
+  size: 27, 41
+  orig: 27, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-2
+  rotate: false
+  xy: 1962, 720
+  size: 28, 41
+  orig: 28, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-3
+  rotate: false
+  xy: 1992, 621
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-4
+  rotate: false
+  xy: 1987, 666
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-5
+  rotate: false
+  xy: 1994, 711
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-6
+  rotate: false
+  xy: 1943, 780
+  size: 28, 41
+  orig: 28, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-7
+  rotate: false
+  xy: 1900, 675
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-8
+  rotate: false
+  xy: 1937, 618
+  size: 30, 41
+  orig: 30, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-9
+  rotate: false
+  xy: 1975, 765
+  size: 28, 41
+  orig: 28, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-asterisk
+  rotate: false
+  xy: 2020, 666
+  size: 27, 41
+  orig: 27, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-colon
+  rotate: false
+  xy: 1966, 663
+  size: 17, 41
+  orig: 17, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-minus
+  rotate: false
+  xy: 2025, 621
+  size: 22, 41
+  orig: 22, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-plus
+  rotate: false
+  xy: 2007, 756
+  size: 25, 41
+  orig: 25, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-slash
+  rotate: false
+  xy: 1975, 810
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-space
+  rotate: false
+  xy: 2025, 234
+  size: 22, 41
+  orig: 22, 41
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-45pt-x
+  rotate: false
+  xy: 1844, 372
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-0
+  rotate: false
+  xy: 1985, 431
+  size: 35, 56
+  orig: 35, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-1
+  rotate: false
+  xy: 1973, 501
+  size: 30, 56
+  orig: 30, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-2
+  rotate: false
+  xy: 2007, 491
+  size: 32, 56
+  orig: 32, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-3
+  rotate: false
+  xy: 1995, 561
+  size: 32, 56
+  orig: 32, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-4
+  rotate: false
+  xy: 1933, 501
+  size: 36, 53
+  orig: 36, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-5
+  rotate: false
+  xy: 2013, 61
+  size: 34, 54
+  orig: 34, 54
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-6
+  rotate: false
+  xy: 1956, 561
+  size: 35, 53
+  orig: 35, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-7
+  rotate: false
+  xy: 1900, 618
+  size: 33, 53
+  orig: 33, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-8
+  rotate: false
+  xy: 2013, 119
+  size: 34, 54
+  orig: 34, 54
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-9
+  rotate: false
+  xy: 2013, 177
+  size: 34, 53
+  orig: 34, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-asterisk
+  rotate: false
+  xy: 2013, 1
+  size: 34, 56
+  orig: 34, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-colon
+  rotate: false
+  xy: 1941, 720
+  size: 17, 56
+  orig: 17, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-minus
+  rotate: false
+  xy: 2002, 279
+  size: 31, 56
+  orig: 31, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-plus
+  rotate: false
+  xy: 1876, 542
+  size: 36, 56
+  orig: 36, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-slash
+  rotate: false
+  xy: 1916, 558
+  size: 36, 56
+  orig: 36, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-space
+  rotate: false
+  xy: 2005, 339
+  size: 28, 56
+  orig: 28, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-62pt-x
+  rotate: false
+  xy: 1183, 966
+  size: 41, 53
+  orig: 41, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-0
+  rotate: false
+  xy: 1954, 289
+  size: 44, 67
+  orig: 44, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-1
+  rotate: false
+  xy: 1911, 797
+  size: 28, 67
+  orig: 28, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-2
+  rotate: false
+  xy: 1940, 431
+  size: 41, 66
+  orig: 41, 66
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-3
+  rotate: false
+  xy: 1893, 431
+  size: 43, 66
+  orig: 43, 66
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-4
+  rotate: false
+  xy: 1861, 809
+  size: 46, 67
+  orig: 46, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-5
+  rotate: false
+  xy: 1919, 868
+  size: 44, 67
+  orig: 44, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-6
+  rotate: false
+  xy: 1905, 289
+  size: 45, 67
+  orig: 45, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-7
+  rotate: false
+  xy: 1958, 360
+  size: 43, 67
+  orig: 43, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-8
+  rotate: false
+  xy: 1919, 939
+  size: 44, 67
+  orig: 44, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-9
+  rotate: false
+  xy: 1910, 360
+  size: 44, 67
+  orig: 44, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-asterisk
+  rotate: false
+  xy: 1942, 213
+  size: 44, 72
+  orig: 44, 72
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-colon
+  rotate: false
+  xy: 1867, 419
+  size: 22, 72
+  orig: 22, 72
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-minus
+  rotate: false
+  xy: 1861, 296
+  size: 40, 72
+  orig: 40, 72
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-plus
+  rotate: false
+  xy: 1811, 296
+  size: 46, 72
+  orig: 46, 72
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-slash
+  rotate: false
+  xy: 1892, 213
+  size: 46, 72
+  orig: 46, 72
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-space
+  rotate: false
+  xy: 1899, 721
+  size: 38, 72
+  orig: 38, 72
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-76pt-x
+  rotate: false
+  xy: 1805, 809
+  size: 52, 67
+  orig: 52, 67
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-0
+  rotate: false
+  xy: 1985, 431
+  size: 35, 56
+  orig: 35, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-1
+  rotate: false
+  xy: 1973, 501
+  size: 30, 56
+  orig: 30, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-2
+  rotate: false
+  xy: 2007, 491
+  size: 32, 56
+  orig: 32, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-3
+  rotate: false
+  xy: 1995, 561
+  size: 32, 56
+  orig: 32, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-4
+  rotate: false
+  xy: 1933, 501
+  size: 36, 53
+  orig: 36, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-5
+  rotate: false
+  xy: 2013, 61
+  size: 34, 54
+  orig: 34, 54
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-6
+  rotate: false
+  xy: 1956, 561
+  size: 35, 53
+  orig: 35, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-7
+  rotate: false
+  xy: 1900, 618
+  size: 33, 53
+  orig: 33, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-8
+  rotate: false
+  xy: 2013, 119
+  size: 34, 54
+  orig: 34, 54
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-9
+  rotate: false
+  xy: 2013, 177
+  size: 34, 53
+  orig: 34, 53
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-colon
+  rotate: false
+  xy: 1941, 720
+  size: 17, 56
+  orig: 17, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-minus
+  rotate: false
+  xy: 2002, 279
+  size: 31, 56
+  orig: 31, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-plus
+  rotate: false
+  xy: 1876, 542
+  size: 36, 56
+  orig: 36, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-slash
+  rotate: false
+  xy: 1916, 558
+  size: 36, 56
+  orig: 36, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-space
+  rotate: false
+  xy: 2005, 339
+  size: 28, 56
+  orig: 28, 56
+  offset: 0, 0
+  index: -1
+tile_shop-marvin-round-nostroke-62pt-x
+  rotate: false
+  xy: 1183, 966
+  size: 41, 53
+  orig: 41, 53
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-coin
+  rotate: false
+  xy: 1400, 931
+  size: 90, 92
+  orig: 90, 92
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-coin_shop
+  rotate: false
+  xy: 1314, 949
+  size: 63, 65
+  orig: 63, 65
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-coin_small
+  rotate: false
+  xy: 1821, 640
+  size: 75, 77
+  orig: 75, 77
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-energy
+  rotate: false
+  xy: 1712, 720
+  size: 89, 89
+  orig: 89, 89
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-energy_shop
+  rotate: false
+  xy: 1136, 966
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-exp
+  rotate: false
+  xy: 1740, 880
+  size: 90, 88
+  orig: 90, 88
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-line
+  rotate: false
+  xy: 1819, 178
+  size: 165, 31
+  orig: 165, 31
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-ruby
+  rotate: false
+  xy: 1636, 881
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-ruby_shop
+  rotate: false
+  xy: 1811, 215
+  size: 77, 77
+  orig: 77, 77
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-ruby_small
+  rotate: false
+  xy: 1834, 880
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-wand
+  rotate: false
+  xy: 1805, 721
+  size: 90, 84
+  orig: 90, 84
+  offset: 0, 0
+  index: -1
+tile_shop-reward_icons-worker
+  rotate: false
+  xy: 1772, 548
+  size: 100, 88
+  orig: 100, 88
+  offset: 0, 0
+  index: -1
+tile_shop-rewards-badge
+  rotate: false
+  xy: 1400, 840
+  size: 120, 87
+  orig: 120, 87
+  offset: 0, 0
+  index: -1
+tile_shop-shop_best_seller
+  rotate: false
+  xy: 646, 899
+  size: 155, 124
+  orig: 155, 124
+  offset: 0, 0
+  index: -1
+tile_shop-shop_bg_best
+  rotate: false
+  xy: 1, 245
+  size: 359, 590
+  orig: 359, 590
+  offset: 0, 0
+  index: -1
+tile_shop-shop_bg_white
+  rotate: false
+  xy: 1, 245
+  size: 359, 590
+  orig: 359, 590
+  offset: 0, 0
+  index: -1
+tile_shop-shop_button_off
+  rotate: false
+  xy: 1679, 419
+  size: 184, 125
+  orig: 184, 125
+  offset: 0, 0
+  index: -1
+tile_shop-shop_button_off_small
+  rotate: false
+  xy: 1241, 840
+  size: 155, 105
+  orig: 155, 105
+  offset: 0, 0
+  index: -1
+tile_shop-shop_coins_500
+  rotate: false
+  xy: 413, 833
+  size: 229, 162
+  orig: 229, 162
+  offset: 0, 0
+  index: -1
+tile_shop-shop_coins_1800
+  rotate: false
+  xy: 1, 839
+  size: 240, 183
+  orig: 240, 183
+  offset: 0, 0
+  index: -1
+tile_shop-shop_coins_3800
+  rotate: false
+  xy: 662, 245
+  size: 269, 222
+  orig: 269, 222
+  offset: 0, 0
+  index: -1
+tile_shop-shop_coins_6000
+  rotate: false
+  xy: 1411, 215
+  size: 241, 200
+  orig: 241, 200
+  offset: 0, 0
+  index: -1
+tile_shop-shop_coins_25000
+  rotate: false
+  xy: 1059, 1
+  size: 272, 223
+  orig: 272, 223
+  offset: 0, 0
+  index: -1
+tile_shop-shop_coins_effect
+  rotate: false
+  xy: 364, 245
+  size: 294, 290
+  orig: 294, 290
+  offset: 0, 0
+  index: -1
+tile_shop-shop_purple_ribbon
+  rotate: false
+  xy: 964, 879
+  size: 114, 131
+  orig: 114, 131
+  offset: 0, 0
+  index: -1
+tile_shop-shop_red_ribbon
+  rotate: false
+  xy: 1524, 881
+  size: 108, 104
+  orig: 108, 104
+  offset: 0, 0
+  index: -1
+tile_shop-shop_title
+  rotate: false
+  xy: 1, 1
+  size: 1054, 240
+  orig: 1054, 240
+  offset: 0, 0
+  index: -1
+tile_shop-small_shop_button
+  rotate: false
+  xy: 1679, 548
+  size: 89, 63
+  orig: 89, 63
+  offset: 0, 0
+  index: -1
+tile_shop-small_shop_button_on
+  rotate: false
+  xy: 1712, 813
+  size: 89, 63
+  orig: 89, 63
+  offset: 0, 0
+  index: -1
+tile_shop-socialicons-ok_icon
+  rotate: false
+  xy: 1241, 949
+  size: 69, 69
+  orig: 69, 69
+  offset: 0, 0
+  index: -1
+tile_shop-soft_currency_effect
+  rotate: false
+  xy: 364, 539
+  size: 294, 290
+  orig: 294, 290
+  offset: 0, 0
+  index: -1
+tile_shop-soft_currency_large
+  rotate: false
+  xy: 1819, 1
+  size: 190, 173
+  orig: 190, 173
+  offset: 0, 0
+  index: -1
+tile_shop-soft_currency_medium
+  rotate: false
+  xy: 245, 839
+  size: 164, 169
+  orig: 164, 169
+  offset: 0, 0
+  index: -1
+tile_shop-soft_currency_small
+  rotate: false
+  xy: 1712, 640
+  size: 105, 76
+  orig: 105, 76
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-0
+  rotate: false
+  xy: 1990, 234
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-1
+  rotate: false
+  xy: 1935, 675
+  size: 27, 41
+  orig: 27, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-2
+  rotate: false
+  xy: 1962, 720
+  size: 28, 41
+  orig: 28, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-3
+  rotate: false
+  xy: 1992, 621
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-4
+  rotate: false
+  xy: 1987, 666
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-5
+  rotate: false
+  xy: 1994, 711
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-6
+  rotate: false
+  xy: 1943, 780
+  size: 28, 41
+  orig: 28, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-7
+  rotate: false
+  xy: 1900, 675
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-8
+  rotate: false
+  xy: 1937, 618
+  size: 30, 41
+  orig: 30, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-9
+  rotate: false
+  xy: 1975, 765
+  size: 28, 41
+  orig: 28, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-colon
+  rotate: false
+  xy: 1966, 663
+  size: 17, 41
+  orig: 17, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-minus
+  rotate: false
+  xy: 2025, 621
+  size: 22, 41
+  orig: 22, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-plus
+  rotate: false
+  xy: 2007, 756
+  size: 25, 41
+  orig: 25, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-slash
+  rotate: false
+  xy: 1975, 810
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-space
+  rotate: false
+  xy: 2025, 234
+  size: 22, 41
+  orig: 22, 41
+  offset: 0, 0
+  index: -1
+tile_shop-version-font-45pt-x
+  rotate: false
+  xy: 1844, 372
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1

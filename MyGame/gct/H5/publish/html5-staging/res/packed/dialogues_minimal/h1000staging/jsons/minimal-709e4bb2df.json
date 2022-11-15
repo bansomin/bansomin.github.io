@@ -1,0 +1,69 @@
+{
+  "skeleton": {
+    "hash": "zL4xpb16sWx4iLF8UaOyZ18C3ac",
+    "spine": "3.7.94",
+    "width": 290,
+    "height": 350,
+    "images": "./images/",
+    "audio": ""
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "raccoon_minimal",
+      "bone": "root",
+      "attachment": "raccoon_minimal"
+    }
+  ],
+  "skins": {
+    "default": {
+      "raccoon_minimal": {
+        "raccoon_minimal": {
+          "x": 0,
+          "y": 0,
+          "width": 290,
+          "height": 350
+        }
+      }
+    }
+  },
+  "animations": {
+    "minimal_showup": {
+      "slots": {
+        "raccoon_minimal": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffff00"
+            },
+            {
+              "time": 0.3333,
+              "color": "ffffffff"
+            }
+          ]
+        }
+      }
+    },
+    "talk_minimal": {},
+    "minimal_hide": {
+      "slots": {
+        "raccoon_minimal": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.3333,
+              "color": "ffffff00"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

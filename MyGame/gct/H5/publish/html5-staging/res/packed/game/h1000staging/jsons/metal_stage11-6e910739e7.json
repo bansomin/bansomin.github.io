@@ -1,0 +1,35 @@
+{
+  "skeleton": {
+    "hash": "9nS+tV+QvexTmRXIytv4p7WM7wQ",
+    "spine": "3.7.91",
+    "width": 279,
+    "height": 267,
+    "images": "./images",
+    "audio": ""
+  },
+  "bones": [
+    {
+      "name": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "bamboo11",
+      "bone": "root",
+      "attachment": "bamboo11"
+    }
+  ],
+  "skins": {
+    "default": {
+      "bamboo11": {
+        "bamboo11": {
+          "width": 279,
+          "height": 267
+        }
+      }
+    }
+  },
+  "animations": {
+    "animation": {}
+  }
+}
