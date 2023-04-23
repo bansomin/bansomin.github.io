@@ -1,0 +1,69 @@
+
+dialogues_minimal-083fea3afd.png
+size: 512,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bunny_minimal
+  rotate: false
+  xy: 1, 1
+  size: 163, 197
+  orig: 163, 197
+  offset: 0, 0
+  index: -1
+cat_minimal
+  rotate: false
+  xy: 168, 1
+  size: 163, 197
+  orig: 163, 197
+  offset: 0, 0
+  index: -1
+dialogues_minimal-dialogues-bg
+  rotate: false
+  xy: 335, 403
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1
+fox_minimal
+  rotate: false
+  xy: 335, 1
+  size: 163, 197
+  orig: 163, 197
+  offset: 0, 0
+  index: -1
+knight_minimal
+  rotate: false
+  xy: 1, 202
+  size: 163, 197
+  orig: 163, 197
+  offset: 0, 0
+  index: -1
+panda_minimal
+  rotate: false
+  xy: 168, 202
+  size: 163, 197
+  orig: 163, 197
+  offset: 0, 0
+  index: -1
+raccoon_minimal
+  rotate: false
+  xy: 335, 202
+  size: 163, 197
+  orig: 163, 197
+  offset: 0, 0
+  index: -1
+tiger_minimal
+  rotate: false
+  xy: 1, 403
+  size: 163, 197
+  orig: 163, 197
+  offset: 0, 0
+  index: -1
+worker_minimal
+  rotate: false
+  xy: 168, 403
+  size: 163, 197
+  orig: 163, 197
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,132 @@
+
+newelements-42694b94a6.png
+size: 1024,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+firework_01
+  rotate: false
+  xy: 768, 444
+  size: 192, 191
+  orig: 192, 191
+  offset: 0, 0
+  index: -1
+firework_02
+  rotate: false
+  xy: 847, 1
+  size: 154, 139
+  orig: 154, 139
+  offset: 0, 0
+  index: -1
+firework_03
+  rotate: false
+  xy: 768, 639
+  size: 185, 185
+  orig: 185, 185
+  offset: 0, 0
+  index: -1
+name_bg
+  rotate: false
+  xy: 1, 1073
+  size: 306, 94
+  orig: 306, 94
+  offset: 0, 0
+  index: -1
+newelements-board
+  rotate: false
+  xy: 768, 248
+  size: 196, 192
+  orig: 196, 192
+  offset: 0, 0
+  index: -1
+newelements-cat
+  rotate: false
+  xy: 486, 716
+  size: 263, 358
+  orig: 263, 358
+  offset: 0, 0
+  index: -1
+newelements-title_new_quest
+  rotate: false
+  xy: 768, 201
+  size: 200, 43
+  orig: 200, 43
+  offset: 0, 0
+  index: -1
+newelements-title_questcompleted
+  rotate: false
+  xy: 1, 1014
+  size: 362, 55
+  orig: 362, 55
+  offset: 0, 0
+  index: -1
+newelements-title_red
+  rotate: false
+  xy: 1, 716
+  size: 481, 155
+  orig: 481, 155
+  offset: 0, 0
+  index: -1
+newelements-title_yellow_small
+  rotate: false
+  xy: 1, 875
+  size: 443, 135
+  orig: 443, 135
+  offset: 0, 0
+  index: -1
+ribbon_01
+  rotate: false
+  xy: 901, 144
+  size: 35, 15
+  orig: 35, 15
+  offset: 0, 0
+  index: -1
+ribbon_02
+  rotate: false
+  xy: 967, 144
+  size: 19, 25
+  orig: 19, 25
+  offset: 0, 0
+  index: -1
+ribbon_03
+  rotate: false
+  xy: 1005, 1
+  size: 13, 29
+  orig: 13, 29
+  offset: 0, 0
+  index: -1
+ribbon_04
+  rotate: false
+  xy: 901, 163
+  size: 23, 16
+  orig: 23, 16
+  offset: 0, 0
+  index: -1
+sky
+  rotate: false
+  xy: 1, 201
+  size: 763, 511
+  orig: 763, 511
+  offset: 0, 0
+  index: -1
+slogan
+  rotate: false
+  xy: 1, 1
+  size: 842, 196
+  orig: 842, 196
+  offset: 0, 0
+  index: -1
+star_01
+  rotate: false
+  xy: 847, 144
+  size: 50, 52
+  orig: 50, 52
+  offset: 0, 0
+  index: -1
+star_02
+  rotate: false
+  xy: 940, 144
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1

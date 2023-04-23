@@ -1,0 +1,804 @@
+{
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "cake_light_02",
+      "parent": "root",
+      "length": 30.69,
+      "y": -2.59,
+      "x": 1.15,
+      "rotation": 90.75
+    },
+    {
+      "name": "cake_light_01",
+      "parent": "root",
+      "scaleX": 0.8194,
+      "scaleY": 0.8194,
+      "length": 8.92,
+      "y": 6.84,
+      "x": 26.65,
+      "rotation": 88.6
+    },
+    {
+      "name": "cake_light_1",
+      "parent": "root",
+      "scaleX": 0.8201,
+      "scaleY": 0.8201,
+      "length": 8.92,
+      "y": 25.59,
+      "x": -33.03,
+      "rotation": 88.6
+    },
+    {
+      "name": "cake_light_2",
+      "parent": "root",
+      "scaleX": 0.5315,
+      "scaleY": 0.5315,
+      "length": 8.92,
+      "y": -11.92,
+      "x": -12.06,
+      "rotation": 88.6
+    },
+    {
+      "name": "cake_light_3",
+      "parent": "root",
+      "scaleX": 0.5315,
+      "scaleY": 0.5315,
+      "length": 8.92,
+      "y": -17.57,
+      "x": 20.27,
+      "rotation": 88.6
+    },
+    {
+      "name": "cake_light_4",
+      "parent": "root",
+      "scaleX": 0.6681,
+      "scaleY": 0.6681,
+      "length": 8.92,
+      "y": -17.57,
+      "x": -4.89,
+      "rotation": 88.6
+    },
+    {
+      "name": "cake_light_5",
+      "parent": "root",
+      "scaleX": 0.6681,
+      "scaleY": 0.6681,
+      "length": 8.92,
+      "y": -21.79,
+      "x": 10.85,
+      "rotation": 88.6
+    },
+    {
+      "name": "cake_light_6",
+      "parent": "root",
+      "scaleX": 0.6681,
+      "scaleY": 0.6681,
+      "length": 8.92,
+      "y": 1.84,
+      "x": -7.62,
+      "rotation": 88.6
+    }
+  ],
+  "slots": [
+    {
+      "name": "bg",
+      "bone": "root"
+    },
+    {
+      "color": "fff291ff",
+      "blend": "additive",
+      "name": "cake_light_01",
+      "bone": "cake_light_01",
+      "attachment": "cake_light_01"
+    },
+    {
+      "color": "fff291ff",
+      "blend": "additive",
+      "name": "cake_light_1",
+      "bone": "cake_light_1",
+      "attachment": "cake_light_01"
+    },
+    {
+      "color": "ff9000ff",
+      "blend": "additive",
+      "name": "cake_light_2",
+      "bone": "cake_light_2",
+      "attachment": "cake_light_01"
+    },
+    {
+      "color": "fff291ff",
+      "blend": "additive",
+      "name": "cake_light_3",
+      "bone": "cake_light_3",
+      "attachment": "cake_light_01"
+    },
+    {
+      "color": "fff291ff",
+      "blend": "additive",
+      "name": "cake_light_4",
+      "bone": "cake_light_4",
+      "attachment": "cake_light_01"
+    },
+    {
+      "color": "fff291ff",
+      "blend": "additive",
+      "name": "cake_light_5",
+      "bone": "cake_light_5",
+      "attachment": "cake_light_01"
+    },
+    {
+      "color": "fff291ff",
+      "blend": "additive",
+      "name": "cake_light_6",
+      "bone": "cake_light_6",
+      "attachment": "cake_light_01"
+    },
+    {
+      "color": "ffdc96ff",
+      "name": "cake_light_02",
+      "bone": "cake_light_02",
+      "attachment": "cake_light_02"
+    }
+  ],
+  "animations": {
+    "animation": {
+      "bones": {
+        "cake_light_1": {
+          "translate": [
+            {
+              "y": -32.45,
+              "x": -10.91,
+              "time": 0.3333
+            },
+            {
+              "y": 2.69,
+              "x": -10.91,
+              "time": 1.1667
+            },
+            {
+              "y": 29.96,
+              "x": -10.91,
+              "time": 1.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.3333
+            },
+            {
+              "y": 0.245,
+              "x": 0.61,
+              "time": 0.6667
+            },
+            {
+              "y": 0.424,
+              "x": 0.61,
+              "time": 1.1667
+            },
+            {
+              "y": 0.61,
+              "x": 0.976,
+              "time": 1.6667
+            }
+          ]
+        },
+        "cake_light_2": {
+          "translate": [
+            {
+              "y": -28.41,
+              "x": -10.91,
+              "time": 0.6667
+            },
+            {
+              "y": -16.1,
+              "x": -10.91,
+              "time": 1
+            },
+            {
+              "y": 15.26,
+              "x": -10.91,
+              "time": 1.5
+            },
+            {
+              "y": 38.67,
+              "x": -10.91,
+              "time": 2
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0.6667
+            },
+            {
+              "y": 0.245,
+              "x": 0.61,
+              "time": 1
+            },
+            {
+              "y": 0.727,
+              "x": 1.046,
+              "time": 1.5
+            },
+            {
+              "y": 0.61,
+              "x": 0.976,
+              "time": 2
+            }
+          ]
+        },
+        "cake_light_3": {
+          "translate": [
+            {
+              "y": -7.27,
+              "x": -10.91,
+              "time": 1
+            },
+            {
+              "y": 54.58,
+              "x": -10.91,
+              "time": 2.1667
+            },
+            {
+              "y": 82.41,
+              "x": -10.91,
+              "time": 2.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 1
+            },
+            {
+              "y": 0.245,
+              "x": 0.61,
+              "time": 1.5
+            },
+            {
+              "y": 0.642,
+              "x": 0.923,
+              "time": 2.1667
+            },
+            {
+              "y": 0.673,
+              "x": 1.077,
+              "time": 2.6667
+            }
+          ]
+        },
+        "cake_light_4": {
+          "translate": [
+            {
+              "y": 54.58,
+              "x": 32.39,
+              "time": 0
+            },
+            {
+              "y": 82.41,
+              "x": 32.39,
+              "time": 0.5
+            },
+            {
+              "y": -7.27,
+              "x": 32.39,
+              "time": 1.5
+            },
+            {
+              "y": 54.58,
+              "x": 32.39,
+              "time": 2.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 0.642,
+              "x": 0.923,
+              "time": 0
+            },
+            {
+              "y": 0.673,
+              "x": 1.077,
+              "time": 0.5
+            },
+            {
+              "y": 0,
+              "x": 0,
+              "time": 1.5
+            },
+            {
+              "y": 0.245,
+              "x": 0.61,
+              "time": 2
+            },
+            {
+              "y": 0.642,
+              "x": 0.923,
+              "time": 2.6667
+            }
+          ]
+        },
+        "cake_light_5": {
+          "translate": [
+            {
+              "y": 48.31,
+              "x": -8.18,
+              "time": 0
+            },
+            {
+              "y": 82.41,
+              "x": -7.37,
+              "time": 0.5
+            },
+            {
+              "y": -7.27,
+              "x": -6.8,
+              "time": 1.5
+            },
+            {
+              "y": 48.31,
+              "x": -8.18,
+              "time": 2.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 0.642,
+              "x": 0.923,
+              "time": 0
+            },
+            {
+              "y": 0.673,
+              "x": 1.077,
+              "time": 0.5
+            },
+            {
+              "y": 0,
+              "x": 0,
+              "time": 1.5
+            },
+            {
+              "y": 0.245,
+              "x": 0.61,
+              "time": 2
+            },
+            {
+              "y": 0.642,
+              "x": 0.923,
+              "time": 2.6667
+            }
+          ]
+        },
+        "cake_light_6": {
+          "translate": [
+            {
+              "y": -5.69,
+              "x": -10.91,
+              "time": 0
+            },
+            {
+              "y": 7.39,
+              "x": -10.91,
+              "time": 0.3333
+            },
+            {
+              "y": 37.23,
+              "x": -10.91,
+              "time": 0.8333
+            },
+            {
+              "y": -38.4,
+              "x": -10.91,
+              "time": 1.8333
+            },
+            {
+              "y": -5.69,
+              "x": -10.91,
+              "time": 2.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 0.642,
+              "x": 0.923,
+              "time": 0
+            },
+            {
+              "y": 0.673,
+              "x": 1.077,
+              "time": 0.5
+            },
+            {
+              "y": 0,
+              "x": 0,
+              "time": 1.5
+            },
+            {
+              "y": 0.245,
+              "x": 0.61,
+              "time": 2
+            },
+            {
+              "y": 0.642,
+              "x": 0.923,
+              "time": 2.6667
+            }
+          ]
+        },
+        "cake_light_01": {
+          "translate": [
+            {
+              "y": -7.27,
+              "x": -10.91,
+              "time": 0
+            },
+            {
+              "y": 38.88,
+              "x": -10.91,
+              "time": 0.8333
+            },
+            {
+              "y": 64.47,
+              "x": -10.91,
+              "time": 1.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 0,
+              "x": 0,
+              "time": 0
+            },
+            {
+              "y": 0.245,
+              "x": 0.61,
+              "time": 0.3333
+            },
+            {
+              "y": 0.591,
+              "x": 0.85,
+              "time": 0.8333
+            },
+            {
+              "y": 0.61,
+              "x": 0.976,
+              "time": 1.3333
+            }
+          ]
+        },
+        "cake_light_02": {
+          "translate": [
+            {
+              "y": -5.52,
+              "x": -1.34,
+              "time": 0
+            },
+            {
+              "y": 13.05,
+              "x": -2.28,
+              "time": 2.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 0.94,
+              "time": 0
+            }
+          ]
+        }
+      },
+      "slots": {
+        "cake_light_1": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 0.3333
+            },
+            {
+              "color": "ffffffff",
+              "time": 1.1667
+            },
+            {
+              "color": "ffffff00",
+              "time": 1.6667
+            }
+          ],
+          "attachment": [
+            {
+              "name": null,
+              "time": 0
+            },
+            {
+              "name": "cake_light_01",
+              "time": 0.3333
+            }
+          ]
+        },
+        "cake_light_2": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 0.6667
+            },
+            {
+              "color": "ffffffff",
+              "time": 1.5
+            },
+            {
+              "color": "ffffff00",
+              "time": 2
+            }
+          ],
+          "attachment": [
+            {
+              "name": null,
+              "time": 0
+            },
+            {
+              "name": "cake_light_01",
+              "time": 0.6667
+            }
+          ]
+        },
+        "cake_light_3": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1
+            },
+            {
+              "color": "ffffffff",
+              "time": 2.1667
+            },
+            {
+              "color": "ffffff00",
+              "time": 2.6667
+            }
+          ],
+          "attachment": [
+            {
+              "name": null,
+              "time": 0
+            },
+            {
+              "name": "cake_light_01",
+              "time": 1
+            }
+          ]
+        },
+        "cake_light_4": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "time": 0.5
+            },
+            {
+              "color": "ffffffff",
+              "time": 1.5
+            }
+          ],
+          "attachment": [
+            {
+              "name": null,
+              "time": 0.5
+            },
+            {
+              "name": "cake_light_01",
+              "time": 1.5
+            }
+          ]
+        },
+        "cake_light_5": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "time": 0.5
+            },
+            {
+              "color": "ffffffff",
+              "time": 1.5
+            }
+          ],
+          "attachment": [
+            {
+              "name": null,
+              "time": 0.5
+            },
+            {
+              "name": "cake_light_01",
+              "time": 1.5
+            }
+          ]
+        },
+        "cake_light_6": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffffff",
+              "time": 0.3333
+            },
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0.8333
+            },
+            {
+              "color": "ffffff00",
+              "time": 1.8333
+            },
+            {
+              "color": "ffffffff",
+              "time": 2.6667
+            }
+          ]
+        },
+        "cake_light_01": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffffff",
+              "time": 0.8333
+            },
+            {
+              "color": "ffffff00",
+              "time": 1.3333
+            }
+          ]
+        },
+        "cake_light_02": {
+          "color": [
+            {
+              "color": "ffdc9600",
+              "time": 0
+            },
+            {
+              "color": "ffdc965a",
+              "time": 1.3333
+            },
+            {
+              "color": "ffdc9600",
+              "time": 2.6667
+            }
+          ]
+        }
+      }
+    }
+  },
+  "skeleton": {
+    "hash": "Txo78xM2+uannhOGS0dHDjqdGI0",
+    "spine": "3.8.97",
+    "images": "./images/",
+    "height": 125.28,
+    "width": 125.28,
+    "y": -62.92,
+    "x": -60.6,
+    "audio": "F:/Spine170217504/Spine38/examples/spineboy"
+  },
+  "skins": {
+    "default": {
+      "cake_light_1": {
+        "cake_light_01": {
+          "color": "ffdfa0ff",
+          "scaleX": 0.2954,
+          "scaleY": 0.2954,
+          "height": 125,
+          "width": 125,
+          "y": -0.44,
+          "x": 0.33,
+          "rotation": -88.6
+        }
+      },
+      "cake_light_2": {
+        "cake_light_01": {
+          "color": "ffdfa0ff",
+          "scaleX": 0.2954,
+          "scaleY": 0.2954,
+          "height": 125,
+          "width": 125,
+          "y": -0.44,
+          "x": 0.33,
+          "rotation": -88.6
+        }
+      },
+      "cake_light_3": {
+        "cake_light_01": {
+          "color": "ffdfa0ff",
+          "scaleX": 0.2954,
+          "scaleY": 0.2954,
+          "height": 125,
+          "width": 125,
+          "y": -0.44,
+          "x": 0.33,
+          "rotation": -88.6
+        }
+      },
+      "cake_light_4": {
+        "cake_light_01": {
+          "color": "ffdfa0ff",
+          "scaleX": 0.2954,
+          "scaleY": 0.2954,
+          "height": 125,
+          "width": 125,
+          "y": -0.44,
+          "x": 0.33,
+          "rotation": -88.6
+        }
+      },
+      "cake_light_5": {
+        "cake_light_01": {
+          "color": "ffdfa0ff",
+          "scaleX": 0.2954,
+          "scaleY": 0.2954,
+          "height": 125,
+          "width": 125,
+          "y": -0.44,
+          "x": 0.33,
+          "rotation": -88.6
+        }
+      },
+      "cake_light_6": {
+        "cake_light_01": {
+          "color": "ffdfa0ff",
+          "scaleX": 0.2954,
+          "scaleY": 0.2954,
+          "height": 125,
+          "width": 125,
+          "y": -0.44,
+          "x": 0.33,
+          "rotation": -88.6
+        }
+      },
+      "cake_light_01": {
+        "cake_light_01": {
+          "color": "ffdfa0ff",
+          "scaleX": 0.2954,
+          "scaleY": 0.2954,
+          "height": 125,
+          "width": 125,
+          "y": -0.44,
+          "x": 0.33,
+          "rotation": -88.6
+        }
+      },
+      "cake_light_02": {
+        "cake_light_02": {
+          "color": "fff6e2ff",
+          "scaleX": 1.566,
+          "scaleY": 1.566,
+          "height": 80,
+          "width": 80,
+          "y": -0.92,
+          "x": 2.3,
+          "rotation": -90.75
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1283 @@
+{
+  "bones": [
+    {
+      "scaleX": 0.4,
+      "name": "root",
+      "scaleY": 0.4
+    },
+    {
+      "y": -3.03,
+      "x": -5.57,
+      "name": "111",
+      "parent": "root"
+    },
+    {
+      "name": "ice_base",
+      "parent": "111",
+      "length": 520.95,
+      "y": 38.5,
+      "x": -9.06,
+      "rotation": -89.25
+    },
+    {
+      "name": "ice_chain2",
+      "parent": "ice_base",
+      "length": 215.17,
+      "y": -554.16,
+      "x": -405.87,
+      "rotation": -1.35
+    },
+    {
+      "name": "ice_chain1",
+      "parent": "ice_base",
+      "length": 224.22,
+      "y": 715.55,
+      "x": -332.68,
+      "rotation": -0.75
+    },
+    {
+      "y": 10.68,
+      "x": -235.36,
+      "name": "ice_base2",
+      "parent": "ice_base"
+    }
+  ],
+  "slots": [
+    {
+      "name": "ice_base",
+      "bone": "ice_base",
+      "attachment": "ice_base"
+    },
+    {
+      "name": "ice_chain2",
+      "bone": "ice_chain2",
+      "attachment": "ice_chain2"
+    },
+    {
+      "name": "ice_chain1",
+      "bone": "ice_chain1",
+      "attachment": "ice_chain1"
+    },
+    {
+      "name": "ice_pillar3",
+      "bone": "111",
+      "attachment": "ice_pillar3"
+    },
+    {
+      "name": "ice_pillar3_1",
+      "bone": "111",
+      "attachment": "ice_pillar3_1"
+    },
+    {
+      "name": "ice_pillar2",
+      "bone": "111",
+      "attachment": "ice_pillar2"
+    },
+    {
+      "name": "ice_pillar2_1",
+      "bone": "111",
+      "attachment": "ice_pillar2_1"
+    },
+    {
+      "name": "ice_mine",
+      "bone": "111",
+      "attachment": "ice_mine"
+    },
+    {
+      "name": "ice_mine01",
+      "bone": "111",
+      "attachment": "ice_mine01"
+    },
+    {
+      "name": "ice_pillar1",
+      "bone": "111",
+      "attachment": "ice_pillar1"
+    },
+    {
+      "name": "ice_pillar1_1",
+      "bone": "111",
+      "attachment": "ice_pillar1_1"
+    },
+    {
+      "name": "ice_sword",
+      "bone": "111",
+      "attachment": "ice_sword"
+    }
+  ],
+  "animations": {
+    "idle": {
+      "bones": {
+        "ice_base": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "angle": 0,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "ice_chain2": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": 12.51,
+              "time": 0
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": -8.58,
+              "time": 1.6667
+            },
+            {
+              "angle": 12.51,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "ice_chain1": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": -12.74,
+              "time": 0
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": 15.89,
+              "time": 1.6667
+            },
+            {
+              "angle": -12.74,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "111": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "angle": 0,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "ice_base2": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "angle": 0,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "root": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "angle": 0,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        }
+      },
+      "slots": {
+        "ice_mine": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "time": 0
+            }
+          ]
+        },
+        "ice_mine01": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "time": 0
+            }
+          ]
+        },
+        "ice_pillar2_1": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "color": "ffffffff",
+              "time": 2.3333
+            },
+            {
+              "color": "ffffff00",
+              "time": 3
+            }
+          ]
+        },
+        "ice_pillar1_1": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "color": "ffffffff",
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.3333
+            },
+            {
+              "color": "ffffff00",
+              "time": 3
+            }
+          ],
+          "attachment": [
+            {
+              "name": "ice_pillar1_1",
+              "time": 1.3333
+            },
+            {
+              "name": "ice_pillar1_1",
+              "time": 1.6667
+            }
+          ]
+        },
+        "ice_pillar3_1": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "color": "ffffffff",
+              "time": 2.3333
+            },
+            {
+              "color": "ffffff00",
+              "time": 3
+            }
+          ]
+        }
+      }
+    },
+    "animation": {
+      "bones": {
+        "ice_base": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "angle": 0,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "ice_chain2": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": 12.51,
+              "time": 0
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": -8.58,
+              "time": 1.6667
+            },
+            {
+              "angle": 12.51,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "ice_chain1": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": -12.74,
+              "time": 0
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": 15.89,
+              "time": 1.6667
+            },
+            {
+              "angle": -12.74,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "111": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "angle": 0,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "ice_base2": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "angle": 0,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        },
+        "root": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "angle": 0,
+              "time": 3.3333
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 3.3333
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "time": 3.3333
+            }
+          ]
+        }
+      },
+      "slots": {
+        "ice_mine": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffffff",
+              "time": 1.6667
+            }
+          ]
+        },
+        "ice_mine01": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "color": "ffffffff",
+              "time": 2
+            },
+            {
+              "color": "ffffff00",
+              "time": 2.6667
+            }
+          ]
+        },
+        "ice_pillar2_1": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "color": "ffffffff",
+              "time": 2.3333
+            },
+            {
+              "color": "ffffff00",
+              "time": 3
+            }
+          ]
+        },
+        "ice_pillar1_1": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "color": "ffffffff",
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.3333
+            },
+            {
+              "color": "ffffff00",
+              "time": 3
+            }
+          ],
+          "attachment": [
+            {
+              "name": "ice_pillar1_1",
+              "time": 1.3333
+            },
+            {
+              "name": "ice_pillar1_1",
+              "time": 1.6667
+            }
+          ]
+        },
+        "ice_pillar3_1": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "time": 1
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.6667
+            },
+            {
+              "color": "ffffffff",
+              "time": 2.3333
+            },
+            {
+              "color": "ffffff00",
+              "time": 3
+            }
+          ]
+        }
+      }
+    }
+  },
+  "skeleton": {
+    "hash": "LwwF6u5cPn2vzD5w3DYEBM/v76Q",
+    "spine": "3.8.99",
+    "height": 604.8,
+    "width": 622.4,
+    "y": -210.81,
+    "x": -307.48
+  },
+  "skins": {
+    "default": {
+      "ice_sword": {
+        "ice_sword": {
+          "y": -10.49,
+          "x": -541.12,
+          "height": 155,
+          "width": 90
+        }
+      },
+      "ice_pillar2_1": {
+        "ice_pillar2_1": {
+          "y": 524.51,
+          "x": -468.12,
+          "height": 197,
+          "width": 180
+        }
+      },
+      "ice_pillar3": {
+        "ice_pillar3": {
+          "y": 331.51,
+          "x": 616.38,
+          "height": 459,
+          "width": 227
+        }
+      },
+      "ice_pillar2": {
+        "ice_pillar2": {
+          "y": 326.51,
+          "x": -491.62,
+          "height": 567,
+          "width": 199
+        }
+      },
+      "ice_pillar1": {
+        "ice_pillar1": {
+          "y": 42.01,
+          "x": 134.38,
+          "height": 822,
+          "width": 275
+        }
+      },
+      "ice_base": {
+        "ice_base": {
+          "y": 21.19,
+          "x": 210.78,
+          "rotation": 89.25,
+          "height": 704,
+          "width": 1556
+        }
+      },
+      "ice_chain2": {
+        "ice_chain2": {
+          "y": 1.46,
+          "x": 106.58,
+          "rotation": 90.6,
+          "height": 245,
+          "width": 26
+        }
+      },
+      "ice_chain1": {
+        "ice_chain1": {
+          "y": 2.79,
+          "x": 105.97,
+          "rotation": 90,
+          "height": 245,
+          "width": 26
+        }
+      },
+      "ice_mine01": {
+        "ice_mine01": {
+          "y": 272.51,
+          "x": 7.88,
+          "height": 1431,
+          "width": 1458
+        }
+      },
+      "ice_pillar1_1": {
+        "ice_pillar1_1": {
+          "y": 321.01,
+          "x": 130.38,
+          "height": 356,
+          "width": 277
+        }
+      },
+      "ice_mine": {
+        "ice_mine": {
+          "y": 274.01,
+          "x": 7.88,
+          "height": 1338,
+          "width": 1368
+        }
+      },
+      "ice_pillar3_1": {
+        "ice_pillar3_1": {
+          "y": 485.51,
+          "x": 642.38,
+          "height": 177,
+          "width": 149
+        }
+      }
+    }
+  }
+}

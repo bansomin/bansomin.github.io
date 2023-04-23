@@ -1,0 +1,111 @@
+
+energy_time-e254b5e974.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+rabbit_arm_left
+  rotate: false
+  xy: 453, 39
+  size: 54, 125
+  orig: 54, 125
+  offset: 0, 0
+  index: -1
+rabbit_arm_right
+  rotate: false
+  xy: 453, 1
+  size: 57, 34
+  orig: 57, 34
+  offset: 0, 0
+  index: -1
+rabbit_body
+  rotate: false
+  xy: 306, 180
+  size: 121, 185
+  orig: 121, 185
+  offset: 0, 0
+  index: -1
+rabbit_chocoegg
+  rotate: false
+  xy: 1, 261
+  size: 81, 105
+  orig: 81, 105
+  offset: 0, 0
+  index: -1
+rabbit_ear_right
+  rotate: false
+  xy: 431, 234
+  size: 70, 148
+  orig: 70, 148
+  offset: 0, 0
+  index: -1
+rabbit_egg
+  rotate: false
+  xy: 170, 473
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+rabbit_eyeball
+  rotate: false
+  xy: 443, 168
+  size: 62, 62
+  orig: 62, 62
+  offset: 0, 0
+  index: -1
+rabbit_eyelids
+  rotate: false
+  xy: 306, 117
+  size: 133, 59
+  orig: 133, 59
+  offset: 0, 0
+  index: -1
+rabbit_hand_right
+  rotate: false
+  xy: 86, 261
+  size: 52, 97
+  orig: 52, 97
+  offset: 0, 0
+  index: -1
+rabbit_head
+  rotate: false
+  xy: 1, 1
+  size: 301, 256
+  orig: 301, 256
+  offset: 0, 0
+  index: -1
+rabbit_iris
+  rotate: false
+  xy: 138, 473
+  size: 28, 38
+  orig: 28, 38
+  offset: 0, 0
+  index: -1
+rabbit_legs
+  rotate: false
+  xy: 306, 1
+  size: 143, 112
+  orig: 143, 112
+  offset: 0, 0
+  index: -1
+rabbit_shoulder_left
+  rotate: false
+  xy: 138, 386
+  size: 61, 83
+  orig: 61, 83
+  offset: 0, 0
+  index: -1
+rabbit_shoulder_right
+  rotate: false
+  xy: 74, 386
+  size: 60, 98
+  orig: 60, 98
+  offset: 0, 0
+  index: -1
+rabbit_strap
+  rotate: false
+  xy: 1, 386
+  size: 69, 120
+  orig: 69, 120
+  offset: 0, 0
+  index: -1
