@@ -9087,6 +9087,9 @@
                     var targetData = this._targetList[this._curIndex];
                     var arg1 = targetData.arg1;
                     var arg2 = targetData.arg2;
+                    if (arg1 && arg1.caller && arg1.selectedCb) {
+                        arg1.selectedCb.call(arg1.caller);
+                    }
                     if (arg1.target) {
                         let img = new Laya.Image("preload/headframe1.png");
                         img.name = 'headframe1';
@@ -19863,7 +19866,6 @@
                 this._shareTime = null;
                 ZY.clearArray(this._midList);
                 this._midList = null;
-                this._from = null;
                 this.zjInsert = null;
                 this._showGift = null;
                 Laya.Tween.clearAll(this);
@@ -20060,8 +20062,6 @@
                     }
                 }
             });
-        }
-        getScale() {
         }
         btnGiftSure() {
             if (this._showGift == 3) {
@@ -20442,7 +20442,7 @@
                 }
                 this._cloudShooter.start(this._scene);
                 this.addListener();
-                this.updateOpenInfo();
+                this.updateOpenInfo(true);
                 this._topPosZ = (midCnt - 1) * 28 + 70;
                 AnimalManager.instance.init();
                 this._midCnt = midCnt;
@@ -20551,6 +20551,7 @@
                     }
                 }
                 this._view.boxTip.visible = false;
+                this.changeButtons('createChildren');
             }
             if (sceneName !== "ZY_FIRST") {
                 userData.showAllShip = false;
@@ -21903,15 +21904,17 @@
                 userData.initFreeJewGain();
             }
             if (userData.freeJewGainTimes > 0) {
-                e.stopPropagation();
+                e && e.stopPropagation();
                 moduleBridge.freeJewCtrl.showView();
             }
             else {
+                var self = this;
                 moduleBridge.tipsCtrl.showTips(0, {
                     tipTitle: 'TIP',
                     tips: window.LangManager.getInstance().getValue("LC_com_comeagaintomorrow1"),
                     sure1Text: 'Close'
                 }, null, null, () => {
+                    self.changeButtons('tips');
                     moduleBridge.tipsCtrl.removeSelf();
                 });
             }
@@ -22001,14 +22004,6 @@
             }
         }
         openShop(index = 0) {
-            if (ZY.channel == "wx" || ZY.channel == "qq") {
-                if (index == 2) {
-                    ZY.TmCtrl.instance.tmSendEvent("gn_gold");
-                }
-                else if (index == 100) {
-                    ZY.TmCtrl.instance.tmSendEvent("gn_mall");
-                }
-            }
             let flag = index == 101 ? true : false;
             if (index >= 100)
                 index = 0;
@@ -22114,7 +22109,7 @@
                 Laya.systemTimer.clear(this, this.buffTimeOut);
             }
         }
-        updateOpenInfo() {
+        updateOpenInfo(refresh = false) {
             if (this._sceneName != "zoo")
                 return;
             let time = userData.openTime;
@@ -22181,7 +22176,8 @@
                 this._view.visitorInfo.text = "";
                 Laya.systemTimer.loop(1000, this, this.updateOpenTime);
             }
-            this.changeButtons('updateOpenInfo');
+            if (!refresh)
+                this.changeButtons('updateOpenInfo');
         }
         checkSoonAds() {
             if (ZY.channel != ZY.Channel.gs)
@@ -22648,6 +22644,31 @@
             }
             if (OnlyOpenButton || OnlyMoreVisitorAOpenNowButton)
                 return;
+            if (this._view.btnAddJew.visible) {
+                ZY.wasdManager.addTarget({
+                    target: this._view.btnAddJew,
+                    caller: this,
+                    click: this.openJew
+                }, {
+                    y: -30,
+                    centerX: 0,
+                    width: 120,
+                    height: 120
+                });
+            }
+            if (this._view.btnAddCoin.visible) {
+                ZY.wasdManager.addTarget({
+                    target: this._view.btnAddCoin,
+                    caller: this,
+                    click: this.openShop,
+                    options: 101
+                }, {
+                    y: -30,
+                    centerX: 0,
+                    width: 120,
+                    height: 120
+                });
+            }
             var type = {
                 y: -65,
                 centerX: 0,
@@ -23831,9 +23852,6 @@
                 Laya.Tween.to(view, { y: curY }, 300, null, null, 300 * (i + 1), false);
                 i++;
             }
-        }
-        from(name) {
-            this._from = "game";
         }
         shortCut() {
             userData.loop();
@@ -27348,7 +27366,6 @@
             else {
                 this.shortCut();
             }
-            moduleBridge.shipCtrl.from("game");
             ZY.stage.enterScene("zoo");
             if (ZY.channel == ZY.Channel.gs) {
                 ZY.gs.gameOver();
@@ -27531,7 +27548,8 @@
                     y: -60,
                     centerX: 0,
                     width: 330,
-                    height: 160
+                    height: 160,
+                    clearAllTargets: true
                 });
             }
             this._view.btnHearts.visible = true;
@@ -31763,7 +31781,7 @@
                     moduleBridge.shipCtrl.mapLevelUp();
                 }
                 else if (!(ZY.channel == 'fb' && ZY.fb.getPlatform() == 'IOS')) {
-                    this.openShop();
+                    ZY.msg.show(window.LangManager.getInstance().getValue("LC_com_notenoughcoin"));
                 }
             }
             else {
@@ -31880,10 +31898,10 @@
             }
             else if (ZY.channel === "hw") {
             }
-            ZY.wasdManager.clearAllTargets();
             this.changeButtons();
         }
         changeButtons() {
+            ZY.wasdManager.clearAllTargets();
             if (this._view.btnBack.visible) {
                 ZY.wasdManager.addTarget({
                     target: this._view.btnBack,
@@ -31897,8 +31915,6 @@
                     clearAllTargets: true
                 });
             }
-            else
-                ZY.wasdManager.removeTarget(this._view.btnBack);
             if (this._view.btnUpAd.visible) {
                 ZY.wasdManager.addTarget({
                     target: this._view.btnUpAd,
@@ -31911,8 +31927,6 @@
                     height: 170
                 });
             }
-            else
-                ZY.wasdManager.removeTarget(this._view.btnUpAd);
             if (this._view.btnLvup.visible) {
                 ZY.wasdManager.addTarget({
                     target: this._view.btnLvup,
@@ -31925,13 +31939,15 @@
                     height: 170
                 });
             }
-            else
-                ZY.wasdManager.removeTarget(this._view.btnLvup);
             if (this._view.btnStart0.visible) {
                 ZY.wasdManager.addTarget({
                     target: this._view.btnStart0,
                     caller: this,
                     click: this.onGameStart,
+                    selectedCb: function () {
+                        console.log('selectedCb_btnStart0');
+                        this._view.panelMap.vScrollBar.value = this._view.panelMap.vScrollBar.max - 0 * 700 - userData.mapLevel * 50;
+                    },
                     options: 0
                 }, {
                     y: -70,
@@ -31941,13 +31957,15 @@
                     clearAllTargets: true
                 });
             }
-            else
-                ZY.wasdManager.removeTarget(this._view.btnStart0);
             if (this._view.btnStart1.visible) {
                 ZY.wasdManager.addTarget({
                     target: this._view.btnStart1,
                     caller: this,
                     click: this.onGameStart,
+                    selectedCb: function () {
+                        console.log('selectedCb_btnStart1');
+                        this._view.panelMap.vScrollBar.value = this._view.panelMap.vScrollBar.max - userData.worldLevel * 700 - userData.mapLevel * 50;
+                    },
                     options: 1
                 }, {
                     y: -70,
@@ -31957,8 +31975,6 @@
                     clearAllTargets: true
                 });
             }
-            else
-                ZY.wasdManager.removeTarget(this._view.btnStart1);
         }
         updateBeePos() {
             let index = userData.worldLevel * 5 + userData.mapLevel;
@@ -32874,7 +32890,7 @@
                     this._btnShop2Btn1.on("click", this, this.buyEpicAnimal, [13]);
                     this._btnShop2Btn2.on("click", this, this.buyEpicAnimal, [11]);
                     this._btnShop2Btn3.on("click", this, this.buyEpicAnimal, [12]);
-                    this.initShop2();
+                    this.initShop2(true);
                     this._btnShop1Btn0.on("click", this, this.onBuy, [0]);
                     this._btnShop1Btn1.on("click", this, this.onBuy, [1]);
                     this._btnShop1Btn2.on("click", this, this.onBuy, [2]);
@@ -33184,7 +33200,7 @@
                 }
             }
         }
-        initShop2() {
+        initShop2(refresh = false) {
             let animalCode = {
                 btn10: 10,
                 btn11: 13,
@@ -33211,7 +33227,8 @@
                     }
                 }
             }
-            this.changeButtons(this._curTabSelect);
+            if (!refresh)
+                this.changeButtons();
         }
         onBuyGold(index) {
             let list = { "0": [100, 3000], "1": [150, 6000], "2": [250, 15000] };
@@ -33659,7 +33676,7 @@
                 userData.addJew(-cost, 1006);
                 this.buySuccess(index);
             }
-            this.changeButtons(index);
+            this.changeButtons();
         }
         buyFail(errCode) {
             if (errCode == 1) {
@@ -33884,7 +33901,7 @@
                 curBox.y = -200;
                 Laya.Tween.to(curBox, { y: 0 }, 400, Laya.Ease.backOut, null, 0, false);
             }
-            this.changeButtons(index);
+            this.changeButtons();
         }
         init() {
             this._view.btn30.visible = this._view.btn31.visible = this._view.btn32.visible = this._view.btn33.visible = false;
@@ -33914,9 +33931,9 @@
             this._curTabSelect = index;
             this.onTabSelect(index);
             this.nationalDay();
-            this.changeButtons(index);
+            this.changeButtons();
         }
-        changeButtons(index = 0) {
+        changeButtons(index = this._curTabSelect) {
             ZY.wasdManager.clearAllTargets();
             ZY.wasdManager.addTarget({
                 target: this._view.btnBack,
@@ -34321,6 +34338,7 @@
                 }
             }
             boxPanel.height = list.length * 366 + (list.length - 1) * 10;
+            this.changeButtons();
         }
         checkShowAfter(round) {
             let date = new Date();
@@ -37689,6 +37707,43 @@
             this.changeButtons();
         }
         changeButtons() {
+            ZY.wasdManager.clearAllTargets();
+            if (this._view.btnClose.visible) {
+                ZY.wasdManager.addTarget({
+                    target: this._view.btnClose,
+                    caller: this,
+                    click: this.onClose
+                }, {
+                    y: -62.5,
+                    centerX: 0,
+                    width: 280,
+                    height: 150
+                });
+            }
+            if (this._view.btnSure.visible) {
+                ZY.wasdManager.addTarget({
+                    target: this._view.btnSure,
+                    caller: this,
+                    click: this.onSure
+                }, {
+                    y: -62.5,
+                    centerX: 0,
+                    width: 280,
+                    height: 150
+                });
+            }
+            if (this._view.btnSure1.visible) {
+                ZY.wasdManager.addTarget({
+                    target: this._view.btnSure1,
+                    caller: this,
+                    click: this.onSure
+                }, {
+                    y: -62.5,
+                    centerX: 0,
+                    width: 280,
+                    height: 150
+                });
+            }
         }
         showTips(type = TYPE.ONE, btnData = { tipTitle: 'Tips', tips: 'Say something.', closeTxt: 'Close', sureText: 'Confirm', sure1Text: 'Confirm' }, closeCb = null, sureCb = null, sure1Cb = null) {
             this.removeSelf();
@@ -39981,14 +40036,6 @@
                 else
                     userData.addJew(3, 1001);
                 moduleBridge.shipCtrl.showFreeJewBtn();
-                if (ZY.channel == "wx" || ZY.channel == "qq") {
-                    ZY.TmCtrl.instance.tmSendEvent("ad_freeDiamond", { value: "完成" });
-                }
-                else if (ZY.channel == "zj") {
-                    ZY.reportEvent("ad_freeDiamond", { value: "完成" });
-                }
-                else if (ZY.channel == "oppo") {
-                }
                 if (ZY.channel == "vivo") {
                 }
                 else if (ZY.channel == "oppo") {
@@ -40105,6 +40152,24 @@
             else {
                 ZY.ad.hideBanner();
             }
+            this.changeButtons();
+        }
+        changeButtons() {
+            ZY.wasdManager.clearAllTargets();
+            if (this._view.btnClaim.visible) {
+                ZY.wasdManager.addTarget({
+                    target: this._view.btnClaim,
+                    caller: this,
+                    click: this.onGain2,
+                    options: true
+                }, {
+                    y: -68,
+                    centerX: 0,
+                    width: 470,
+                    height: 160,
+                    clearAllTargets: true
+                });
+            }
         }
         showView() {
             if (this._sceneName == "zoo")
@@ -40114,6 +40179,7 @@
         onBack() {
             ZY.ad.hideBanner();
             this._view.removeSelf();
+            moduleBridge.shipCtrl.changeButtons("freeJew");
         }
     }
     moduleBridge.freeJewCtrl = new FreeJewCtrl();
