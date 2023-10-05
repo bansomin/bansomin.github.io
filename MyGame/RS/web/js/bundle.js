@@ -5885,6 +5885,9 @@
         }
         showPokiRewardAds(caller = null, callback = null, index = 0, event, param, isFailCallball = false) {
             console.log(TAG$1 + 'showPokiRewardAds.');
+            if (caller && callback)
+                callback.call(caller, true, param);
+            return;
             if (window.PokiSDK) {
                 window.PokiSDK.rewardedBreak(() => {
                     ZY.sound.stopMusic();
@@ -22551,11 +22554,13 @@
         }
         changeButtons(from) {
             console.log('changeButtons:' + from);
+            var upgradUI = moduleBridge.upgradeCtrl.getUI();
+            if (upgradUI && upgradUI.parent)
+                return;
             var tutorial_OnlyBuffalo = (userData.enclosure[1001] === -1 && moduleBridge.teachCtrl.status == 0);
             var tutorial_OnlyBuildButton = (userData.enclosure[1001] === -1 && moduleBridge.teachCtrl.status == 2);
             if (tutorial_OnlyBuffalo || tutorial_OnlyBuildButton)
                 return;
-            var tutorial_OnlyOpen = moduleBridge.teachCtrl.status == 3;
             var OnlyOpenButton = this._tutorialStep == "OnlyOpenButton";
             var OnlyMoreVisitorAOpenNowButton = this._tutorialStep == "OnlyMoreVisitorAOpenNowButton";
             ZY.wasdManager.clearAllTargets();
@@ -23461,8 +23466,8 @@
                 this._select.transform.localPositionX = 1000;
                 this.moveOffsetY(0, 0, 0);
                 this._view.zooUIBottom.visible = true;
-                this.changeButtons('unselectEnc');
                 moduleBridge.upgradeCtrl.hideUI();
+                this.changeButtons('unselectEnc');
             }
         }
         selectNext() {
@@ -29432,18 +29437,14 @@
             if (this._homeUI)
                 this._homeUI.removeSelf();
         }
+        getUI() {
+            return this._homeUI;
+        }
         backHandler() {
             if (moduleBridge.teachCtrl.status > 0)
                 return;
             this._homeUI.teachTips.visible = false;
             moduleBridge.shipCtrl.unselectEnc();
-            if (ZY.channel == "oppo" && userData.get("teach", 0) == 2 && this._afterlvl) {
-                this._afterlvl = true;
-            }
-            else if (ZY.channel == "bd" && userData.get("teach", 0) == 2 && this._afterlvl) {
-                this._afterlvl = true;
-                ZY.reportEvent("lvl_back");
-            }
         }
     }
     moduleBridge.upgradeCtrl = new UpgradeCtrl();
