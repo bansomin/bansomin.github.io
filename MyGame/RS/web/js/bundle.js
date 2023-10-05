@@ -5885,9 +5885,6 @@
         }
         showPokiRewardAds(caller = null, callback = null, index = 0, event, param, isFailCallball = false) {
             console.log(TAG$1 + 'showPokiRewardAds.');
-            if (caller && callback)
-                callback.call(caller, true, param);
-            return;
             if (window.PokiSDK) {
                 window.PokiSDK.rewardedBreak(() => {
                     ZY.sound.stopMusic();
