@@ -89,6 +89,9 @@
 
     window.addEventListener('resize', function () {
 
+        var isMax = (window.outerHeight === screen.availHeight && window.outerWidth === screen.availWidth)
+        console.log('isMax:', isMax)
+
         var layaContainer = document.getElementById('layaContainer')
         var layaCanvas = document.getElementById('layaCanvas')
         var leftBg = document.getElementsByClassName('leftBg')
