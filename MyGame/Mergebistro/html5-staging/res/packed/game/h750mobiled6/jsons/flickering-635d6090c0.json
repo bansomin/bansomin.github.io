@@ -1,0 +1,672 @@
+{
+    "bones": [{
+        "name": "root"
+    }, {
+        "name": "effect_bubble",
+        "parent": "root",
+        "scaleX": 0.25,
+        "scaleY": 0.25,
+        "length": 14.51,
+        "y": 22.49,
+        "x": -7.4,
+        "rotation": 92.6
+    }, {
+        "name": "effect_star2",
+        "parent": "root",
+        "scaleX": 0.3,
+        "scaleY": 0.3,
+        "length": 10.56,
+        "y": 13.11,
+        "x": -30.15,
+        "rotation": 93.58
+    }, {
+        "name": "effect_star3",
+        "parent": "root",
+        "scaleX": 0.3,
+        "scaleY": 0.3,
+        "length": 10.56,
+        "y": 11.07,
+        "x": -30.8,
+        "rotation": 93.58
+    }, {
+        "name": "effect_star4",
+        "parent": "root",
+        "scaleX": 0.3,
+        "scaleY": 0.3,
+        "length": 10.56,
+        "y": 14.09,
+        "x": -14.06,
+        "rotation": 93.58
+    }, {
+        "name": "effect_star5",
+        "parent": "root",
+        "scaleX": 0.3,
+        "scaleY": 0.3,
+        "length": 10.56,
+        "y": -5.67,
+        "x": -35.75,
+        "rotation": 93.58
+    }, {
+        "name": "effect_star6",
+        "parent": "root",
+        "scaleX": 0.3,
+        "scaleY": 0.3,
+        "length": 10.56,
+        "y": 32.29,
+        "x": -33.64,
+        "rotation": 93.58
+    }, {
+        "name": "effect_bubble2",
+        "parent": "root",
+        "scaleX": 0.2,
+        "scaleY": 0.2,
+        "length": 14.51,
+        "y": -30.81,
+        "x": 72.55,
+        "rotation": 92.6
+    }, {
+        "name": "effect_bubble3",
+        "parent": "root",
+        "scaleX": 0.15,
+        "scaleY": 0.15,
+        "length": 14.51,
+        "y": -49.26,
+        "x": -70.95,
+        "rotation": 92.6
+    }],
+    "slots": [{
+        "name": "\u56fe\u5c42 14",
+        "bone": "root"
+    }, {
+        "blend": "screen",
+        "name": "effect_bubble",
+        "bone": "effect_bubble"
+    }, {
+        "blend": "screen",
+        "name": "effect_bubble3",
+        "bone": "effect_bubble3"
+    }, {
+        "blend": "screen",
+        "name": "effect_bubble2",
+        "bone": "effect_bubble2"
+    }, {
+        "blend": "additive",
+        "name": "effect_star2",
+        "bone": "effect_star2",
+        "attachment": "effect_star1"
+    }, {
+        "blend": "additive",
+        "name": "effect_star5",
+        "bone": "effect_star5",
+        "attachment": "effect_star1"
+    }, {
+        "blend": "additive",
+        "name": "effect_star6",
+        "bone": "effect_star6",
+        "attachment": "effect_star1"
+    }, {
+        "blend": "additive",
+        "name": "effect_star3",
+        "bone": "effect_star3",
+        "attachment": "effect_star1"
+    }, {
+        "blend": "additive",
+        "name": "effect_star4",
+        "bone": "effect_star4",
+        "attachment": "effect_star1"
+    }],
+    "animations": {
+        "animation": {
+            "bones": {
+                "effect_bubble2": {
+                    "translate": [{
+                        "y": 23.84,
+                        "x": -55.14,
+                        "time": 0.6667
+                    }, {
+                        "y": 67.73,
+                        "x": -49.36,
+                        "time": 0.9333
+                    }, {
+                        "y": 86.12,
+                        "x": -62.41,
+                        "time": 1.2333
+                    }, {
+                        "y": 114.68,
+                        "x": -46.19,
+                        "time": 1.5
+                    }],
+                    "scale": [{
+                        "y": 0,
+                        "x": 0,
+                        "time": 0.6667
+                    }, {
+                        "y": 1,
+                        "x": 1,
+                        "time": 1.5
+                    }]
+                },
+                "effect_bubble3": {
+                    "translate": [{
+                        "y": 43.28,
+                        "x": 50.52,
+                        "time": 0.3333
+                    }, {
+                        "y": 80.7,
+                        "x": 46.14,
+                        "time": 0.6
+                    }, {
+                        "y": 93.21,
+                        "x": 50.78,
+                        "time": 0.9
+                    }, {
+                        "y": 116.51,
+                        "x": 44.02,
+                        "time": 1.1667
+                    }],
+                    "scale": [{
+                        "y": 0,
+                        "x": 0,
+                        "time": 0.3333
+                    }, {
+                        "y": 1,
+                        "x": 1,
+                        "time": 1.1667
+                    }]
+                },
+                "effect_star6": {
+                    "translate": [{
+                        "y": -13.33,
+                        "x": 35.87,
+                        "time": 0
+                    }, {
+                        "y": 19.48,
+                        "x": 35.87,
+                        "time": 0.1667
+                    }, {
+                        "y": 26.03,
+                        "x": 35.87,
+                        "time": 0.4333
+                    }],
+                    "rotate": [{
+                        "angle": 0,
+                        "time": 0
+                    }, {
+                        "angle": -159.98,
+                        "time": 0.1667
+                    }, {
+                        "angle": 20.26,
+                        "time": 0.4333
+                    }, {
+                        "angle": -4.15,
+                        "time": 0.6
+                    }],
+                    "scale": [{
+                        "y": 0,
+                        "x": 0,
+                        "time": 0
+                    }, {
+                        "y": 1,
+                        "x": 1,
+                        "time": 0.4333
+                    }, {
+                        "y": 0.135,
+                        "x": 2.356,
+                        "time": 0.6
+                    }]
+                },
+                "effect_bubble": {
+                    "translate": [{
+                        "time": 0.5
+                    }, {
+                        "y": 41.45,
+                        "x": -7.34,
+                        "time": 0.7667
+                    }, {
+                        "y": 66.39,
+                        "x": 2.1,
+                        "time": 1.0667
+                    }, {
+                        "y": 89.04,
+                        "x": -18.01,
+                        "time": 1.3333
+                    }],
+                    "scale": [{
+                        "y": 0,
+                        "x": 0,
+                        "time": 0.5
+                    }, {
+                        "y": 1,
+                        "x": 1,
+                        "time": 1.3333
+                    }]
+                },
+                "effect_star4": {
+                    "translate": [{
+                        "y": -13.33,
+                        "x": 35.87,
+                        "time": 0.3333
+                    }, {
+                        "y": 32.02,
+                        "x": 34.8,
+                        "time": 0.5
+                    }, {
+                        "y": 54.33,
+                        "x": 33.19,
+                        "time": 0.8333
+                    }],
+                    "rotate": [{
+                        "angle": 0,
+                        "time": 0.3333
+                    }, {
+                        "angle": -159.98,
+                        "time": 0.5
+                    }, {
+                        "angle": 20.26,
+                        "time": 0.8
+                    }, {
+                        "angle": 1.79,
+                        "time": 0.8333
+                    }, {
+                        "angle": -0.12,
+                        "time": 1
+                    }],
+                    "scale": [{
+                        "y": 0,
+                        "x": 0,
+                        "time": 0.3333
+                    }, {
+                        "y": 1,
+                        "x": 1,
+                        "time": 0.8333
+                    }, {
+                        "y": 2.19,
+                        "x": 1,
+                        "time": 1
+                    }]
+                },
+                "effect_star5": {
+                    "translate": [{
+                        "y": -13.33,
+                        "x": 35.87,
+                        "time": 0.1667
+                    }, {
+                        "y": 27.68,
+                        "x": 35.87,
+                        "time": 0.3333
+                    }, {
+                        "y": 46.12,
+                        "x": 35.87,
+                        "time": 0.6667
+                    }],
+                    "rotate": [{
+                        "angle": 0,
+                        "time": 0.1667
+                    }, {
+                        "angle": -159.98,
+                        "time": 0.3333
+                    }, {
+                        "angle": 20.26,
+                        "time": 0.6333
+                    }, {
+                        "angle": 1.79,
+                        "time": 0.6667
+                    }, {
+                        "angle": -0.12,
+                        "time": 0.8333
+                    }],
+                    "scale": [{
+                        "y": 0,
+                        "x": 0,
+                        "time": 0.1667
+                    }, {
+                        "y": 1,
+                        "x": 1,
+                        "time": 0.6667
+                    }, {
+                        "y": 0.135,
+                        "x": 2.356,
+                        "time": 0.8333
+                    }]
+                },
+                "effect_star2": {
+                    "translate": [{
+                        "y": -9.83,
+                        "x": 14.49,
+                        "time": 0
+                    }, {
+                        "y": 24.83,
+                        "x": 10.62,
+                        "time": 0.1667
+                    }, {
+                        "y": 48.95,
+                        "x": 7.17,
+                        "time": 0.5
+                    }],
+                    "rotate": [{
+                        "angle": 0,
+                        "time": 0
+                    }, {
+                        "angle": -159.98,
+                        "time": 0.1667
+                    }, {
+                        "angle": 20.26,
+                        "time": 0.4667
+                    }, {
+                        "angle": 1.79,
+                        "time": 0.5
+                    }, {
+                        "angle": -0.12,
+                        "time": 0.6667
+                    }],
+                    "scale": [{
+                        "y": 0,
+                        "x": 0,
+                        "time": 0
+                    }, {
+                        "y": 1,
+                        "x": 1,
+                        "time": 0.5
+                    }, {
+                        "y": 2.19,
+                        "x": 1,
+                        "time": 0.6667
+                    }]
+                },
+                "effect_star3": {
+                    "translate": [{
+                        "y": -13.33,
+                        "x": 35.87,
+                        "time": 0.1667
+                    }, {
+                        "y": 33.03,
+                        "x": 35.87,
+                        "time": 0.3333
+                    }, {
+                        "y": 64.64,
+                        "x": 36.5,
+                        "time": 0.6667
+                    }, {
+                        "y": 86.37,
+                        "x": 37.93,
+                        "time": 0.8333
+                    }],
+                    "rotate": [{
+                        "angle": 0,
+                        "time": 0.1667
+                    }, {
+                        "angle": -159.98,
+                        "time": 0.3333
+                    }, {
+                        "angle": 20.26,
+                        "time": 0.6333
+                    }, {
+                        "angle": 1.79,
+                        "time": 0.6667
+                    }, {
+                        "angle": -0.12,
+                        "time": 0.8333
+                    }],
+                    "scale": [{
+                        "y": 0,
+                        "x": 0,
+                        "time": 0.1667
+                    }, {
+                        "y": 1,
+                        "x": 1,
+                        "time": 0.6667
+                    }, {
+                        "y": 2.19,
+                        "x": 1,
+                        "time": 0.8333
+                    }]
+                }
+            },
+            "slots": {
+                "effect_bubble2": {
+                    "color": [{
+                        "color": "ffffffff",
+                        "time": 1.2333
+                    }, {
+                        "color": "ffffff00",
+                        "time": 1.5
+                    }],
+                    "attachment": [{
+                        "name": "effect_bubble",
+                        "time": 0.6667
+                    }]
+                },
+                "effect_bubble3": {
+                    "color": [{
+                        "color": "ffffffff",
+                        "time": 0.9
+                    }, {
+                        "color": "ffffff00",
+                        "time": 1.1667
+                    }],
+                    "attachment": [{
+                        "name": "effect_bubble",
+                        "time": 0.3333
+                    }]
+                },
+                "effect_star6": {
+                    "color": [{
+                        "color": "ffffffff",
+                        "time": 0.4333
+                    }, {
+                        "color": "ffffff00",
+                        "time": 0.6
+                    }],
+                    "attachment": [{
+                        "name": "effect_star2",
+                        "time": 0
+                    }]
+                },
+                "effect_bubble": {
+                    "color": [{
+                        "color": "ffffffff",
+                        "time": 1.0667
+                    }, {
+                        "color": "ffffff00",
+                        "time": 1.3333
+                    }],
+                    "attachment": [{
+                        "name": "effect_bubble",
+                        "time": 0.5
+                    }]
+                },
+                "effect_star4": {
+                    "color": [{
+                        "color": "ffffffff",
+                        "time": 0.8333
+                    }, {
+                        "color": "ffffff00",
+                        "time": 1
+                    }],
+                    "attachment": [{
+                        "name": null,
+                        "time": 0
+                    }, {
+                        "name": "effect_star2",
+                        "time": 0.3333
+                    }, {
+                        "name": "effect_star1",
+                        "time": 0.8333
+                    }]
+                },
+                "effect_star5": {
+                    "color": [{
+                        "color": "ffffffff",
+                        "time": 0.6667
+                    }, {
+                        "color": "ffffff00",
+                        "time": 0.8333
+                    }],
+                    "attachment": [{
+                        "name": null,
+                        "time": 0
+                    }, {
+                        "name": "effect_star2",
+                        "time": 0.1667
+                    }]
+                },
+                "effect_star2": {
+                    "color": [{
+                        "color": "ffffffff",
+                        "time": 0.5
+                    }, {
+                        "color": "ffffff00",
+                        "time": 0.6667
+                    }],
+                    "attachment": [{
+                        "name": "effect_star2",
+                        "time": 0
+                    }, {
+                        "name": "effect_star1",
+                        "time": 0.5
+                    }]
+                },
+                "effect_star3": {
+                    "color": [{
+                        "color": "ffffffff",
+                        "time": 0.6667
+                    }, {
+                        "color": "ffffff00",
+                        "time": 0.8333
+                    }],
+                    "attachment": [{
+                        "name": null,
+                        "time": 0
+                    }, {
+                        "name": "effect_star2",
+                        "time": 0.1667
+                    }, {
+                        "name": "effect_star1",
+                        "time": 0.6667
+                    }]
+                }
+            }
+        }
+    },
+    "skeleton": {
+        "hash": "504uK/pbSQ440ajdjYikWvIQjwM",
+        "spine": "3.8.99",
+        "images": "./images/",
+        "height": 198.3,
+        "width": 285,
+        "y": -39.18,
+        "x": -144.81,
+        "audio": ""
+    },
+    "skins": {
+        "default": {
+            "effect_bubble2": {
+                "effect_bubble": {
+                    "y": 0.13,
+                    "x": 0.87,
+                    "rotation": -92.6,
+                    "height": 57,
+                    "width": 57
+                }
+            },
+            "effect_bubble3": {
+                "effect_bubble": {
+                    "y": 0.13,
+                    "x": 0.87,
+                    "rotation": -92.6,
+                    "height": 57,
+                    "width": 57
+                }
+            },
+            "effect_star6": {
+                "effect_star2": {
+                    "y": 0.23,
+                    "x": -0.29,
+                    "rotation": -93.58,
+                    "height": 38,
+                    "width": 38
+                },
+                "effect_star1": {
+                    "y": -0.79,
+                    "x": 1.78,
+                    "rotation": -93.58,
+                    "height": 18,
+                    "width": 38
+                }
+            },
+            "effect_bubble": {
+                "effect_bubble": {
+                    "y": 0.13,
+                    "x": 0.87,
+                    "rotation": -92.6,
+                    "height": 57,
+                    "width": 57
+                }
+            },
+            "effect_star4": {
+                "effect_star2": {
+                    "y": 0.23,
+                    "x": -0.29,
+                    "rotation": -93.58,
+                    "height": 38,
+                    "width": 38
+                },
+                "effect_star1": {
+                    "y": -0.79,
+                    "x": 1.78,
+                    "rotation": -93.58,
+                    "height": 18,
+                    "width": 38
+                }
+            },
+            "effect_star5": {
+                "effect_star2": {
+                    "y": 0.23,
+                    "x": -0.29,
+                    "rotation": -93.58,
+                    "height": 38,
+                    "width": 38
+                },
+                "effect_star1": {
+                    "y": -0.79,
+                    "x": 1.78,
+                    "rotation": -93.58,
+                    "height": 18,
+                    "width": 38
+                }
+            },
+            "effect_star2": {
+                "effect_star2": {
+                    "y": 0.23,
+                    "x": -0.29,
+                    "rotation": -93.58,
+                    "height": 38,
+                    "width": 38
+                },
+                "effect_star1": {
+                    "y": -0.79,
+                    "x": 1.78,
+                    "rotation": -93.58,
+                    "height": 18,
+                    "width": 38
+                }
+            },
+            "effect_star3": {
+                "effect_star2": {
+                    "y": 0.23,
+                    "x": -0.29,
+                    "rotation": -93.58,
+                    "height": 38,
+                    "width": 38
+                },
+                "effect_star1": {
+                    "y": -0.79,
+                    "x": 1.78,
+                    "rotation": -93.58,
+                    "height": 18,
+                    "width": 38
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,697 @@
+{
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "x": 0.09,
+      "name": "check_mark",
+      "parent": "root"
+    },
+    {
+      "y": 1.73,
+      "x": -0.25,
+      "name": "check_mark_bg",
+      "parent": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "check_mark",
+      "bone": "check_mark",
+      "attachment": "check_mark"
+    },
+    {
+      "blend": "additive",
+      "name": "check_mark_bg",
+      "bone": "check_mark_bg",
+      "attachment": "check_mark_bg"
+    }
+  ],
+  "animations": {
+    "002": {
+      "bones": {
+        "check_mark": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.6333
+            },
+            {
+              "y": 6.4,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.7667
+            },
+            {
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.2
+            },
+            {
+              "y": 6.4,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.3333
+            },
+            {
+              "time": 2.6667
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6333
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 2.2
+            },
+            {
+              "angle": 0,
+              "time": 2.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "x": 1,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "y": 1,
+              "time": 1.6333
+            },
+            {
+              "y": 1.45,
+              "x": 1.45,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.7667
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "x": 1,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "y": 1,
+              "time": 2.2
+            },
+            {
+              "y": 1.45,
+              "x": 1.45,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.3333
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 2.6667
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6333
+            },
+            {
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "curve": "stepped",
+              "time": 2.2
+            },
+            {
+              "time": 2.6667
+            }
+          ]
+        },
+        "root": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6333
+            },
+            {
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "curve": "stepped",
+              "time": 2.2
+            },
+            {
+              "time": 2.6667
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 1.6333
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 2.2
+            },
+            {
+              "angle": 0,
+              "time": 2.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "curve": "stepped",
+              "time": 1.6333
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 2.2
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6333
+            },
+            {
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "curve": "stepped",
+              "time": 2.2
+            },
+            {
+              "time": 2.6667
+            }
+          ]
+        },
+        "check_mark_bg": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.6333
+            },
+            {
+              "y": 6.4,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.7667
+            },
+            {
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.2
+            },
+            {
+              "y": 6.4,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.3333
+            },
+            {
+              "time": 2.6667
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "angle": 0,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.6333
+            },
+            {
+              "curve": "stepped",
+              "angle": 0.42,
+              "time": 1.7667
+            },
+            {
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "angle": 0.42,
+              "time": 2.1
+            },
+            {
+              "angle": 0,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.2
+            },
+            {
+              "curve": "stepped",
+              "angle": 0.42,
+              "time": 2.3333
+            },
+            {
+              "angle": 0.42,
+              "time": 2.6667
+            }
+          ],
+          "scale": [
+            {
+              "y": 0.663,
+              "x": 0.663,
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "y": 0.663,
+              "x": 0.663,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.6333
+            },
+            {
+              "y": 1.081,
+              "x": 1.081,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.7667
+            },
+            {
+              "y": 1.543,
+              "x": 1.543,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.1
+            },
+            {
+              "y": 0.663,
+              "x": 0.663,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.2
+            },
+            {
+              "y": 1.001,
+              "x": 1.001,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.3333
+            },
+            {
+              "y": 1.543,
+              "x": 1.543,
+              "time": 2.6667
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "curve": "stepped",
+              "time": 1.6333
+            },
+            {
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "curve": "stepped",
+              "time": 2.2
+            },
+            {
+              "time": 2.6667
+            }
+          ]
+        }
+      },
+      "slots": {
+        "check_mark": {
+          "color": [
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.6333
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 1.7667
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 2.2
+            },
+            {
+              "color": "ffffffff",
+              "curve": "stepped",
+              "time": 2.3333
+            },
+            {
+              "color": "ffffffff",
+              "time": 2.6667
+            }
+          ]
+        },
+        "check_mark_bg": {
+          "color": [
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "color": "ffffff00",
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.6333
+            },
+            {
+              "color": "ffffff89",
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1.7667
+            },
+            {
+              "color": "ffffff00",
+              "curve": "stepped",
+              "time": 2.1
+            },
+            {
+              "color": "ffffff00",
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.2
+            },
+            {
+              "color": "ffffff89",
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 2.3333
+            },
+            {
+              "color": "ffffff00",
+              "time": 2.6667
+            }
+          ]
+        }
+      }
+    },
+    "001": {
+      "bones": {
+        "check_mark": {
+          "translate": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "time": 2
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "time": 0
+            },
+            {
+              "angle": -86.82,
+              "time": 0.5
+            },
+            {
+              "angle": -176.75,
+              "time": 1
+            },
+            {
+              "angle": 92.41,
+              "time": 1.5
+            },
+            {
+              "angle": 0,
+              "time": 2
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "time": 0
+            },
+            {
+              "y": 0.788,
+              "x": 0.788,
+              "curve": [
+                0.25,
+                0,
+                0.75,
+                1
+              ],
+              "time": 1
+            },
+            {
+              "y": 1,
+              "x": 1,
+              "time": 2
+            }
+          ],
+          "shear": [
+            {
+              "curve": "stepped",
+              "time": 0
+            },
+            {
+              "time": 2
+            }
+          ]
+        },
+        "root": {
+          "translate": [
+            {
+              "time": 0
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0,
+              "time": 0
+            }
+          ],
+          "scale": [
+            {
+              "y": 1,
+              "x": 1,
+              "time": 0
+            }
+          ],
+          "shear": [
+            {
+              "time": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "skeleton": {
+    "hash": "Im2ItXgT7OX1X8/lQnqAotvbWow",
+    "spine": "3.8.97",
+    "height": 89,
+    "width": 88,
+    "y": -42.59,
+    "x": -44.13
+  },
+  "skins": {
+    "default": {
+      "check_mark": {
+        "check_mark": {
+          "y": -1.05,
+          "x": 0.02,
+          "height": 65,
+          "width": 65
+        }
+      },
+      "check_mark_bg": {
+        "check_mark_bg": {
+          "y": 0.18,
+          "x": 0.12,
+          "height": 89,
+          "width": 88
+        }
+      }
+    }
+  }
+}

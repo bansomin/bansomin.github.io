@@ -1,0 +1,55 @@
+
+unitslibrarywindow-fdf79b7b62.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+box_01
+  rotate: false
+  xy: 194, 45
+  size: 58, 49
+  orig: 58, 49
+  offset: 0, 0
+  index: -1
+gift_01
+  rotate: false
+  xy: 194, 1
+  size: 60, 40
+  orig: 60, 40
+  offset: 0, 0
+  index: -1
+gift_02
+  rotate: false
+  xy: 1, 218
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+gift_03
+  rotate: false
+  xy: 24, 218
+  size: 17, 19
+  orig: 17, 19
+  offset: 0, 0
+  index: -1
+gift_light_01
+  rotate: false
+  xy: 45, 1
+  size: 145, 145
+  orig: 145, 145
+  offset: 0, 0
+  index: -1
+gift_light_02
+  rotate: false
+  xy: 1, 1
+  size: 34, 213
+  orig: 34, 213
+  offset: 0, 0
+  index: -1
+unitslibrarywindow-gift-box_grey
+  rotate: false
+  xy: 39, 150
+  size: 60, 64
+  orig: 60, 64
+  offset: 0, 0
+  index: -1

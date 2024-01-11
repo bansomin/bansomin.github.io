@@ -1,0 +1,55 @@
+
+orderswindow-6c4c5b85b4.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blick_particle
+  rotate: false
+  xy: 159, 161
+  size: 53, 48
+  orig: 53, 48
+  offset: 0, 0
+  index: -1
+orderswindow-equally
+  rotate: false
+  xy: 222, 120
+  size: 27, 21
+  orig: 27, 21
+  offset: 0, 0
+  index: -1
+orderswindow-hero_bg
+  rotate: false
+  xy: 1, 1
+  size: 154, 154
+  orig: 154, 154
+  offset: 0, 0
+  index: -1
+orderswindow-hero_bg_selected
+  rotate: false
+  xy: 1, 159
+  size: 154, 154
+  orig: 154, 154
+  offset: 0, 0
+  index: -1
+orderswindow-order_lock
+  rotate: false
+  xy: 159, 90
+  size: 59, 67
+  orig: 59, 67
+  offset: 0, 0
+  index: -1
+orderswindow-plus
+  rotate: false
+  xy: 222, 90
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1
+shines
+  rotate: false
+  xy: 159, 1
+  size: 87, 85
+  orig: 87, 85
+  offset: 0, 0
+  index: -1
