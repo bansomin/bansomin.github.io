@@ -1,0 +1,97 @@
+
+energylotterywindow-4b7bf40d73.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+card
+  rotate: false
+  xy: 769, 1
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+card_cat
+  rotate: false
+  xy: 769, 207
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+card_click
+  rotate: false
+  xy: 597, 1
+  size: 168, 216
+  orig: 168, 216
+  offset: 0, 0
+  index: -1
+card_dog
+  rotate: false
+  xy: 1, 413
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+card_fox
+  rotate: false
+  xy: 1, 140
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+card_mai
+  rotate: false
+  xy: 1, 619
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+card_monkey
+  rotate: false
+  xy: 160, 140
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+card_panda
+  rotate: false
+  xy: 319, 140
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+card_racoon
+  rotate: false
+  xy: 478, 221
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+card_tiger
+  rotate: false
+  xy: 160, 346
+  size: 155, 202
+  orig: 155, 202
+  offset: 0, 0
+  index: -1
+energylotterywindow-box
+  rotate: false
+  xy: 1, 825
+  size: 137, 110
+  orig: 137, 110
+  offset: 0, 0
+  index: -1
+energylotterywindow-images-card_click
+  rotate: false
+  xy: 597, 1
+  size: 168, 216
+  orig: 168, 216
+  offset: 0, 0
+  index: -1
+energylotterywindow-title_yellow_big
+  rotate: false
+  xy: 1, 1
+  size: 592, 135
+  orig: 592, 135
+  offset: 0, 0
+  index: -1
