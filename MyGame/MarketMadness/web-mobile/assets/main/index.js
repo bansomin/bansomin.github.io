@@ -20694,7 +20694,7 @@ window.__require = function e(t, n, r) {
           var itemsArr = _config.items.split(",");
           var combineWeight = 0;
           _config.itemsWeight = [];
-          for (k = groupProbs.length - 1; k > groupProbs.length - itemsArr.length - 1; k--) {
+          for (var k = groupProbs.length - 1; k > groupProbs.length - itemsArr.length - 1; k--) {
             var weight = groupProbs[k];
             _config.itemsWeight.unshift(weight);
             combineWeight += weight;
