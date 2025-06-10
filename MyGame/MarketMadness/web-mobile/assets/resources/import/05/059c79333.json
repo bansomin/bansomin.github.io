@@ -1,0 +1,1288 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "87Weuy0m9M/rIomnNmL0lO",
+    "a8JC2MBNJFr7wDt5rxylQx"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.PrefabInfo",
+      [
+        "fileId",
+        "root"
+      ],
+      2,
+      1
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_children",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_anchorPoint"
+      ],
+      2,
+      2,
+      9,
+      4,
+      5,
+      5
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_trs"
+      ],
+      2,
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "defaultAnimation",
+        "_preCacheMode",
+        "_animationName",
+        "node",
+        "_materials"
+      ],
+      -1,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      4,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      5
+    ],
+    [
+      6,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "gift"
+        ],
+        [
+          1,
+          "gift",
+          [
+            -4
+          ],
+          [
+            [
+              3,
+              -3,
+              -2
+            ]
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            300,
+            300
+          ],
+          [
+            0,
+            0.5,
+            0.2
+          ]
+        ],
+        [
+          2,
+          "spine",
+          1,
+          [
+            -5
+          ],
+          [
+            5,
+            "abaT4wJj9DtqG9xK6tRyN0",
+            1
+          ],
+          [
+            5,
+            1080,
+            2340
+          ],
+          [
+            0,
+            20,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          6,
+          "default",
+          "Idle",
+          0,
+          "Idle",
+          2,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        3,
+        0,
+        2,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        -1,
+        3,
+        0,
+        3,
+        1,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          7,
+          "First_Box",
+          "\r\nFirst_Box.png\r\nsize: 294,140\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/1\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 131, 34\r\n  orig: 131, 34\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2\r\n  rotate: true\r\n  xy: 252, 9\r\n  size: 129, 40\r\n  orig: 129, 40\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Box\r\n  rotate: false\r\n  xy: 2, 38\r\n  size: 154, 100\r\n  orig: 154, 100\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Star\r\n  rotate: false\r\n  xy: 202, 20\r\n  size: 25, 24\r\n  orig: 27, 24\r\n  offset: 1, 0\r\n  index: -1\r\nImage/glow\r\n  rotate: false\r\n  xy: 158, 6\r\n  size: 42, 38\r\n  orig: 48, 53\r\n  offset: 2, 0\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 158, 46\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          [
+            "First_Box.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "wqScbbjInay5qdLKUOl4UKAIO1s",
+              "spine": "3.8.99",
+              "x": -866.92,
+              "y": -1170,
+              "width": 1080,
+              "height": 2340,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Box",
+                "parent": "Zong",
+                "x": -2.2,
+                "y": -1.89
+              },
+              {
+                "name": "Box2",
+                "parent": "Box",
+                "length": 27.14,
+                "rotation": 90,
+                "x": -7.94,
+                "y": -44.97
+              },
+              {
+                "name": "Front",
+                "parent": "Box2",
+                "length": 31.19,
+                "rotation": 33.05,
+                "x": 93.38,
+                "y": 15.01
+              },
+              {
+                "name": "Back",
+                "parent": "Box2",
+                "length": 40.86,
+                "rotation": -27.55,
+                "x": 91.8,
+                "y": -27.2
+              },
+              {
+                "name": "Box3",
+                "parent": "Box2",
+                "length": 30.55,
+                "rotation": -2.39,
+                "x": 31.8
+              },
+              {
+                "name": "Box4",
+                "parent": "Box3",
+                "length": 26.34,
+                "rotation": 6.08,
+                "x": 35.25,
+                "y": -0.65
+              },
+              {
+                "name": "Glow",
+                "parent": "Box3",
+                "length": 18.94,
+                "rotation": 0.49,
+                "x": 58.47,
+                "y": -9.95,
+                "scaleX": 2.6439,
+                "scaleY": 4.5163
+              },
+              {
+                "name": "Glow2",
+                "parent": "Box3",
+                "length": 18.94,
+                "rotation": 0.49,
+                "x": 58.47,
+                "y": -9.95,
+                "scaleX": 2.6439,
+                "scaleY": 4.5163
+              },
+              {
+                "name": "LizZong",
+                "parent": "root"
+              },
+              {
+                "name": "Star",
+                "parent": "LizZong"
+              },
+              {
+                "name": "Star2",
+                "parent": "LizZong"
+              },
+              {
+                "name": "Star3",
+                "parent": "LizZong"
+              },
+              {
+                "name": "Back_Bix",
+                "parent": "Zong"
+              },
+              {
+                "name": "Glow3",
+                "parent": "Box3",
+                "length": 18.94,
+                "rotation": 0.49,
+                "x": 58.47,
+                "y": -9.95,
+                "scaleX": 2.6439,
+                "scaleY": 4.5163
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/glow1",
+                "bone": "Back_Bix",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/2",
+                "bone": "Back",
+                "attachment": "Image/2"
+              },
+              {
+                "name": "Image/Box",
+                "bone": "Box",
+                "attachment": "Image/Box"
+              },
+              {
+                "name": "Image/glow3",
+                "bone": "Glow3",
+                "attachment": "Image/glow"
+              },
+              {
+                "name": "Image/glow",
+                "bone": "Glow",
+                "attachment": "Image/glow",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/glow2",
+                "bone": "Glow2",
+                "attachment": "Image/glow",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/1",
+                "bone": "Front",
+                "attachment": "Image/1"
+              },
+              {
+                "name": "Star",
+                "bone": "Star",
+                "attachment": "Image/Star",
+                "blend": "additive"
+              },
+              {
+                "name": "Star2",
+                "bone": "Star2",
+                "attachment": "Image/Star",
+                "blend": "additive"
+              },
+              {
+                "name": "Star3",
+                "bone": "Star3",
+                "attachment": "Image/Star",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/1": {
+                    "Image/1": {
+                      "x": 17.08,
+                      "y": -1.41,
+                      "rotation": -123.6,
+                      "width": 131,
+                      "height": 34
+                    }
+                  },
+                  "Image/2": {
+                    "Image/2": {
+                      "x": 23.06,
+                      "y": -0.61,
+                      "rotation": -62.45,
+                      "width": 129,
+                      "height": 40
+                    }
+                  },
+                  "Image/Box": {
+                    "Image/Box": {
+                      "type": "mesh",
+                      "hull": 8,
+                      "width": 154,
+                      "height": 100,
+                      "uvs": [
+                        1,
+                        0.33198,
+                        1,
+                        0.72468,
+                        1,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0.69408,
+                        0,
+                        0.29883,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "triangles": [
+                        4,
+                        0,
+                        1,
+                        5,
+                        7,
+                        0,
+                        4,
+                        5,
+                        0,
+                        5,
+                        6,
+                        7,
+                        3,
+                        4,
+                        1,
+                        3,
+                        1,
+                        2
+                      ],
+                      "vertices": [
+                        2,
+                        6,
+                        33.49,
+                        -83.62,
+                        0.79087,
+                        7,
+                        -10.54,
+                        -82.32,
+                        0.20913,
+                        2,
+                        3,
+                        22.5,
+                        -84.94,
+                        0.65226,
+                        6,
+                        -5.75,
+                        -85.26,
+                        0.34774,
+                        1,
+                        3,
+                        -5.03,
+                        -84.94,
+                        1,
+                        1,
+                        3,
+                        -5.03,
+                        69.06,
+                        1,
+                        2,
+                        3,
+                        25.56,
+                        69.06,
+                        0.58747,
+                        6,
+                        -9.1,
+                        68.74,
+                        0.41253,
+                        2,
+                        6,
+                        30.39,
+                        70.38,
+                        0.90748,
+                        7,
+                        2.68,
+                        71.15,
+                        0.09252,
+                        2,
+                        6,
+                        60.24,
+                        71.63,
+                        0.3612,
+                        7,
+                        32.51,
+                        69.23,
+                        0.6388,
+                        2,
+                        6,
+                        66.65,
+                        -82.24,
+                        0.24616,
+                        7,
+                        22.59,
+                        -84.45,
+                        0.75384
+                      ],
+                      "edges": [
+                        4,
+                        6,
+                        12,
+                        14,
+                        6,
+                        8,
+                        4,
+                        2,
+                        2,
+                        0,
+                        0,
+                        14,
+                        8,
+                        10,
+                        10,
+                        12
+                      ]
+                    }
+                  },
+                  "Image/glow": {
+                    "Image/glow": {
+                      "x": 26.83,
+                      "y": -0.49,
+                      "rotation": -88.8,
+                      "width": 48,
+                      "height": 53
+                    }
+                  },
+                  "Image/glow1": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow2": {
+                    "Image/glow": {
+                      "x": 26.83,
+                      "y": -0.49,
+                      "rotation": -88.8,
+                      "width": 48,
+                      "height": 53
+                    }
+                  },
+                  "Image/glow3": {
+                    "Image/glow": {
+                      "x": 26.83,
+                      "y": -0.49,
+                      "rotation": -88.8,
+                      "width": 48,
+                      "height": 53
+                    }
+                  },
+                  "Star": {
+                    "Image/Star": {
+                      "x": 0.5,
+                      "width": 27,
+                      "height": 24
+                    }
+                  },
+                  "Star2": {
+                    "Image/Star": {
+                      "x": 0.5,
+                      "width": 27,
+                      "height": 24
+                    }
+                  },
+                  "Star3": {
+                    "Image/Star": {
+                      "x": 0.5,
+                      "width": 27,
+                      "height": 24
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Start": {}
+            },
+            "animations": {
+              "Idle": {
+                "slots": {
+                  "Image/1": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow1": {
+                    "color": [
+                      {
+                        "color": "ffe84cff"
+                      },
+                      {
+                        "time": 0.5333,
+                        "color": "ff99298f"
+                      },
+                      {
+                        "time": 1.1667,
+                        "color": "ffe84cff"
+                      },
+                      {
+                        "time": 1.7667,
+                        "color": "ff99298f"
+                      },
+                      {
+                        "time": 2.2,
+                        "color": "ffe84cff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Star": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Star2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Star3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "root": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 2.2,
+                        "angle": -0.02
+                      }
+                    ]
+                  },
+                  "Box2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 2.2,
+                        "angle": -0.02
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 1.1,
+                        "x": 1.02,
+                        "y": 1.02
+                      },
+                      {
+                        "time": 2.2
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 2.2,
+                        "angle": -0.02
+                      }
+                    ]
+                  },
+                  "Box": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 2.2,
+                        "angle": -0.02
+                      }
+                    ]
+                  },
+                  "Front": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 2.2,
+                        "angle": -0.02
+                      }
+                    ]
+                  },
+                  "Back": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 2.2,
+                        "angle": -0.02
+                      }
+                    ]
+                  },
+                  "Box3": {
+                    "rotate": [
+                      {
+                        "angle": 0.67,
+                        "curve": 0.382,
+                        "c2": 0.58,
+                        "c3": 0.732
+                      },
+                      {
+                        "time": 0.3333,
+                        "angle": 2.23
+                      },
+                      {
+                        "time": 1.4333,
+                        "angle": -4.11,
+                        "curve": 0.243,
+                        "c3": 0.655,
+                        "c4": 0.62
+                      },
+                      {
+                        "time": 2.2,
+                        "angle": 0.67
+                      }
+                    ]
+                  },
+                  "Box4": {
+                    "rotate": [
+                      {
+                        "angle": -1.43,
+                        "curve": 0.362,
+                        "c2": 0.44,
+                        "c3": 0.755
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": 3.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.7667,
+                        "angle": -4.35,
+                        "curve": 0.258,
+                        "c3": 0.618,
+                        "c4": 0.45
+                      },
+                      {
+                        "time": 2.2,
+                        "angle": -1.43
+                      }
+                    ]
+                  },
+                  "Back_Bix": {
+                    "scale": [
+                      {
+                        "x": 3.254,
+                        "y": 3.203
+                      }
+                    ]
+                  }
+                }
+              },
+              "Open": {
+                "slots": {
+                  "Image/1": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/1"
+                      }
+                    ]
+                  },
+                  "Image/2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/2"
+                      }
+                    ]
+                  },
+                  "Image/glow": {
+                    "color": [
+                      {
+                        "time": 0.2667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "faef8cff"
+                      },
+                      {
+                        "time": 1.0333,
+                        "color": "eab11200"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/glow"
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "color": [
+                      {
+                        "time": 0.2667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.3,
+                        "color": "eab11200"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/glow"
+                      }
+                    ]
+                  },
+                  "Image/glow3": {
+                    "color": [
+                      {
+                        "time": 0.2667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "ffca99ff"
+                      },
+                      {
+                        "time": 0.4667,
+                        "color": "f6c27676"
+                      },
+                      {
+                        "time": 0.8,
+                        "color": "e0ae2000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/glow"
+                      }
+                    ]
+                  },
+                  "Star": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Star2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 1,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Star3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 0.9667,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Box2": {
+                    "translate": [
+                      {
+                        "time": 1.1
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "curve": 0.108,
+                        "c2": 0.23,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.895,
+                        "y": 1.046,
+                        "curve": 0.108,
+                        "c2": 0.23,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 1.112,
+                        "y": 0.95
+                      },
+                      {
+                        "time": 0.3667
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "scale": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 1.425,
+                        "y": 1.044
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 1.279,
+                        "y": 1.08
+                      }
+                    ]
+                  },
+                  "Glow2": {
+                    "scale": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 1.425,
+                        "y": 1.044
+                      },
+                      {
+                        "time": 0.6,
+                        "x": 1.279,
+                        "y": 1.08
+                      }
+                    ]
+                  },
+                  "Box": {
+                    "translate": [
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.2667,
+                        "y": 12.39
+                      },
+                      {
+                        "time": 0.3667
+                      }
+                    ]
+                  },
+                  "Star": {
+                    "rotate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.7333,
+                        "angle": -14.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": 48.67,
+                        "y": 128.2
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 88.11,
+                        "y": 208.86
+                      },
+                      {
+                        "time": 0.7,
+                        "x": 122.4,
+                        "y": 244.52
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 121.41,
+                        "y": 240.65
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 1.7,
+                        "y": 1.7
+                      },
+                      {
+                        "time": 0.7,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "Star2": {
+                    "rotate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.9667,
+                        "angle": -50.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": -46.66,
+                        "y": 114.83
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": -78.75,
+                        "y": 188.9
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": -113.14,
+                        "y": 210.04
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.5333
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": 0.456,
+                        "y": 0.456
+                      }
+                    ]
+                  },
+                  "Star3": {
+                    "translate": [
+                      {
+                        "time": 0.3667,
+                        "x": -22.35,
+                        "y": 180.59
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": -36.65,
+                        "y": 251.21
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": -55.43,
+                        "y": 278.93
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3667,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 1.3,
+                        "y": 1.3
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "Glow3": {
+                    "scale": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 1.425,
+                        "y": 1.044
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": 2.673,
+                        "y": 1.046
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 1.279,
+                        "y": 1.08
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 0.6,
+                    "name": "Start"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

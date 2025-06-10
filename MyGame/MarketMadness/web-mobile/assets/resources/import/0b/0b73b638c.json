@@ -1,0 +1,4787 @@
+[
+  1,
+  [
+    "b0PJ8deb1C75D2lmDJUa5e",
+    "8e9MHftoJFyYW/Sh6c6igE",
+    "5bP954u1pIC6VKuOfdM5+G"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Card_Flash",
+          "\r\nCard_Flash.png\r\nsize: 509,510\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Cir_00000\r\n  rotate: false\r\n  xy: 434, 56\r\n  size: 72, 72\r\n  orig: 72, 72\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Line_00000\r\n  rotate: false\r\n  xy: 2, 122\r\n  size: 173, 95\r\n  orig: 184, 99\r\n  offset: 0, 2\r\n  index: -1\r\nImage/Ring_00000\r\n  rotate: false\r\n  xy: 220, 2\r\n  size: 86, 86\r\n  orig: 86, 86\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Star_00000\r\n  rotate: true\r\n  xy: 260, 320\r\n  size: 188, 189\r\n  orig: 190, 190\r\n  offset: 1, 0\r\n  index: -1\r\nImage/Wind/Wind_Glow_00012\r\n  rotate: false\r\n  xy: 177, 90\r\n  size: 155, 77\r\n  orig: 266, 158\r\n  offset: 38, 26\r\n  index: -1\r\nImage/Wind/Wind_Glow_00013\r\n  rotate: false\r\n  xy: 2, 219\r\n  size: 252, 139\r\n  orig: 266, 158\r\n  offset: 2, 8\r\n  index: -1\r\nImage/Wind/Wind_Glow_00014\r\n  rotate: false\r\n  xy: 2, 360\r\n  size: 256, 148\r\n  orig: 266, 158\r\n  offset: 2, 4\r\n  index: -1\r\nImage/Wind/Wind_Glow_00015\r\n  rotate: false\r\n  xy: 256, 169\r\n  size: 157, 149\r\n  orig: 266, 158\r\n  offset: 106, 4\r\n  index: -1\r\nImage/Wind/Wind_Glow_00016\r\n  rotate: true\r\n  xy: 2, 20\r\n  size: 100, 116\r\n  orig: 266, 158\r\n  offset: 162, 37\r\n  index: -1\r\nImage/Wind/Wind_Glow_00017\r\n  rotate: false\r\n  xy: 334, 64\r\n  size: 98, 103\r\n  orig: 266, 158\r\n  offset: 162, 50\r\n  index: -1\r\nImage/Wind/Wind_Glow_00018\r\n  rotate: false\r\n  xy: 120, 8\r\n  size: 98, 80\r\n  orig: 266, 158\r\n  offset: 162, 68\r\n  index: -1\r\nImage/Wind/Wind_Glow_00019\r\n  rotate: true\r\n  xy: 434, 130\r\n  size: 94, 63\r\n  orig: 266, 158\r\n  offset: 162, 85\r\n  index: -1\r\nImage/Wind/Wind_Glow_00020\r\n  rotate: false\r\n  xy: 308, 15\r\n  size: 85, 47\r\n  orig: 266, 158\r\n  offset: 162, 101\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 415, 226\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          [
+            "Card_Flash.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "mrPnooH3SBwl8/nRwXLWx/7xmPc",
+              "spine": "3.8.99",
+              "x": -540,
+              "y": -1831.05,
+              "width": 1080,
+              "height": 2340,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root",
+                "scaleX": 1.0695,
+                "scaleY": 1.0695
+              },
+              {
+                "name": "CirZong",
+                "parent": "Zong"
+              },
+              {
+                "name": "Cir",
+                "parent": "CirZong",
+                "scaleX": 1.9,
+                "scaleY": 1.9
+              },
+              {
+                "name": "Cir2",
+                "parent": "CirZong",
+                "scaleX": 2.5,
+                "scaleY": 2.5
+              },
+              {
+                "name": "Cir3",
+                "parent": "Cir",
+                "scaleX": 0.8,
+                "scaleY": 0.8
+              },
+              {
+                "name": "Glow",
+                "parent": "Zong",
+                "scaleX": 3.18,
+                "scaleY": 3.18
+              },
+              {
+                "name": "Cir4",
+                "parent": "CirZong",
+                "scaleX": 2.5,
+                "scaleY": 2.5
+              },
+              {
+                "name": "Cir5",
+                "parent": "CirZong",
+                "scaleX": 2.5,
+                "scaleY": 2.5
+              },
+              {
+                "name": "Cir6",
+                "parent": "CirZong",
+                "scaleX": 2.5,
+                "scaleY": 2.5
+              },
+              {
+                "name": "Cir7",
+                "parent": "CirZong",
+                "scaleX": 2.5,
+                "scaleY": 2.5
+              },
+              {
+                "name": "WindZong",
+                "parent": "Zong"
+              },
+              {
+                "name": "Wind1",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind2",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind3",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind4",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind5",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind6",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Blast",
+                "parent": "Zong"
+              },
+              {
+                "name": "CirZZZong",
+                "parent": "Blast"
+              },
+              {
+                "name": "Cir8",
+                "parent": "CirZZZong",
+                "scaleX": 1.9,
+                "scaleY": 1.9
+              },
+              {
+                "name": "Cir9",
+                "parent": "CirZZZong",
+                "scaleX": 0.8,
+                "scaleY": 0.8
+              },
+              {
+                "name": "Cir10",
+                "parent": "CirZZZong",
+                "scaleX": 0.8,
+                "scaleY": 0.8
+              },
+              {
+                "name": "Glow2",
+                "parent": "CirZZZong",
+                "scaleX": 3.18,
+                "scaleY": 3.18
+              },
+              {
+                "name": "Star",
+                "parent": "CirZZZong"
+              },
+              {
+                "name": "FlareZong",
+                "parent": "Blast"
+              },
+              {
+                "name": "F1",
+                "parent": "FlareZong",
+                "x": 90.84
+              },
+              {
+                "name": "F2",
+                "parent": "FlareZong",
+                "x": 90.84
+              },
+              {
+                "name": "F3",
+                "parent": "FlareZong",
+                "x": 90.84
+              },
+              {
+                "name": "StarZong",
+                "parent": "Blast"
+              },
+              {
+                "name": "Star1",
+                "parent": "StarZong",
+                "scaleX": 0.3,
+                "scaleY": 0.3
+              },
+              {
+                "name": "Star2",
+                "parent": "StarZong",
+                "scaleX": 0.3,
+                "scaleY": 0.3
+              },
+              {
+                "name": "Star3",
+                "parent": "StarZong",
+                "scaleX": 0.3,
+                "scaleY": 0.3
+              },
+              {
+                "name": "Star4",
+                "parent": "StarZong",
+                "scaleX": 0.3,
+                "scaleY": 0.3
+              },
+              {
+                "name": "Ring",
+                "parent": "Zong"
+              },
+              {
+                "name": "Wind7",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind8",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind9",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind10",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind11",
+                "parent": "WindZong"
+              },
+              {
+                "name": "Wind12",
+                "parent": "WindZong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/glow1",
+                "bone": "Glow",
+                "color": "0b5cffff"
+              },
+              {
+                "name": "Image/glow2",
+                "bone": "Glow2",
+                "color": "0b5cffff"
+              },
+              {
+                "name": "Image/Cir_0",
+                "bone": "Cir2",
+                "color": "65e3ff85",
+                "attachment": "Image/Cir_00000"
+              },
+              {
+                "name": "Image/Cir_2",
+                "bone": "Cir4",
+                "color": "65e3ff85",
+                "attachment": "Image/Cir_00000"
+              },
+              {
+                "name": "Image/Cir_3",
+                "bone": "Cir5",
+                "color": "65e3ff85",
+                "attachment": "Image/Cir_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Cir_4",
+                "bone": "Cir6",
+                "color": "65e3ff85",
+                "attachment": "Image/Cir_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Cir_5",
+                "bone": "Cir7",
+                "color": "65e3ff85",
+                "attachment": "Image/Cir_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Cir_00000",
+                "bone": "Cir",
+                "color": "66e4ffff",
+                "attachment": "Image/Cir_00000"
+              },
+              {
+                "name": "Image/Cir_1",
+                "bone": "Cir3",
+                "color": "66e4ffff",
+                "attachment": "Image/Cir_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Cir_7",
+                "bone": "Cir9",
+                "color": "66e4ffff",
+                "attachment": "Image/Cir_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Cir_8",
+                "bone": "Cir10",
+                "color": "66e4ffff",
+                "attachment": "Image/Cir_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_00012",
+                "bone": "Wind1"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_17",
+                "bone": "Wind7",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_16",
+                "bone": "Wind6"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_22",
+                "bone": "Wind12",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_13",
+                "bone": "Wind3"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_19",
+                "bone": "Wind9",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_15",
+                "bone": "Wind5"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_21",
+                "bone": "Wind11",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_14",
+                "bone": "Wind4"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_20",
+                "bone": "Wind10",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_12",
+                "bone": "Wind2"
+              },
+              {
+                "name": "Image/Wind/Wind_Glow_18",
+                "bone": "Wind8",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star_00000",
+                "bone": "Star",
+                "attachment": "Image/Star_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Line_00000",
+                "bone": "F1",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Line_0",
+                "bone": "F2",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Line_1",
+                "bone": "F3",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star_0",
+                "bone": "Star1",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star_1",
+                "bone": "Star2",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star_2",
+                "bone": "Star3",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star_3",
+                "bone": "Star4",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Ring_00000",
+                "bone": "Ring",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Cir_0": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_00000": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_1": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_2": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_3": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_4": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_5": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_7": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_8": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Line_0": {
+                    "Image/Line_00000": {
+                      "x": 79.93,
+                      "y": 0.5,
+                      "width": 184,
+                      "height": 99
+                    }
+                  },
+                  "Image/Line_00000": {
+                    "Image/Line_00000": {
+                      "x": 79.93,
+                      "y": 0.5,
+                      "width": 184,
+                      "height": 99
+                    }
+                  },
+                  "Image/Line_1": {
+                    "Image/Line_00000": {
+                      "x": 79.93,
+                      "y": 0.5,
+                      "width": 184,
+                      "height": 99
+                    }
+                  },
+                  "Image/Ring_00000": {
+                    "Image/Ring_00000": {
+                      "width": 86,
+                      "height": 86
+                    }
+                  },
+                  "Image/Star_0": {
+                    "Image/Star_00000": {
+                      "width": 190,
+                      "height": 190
+                    }
+                  },
+                  "Image/Star_00000": {
+                    "Image/Star_00000": {
+                      "width": 190,
+                      "height": 190
+                    }
+                  },
+                  "Image/Star_1": {
+                    "Image/Star_00000": {
+                      "width": 190,
+                      "height": 190
+                    }
+                  },
+                  "Image/Star_2": {
+                    "Image/Star_00000": {
+                      "width": 190,
+                      "height": 190
+                    }
+                  },
+                  "Image/Star_3": {
+                    "Image/Star_00000": {
+                      "width": 190,
+                      "height": 190
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_00012": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_12": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_13": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_14": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_15": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_16": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_17": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_18": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_19": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_20": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_21": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/Wind/Wind_Glow_22": {
+                    "Image/Wind/Wind_Glow_00012": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00013": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00014": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00015": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00016": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00017": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00018": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00019": {
+                      "width": 266,
+                      "height": 158
+                    },
+                    "Image/Wind/Wind_Glow_00020": {
+                      "width": 266,
+                      "height": 158
+                    }
+                  },
+                  "Image/glow1": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow2": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Start": {}
+            },
+            "animations": {
+              "Blue": {
+                "slots": {
+                  "Image/Cir_0": {
+                    "color": [
+                      {
+                        "time": 0.1333,
+                        "color": "65e3ff85"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "2c8cc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_00000": {
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_1": {
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_2": {
+                    "color": [
+                      {
+                        "time": 0.2,
+                        "color": "65e3ff85"
+                      },
+                      {
+                        "time": 0.3667,
+                        "color": "2c8cc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_3": {
+                    "color": [
+                      {
+                        "time": 0.4,
+                        "color": "65e3ff85"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "2c8cc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_4": {
+                    "color": [
+                      {
+                        "time": 0.6,
+                        "color": "65e3ff85"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "2c8cc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_5": {
+                    "color": [
+                      {
+                        "time": 0.7667,
+                        "color": "65e3ff85"
+                      },
+                      {
+                        "time": 0.9333,
+                        "color": "2c8cc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Cir_00000"
+                      }
+                    ]
+                  },
+                  "Image/Cir_7": {
+                    "color": [
+                      {
+                        "time": 0.9333,
+                        "color": "66e4ffff"
+                      },
+                      {
+                        "time": 0.9667,
+                        "color": "59deff73"
+                      },
+                      {
+                        "time": 1.1333,
+                        "color": "28c6ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.9,
+                        "name": "Image/Cir_00000"
+                      }
+                    ]
+                  },
+                  "Image/Cir_8": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.9,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.9333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Line_0": {
+                    "color": [
+                      {
+                        "time": 0.9333,
+                        "color": "289fffff"
+                      },
+                      {
+                        "time": 1.1333,
+                        "color": "29a0ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_00000": {
+                    "color": [
+                      {
+                        "time": 0.9,
+                        "color": "279effff"
+                      },
+                      {
+                        "time": 1.1,
+                        "color": "29a0ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_1": {
+                    "color": [
+                      {
+                        "time": 0.9,
+                        "color": "289fffff"
+                      },
+                      {
+                        "time": 1.1,
+                        "color": "29a0ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Ring_00000": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "89d9ffff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "70c1fc9a"
+                      },
+                      {
+                        "time": 0.1667,
+                        "color": "2977f100"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Ring_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_0": {
+                    "color": [
+                      {
+                        "time": 0.9667,
+                        "color": "3480ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_00000": {
+                    "color": [
+                      {
+                        "time": 0.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.9667,
+                        "color": "41caff1d"
+                      },
+                      {
+                        "time": 1.0333,
+                        "color": "41caff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_1": {
+                    "color": [
+                      {
+                        "time": 0.9667,
+                        "color": "3480ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_2": {
+                    "color": [
+                      {
+                        "time": 1.0667,
+                        "color": "3480ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.0333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_3": {
+                    "color": [
+                      {
+                        "time": 0.9667,
+                        "color": "3480ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_00012": {
+                    "attachment": [
+                      {
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_12": {
+                    "attachment": [
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_13": {
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_14": {
+                    "attachment": [
+                      {
+                        "time": 0.4,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_15": {
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_16": {
+                    "attachment": [
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_17": {
+                    "attachment": [
+                      {
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_18": {
+                    "attachment": [
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_19": {
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_20": {
+                    "attachment": [
+                      {
+                        "time": 0.4,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_21": {
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_22": {
+                    "attachment": [
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow1": {
+                    "color": [
+                      {
+                        "time": 0.9,
+                        "color": "0d67eeff"
+                      },
+                      {
+                        "time": 1.1,
+                        "color": "0c67ee00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "CirZong": {
+                    "scale": [
+                      {
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 0.1
+                      }
+                    ]
+                  },
+                  "Cir2": {
+                    "scale": [
+                      {
+                        "time": 0.1
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Cir": {
+                    "scale": [
+                      {
+                        "time": 0.1
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 0.789,
+                        "y": 0.789
+                      },
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": 0.842,
+                        "y": 0.842
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 1.053,
+                        "y": 1.053
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 0.789,
+                        "y": 0.789
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 1.053,
+                        "y": 1.053
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.895,
+                        "y": 0.895
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 1.053,
+                        "y": 1.053
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 0.895,
+                        "y": 0.895
+                      }
+                    ]
+                  },
+                  "Cir4": {
+                    "scale": [
+                      {
+                        "time": 0.1667,
+                        "x": 0.6,
+                        "y": 0.6,
+                        "curve": 0.036,
+                        "c2": 0.56,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Cir5": {
+                    "scale": [
+                      {
+                        "time": 0.3667,
+                        "x": 0.6,
+                        "y": 0.6,
+                        "curve": 0.036,
+                        "c2": 0.56,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Cir6": {
+                    "scale": [
+                      {
+                        "time": 0.5667,
+                        "x": 0.6,
+                        "y": 0.6,
+                        "curve": 0.036,
+                        "c2": 0.56,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Cir7": {
+                    "scale": [
+                      {
+                        "time": 0.7333,
+                        "x": 0.6,
+                        "y": 0.6,
+                        "curve": 0.036,
+                        "c2": 0.56,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.572,
+                        "y": 1.572
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": 1.887,
+                        "y": 1.887
+                      }
+                    ]
+                  },
+                  "Wind1": {
+                    "rotate": [
+                      {
+                        "angle": -9.6
+                      },
+                      {
+                        "time": 0.3333,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -38.12
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": -7.26,
+                        "y": -5.22
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind2": {
+                    "rotate": [
+                      {
+                        "time": 0.1333,
+                        "angle": 28.8
+                      },
+                      {
+                        "time": 0.4667,
+                        "angle": 33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.1333,
+                        "x": -16.47,
+                        "y": -33.3
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 21.73,
+                        "y": -12.38
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1333,
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind3": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "angle": -22.8
+                      },
+                      {
+                        "time": 0.6,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": 13.77,
+                        "y": -52.06
+                      },
+                      {
+                        "time": 0.3,
+                        "x": -30.76,
+                        "y": 3.63
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667,
+                        "x": -0.981,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind4": {
+                    "rotate": [
+                      {
+                        "time": 0.4,
+                        "angle": -50.4
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -44.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.4,
+                        "x": -73,
+                        "y": 28.88
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -0.33,
+                        "y": -10.16
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.4,
+                        "x": 0.891,
+                        "y": 1.468
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.931,
+                        "y": 1.601
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 0.4333,
+                        "x": 4.8,
+                        "y": 14.4
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 4.8,
+                        "y": 21.6
+                      }
+                    ]
+                  },
+                  "Wind5": {
+                    "rotate": [
+                      {
+                        "time": 0.5333,
+                        "angle": 19.2
+                      },
+                      {
+                        "time": 0.8667,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": 46.95,
+                        "y": -19.7
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": -16.42,
+                        "y": -42.82
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": -0.981,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind6": {
+                    "rotate": [
+                      {
+                        "time": 0.6,
+                        "angle": -9.6
+                      },
+                      {
+                        "time": 0.6333,
+                        "angle": 34.44
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.6,
+                        "x": -50.61,
+                        "y": -73.88
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 3.44,
+                        "y": -15.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.6,
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Cir8": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.841,
+                        "y": 1.913,
+                        "curve": 0,
+                        "c2": 0.46,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 2.632,
+                        "y": 2.632
+                      }
+                    ]
+                  },
+                  "Cir9": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 3.125,
+                        "y": 3.125,
+                        "curve": 0,
+                        "c2": 0.67,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": 4.375,
+                        "y": 4.375
+                      }
+                    ]
+                  },
+                  "Cir10": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 3.125,
+                        "y": 3.125
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 4.375,
+                        "y": 4.375
+                      }
+                    ]
+                  },
+                  "Star": {
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 1.2,
+                        "y": 1.2
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": 1.4,
+                        "y": 1.5
+                      }
+                    ]
+                  },
+                  "F1": {
+                    "rotate": [
+                      {
+                        "time": 0.9,
+                        "angle": 116.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -96.91,
+                        "y": 15.6
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.98,
+                        "y": 0.926
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 1.98,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "F2": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": 27.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": -66.85,
+                        "y": 8.74
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 1.236,
+                        "y": 0.926
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": 1.236,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "F3": {
+                    "rotate": [
+                      {
+                        "time": 0.9,
+                        "angle": -120
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": -128.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -131.58,
+                        "y": -56.22
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": -94.32,
+                        "y": -4.51
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.638,
+                        "y": 0.926
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 1.638,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "Blast": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.2,
+                        "y": 1.2
+                      }
+                    ]
+                  },
+                  "Star1": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": -3.6
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": 44.98,
+                        "y": 36.75
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 0.333,
+                        "y": 0.333
+                      },
+                      {
+                        "time": 1
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 0.267,
+                        "y": 0.267
+                      }
+                    ]
+                  },
+                  "Star2": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": 13.2
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": 25.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": -42.43,
+                        "y": -25.57
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 0.124,
+                        "y": 0.124
+                      },
+                      {
+                        "time": 1,
+                        "x": 0.678,
+                        "y": 0.678
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 0.204,
+                        "y": 0.204
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 1,
+                        "x": -1.2
+                      }
+                    ]
+                  },
+                  "Star3": {
+                    "rotate": [
+                      {
+                        "time": 1.0333,
+                        "angle": -1.2
+                      },
+                      {
+                        "time": 1.2333,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.0333,
+                        "x": 39.26,
+                        "y": -54.23
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.0333,
+                        "x": 0.333,
+                        "y": 0.333
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 0.718,
+                        "y": 0.718
+                      },
+                      {
+                        "time": 1.2667,
+                        "x": 0.267,
+                        "y": 0.267
+                      }
+                    ]
+                  },
+                  "Star4": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": -3.6
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": 44.98,
+                        "y": 36.75
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 0.333,
+                        "y": 0.333
+                      },
+                      {
+                        "time": 1
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 0.267,
+                        "y": 0.267
+                      }
+                    ]
+                  },
+                  "Ring": {
+                    "scale": [
+                      {
+                        "x": 1.5,
+                        "y": 1.5
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 2.71,
+                        "y": 2.71
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 3.5,
+                        "y": 3.5
+                      }
+                    ]
+                  },
+                  "Wind7": {
+                    "rotate": [
+                      {
+                        "angle": -9.6
+                      },
+                      {
+                        "time": 0.3333,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -38.12
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": -7.26,
+                        "y": -5.22
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind8": {
+                    "rotate": [
+                      {
+                        "time": 0.1333,
+                        "angle": 28.8
+                      },
+                      {
+                        "time": 0.4667,
+                        "angle": 33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.1333,
+                        "x": -16.47,
+                        "y": -33.3
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 21.73,
+                        "y": -12.38
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1333,
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind9": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "angle": -22.8
+                      },
+                      {
+                        "time": 0.6,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": 13.77,
+                        "y": -52.06
+                      },
+                      {
+                        "time": 0.3,
+                        "x": -30.76,
+                        "y": 3.63
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667,
+                        "x": -0.981,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind10": {
+                    "rotate": [
+                      {
+                        "time": 0.4,
+                        "angle": -50.4
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -44.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.4,
+                        "x": -73,
+                        "y": 28.88
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -0.33,
+                        "y": -10.16
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.4,
+                        "x": 0.891,
+                        "y": 1.468
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.931,
+                        "y": 1.601
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 0.4333,
+                        "x": 4.8,
+                        "y": 14.4
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 4.8,
+                        "y": 21.6
+                      }
+                    ]
+                  },
+                  "Wind11": {
+                    "rotate": [
+                      {
+                        "time": 0.5333,
+                        "angle": 19.2
+                      },
+                      {
+                        "time": 0.8667,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": 46.95,
+                        "y": -19.7
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": -16.42,
+                        "y": -42.82
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": -0.981,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind12": {
+                    "rotate": [
+                      {
+                        "time": 0.6,
+                        "angle": -9.6
+                      },
+                      {
+                        "time": 0.6333,
+                        "angle": 34.44
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.6,
+                        "x": -50.61,
+                        "y": -73.88
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 3.44,
+                        "y": -15.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.6,
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 0.9,
+                    "name": "Start"
+                  }
+                ]
+              },
+              "Purple": {
+                "slots": {
+                  "Image/Cir_0": {
+                    "color": [
+                      {
+                        "time": 0.1,
+                        "color": "e765ff85"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "972bc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_00000": {
+                    "color": [
+                      {
+                        "color": "9e58f0ff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_1": {
+                    "color": [
+                      {
+                        "color": "d872ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_2": {
+                    "color": [
+                      {
+                        "time": 0.2,
+                        "color": "db65ff85"
+                      },
+                      {
+                        "time": 0.3667,
+                        "color": "8f2bc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_3": {
+                    "color": [
+                      {
+                        "time": 0.4,
+                        "color": "aa65ff85"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "952bc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_4": {
+                    "color": [
+                      {
+                        "time": 0.6,
+                        "color": "f180fd85"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "ad2bc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Cir_5": {
+                    "color": [
+                      {
+                        "time": 0.7667,
+                        "color": "ed65ff85"
+                      },
+                      {
+                        "time": 0.9333,
+                        "color": "9f2bc500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Cir_00000"
+                      }
+                    ]
+                  },
+                  "Image/Cir_7": {
+                    "color": [
+                      {
+                        "time": 0.9333,
+                        "color": "fa65ffff"
+                      },
+                      {
+                        "time": 0.9667,
+                        "color": "d859ff73"
+                      },
+                      {
+                        "time": 1.1333,
+                        "color": "d027ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.9,
+                        "name": "Image/Cir_00000"
+                      }
+                    ]
+                  },
+                  "Image/Cir_8": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.9,
+                        "name": "Image/Cir_00000"
+                      },
+                      {
+                        "time": 0.9333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Line_0": {
+                    "color": [
+                      {
+                        "time": 0.9333,
+                        "color": "9a60f3ff"
+                      },
+                      {
+                        "time": 1.1333,
+                        "color": "8526ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_00000": {
+                    "color": [
+                      {
+                        "time": 0.9,
+                        "color": "9a60f3ff"
+                      },
+                      {
+                        "time": 1.1,
+                        "color": "8527ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_1": {
+                    "color": [
+                      {
+                        "time": 0.9,
+                        "color": "9a60f3ff"
+                      },
+                      {
+                        "time": 1.1,
+                        "color": "8526ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Ring_00000": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "e289ffff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "dd70fc9a"
+                      },
+                      {
+                        "time": 0.1667,
+                        "color": "34013a00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Ring_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_0": {
+                    "color": [
+                      {
+                        "time": 0.9667,
+                        "color": "3480ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_00000": {
+                    "color": [
+                      {
+                        "time": 0.9,
+                        "color": "f52dd8ff"
+                      },
+                      {
+                        "time": 0.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.9667,
+                        "color": "41caff1d"
+                      },
+                      {
+                        "time": 1.1,
+                        "color": "41caff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_1": {
+                    "color": [
+                      {
+                        "time": 0.9667,
+                        "color": "d833ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_2": {
+                    "color": [
+                      {
+                        "time": 1.0667,
+                        "color": "c833ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.0333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_3": {
+                    "color": [
+                      {
+                        "time": 0.9667,
+                        "color": "e033ffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_00012": {
+                    "color": [
+                      {
+                        "color": "e14eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_12": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_13": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_14": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.4,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_15": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_16": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_17": {
+                    "color": [
+                      {
+                        "color": "e04eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_18": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_19": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_20": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.4,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_21": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Wind/Wind_Glow_00019"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Wind/Wind_Glow_00020"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Wind/Wind_Glow_22": {
+                    "color": [
+                      {
+                        "color": "df4eeeff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.6,
+                        "name": "Image/Wind/Wind_Glow_00012"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Wind/Wind_Glow_00013"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Wind/Wind_Glow_00014"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Wind/Wind_Glow_00015"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Wind/Wind_Glow_00016"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Wind/Wind_Glow_00017"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Wind/Wind_Glow_00018"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow1": {
+                    "color": [
+                      {
+                        "time": 0.9,
+                        "color": "b82cddff"
+                      },
+                      {
+                        "time": 1.1,
+                        "color": "550f7100"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "color": [
+                      {
+                        "color": "c90bffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "CirZong": {
+                    "scale": [
+                      {
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 0.1
+                      }
+                    ]
+                  },
+                  "Cir2": {
+                    "scale": [
+                      {
+                        "time": 0.1
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Cir": {
+                    "scale": [
+                      {
+                        "time": 0.1
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 0.789,
+                        "y": 0.789
+                      },
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": 0.842,
+                        "y": 0.842
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 1.053,
+                        "y": 1.053
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 0.789,
+                        "y": 0.789
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 1.053,
+                        "y": 1.053
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.895,
+                        "y": 0.895
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 1.053,
+                        "y": 1.053
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 0.895,
+                        "y": 0.895
+                      }
+                    ]
+                  },
+                  "Cir4": {
+                    "scale": [
+                      {
+                        "time": 0.1667,
+                        "x": 0.6,
+                        "y": 0.6,
+                        "curve": 0.036,
+                        "c2": 0.56,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Cir5": {
+                    "scale": [
+                      {
+                        "time": 0.3667,
+                        "x": 0.6,
+                        "y": 0.6,
+                        "curve": 0.036,
+                        "c2": 0.56,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Cir6": {
+                    "scale": [
+                      {
+                        "time": 0.5667,
+                        "x": 0.6,
+                        "y": 0.6,
+                        "curve": 0.036,
+                        "c2": 0.56,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Cir7": {
+                    "scale": [
+                      {
+                        "time": 0.7333,
+                        "x": 0.6,
+                        "y": 0.6,
+                        "curve": 0.036,
+                        "c2": 0.56,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 1.16,
+                        "y": 1.16
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.572,
+                        "y": 1.572
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": 1.887,
+                        "y": 1.887
+                      }
+                    ]
+                  },
+                  "Wind1": {
+                    "rotate": [
+                      {
+                        "angle": -9.6
+                      },
+                      {
+                        "time": 0.3333,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -38.12
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": -7.26,
+                        "y": -5.22
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind2": {
+                    "rotate": [
+                      {
+                        "time": 0.1333,
+                        "angle": 28.8
+                      },
+                      {
+                        "time": 0.4667,
+                        "angle": 33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.1333,
+                        "x": -16.47,
+                        "y": -33.3
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 21.73,
+                        "y": -12.38
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1333,
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind3": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "angle": -22.8
+                      },
+                      {
+                        "time": 0.6,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": 13.77,
+                        "y": -52.06
+                      },
+                      {
+                        "time": 0.3,
+                        "x": -30.76,
+                        "y": 3.63
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667,
+                        "x": -0.981,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind4": {
+                    "rotate": [
+                      {
+                        "time": 0.4,
+                        "angle": -50.4
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -44.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.4,
+                        "x": -73,
+                        "y": 28.88
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -0.33,
+                        "y": -10.16
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.4,
+                        "x": 0.891,
+                        "y": 1.468
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.931,
+                        "y": 1.601
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 0.4333,
+                        "x": 4.8,
+                        "y": 14.4
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 4.8,
+                        "y": 21.6
+                      }
+                    ]
+                  },
+                  "Wind5": {
+                    "rotate": [
+                      {
+                        "time": 0.5333,
+                        "angle": 19.2
+                      },
+                      {
+                        "time": 0.8667,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": 46.95,
+                        "y": -19.7
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": -16.42,
+                        "y": -42.82
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": -0.981,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind6": {
+                    "rotate": [
+                      {
+                        "time": 0.6,
+                        "angle": -9.6
+                      },
+                      {
+                        "time": 0.6333,
+                        "angle": 34.44
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.6,
+                        "x": -50.61,
+                        "y": -73.88
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 3.44,
+                        "y": -15.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.6,
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Cir8": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.841,
+                        "y": 1.913,
+                        "curve": 0,
+                        "c2": 0.46,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 2.632,
+                        "y": 2.632
+                      }
+                    ]
+                  },
+                  "Cir9": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 3.125,
+                        "y": 3.125,
+                        "curve": 0,
+                        "c2": 0.67,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": 4.375,
+                        "y": 4.375
+                      }
+                    ]
+                  },
+                  "Cir10": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 3.125,
+                        "y": 3.125
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 4.375,
+                        "y": 4.375
+                      }
+                    ]
+                  },
+                  "Star": {
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 1.2,
+                        "y": 1.2
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": 1.4,
+                        "y": 1.5
+                      }
+                    ]
+                  },
+                  "F1": {
+                    "rotate": [
+                      {
+                        "time": 0.9,
+                        "angle": 116.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -96.91,
+                        "y": 15.6
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.98,
+                        "y": 0.926
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 1.98,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "F2": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": 27.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": -66.85,
+                        "y": 8.74
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 1.236,
+                        "y": 0.926
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": 1.236,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "F3": {
+                    "rotate": [
+                      {
+                        "time": 0.9,
+                        "angle": -120
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": -128.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -131.58,
+                        "y": -56.22
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": -94.32,
+                        "y": -4.51
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.638,
+                        "y": 0.926
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 1.638,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "Blast": {
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 1.2,
+                        "y": 1.2
+                      }
+                    ]
+                  },
+                  "Star1": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": -3.6
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": 44.98,
+                        "y": 36.75
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 0.333,
+                        "y": 0.333
+                      },
+                      {
+                        "time": 1
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 0.267,
+                        "y": 0.267
+                      }
+                    ]
+                  },
+                  "Star2": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": 13.2
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": 25.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": -42.43,
+                        "y": -25.57
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 0.124,
+                        "y": 0.124
+                      },
+                      {
+                        "time": 1,
+                        "x": 0.678,
+                        "y": 0.678
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 0.204,
+                        "y": 0.204
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 1,
+                        "x": -1.2
+                      }
+                    ]
+                  },
+                  "Star3": {
+                    "rotate": [
+                      {
+                        "time": 1.0333,
+                        "angle": -1.2
+                      },
+                      {
+                        "time": 1.2333,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.0333,
+                        "x": 39.26,
+                        "y": -54.23
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.0333,
+                        "x": 0.333,
+                        "y": 0.333
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 0.718,
+                        "y": 0.718
+                      },
+                      {
+                        "time": 1.2667,
+                        "x": 0.267,
+                        "y": 0.267
+                      }
+                    ]
+                  },
+                  "Star4": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": -3.6
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": 44.98,
+                        "y": 36.75
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 0.333,
+                        "y": 0.333
+                      },
+                      {
+                        "time": 1
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 0.267,
+                        "y": 0.267
+                      }
+                    ]
+                  },
+                  "Ring": {
+                    "scale": [
+                      {
+                        "x": 1.5,
+                        "y": 1.5
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 2.71,
+                        "y": 2.71
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 3.5,
+                        "y": 3.5
+                      }
+                    ]
+                  },
+                  "Wind7": {
+                    "rotate": [
+                      {
+                        "angle": -9.6
+                      },
+                      {
+                        "time": 0.3333,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -38.12
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": -7.26,
+                        "y": -5.22
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind8": {
+                    "rotate": [
+                      {
+                        "time": 0.1333,
+                        "angle": 28.8
+                      },
+                      {
+                        "time": 0.4667,
+                        "angle": 33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.1333,
+                        "x": -16.47,
+                        "y": -33.3
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 21.73,
+                        "y": -12.38
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1333,
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind9": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "angle": -22.8
+                      },
+                      {
+                        "time": 0.6,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": 13.77,
+                        "y": -52.06
+                      },
+                      {
+                        "time": 0.3,
+                        "x": -30.76,
+                        "y": 3.63
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667,
+                        "x": -0.981,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind10": {
+                    "rotate": [
+                      {
+                        "time": 0.4,
+                        "angle": -50.4
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -44.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.4,
+                        "x": -73,
+                        "y": 28.88
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -0.33,
+                        "y": -10.16
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.4,
+                        "x": 0.891,
+                        "y": 1.468
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.931,
+                        "y": 1.601
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 0.4333,
+                        "x": 4.8,
+                        "y": 14.4
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 4.8,
+                        "y": 21.6
+                      }
+                    ]
+                  },
+                  "Wind11": {
+                    "rotate": [
+                      {
+                        "time": 0.5333,
+                        "angle": 19.2
+                      },
+                      {
+                        "time": 0.8667,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": 46.95,
+                        "y": -19.7
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": -16.42,
+                        "y": -42.82
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": -0.981,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Wind12": {
+                    "rotate": [
+                      {
+                        "time": 0.6,
+                        "angle": -9.6
+                      },
+                      {
+                        "time": 0.6333,
+                        "angle": 34.44
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.6,
+                        "x": -50.61,
+                        "y": -73.88
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 3.44,
+                        "y": -15.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.6,
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  }
+                },
+                "drawOrder": [
+                  {
+                    "offsets": [
+                      {
+                        "slot": "Image/Cir_00000",
+                        "offset": -5
+                      }
+                    ]
+                  }
+                ],
+                "events": [
+                  {
+                    "time": 0.9,
+                    "name": "Start"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_mergelock",
+          "rect": [
+            0,
+            0,
+            72,
+            86
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            72,
+            86
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_tick",
+          "rect": [
+            0,
+            0,
+            94,
+            74
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            94,
+            74
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,1394 @@
+[
+  1,
+  [
+    "20OnvAuedK7Z5TxMg2MaD0",
+    "e1ICejJtRHW7U034En2uBP",
+    "4d3kT8j55KmbipIc3ISmdK",
+    "5bfSAhm/9LG7uNuCNSaYv8",
+    "edZPg2hCBBeLQcK7fnskrK",
+    "78fkMPCldMOb7IJHVe9FZH",
+    "824i9cKhhL+rOeakHPojgx",
+    "33iVRYui5PXYt4ukuV/7o6",
+    "3f/92T2glPUYJY6io6xc/J",
+    "7dyv7RFhpKG7khA0CModG5",
+    "45nbPaHnNEdrldMCGmLsWt",
+    "6bzxzeJN1KbJZy692COJSP",
+    "93U8hMyWZMb7bgLHbIq89w",
+    "c5rPkQFg5PlrtTEb6WNEZF",
+    "95+hglQNtFOIeWA0TULMRe",
+    "d8iywPwptKBJLomaXkE/Vp",
+    "47F/swe/NGsLU6LzOGNsNK",
+    "82c+2fV9pFj7wSdhNWIhwz",
+    "c8In00MatL5p274bGaTLzr",
+    "f8DJempINIpJE8/xP48Bl1",
+    "727mis59NCsrjk+mqWOyog",
+    "4c4BSmYz9P15DnMft+FmTg",
+    "5c0ByuUWVMCJkeEK9fj/+H",
+    "ac9M7X175PRL7dDfNNPPY7",
+    "8aVEsyu/pGaaHt3wOviJrJ",
+    "a32h7FmKJPko4jwLdqhaqe",
+    "41m1uwrAZKxbHGsbZXPQuw",
+    "95Q6RIa6NAeqWrz9tvE26W",
+    "a5kit7wnZHFJC6h+a+Zu+Z"
+  ],
+  [
+    "_textureSetter",
+    "txt_ico_1001",
+    "txt_ico_1002",
+    "txt_ico_1003",
+    "txt_ico_1004",
+    "txt_ico_1005",
+    "txt_ico_1006",
+    "txt_ico_1007",
+    "txt_ico_1008",
+    "txt_ico_1009",
+    "txt_ico_1010",
+    "txt_ico_1011",
+    "txt_ico_1012",
+    "txt_ico_atkspd",
+    "txt_ico_crit",
+    "txt_ico_critdmg",
+    "txt_ico_def",
+    "txt_ico_dodge",
+    "txt_ico_emergency",
+    "txt_ico_energy",
+    "txt_ico_healenhance",
+    "txt_ico_hpregen",
+    "txt_ico_income",
+    "txt_ico_maxhp",
+    "txt_ico_rush",
+    "txt_ico_strength",
+    "txt_ico_thorns",
+    "txt_ico_ul",
+    "txt_ico_vul"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.SpriteAtlas",
+      [
+        "_name",
+        "_spriteFrames"
+      ],
+      2,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "richTextIcons.plist",
+          [
+            {},
+            "txt_ico_1001",
+            6,
+            0,
+            "txt_ico_1002",
+            6,
+            1,
+            "txt_ico_1003",
+            6,
+            2,
+            "txt_ico_1004",
+            6,
+            3,
+            "txt_ico_1005",
+            6,
+            4,
+            "txt_ico_1006",
+            6,
+            5,
+            "txt_ico_1007",
+            6,
+            6,
+            "txt_ico_1008",
+            6,
+            7,
+            "txt_ico_1009",
+            6,
+            8,
+            "txt_ico_1010",
+            6,
+            9,
+            "txt_ico_1011",
+            6,
+            10,
+            "txt_ico_1012",
+            6,
+            11,
+            "txt_ico_atkspd",
+            6,
+            12,
+            "txt_ico_crit",
+            6,
+            13,
+            "txt_ico_critdmg",
+            6,
+            14,
+            "txt_ico_def",
+            6,
+            15,
+            "txt_ico_dodge",
+            6,
+            16,
+            "txt_ico_emergency",
+            6,
+            17,
+            "txt_ico_energy",
+            6,
+            18,
+            "txt_ico_healenhance",
+            6,
+            19,
+            "txt_ico_hpregen",
+            6,
+            20,
+            "txt_ico_income",
+            6,
+            21,
+            "txt_ico_maxhp",
+            6,
+            22,
+            "txt_ico_rush",
+            6,
+            23,
+            "txt_ico_strength",
+            6,
+            24,
+            "txt_ico_thorns",
+            6,
+            25,
+            "txt_ico_ul",
+            6,
+            26,
+            "txt_ico_vul",
+            6,
+            27
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1007",
+          "rect": [
+            216,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1008",
+          "rect": [
+            252,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_thorns",
+          "rect": [
+            900,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1010",
+          "rect": [
+            324,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_def",
+          "rect": [
+            540,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_hpregen",
+          "rect": [
+            720,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1002",
+          "rect": [
+            36,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1003",
+          "rect": [
+            72,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_income",
+          "rect": [
+            756,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1011",
+          "rect": [
+            360,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_healenhance",
+          "rect": [
+            684,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1005",
+          "rect": [
+            144,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1009",
+          "rect": [
+            288,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_dodge",
+          "rect": [
+            576,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1006",
+          "rect": [
+            180,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_rush",
+          "rect": [
+            828,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1012",
+          "rect": [
+            396,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_ul",
+          "rect": [
+            936,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_crit",
+          "rect": [
+            468,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_strength",
+          "rect": [
+            864,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_vul",
+          "rect": [
+            972,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_maxhp",
+          "rect": [
+            792,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_atkspd",
+          "rect": [
+            432,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_emergency",
+          "rect": [
+            612,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_critdmg",
+          "rect": [
+            504,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1001",
+          "rect": [
+            0,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_1004",
+          "rect": [
+            108,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "txt_ico_energy",
+          "rect": [
+            648,
+            0,
+            36,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            36,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

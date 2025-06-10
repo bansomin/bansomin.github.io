@@ -1,0 +1,415 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "82iGNHxUlBjIAxQnIMoLNd",
+    "6fC/Ego5pF5qvHTnXphG2Z"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "ultimate_2001"
+        ],
+        [
+          1,
+          "ultimate_2001",
+          [
+            [
+              -2,
+              [
+                2,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            138,
+            141
+          ]
+        ],
+        [
+          4,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "Ultra_2001",
+          "\r\nUltra_2001.png\r\nsize: 256,256\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nFish02\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 183, 184\r\n  orig: 183, 184\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Ultra_2001.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "enYGsYikFXEyZhnWdE+u7nVadYg",
+              "spine": "3.8.99",
+              "images": "./images/",
+              "audio": "E:/BIGBIG/键盘侠/Bos/images"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Z",
+                "parent": "root",
+                "scaleX": -1
+              },
+              {
+                "name": "ZZZong",
+                "parent": "Z"
+              },
+              {
+                "name": "Fisg_zong",
+                "parent": "ZZZong"
+              },
+              {
+                "name": "Fish3",
+                "parent": "Fisg_zong",
+                "length": 49.36,
+                "rotation": 15.26,
+                "x": -74.11,
+                "y": 345.93
+              },
+              {
+                "name": "Zong18",
+                "parent": "Fish3",
+                "length": 60.34,
+                "rotation": -30.29,
+                "x": 59.38,
+                "y": -3.77
+              },
+              {
+                "name": "Zong19",
+                "parent": "Zong18",
+                "length": 28.83,
+                "rotation": 21.67,
+                "x": 76.01,
+                "y": 4.55
+              },
+              {
+                "name": "Fish4",
+                "parent": "Fish3",
+                "length": 28.73,
+                "rotation": 39.94,
+                "x": 85.46,
+                "y": 48.91
+              }
+            ],
+            "slots": [
+              {
+                "name": "Fish3",
+                "bone": "Fish3"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Fish3": {
+                    "Fish02": {
+                      "x": 77.5,
+                      "y": -7.95,
+                      "rotation": -15.26,
+                      "width": 183,
+                      "height": 184
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Fish3": {
+                    "attachment": [
+                      {
+                        "name": "Fish02"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Fish3": {
+                    "rotate": [
+                      {
+                        "angle": -44.4
+                      },
+                      {
+                        "time": 0.0333,
+                        "angle": -56.4
+                      },
+                      {
+                        "time": 0.1667,
+                        "angle": -13.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "angle": 2.4
+                      },
+                      {
+                        "time": 0.3,
+                        "angle": 15.6
+                      },
+                      {
+                        "time": 0.4333,
+                        "angle": 43.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 236.25,
+                        "y": -174.93
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 206.49,
+                        "y": -110.02
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 49.02,
+                        "y": -56.32
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": -83.15,
+                        "y": -99.44
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": -152.29,
+                        "y": -143.89
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -261.9,
+                        "y": -321.43
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.291,
+                        "y": 0.901
+                      }
+                    ]
+                  },
+                  "ZZZong": {
+                    "translate": [
+                      {
+                        "x": -317.33,
+                        "y": 53.92
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 0.4667,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

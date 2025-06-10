@@ -1,0 +1,7336 @@
+[
+  1,
+  [
+    "ecpdLyjvZBwrvm+cedCcQy",
+    "d0b8yR2vdPc5xvhAVPSM9c",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "94uTLg/hZGjZS4D88jLoHF",
+    "f0x2sVCr1IEJi70e9tf8X+",
+    "ebDTW6GCpNHJPVwcAPhVaC",
+    "99j9UbG9BK7bcj1YltBr0z",
+    "3bG7zmFEFEiqc6tBeKl07j",
+    "e9HtDOz4ZPmKoPNhlLGzxV",
+    "c51+ZQaoBI1rBpc9S3K8fn",
+    "71LpXlmqpFRrYu2QSrGd3l",
+    "38SWN2aPNLZJSCiL7dTAs3",
+    "bd2CO47PdKWJiacIAo7D04",
+    "42R0O/e19D66f5+W7+ORSL",
+    "deMDc23GRLvJBUp4/15emi",
+    "00bGevjpRBDKh9uEZzW/db",
+    "5emBPITHNDu6H6vQjfk0tO",
+    "3dA0wbYIND0avv0AmyjOVS",
+    "41D7kWhyFGY7q4NDlzkazn",
+    "5eiAf8io5EE44LyOpS4XTZ",
+    "574W0Os+lFl47sN06HwUk+",
+    "d2+QEQaIBBlZVwf+650IEd",
+    "27zig0H8pO75g4p9fndu0m",
+    "edE0zVR/FOE7R9Xpm8ekeZ",
+    "1d+Y0ZO9VJ+bWS1liWd+t5",
+    "a4NkN9pd5Ns7NT1ijpHUZH",
+    "b5nVPpDKZEL7Ifs0MWFSVr",
+    "c5l57sHQRIRoL+gvqJyAVU",
+    "6cY9cNDw5B/7qQpZ/lE5U7",
+    "ba3pjCDM1PS6jCYx0Khb8j",
+    "50SPMnHPZFNK626t52VrlS",
+    "228eWtDW1A1an0IRPOHyKy",
+    "d9Aw/Rf21P/b0ot9NDJ+J3",
+    "cfmJq1qNtGHpgiCRIdl5ce"
+  ],
+  [
+    "node",
+    "_spriteFrame",
+    "root",
+    "labelText",
+    "_N$file",
+    "_N$skeletonData",
+    "_parent",
+    "flash",
+    "container",
+    "probLabel",
+    "iconSprite",
+    "selectedIcon",
+    "lockIcon",
+    "countLabel",
+    "itemMask",
+    "currentBg",
+    "sIcon",
+    "equipedNode",
+    "levelLabel",
+    "currentRarityNum",
+    "currentType",
+    "leftTop",
+    "boxGlow",
+    "box",
+    "itemName",
+    "data"
+  ],
+  [
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_active",
+        "_opacity",
+        "_prefab",
+        "_components",
+        "_contentSize",
+        "_parent",
+        "_children",
+        "_trs",
+        "_anchorPoint",
+        "_color"
+      ],
+      0,
+      4,
+      9,
+      5,
+      1,
+      2,
+      7,
+      5,
+      5
+    ],
+    [
+      "cc.Sprite",
+      [
+        "_sizeMode",
+        "_isTrimmedMode",
+        "node",
+        "_materials",
+        "_spriteFrame"
+      ],
+      1,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_anchorPoint",
+        "_color"
+      ],
+      2,
+      1,
+      12,
+      4,
+      5,
+      5,
+      5
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_trs",
+        "_color"
+      ],
+      2,
+      1,
+      2,
+      4,
+      5,
+      7,
+      5
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "fileId",
+        "root"
+      ],
+      2,
+      1
+    ],
+    [
+      "cc.Button",
+      [
+        "_N$transition",
+        "node",
+        "clickEvents"
+      ],
+      2,
+      1,
+      9
+    ],
+    [
+      "45b04ht0XdAQaoYo7rqrt52",
+      [
+        "key",
+        "node",
+        "labelText"
+      ],
+      2,
+      1,
+      1
+    ],
+    [
+      "cc.Widget",
+      [
+        "_alignFlags",
+        "_left",
+        "_right",
+        "_bottom",
+        "_originalWidth",
+        "_top",
+        "_originalHeight",
+        "node"
+      ],
+      -4,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "defaultAnimation",
+        "node",
+        "_materials"
+      ],
+      -4,
+      1,
+      3
+    ],
+    [
+      "cc.Label",
+      [
+        "_string",
+        "_isSystemFontUsed",
+        "_N$horizontalAlign",
+        "_N$verticalAlign",
+        "_fontSize",
+        "_lineHeight",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "3d895rj9YpKhabCY0BEuOu7",
+      [
+        "node",
+        "rareBgList",
+        "currentBg",
+        "leftTopList",
+        "leftTop",
+        "typeList",
+        "currentType",
+        "rarityNumList",
+        "currentRarityNum",
+        "levelLabel",
+        "itemMask",
+        "countLabel",
+        "lockIcon",
+        "selectedIcon",
+        "equipedNode",
+        "iconSprite",
+        "sIcon",
+        "probLabel",
+        "container",
+        "flash"
+      ],
+      3,
+      1,
+      3,
+      1,
+      3,
+      1,
+      3,
+      1,
+      12,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      "cc.BlockInputEvents",
+      [
+        "node"
+      ],
+      3,
+      1
+    ],
+    [
+      "96fd5OQcV1JhLh6jtzS+DiC",
+      [
+        "node",
+        "rareBgList",
+        "currentBg",
+        "itemMask",
+        "countLabel",
+        "lockIcon",
+        "selectedIcon",
+        "iconSprite",
+        "probLabel",
+        "container",
+        "flash"
+      ],
+      3,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      "48a6agMyYZIwqwWfeTbfdfF",
+      [
+        "node",
+        "equipmentItem",
+        "bagItem",
+        "itemName",
+        "box",
+        "boxGlow"
+      ],
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      "cc.ClickEvent",
+      [
+        "_componentId",
+        "handler",
+        "target"
+      ],
+      1,
+      1
+    ],
+    [
+      "cc.Layout",
+      [
+        "_resize",
+        "_N$layoutType",
+        "node",
+        "_layoutSize"
+      ],
+      1,
+      1,
+      5
+    ],
+    [
+      "cc.LabelOutline",
+      [
+        "_width",
+        "node",
+        "_color"
+      ],
+      2,
+      1,
+      5
+    ]
+  ],
+  [
+    [
+      4,
+      0,
+      1,
+      2
+    ],
+    [
+      17,
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    [
+      9,
+      0,
+      4,
+      5,
+      1,
+      2,
+      3,
+      6,
+      7,
+      7
+    ],
+    [
+      0,
+      0,
+      6,
+      7,
+      4,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      1
+    ],
+    [
+      3,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      6,
+      1,
+      2,
+      1
+    ],
+    [
+      0,
+      0,
+      6,
+      4,
+      3,
+      5,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      1,
+      2,
+      3,
+      1
+    ],
+    [
+      18,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      2,
+      3,
+      6,
+      4,
+      2
+    ],
+    [
+      13,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      7,
+      4,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      7,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      6,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      10,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    [
+      16,
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      8,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      7
+    ],
+    [
+      8,
+      0,
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      8
+    ],
+    [
+      11,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      7,
+      4,
+      3,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      7,
+      4,
+      3,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      7,
+      4,
+      3,
+      5,
+      9,
+      8,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      4,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      6,
+      4,
+      3,
+      5,
+      3
+    ],
+    [
+      0,
+      0,
+      2,
+      6,
+      4,
+      3,
+      10,
+      5,
+      8,
+      3
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      6,
+      4,
+      2
+    ],
+    [
+      12,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      1
+    ],
+    [
+      4,
+      1,
+      1
+    ],
+    [
+      14,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      1
+    ],
+    [
+      15,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      1
+    ],
+    [
+      5,
+      1,
+      2,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      7,
+      0,
+      1,
+      2,
+      5,
+      3,
+      4,
+      6,
+      7,
+      8
+    ],
+    [
+      7,
+      0,
+      1,
+      2,
+      3,
+      4,
+      7,
+      6
+    ],
+    [
+      9,
+      0,
+      1,
+      2,
+      3,
+      6,
+      7,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          17,
+          "OpenBox",
+          "\r\nOpenBox.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/1b_1\r\n  rotate: false\r\n  xy: 341, 138\r\n  size: 48, 49\r\n  orig: 48, 49\r\n  offset: 0, 0\r\n  index: -1\r\nImage/1b_2\r\n  rotate: true\r\n  xy: 313, 295\r\n  size: 51, 48\r\n  orig: 51, 48\r\n  offset: 0, 0\r\n  index: -1\r\nImage/1b_3\r\n  rotate: true\r\n  xy: 255, 395\r\n  size: 106, 33\r\n  orig: 106, 33\r\n  offset: 0, 0\r\n  index: -1\r\nImage/1b_4\r\n  rotate: true\r\n  xy: 245, 110\r\n  size: 153, 46\r\n  orig: 153, 46\r\n  offset: 0, 0\r\n  index: -1\r\nImage/1b_5\r\n  rotate: true\r\n  xy: 165, 355\r\n  size: 146, 88\r\n  orig: 146, 88\r\n  offset: 0, 0\r\n  index: -1\r\nImage/1b_6\r\n  rotate: false\r\n  xy: 2, 118\r\n  size: 127, 112\r\n  orig: 127, 112\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2p_1\r\n  rotate: false\r\n  xy: 349, 87\r\n  size: 48, 49\r\n  orig: 48, 49\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2p_2\r\n  rotate: true\r\n  xy: 341, 242\r\n  size: 51, 48\r\n  orig: 51, 48\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2p_3\r\n  rotate: true\r\n  xy: 279, 2\r\n  size: 106, 33\r\n  orig: 106, 33\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2p_4\r\n  rotate: true\r\n  xy: 293, 110\r\n  size: 153, 46\r\n  orig: 153, 46\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2p_5\r\n  rotate: false\r\n  xy: 131, 13\r\n  size: 146, 88\r\n  orig: 146, 88\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2p_6\r\n  rotate: false\r\n  xy: 2, 4\r\n  size: 127, 112\r\n  orig: 127, 112\r\n  offset: 0, 0\r\n  index: -1\r\nImage/3y_1\r\n  rotate: false\r\n  xy: 349, 36\r\n  size: 48, 49\r\n  orig: 48, 49\r\n  offset: 0, 0\r\n  index: -1\r\nImage/3y_2\r\n  rotate: true\r\n  xy: 341, 189\r\n  size: 51, 48\r\n  orig: 51, 48\r\n  offset: 0, 0\r\n  index: -1\r\nImage/3y_3\r\n  rotate: true\r\n  xy: 314, 2\r\n  size: 106, 33\r\n  orig: 106, 33\r\n  offset: 0, 0\r\n  index: -1\r\nImage/3y_4\r\n  rotate: true\r\n  xy: 313, 348\r\n  size: 153, 46\r\n  orig: 153, 46\r\n  offset: 0, 0\r\n  index: -1\r\nImage/3y_5\r\n  rotate: false\r\n  xy: 165, 265\r\n  size: 146, 88\r\n  orig: 146, 88\r\n  offset: 0, 0\r\n  index: -1\r\nImage/3y_6\r\n  rotate: true\r\n  xy: 131, 103\r\n  size: 127, 112\r\n  orig: 127, 112\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Glow_00000\r\n  rotate: false\r\n  xy: 2, 232\r\n  size: 161, 269\r\n  orig: 167, 274\r\n  offset: 4, 0\r\n  index: -1\r\nImage/Liz_00000\r\n  rotate: false\r\n  xy: 255, 376\r\n  size: 34, 17\r\n  orig: 34, 17\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Star_00000\r\n  rotate: true\r\n  xy: 361, 456\r\n  size: 45, 40\r\n  orig: 46, 40\r\n  offset: 1, 0\r\n  index: -1\r\n",
+          [
+            "OpenBox.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "/ayP2FMNMCaTgoXMIyWsMDHQUsY",
+              "spine": "3.8.99",
+              "x": -188.93,
+              "y": -116.51,
+              "width": 443.69,
+              "height": 341.5,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root",
+                "x": 3.63
+              },
+              {
+                "name": "ZZZ",
+                "parent": "root",
+                "y": 490.18
+              },
+              {
+                "name": "Zong",
+                "parent": "ZZZ",
+                "rotation": 1.2,
+                "x": -25.63,
+                "y": -509.55,
+                "scaleX": 1.5,
+                "scaleY": 1.5
+              },
+              {
+                "name": "Box",
+                "parent": "Zong",
+                "y": -59.08
+              },
+              {
+                "name": "Gaizi",
+                "parent": "Box",
+                "y": 128.21
+              },
+              {
+                "name": "B_Gaizi",
+                "parent": "Zong",
+                "x": 68.15,
+                "y": 18.51
+              },
+              {
+                "name": "Gaizi2",
+                "parent": "Gaizi",
+                "length": 37.72,
+                "rotation": 45,
+                "x": 30.91,
+                "y": 23.53
+              },
+              {
+                "name": "Gaizi3",
+                "parent": "Gaizi",
+                "length": 44.45,
+                "rotation": 130.36,
+                "x": -39.73,
+                "y": 27.78
+              },
+              {
+                "name": "B_Gaizi2",
+                "parent": "B_Gaizi",
+                "x": 98.52,
+                "y": -2.4
+              },
+              {
+                "name": "FXZong",
+                "parent": "ZZZ"
+              },
+              {
+                "name": "Glow",
+                "parent": "FXZong",
+                "x": -17.14,
+                "y": -407.66
+              },
+              {
+                "name": "LzZong",
+                "parent": "FXZong"
+              },
+              {
+                "name": "Star_Zong",
+                "parent": "LzZong"
+              },
+              {
+                "name": "Star_1",
+                "parent": "Star_Zong"
+              },
+              {
+                "name": "LIZONG",
+                "parent": "LzZong"
+              },
+              {
+                "name": "Li",
+                "parent": "LIZONG"
+              },
+              {
+                "name": "Li2",
+                "parent": "LIZONG"
+              },
+              {
+                "name": "Li3",
+                "parent": "LIZONG"
+              },
+              {
+                "name": "Li4",
+                "parent": "LIZONG"
+              },
+              {
+                "name": "Star_2",
+                "parent": "Star_Zong"
+              },
+              {
+                "name": "Star_3",
+                "parent": "Star_Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/1b_3",
+                "bone": "B_Gaizi2",
+                "attachment": "Image/1b_3"
+              },
+              {
+                "name": "B_Gaizi2",
+                "bone": "B_Gaizi2",
+                "attachment": "Image/2p_3"
+              },
+              {
+                "name": "Image/1b_6",
+                "bone": "B_Gaizi",
+                "attachment": "Image/1b_6"
+              },
+              {
+                "name": "B_Gaizi",
+                "bone": "B_Gaizi",
+                "attachment": "Image/2p_6"
+              },
+              {
+                "name": "Image/1b_1",
+                "bone": "Gaizi3",
+                "attachment": "Image/1b_1"
+              },
+              {
+                "name": "Image/1b_2",
+                "bone": "Gaizi2",
+                "attachment": "Image/1b_2"
+              },
+              {
+                "name": "Gaizi3",
+                "bone": "Gaizi3",
+                "attachment": "Image/2p_1"
+              },
+              {
+                "name": "Gaizi2",
+                "bone": "Gaizi2",
+                "attachment": "Image/2p_2"
+              },
+              {
+                "name": "Image/1b_4",
+                "bone": "Gaizi",
+                "attachment": "Image/1b_4"
+              },
+              {
+                "name": "Image/1b_5",
+                "bone": "Box",
+                "attachment": "Image/1b_5"
+              },
+              {
+                "name": "Box",
+                "bone": "Box",
+                "attachment": "Image/2p_5"
+              },
+              {
+                "name": "Gaizi9",
+                "bone": "Gaizi",
+                "attachment": "Image/3y_3"
+              },
+              {
+                "name": "Gaizi8",
+                "bone": "Gaizi",
+                "attachment": "Image/2p_3"
+              },
+              {
+                "name": "Gaizi7",
+                "bone": "Gaizi",
+                "attachment": "Image/1b_3"
+              },
+              {
+                "name": "Gaizi",
+                "bone": "Gaizi",
+                "attachment": "Image/2p_4"
+              },
+              {
+                "name": "B_Gaizi4",
+                "bone": "B_Gaizi2",
+                "attachment": "Image/3y_3"
+              },
+              {
+                "name": "Gaizi5",
+                "bone": "Gaizi2",
+                "attachment": "Image/3y_2"
+              },
+              {
+                "name": "B_Gaizi3",
+                "bone": "B_Gaizi",
+                "attachment": "Image/3y_6"
+              },
+              {
+                "name": "Gaizi4",
+                "bone": "Gaizi3",
+                "attachment": "Image/3y_1"
+              },
+              {
+                "name": "Box2",
+                "bone": "Box",
+                "attachment": "Image/3y_5"
+              },
+              {
+                "name": "Gaizi6",
+                "bone": "Gaizi",
+                "attachment": "Image/3y_4"
+              },
+              {
+                "name": "Image/Glow_00000",
+                "bone": "Glow",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star_00000",
+                "bone": "Star_1"
+              },
+              {
+                "name": "Image/Star_0",
+                "bone": "Star_2"
+              },
+              {
+                "name": "Image/Star_1",
+                "bone": "Star_3"
+              },
+              {
+                "name": "Image/Liz_00000",
+                "bone": "Li",
+                "color": "ffb53dff",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Liz_1",
+                "bone": "Li3",
+                "color": "ffb53dff",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Liz_2",
+                "bone": "Li4",
+                "color": "ffb53dff",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Liz_0",
+                "bone": "Li2",
+                "color": "ffb53dff",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "B_Gaizi": {
+                    "Image/2p_6": {
+                      "x": 0.33,
+                      "width": 181,
+                      "height": 160
+                    }
+                  },
+                  "B_Gaizi2": {
+                    "Image/2p_3": {
+                      "x": -6.85,
+                      "y": 0.33,
+                      "rotation": -90,
+                      "width": 151,
+                      "height": 47
+                    }
+                  },
+                  "B_Gaizi3": {
+                    "Image/3y_6": {
+                      "x": 0.2,
+                      "y": -0.37,
+                      "width": 181,
+                      "height": 160
+                    }
+                  },
+                  "B_Gaizi4": {
+                    "Image/3y_3": {
+                      "x": -6.89,
+                      "y": 0.33,
+                      "rotation": -90,
+                      "width": 151,
+                      "height": 47
+                    }
+                  },
+                  "Box": {
+                    "Image/2p_5": {
+                      "x": 0.33,
+                      "y": 59.41,
+                      "width": 209,
+                      "height": 125
+                    }
+                  },
+                  "Box2": {
+                    "Image/3y_5": {
+                      "x": 0.34,
+                      "y": 58.98,
+                      "width": 209,
+                      "height": 125
+                    }
+                  },
+                  "Gaizi": {
+                    "Image/2p_4": {
+                      "x": 0.33,
+                      "width": 219,
+                      "height": 66
+                    }
+                  },
+                  "Gaizi2": {
+                    "Image/2p_2": {
+                      "x": 37.2,
+                      "y": 10.86,
+                      "rotation": -45,
+                      "width": 73,
+                      "height": 69
+                    }
+                  },
+                  "Gaizi3": {
+                    "Image/2p_1": {
+                      "x": 32.68,
+                      "y": -2.92,
+                      "rotation": -130.36,
+                      "width": 69,
+                      "height": 70
+                    }
+                  },
+                  "Gaizi4": {
+                    "Image/3y_1": {
+                      "x": 32.56,
+                      "y": -3.07,
+                      "rotation": -130.36,
+                      "width": 69,
+                      "height": 70
+                    }
+                  },
+                  "Gaizi5": {
+                    "Image/3y_2": {
+                      "x": 37.33,
+                      "y": 11.11,
+                      "rotation": -46.2,
+                      "width": 73,
+                      "height": 69
+                    }
+                  },
+                  "Gaizi6": {
+                    "Image/3y_4": {
+                      "x": 0.33,
+                      "y": -0.01,
+                      "rotation": -1.2,
+                      "width": 219,
+                      "height": 66
+                    }
+                  },
+                  "Gaizi7": {
+                    "Image/1b_3": {
+                      "x": -4.01,
+                      "y": 18.34,
+                      "scaleX": 1.2,
+                      "scaleY": 1.2,
+                      "width": 151,
+                      "height": 47
+                    }
+                  },
+                  "Gaizi8": {
+                    "Image/2p_3": {
+                      "x": -4.18,
+                      "y": 17.87,
+                      "scaleX": 1.2,
+                      "scaleY": 1.2,
+                      "width": 151,
+                      "height": 47
+                    }
+                  },
+                  "Gaizi9": {
+                    "Image/3y_3": {
+                      "x": -4.38,
+                      "y": 18.5,
+                      "scaleX": 1.2,
+                      "scaleY": 1.2,
+                      "width": 151,
+                      "height": 47
+                    }
+                  },
+                  "Image/1b_1": {
+                    "Image/1b_1": {
+                      "x": 32.64,
+                      "y": -3.56,
+                      "rotation": -130.36,
+                      "width": 69,
+                      "height": 70
+                    }
+                  },
+                  "Image/1b_2": {
+                    "Image/1b_2": {
+                      "x": 37.03,
+                      "y": 10.62,
+                      "rotation": -45,
+                      "width": 73,
+                      "height": 69
+                    }
+                  },
+                  "Image/1b_3": {
+                    "Image/1b_3": {
+                      "x": -7.5,
+                      "y": 0.5,
+                      "rotation": -91.2,
+                      "width": 151,
+                      "height": 47
+                    }
+                  },
+                  "Image/1b_4": {
+                    "Image/1b_4": {
+                      "x": 0.5,
+                      "width": 219,
+                      "height": 66
+                    }
+                  },
+                  "Image/1b_5": {
+                    "Image/1b_5": {
+                      "x": 0.5,
+                      "y": 59.95,
+                      "width": 209,
+                      "height": 125
+                    }
+                  },
+                  "Image/1b_6": {
+                    "Image/1b_6": {
+                      "x": 0.5,
+                      "width": 181,
+                      "height": 160
+                    }
+                  },
+                  "Image/Glow_00000": {
+                    "Image/Glow_00000": {
+                      "y": 195.56,
+                      "width": 238,
+                      "height": 391
+                    }
+                  },
+                  "Image/Liz_0": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_00000": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_1": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_2": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Star_0": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 66,
+                      "height": 57
+                    }
+                  },
+                  "Image/Star_00000": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 66,
+                      "height": 57
+                    }
+                  },
+                  "Image/Star_1": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 66,
+                      "height": 57
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Start": {}
+            },
+            "animations": {
+              "OpenBox_1": {
+                "slots": {
+                  "B_Gaizi": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/2p_6"
+                      }
+                    ]
+                  },
+                  "B_Gaizi2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/2p_3"
+                      }
+                    ]
+                  },
+                  "B_Gaizi3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "B_Gaizi4": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Box2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi2": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi3": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi4": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi5": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi6": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi7": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi8": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi9": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_1": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_4": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_5": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/1b_5"
+                      }
+                    ]
+                  },
+                  "Image/1b_6": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Glow_00000": {
+                    "color": [
+                      {
+                        "time": 0.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.2667,
+                        "color": "ffda6cff"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "f19f3400"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Glow_00000"
+                      }
+                    ]
+                  },
+                  "Image/Liz_0": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_00000": {
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_1": {
+                    "attachment": [
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_2": {
+                    "attachment": [
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_0": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "acf7ffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "acf7ffff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "09cbf000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_00000": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "ffea7dff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "ffea7dff"
+                      },
+                      {
+                        "time": 0.8,
+                        "color": "f0a40900"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_1": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "fbacffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "fbacffff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "ab09f000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Box": {
+                    "translate": [
+                      {
+                        "time": 0.1667
+                      },
+                      {
+                        "time": 0.2,
+                        "y": 18.81
+                      },
+                      {
+                        "time": 0.2333,
+                        "y": 22.36
+                      },
+                      {
+                        "time": 0.3,
+                        "y": 24.94
+                      },
+                      {
+                        "time": 0.4667
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "x": 1.198,
+                        "y": 0.898
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 1.039,
+                        "y": 1.193
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.969
+                      },
+                      {
+                        "time": 0.3667
+                      }
+                    ]
+                  },
+                  "Gaizi": {
+                    "rotate": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "angle": -4.8
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -7.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "y": 69.85
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 12.99,
+                        "y": 150.85
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 1.017,
+                        "y": 0.777
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": -18,
+                        "y": -32.4
+                      }
+                    ]
+                  },
+                  "B_Gaizi": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "angle": 12
+                      },
+                      {
+                        "time": 0.5
+                      }
+                    ],
+                    "translate": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "x": -29.34,
+                        "y": 281.36,
+                        "curve": 0.54,
+                        "c3": 0.872,
+                        "c4": 0.96
+                      },
+                      {
+                        "time": 0.5
+                      },
+                      {
+                        "time": 0.5333,
+                        "y": 5.14
+                      },
+                      {
+                        "time": 0.6
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.3,
+                        "y": 0.344
+                      },
+                      {
+                        "time": 0.3333,
+                        "y": 0.594
+                      },
+                      {
+                        "time": 0.4
+                      }
+                    ],
+                    "shear": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "x": -19.2
+                      },
+                      {
+                        "time": 0.3,
+                        "x": -22.8,
+                        "y": 7.2
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 1
+                      }
+                    ]
+                  },
+                  "Gaizi2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "angle": -13.39
+                      },
+                      {
+                        "time": 0.2,
+                        "angle": -19.91
+                      }
+                    ]
+                  },
+                  "Gaizi3": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "angle": 8.23
+                      },
+                      {
+                        "time": 0.2,
+                        "angle": 23.96
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "translate": [
+                      {
+                        "time": 0.2333,
+                        "x": -14.86,
+                        "y": 24
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": -14.86,
+                        "y": 20.57
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": -14.86,
+                        "y": -9.14
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2333,
+                        "x": 2,
+                        "y": 0.635
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 2
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 1.805,
+                        "y": 1.268
+                      }
+                    ]
+                  },
+                  "Li": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "angle": 120
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": -181.75,
+                        "y": -330
+                      },
+                      {
+                        "time": 0.4,
+                        "x": -239,
+                        "y": -192.45
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": -282.94,
+                        "y": -116.34
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 0.8,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.13,
+                        "y": 0.13
+                      }
+                    ]
+                  },
+                  "Li2": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": 57.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": 101.3,
+                        "y": -334.24
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 179.67,
+                        "y": -262.24
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 202.25,
+                        "y": -226.66
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.6,
+                        "y": 0.6
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.8,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Li3": {
+                    "rotate": [
+                      {
+                        "time": 0.3333,
+                        "angle": 70.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3333,
+                        "x": 36.03,
+                        "y": -233.3
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 107.43,
+                        "y": -28.27
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 131.83,
+                        "y": 41.78
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3333,
+                        "x": 0.93,
+                        "y": 0.93
+                      },
+                      {
+                        "time": 0.4667
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 0.243,
+                        "y": 0.243
+                      }
+                    ]
+                  },
+                  "Li4": {
+                    "rotate": [
+                      {
+                        "time": 0.3333,
+                        "angle": 99.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3333,
+                        "x": -113.75,
+                        "y": -313.66
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": -133.01,
+                        "y": -199.81
+                      },
+                      {
+                        "time": 0.8,
+                        "x": -142.2,
+                        "y": -145.48
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Star_1": {
+                    "rotate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.8333,
+                        "angle": 45.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": -130.73,
+                        "y": -229.99
+                      },
+                      {
+                        "time": 0.5,
+                        "x": -171.22,
+                        "y": -170.71
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": -193.63,
+                        "y": -136.73
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.7,
+                        "y": 0.7
+                      }
+                    ]
+                  },
+                  "Star_2": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": -24
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": 45.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": 79.05,
+                        "y": -301.66
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 134.13,
+                        "y": -246.96
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 160.32,
+                        "y": -217.78
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.8,
+                        "y": 0.8
+                      }
+                    ]
+                  },
+                  "Star_3": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": 19.2
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": 40.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": -80.81,
+                        "y": -352.95
+                      },
+                      {
+                        "time": 0.8,
+                        "x": -89.53,
+                        "y": -318.06
+                      }
+                    ]
+                  }
+                },
+                "drawOrder": [
+                  {
+                    "time": 0.4333,
+                    "offsets": [
+                      {
+                        "slot": "Gaizi8",
+                        "offset": -6
+                      }
+                    ]
+                  }
+                ],
+                "events": [
+                  {
+                    "time": 0.3333,
+                    "name": "Start"
+                  }
+                ]
+              },
+              "OpenBox_2": {
+                "slots": {
+                  "B_Gaizi": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "B_Gaizi2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "B_Gaizi3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "B_Gaizi4": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Box": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Box2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi4": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi5": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi6": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi7": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi8": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi9": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_1": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_2": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/1b_3"
+                      }
+                    ]
+                  },
+                  "Image/1b_4": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_6": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/1b_6"
+                      }
+                    ]
+                  },
+                  "Image/Glow_00000": {
+                    "color": [
+                      {
+                        "time": 0.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.2667,
+                        "color": "ffda6cff"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "f19f3400"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Glow_00000"
+                      }
+                    ]
+                  },
+                  "Image/Liz_0": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_00000": {
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_1": {
+                    "attachment": [
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_2": {
+                    "attachment": [
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_0": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "acf7ffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "acf7ffff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "09cbf000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_00000": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "ffea7dff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "ffea7dff"
+                      },
+                      {
+                        "time": 0.8,
+                        "color": "f0a40900"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_1": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "fbacffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "fbacffff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "ab09f000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Box": {
+                    "translate": [
+                      {
+                        "time": 0.1667
+                      },
+                      {
+                        "time": 0.2,
+                        "y": 18.81
+                      },
+                      {
+                        "time": 0.2333,
+                        "y": 22.36
+                      },
+                      {
+                        "time": 0.3,
+                        "y": 24.94
+                      },
+                      {
+                        "time": 0.4667
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "x": 1.198,
+                        "y": 0.898
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 1.039,
+                        "y": 1.193
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.969
+                      },
+                      {
+                        "time": 0.3667
+                      }
+                    ]
+                  },
+                  "Gaizi": {
+                    "rotate": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "angle": -4.8
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -7.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "y": 69.85
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 12.99,
+                        "y": 150.85
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 1.017,
+                        "y": 0.777
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": -18,
+                        "y": -32.4
+                      }
+                    ]
+                  },
+                  "B_Gaizi": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "angle": 12
+                      },
+                      {
+                        "time": 0.5
+                      }
+                    ],
+                    "translate": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "x": -29.34,
+                        "y": 281.36,
+                        "curve": 0.54,
+                        "c3": 0.872,
+                        "c4": 0.96
+                      },
+                      {
+                        "time": 0.5
+                      },
+                      {
+                        "time": 0.5333,
+                        "y": 5.14
+                      },
+                      {
+                        "time": 0.6
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.3,
+                        "y": 0.344
+                      },
+                      {
+                        "time": 0.3333,
+                        "y": 0.594
+                      },
+                      {
+                        "time": 0.4
+                      }
+                    ],
+                    "shear": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "x": -19.2
+                      },
+                      {
+                        "time": 0.3,
+                        "x": -22.8,
+                        "y": 7.2
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 1
+                      }
+                    ]
+                  },
+                  "Gaizi2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "angle": -13.39
+                      },
+                      {
+                        "time": 0.2,
+                        "angle": -19.91
+                      }
+                    ]
+                  },
+                  "Gaizi3": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "angle": 8.23
+                      },
+                      {
+                        "time": 0.2,
+                        "angle": 23.96
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "translate": [
+                      {
+                        "time": 0.2333,
+                        "x": -14.86,
+                        "y": 24
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": -14.86,
+                        "y": 20.57
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": -14.86,
+                        "y": -9.14
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2333,
+                        "x": 2,
+                        "y": 0.635
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 2
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 1.805,
+                        "y": 1.268
+                      }
+                    ]
+                  },
+                  "Li": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "angle": 120
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": -181.75,
+                        "y": -330
+                      },
+                      {
+                        "time": 0.4,
+                        "x": -239,
+                        "y": -192.45
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": -282.94,
+                        "y": -116.34
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 0.8,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.13,
+                        "y": 0.13
+                      }
+                    ]
+                  },
+                  "Li2": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": 57.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": 101.3,
+                        "y": -334.24
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 179.67,
+                        "y": -262.24
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 202.25,
+                        "y": -226.66
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.6,
+                        "y": 0.6
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.8,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Li3": {
+                    "rotate": [
+                      {
+                        "time": 0.3333,
+                        "angle": 70.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3333,
+                        "x": 36.03,
+                        "y": -233.3
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 107.43,
+                        "y": -28.27
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 131.83,
+                        "y": 41.78
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3333,
+                        "x": 0.93,
+                        "y": 0.93
+                      },
+                      {
+                        "time": 0.4667
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 0.243,
+                        "y": 0.243
+                      }
+                    ]
+                  },
+                  "Li4": {
+                    "rotate": [
+                      {
+                        "time": 0.3333,
+                        "angle": 99.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3333,
+                        "x": -113.75,
+                        "y": -313.66
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": -141.14,
+                        "y": -151.74
+                      },
+                      {
+                        "time": 0.8,
+                        "x": -151.46,
+                        "y": -90.72
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Star_1": {
+                    "rotate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.8333,
+                        "angle": 45.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": -130.73,
+                        "y": -229.99
+                      },
+                      {
+                        "time": 0.5,
+                        "x": -171.22,
+                        "y": -170.71
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": -193.63,
+                        "y": -136.73
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.7,
+                        "y": 0.7
+                      }
+                    ]
+                  },
+                  "Star_2": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": -24
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": 45.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": 79.05,
+                        "y": -301.66
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 134.13,
+                        "y": -246.96
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 160.32,
+                        "y": -217.78
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.8,
+                        "y": 0.8
+                      }
+                    ]
+                  },
+                  "Star_3": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": 19.2
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": 40.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": -80.81,
+                        "y": -352.95
+                      },
+                      {
+                        "time": 0.8,
+                        "x": -89.53,
+                        "y": -318.06
+                      }
+                    ]
+                  }
+                },
+                "drawOrder": [
+                  {
+                    "offsets": [
+                      {
+                        "slot": "Image/1b_4",
+                        "offset": 4
+                      },
+                      {
+                        "slot": "Gaizi9",
+                        "offset": -7
+                      },
+                      {
+                        "slot": "Gaizi8",
+                        "offset": -7
+                      },
+                      {
+                        "slot": "Gaizi7",
+                        "offset": -7
+                      }
+                    ]
+                  }
+                ],
+                "events": [
+                  {
+                    "time": 0.3333,
+                    "name": "Start"
+                  }
+                ]
+              },
+              "OpenBox_3": {
+                "slots": {
+                  "B_Gaizi": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "B_Gaizi2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "B_Gaizi3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/3y_6"
+                      }
+                    ]
+                  },
+                  "B_Gaizi4": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/3y_3"
+                      }
+                    ]
+                  },
+                  "Box": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi4": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi5": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi6": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi7": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi8": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Gaizi9": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_1": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_4": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/1b_5": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/1b_5"
+                      }
+                    ]
+                  },
+                  "Image/1b_6": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Glow_00000": {
+                    "color": [
+                      {
+                        "time": 0.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.2667,
+                        "color": "ffda6cff"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "f19f3400"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Glow_00000"
+                      }
+                    ]
+                  },
+                  "Image/Liz_0": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_00000": {
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_1": {
+                    "attachment": [
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_2": {
+                    "attachment": [
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_0": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "acf7ffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "acf7ffff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "09cbf000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_00000": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "ffea7dff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "ffea7dff"
+                      },
+                      {
+                        "time": 0.8,
+                        "color": "f0a40900"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_1": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "fbacffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "fbacffff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "ab09f000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/Star_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Box": {
+                    "translate": [
+                      {
+                        "time": 0.1667
+                      },
+                      {
+                        "time": 0.2,
+                        "y": 18.81
+                      },
+                      {
+                        "time": 0.2333,
+                        "y": 22.36
+                      },
+                      {
+                        "time": 0.3,
+                        "y": 24.94
+                      },
+                      {
+                        "time": 0.4667
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "x": 1.198,
+                        "y": 0.898
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 1.039,
+                        "y": 1.193
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.969
+                      },
+                      {
+                        "time": 0.3667
+                      }
+                    ]
+                  },
+                  "Gaizi": {
+                    "rotate": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "angle": -4.8
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -7.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "y": 69.85
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 12.99,
+                        "y": 150.85
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 1.017,
+                        "y": 0.777
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 0.2333
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": -18,
+                        "y": -32.4
+                      }
+                    ]
+                  },
+                  "B_Gaizi": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "angle": 12
+                      },
+                      {
+                        "time": 0.5
+                      }
+                    ],
+                    "translate": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "x": -29.34,
+                        "y": 281.36,
+                        "curve": 0.54,
+                        "c3": 0.872,
+                        "c4": 0.96
+                      },
+                      {
+                        "time": 0.5
+                      },
+                      {
+                        "time": 0.5333,
+                        "y": 5.14
+                      },
+                      {
+                        "time": 0.6
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.3,
+                        "y": 0.344
+                      },
+                      {
+                        "time": 0.3333,
+                        "y": 0.594
+                      },
+                      {
+                        "time": 0.4
+                      }
+                    ],
+                    "shear": [
+                      {},
+                      {
+                        "time": 0.2333,
+                        "x": -19.2
+                      },
+                      {
+                        "time": 0.3,
+                        "x": -22.8,
+                        "y": 7.2
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 1
+                      }
+                    ]
+                  },
+                  "Gaizi2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "angle": -13.39
+                      },
+                      {
+                        "time": 0.2,
+                        "angle": -19.91
+                      }
+                    ]
+                  },
+                  "Gaizi3": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "angle": 8.23
+                      },
+                      {
+                        "time": 0.2,
+                        "angle": 23.96
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "translate": [
+                      {
+                        "time": 0.2333,
+                        "x": -14.86,
+                        "y": 24
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": -14.86,
+                        "y": 20.57
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": -14.86,
+                        "y": -9.14
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2333,
+                        "x": 2,
+                        "y": 0.635
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 2
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 1.805,
+                        "y": 1.268
+                      }
+                    ]
+                  },
+                  "Li": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "angle": 120
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": -181.75,
+                        "y": -330
+                      },
+                      {
+                        "time": 0.4,
+                        "x": -239,
+                        "y": -192.45
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": -282.94,
+                        "y": -116.34
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 0.8,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.13,
+                        "y": 0.13
+                      }
+                    ]
+                  },
+                  "Li2": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": 57.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": 101.3,
+                        "y": -334.24
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 179.67,
+                        "y": -262.24
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 202.25,
+                        "y": -226.66
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.6,
+                        "y": 0.6
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.8,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Li3": {
+                    "rotate": [
+                      {
+                        "time": 0.3333,
+                        "angle": 70.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3333,
+                        "x": 36.03,
+                        "y": -233.3
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 107.43,
+                        "y": -28.27
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 131.83,
+                        "y": 41.78
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3333,
+                        "x": 0.93,
+                        "y": 0.93
+                      },
+                      {
+                        "time": 0.4667
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 0.243,
+                        "y": 0.243
+                      }
+                    ]
+                  },
+                  "Li4": {
+                    "rotate": [
+                      {
+                        "time": 0.3333,
+                        "angle": 99.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3333,
+                        "x": -113.75,
+                        "y": -313.66
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": -141.14,
+                        "y": -151.74
+                      },
+                      {
+                        "time": 0.8,
+                        "x": -151.46,
+                        "y": -90.72
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Star_1": {
+                    "rotate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.8333,
+                        "angle": 45.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": -130.73,
+                        "y": -229.99
+                      },
+                      {
+                        "time": 0.5,
+                        "x": -171.22,
+                        "y": -170.71
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": -193.63,
+                        "y": -136.73
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.7,
+                        "y": 0.7
+                      }
+                    ]
+                  },
+                  "Star_2": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": -24
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": 45.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": 79.05,
+                        "y": -301.66
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 134.13,
+                        "y": -246.96
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 160.32,
+                        "y": -217.78
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.8,
+                        "y": 0.8
+                      }
+                    ]
+                  },
+                  "Star_3": {
+                    "rotate": [
+                      {
+                        "time": 0.3,
+                        "angle": 19.2
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": 40.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": -80.81,
+                        "y": -352.95
+                      },
+                      {
+                        "time": 0.8,
+                        "x": -89.53,
+                        "y": -318.06
+                      }
+                    ]
+                  }
+                },
+                "drawOrder": [
+                  {
+                    "offsets": [
+                      {
+                        "slot": "Image/1b_4",
+                        "offset": 1
+                      }
+                    ]
+                  }
+                ],
+                "events": [
+                  {
+                    "time": 0.3333,
+                    "name": "Start"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        17
+      ]
+    ],
+    [
+      [
+        [
+          23,
+          "openBox"
+        ],
+        [
+          13,
+          "equipmentItem",
+          [
+            -19,
+            -20
+          ],
+          [
+            [
+              32,
+              -17,
+              [
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ],
+              -16,
+              [
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40
+              ],
+              -15,
+              [
+                41,
+                42,
+                43,
+                44
+              ],
+              -14,
+              [
+                [
+                  null,
+                  null,
+                  null,
+                  null,
+                  45,
+                  46,
+                  null,
+                  47,
+                  48,
+                  null
+                ],
+                0,
+                0,
+                0,
+                0,
+                6,
+                6,
+                0,
+                6,
+                6,
+                0
+              ],
+              -13,
+              -12,
+              -11,
+              -10,
+              -9,
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2
+            ],
+            [
+              12,
+              -18
+            ]
+          ],
+          [
+            0,
+            "07iHAFhktCyJEfgvc1aWbm",
+            -1
+          ],
+          [
+            5,
+            190,
+            190
+          ],
+          [
+            0,
+            200,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          14,
+          "container",
+          1,
+          [
+            -21,
+            -22,
+            -23,
+            -24,
+            -25,
+            -26,
+            -27,
+            -28,
+            -29,
+            -30,
+            -31,
+            -32,
+            -33
+          ],
+          [
+            0,
+            "b5RhOdm9tCWrEyi5Vmhqko",
+            1
+          ]
+        ],
+        [
+          13,
+          "bagItem",
+          [
+            -46,
+            -47
+          ],
+          [
+            [
+              12,
+              -35
+            ],
+            [
+              34,
+              -45,
+              [
+                60,
+                61,
+                62,
+                63,
+                64,
+                65
+              ],
+              -44,
+              -43,
+              -42,
+              -41,
+              -40,
+              -39,
+              -38,
+              -37,
+              -36
+            ]
+          ],
+          [
+            0,
+            "d84AwQxIlIDZb4MtyKMHwM",
+            -34
+          ],
+          [
+            5,
+            190,
+            190
+          ],
+          [
+            0,
+            200,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          24,
+          "openBox",
+          [
+            -53,
+            -54,
+            -55
+          ],
+          [
+            [
+              35,
+              -52,
+              1,
+              3,
+              -51,
+              -50,
+              -49
+            ]
+          ],
+          [
+            33,
+            -48
+          ],
+          [
+            5,
+            1080,
+            1920
+          ]
+        ],
+        [
+          25,
+          "common_bg_mask",
+          4,
+          [
+            -59,
+            1,
+            3,
+            -60,
+            -61
+          ],
+          [
+            [
+              18,
+              0,
+              -56,
+              [
+                68
+              ],
+              69
+            ],
+            [
+              12,
+              -57
+            ],
+            [
+              36,
+              -58,
+              [
+                [
+                  20,
+                  "48a6agMyYZIwqwWfeTbfdfF",
+                  "onClickContinue",
+                  4
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "20EwM5/UFNI6t/RRGHUXyb",
+            4
+          ],
+          [
+            5,
+            1440,
+            2340
+          ]
+        ],
+        [
+          14,
+          "container",
+          3,
+          [
+            -62,
+            -63,
+            -64,
+            -65,
+            -66,
+            -67,
+            -68
+          ],
+          [
+            0,
+            "6ezhMAOdlMl4gaIZAuZqNM",
+            3
+          ]
+        ],
+        [
+          3,
+          "skipTip",
+          4,
+          [
+            -76
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -70,
+              [
+                5,
+                139.62,
+                65.52
+              ]
+            ],
+            [
+              16,
+              "btn_skip",
+              -72,
+              -71
+            ],
+            [
+              1,
+              1,
+              1,
+              -73,
+              [
+                5,
+                139.62,
+                65.52
+              ]
+            ],
+            [
+              38,
+              33,
+              470.19,
+              100,
+              100,
+              100,
+              139.62,
+              65.52,
+              -74
+            ],
+            [
+              37,
+              3,
+              -75,
+              [
+                [
+                  20,
+                  "48a6agMyYZIwqwWfeTbfdfF",
+                  "onClickSkip",
+                  4
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "1dqMH4CN1Jlp4Wex8aMhgf",
+            -69
+          ],
+          [
+            5,
+            139.62,
+            65.52
+          ],
+          [
+            370.19,
+            827.24,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          26,
+          "customLabel",
+          2,
+          [
+            -82
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -78,
+              [
+                5,
+                89.92,
+                44.32
+              ]
+            ],
+            [
+              6,
+              -80,
+              -79
+            ],
+            [
+              1,
+              1,
+              1,
+              -81,
+              [
+                5,
+                89.92,
+                44.32
+              ]
+            ]
+          ],
+          [
+            0,
+            "9eJ6z5PPVLgJGr8eoB9xEX",
+            -77
+          ],
+          [
+            5,
+            89.92,
+            44.32
+          ],
+          [
+            0,
+            1,
+            0.5
+          ],
+          [
+            83,
+            64,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "customLabel",
+          2,
+          [
+            -88
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -84,
+              [
+                5,
+                100.66,
+                49.36
+              ]
+            ],
+            [
+              6,
+              -86,
+              -85
+            ],
+            [
+              1,
+              1,
+              1,
+              -87,
+              [
+                5,
+                100.66,
+                49.36
+              ]
+            ]
+          ],
+          [
+            0,
+            "68n756Zi9JdLVXCFPG8ZnF",
+            -83
+          ],
+          [
+            5,
+            100.66,
+            49.36
+          ],
+          [
+            0,
+            -80,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "customLabel",
+          2,
+          [
+            -94
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -90,
+              [
+                5,
+                75.18,
+                35.28
+              ]
+            ],
+            [
+              6,
+              -92,
+              -91
+            ],
+            [
+              1,
+              1,
+              1,
+              -93,
+              [
+                5,
+                75.18,
+                35.28
+              ]
+            ]
+          ],
+          [
+            0,
+            "e5AXPCFixJZYAWCQn/PO2V",
+            -89
+          ],
+          [
+            5,
+            75.18,
+            35.28
+          ],
+          [
+            0,
+            -120,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "customLabel",
+          6,
+          [
+            -100
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -96,
+              [
+                5,
+                100.66,
+                49.36
+              ]
+            ],
+            [
+              6,
+              -98,
+              -97
+            ],
+            [
+              1,
+              1,
+              1,
+              -99,
+              [
+                5,
+                100.66,
+                49.36
+              ]
+            ]
+          ],
+          [
+            0,
+            "84pMrT+zVPibaa5geEC9NL",
+            -95
+          ],
+          [
+            5,
+            100.66,
+            49.36
+          ],
+          [
+            0,
+            -80,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "customLabel",
+          6,
+          [
+            -106
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -102,
+              [
+                5,
+                75.18,
+                35.28
+              ]
+            ],
+            [
+              6,
+              -104,
+              -103
+            ],
+            [
+              1,
+              1,
+              1,
+              -105,
+              [
+                5,
+                75.18,
+                35.28
+              ]
+            ]
+          ],
+          [
+            0,
+            "77HLnj7xVEK55G93IvmzYN",
+            -101
+          ],
+          [
+            5,
+            75.18,
+            35.28
+          ],
+          [
+            0,
+            -120,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "customLabel",
+          5,
+          [
+            -112
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -108,
+              [
+                5,
+                113.4,
+                56.4
+              ]
+            ],
+            [
+              6,
+              -110,
+              -109
+            ],
+            [
+              1,
+              1,
+              1,
+              -111,
+              [
+                5,
+                113.4,
+                56.4
+              ]
+            ]
+          ],
+          [
+            0,
+            "0f5TBDdNNFcIM+UOwu1t7T",
+            -107
+          ],
+          [
+            5,
+            113.4,
+            56.4
+          ],
+          [
+            0,
+            350,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "continueTip",
+          4,
+          [
+            -119
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -114,
+              [
+                5,
+                139.62,
+                65.52
+              ]
+            ],
+            [
+              16,
+              "btn_continue",
+              -116,
+              -115
+            ],
+            [
+              1,
+              1,
+              1,
+              -117,
+              [
+                5,
+                139.62,
+                65.52
+              ]
+            ],
+            [
+              39,
+              44,
+              470.19,
+              470.19,
+              100,
+              139.62,
+              -118
+            ]
+          ],
+          [
+            0,
+            "5foUkLM81Ks4ToddyIUmxC",
+            -113
+          ],
+          [
+            5,
+            139.62,
+            65.52
+          ],
+          [
+            0,
+            -827.24,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          13,
+          "customLabel",
+          [
+            -125
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -121,
+              [
+                5,
+                89.92,
+                44.32
+              ]
+            ],
+            [
+              16,
+              "equipment_item_equiped",
+              -123,
+              -122
+            ],
+            [
+              1,
+              1,
+              1,
+              -124,
+              [
+                5,
+                89.92,
+                44.32
+              ]
+            ]
+          ],
+          [
+            0,
+            "86OopDvGlLcYwl7lPMPf/D",
+            -120
+          ],
+          [
+            5,
+            89.92,
+            44.32
+          ],
+          [
+            0,
+            -23,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "common_bg_itemmask",
+          2,
+          [
+            [
+              4,
+              -126,
+              [
+                8
+              ],
+              9
+            ],
+            [
+              12,
+              -127
+            ]
+          ],
+          [
+            0,
+            "45l5gVhUdMQogN4CrB/REd",
+            1
+          ],
+          [
+            5,
+            190,
+            190
+          ]
+        ],
+        [
+          14,
+          "equiped",
+          2,
+          [
+            -128,
+            15
+          ],
+          [
+            0,
+            "44+LaKBUtFd74GNS+i93e8",
+            1
+          ]
+        ],
+        [
+          30,
+          "label",
+          8,
+          [
+            [
+              -129,
+              [
+                10,
+                2,
+                -130,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            8
+          ],
+          [
+            5,
+            89.92,
+            44.32
+          ],
+          [
+            0,
+            1,
+            0.5
+          ]
+        ],
+        [
+          15,
+          "label",
+          9,
+          [
+            [
+              -131,
+              [
+                10,
+                2,
+                -132,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            9
+          ],
+          [
+            5,
+            100.66,
+            49.36
+          ]
+        ],
+        [
+          31,
+          "label",
+          15,
+          [
+            [
+              -133,
+              [
+                10,
+                2,
+                -134,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            15
+          ],
+          [
+            4,
+            4282318831
+          ],
+          [
+            5,
+            89.92,
+            44.32
+          ]
+        ],
+        [
+          7,
+          "equip_img_tick",
+          2,
+          [
+            [
+              4,
+              -135,
+              [
+                13
+              ],
+              14
+            ]
+          ],
+          [
+            0,
+            "47hVNkg59Ho5v22clFW2mG",
+            1
+          ],
+          [
+            5,
+            94,
+            74
+          ]
+        ],
+        [
+          7,
+          "equip_img_mergelock",
+          2,
+          [
+            [
+              4,
+              -136,
+              [
+                15
+              ],
+              16
+            ]
+          ],
+          [
+            0,
+            "87cXydnRJBeZhNYOLwGfAc",
+            1
+          ],
+          [
+            5,
+            72,
+            86
+          ]
+        ],
+        [
+          27,
+          "common_ico_sequip",
+          2,
+          [
+            [
+              4,
+              -137,
+              [
+                17
+              ],
+              18
+            ]
+          ],
+          [
+            0,
+            "daMI1A/ihCupvOWyF7J02Q",
+            1
+          ],
+          [
+            5,
+            39,
+            48
+          ],
+          [
+            -75,
+            -60,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          15,
+          "label",
+          11,
+          [
+            [
+              -138,
+              [
+                10,
+                2,
+                -139,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            11
+          ],
+          [
+            5,
+            100.66,
+            49.36
+          ]
+        ],
+        [
+          28,
+          "common_bg_itemmask",
+          false,
+          6,
+          [
+            [
+              4,
+              -140,
+              [
+                52
+              ],
+              53
+            ]
+          ],
+          [
+            0,
+            "c56yvc5EJGNZSiLLRWJYdR",
+            3
+          ],
+          [
+            5,
+            190,
+            190
+          ]
+        ],
+        [
+          7,
+          "equip_img_tick",
+          6,
+          [
+            [
+              4,
+              -141,
+              [
+                54
+              ],
+              55
+            ]
+          ],
+          [
+            0,
+            "bfpFtV2P1IkpaLd9iVQbTs",
+            3
+          ],
+          [
+            5,
+            94,
+            74
+          ]
+        ],
+        [
+          7,
+          "equip_img_mergelock",
+          6,
+          [
+            [
+              4,
+              -142,
+              [
+                56
+              ],
+              57
+            ]
+          ],
+          [
+            0,
+            "29TTukJJFMM6kCNXleEuH0",
+            3
+          ],
+          [
+            5,
+            72,
+            86
+          ]
+        ],
+        [
+          15,
+          "label",
+          13,
+          [
+            [
+              -143,
+              [
+                10,
+                3,
+                -144,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            13
+          ],
+          [
+            5,
+            113.4,
+            56.4
+          ]
+        ],
+        [
+          8,
+          "OpenBox",
+          5,
+          [
+            -145
+          ],
+          [
+            0,
+            "6d+cjITNtNiree6Yc9ZPcz",
+            4
+          ],
+          [
+            5,
+            443.69,
+            341.5
+          ],
+          [
+            0,
+            -400,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          21,
+          "default",
+          0,
+          false,
+          false,
+          "OpenBox_1",
+          1,
+          29,
+          [
+            0
+          ]
+        ],
+        [
+          5,
+          "bg",
+          2,
+          [
+            -146
+          ],
+          [
+            0,
+            "30y3WXAf5KnqqSTHfylGuG",
+            1
+          ],
+          [
+            5,
+            190,
+            190
+          ]
+        ],
+        [
+          9,
+          31,
+          [
+            1
+          ]
+        ],
+        [
+          8,
+          "equip_bg_equipquality0",
+          2,
+          [
+            -147
+          ],
+          [
+            0,
+            "24PingTphNLLzSLe+mM3yh",
+            1
+          ],
+          [
+            5,
+            50,
+            48
+          ],
+          [
+            -64,
+            64,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          9,
+          33,
+          [
+            2
+          ]
+        ],
+        [
+          8,
+          "equip_ico_equipaccessory",
+          2,
+          [
+            -148
+          ],
+          [
+            0,
+            "f8SRL7slFDVbqguoT7U6Fz",
+            1
+          ],
+          [
+            5,
+            24,
+            24
+          ],
+          [
+            -64,
+            64,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          9,
+          35,
+          [
+            3
+          ]
+        ],
+        [
+          5,
+          "icon",
+          2,
+          [
+            -149
+          ],
+          [
+            0,
+            "b0PjPcQoVLKZdB+9tQCuE7",
+            1
+          ],
+          [
+            5,
+            190,
+            196
+          ]
+        ],
+        [
+          19,
+          2,
+          false,
+          37,
+          [
+            4
+          ]
+        ],
+        [
+          2,
+          "Label",
+          32,
+          32,
+          false,
+          2,
+          1,
+          18,
+          [
+            5
+          ]
+        ],
+        [
+          8,
+          "equip_img_quality31",
+          2,
+          [
+            -150
+          ],
+          [
+            0,
+            "a2mlozITxCOrrebkHsnkDE",
+            1
+          ],
+          [
+            5,
+            78,
+            36
+          ],
+          [
+            0,
+            -65,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          9,
+          40,
+          [
+            6
+          ]
+        ],
+        [
+          2,
+          "Label",
+          36,
+          36,
+          false,
+          1,
+          1,
+          19,
+          [
+            7
+          ]
+        ],
+        [
+          29,
+          "singleColor",
+          185,
+          17,
+          [
+            [
+              18,
+              0,
+              -151,
+              [
+                10
+              ],
+              11
+            ]
+          ],
+          [
+            0,
+            "4d8xGFs4hKjJTdDGURxz6E",
+            1
+          ],
+          [
+            4,
+            4278190080
+          ],
+          [
+            5,
+            190,
+            50
+          ],
+          [
+            0,
+            -23,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "Label",
+          32,
+          32,
+          false,
+          1,
+          1,
+          20,
+          [
+            12
+          ]
+        ],
+        [
+          11,
+          "label",
+          10,
+          [
+            -152
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            10
+          ],
+          [
+            4,
+            4281218905
+          ],
+          [
+            5,
+            75.18,
+            35.28
+          ]
+        ],
+        [
+          2,
+          "Label",
+          28,
+          28,
+          false,
+          1,
+          1,
+          45,
+          [
+            19
+          ]
+        ],
+        [
+          5,
+          "Card_Flash",
+          1,
+          [
+            -153
+          ],
+          [
+            0,
+            "b5Sh0tWeFMsYrkaFaQqps/",
+            1
+          ],
+          [
+            5,
+            1080,
+            2340
+          ]
+        ],
+        [
+          22,
+          "default",
+          "Blue",
+          0,
+          false,
+          false,
+          "Blue",
+          1,
+          47,
+          [
+            20
+          ]
+        ],
+        [
+          5,
+          "bg",
+          6,
+          [
+            -154
+          ],
+          [
+            0,
+            "01we0hpiBPPphMvK80fhO3",
+            3
+          ],
+          [
+            5,
+            190,
+            190
+          ]
+        ],
+        [
+          9,
+          49,
+          [
+            49
+          ]
+        ],
+        [
+          5,
+          "icon",
+          6,
+          [
+            -155
+          ],
+          [
+            0,
+            "27tq+ZQ/pLEoxlwp41bZaf",
+            3
+          ],
+          [
+            5,
+            190,
+            196
+          ]
+        ],
+        [
+          19,
+          2,
+          false,
+          51,
+          [
+            50
+          ]
+        ],
+        [
+          2,
+          "Label",
+          36,
+          36,
+          false,
+          1,
+          1,
+          24,
+          [
+            51
+          ]
+        ],
+        [
+          11,
+          "label",
+          12,
+          [
+            -156
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            12
+          ],
+          [
+            4,
+            4281218905
+          ],
+          [
+            5,
+            75.18,
+            35.28
+          ]
+        ],
+        [
+          2,
+          "Label",
+          28,
+          28,
+          false,
+          1,
+          1,
+          54,
+          [
+            58
+          ]
+        ],
+        [
+          5,
+          "Card_Flash",
+          3,
+          [
+            -157
+          ],
+          [
+            0,
+            "a8ik055P9BUb/z/xxjUVAR",
+            3
+          ],
+          [
+            5,
+            1080,
+            2340
+          ]
+        ],
+        [
+          22,
+          "default",
+          "Blue",
+          0,
+          false,
+          false,
+          "Blue",
+          1,
+          56,
+          [
+            59
+          ]
+        ],
+        [
+          8,
+          "Boxglow",
+          5,
+          [
+            -158
+          ],
+          [
+            0,
+            "d9+12Q/ABHC4EYzsV/l5Tx",
+            4
+          ],
+          [
+            5,
+            1080,
+            2340
+          ],
+          [
+            0,
+            210,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          21,
+          "default",
+          0,
+          false,
+          false,
+          "Boxglow",
+          1,
+          58,
+          [
+            66
+          ]
+        ],
+        [
+          40,
+          "Label",
+          false,
+          1,
+          1,
+          28,
+          [
+            67
+          ]
+        ],
+        [
+          11,
+          "label",
+          14,
+          [
+            -159
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            14
+          ],
+          [
+            4,
+            4289769392
+          ],
+          [
+            5,
+            139.62,
+            65.52
+          ]
+        ],
+        [
+          2,
+          "Label",
+          52,
+          52,
+          false,
+          1,
+          1,
+          61,
+          [
+            70
+          ]
+        ],
+        [
+          11,
+          "label",
+          7,
+          [
+            -160
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            7
+          ],
+          [
+            4,
+            4289769392
+          ],
+          [
+            5,
+            139.62,
+            65.52
+          ]
+        ],
+        [
+          2,
+          "Label",
+          52,
+          52,
+          false,
+          1,
+          1,
+          63,
+          [
+            71
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        2,
+        1,
+        0,
+        7,
+        48,
+        0,
+        8,
+        2,
+        0,
+        9,
+        10,
+        0,
+        16,
+        23,
+        0,
+        10,
+        38,
+        0,
+        17,
+        17,
+        0,
+        11,
+        21,
+        0,
+        12,
+        22,
+        0,
+        13,
+        9,
+        0,
+        14,
+        16,
+        0,
+        18,
+        8,
+        0,
+        19,
+        41,
+        0,
+        20,
+        36,
+        0,
+        21,
+        34,
+        0,
+        15,
+        32,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        -2,
+        47,
+        0,
+        -1,
+        31,
+        0,
+        -2,
+        33,
+        0,
+        -3,
+        35,
+        0,
+        -4,
+        37,
+        0,
+        -5,
+        8,
+        0,
+        -6,
+        40,
+        0,
+        -7,
+        9,
+        0,
+        -8,
+        16,
+        0,
+        -9,
+        17,
+        0,
+        -10,
+        21,
+        0,
+        -11,
+        22,
+        0,
+        -12,
+        23,
+        0,
+        -13,
+        10,
+        0,
+        2,
+        3,
+        0,
+        0,
+        3,
+        0,
+        7,
+        57,
+        0,
+        8,
+        6,
+        0,
+        9,
+        12,
+        0,
+        10,
+        52,
+        0,
+        11,
+        26,
+        0,
+        12,
+        27,
+        0,
+        13,
+        11,
+        0,
+        14,
+        25,
+        0,
+        15,
+        50,
+        0,
+        0,
+        3,
+        0,
+        -1,
+        6,
+        0,
+        -2,
+        56,
+        0,
+        2,
+        4,
+        0,
+        22,
+        59,
+        0,
+        23,
+        30,
+        0,
+        24,
+        13,
+        0,
+        0,
+        4,
+        0,
+        -1,
+        5,
+        0,
+        -2,
+        14,
+        0,
+        -3,
+        7,
+        0,
+        0,
+        5,
+        0,
+        0,
+        5,
+        0,
+        0,
+        5,
+        0,
+        -1,
+        29,
+        0,
+        -4,
+        58,
+        0,
+        -5,
+        13,
+        0,
+        -1,
+        49,
+        0,
+        -2,
+        51,
+        0,
+        -3,
+        11,
+        0,
+        -4,
+        25,
+        0,
+        -5,
+        26,
+        0,
+        -6,
+        27,
+        0,
+        -7,
+        12,
+        0,
+        2,
+        7,
+        0,
+        0,
+        7,
+        0,
+        3,
+        64,
+        0,
+        0,
+        7,
+        0,
+        0,
+        7,
+        0,
+        0,
+        7,
+        0,
+        0,
+        7,
+        0,
+        -1,
+        63,
+        0,
+        2,
+        8,
+        0,
+        0,
+        8,
+        0,
+        3,
+        39,
+        0,
+        0,
+        8,
+        0,
+        0,
+        8,
+        0,
+        -1,
+        18,
+        0,
+        2,
+        9,
+        0,
+        0,
+        9,
+        0,
+        3,
+        42,
+        0,
+        0,
+        9,
+        0,
+        0,
+        9,
+        0,
+        -1,
+        19,
+        0,
+        2,
+        10,
+        0,
+        0,
+        10,
+        0,
+        3,
+        46,
+        0,
+        0,
+        10,
+        0,
+        0,
+        10,
+        0,
+        -1,
+        45,
+        0,
+        2,
+        11,
+        0,
+        0,
+        11,
+        0,
+        3,
+        53,
+        0,
+        0,
+        11,
+        0,
+        0,
+        11,
+        0,
+        -1,
+        24,
+        0,
+        2,
+        12,
+        0,
+        0,
+        12,
+        0,
+        3,
+        55,
+        0,
+        0,
+        12,
+        0,
+        0,
+        12,
+        0,
+        -1,
+        54,
+        0,
+        2,
+        13,
+        0,
+        0,
+        13,
+        0,
+        3,
+        60,
+        0,
+        0,
+        13,
+        0,
+        0,
+        13,
+        0,
+        -1,
+        28,
+        0,
+        2,
+        14,
+        0,
+        0,
+        14,
+        0,
+        3,
+        62,
+        0,
+        0,
+        14,
+        0,
+        0,
+        14,
+        0,
+        0,
+        14,
+        0,
+        -1,
+        61,
+        0,
+        2,
+        15,
+        0,
+        0,
+        15,
+        0,
+        3,
+        44,
+        0,
+        0,
+        15,
+        0,
+        0,
+        15,
+        0,
+        -1,
+        20,
+        0,
+        0,
+        16,
+        0,
+        0,
+        16,
+        0,
+        -1,
+        43,
+        0,
+        -1,
+        39,
+        0,
+        0,
+        18,
+        0,
+        -1,
+        42,
+        0,
+        0,
+        19,
+        0,
+        -1,
+        44,
+        0,
+        0,
+        20,
+        0,
+        0,
+        21,
+        0,
+        0,
+        22,
+        0,
+        0,
+        23,
+        0,
+        -1,
+        53,
+        0,
+        0,
+        24,
+        0,
+        0,
+        25,
+        0,
+        0,
+        26,
+        0,
+        0,
+        27,
+        0,
+        -1,
+        60,
+        0,
+        0,
+        28,
+        0,
+        -1,
+        30,
+        0,
+        -1,
+        32,
+        0,
+        -1,
+        34,
+        0,
+        -1,
+        36,
+        0,
+        -1,
+        38,
+        0,
+        -1,
+        41,
+        0,
+        0,
+        43,
+        0,
+        -1,
+        46,
+        0,
+        -1,
+        48,
+        0,
+        -1,
+        50,
+        0,
+        -1,
+        52,
+        0,
+        -1,
+        55,
+        0,
+        -1,
+        57,
+        0,
+        -1,
+        59,
+        0,
+        -1,
+        62,
+        0,
+        -1,
+        64,
+        0,
+        25,
+        4,
+        1,
+        6,
+        5,
+        3,
+        6,
+        5,
+        15,
+        6,
+        17,
+        160
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        32,
+        34,
+        36,
+        39,
+        41,
+        42,
+        44,
+        46,
+        48,
+        50,
+        53,
+        55,
+        57,
+        59,
+        60,
+        62,
+        64
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6,
+        -7,
+        -8,
+        -9,
+        -10,
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6,
+        -7,
+        -8,
+        -9,
+        -10,
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6,
+        -8,
+        -9,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        5,
+        1,
+        1,
+        1,
+        4,
+        1,
+        4,
+        4,
+        4,
+        5,
+        1,
+        4,
+        4,
+        5,
+        5,
+        4,
+        4,
+        4
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        18,
+        0,
+        0,
+        9,
+        0,
+        10,
+        0,
+        19,
+        0,
+        2,
+        3,
+        11,
+        12,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        13,
+        20,
+        21,
+        22,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        23,
+        24,
+        25,
+        26,
+        14,
+        15,
+        27,
+        28,
+        29,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        9,
+        0,
+        10,
+        0,
+        2,
+        3,
+        11,
+        12,
+        4,
+        5,
+        13,
+        2,
+        0,
+        0,
+        30,
+        0,
+        0,
+        31,
+        3,
+        6,
+        14,
+        1,
+        15,
+        1,
+        1,
+        1,
+        16,
+        3,
+        1,
+        1,
+        16,
+        32,
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          17,
+          "Boxglow",
+          "\r\nBoxglow.png\r\nsize: 256,256\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Liz_00000\r\n  rotate: false\r\n  xy: 42, 15\r\n  size: 49, 24\r\n  orig: 49, 24\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Star\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 38, 37\r\n  orig: 38, 39\r\n  offset: 0, 1\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 2, 41\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          [
+            "Boxglow.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "C2ugkM1AXkSEPotns6uDYZDFyv8",
+              "spine": "3.8.99",
+              "x": -544.76,
+              "y": -1350.57,
+              "width": 1080,
+              "height": 2340,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root",
+                "x": 3.63
+              },
+              {
+                "name": "CardZong",
+                "parent": "root"
+              },
+              {
+                "name": "C_Glow",
+                "parent": "CardZong"
+              },
+              {
+                "name": "C_Glow2",
+                "parent": "CardZong"
+              },
+              {
+                "name": "C_Glow3",
+                "parent": "CardZong"
+              },
+              {
+                "name": "LiZong",
+                "parent": "CardZong"
+              },
+              {
+                "name": "Li1",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Li5",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Li6",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Li7",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Li8",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Li9",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Li10",
+                "parent": "LiZong"
+              },
+              {
+                "name": "L",
+                "parent": "root"
+              },
+              {
+                "name": "Star",
+                "parent": "L"
+              },
+              {
+                "name": "Star2",
+                "parent": "L"
+              },
+              {
+                "name": "Star3",
+                "parent": "L"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/glow1",
+                "bone": "C_Glow",
+                "attachment": "Image/glow1",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/glow3",
+                "bone": "C_Glow3",
+                "attachment": "Image/glow1",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/glow2",
+                "bone": "C_Glow2",
+                "attachment": "Image/glow1",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Liz_3",
+                "bone": "Li1",
+                "attachment": "Image/Liz_00000"
+              },
+              {
+                "name": "Image/Liz_4",
+                "bone": "Li5",
+                "color": "ffac47ff",
+                "attachment": "Image/Liz_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Liz_5",
+                "bone": "Li6",
+                "attachment": "Image/Liz_00000"
+              },
+              {
+                "name": "Image/Liz_6",
+                "bone": "Li7",
+                "attachment": "Image/Liz_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Liz_8",
+                "bone": "Li9",
+                "attachment": "Image/Liz_00000"
+              },
+              {
+                "name": "Image/Liz_9",
+                "bone": "Li10",
+                "attachment": "Image/Liz_00000"
+              },
+              {
+                "name": "Image/Liz_7",
+                "bone": "Li8",
+                "attachment": "Image/Liz_00000"
+              },
+              {
+                "name": "Image/Star",
+                "bone": "Star",
+                "attachment": "Image/Star"
+              },
+              {
+                "name": "Image/Star2",
+                "bone": "Star2",
+                "attachment": "Image/Star"
+              },
+              {
+                "name": "Image/Star3",
+                "bone": "Star3",
+                "attachment": "Image/Star"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Liz_3": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_4": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_5": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_6": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_7": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_8": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Liz_9": {
+                    "Image/Liz_00000": {
+                      "x": 0.5,
+                      "width": 49,
+                      "height": 24
+                    }
+                  },
+                  "Image/Star": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 38,
+                      "height": 39
+                    }
+                  },
+                  "Image/Star2": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 38,
+                      "height": 39
+                    }
+                  },
+                  "Image/Star3": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 38,
+                      "height": 39
+                    }
+                  },
+                  "Image/glow1": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow2": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow3": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Boxglow": {
+                "slots": {
+                  "Image/Liz_3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_4": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_5": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_6": {
+                    "color": [
+                      {
+                        "time": 0.0667,
+                        "color": "ffd478ff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_7": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_8": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_9": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Liz_00000"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow1": {
+                    "color": [
+                      {
+                        "color": "ffba2eff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ffba2da2"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "ff9b2c00"
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "color": [
+                      {
+                        "color": "ffba2eff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ffba2da2"
+                      },
+                      {
+                        "time": 0.4333,
+                        "color": "ff9b2c00"
+                      }
+                    ]
+                  },
+                  "Image/glow3": {
+                    "color": [
+                      {
+                        "color": "ffba2eff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ffba2da2"
+                      },
+                      {
+                        "time": 0.1333,
+                        "color": "ff9b2c00"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "C_Glow": {
+                    "translate": [
+                      {
+                        "y": 167.02
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 2.88,
+                        "y": 2.88
+                      }
+                    ]
+                  },
+                  "C_Glow2": {
+                    "translate": [
+                      {
+                        "y": 167.02
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 5,
+                        "y": 5
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 6,
+                        "y": 6
+                      }
+                    ]
+                  },
+                  "C_Glow3": {
+                    "translate": [
+                      {
+                        "y": 167.02
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 2.88,
+                        "y": 2.88
+                      }
+                    ]
+                  },
+                  "Li1": {
+                    "rotate": [
+                      {
+                        "angle": 32.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 88.68,
+                        "y": 230.02
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 172.32,
+                        "y": 283.11
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 224.94,
+                        "y": 316.5
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.2,
+                        "y": 0.2
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Li5": {
+                    "rotate": [
+                      {
+                        "time": 0.0333,
+                        "angle": 136.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0333,
+                        "x": -64.36,
+                        "y": 210.12
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": -119.68,
+                        "y": 262.06
+                      },
+                      {
+                        "time": 0.5,
+                        "x": -139.82,
+                        "y": 280.98
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0333,
+                        "x": 0.2,
+                        "y": 0.2
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Li6": {
+                    "rotate": [
+                      {
+                        "time": 0.0667,
+                        "angle": -30
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0667,
+                        "x": 35.86,
+                        "y": 138.54
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 133.95,
+                        "y": 81.9
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 157.86,
+                        "y": 68.1
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0667,
+                        "x": 0.2,
+                        "y": 0.2
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Li7": {
+                    "rotate": [
+                      {
+                        "time": 0.0667,
+                        "angle": 14.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0667,
+                        "x": 131.61,
+                        "y": 210.23
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 193.67,
+                        "y": 226.16
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 212.3,
+                        "y": 230.95
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0667
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Li8": {
+                    "rotate": [
+                      {
+                        "time": 0.1,
+                        "angle": -147.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.1,
+                        "x": -47.28,
+                        "y": 143.74
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": -163.54,
+                        "y": 69.97
+                      },
+                      {
+                        "time": 0.6,
+                        "x": -196.52,
+                        "y": 49.03
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1,
+                        "x": 0.2,
+                        "y": 0.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "Li9": {
+                    "rotate": [
+                      {
+                        "time": 0.1333,
+                        "angle": -106.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.1333,
+                        "x": -38.68,
+                        "y": 127.1
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": -60.94,
+                        "y": 53.38
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": -65.74,
+                        "y": 37.48
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "LiZong": {
+                    "translate": [
+                      {
+                        "x": -23.25
+                      }
+                    ]
+                  },
+                  "Li10": {
+                    "rotate": [
+                      {
+                        "time": 0.0667,
+                        "angle": 102
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0667,
+                        "x": -27.96,
+                        "y": 270.59
+                      },
+                      {
+                        "time": 0.2,
+                        "x": -42.9,
+                        "y": 340.85
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": -54.56,
+                        "y": 395.75
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0667,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    ]
+                  },
+                  "CardZong": {
+                    "translate": [
+                      {
+                        "y": -181.54
+                      }
+                    ]
+                  }
+                }
+              },
+              "Glowidle": {
+                "slots": {
+                  "Image/Liz_3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_4": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_5": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_6": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_7": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_8": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Liz_9": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 1.1,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow1": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow3": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Star": {
+                    "rotate": [
+                      {
+                        "time": 0.1
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": -4.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 60.03,
+                        "y": 72.45
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0333,
+                        "x": 0.323,
+                        "y": 0.323
+                      },
+                      {
+                        "time": 0.1
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": -0.03,
+                        "y": -0.03
+                      }
+                    ]
+                  },
+                  "Star2": {
+                    "rotate": [
+                      {
+                        "time": 0.2,
+                        "angle": -42
+                      },
+                      {
+                        "time": 0.6333,
+                        "angle": -46.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 60.03,
+                        "y": 72.45
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 60.03,
+                        "y": -42.38
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1667,
+                        "x": 0.157,
+                        "y": 0.157
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.834,
+                        "y": 0.834
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": -0.196,
+                        "y": -0.196
+                      }
+                    ]
+                  },
+                  "Star3": {
+                    "rotate": [
+                      {
+                        "time": 0.6,
+                        "angle": -42
+                      },
+                      {
+                        "time": 1.0333,
+                        "angle": -46.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 60.03,
+                        "y": 72.45
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": -29.46,
+                        "y": 28.27
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5667,
+                        "x": 0.444,
+                        "y": 0.444
+                      },
+                      {
+                        "time": 0.6333
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": -0.03,
+                        "y": -0.03
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        33
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,56 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "en_event",
+      [
+        {
+          "id": "settings_language_switch_suc",
+          "content": "Switch language successful"
+        },
+        {
+          "id": "settings_language_zh",
+          "content": "Simplified Chinese"
+        },
+        {
+          "id": "settings_language_en",
+          "content": "English"
+        },
+        {
+          "id": "skill_1001_name",
+          "content": "skill<color=#FF0000>{0}</color>name"
+        },
+        {
+          "id": "skill_1001_desc",
+          "content": "skill<color=#00FF00>{0}</color>desc"
+        }
+      ]
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

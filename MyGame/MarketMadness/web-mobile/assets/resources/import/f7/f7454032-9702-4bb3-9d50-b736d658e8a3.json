@@ -1,0 +1,1595 @@
+[
+  1,
+  [
+    "8317LdqBBFCIW5LR/1ZJw3"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Boom",
+      "\r\nBoom.png\r\nsize: 153,80\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nSmoke/smoke_00000\r\n  rotate: false\r\n  xy: 42, 41\r\n  size: 37, 37\r\n  orig: 38, 37\r\n  offset: 0, 0\r\n  index: -1\r\nSmoke/smoke_00001\r\n  rotate: false\r\n  xy: 2, 3\r\n  size: 36, 36\r\n  orig: 38, 37\r\n  offset: 1, 0\r\n  index: -1\r\nSmoke/smoke_00002\r\n  rotate: false\r\n  xy: 40, 3\r\n  size: 36, 36\r\n  orig: 38, 37\r\n  offset: 1, 0\r\n  index: -1\r\nSmoke/smoke_00003\r\n  rotate: false\r\n  xy: 78, 3\r\n  size: 36, 36\r\n  orig: 38, 37\r\n  offset: 1, 0\r\n  index: -1\r\nSmoke/smoke_00004\r\n  rotate: false\r\n  xy: 2, 41\r\n  size: 38, 37\r\n  orig: 38, 37\r\n  offset: 0, 0\r\n  index: -1\r\nSmoke/smoke_00005\r\n  rotate: false\r\n  xy: 81, 41\r\n  size: 36, 37\r\n  orig: 38, 37\r\n  offset: 1, 0\r\n  index: -1\r\nSmoke/smoke_00006\r\n  rotate: false\r\n  xy: 116, 2\r\n  size: 35, 37\r\n  orig: 38, 37\r\n  offset: 2, 0\r\n  index: -1\r\nSmoke/smoke_00007\r\n  rotate: true\r\n  xy: 119, 42\r\n  size: 36, 32\r\n  orig: 38, 37\r\n  offset: 2, 1\r\n  index: -1\r\n",
+      [
+        "Boom.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "3QlLEEKq5hURME3xjoe02+UPeQQ",
+          "spine": "3.8.99",
+          "images": "./images/",
+          "audio": ""
+        },
+        "bones": [
+          {
+            "name": "root",
+            "x": -0.38
+          },
+          {
+            "name": "SMOZONG",
+            "parent": "root",
+            "scaleX": 0.25,
+            "scaleY": 0.25
+          },
+          {
+            "name": "some",
+            "parent": "SMOZONG"
+          },
+          {
+            "name": "some2",
+            "parent": "SMOZONG",
+            "rotation": -44.4,
+            "scaleX": 1.3,
+            "scaleY": 1.3
+          },
+          {
+            "name": "some3",
+            "parent": "SMOZONG",
+            "rotation": 38.4,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+          },
+          {
+            "name": "some4",
+            "parent": "SMOZONG",
+            "rotation": -36,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+          },
+          {
+            "name": "some5",
+            "parent": "SMOZONG",
+            "rotation": 38.4,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+          }
+        ],
+        "slots": [
+          {
+            "name": "Smoke/smoke_00000",
+            "bone": "some"
+          },
+          {
+            "name": "Smoke/smoke_0",
+            "bone": "some2"
+          },
+          {
+            "name": "Smoke/smoke_1",
+            "bone": "some3"
+          },
+          {
+            "name": "Smoke/smoke_2",
+            "bone": "some4"
+          },
+          {
+            "name": "Smoke/smoke_3",
+            "bone": "some5"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Smoke/smoke_0": {
+                "Smoke/smoke_00000": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00001": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00002": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00003": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00004": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00005": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00006": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00007": {
+                  "width": 64,
+                  "height": 62
+                }
+              },
+              "Smoke/smoke_00000": {
+                "Smoke/smoke_00000": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00001": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00002": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00003": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00004": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00005": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00006": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00007": {
+                  "width": 64,
+                  "height": 62
+                }
+              },
+              "Smoke/smoke_1": {
+                "Smoke/smoke_00000": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00001": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00002": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00003": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00004": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00005": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00006": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00007": {
+                  "width": 64,
+                  "height": 62
+                }
+              },
+              "Smoke/smoke_2": {
+                "Smoke/smoke_00000": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00001": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00002": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00003": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00004": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00005": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00006": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00007": {
+                  "width": 64,
+                  "height": 62
+                }
+              },
+              "Smoke/smoke_3": {
+                "Smoke/smoke_00000": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00001": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00002": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00003": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00004": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00005": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00006": {
+                  "width": 64,
+                  "height": 62
+                },
+                "Smoke/smoke_00007": {
+                  "width": 64,
+                  "height": 62
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Hurt1": {
+            "slots": {
+              "Smoke/smoke_0": {
+                "color": [
+                  {
+                    "time": 0.4,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.6333,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.4,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/smoke_00000": {
+                "color": [
+                  {
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.2333,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/smoke_1": {
+                "color": [
+                  {
+                    "time": 0.7667,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.7667,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 0.9,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 0.9333,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 0.9667,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.0333,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/smoke_2": {
+                "color": [
+                  {
+                    "time": 1.1333,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1.3667,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 1.1333,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 1.1667,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 1.2,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 1.2333,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1.2667,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.3,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 1.3333,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1.3667,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.4,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/smoke_3": {
+                "color": [
+                  {
+                    "time": 1.6667,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1.9,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 1.6667,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 1.7,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 1.7333,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 1.7667,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1.8,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.8333,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 1.8667,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1.9,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.9333,
+                    "name": null
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "some": {
+                "rotate": [
+                  {
+                    "angle": -9.6
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": 98.1,
+                    "y": 322.07
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 0.0667,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 0.2667,
+                    "x": 3.2,
+                    "y": 3.2
+                  }
+                ]
+              },
+              "some2": {
+                "rotate": [
+                  {
+                    "time": 0.4,
+                    "angle": -9.6
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.4,
+                    "x": -100.45,
+                    "y": 177.82
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.4,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 0.4667,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 0.6667,
+                    "x": 3.2,
+                    "y": 3.2
+                  }
+                ]
+              },
+              "some3": {
+                "rotate": [
+                  {
+                    "time": 0.7667,
+                    "angle": -9.6
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.7667,
+                    "x": 73.32,
+                    "y": 81.09
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.7667,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 1.0333,
+                    "x": 3.2,
+                    "y": 3.2
+                  }
+                ]
+              },
+              "some4": {
+                "rotate": [
+                  {
+                    "time": 1.1333,
+                    "angle": -39.6
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 1.1333,
+                    "x": 97.67,
+                    "y": 308.03
+                  },
+                  {
+                    "time": 1.2667,
+                    "x": 78.29,
+                    "y": 303.06
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 1.1333,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 1.2,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 1.4,
+                    "x": 3.2,
+                    "y": 3.2
+                  }
+                ]
+              },
+              "some5": {
+                "rotate": [
+                  {
+                    "time": 1.6667,
+                    "angle": -9.6
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 1.6667,
+                    "x": -16.2,
+                    "y": 556.27
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 1.6667,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 1.7333,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 1.9333,
+                    "x": 3.2,
+                    "y": 3.2
+                  }
+                ]
+              }
+            }
+          },
+          "Hurt2": {
+            "slots": {
+              "Smoke/smoke_0": {
+                "color": [
+                  {
+                    "time": 0.1667,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.4,
+                    "color": "d5d5d5f1"
+                  },
+                  {
+                    "time": 0.8667,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1.1,
+                    "color": "d5d5d5f1"
+                  },
+                  {
+                    "time": 1.8,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 2.0333,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.1667,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": null
+                  },
+                  {
+                    "time": 0.9,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.9333,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.9667,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.0333,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 1.0667,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1.1,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.1333,
+                    "name": null
+                  },
+                  {
+                    "time": 1.8,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 1.8333,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 1.8667,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 1.9,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1.9333,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.9667,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 2,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 2.0333,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 2.0667,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/smoke_00000": {
+                "color": [
+                  {
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.2333,
+                    "color": "d5d5d5f1"
+                  },
+                  {
+                    "time": 1.3667,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1.6,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.3667,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 1.4,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 1.4333,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 1.4667,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1.5,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.5333,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 1.5667,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1.6,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.6333,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/smoke_1": {
+                "color": [
+                  {
+                    "time": 0.3,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.5333,
+                    "color": "d5d5d5f1"
+                  },
+                  {
+                    "time": 1.6333,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1.8667,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.3,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.6333,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 1.6667,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 1.7,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 1.7333,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1.7667,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.8,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 1.8333,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1.8667,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.9,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/smoke_2": {
+                "color": [
+                  {
+                    "time": 0.5,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.7333,
+                    "color": "d5d5d5f1"
+                  },
+                  {
+                    "time": 1.3,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1.5333,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.5,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 0.7667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.3,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 1.3333,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 1.3667,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 1.4,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1.4333,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.4667,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 1.5,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1.5333,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.5667,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/smoke_3": {
+                "color": [
+                  {
+                    "time": 0.5333,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.7667,
+                    "color": "d5d5d5f1"
+                  },
+                  {
+                    "time": 1.1667,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1.4,
+                    "color": "d5d5d5f1"
+                  },
+                  {
+                    "time": 1.5333,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 1.7667,
+                    "color": "d5d5d5f1"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.5333,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 0.7667,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": null
+                  },
+                  {
+                    "time": 1.1667,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 1.2,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 1.2333,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 1.2667,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1.3,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.3333,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 1.3667,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1.4,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.4333,
+                    "name": null
+                  },
+                  {
+                    "time": 1.5333,
+                    "name": "Smoke/smoke_00000"
+                  },
+                  {
+                    "time": 1.5667,
+                    "name": "Smoke/smoke_00001"
+                  },
+                  {
+                    "time": 1.6,
+                    "name": "Smoke/smoke_00002"
+                  },
+                  {
+                    "time": 1.6333,
+                    "name": "Smoke/smoke_00003"
+                  },
+                  {
+                    "time": 1.6667,
+                    "name": "Smoke/smoke_00004"
+                  },
+                  {
+                    "time": 1.7,
+                    "name": "Smoke/smoke_00005"
+                  },
+                  {
+                    "time": 1.7333,
+                    "name": "Smoke/smoke_00006"
+                  },
+                  {
+                    "time": 1.7667,
+                    "name": "Smoke/smoke_00007"
+                  },
+                  {
+                    "time": 1.8,
+                    "name": null
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "some": {
+                "rotate": [
+                  {
+                    "angle": -9.6
+                  },
+                  {
+                    "time": 1.3667,
+                    "angle": 10.8
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": 98.1,
+                    "y": 322.07
+                  },
+                  {
+                    "time": 1.3667,
+                    "x": -74.98,
+                    "y": 600.2
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 0.0667,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 0.2667,
+                    "x": 3.2,
+                    "y": 3.2
+                  },
+                  {
+                    "time": 1.3667,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 1.4333,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 1.6333,
+                    "x": 3.2,
+                    "y": 3.2
+                  }
+                ]
+              },
+              "some2": {
+                "rotate": [
+                  {
+                    "time": 0.1667,
+                    "angle": -9.6
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.1667,
+                    "x": -100.45,
+                    "y": 177.82
+                  },
+                  {
+                    "time": 0.8667,
+                    "x": -66.22,
+                    "y": 435.8
+                  },
+                  {
+                    "time": 1.8,
+                    "x": 151.97,
+                    "y": 305.58
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.1667,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 0.2333,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 0.4333,
+                    "x": 3.2,
+                    "y": 3.2
+                  },
+                  {
+                    "time": 0.9333,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 1.1333,
+                    "x": 3.2,
+                    "y": 3.2
+                  },
+                  {
+                    "time": 1.8,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 1.8667,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 2.0667,
+                    "x": 3.2,
+                    "y": 3.2
+                  }
+                ]
+              },
+              "some3": {
+                "rotate": [
+                  {
+                    "time": 0.3,
+                    "angle": -9.6
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.3,
+                    "x": -36.05,
+                    "y": 280.04
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.3,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 0.3667,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 0.5667,
+                    "x": 3.2,
+                    "y": 3.2
+                  },
+                  {
+                    "time": 1.6333,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 1.7,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 1.9,
+                    "x": 3.2,
+                    "y": 3.2
+                  }
+                ]
+              },
+              "some4": {
+                "rotate": [
+                  {
+                    "time": 0.5,
+                    "angle": -39.6
+                  },
+                  {
+                    "time": 1.3,
+                    "angle": -26.4
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.5,
+                    "x": 97.67,
+                    "y": 308.03
+                  },
+                  {
+                    "time": 0.6333,
+                    "x": 78.29,
+                    "y": 303.06
+                  },
+                  {
+                    "time": 1.3,
+                    "x": -93.74,
+                    "y": 441.65
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.5,
+                    "x": 1.5,
+                    "y": 1.5
+                  },
+                  {
+                    "time": 0.5667,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "time": 0.7667,
+                    "x": 3.2,
+                    "y": 3.2
+                  },
+                  {
+                    "time": 1.3,
+                    "x": 0.667,
+                    "y": 0.667
+                  },
+                  {
+                    "time": 1.3667,
+                    "x": 1.333,
+                    "y": 1.333
+                  },
+                  {
+                    "time": 1.5667,
+                    "x": 2,
+                    "y": 2
+                  }
+                ]
+              },
+              "some5": {
+                "rotate": [
+                  {
+                    "time": 0.5333,
+                    "angle": -146.4
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.5333,
+                    "x": 88.02,
+                    "y": 98.03,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.8,
+                    "x": 88.02,
+                    "y": 98.03
+                  },
+                  {
+                    "time": 1.1667,
+                    "x": 80.75,
+                    "y": 260.91,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 1.4333,
+                    "x": 80.75,
+                    "y": 260.91
+                  },
+                  {
+                    "time": 1.5,
+                    "x": 88.02,
+                    "y": 98.03
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.5333,
+                    "x": 0.863,
+                    "y": 0.863
+                  },
+                  {
+                    "time": 0.6,
+                    "x": 2.044,
+                    "y": 2.044
+                  },
+                  {
+                    "time": 0.8,
+                    "x": 2.244,
+                    "y": 2.244
+                  },
+                  {
+                    "time": 1.1667,
+                    "x": 0.863,
+                    "y": 0.863
+                  },
+                  {
+                    "time": 1.2333,
+                    "x": 2.044,
+                    "y": 2.044
+                  },
+                  {
+                    "time": 1.4333,
+                    "x": 2.244,
+                    "y": 2.244
+                  },
+                  {
+                    "time": 1.5333,
+                    "x": 0.863,
+                    "y": 0.863
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 2.044,
+                    "y": 2.044
+                  },
+                  {
+                    "time": 1.8,
+                    "x": 2.244,
+                    "y": 2.244
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

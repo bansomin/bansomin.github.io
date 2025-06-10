@@ -1,0 +1,628 @@
+[
+  1,
+  [
+    "e2Xl7Q9zBNv55Bzr9lI8AN",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "5ej23GSH1O8Z+XXoKZHwww"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_1011_Blast",
+          "\r\nUltra_1011_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Balst/Blast_00036\r\n  rotate: false\r\n  xy: 416, 131\r\n  size: 58, 53\r\n  orig: 86, 66\r\n  offset: 11, 2\r\n  index: -1\r\nImage/Balst/Blast_00037\r\n  rotate: false\r\n  xy: 103, 134\r\n  size: 69, 54\r\n  orig: 86, 66\r\n  offset: 6, 4\r\n  index: -1\r\nImage/Balst/Blast_00038\r\n  rotate: false\r\n  xy: 193, 125\r\n  size: 81, 66\r\n  orig: 86, 66\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Balst/Blast_00039\r\n  rotate: false\r\n  xy: 277, 208\r\n  size: 85, 66\r\n  orig: 86, 66\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Balst/Blast_00040\r\n  rotate: false\r\n  xy: 277, 208\r\n  size: 85, 66\r\n  orig: 86, 66\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Balst/Blast_00041\r\n  rotate: false\r\n  xy: 2, 141\r\n  size: 67, 42\r\n  orig: 86, 66\r\n  offset: 19, 8\r\n  index: -1\r\nImage/Blast/Blast_00001\r\n  rotate: false\r\n  xy: 465, 238\r\n  size: 37, 40\r\n  orig: 124, 119\r\n  offset: 44, 54\r\n  index: -1\r\nImage/Blast/Blast_00002\r\n  rotate: true\r\n  xy: 353, 124\r\n  size: 60, 61\r\n  orig: 124, 119\r\n  offset: 32, 43\r\n  index: -1\r\nImage/Blast/Blast_00003\r\n  rotate: false\r\n  xy: 277, 132\r\n  size: 74, 74\r\n  orig: 124, 119\r\n  offset: 25, 35\r\n  index: -1\r\nImage/Blast/Blast_00004\r\n  rotate: false\r\n  xy: 193, 193\r\n  size: 82, 81\r\n  orig: 124, 119\r\n  offset: 22, 31\r\n  index: -1\r\nImage/Blast/Blast_00005\r\n  rotate: false\r\n  xy: 103, 190\r\n  size: 88, 86\r\n  orig: 124, 119\r\n  offset: 19, 28\r\n  index: -1\r\nImage/Blast/Blast_00006\r\n  rotate: false\r\n  xy: 369, 186\r\n  size: 94, 92\r\n  orig: 124, 119\r\n  offset: 16, 24\r\n  index: -1\r\nImage/Blast/Blast_00007\r\n  rotate: false\r\n  xy: 2, 185\r\n  size: 99, 96\r\n  orig: 124, 119\r\n  offset: 14, 21\r\n  index: -1\r\nImage/Blast/Blast_00008\r\n  rotate: false\r\n  xy: 2, 283\r\n  size: 104, 100\r\n  orig: 124, 119\r\n  offset: 11, 18\r\n  index: -1\r\nImage/Blast/Blast_00009\r\n  rotate: false\r\n  xy: 369, 280\r\n  size: 109, 104\r\n  orig: 124, 119\r\n  offset: 8, 15\r\n  index: -1\r\nImage/Blast/Blast_00010\r\n  rotate: false\r\n  xy: 128, 278\r\n  size: 112, 107\r\n  orig: 124, 119\r\n  offset: 6, 12\r\n  index: -1\r\nImage/Blast/Blast_00011\r\n  rotate: false\r\n  xy: 252, 276\r\n  size: 115, 110\r\n  orig: 124, 119\r\n  offset: 4, 9\r\n  index: -1\r\nImage/Blast/Blast_00012\r\n  rotate: true\r\n  xy: 374, 386\r\n  size: 117, 112\r\n  orig: 124, 119\r\n  offset: 3, 7\r\n  index: -1\r\nImage/Blast/Blast_00013\r\n  rotate: false\r\n  xy: 252, 388\r\n  size: 120, 115\r\n  orig: 124, 119\r\n  offset: 2, 4\r\n  index: -1\r\nImage/Blast/Blast_00014\r\n  rotate: false\r\n  xy: 128, 387\r\n  size: 122, 116\r\n  orig: 124, 119\r\n  offset: 1, 2\r\n  index: -1\r\nImage/Blast/Blast_00015\r\n  rotate: false\r\n  xy: 2, 385\r\n  size: 124, 118\r\n  orig: 124, 119\r\n  offset: 0, 0\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 480, 361\r\n  size: 23, 23\r\n  orig: 25, 25\r\n  offset: 1, 1\r\n  index: -1\r\n",
+          [
+            "Ultra_1011_Blast.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "T9aPSs5rm0fJF3NGM8bBMuyb02Y",
+              "spine": "3.8.99",
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "B_ZONG",
+                "parent": "root"
+              },
+              {
+                "name": "Blast",
+                "parent": "B_ZONG"
+              },
+              {
+                "name": "1",
+                "parent": "B_ZONG"
+              },
+              {
+                "name": "Glow2",
+                "parent": "B_ZONG"
+              },
+              {
+                "name": "Glow3",
+                "parent": "B_ZONG",
+                "scaleX": 1.5,
+                "scaleY": 1.5
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/glow3",
+                "bone": "Glow3"
+              },
+              {
+                "name": "Image/glow2",
+                "bone": "Glow2",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Blast/Blast_00001",
+                "bone": "Blast"
+              },
+              {
+                "name": "Image/Balst/Blast_00036",
+                "bone": "1"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Balst/Blast_00036": {
+                    "Image/Balst/Blast_00036": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Image/Balst/Blast_00037": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Image/Balst/Blast_00038": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Image/Balst/Blast_00039": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Image/Balst/Blast_00040": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Image/Balst/Blast_00041": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    }
+                  },
+                  "Image/Blast/Blast_00001": {
+                    "Image/Blast/Blast_00001": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00002": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00003": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00004": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00005": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00006": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00007": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00008": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00009": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00010": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00011": {
+                      "x": 1.64,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00012": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00013": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00014": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    },
+                    "Image/Blast/Blast_00015": {
+                      "x": 0.5,
+                      "width": 495,
+                      "height": 476
+                    }
+                  },
+                  "Image/glow2": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow3": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/Balst/Blast_00036": {
+                    "color": [
+                      {
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.0333,
+                        "color": "ffe84cff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Balst/Blast_00036"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Balst/Blast_00037"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Balst/Blast_00038"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Balst/Blast_00039"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Balst/Blast_00040"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Balst/Blast_00041"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Blast/Blast_00001": {
+                    "attachment": [
+                      {
+                        "name": "Image/Blast/Blast_00002"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Blast/Blast_00004"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Blast/Blast_00006"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Blast/Blast_00007"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Blast/Blast_00008"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Blast/Blast_00009"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Blast/Blast_00010"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Blast/Blast_00011"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Blast/Blast_00012"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Blast/Blast_00013"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Blast/Blast_00014"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Blast/Blast_00015"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": null
+                      },
+                      {
+                        "time": 1.1333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "ffd240ff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ffa63f9b"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "e8681500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow3": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "ffd240ff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ff8f3e9a"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "e8681500"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "1": {
+                    "translate": [
+                      {
+                        "x": 652.85,
+                        "y": 125.23
+                      }
+                    ]
+                  },
+                  "Blast": {
+                    "translate": [
+                      {
+                        "x": 659.6,
+                        "y": 57.8
+                      }
+                    ]
+                  },
+                  "Glow2": {
+                    "translate": [
+                      {
+                        "x": 657.94,
+                        "y": 119.8
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 4.083,
+                        "y": 3.376
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 5.395,
+                        "y": 4.301
+                      }
+                    ]
+                  },
+                  "Glow3": {
+                    "translate": [
+                      {
+                        "x": 657.94,
+                        "y": 119.8
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 4.083,
+                        "y": 3.376
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 5.395,
+                        "y": 4.301
+                      }
+                    ]
+                  },
+                  "B_ZONG": {
+                    "translate": [
+                      {
+                        "x": -651.29,
+                        "y": 10.95
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_boom_1011"
+        ],
+        [
+          2,
+          "ultimate_boom_1011",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            1051.23,
+            644.27
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

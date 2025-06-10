@@ -1,0 +1,2776 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "zh_ui",
+      [
+        {
+          "id": "settings_title",
+          "content": "<outline color=black width=3>设置</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "settings_language_title",
+          "content": "<outline color=black width=3>语言</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "settings_language",
+          "content": "语言",
+          "valueList": ""
+        },
+        {
+          "id": "settings_language_zh",
+          "content": "<outline color=black width=3>中文简体</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "settings_language_en",
+          "content": "<outline color=black width=3>英文</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "settings_language_switch_suc",
+          "content": "切换语言成功",
+          "valueList": ""
+        },
+        {
+          "id": "settings_playerID",
+          "content": "玩家ID {n}",
+          "valueList": ""
+        },
+        {
+          "id": "settings_copy",
+          "content": "<outline color=black width=3>复制</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "settings_music_title",
+          "content": "音乐",
+          "valueList": ""
+        },
+        {
+          "id": "settings_sound_title",
+          "content": "音效",
+          "valueList": ""
+        },
+        {
+          "id": "settings_on",
+          "content": "<outline color=black width=3>开</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "settings_off",
+          "content": "<outline color=black width=3>关</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "settings_quitgame",
+          "content": "<outline color=black width=3>退出游戏</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "settings_continue",
+          "content": "<outline color=black width=3>继续</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "chapter_title_0",
+          "content": "<outline color=black width=3>1.奇怪街区</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "chapter_title_1",
+          "content": "<outline color=black width=3>2.奇怪街区2</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "chapter_title_2",
+          "content": "<outline color=black width=3>3.奇怪街区3</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "chapter_title_3",
+          "content": "<outline color=black width=3>4.奇怪街区4</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "chapter_title_4",
+          "content": "<outline color=black width=3>5.奇怪街区5</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_bestLevel",
+          "content": "<outline color=black width=3>最高关卡进度：{0}关</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_settings",
+          "content": "<outline color=black width=2>设置</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_email",
+          "content": "<outline color=black width=2>邮箱</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_signin",
+          "content": "<outline color=black width=2>签到</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_tasks",
+          "content": "<outline color=black width=2>任务</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_privilegecard",
+          "content": "<outline color=black width=2>特权卡</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_raid",
+          "content": "<outline color=black width=2>扫荡</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_max",
+          "content": "<outline color=black width=2>满了</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_start",
+          "content": "<outline color=black width=3>开始</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_shop",
+          "content": "<outline color=black width=3>商店</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_equip",
+          "content": "<outline color=black width=3>装备</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_battle",
+          "content": "<outline color=black width=3>战斗</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_talent",
+          "content": "<outline color=black width=3>天赋</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_levelrewards0",
+          "content": "<outline color=black width=2>1-10</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_levelrewards1",
+          "content": "<outline color=black width=2>1-20</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "homepage_levelrewards2",
+          "content": "<outline color=black width=2>1-30</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_day0",
+          "content": "<outline color=black width=3>第一天</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_day1",
+          "content": "<outline color=black width=3>第二天</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_day2",
+          "content": "<outline color=black width=3>第三天</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_day3",
+          "content": "<outline color=black width=3>第四天</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_day4",
+          "content": "<outline color=black width=3>第五天</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_day5",
+          "content": "<outline color=black width=3>第六天</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_day6",
+          "content": "<outline color=black width=3>第七天</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_rewardType0",
+          "content": "<outline color=black width=3>{0}钻</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_rewardType1",
+          "content": "<outline color=black width=3>铜剪刀x{0}</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_rewardType2",
+          "content": "<outline color=black width=3>银剪刀x{0}</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_rewardType3",
+          "content": "<outline color=black width=3>金剪刀x{0}</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_rewardType4",
+          "content": "<outline color=black width=3>紫装材料x{0}</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "signin_rewardType5",
+          "content": "<outline color=black width=3>紫装备x{0}</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "common_tips_title",
+          "content": "<outline color=black width=3>提示</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "tips_quitbattle",
+          "content": "退出战斗不会返还已消耗的体力，确定要退出吗？",
+          "valueList": ""
+        },
+        {
+          "id": "tips_quitgame",
+          "content": "确定要退出游戏吗？",
+          "valueList": ""
+        },
+        {
+          "id": "common_quit",
+          "content": "<outline color=black width=3>退出</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "common_confirm",
+          "content": "<outline color=black width=3>确认</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "common_cancel",
+          "content": "<outline color=black width=3>取消</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "rewards_title",
+          "content": "奖励",
+          "valueList": ""
+        },
+        {
+          "id": "rewards_tips",
+          "content": "点击任意处关闭",
+          "valueList": ""
+        },
+        {
+          "id": "promotion_title",
+          "content": "<outline color=black width=3>晋升</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "result_win",
+          "content": "<outline color=#540A0A width=8>胜利</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "result_failed",
+          "content": "<outline color=#252A51 width=8>失败</outline>",
+          "valueList": ""
+        },
+        {
+          "id": "result_clear30levels",
+          "content": "通关 <size=92>30</size> 个关卡",
+          "valueList": ""
+        },
+        {
+          "id": "result_journey",
+          "content": "最高关卡进度: {0} 关",
+          "valueList": ""
+        },
+        {
+          "id": "result_claim",
+          "content": "领取",
+          "valueList": ""
+        },
+        {
+          "id": "result_rewards",
+          "content": "奖励",
+          "valueList": ""
+        },
+        {
+          "id": "market_noreplenishTimes",
+          "content": "无可用刷新次数",
+          "valueList": ""
+        },
+        {
+          "id": "skillType_0",
+          "content": "卡牌",
+          "valueList": ""
+        },
+        {
+          "id": "skillType_1",
+          "content": "道具",
+          "valueList": ""
+        },
+        {
+          "id": "skillType_2",
+          "content": "合成道具",
+          "valueList": ""
+        },
+        {
+          "id": "skillType_3",
+          "content": "子弹",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_slot_0",
+          "content": "武器",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_slot_1",
+          "content": "背包",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_slot_2",
+          "content": "戒指",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_slot_3",
+          "content": "饰品",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_0",
+          "content": "普通",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_1",
+          "content": "优秀",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_2",
+          "content": "稀有",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_3",
+          "content": "史诗",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_4",
+          "content": "史诗+1",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_5",
+          "content": "史诗+2",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_6",
+          "content": "传说",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_7",
+          "content": "传说+1",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_8",
+          "content": "传说+2",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_rarity_9",
+          "content": "神话",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1022",
+          "content": "叉子基础伤害+50%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1100",
+          "content": "+6%暴击率，大招可以暴击了",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1153",
+          "content": "纸团命中时，有10%几率增加疲劳(受力量影响)，持续3秒",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1165",
+          "content": "战斗开始时，给双方临时增加200能量上限",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1166",
+          "content": "冰棒子弹命中时，额外造成目标当前生命1%的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1167",
+          "content": "敌方受到中毒伤害时，自身恢复该伤害值50%的生命",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1168",
+          "content": "恢复量+100%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1169",
+          "content": "同时永久提高该值的生命上限",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1170",
+          "content": "油漆刷每击中15次，立即结算1次中毒伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1171",
+          "content": "结算的伤害翻倍",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1172",
+          "content": "造成反伤时，多造成1次，但伤害减半",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1173",
+          "content": "第二次反伤的伤害不减半",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1174",
+          "content": "每场战斗生命首次＜40%时，立即恢复800%力量的生命",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1175",
+          "content": "第6秒，恢复已损失10%生命值",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1176",
+          "content": "针对上方技能，生命值恢复量+5%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1177",
+          "content": "针对上方技能，生命值恢复量+10%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1178",
+          "content": "每次获得纸团子弹时，额外获得1个纸飞镖（造成30%力量伤害）",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1179",
+          "content": "释放大招时，恢复自身10%最大生命上限生命",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1180",
+          "content": "眩晕时长+0.1s",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1181",
+          "content": "大招命中时，永久减少自身20能量上限",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1182",
+          "content": "被大招命中时，立即释放大招",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1184",
+          "content": "释放大招时，+25%攻速",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1185",
+          "content": "释放大招后，临时增加500能量上限",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1186",
+          "content": "冲锋结束时，立即释放大招",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1187",
+          "content": "可以透支消费，但资产为负时将额外受到30%伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1188",
+          "content": "手柄命中时，有20%几率获得1钞票",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1189",
+          "content": "【唯一】战斗开始时，随机将敌方一颗子弹移除",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1190",
+          "content": "【唯一】战斗开始时，偷取敌方一颗随机子弹",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1191",
+          "content": "将偷取的子弹复制1个",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1192",
+          "content": "遭遇boss时，获得1000%力量的临时生命上限",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1193",
+          "content": "对疲劳10层的敌人伤害+30%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1194",
+          "content": "对冰冻10层的敌人伤害+30%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1195",
+          "content": "对疲劳10层的敌人暴击率+20%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1196",
+          "content": "增加一次免费复活机会",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1198",
+          "content": "复活时会以100%生命复活",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1199",
+          "content": "复活后，本场战斗最终伤害+10%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1200",
+          "content": "全局力量+5%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1201",
+          "content": "全局力量+10%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1202",
+          "content": "全局力量+15%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1203",
+          "content": "全局生命+15%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1204",
+          "content": "全局生命+20%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1205",
+          "content": "全局生命+30%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1206",
+          "content": "全局护甲+10%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1207",
+          "content": "全局护甲+15%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1208",
+          "content": "对BOSS造成的伤害+10%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1209",
+          "content": "对BOSS造成的伤害+15%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1210",
+          "content": "对小怪造成的伤害+25%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1211",
+          "content": "伤害减免+25%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1212",
+          "content": "最终伤害+25%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1213",
+          "content": "【冲锋】 在前3秒获得25%伤害减免",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1214",
+          "content": "所有纸制子弹额外+10%伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1215",
+          "content": "获得+100初始能量",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1217",
+          "content": "获得2个冰块子弹",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1218",
+          "content": "被任何子弹击中时+10%几率发射1个”石头子弹“",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1219",
+          "content": "造成反伤伤害时，有5%概率恢复同等生命",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1220",
+          "content": "几率+5%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1221",
+          "content": "最终伤害+5%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1222",
+          "content": "触发概率+15%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1223",
+          "content": "反伤伤害+50%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1224",
+          "content": "每秒治疗自己150%力量的数值",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1225",
+          "content": "每次被冰棒击中时，有30%几率发射+1“油漆刷子弹”",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1226",
+          "content": "战斗开始后第6秒，恢复已损失5%生命值",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1227",
+          "content": "获得+200初始能量",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1228",
+          "content": "伤害减免+15%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1230",
+          "content": "大招多发射1个餐刀",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1231",
+          "content": "效果触发时，同时恢复30%力量的生命",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1237",
+          "content": "石头子弹击中时，+9%几率增加1疲劳",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1238",
+          "content": "叉子伤害+50%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1239",
+          "content": "暴击率6%，大招可以暴击了",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1240",
+          "content": "被任何子弹击中时+15%几率发射1个纸团",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1241",
+          "content": "冰棒子弹的效果+100%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1242",
+          "content": "每66次能量饮料命中，提升少量力量",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1243",
+          "content": "能量饮料击中目标时20%几率再发射1个能量饮料",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1244",
+          "content": "每秒能量回复+40",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1245",
+          "content": "每次发出大招，大招伤害+3%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1246",
+          "content": "【冲锋】 在前3秒获得20%攻击速度",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1247",
+          "content": "【冲锋】能力的效果提升100%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1248",
+          "content": "每秒治疗自己100%力量的生命",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1249",
+          "content": "获得等同于最大生命值2%的回血",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1250",
+          "content": "【紧急】 当生命值低于50%时获得90能量回复",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1251",
+          "content": "所有【紧急】能力效果提升100%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1252",
+          "content": "紧急能力触发线提高至65%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1253",
+          "content": "攻击速度+25%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1254",
+          "content": "每次受到子弹的伤害时，5%几率发射冰棒子弹",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1255",
+          "content": "几率+5%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1256",
+          "content": "暴击伤害+66%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1257",
+          "content": "战斗开始时对敌人造成5%最大生命值的伤害（最高伤害为当前力量的30倍）",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1258",
+          "content": "伤害+5%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1259",
+          "content": "战斗开始时眩晕敌人0.5秒",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1260",
+          "content": "额外获得1个纸团",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1261",
+          "content": "纸团造成10%额外力量伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1262",
+          "content": "额外获得1个叉子",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1263",
+          "content": "暴击率+5%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1264",
+          "content": "叉子击中目标时33%几率发射1个冰棒",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1265",
+          "content": "额外获得1个油漆刷",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1266",
+          "content": "油漆刷造成的伤害+100%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1267",
+          "content": "额外获得1个冰棒",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1268",
+          "content": "造成反伤伤害时，10%几率发射1个叉子",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1269",
+          "content": "额外获得1个手柄",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1270",
+          "content": "手柄击中目标时33%几率发射1个叉子",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1271",
+          "content": "闪避时发射1个手柄",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1272",
+          "content": "额外获得1个能量饮料",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1273",
+          "content": "大招伤害+20%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1274",
+          "content": "初始能量+300",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1275",
+          "content": "【冲锋】多持续1秒",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1276",
+          "content": "闪避+5%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1277",
+          "content": "闪避+4%，你可以闪避大招了",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1278",
+          "content": "被任何子弹击中时15%几率回复少量生命",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1279",
+          "content": "几率+15%",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1280",
+          "content": "被大招击中时发射8个冰棒",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1281",
+          "content": "【冲锋】 在前3秒获得10%暴击率",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1282",
+          "content": "使用大招后获得190能量",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1283",
+          "content": "手柄损毁的能量额外-10",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_skill_1284",
+          "content": "战斗开始时，给双方临时增加200能量上限",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1001",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1002",
+          "content": "召唤报纸，对敌人造成{0}x力量伤害，并额外投掷6个纸团",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1003",
+          "content": "召唤3把餐刀（每把对敌人造成{0}叉子伤害）",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1004",
+          "content": "召唤榴莲，对敌人造成{0}x力量的伤害，并恢复自身10%生命",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1005",
+          "content": "发射激光，对敌人造成{0}x力量的伤害，同时临时增加自身500能量上限",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1006",
+          "content": "召唤牛头锤，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1007",
+          "content": "投掷游戏机，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1008",
+          "content": "投掷剧毒蘑菇，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1009",
+          "content": "投掷油漆桶，对敌人造成{0}x力量的伤害，并投掷1把油漆刷",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1010",
+          "content": "召唤打气锤对敌人造成{0}x力量的伤害，命中时，造成0.1s眩晕",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1011",
+          "content": "召唤纸飞机，对敌人造成{0}x力量伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1013",
+          "content": "召唤冰冻的购物车，对敌人造成{0}x力量伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1014",
+          "content": "投掷冰叉子，对敌人造成{0}x力量伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1015",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1016",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1017",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1018",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1019",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1020",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1021",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_ultimate_1022",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1000",
+          "content": "专员",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1001",
+          "content": "专员2",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1002",
+          "content": "专员3",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1003",
+          "content": "精英1",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1004",
+          "content": "精英2",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1005",
+          "content": "精英3",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1006",
+          "content": "精英4",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1007",
+          "content": "精英5",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1008",
+          "content": "主管1",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1009",
+          "content": "主管2",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1010",
+          "content": "主管3",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1011",
+          "content": "主管4",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1012",
+          "content": "主管5",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1013",
+          "content": "主管6",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1014",
+          "content": "主管7",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1015",
+          "content": "主管8",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1016",
+          "content": "主管9",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1017",
+          "content": "主管10",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1018",
+          "content": "经理1",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1019",
+          "content": "经理2",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1020",
+          "content": "经理3",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1021",
+          "content": "经理4",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1022",
+          "content": "经理5",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1023",
+          "content": "经理6",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1024",
+          "content": "经理7",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1025",
+          "content": "经理8",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1026",
+          "content": "经理9",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1027",
+          "content": "经理-10",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1028",
+          "content": "经理-11",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1029",
+          "content": "经理-12",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1030",
+          "content": "经理-13",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1031",
+          "content": "经理-14",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1032",
+          "content": "经理-15",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1033",
+          "content": "总监1-1",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1034",
+          "content": "总监1-2",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1035",
+          "content": "总监1-3",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1036",
+          "content": "总监1-4",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1037",
+          "content": "总监1-5",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1038",
+          "content": "总监1-6",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1039",
+          "content": "总监1-7",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1040",
+          "content": "总监1-8",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1041",
+          "content": "总监1-9",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1042",
+          "content": "总监1-10",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1043",
+          "content": "总监2-1",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1044",
+          "content": "总监2-2",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1045",
+          "content": "总监2-3",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1046",
+          "content": "总监2-4",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1047",
+          "content": "总监2-5",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1048",
+          "content": "总监2-6",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1049",
+          "content": "总监2-7",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1050",
+          "content": "总监2-8",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1051",
+          "content": "总监2-9",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1052",
+          "content": "总监2-10",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1053",
+          "content": "总监2-11",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1054",
+          "content": "总监2-12",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1055",
+          "content": "总监2-13",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1056",
+          "content": "总监2-14",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1057",
+          "content": "总监2-15",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1058",
+          "content": "总监3-1",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1059",
+          "content": "总监3-2",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1060",
+          "content": "总监3-3",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1061",
+          "content": "总监3-4",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1062",
+          "content": "总监3-5",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1063",
+          "content": "总监3-6",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1064",
+          "content": "总监3-7",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1065",
+          "content": "总监3-8",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1066",
+          "content": "总监3-9",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1067",
+          "content": "总监3-10",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1068",
+          "content": "总监3-11",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1069",
+          "content": "总监3-12",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1070",
+          "content": "总监3-13",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1071",
+          "content": "总监3-14",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1072",
+          "content": "总监3-15",
+          "valueList": ""
+        },
+        {
+          "id": "talent_title_1073",
+          "content": "副总裁",
+          "valueList": ""
+        },
+        {
+          "id": "talent_name_4001",
+          "content": "子弹速递",
+          "valueList": ""
+        },
+        {
+          "id": "talent_name_4002",
+          "content": "免费重随",
+          "valueList": ""
+        },
+        {
+          "id": "talent_name_4003",
+          "content": "积少成多",
+          "valueList": ""
+        },
+        {
+          "id": "talent_name_4004",
+          "content": "意外之财",
+          "valueList": ""
+        },
+        {
+          "id": "talent_name_4005",
+          "content": "精力充沛",
+          "valueList": ""
+        },
+        {
+          "id": "talent_name_4006",
+          "content": "容光焕发",
+          "valueList": ""
+        },
+        {
+          "id": "talent_name_4007",
+          "content": "日进斗金",
+          "valueList": ""
+        },
+        {
+          "id": "talent_name_4008",
+          "content": "堆积如山",
+          "valueList": ""
+        },
+        {
+          "id": "talent_des_4001",
+          "content": "开局的快递箱中，必得子弹",
+          "valueList": ""
+        },
+        {
+          "id": "talent_des_4002",
+          "content": "选技能时免费重随次数+1",
+          "valueList": ""
+        },
+        {
+          "id": "talent_des_4003",
+          "content": "击杀小怪获得的金币+25%",
+          "valueList": ""
+        },
+        {
+          "id": "talent_des_4004",
+          "content": "击杀BOSS获得的金币+25%",
+          "valueList": ""
+        },
+        {
+          "id": "talent_des_4005",
+          "content": "体力上限+2",
+          "valueList": ""
+        },
+        {
+          "id": "talent_des_4006",
+          "content": "体力恢复速度+5%",
+          "valueList": ""
+        },
+        {
+          "id": "talent_des_4007",
+          "content": "冒险中收入+5",
+          "valueList": ""
+        },
+        {
+          "id": "talent_des_4008",
+          "content": "冒险中商店的补货次数+1",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_bullet_btn",
+          "content": "子弹",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_pet_btn",
+          "content": "宠物",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_mount_btn",
+          "content": "坐骑",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_treasure_btn",
+          "content": "宝物",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_merge_btn",
+          "content": "合成",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_sortByRarity_btn",
+          "content": "品质",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_sortByLevel_btn",
+          "content": "等级",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_sortByType_btn",
+          "content": "类型",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_view_myEquipment",
+          "content": "我的装备",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_title",
+          "content": "装备升级",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_basicProperties",
+          "content": "基础属性",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_ultimate",
+          "content": "终极技能",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_maxEnergy",
+          "content": "最大能量值",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_equip_btn",
+          "content": "装备",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_takeOff_btn",
+          "content": "卸下",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_levelUp_btn",
+          "content": "升级",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_breakthrough_btn",
+          "content": "突破",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_itemTip_quickLevelUp_btn",
+          "content": "快速升级",
+          "valueList": ""
+        },
+        {
+          "id": "property_strength",
+          "content": "力量",
+          "valueList": ""
+        },
+        {
+          "id": "property_energy_recovery",
+          "content": "能量回复",
+          "valueList": ""
+        },
+        {
+          "id": "property_basic_hp",
+          "content": "最大生命值",
+          "valueList": ""
+        },
+        {
+          "id": "property_energy_max",
+          "content": "最大能量值",
+          "valueList": ""
+        },
+        {
+          "id": "property_critical_damage",
+          "content": "暴击伤害",
+          "valueList": ""
+        },
+        {
+          "id": "property_reflect_damage",
+          "content": "反伤伤害",
+          "valueList": ""
+        },
+        {
+          "id": "property_hp_regeneration",
+          "content": "生命恢复",
+          "valueList": ""
+        },
+        {
+          "id": "property_armor",
+          "content": "护甲",
+          "valueList": ""
+        },
+        {
+          "id": "property_healing_boost",
+          "content": "治疗增强",
+          "valueList": ""
+        },
+        {
+          "id": "property_attack_speed",
+          "content": "攻击速度",
+          "valueList": ""
+        },
+        {
+          "id": "property_critical_rate",
+          "content": "暴击率",
+          "valueList": ""
+        },
+        {
+          "id": "property_ultimate_ability_critical_rate",
+          "content": "终极技能暴击",
+          "valueList": ""
+        },
+        {
+          "id": "property_ultimate_ability_dodge",
+          "content": "终极技能闪避",
+          "valueList": ""
+        },
+        {
+          "id": "property_amplified_damage",
+          "content": "疲劳",
+          "valueList": ""
+        },
+        {
+          "id": "property_dodge",
+          "content": "闪避",
+          "valueList": ""
+        },
+        {
+          "id": "property_ultimate_ability_damage",
+          "content": "终极技能伤害",
+          "valueList": ""
+        },
+        {
+          "id": "property_reflect_damage_count",
+          "content": "反伤次数",
+          "valueList": ""
+        },
+        {
+          "id": "property_income",
+          "content": "战斗收入",
+          "valueList": ""
+        },
+        {
+          "id": "property_discount",
+          "content": "商店折扣",
+          "valueList": ""
+        },
+        {
+          "id": "level",
+          "content": "等级",
+          "valueList": ""
+        },
+        {
+          "id": "level_max",
+          "content": "满级",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_item_equiped",
+          "content": "装备中",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentMerge_upgrade_rarity_tip",
+          "content": "升级装备技能到: {0}",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentMerge_upgrade_materials_tip",
+          "content": "当前合成所需材料: {0}",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentMerge_merge_btn",
+          "content": "合成",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_decompose_downgrade_tip",
+          "content": "装备降品将返回所有材料并将装备等级重置为1级，品质重置为初始",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_decompose_downlevel_tip",
+          "content": "装备降级将返回所有材料并将装备等级重置为1级",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_decompose_downgrade_title",
+          "content": "装备降品",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_decompose_downlevel_title",
+          "content": "装备降级",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_decompose_downgrade_btn",
+          "content": "降品",
+          "valueList": ""
+        },
+        {
+          "id": "equipment_decompose_downlevel_btn",
+          "content": "降级",
+          "valueList": ""
+        },
+        {
+          "id": "ok_btn",
+          "content": "确定",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1001",
+          "content": "纳米剑",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1002",
+          "content": "切割者",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1003",
+          "content": "腐蚀锤",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1004",
+          "content": "S反击S-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1005",
+          "content": "S冰棒S-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1006",
+          "content": "榴莲盾",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1007",
+          "content": "数字掌机",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1008",
+          "content": "升腾汽水",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1009",
+          "content": "噗噗锤",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1010",
+          "content": "进击的锤",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1101",
+          "content": "秘语背包",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1102",
+          "content": "永恒背包",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1103",
+          "content": "紧急背包",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1201",
+          "content": "S疲劳戒指-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1202",
+          "content": "S冰冻戒指-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1203",
+          "content": "S中毒戒指-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1301",
+          "content": "S减伤饰品-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1302",
+          "content": "S增伤饰品-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_1303",
+          "content": "支援机",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2001",
+          "content": "报纸",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2002",
+          "content": "纸团-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2003",
+          "content": "纸团-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2004",
+          "content": "纸团-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2005",
+          "content": "冰晶叉",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2006",
+          "content": "斧头-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2007",
+          "content": "斧头-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2008",
+          "content": "斧头-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2009",
+          "content": "剧毒蘑菇",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2010",
+          "content": "刷子-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2011",
+          "content": "刷子-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2012",
+          "content": "刷子-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2013",
+          "content": "纸盾",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2014",
+          "content": "反击-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2015",
+          "content": "反击-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2016",
+          "content": "反击-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2017",
+          "content": "冰棱盾",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2018",
+          "content": "冰棒-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2019",
+          "content": "冰棒-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2020",
+          "content": "冰棒-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2021",
+          "content": "带刺纸盾",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2022",
+          "content": "反伤-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2023",
+          "content": "反伤-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2024",
+          "content": "反伤-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2025",
+          "content": "核桃",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2026",
+          "content": "手柄-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2027",
+          "content": "手柄-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2028",
+          "content": "手柄-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2029",
+          "content": "瓶装饮料",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2030",
+          "content": "饮料-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2031",
+          "content": "饮料-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2032",
+          "content": "饮料-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2033",
+          "content": "能量枪",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2034",
+          "content": "大招-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2035",
+          "content": "大招-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2036",
+          "content": "大招-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2037",
+          "content": "冲锋匕首",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2038",
+          "content": "冲锋-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2039",
+          "content": "冲锋-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2040",
+          "content": "冲锋-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2101",
+          "content": "侦测背包",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2102",
+          "content": "闪避背包-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2103",
+          "content": "闪避背包-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2104",
+          "content": "闪避背包-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2105",
+          "content": "急救背包-白",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2106",
+          "content": "急救背包-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2107",
+          "content": "急救背包-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2108",
+          "content": "急救背包-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2109",
+          "content": "购物篮",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2110",
+          "content": "冰冻背包-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2111",
+          "content": "冰冻背包-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2112",
+          "content": "冰冻背包-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2201",
+          "content": "生命戒指-白",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2202",
+          "content": "生命戒指-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2203",
+          "content": "生命戒指-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2204",
+          "content": "生命戒指-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2205",
+          "content": "暴击戒指-白",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2206",
+          "content": "暴击戒指-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2207",
+          "content": "暴击戒指-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2208",
+          "content": "暴击戒指-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2209",
+          "content": "能量戒指-白",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2210",
+          "content": "能量戒指-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2211",
+          "content": "能量戒指-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2212",
+          "content": "能量戒指-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2301",
+          "content": "锁子弹饰品-白",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2302",
+          "content": "锁子弹饰品-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2303",
+          "content": "锁子弹饰品-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2304",
+          "content": "锁子弹饰品-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2305",
+          "content": "特功项链",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2306",
+          "content": "BOSS饰品-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2307",
+          "content": "BOSS饰品-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2308",
+          "content": "BOSS饰品-紫",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2309",
+          "content": "能量饰品-白",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2310",
+          "content": "能量饰品-绿",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2311",
+          "content": "能量饰品-蓝",
+          "valueList": ""
+        },
+        {
+          "id": "equipmentName_2312",
+          "content": "能量饰品-紫",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1001",
+          "content": "螺母",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1002",
+          "content": "螺丝刀",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1003",
+          "content": "升品材料-武器-紫",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1004",
+          "content": "升品材料-武器-橙",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1005",
+          "content": "升品材料-武器-红",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1006",
+          "content": "升品材料-背包-紫",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1007",
+          "content": "升品材料-背包-橙",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1008",
+          "content": "升品材料-背包-红",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1009",
+          "content": "升品材料-项链-紫",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1010",
+          "content": "升品材料-项链-橙",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1011",
+          "content": "升品材料-项链-红",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1012",
+          "content": "升品材料-戒指-紫",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1013",
+          "content": "升品材料-戒指-橙",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1014",
+          "content": "升品材料-戒指-红",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1015",
+          "content": "自选S史诗兑换券",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1016",
+          "content": "电梯卡",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_2001",
+          "content": "体力",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_2002",
+          "content": "钻石",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_2003",
+          "content": "金币",
+          "valueList": ""
+        },
+        {
+          "id": "anything",
+          "content": "任意",
+          "valueList": ""
+        },
+        {
+          "id": "stamina_panel_title",
+          "content": "获取体力",
+          "valueList": ""
+        },
+        {
+          "id": "stamina_panel_remain_count",
+          "content": "当天剩余次数:",
+          "valueList": ""
+        },
+        {
+          "id": "passive_harvesting_title",
+          "content": "挂机奖励",
+          "valueList": ""
+        },
+        {
+          "id": "passive_harvesting_time",
+          "content": "收集时间",
+          "valueList": ""
+        },
+        {
+          "id": "passive_harvesting_ad_btn",
+          "content": "获取",
+          "valueList": ""
+        },
+        {
+          "id": "passive_harvesting_ad_tip",
+          "content": "4小时奖励",
+          "valueList": ""
+        },
+        {
+          "id": "passive_harvesting_time_value",
+          "content": "(已到达最大时间)",
+          "valueList": ""
+        },
+        {
+          "id": "shop_title_exchange_equipment",
+          "content": "装备兑换",
+          "valueList": ""
+        },
+        {
+          "id": "shop_btn_equipment",
+          "content": "装备\n商店",
+          "valueList": ""
+        },
+        {
+          "id": "shop_btn_topup",
+          "content": "充值",
+          "valueList": ""
+        },
+        {
+          "id": "shop_180_draws",
+          "content": "每抽180次可获取任意S装备",
+          "valueList": ""
+        },
+        {
+          "id": "shop_title_limited",
+          "content": "红色宝箱",
+          "valueList": ""
+        },
+        {
+          "id": "shop_desc_limited",
+          "content": "<outline color=black width=3>再开启<color=#8dff5a>{0}</color>次可获得<color=#A020F0>史诗装备</color>,再开启<color=#8dff5a>{1}</color>次可获得<color=#A020F0>S史诗装备</color></outline >",
+          "valueList": ""
+        },
+        {
+          "id": "shop_title_treasure",
+          "content": "橙色宝箱",
+          "valueList": ""
+        },
+        {
+          "id": "shop_btn_get1",
+          "content": "获取1个",
+          "valueList": ""
+        },
+        {
+          "id": "shop_btn_get10",
+          "content": "获取10个",
+          "valueList": ""
+        },
+        {
+          "id": "shop_title_regular",
+          "content": "常规装备",
+          "valueList": ""
+        },
+        {
+          "id": "shop_blue_desc",
+          "content": "<outline color=black width=3>包括普通装备,<color=#8dff5a>优秀装备</color></outline>",
+          "valueList": ""
+        },
+        {
+          "id": "shop_purple_desc",
+          "content": "<outline color=black width=3>包括<color=#8dff5a>优秀装备</color>,<color=#47d2ee>稀有装备</color>,<color=#d472fd>史诗装备</color></outline>",
+          "valueList": ""
+        },
+        {
+          "id": "shop_blue_desc_2",
+          "content": "<outline color=black width=3>再开启<color=#8dff5a>{0}</color>次可获得<color=#8dff5a>优秀装备</color></outline>",
+          "valueList": ""
+        },
+        {
+          "id": "shop_purple_desc_2",
+          "content": "<outline color=black width=3>再开启<color=#8dff5a>{0}</color>次可获得<color=#d472fd>史诗装备</color></outline>",
+          "valueList": ""
+        },
+        {
+          "id": "btn_free",
+          "content": "免费",
+          "valueList": ""
+        },
+        {
+          "id": "shop_title_gems",
+          "content": "宝石",
+          "valueList": ""
+        },
+        {
+          "id": "shop_title_coins",
+          "content": "金币",
+          "valueList": ""
+        },
+        {
+          "id": "shop_first_desc",
+          "content": "首充额外送 +{0}",
+          "valueList": ""
+        },
+        {
+          "id": "shop_gem_desc_1",
+          "content": "一些宝石",
+          "valueList": ""
+        },
+        {
+          "id": "shop_gem_desc_2",
+          "content": "一小堆宝石",
+          "valueList": ""
+        },
+        {
+          "id": "shop_gem_desc_3",
+          "content": "一大堆宝石",
+          "valueList": ""
+        },
+        {
+          "id": "shop_gem_desc_4",
+          "content": "一袋宝石",
+          "valueList": ""
+        },
+        {
+          "id": "shop_gem_desc_5",
+          "content": "一大袋宝石",
+          "valueList": ""
+        },
+        {
+          "id": "shop_gem_desc_6",
+          "content": "一箱宝石",
+          "valueList": ""
+        },
+        {
+          "id": "shop_coin_desc_1",
+          "content": "少量金币",
+          "valueList": ""
+        },
+        {
+          "id": "shop_coin_desc_2",
+          "content": "一堆金币",
+          "valueList": ""
+        },
+        {
+          "id": "shop_coin_desc_3",
+          "content": "大量金币",
+          "valueList": ""
+        },
+        {
+          "id": "day",
+          "content": "天",
+          "valueList": ""
+        },
+        {
+          "id": "hour",
+          "content": "时",
+          "valueList": ""
+        },
+        {
+          "id": "minute",
+          "content": "分",
+          "valueList": ""
+        },
+        {
+          "id": "second",
+          "content": "秒",
+          "valueList": ""
+        },
+        {
+          "id": "shop_probs_title",
+          "content": "预览",
+          "valueList": ""
+        },
+        {
+          "id": "shop_prob_item_title_item",
+          "content": "道具",
+          "valueList": ""
+        },
+        {
+          "id": "shop_prob_item_rate",
+          "content": "不含保底概率:",
+          "valueList": ""
+        },
+        {
+          "id": "shop_select_equipment_title",
+          "content": "装备兑换",
+          "valueList": ""
+        },
+        {
+          "id": "shop_select_equipment_btn",
+          "content": "兑换",
+          "valueList": ""
+        },
+        {
+          "id": "btn_skip",
+          "content": "跳过",
+          "valueList": ""
+        },
+        {
+          "id": "btn_continue",
+          "content": "点击继续",
+          "valueList": ""
+        },
+        {
+          "id": "btn_checkout_skip",
+          "content": "跳过动画",
+          "valueList": ""
+        },
+        {
+          "id": "btn_again",
+          "content": "再次开启",
+          "valueList": ""
+        },
+        {
+          "id": "task_title",
+          "content": "日常任务",
+          "valueList": ""
+        },
+        {
+          "id": "task_weekly",
+          "content": "每周任务",
+          "valueList": ""
+        },
+        {
+          "id": "task_daily",
+          "content": "每日任务",
+          "valueList": ""
+        },
+        {
+          "id": "task_claim_all",
+          "content": "全部领取",
+          "valueList": ""
+        },
+        {
+          "id": "task_claim",
+          "content": "领取",
+          "valueList": ""
+        },
+        {
+          "id": "task_claimed",
+          "content": "已领取",
+          "valueList": ""
+        },
+        {
+          "id": "task_reset_tip",
+          "content": "日常任务重置时间剩余:{0}",
+          "valueList": ""
+        },
+        {
+          "id": "task_btn_go",
+          "content": "开始",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1001",
+          "content": "登录1次游戏",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1002",
+          "content": "消耗30体力",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1003",
+          "content": "强化或升级1次装备",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1004",
+          "content": "参加1次工厂副本",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1005",
+          "content": "购买1次金币",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1006",
+          "content": "购买1次体力",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1007",
+          "content": "商店抽取装备1次",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1008",
+          "content": "签到1次",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1009",
+          "content": "参加1次体力副本",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1010",
+          "content": "在线时长超过15分钟",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1011",
+          "content": "领取1次挂机奖励",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1012",
+          "content": "升级1次天赋",
+          "valueList": ""
+        },
+        {
+          "id": "task_desc_1013",
+          "content": "在线时长超过30分钟",
+          "valueList": ""
+        },
+        {
+          "id": "mail_title",
+          "content": "邮件",
+          "valueList": ""
+        },
+        {
+          "id": "mail_claim_all",
+          "content": "一键领取",
+          "valueList": ""
+        },
+        {
+          "id": "mail_delete_all",
+          "content": "一键删除",
+          "valueList": ""
+        },
+        {
+          "id": "mail_claim",
+          "content": "领取",
+          "valueList": ""
+        },
+        {
+          "id": "mail_time_type_1",
+          "content": "刚刚",
+          "valueList": ""
+        },
+        {
+          "id": "mail_time_type_2",
+          "content": "{0}小时以前",
+          "valueList": ""
+        },
+        {
+          "id": "mail_time_type_3",
+          "content": "{0}天{1}小时以前",
+          "valueList": ""
+        },
+        {
+          "id": "mail_claimed",
+          "content": "已领取",
+          "valueList": ""
+        }
+      ]
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

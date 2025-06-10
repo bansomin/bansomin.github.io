@@ -1,0 +1,1921 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "6be+Ol6KBDjqibRfyv3ZLu",
+    "c81s9dPT1ENJsGyvjlphiL"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "ultimate_1005"
+        ],
+        [
+          1,
+          "ultimate_1005",
+          [
+            [
+              -2,
+              [
+                2,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            1051.23,
+            644.27
+          ]
+        ],
+        [
+          4,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "Ultra_1005",
+          "\r\nUltra_1005.png\r\nsize: 501,389\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Ball_00000\r\n  rotate: false\r\n  xy: 397, 260\r\n  size: 102, 103\r\n  orig: 102, 103\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Elc/Electric_00000\r\n  rotate: false\r\n  xy: 394, 76\r\n  size: 75, 72\r\n  orig: 160, 150\r\n  offset: 40, 21\r\n  index: -1\r\nImage/Elc/Electric_00001\r\n  rotate: true\r\n  xy: 404, 151\r\n  size: 107, 90\r\n  orig: 160, 150\r\n  offset: 18, 9\r\n  index: -1\r\nImage/Elc/Electric_00002\r\n  rotate: true\r\n  xy: 144, 243\r\n  size: 144, 126\r\n  orig: 160, 150\r\n  offset: 0, 2\r\n  index: -1\r\nImage/Elc/Electric_00003\r\n  rotate: false\r\n  xy: 2, 241\r\n  size: 140, 146\r\n  orig: 160, 150\r\n  offset: 14, 0\r\n  index: -1\r\nImage/Elc/Electric_00004\r\n  rotate: true\r\n  xy: 272, 260\r\n  size: 127, 123\r\n  orig: 160, 150\r\n  offset: 12, 9\r\n  index: -1\r\nImage/Elc/Electric_00005\r\n  rotate: false\r\n  xy: 272, 150\r\n  size: 130, 108\r\n  orig: 160, 150\r\n  offset: 30, 28\r\n  index: -1\r\nImage/Elc/Electric_00006\r\n  rotate: true\r\n  xy: 2, 76\r\n  size: 82, 110\r\n  orig: 160, 150\r\n  offset: 37, 40\r\n  index: -1\r\nImage/Pen/Pen_00000\r\n  rotate: false\r\n  xy: 214, 187\r\n  size: 52, 54\r\n  orig: 153, 80\r\n  offset: 5, 8\r\n  index: -1\r\nImage/Pen/Pen_00001\r\n  rotate: false\r\n  xy: 208, 7\r\n  size: 77, 69\r\n  orig: 153, 80\r\n  offset: 4, 2\r\n  index: -1\r\nImage/Pen/Pen_00002\r\n  rotate: false\r\n  xy: 208, 78\r\n  size: 97, 70\r\n  orig: 153, 80\r\n  offset: 0, 1\r\n  index: -1\r\nImage/Pen/Pen_00003\r\n  rotate: true\r\n  xy: 287, 10\r\n  size: 63, 73\r\n  orig: 153, 80\r\n  offset: 48, 1\r\n  index: -1\r\nImage/Pen/Pen_00004\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 73, 72\r\n  orig: 153, 80\r\n  offset: 62, 4\r\n  index: -1\r\nImage/Pen/Pen_00005\r\n  rotate: false\r\n  xy: 307, 75\r\n  size: 85, 73\r\n  orig: 153, 80\r\n  offset: 68, 7\r\n  index: -1\r\nImage/Razer_00000\r\n  rotate: false\r\n  xy: 2, 160\r\n  size: 210, 79\r\n  orig: 210, 79\r\n  offset: 0, 0\r\n  index: -1\r\nImage/RedLine_00003\r\n  rotate: false\r\n  xy: 214, 166\r\n  size: 46, 19\r\n  orig: 46, 20\r\n  offset: 0, 1\r\n  index: -1\r\nImage/Ring/Ring_00000\r\n  rotate: false\r\n  xy: 77, 15\r\n  size: 48, 49\r\n  orig: 48, 49\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Ring/Ring_00001\r\n  rotate: false\r\n  xy: 127, 15\r\n  size: 48, 49\r\n  orig: 48, 49\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Ring/Ring_00002\r\n  rotate: false\r\n  xy: 362, 24\r\n  size: 48, 49\r\n  orig: 48, 49\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Ring/Ring_00003\r\n  rotate: false\r\n  xy: 412, 25\r\n  size: 48, 49\r\n  orig: 48, 49\r\n  offset: 0, 0\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 114, 66\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          [
+            "Ultra_1005.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "G1Nbc20LKZx+Nr9tcTfylfDl8PM",
+              "spine": "3.8.99",
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Ball",
+                "parent": "Zong"
+              },
+              {
+                "name": "Elc",
+                "parent": "Zong"
+              },
+              {
+                "name": "RedLine",
+                "parent": "Zong",
+                "x": -19.68
+              },
+              {
+                "name": "Razer",
+                "parent": "Zong",
+                "x": -103.1,
+                "scaleY": 0.7348
+              },
+              {
+                "name": "Pen",
+                "parent": "Zong"
+              },
+              {
+                "name": "Ball2",
+                "parent": "Zong"
+              },
+              {
+                "name": "Ball3",
+                "parent": "Zong",
+                "scaleX": 0.65,
+                "scaleY": 0.65
+              },
+              {
+                "name": "Razer2",
+                "parent": "Zong",
+                "x": -103.1,
+                "scaleY": 0.5081
+              },
+              {
+                "name": "Glow",
+                "parent": "Zong"
+              },
+              {
+                "name": "DGlow2",
+                "parent": "Zong"
+              },
+              {
+                "name": "Glow2",
+                "parent": "Zong"
+              },
+              {
+                "name": "Elc2",
+                "parent": "Zong"
+              },
+              {
+                "name": "Glow3",
+                "parent": "Zong"
+              },
+              {
+                "name": "Ring",
+                "parent": "Zong"
+              },
+              {
+                "name": "Glow4",
+                "parent": "Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/glow2",
+                "bone": "DGlow2"
+              },
+              {
+                "name": "Image/glow1",
+                "bone": "Glow",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/glow5",
+                "bone": "Glow4",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/glow3",
+                "bone": "Glow2",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/glow4",
+                "bone": "Glow3",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Ball_00000",
+                "bone": "Ball"
+              },
+              {
+                "name": "Image/Ball_1",
+                "bone": "Ball3",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Ball_0",
+                "bone": "Ball2"
+              },
+              {
+                "name": "Image/Elc/Electric_00000",
+                "bone": "Elc"
+              },
+              {
+                "name": "Image/Elc/Electric_0",
+                "bone": "Elc2",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/RedLine_00003",
+                "bone": "RedLine"
+              },
+              {
+                "name": "Image/Razer_00000",
+                "bone": "Razer"
+              },
+              {
+                "name": "Image/Razer_0",
+                "bone": "Razer2",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Pen/Pen_00000",
+                "bone": "Pen"
+              },
+              {
+                "name": "Image/Ring/Ring_00000",
+                "bone": "Ring"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Ball_0": {
+                    "Image/Ball_00000": {
+                      "y": 0.5,
+                      "width": 102,
+                      "height": 103
+                    }
+                  },
+                  "Image/Ball_00000": {
+                    "Image/Ball_00000": {
+                      "y": 0.5,
+                      "width": 102,
+                      "height": 103
+                    }
+                  },
+                  "Image/Ball_1": {
+                    "Image/Ball_00000": {
+                      "y": 0.5,
+                      "width": 102,
+                      "height": 103
+                    }
+                  },
+                  "Image/Elc/Electric_0": {
+                    "Image/Elc/Electric_00000": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00001": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00002": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00003": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00004": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00005": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00006": {
+                      "width": 160,
+                      "height": 150
+                    }
+                  },
+                  "Image/Elc/Electric_00000": {
+                    "Image/Elc/Electric_00000": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00001": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00002": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00003": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00004": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00005": {
+                      "width": 160,
+                      "height": 150
+                    },
+                    "Image/Elc/Electric_00006": {
+                      "width": 160,
+                      "height": 150
+                    }
+                  },
+                  "Image/Pen/Pen_00000": {
+                    "Image/Pen/Pen_00000": {
+                      "x": 0.5,
+                      "width": 153,
+                      "height": 80
+                    },
+                    "Image/Pen/Pen_00001": {
+                      "x": 0.5,
+                      "width": 153,
+                      "height": 80
+                    },
+                    "Image/Pen/Pen_00002": {
+                      "x": 0.5,
+                      "width": 153,
+                      "height": 80
+                    },
+                    "Image/Pen/Pen_00003": {
+                      "x": 0.5,
+                      "width": 153,
+                      "height": 80
+                    },
+                    "Image/Pen/Pen_00004": {
+                      "x": 0.5,
+                      "width": 153,
+                      "height": 80
+                    },
+                    "Image/Pen/Pen_00005": {
+                      "x": 0.5,
+                      "width": 153,
+                      "height": 80
+                    }
+                  },
+                  "Image/Razer_0": {
+                    "Image/Razer_00000": {
+                      "x": 103.1,
+                      "y": 0.5,
+                      "width": 210,
+                      "height": 79
+                    }
+                  },
+                  "Image/Razer_00000": {
+                    "Image/Razer_00000": {
+                      "x": 103.1,
+                      "y": 0.5,
+                      "width": 210,
+                      "height": 79
+                    }
+                  },
+                  "Image/RedLine_00003": {
+                    "Image/RedLine_00003": {
+                      "x": 19.68,
+                      "width": 46,
+                      "height": 20
+                    }
+                  },
+                  "Image/Ring/Ring_00000": {
+                    "Image/Ring/Ring_00000": {
+                      "y": 0.5,
+                      "width": 48,
+                      "height": 49
+                    },
+                    "Image/Ring/Ring_00001": {
+                      "y": 0.5,
+                      "width": 48,
+                      "height": 49
+                    },
+                    "Image/Ring/Ring_00002": {
+                      "y": 0.5,
+                      "width": 48,
+                      "height": 49
+                    },
+                    "Image/Ring/Ring_00003": {
+                      "y": 0.5,
+                      "width": 48,
+                      "height": 49
+                    }
+                  },
+                  "Image/glow1": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow2": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow3": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow4": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow5": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/Ball_0": {
+                    "color": [
+                      {
+                        "time": 0.2,
+                        "color": "ed2c2cff"
+                      },
+                      {
+                        "time": 0.2667,
+                        "color": "ffffff65"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.4,
+                        "color": "ffffff65"
+                      },
+                      {
+                        "time": 0.5,
+                        "color": "ed2c2cff"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "ffffff65"
+                      },
+                      {
+                        "time": 0.6667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.7333,
+                        "color": "ffffff65"
+                      },
+                      {
+                        "time": 0.8333,
+                        "color": "ed2c2cff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "ffffff65"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2,
+                        "name": "Image/Ball_00000"
+                      },
+                      {
+                        "time": 1.1,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Ball_00000": {
+                    "color": [
+                      {
+                        "color": "3f7fb2ff"
+                      },
+                      {
+                        "time": 0.1,
+                        "color": "1488f3ff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Ball_00000"
+                      },
+                      {
+                        "time": 1.1,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Ball_1": {
+                    "attachment": [
+                      {
+                        "name": "Image/Ball_00000"
+                      },
+                      {
+                        "time": 1.1,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Elc/Electric_0": {
+                    "color": [
+                      {
+                        "time": 0.2,
+                        "color": "ffe245ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.2333,
+                        "color": "ffe245ff"
+                      },
+                      {
+                        "time": 0.2667,
+                        "color": "092546ff"
+                      },
+                      {
+                        "time": 0.3,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "ffe245ff"
+                      },
+                      {
+                        "time": 0.3667,
+                        "color": "092546ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.4333,
+                        "color": "092546ff"
+                      },
+                      {
+                        "time": 0.4667,
+                        "color": "ffe245ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.5,
+                        "color": "ffe245ff"
+                      },
+                      {
+                        "time": 0.5333,
+                        "color": "092546ff"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "ffe245ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "ffe245ff"
+                      },
+                      {
+                        "time": 0.6333,
+                        "color": "092546ff"
+                      },
+                      {
+                        "time": 0.6667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.7,
+                        "color": "ffe245ff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2,
+                        "name": "Image/Elc/Electric_00000"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Elc/Electric_00001"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Elc/Electric_00002"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Elc/Electric_00003"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": null
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Elc/Electric_00004"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Elc/Electric_00005"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Elc/Electric_00006"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Elc/Electric_00000"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Elc/Electric_00001"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Elc/Electric_00002"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Elc/Electric_00003"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Elc/Electric_00004"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": null
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Elc/Electric_00005"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Elc/Electric_00006"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Elc/Electric_00000": {
+                    "color": [
+                      {
+                        "time": 0.2,
+                        "color": "ffe245ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.2333,
+                        "color": "ffe245ff"
+                      },
+                      {
+                        "time": 0.2667,
+                        "color": "092546ff"
+                      },
+                      {
+                        "time": 0.3,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "ffe245ff"
+                      },
+                      {
+                        "time": 0.3667,
+                        "color": "092546ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.4333,
+                        "color": "092546ff"
+                      },
+                      {
+                        "time": 0.4667,
+                        "color": "ffe245ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.5,
+                        "color": "ffe245ff"
+                      },
+                      {
+                        "time": 0.5333,
+                        "color": "092546ff"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "ffe245ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "ffe245ff"
+                      },
+                      {
+                        "time": 0.6333,
+                        "color": "092546ff"
+                      },
+                      {
+                        "time": 0.6667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.7,
+                        "color": "ffe245ff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2,
+                        "name": "Image/Elc/Electric_00000"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Elc/Electric_00001"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Elc/Electric_00002"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Elc/Electric_00003"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": null
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Elc/Electric_00004"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Elc/Electric_00005"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Elc/Electric_00006"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Elc/Electric_00000"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Elc/Electric_00001"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Elc/Electric_00002"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Elc/Electric_00003"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Elc/Electric_00004"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": null
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Elc/Electric_00005"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Elc/Electric_00006"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Pen/Pen_00000": {
+                    "color": [
+                      {
+                        "time": 1.2333,
+                        "color": "3f63b29c"
+                      },
+                      {
+                        "time": 1.4333,
+                        "color": "3667d3c2"
+                      },
+                      {
+                        "time": 1.6,
+                        "color": "a6a4a400"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Image/Pen/Pen_00000"
+                      },
+                      {
+                        "time": 1.2333,
+                        "name": "Image/Pen/Pen_00001"
+                      },
+                      {
+                        "time": 1.2667,
+                        "name": "Image/Pen/Pen_00002"
+                      },
+                      {
+                        "time": 1.3,
+                        "name": "Image/Pen/Pen_00003"
+                      },
+                      {
+                        "time": 1.3333,
+                        "name": "Image/Pen/Pen_00004"
+                      },
+                      {
+                        "time": 1.3667,
+                        "name": "Image/Pen/Pen_00000"
+                      },
+                      {
+                        "time": 1.4,
+                        "name": "Image/Pen/Pen_00001"
+                      },
+                      {
+                        "time": 1.4333,
+                        "name": "Image/Pen/Pen_00002"
+                      },
+                      {
+                        "time": 1.4667,
+                        "name": "Image/Pen/Pen_00003"
+                      },
+                      {
+                        "time": 1.5,
+                        "name": "Image/Pen/Pen_00004"
+                      },
+                      {
+                        "time": 1.5333,
+                        "name": "Image/Pen/Pen_00000"
+                      },
+                      {
+                        "time": 1.5667,
+                        "name": "Image/Pen/Pen_00001"
+                      },
+                      {
+                        "time": 1.6,
+                        "name": "Image/Pen/Pen_00002"
+                      },
+                      {
+                        "time": 1.6333,
+                        "name": "Image/Pen/Pen_00003"
+                      },
+                      {
+                        "time": 1.6667,
+                        "name": "Image/Pen/Pen_00004"
+                      },
+                      {
+                        "time": 1.7,
+                        "name": "Image/Pen/Pen_00005"
+                      }
+                    ]
+                  },
+                  "Image/Razer_0": {
+                    "color": [
+                      {
+                        "time": 1.1667,
+                        "color": "000f1cff"
+                      },
+                      {
+                        "time": 1.2,
+                        "color": "ffffffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.1333,
+                        "name": "Image/Razer_00000"
+                      },
+                      {
+                        "time": 1.7333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Razer_00000": {
+                    "color": [
+                      {
+                        "time": 1.1667,
+                        "color": "3072c1ff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.1333,
+                        "name": "Image/Razer_00000"
+                      },
+                      {
+                        "time": 1.7333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/RedLine_00003": {
+                    "color": [
+                      {
+                        "time": 0.1667,
+                        "color": "dc1010b0"
+                      },
+                      {
+                        "time": 0.2667,
+                        "color": "dc0f0f40"
+                      },
+                      {
+                        "time": 0.3667,
+                        "color": "dc1010b0"
+                      },
+                      {
+                        "time": 0.4667,
+                        "color": "dc0f0f40"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "dc1010b0"
+                      },
+                      {
+                        "time": 0.7,
+                        "color": "dc0f0f40"
+                      },
+                      {
+                        "time": 0.8,
+                        "color": "dc1010b0"
+                      },
+                      {
+                        "time": 0.8667,
+                        "color": "dc0f0f40"
+                      },
+                      {
+                        "time": 0.9667,
+                        "color": "dc0f0f00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.1667,
+                        "name": "Image/RedLine_00003"
+                      }
+                    ]
+                  },
+                  "Image/Ring/Ring_00000": {
+                    "color": [
+                      {
+                        "time": 0.2,
+                        "color": "f6191984"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "f6191900"
+                      },
+                      {
+                        "time": 0.4667,
+                        "color": "f6191984"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "f6191900"
+                      },
+                      {
+                        "time": 0.7333,
+                        "color": "f6191984"
+                      },
+                      {
+                        "time": 0.8667,
+                        "color": "f6191900"
+                      },
+                      {
+                        "time": 0.9667,
+                        "color": "f6191984"
+                      },
+                      {
+                        "time": 1.1,
+                        "color": "f6191900"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2,
+                        "name": "Image/Ring/Ring_00000"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Ring/Ring_00001"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Ring/Ring_00002"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Ring/Ring_00003"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": null
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Ring/Ring_00000"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Ring/Ring_00001"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Ring/Ring_00002"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Ring/Ring_00003"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": null
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Ring/Ring_00000"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Ring/Ring_00001"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Ring/Ring_00002"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Ring/Ring_00003"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": null
+                      },
+                      {
+                        "time": 0.9667,
+                        "name": "Image/Ring/Ring_00000"
+                      },
+                      {
+                        "time": 1,
+                        "name": "Image/Ring/Ring_00001"
+                      },
+                      {
+                        "time": 1.0333,
+                        "name": "Image/Ring/Ring_00002"
+                      },
+                      {
+                        "time": 1.0667,
+                        "name": "Image/Ring/Ring_00003"
+                      },
+                      {
+                        "time": 1.1,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow1": {
+                    "color": [
+                      {
+                        "time": 0.1667,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "1498ffc3"
+                      },
+                      {
+                        "time": 0.5333,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 0.7,
+                        "color": "1498ffc3"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 1.1333,
+                        "color": "1398ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.1667,
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "color": [
+                      {
+                        "time": 0.1667,
+                        "color": "0128a0ff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.8667,
+                        "color": "0128a0ff"
+                      },
+                      {
+                        "time": 1.1333,
+                        "color": "1398ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.1667,
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow3": {
+                    "color": [
+                      {
+                        "time": 1.2,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 1.3667,
+                        "color": "1498ffc3"
+                      },
+                      {
+                        "time": 1.5,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 1.7,
+                        "color": "05559400"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow4": {
+                    "color": [
+                      {
+                        "time": 1.2,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 1.2333,
+                        "color": "05559400"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow5": {
+                    "color": [
+                      {
+                        "time": 0.1667,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 0.3333,
+                        "color": "1498ffc3"
+                      },
+                      {
+                        "time": 0.5333,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 0.7,
+                        "color": "1498ffc3"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "1598ffff"
+                      },
+                      {
+                        "time": 1.1333,
+                        "color": "1398ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.1667,
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Ball": {
+                    "translate": [
+                      {
+                        "x": 112.74,
+                        "y": 106.81
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.15,
+                        "y": 0.15,
+                        "curve": 0.12,
+                        "c2": 0.47,
+                        "c3": 0.719
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 1.14,
+                        "y": 1.14
+                      },
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.92,
+                        "y": 0.932
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 1.059,
+                        "y": 1.078
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.98,
+                        "y": 0.98
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 1.085,
+                        "y": 1.053
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 0.209,
+                        "y": 0.209
+                      }
+                    ]
+                  },
+                  "Ball3": {
+                    "translate": [
+                      {
+                        "x": 112.74,
+                        "y": 106.81
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.15,
+                        "y": 0.15,
+                        "curve": 0.12,
+                        "c2": 0.47,
+                        "c3": 0.719
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 1.14,
+                        "y": 1.14
+                      },
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 0.92,
+                        "y": 0.932
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 1.059,
+                        "y": 1.078
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.98,
+                        "y": 0.98
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 1.085,
+                        "y": 1.053
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 0.209,
+                        "y": 0.209
+                      }
+                    ]
+                  },
+                  "Elc": {
+                    "translate": [
+                      {
+                        "time": 0.2,
+                        "x": 106.83,
+                        "y": 114.81
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2,
+                        "x": 1.06,
+                        "y": 1.06
+                      }
+                    ]
+                  },
+                  "Ball2": {
+                    "translate": [
+                      {
+                        "time": 0.2,
+                        "x": 648.63,
+                        "y": 104.93
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 0.48,
+                        "y": 0.46
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 0.28,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 0.48,
+                        "y": 0.46
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 0.28,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.48,
+                        "y": 0.46
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 0.28,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 0.48,
+                        "y": 0.46
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 0.28,
+                        "y": 0.3
+                      }
+                    ]
+                  },
+                  "Razer": {
+                    "translate": [
+                      {
+                        "time": 1.1333,
+                        "x": 211.76,
+                        "y": 112.46
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 208.17,
+                        "y": 110.67
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.1333,
+                        "x": 1.236,
+                        "y": 4.565
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 4.374,
+                        "y": 3.737
+                      },
+                      {
+                        "time": 1.2,
+                        "x": 6.417,
+                        "y": 2.523
+                      },
+                      {
+                        "time": 1.2667,
+                        "x": 6.417,
+                        "y": 1.915
+                      },
+                      {
+                        "time": 1.3667,
+                        "x": 6.417,
+                        "y": 3.085
+                      },
+                      {
+                        "time": 1.4333,
+                        "x": 6.417,
+                        "y": 1.911
+                      },
+                      {
+                        "time": 1.4667,
+                        "x": 6.417,
+                        "y": 2.734,
+                        "curve": 0.756,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.7333,
+                        "x": 6.417,
+                        "y": -0.059
+                      }
+                    ]
+                  },
+                  "RedLine": {
+                    "translate": [
+                      {
+                        "time": 0.1667,
+                        "x": 184.37,
+                        "y": 102.03
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1667
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 11.585,
+                        "y": 0.513
+                      }
+                    ]
+                  },
+                  "Razer2": {
+                    "translate": [
+                      {
+                        "time": 1.1333,
+                        "x": 211.76,
+                        "y": 112.46
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 216.28,
+                        "y": 111.6
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.1333,
+                        "x": 1.236,
+                        "y": 4.565
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 4.374,
+                        "y": 3.737
+                      },
+                      {
+                        "time": 1.2,
+                        "x": 6.417,
+                        "y": 2.523
+                      },
+                      {
+                        "time": 1.2667,
+                        "x": 6.417,
+                        "y": 1.915
+                      },
+                      {
+                        "time": 1.3667,
+                        "x": 6.417,
+                        "y": 3.085
+                      },
+                      {
+                        "time": 1.4333,
+                        "x": 6.417,
+                        "y": 1.911
+                      },
+                      {
+                        "time": 1.4667,
+                        "x": 6.417,
+                        "y": 2.734,
+                        "curve": 0.756,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.7333,
+                        "x": 6.417,
+                        "y": -0.059
+                      }
+                    ]
+                  },
+                  "Pen": {
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 320.19,
+                        "y": 143.17
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 3.196,
+                        "y": 3.196
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "translate": [
+                      {
+                        "time": 0.1667,
+                        "x": 112.07,
+                        "y": 113.21
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1667,
+                        "x": 2,
+                        "y": 2
+                      }
+                    ]
+                  },
+                  "DGlow2": {
+                    "translate": [
+                      {
+                        "time": 0.1667,
+                        "x": 112.07,
+                        "y": 113.21
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1667,
+                        "x": 2.14,
+                        "y": 2.2
+                      }
+                    ],
+                    "shear": [
+                      {
+                        "time": 0.1667,
+                        "y": 1.2
+                      }
+                    ]
+                  },
+                  "Glow2": {
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 492.03,
+                        "y": 113.21
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 13.465,
+                        "y": 3.818
+                      }
+                    ]
+                  },
+                  "Elc2": {
+                    "translate": [
+                      {
+                        "time": 0.2,
+                        "x": 106.83,
+                        "y": 114.81
+                      }
+                    ]
+                  },
+                  "Glow3": {
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 492.03,
+                        "y": 134.49
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 13.465,
+                        "y": 5.714
+                      }
+                    ]
+                  },
+                  "Ring": {
+                    "translate": [
+                      {
+                        "time": 0.2,
+                        "x": 648.86,
+                        "y": 102.82
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2,
+                        "x": 1.2,
+                        "y": 1.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 1.5,
+                        "y": 1.5
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 1.2,
+                        "y": 1.2
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 1.5,
+                        "y": 1.5
+                      },
+                      {
+                        "time": 0.6,
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 1.2,
+                        "y": 1.2
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 1.5,
+                        "y": 1.5
+                      },
+                      {
+                        "time": 0.8667,
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": 1.2,
+                        "y": 1.2
+                      },
+                      {
+                        "time": 1,
+                        "x": 1.5,
+                        "y": 1.5
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 2,
+                        "y": 2
+                      }
+                    ]
+                  },
+                  "Glow4": {
+                    "translate": [
+                      {
+                        "time": 0.1667,
+                        "x": 112.07,
+                        "y": 113.21
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1667,
+                        "x": 2,
+                        "y": 2
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 1.2,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

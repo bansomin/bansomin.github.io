@@ -1,0 +1,8366 @@
+[
+  1,
+  [
+    "ecpdLyjvZBwrvm+cedCcQy",
+    "f0BIwQ8D5Ml7nTNQbh1YlS",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "e97GVMl6JHh5Ml5qEDdSGa",
+    "29FYIk+N1GYaeWH/q1NxQO",
+    "d0b8yR2vdPc5xvhAVPSM9c",
+    "95BKKkzFhF+rY58iCo592A",
+    "d9N46YMypEfoTmcOHs1cIU",
+    "43OMlPyQBORoPJ1+TTllVZ",
+    "cb9YGzC2xJg6/0iAIZXtu/",
+    "ads/GYcXpFkZQhOlS5cJgn",
+    "39URLZNh9CKaBu9bTSoTpM",
+    "c0GXeGhn9CDpcayKWa8Fk0",
+    "04KxIEoaxKY5IFT6TFqc7L",
+    "672n9/ZFhA4aaaUfh1E15B",
+    "f7RUAylwJLs51QtzbWWOij",
+    "b6viS2bZlBwZwKp59Kr3jo",
+    "2dBVqpZstCZq/yzXrnHl1Z",
+    "3bAPKlK0JGO6RYzNVOunAl",
+    "19atR4obBM7aIBm0LSO+Mg",
+    "e683d4e5-f4ea-42eb-b8dc-1e70d5669694@6c48a",
+    "f95wrxZXVJ14Ki2B88pnGd",
+    "cf+d2J0mlANqpwAI4goIA+",
+    "c6Zf352rVNs7r005E5dyr7",
+    "1cxMb66FtDw7nqYYb0/Ghf",
+    "41yO7p3VtFnK/SKYN98ytX",
+    "a7vGk+09xP1o8Ub+rLPUPR",
+    "ebMVzjgKFNY5F0CHN2ag5R",
+    "18Jb5vDl9Al4Tfcx5I9ALQ"
+  ],
+  [
+    "node",
+    "_spriteFrame",
+    "_N$skeletonData",
+    "_parent",
+    "_N$normalSprite",
+    "_N$pressedSprite",
+    "_N$hoverSprite",
+    "_N$disabledSprite",
+    "_N$file",
+    "root",
+    "label",
+    "AssetRawUrl",
+    "whiteBgPrefab",
+    "ultimateProgressBar",
+    "hpProgressBar",
+    "dialogueRootNode",
+    "valueRootNode",
+    "areaRootNode",
+    "abilityUpSpine",
+    "toxicSpine",
+    "stunNode",
+    "amplifiedDamageNode",
+    "attackSpeedNode",
+    "rebornSpine",
+    "boomRootNode",
+    "chargeSpine",
+    "roleSpine",
+    "basketSpine",
+    "battleSmokeSpine",
+    "emergencySmallSpine",
+    "emergencySpine",
+    "data"
+  ],
+  [
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_active",
+        "_objFlags",
+        "_prefab",
+        "_components",
+        "_contentSize",
+        "_parent",
+        "_children",
+        "_trs",
+        "_anchorPoint",
+        "_color"
+      ],
+      0,
+      4,
+      9,
+      5,
+      1,
+      2,
+      7,
+      5,
+      5
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_active",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_parent",
+        "_trs",
+        "_children",
+        "_color",
+        "_anchorPoint"
+      ],
+      1,
+      12,
+      4,
+      5,
+      1,
+      7,
+      2,
+      5,
+      5
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "_preCacheMode",
+        "_animationName",
+        "defaultSkin",
+        "premultipliedAlpha",
+        "defaultAnimation",
+        "timeScale",
+        "loop",
+        "_playTimes",
+        "node",
+        "_materials",
+        "_N$skeletonData"
+      ],
+      -5,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.Sprite",
+      [
+        "_sizeMode",
+        "_type",
+        "_fillRange",
+        "node",
+        "_materials",
+        "_spriteFrame"
+      ],
+      0,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.Label",
+      [
+        "_fontSize",
+        "_N$horizontalAlign",
+        "_N$verticalAlign",
+        "_lineHeight",
+        "_isSystemFontUsed",
+        "_string",
+        "_underlineHeight",
+        "_enableWrapText",
+        "_N$overflow",
+        "_N$cacheMode",
+        "node",
+        "_materials"
+      ],
+      -7,
+      1,
+      3
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      1,
+      2,
+      4,
+      5
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "fileId",
+        "root"
+      ],
+      2,
+      1
+    ],
+    [
+      "cc.Layout",
+      [
+        "_resize",
+        "_N$layoutType",
+        "_N$spacingX",
+        "node",
+        "_layoutSize"
+      ],
+      0,
+      1,
+      5
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "01bbaRyGidIPr1YdqgXBp/W",
+      [
+        "node",
+        "emergencySpine",
+        "emergencySmallSpine",
+        "battleSmokeSpine",
+        "basketSpine",
+        "roleSpine",
+        "chargeSpine",
+        "boomRootNode",
+        "rebornSpine",
+        "attackSpeedNode",
+        "amplifiedDamageNode",
+        "stunNode",
+        "toxicSpine",
+        "abilityUpSpine",
+        "areaRootNode",
+        "valueRootNode",
+        "dialogueRootNode",
+        "debuffList",
+        "hpProgressBar",
+        "ultimateProgressBar"
+      ],
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1
+    ],
+    [
+      "31b1b/UIL9Fh6MDH3OgnwEn",
+      [
+        "node",
+        "label"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.Widget",
+      [
+        "alignMode",
+        "_alignFlags",
+        "_originalWidth",
+        "_originalHeight",
+        "node"
+      ],
+      -1,
+      1
+    ],
+    [
+      "5a4f8zRAFVHxJtSB+SI5ZS5",
+      [
+        "node",
+        "AssetRawUrl"
+      ],
+      3,
+      1,
+      6
+    ],
+    [
+      "e8a78uohcVEqol7SeEFJMJt",
+      [
+        "node",
+        "AssetRawUrl"
+      ],
+      3,
+      1,
+      6
+    ],
+    [
+      "cc.LabelOutline",
+      [
+        "_width",
+        "node",
+        "_color"
+      ],
+      2,
+      1,
+      5
+    ],
+    [
+      "cc.Button",
+      [
+        "_N$transition",
+        "node",
+        "clickEvents",
+        "_N$normalColor",
+        "_N$pressedColor",
+        "_N$disabledColor",
+        "_N$target",
+        "_N$normalSprite",
+        "_N$pressedSprite",
+        "_N$hoverSprite",
+        "_N$disabledSprite"
+      ],
+      2,
+      1,
+      9,
+      5,
+      5,
+      5,
+      1,
+      6,
+      6,
+      6,
+      6
+    ],
+    [
+      "cc.ClickEvent",
+      [
+        "_componentId",
+        "handler",
+        "target"
+      ],
+      1,
+      1
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.ProgressBar",
+      [
+        "_N$mode",
+        "_N$progress",
+        "node",
+        "_N$barSprite"
+      ],
+      1,
+      1,
+      1
+    ],
+    [
+      "883d6Uj9ClJx7mKn6SaoXS8",
+      [
+        "_N$direction",
+        "node",
+        "progressBar",
+        "numLab",
+        "aniLabel"
+      ],
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      "20d1f/VTVBHxqVFNZ+1O7Na",
+      [
+        "debuffType",
+        "node",
+        "numLab"
+      ],
+      2,
+      1,
+      1
+    ],
+    [
+      "86f4bwvJtpBbrzbvQdwbeTJ",
+      [
+        "_N$direction",
+        "node",
+        "progressBar",
+        "numLab",
+        "aniLabel"
+      ],
+      2,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  [
+    [
+      6,
+      0,
+      1,
+      2
+    ],
+    [
+      3,
+      1,
+      0,
+      3,
+      4,
+      5,
+      3
+    ],
+    [
+      0,
+      0,
+      2,
+      7,
+      4,
+      3,
+      5,
+      3
+    ],
+    [
+      0,
+      0,
+      1,
+      6,
+      4,
+      3,
+      5,
+      3
+    ],
+    [
+      0,
+      0,
+      1,
+      6,
+      7,
+      4,
+      3,
+      5,
+      8,
+      3
+    ],
+    [
+      0,
+      0,
+      2,
+      6,
+      4,
+      3,
+      10,
+      5,
+      3
+    ],
+    [
+      12,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      15,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      16,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      2
+    ],
+    [
+      17,
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      0,
+      7,
+      1,
+      2,
+      8,
+      9,
+      10,
+      11,
+      8
+    ],
+    [
+      7,
+      0,
+      1,
+      3,
+      4,
+      3
+    ],
+    [
+      2,
+      2,
+      4,
+      0,
+      1,
+      8,
+      9,
+      10,
+      5
+    ],
+    [
+      2,
+      2,
+      4,
+      0,
+      3,
+      1,
+      8,
+      9,
+      10,
+      6
+    ],
+    [
+      4,
+      0,
+      3,
+      4,
+      6,
+      1,
+      2,
+      10,
+      11,
+      7
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      0,
+      0,
+      7,
+      4,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      7,
+      4,
+      3,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      4,
+      3,
+      5,
+      2
+    ],
+    [
+      1,
+      0,
+      5,
+      7,
+      2,
+      3,
+      4,
+      6,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      7,
+      2,
+      3,
+      4,
+      6,
+      3
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      3,
+      4,
+      6,
+      2
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      3,
+      4,
+      9,
+      6,
+      2
+    ],
+    [
+      11,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      3,
+      1,
+      0,
+      2,
+      3,
+      4,
+      4
+    ],
+    [
+      3,
+      3,
+      4,
+      5,
+      1
+    ],
+    [
+      18,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      5,
+      0,
+      3,
+      4,
+      1,
+      2,
+      10,
+      11,
+      7
+    ],
+    [
+      19,
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    [
+      21,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      8,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      9,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      7,
+      4,
+      3,
+      5,
+      9,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      7,
+      4,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      6,
+      4,
+      3,
+      8,
+      3
+    ],
+    [
+      0,
+      0,
+      1,
+      6,
+      4,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      1,
+      6,
+      4,
+      3,
+      5,
+      8,
+      3
+    ],
+    [
+      0,
+      0,
+      6,
+      4,
+      3,
+      5,
+      9,
+      8,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      7,
+      3,
+      5,
+      9,
+      2
+    ],
+    [
+      1,
+      0,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      3,
+      8,
+      4,
+      2
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      3,
+      8,
+      4,
+      6,
+      2
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      10,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      1
+    ],
+    [
+      6,
+      1,
+      1
+    ],
+    [
+      7,
+      0,
+      1,
+      2,
+      3,
+      4,
+      4
+    ],
+    [
+      2,
+      0,
+      1,
+      8,
+      9,
+      3
+    ],
+    [
+      2,
+      2,
+      0,
+      3,
+      5,
+      1,
+      8,
+      9,
+      6
+    ],
+    [
+      2,
+      2,
+      0,
+      1,
+      8,
+      9,
+      4
+    ],
+    [
+      2,
+      2,
+      0,
+      6,
+      3,
+      1,
+      7,
+      8,
+      9,
+      7
+    ],
+    [
+      13,
+      0,
+      1,
+      1
+    ],
+    [
+      14,
+      0,
+      1,
+      1
+    ],
+    [
+      20,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      22,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        [
+          32,
+          "Boss01",
+          "\r\nBoss01.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBody\r\n  rotate: false\r\n  xy: 2, 142\r\n  size: 245, 167\r\n  orig: 245, 167\r\n  offset: 0, 0\r\n  index: -1\r\nBubble_00000\r\n  rotate: false\r\n  xy: 200, 112\r\n  size: 28, 28\r\n  orig: 28, 28\r\n  offset: 0, 0\r\n  index: -1\r\nCir\r\n  rotate: true\r\n  xy: 402, 13\r\n  size: 67, 66\r\n  orig: 67, 66\r\n  offset: 0, 0\r\n  index: -1\r\nDi_00000\r\n  rotate: false\r\n  xy: 396, 233\r\n  size: 67, 68\r\n  orig: 67, 68\r\n  offset: 0, 0\r\n  index: -1\r\nDown\r\n  rotate: true\r\n  xy: 396, 143\r\n  size: 89, 70\r\n  orig: 89, 70\r\n  offset: 0, 0\r\n  index: -1\r\nFish\r\n  rotate: true\r\n  xy: 2, 12\r\n  size: 128, 129\r\n  orig: 128, 129\r\n  offset: 0, 0\r\n  index: -1\r\nFlash_00000\r\n  rotate: true\r\n  xy: 465, 296\r\n  size: 67, 6\r\n  orig: 67, 6\r\n  offset: 0, 0\r\n  index: -1\r\nHead\r\n  rotate: false\r\n  xy: 2, 311\r\n  size: 231, 199\r\n  orig: 255, 221\r\n  offset: 12, 11\r\n  index: -1\r\nHead_Di\r\n  rotate: true\r\n  xy: 249, 142\r\n  size: 225, 145\r\n  orig: 249, 159\r\n  offset: 12, 7\r\n  index: -1\r\nL_Arm\r\n  rotate: 270\r\n  xy: 132, 19\r\n  size: 69, 149\r\n  orig: 69, 149\r\n  offset: 0, 0\r\n  index: -1\r\nLanzi\r\n  rotate: true\r\n  xy: 235, 435\r\n  size: 75, 160\r\n  orig: 75, 160\r\n  offset: 0, 0\r\n  index: -1\r\nOpen/Open_00006\r\n  rotate: false\r\n  xy: 396, 365\r\n  size: 67, 68\r\n  orig: 67, 68\r\n  offset: 0, 0\r\n  index: -1\r\nOpen/Open_00007\r\n  rotate: false\r\n  xy: 397, 443\r\n  size: 67, 67\r\n  orig: 67, 68\r\n  offset: 0, 0\r\n  index: -1\r\nOpen/Open_00008\r\n  rotate: false\r\n  xy: 283, 3\r\n  size: 67, 66\r\n  orig: 67, 68\r\n  offset: 0, 0\r\n  index: -1\r\nOpen/Open_00009\r\n  rotate: false\r\n  xy: 235, 371\r\n  size: 67, 62\r\n  orig: 67, 68\r\n  offset: 0, 2\r\n  index: -1\r\nOpen/Open_00010\r\n  rotate: false\r\n  xy: 304, 376\r\n  size: 67, 57\r\n  orig: 67, 68\r\n  offset: 0, 4\r\n  index: -1\r\nOpen/Open_00011\r\n  rotate: false\r\n  xy: 131, 90\r\n  size: 67, 50\r\n  orig: 67, 68\r\n  offset: 0, 8\r\n  index: -1\r\nOpen/Open_00012\r\n  rotate: false\r\n  xy: 235, 328\r\n  size: 8, 41\r\n  orig: 67, 68\r\n  offset: 0, 12\r\n  index: -1\r\nQuan_00000\r\n  rotate: false\r\n  xy: 230, 113\r\n  size: 27, 27\r\n  orig: 27, 27\r\n  offset: 0, 0\r\n  index: -1\r\nR_Arm\r\n  rotate: 270\r\n  xy: 260, 71\r\n  size: 69, 149\r\n  orig: 69, 149\r\n  offset: 0, 0\r\n  index: -1\r\nShaow_00003\r\n  rotate: false\r\n  xy: 396, 310\r\n  size: 39, 53\r\n  orig: 39, 53\r\n  offset: 0, 0\r\n  index: -1\r\ngai\r\n  rotate: false\r\n  xy: 2, 107\r\n  size: 18, 33\r\n  orig: 18, 33\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Boss01.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "tsjZ5aQCzpYJuCQL7heBW5bTGYw",
+              "spine": "3.8.99",
+              "x": -525.61,
+              "y": -322.13,
+              "width": 1051.23,
+              "height": 710.89,
+              "images": "./images/",
+              "audio": "E:/BIGBIG/键盘侠/Bos/images"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "ZZZong",
+                "parent": "root",
+                "x": 1.62,
+                "scaleX": 1.5,
+                "scaleY": 1.5
+              },
+              {
+                "name": "Zong",
+                "parent": "ZZZong",
+                "scaleX": -0.5,
+                "scaleY": 0.5
+              },
+              {
+                "name": "Zong2",
+                "parent": "Zong",
+                "length": 60.44,
+                "rotation": 7.9,
+                "x": -13.46,
+                "y": 66.6
+              },
+              {
+                "name": "Body",
+                "parent": "Zong2",
+                "length": 167.16,
+                "rotation": 82.75,
+                "x": 11.52,
+                "y": 5.53
+              },
+              {
+                "name": "Head",
+                "parent": "Body",
+                "length": 208.42,
+                "rotation": -10.58,
+                "x": 179.73,
+                "y": 11.53
+              },
+              {
+                "name": "L_Arm",
+                "parent": "Body",
+                "length": 56.45,
+                "rotation": 161.37,
+                "x": 150.25,
+                "y": 133.48
+              },
+              {
+                "name": "Zong6",
+                "parent": "L_Arm",
+                "length": 71.38,
+                "rotation": 8.6,
+                "x": 64.32,
+                "y": 0.03
+              },
+              {
+                "name": "Zong7",
+                "parent": "Zong6",
+                "length": 27.82,
+                "rotation": 20.34,
+                "x": 90.58,
+                "y": 2.14
+              },
+              {
+                "name": "R_Arm",
+                "parent": "Body",
+                "length": 76.98,
+                "rotation": -167.87,
+                "x": 164.56,
+                "y": -135.22
+              },
+              {
+                "name": "Zong9",
+                "parent": "R_Arm",
+                "length": 65.45,
+                "rotation": -8.31,
+                "x": 87.06,
+                "y": -3.44
+              },
+              {
+                "name": "Zong10",
+                "parent": "Zong9",
+                "length": 33.87,
+                "rotation": -11.2,
+                "x": 77.78,
+                "y": -2.07
+              },
+              {
+                "name": "Down",
+                "parent": "Zong2",
+                "length": 9.19,
+                "rotation": -99.29,
+                "x": 7.24,
+                "y": -4.96
+              },
+              {
+                "name": "bone",
+                "parent": "Down",
+                "length": 32.27,
+                "rotation": -2.55,
+                "x": -8.54,
+                "y": -34.72
+              },
+              {
+                "name": "bone2",
+                "parent": "bone",
+                "length": 26.58,
+                "rotation": 12.75,
+                "x": 38.41,
+                "y": 2.28
+              },
+              {
+                "name": "Zong11",
+                "parent": "Down",
+                "length": 31.09,
+                "rotation": 2.76,
+                "x": -7.23,
+                "y": 33.04
+              },
+              {
+                "name": "Zong12",
+                "parent": "Zong11",
+                "length": 21.05,
+                "rotation": 8.71,
+                "x": 37.79,
+                "y": 1.69
+              },
+              {
+                "name": "Zong13",
+                "parent": "Body",
+                "length": 194.69,
+                "rotation": 5.71,
+                "x": 67.79,
+                "y": -211.61
+              },
+              {
+                "name": "Fish",
+                "parent": "Head",
+                "length": 49.36,
+                "rotation": -64.17,
+                "x": 80.79,
+                "y": 71.82
+              },
+              {
+                "name": "Zong16",
+                "parent": "Fish",
+                "length": 60.34,
+                "rotation": -30.29,
+                "x": 59.38,
+                "y": -3.77
+              },
+              {
+                "name": "Zong17",
+                "parent": "Zong16",
+                "length": 28.83,
+                "rotation": 21.67,
+                "x": 76.01,
+                "y": 4.55
+              },
+              {
+                "name": "Fish2",
+                "parent": "Fish",
+                "length": 28.73,
+                "rotation": 39.94,
+                "x": 85.46,
+                "y": 48.91
+              },
+              {
+                "name": "Flash",
+                "parent": "Body",
+                "x": 62.78,
+                "y": 50.38
+              },
+              {
+                "name": "Cir",
+                "parent": "Body",
+                "rotation": -90,
+                "x": 55.33,
+                "y": 19.74
+              },
+              {
+                "name": "Shaow",
+                "parent": "Body",
+                "rotation": -92.4,
+                "x": 52.62,
+                "y": -23.31
+              },
+              {
+                "name": "Door",
+                "parent": "Body",
+                "x": 167.16
+              },
+              {
+                "name": "Di",
+                "parent": "Body",
+                "x": 167.16
+              },
+              {
+                "name": "Flash2",
+                "parent": "Body",
+                "x": 62.78,
+                "y": 50.38
+              },
+              {
+                "name": "B_Zong",
+                "parent": "Head",
+                "x": 208.42
+              },
+              {
+                "name": "Bubble",
+                "parent": "B_Zong",
+                "rotation": 10.8,
+                "x": -167.42,
+                "y": 85.29
+              },
+              {
+                "name": "Bubble2",
+                "parent": "B_Zong",
+                "rotation": 10.8,
+                "x": -167.42,
+                "y": 85.29
+              },
+              {
+                "name": "Bubble3",
+                "parent": "B_Zong",
+                "rotation": 10.8,
+                "x": -167.42,
+                "y": 85.29
+              },
+              {
+                "name": "Fish5",
+                "parent": "Fish",
+                "rotation": -0.64,
+                "x": 32.28,
+                "y": 6.66
+              },
+              {
+                "name": "Fish6",
+                "parent": "Fish",
+                "rotation": -0.64,
+                "x": 35.7,
+                "y": 11.09
+              }
+            ],
+            "slots": [
+              {
+                "name": "Lanzi",
+                "bone": "Zong13",
+                "attachment": "Lanzi"
+              },
+              {
+                "name": "L_Arm",
+                "bone": "L_Arm",
+                "attachment": "L_Arm"
+              },
+              {
+                "name": "Down",
+                "bone": "Down",
+                "attachment": "Down"
+              },
+              {
+                "name": "Head2",
+                "bone": "Head",
+                "color": "ffffff92",
+                "attachment": "Head_Di"
+              },
+              {
+                "name": "Head",
+                "bone": "Head",
+                "attachment": "Head"
+              },
+              {
+                "name": "Fish",
+                "bone": "Fish",
+                "attachment": "Fish"
+              },
+              {
+                "name": "Body",
+                "bone": "Body",
+                "attachment": "Body"
+              },
+              {
+                "name": "R_Arm",
+                "bone": "R_Arm",
+                "attachment": "R_Arm"
+              },
+              {
+                "name": "Di_00000",
+                "bone": "Di"
+              },
+              {
+                "name": "Flash_0",
+                "bone": "Flash2"
+              },
+              {
+                "name": "Flash_00000",
+                "bone": "Flash",
+                "blend": "additive"
+              },
+              {
+                "name": "Cir",
+                "bone": "Cir",
+                "attachment": "Cir"
+              },
+              {
+                "name": "Shaow_00003",
+                "bone": "Shaow",
+                "attachment": "Shaow_00003"
+              },
+              {
+                "name": "Open/Open_00006",
+                "bone": "Door"
+              },
+              {
+                "name": "Bubble_00000",
+                "bone": "Bubble"
+              },
+              {
+                "name": "Bubble_1",
+                "bone": "Bubble3"
+              },
+              {
+                "name": "Bubble_0",
+                "bone": "Bubble2"
+              },
+              {
+                "name": "gai",
+                "bone": "Fish5"
+              },
+              {
+                "name": "Quan_00000",
+                "bone": "Fish6"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Body": {
+                    "Body": {
+                      "x": 108.63,
+                      "y": -0.81,
+                      "rotation": -90,
+                      "width": 350,
+                      "height": 239
+                    }
+                  },
+                  "Bubble_0": {
+                    "Bubble_00000": {
+                      "x": 0.87,
+                      "y": -0.32,
+                      "rotation": 177.73,
+                      "width": 40,
+                      "height": 40
+                    }
+                  },
+                  "Bubble_00000": {
+                    "Bubble_00000": {
+                      "x": 0.87,
+                      "y": -0.32,
+                      "rotation": 177.73,
+                      "width": 40,
+                      "height": 40
+                    }
+                  },
+                  "Bubble_1": {
+                    "Bubble_00000": {
+                      "x": 0.87,
+                      "y": -0.32,
+                      "rotation": 177.73,
+                      "width": 40,
+                      "height": 40
+                    }
+                  },
+                  "Cir": {
+                    "Cir": {
+                      "x": -0.57,
+                      "y": 0.89,
+                      "width": 96,
+                      "height": 94
+                    }
+                  },
+                  "Di_00000": {
+                    "Di_00000": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 95,
+                      "height": 97
+                    }
+                  },
+                  "Down": {
+                    "Down": {
+                      "type": "mesh",
+                      "hull": 14,
+                      "width": 127,
+                      "height": 100,
+                      "uvs": [
+                        1,
+                        0.28498,
+                        1,
+                        0.56862,
+                        0.93576,
+                        1,
+                        0.57328,
+                        1,
+                        0.62381,
+                        0.81695,
+                        0.54471,
+                        0.49053,
+                        0.43047,
+                        0.50169,
+                        0.41511,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0.89232,
+                        0.0724,
+                        0.79188,
+                        0,
+                        0.40965,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "triangles": [
+                        8,
+                        10,
+                        7,
+                        7,
+                        10,
+                        6,
+                        8,
+                        9,
+                        10,
+                        10,
+                        11,
+                        6,
+                        3,
+                        4,
+                        2,
+                        2,
+                        4,
+                        1,
+                        4,
+                        5,
+                        1,
+                        5,
+                        0,
+                        1,
+                        5,
+                        6,
+                        12,
+                        13,
+                        0,
+                        5,
+                        12,
+                        6,
+                        11,
+                        5,
+                        12,
+                        13
+                      ],
+                      "vertices": [
+                        3,
+                        3,
+                        75.04,
+                        -8.27,
+                        0.5737,
+                        15,
+                        1.21,
+                        34.38,
+                        0.18088,
+                        16,
+                        -31.22,
+                        37.85,
+                        0.24542,
+                        3,
+                        3,
+                        71.14,
+                        -36.35,
+                        0.14942,
+                        15,
+                        29.55,
+                        33.7,
+                        0.36091,
+                        16,
+                        -3.27,
+                        32.89,
+                        0.48967,
+                        1,
+                        16,
+                        37.77,
+                        17.27,
+                        1,
+                        1,
+                        16,
+                        29.67,
+                        -28.04,
+                        1,
+                        3,
+                        3,
+                        20.4,
+                        -54.39,
+                        0.0018,
+                        15,
+                        53.24,
+                        -14.65,
+                        0.09857,
+                        16,
+                        12.78,
+                        -18.51,
+                        0.89963,
+                        5,
+                        3,
+                        14.94,
+                        -20.67,
+                        0.52791,
+                        15,
+                        20.37,
+                        -23.92,
+                        0.44024,
+                        16,
+                        -21.12,
+                        -22.66,
+                        0.00949,
+                        13,
+                        20.79,
+                        45.82,
+                        0.00093,
+                        14,
+                        -7.58,
+                        46.36,
+                        0.02143,
+                        4,
+                        3,
+                        0.42,
+                        -19.78,
+                        0.51842,
+                        15,
+                        21.14,
+                        -38.45,
+                        0.04588,
+                        13,
+                        22.9,
+                        31.42,
+                        0.24501,
+                        14,
+                        -8.7,
+                        31.85,
+                        0.19069,
+                        2,
+                        3,
+                        -8.36,
+                        -68.87,
+                        0.00648,
+                        14,
+                        40.25,
+                        22.29,
+                        0.99352,
+                        1,
+                        14,
+                        32.17,
+                        -29.8,
+                        1,
+                        2,
+                        13,
+                        65.63,
+                        -20.43,
+                        0.0023,
+                        14,
+                        21.53,
+                        -28.16,
+                        0.9977,
+                        2,
+                        13,
+                        54.98,
+                        -11.95,
+                        0.51488,
+                        14,
+                        13.01,
+                        -17.53,
+                        0.48512,
+                        1,
+                        13,
+                        17.48,
+                        -23.75,
+                        1,
+                        1,
+                        3,
+                        -46.84,
+                        37.42,
+                        1,
+                        1,
+                        3,
+                        78.95,
+                        19.97,
+                        1
+                      ],
+                      "edges": [
+                        24,
+                        26,
+                        14,
+                        16,
+                        14,
+                        12,
+                        12,
+                        10,
+                        10,
+                        8,
+                        8,
+                        6,
+                        4,
+                        6,
+                        4,
+                        2,
+                        16,
+                        18,
+                        18,
+                        20,
+                        22,
+                        24,
+                        20,
+                        22,
+                        2,
+                        0,
+                        0,
+                        26
+                      ]
+                    }
+                  },
+                  "Fish": {
+                    "Fish": {
+                      "type": "mesh",
+                      "hull": 27,
+                      "width": 183,
+                      "height": 184,
+                      "uvs": [
+                        0.68853,
+                        0.04426,
+                        0.67238,
+                        0.13829,
+                        0.74387,
+                        0.18416,
+                        0.76232,
+                        0.27131,
+                        0.72773,
+                        0.31948,
+                        0.78768,
+                        0.3814,
+                        0.81305,
+                        0.44023,
+                        0.92835,
+                        0.38443,
+                        0.99999,
+                        0.38978,
+                        1,
+                        0.76498,
+                        0.95311,
+                        0.81555,
+                        0.80055,
+                        0.72053,
+                        0.66957,
+                        0.87533,
+                        0.60331,
+                        0.89525,
+                        0.60331,
+                        0.94736,
+                        0.57403,
+                        1,
+                        0.40914,
+                        1,
+                        0.31823,
+                        0.9305,
+                        0.14564,
+                        0.86,
+                        0.03777,
+                        0.75272,
+                        0,
+                        0.65923,
+                        0,
+                        0.47543,
+                        0.11894,
+                        0.24838,
+                        0.35415,
+                        0.17499,
+                        0.39566,
+                        0.07178,
+                        0.49021,
+                        0,
+                        0.63318,
+                        0,
+                        0.4811,
+                        0.21592,
+                        0.57907,
+                        0.24589,
+                        0.67057,
+                        0.31763,
+                        0.79329,
+                        0.49214,
+                        0.79221,
+                        0.56066,
+                        0.78683,
+                        0.6506
+                      ],
+                      "triangles": [
+                        27,
+                        24,
+                        25,
+                        25,
+                        1,
+                        27,
+                        1,
+                        26,
+                        0,
+                        1,
+                        25,
+                        26,
+                        11,
+                        32,
+                        9,
+                        6,
+                        8,
+                        9,
+                        8,
+                        6,
+                        7,
+                        10,
+                        11,
+                        9,
+                        2,
+                        28,
+                        1,
+                        23,
+                        24,
+                        27,
+                        28,
+                        27,
+                        1,
+                        2,
+                        29,
+                        28,
+                        29,
+                        2,
+                        3,
+                        4,
+                        29,
+                        3,
+                        30,
+                        5,
+                        6,
+                        30,
+                        4,
+                        5,
+                        29,
+                        4,
+                        31,
+                        30,
+                        31,
+                        4,
+                        27,
+                        28,
+                        29,
+                        29,
+                        31,
+                        13,
+                        32,
+                        12,
+                        31,
+                        12,
+                        32,
+                        11,
+                        31,
+                        12,
+                        13,
+                        17,
+                        18,
+                        27,
+                        29,
+                        17,
+                        27,
+                        13,
+                        17,
+                        29,
+                        16,
+                        17,
+                        13,
+                        13,
+                        15,
+                        16,
+                        14,
+                        15,
+                        13,
+                        6,
+                        31,
+                        30,
+                        31,
+                        9,
+                        32,
+                        6,
+                        9,
+                        31,
+                        27,
+                        19,
+                        20,
+                        20,
+                        21,
+                        27,
+                        21,
+                        22,
+                        27,
+                        27,
+                        22,
+                        23,
+                        18,
+                        19,
+                        27
+                      ],
+                      "vertices": [
+                        1,
+                        21,
+                        45.72,
+                        -17.65,
+                        1,
+                        1,
+                        21,
+                        29.56,
+                        -24.5,
+                        1,
+                        2,
+                        19,
+                        43.08,
+                        74.65,
+                        0.576,
+                        21,
+                        29.51,
+                        -40.07,
+                        0.424,
+                        3,
+                        18,
+                        133.26,
+                        22.61,
+                        0.01009,
+                        19,
+                        50.49,
+                        60.04,
+                        0.69401,
+                        21,
+                        17.83,
+                        -51.56,
+                        0.2959,
+                        3,
+                        18,
+                        124.82,
+                        15.72,
+                        0.00701,
+                        19,
+                        46.68,
+                        49.84,
+                        0.82074,
+                        21,
+                        6.95,
+                        -51.01,
+                        0.17225,
+                        2,
+                        18,
+                        132.41,
+                        1.85,
+                        0.00003,
+                        19,
+                        60.23,
+                        41.68,
+                        0.99997,
+                        2,
+                        19,
+                        67.52,
+                        32.43,
+                        0.6338,
+                        20,
+                        2.4,
+                        29.04,
+                        0.3662,
+                        2,
+                        19,
+                        85.24,
+                        47.82,
+                        0.01694,
+                        20,
+                        24.55,
+                        36.8,
+                        0.98306,
+                        1,
+                        20,
+                        37.46,
+                        34.31,
+                        1,
+                        1,
+                        20,
+                        29.48,
+                        -34.26,
+                        1,
+                        1,
+                        20,
+                        19.89,
+                        -42.52,
+                        1,
+                        3,
+                        18,
+                        118.26,
+                        -58.98,
+                        0.00132,
+                        19,
+                        78.69,
+                        -17.97,
+                        0.61154,
+                        20,
+                        -5.83,
+                        -21.93,
+                        0.38714,
+                        2,
+                        18,
+                        87.64,
+                        -80.15,
+                        0.0593,
+                        19,
+                        62.93,
+                        -51.7,
+                        0.9407,
+                        2,
+                        18,
+                        74.98,
+                        -80.49,
+                        0.11037,
+                        19,
+                        52.17,
+                        -58.38,
+                        0.88963,
+                        2,
+                        18,
+                        72.46,
+                        -89.74,
+                        0.14149,
+                        19,
+                        54.66,
+                        -67.64,
+                        0.85851,
+                        2,
+                        18,
+                        64.74,
+                        -97.68,
+                        0.15737,
+                        19,
+                        51.99,
+                        -78.39,
+                        0.84263,
+                        2,
+                        18,
+                        35.63,
+                        -89.74,
+                        0.25763,
+                        19,
+                        22.85,
+                        -86.21,
+                        0.74237,
+                        2,
+                        18,
+                        22.94,
+                        -73.02,
+                        0.41109,
+                        19,
+                        3.47,
+                        -78.18,
+                        0.58891,
+                        2,
+                        18,
+                        -4.12,
+                        -52.2,
+                        0.7695,
+                        19,
+                        -30.4,
+                        -73.84,
+                        0.2305,
+                        2,
+                        18,
+                        -17.97,
+                        -27.96,
+                        0.9424,
+                        19,
+                        -54.58,
+                        -59.9,
+                        0.0576,
+                        2,
+                        18,
+                        -20.11,
+                        -9.55,
+                        0.99027,
+                        19,
+                        -65.72,
+                        -45.08,
+                        0.00973,
+                        1,
+                        18,
+                        -11.21,
+                        23.08,
+                        1,
+                        2,
+                        18,
+                        20.78,
+                        57.66,
+                        0.94268,
+                        19,
+                        -64.31,
+                        33.58,
+                        0.05732,
+                        3,
+                        18,
+                        65.86,
+                        59.36,
+                        0.33517,
+                        19,
+                        -26.24,
+                        57.78,
+                        0.48883,
+                        21,
+                        -7.54,
+                        20.9,
+                        0.176,
+                        1,
+                        21,
+                        12.55,
+                        24.74,
+                        1,
+                        1,
+                        21,
+                        33,
+                        17.3,
+                        1,
+                        1,
+                        21,
+                        47.12,
+                        -4.73,
+                        1,
+                        3,
+                        18,
+                        86.29,
+                        45.98,
+                        0.20579,
+                        19,
+                        -1.85,
+                        56.54,
+                        0.79407,
+                        20,
+                        -53.17,
+                        77.05,
+                        0.00014,
+                        2,
+                        18,
+                        102.14,
+                        35.94,
+                        0.08399,
+                        19,
+                        16.89,
+                        55.86,
+                        0.91601,
+                        2,
+                        18,
+                        114.82,
+                        18.81,
+                        0.01666,
+                        19,
+                        36.49,
+                        47.45,
+                        0.98334,
+                        2,
+                        19,
+                        66.51,
+                        22.27,
+                        0.848,
+                        20,
+                        -2.29,
+                        19.97,
+                        0.152,
+                        1,
+                        19,
+                        69.59,
+                        10.04,
+                        1,
+                        2,
+                        19,
+                        72.93,
+                        -6.2,
+                        0.80412,
+                        20,
+                        -6.83,
+                        -8.85,
+                        0.19588
+                      ],
+                      "edges": [
+                        42,
+                        44,
+                        44,
+                        46,
+                        46,
+                        48,
+                        48,
+                        50,
+                        50,
+                        52,
+                        52,
+                        0,
+                        0,
+                        2,
+                        2,
+                        4,
+                        4,
+                        6,
+                        6,
+                        8,
+                        8,
+                        10,
+                        10,
+                        12,
+                        12,
+                        14,
+                        14,
+                        16,
+                        16,
+                        18,
+                        18,
+                        20,
+                        20,
+                        22,
+                        22,
+                        24,
+                        24,
+                        26,
+                        26,
+                        28,
+                        28,
+                        30,
+                        30,
+                        32,
+                        32,
+                        34,
+                        34,
+                        36,
+                        36,
+                        38,
+                        40,
+                        42,
+                        38,
+                        40
+                      ]
+                    }
+                  },
+                  "Flash_0": {
+                    "Flash_00000": {
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 8
+                    }
+                  },
+                  "Flash_00000": {
+                    "Flash_00000": {
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 8
+                    }
+                  },
+                  "Head": {
+                    "Head": {
+                      "x": 105.75,
+                      "y": 5.16,
+                      "rotation": -79.42,
+                      "width": 364,
+                      "height": 316
+                    }
+                  },
+                  "Head2": {
+                    "Head_Di": {
+                      "x": 139.5,
+                      "y": 11.11,
+                      "rotation": -79.42,
+                      "width": 355,
+                      "height": 227
+                    }
+                  },
+                  "L_Arm": {
+                    "L_Arm": {
+                      "type": "mesh",
+                      "hull": 13,
+                      "width": 99,
+                      "height": 213,
+                      "uvs": [
+                        0.89112,
+                        0.07799,
+                        1,
+                        0.23854,
+                        1,
+                        0.84325,
+                        0.81734,
+                        0.91962,
+                        0.6832,
+                        1,
+                        0.36462,
+                        1,
+                        0.20365,
+                        0.943,
+                        0,
+                        0.75284,
+                        0,
+                        0.48169,
+                        0.08627,
+                        0.43649,
+                        0.21035,
+                        0.13878,
+                        0.40821,
+                        0,
+                        0.71003,
+                        0
+                      ],
+                      "triangles": [
+                        10,
+                        11,
+                        12,
+                        0,
+                        10,
+                        12,
+                        10,
+                        0,
+                        1,
+                        1,
+                        9,
+                        10,
+                        7,
+                        8,
+                        9,
+                        2,
+                        9,
+                        1,
+                        7,
+                        9,
+                        2,
+                        3,
+                        7,
+                        2,
+                        6,
+                        7,
+                        3,
+                        5,
+                        6,
+                        3,
+                        4,
+                        5,
+                        3
+                      ],
+                      "vertices": [
+                        1,
+                        6,
+                        -15.98,
+                        18.37,
+                        1,
+                        2,
+                        7,
+                        -44.86,
+                        46.72,
+                        0.04704,
+                        6,
+                        12.98,
+                        39.51,
+                        0.95296,
+                        3,
+                        8,
+                        15.23,
+                        65.84,
+                        0.52432,
+                        7,
+                        81.97,
+                        69.16,
+                        0.47555,
+                        6,
+                        135.03,
+                        80.67,
+                        0.00013,
+                        2,
+                        8,
+                        28,
+                        45.14,
+                        0.7522,
+                        7,
+                        101.15,
+                        54.19,
+                        0.2478,
+                        2,
+                        8,
+                        42.47,
+                        29.01,
+                        0.92773,
+                        7,
+                        120.32,
+                        44.1,
+                        0.07227,
+                        2,
+                        8,
+                        36.83,
+                        -2.02,
+                        0.99997,
+                        7,
+                        125.81,
+                        13.04,
+                        0.00003,
+                        1,
+                        8,
+                        22.03,
+                        -15.53,
+                        1,
+                        2,
+                        8,
+                        -21.43,
+                        -28.12,
+                        0.30445,
+                        7,
+                        80.27,
+                        -31.68,
+                        0.69555,
+                        2,
+                        7,
+                        23.4,
+                        -41.74,
+                        0.99704,
+                        6,
+                        93.69,
+                        -37.75,
+                        0.00296,
+                        2,
+                        7,
+                        12.43,
+                        -35.01,
+                        0.94941,
+                        6,
+                        81.84,
+                        -32.73,
+                        0.05059,
+                        2,
+                        7,
+                        -52.16,
+                        -33.97,
+                        0.0172,
+                        6,
+                        17.83,
+                        -41.35,
+                        0.9828,
+                        1,
+                        6,
+                        -16.44,
+                        -32.24,
+                        1,
+                        1,
+                        6,
+                        -25.99,
+                        -3.92,
+                        1
+                      ],
+                      "edges": [
+                        24,
+                        0,
+                        0,
+                        2,
+                        22,
+                        24,
+                        22,
+                        20,
+                        20,
+                        18,
+                        18,
+                        16,
+                        14,
+                        16,
+                        12,
+                        10,
+                        8,
+                        10,
+                        8,
+                        6,
+                        2,
+                        4,
+                        6,
+                        4,
+                        12,
+                        14
+                      ]
+                    }
+                  },
+                  "Lanzi": {
+                    "Lanzi": {
+                      "x": 115.75,
+                      "y": 18.38,
+                      "rotation": -95.71,
+                      "width": 107,
+                      "height": 229
+                    }
+                  },
+                  "Open/Open_00006": {
+                    "Open/Open_00006": {
+                      "x": 0.5,
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 97
+                    },
+                    "Open/Open_00007": {
+                      "x": 0.5,
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 97
+                    },
+                    "Open/Open_00008": {
+                      "x": 0.5,
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 97
+                    },
+                    "Open/Open_00009": {
+                      "x": 0.5,
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 97
+                    },
+                    "Open/Open_00010": {
+                      "x": 0.5,
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 97
+                    },
+                    "Open/Open_00011": {
+                      "x": 0.5,
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 97
+                    },
+                    "Open/Open_00012": {
+                      "x": 0.5,
+                      "y": -0.5,
+                      "rotation": -90,
+                      "width": 95,
+                      "height": 97
+                    }
+                  },
+                  "Quan_00000": {
+                    "Quan_00000": {
+                      "x": 0.13,
+                      "y": 0.48,
+                      "rotation": -15.26,
+                      "width": 38,
+                      "height": 39
+                    }
+                  },
+                  "R_Arm": {
+                    "R_Arm": {
+                      "type": "mesh",
+                      "hull": 12,
+                      "width": 99,
+                      "height": 213,
+                      "uvs": [
+                        0.85084,
+                        0.25843,
+                        0.90733,
+                        0.45315,
+                        1,
+                        0.48814,
+                        1,
+                        0.74713,
+                        0.83672,
+                        0.9134,
+                        0.64373,
+                        1,
+                        0.2907,
+                        1,
+                        0,
+                        0.84339,
+                        0,
+                        0.20679,
+                        0.14606,
+                        0.0624,
+                        0.33434,
+                        0,
+                        0.61549,
+                        0
+                      ],
+                      "triangles": [
+                        3,
+                        4,
+                        7,
+                        6,
+                        7,
+                        4,
+                        5,
+                        6,
+                        4,
+                        1,
+                        2,
+                        3,
+                        3,
+                        7,
+                        1,
+                        8,
+                        1,
+                        7,
+                        10,
+                        11,
+                        0,
+                        9,
+                        10,
+                        0,
+                        0,
+                        8,
+                        9,
+                        1,
+                        8,
+                        0
+                      ],
+                      "vertices": [
+                        2,
+                        9,
+                        53.39,
+                        41.53,
+                        0.99801,
+                        10,
+                        -39.82,
+                        39.63,
+                        0.00199,
+                        2,
+                        9,
+                        95.11,
+                        38.29,
+                        0.51728,
+                        10,
+                        1.94,
+                        42.45,
+                        0.48272,
+                        2,
+                        9,
+                        104.33,
+                        45.69,
+                        0.35533,
+                        10,
+                        9.98,
+                        51.11,
+                        0.64467,
+                        3,
+                        9,
+                        158.26,
+                        34.1,
+                        0.01684,
+                        10,
+                        65.03,
+                        47.44,
+                        0.83667,
+                        11,
+                        -22.13,
+                        46.09,
+                        0.14649,
+                        2,
+                        10,
+                        99.29,
+                        28.96,
+                        0.21655,
+                        11,
+                        15.07,
+                        34.61,
+                        0.78345,
+                        2,
+                        10,
+                        116.42,
+                        8.66,
+                        0.01015,
+                        11,
+                        35.82,
+                        18.03,
+                        0.98985,
+                        2,
+                        10,
+                        114.1,
+                        -26.21,
+                        0.00338,
+                        11,
+                        40.31,
+                        -16.63,
+                        0.99662,
+                        2,
+                        10,
+                        78.9,
+                        -52.7,
+                        0.38805,
+                        11,
+                        10.93,
+                        -49.45,
+                        0.61195,
+                        2,
+                        9,
+                        24.94,
+                        -38.51,
+                        0.96655,
+                        10,
+                        -56.4,
+                        -43.68,
+                        0.03345,
+                        2,
+                        9,
+                        -2.09,
+                        -17.91,
+                        1,
+                        10,
+                        -86.12,
+                        -27.21,
+                        0,
+                        1,
+                        9,
+                        -11.17,
+                        3.1,
+                        1,
+                        1,
+                        9,
+                        -5.33,
+                        30.32,
+                        1
+                      ],
+                      "edges": [
+                        22,
+                        0,
+                        0,
+                        2,
+                        2,
+                        4,
+                        4,
+                        6,
+                        8,
+                        10,
+                        10,
+                        12,
+                        20,
+                        22,
+                        20,
+                        18,
+                        14,
+                        16,
+                        18,
+                        16,
+                        6,
+                        8,
+                        12,
+                        14
+                      ]
+                    }
+                  },
+                  "Shaow_00003": {
+                    "Shaow_00003": {
+                      "x": -23.79,
+                      "y": 0.5,
+                      "width": 56,
+                      "height": 75
+                    }
+                  },
+                  "gai": {
+                    "gai": {
+                      "x": 0.13,
+                      "y": 0.48,
+                      "rotation": -15.26,
+                      "width": 26,
+                      "height": 47
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Shoot": {}
+            },
+            "animations": {
+              "Death": {
+                "slots": {
+                  "Quan_00000": {
+                    "color": [
+                      {
+                        "time": 0.3333,
+                        "color": "1c0000ff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3333,
+                        "name": "Quan_00000"
+                      }
+                    ]
+                  },
+                  "Shaow_00003": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "gai": {
+                    "attachment": [
+                      {
+                        "time": 0.3333,
+                        "name": "gai"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong2": {
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "curve": 0.768,
+                        "c2": 0.01,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5,
+                        "x": -0.61,
+                        "y": -46.36
+                      }
+                    ]
+                  },
+                  "Body": {
+                    "rotate": [
+                      {
+                        "curve": 0.395,
+                        "c2": 0.04,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2,
+                        "angle": -9.13,
+                        "curve": 0.395,
+                        "c2": 0.04,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -12.3,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": 21.06
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 12.15,
+                        "y": -12.14,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 12.15,
+                        "y": -12.14
+                      }
+                    ]
+                  },
+                  "L_Arm": {
+                    "rotate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -23.43,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.4667,
+                        "angle": 14.3,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": 8.76,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8333,
+                        "angle": 9.82
+                      }
+                    ]
+                  },
+                  "Zong6": {
+                    "rotate": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": 15.72
+                      },
+                      {
+                        "time": 0.4667,
+                        "angle": 29.28
+                      },
+                      {
+                        "time": 0.7333,
+                        "angle": 11.44
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": 25.72
+                      }
+                    ]
+                  },
+                  "Zong7": {
+                    "rotate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.4667,
+                        "angle": 15.35
+                      },
+                      {
+                        "time": 0.7333,
+                        "angle": -5.99
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": 14.46
+                      }
+                    ]
+                  },
+                  "R_Arm": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.2667,
+                        "angle": -21.44
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": 11.59
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": -7.6
+                      }
+                    ]
+                  },
+                  "Zong9": {
+                    "rotate": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -17.85
+                      },
+                      {
+                        "time": 0.5667,
+                        "angle": -8.77
+                      },
+                      {
+                        "time": 0.7667,
+                        "angle": -36.26
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": -12.78
+                      }
+                    ]
+                  },
+                  "bone": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "curve": 0.505,
+                        "c3": 0.823,
+                        "c4": 0.91
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -68.12
+                      }
+                    ]
+                  },
+                  "bone2": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "curve": 0.723,
+                        "c2": 0.01,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -23.52
+                      }
+                    ]
+                  },
+                  "Zong11": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "curve": 0.545,
+                        "c2": 0.01,
+                        "c3": 0.877,
+                        "c4": 0.92
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": 68.94
+                      }
+                    ]
+                  },
+                  "Zong12": {
+                    "rotate": [
+                      {
+                        "time": 0.2667,
+                        "curve": 0.586,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": 7.32
+                      }
+                    ]
+                  },
+                  "Zong13": {
+                    "rotate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -9.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.5,
+                        "x": -151.1,
+                        "y": 25.32
+                      }
+                    ]
+                  },
+                  "Fish": {
+                    "rotate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": -43.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.4,
+                        "x": -4.98,
+                        "y": -1.93,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 97.21,
+                        "y": 15.51
+                      }
+                    ]
+                  },
+                  "Zong16": {
+                    "rotate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": -2.51
+                      }
+                    ]
+                  },
+                  "Zong17": {
+                    "rotate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": -21.24
+                      }
+                    ]
+                  },
+                  "Fish2": {
+                    "rotate": [
+                      {
+                        "time": 0.2667
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": -31.9
+                      }
+                    ]
+                  },
+                  "Fish5": {
+                    "translate": [
+                      {
+                        "time": 0.3333,
+                        "x": 0.71,
+                        "y": -4.8
+                      }
+                    ]
+                  },
+                  "Fish6": {
+                    "rotate": [
+                      {
+                        "time": 0.3333,
+                        "angle": -160.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3333,
+                        "x": -7.97,
+                        "y": -3.96
+                      }
+                    ]
+                  }
+                }
+              },
+              "Idle": {
+                "slots": {
+                  "Bubble_0": {
+                    "color": [
+                      {
+                        "time": 0.4667,
+                        "color": "ffffff48"
+                      },
+                      {
+                        "time": 1.1333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.3,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.4667,
+                        "name": "Bubble_00000"
+                      }
+                    ]
+                  },
+                  "Bubble_00000": {
+                    "color": [
+                      {
+                        "color": "ffffff4b"
+                      },
+                      {
+                        "time": 0.4333,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.0667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.1333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Bubble_00000"
+                      }
+                    ]
+                  },
+                  "Bubble_1": {
+                    "color": [
+                      {
+                        "time": 1.0667,
+                        "color": "ffffff73"
+                      },
+                      {
+                        "time": 1.5667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.3333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.0667,
+                        "name": "Bubble_00000"
+                      }
+                    ]
+                  },
+                  "Shaow_00003": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Bubble3": {
+                    "translate": [
+                      {},
+                      {
+                        "time": 1.0667,
+                        "x": 58,
+                        "y": -177.61
+                      },
+                      {
+                        "time": 1.6667,
+                        "x": 101.52,
+                        "y": -169.31
+                      },
+                      {
+                        "time": 2.3333,
+                        "x": 117.58,
+                        "y": -166.24
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 1.0667,
+                        "x": 0.4,
+                        "y": 0.4
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": 0.6,
+                        "y": 0.6
+                      },
+                      {
+                        "time": 2.3333,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "Bubble2": {
+                    "translate": [
+                      {
+                        "time": 0.4667,
+                        "x": 3.75,
+                        "y": -65.15
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": 39.22,
+                        "y": -58.38
+                      },
+                      {
+                        "time": 2.3333,
+                        "x": 59.92,
+                        "y": -54.43
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.4667,
+                        "x": 0.4,
+                        "y": 0.4
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.3,
+                        "x": 0.3,
+                        "y": 0.3
+                      }
+                    ]
+                  },
+                  "Bubble": {
+                    "translate": [
+                      {
+                        "x": -3.82,
+                        "y": -0.73
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": 55.11,
+                        "y": 10.51
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": 76.96,
+                        "y": 14.68
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.9667
+                      },
+                      {
+                        "time": 2,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ]
+                  },
+                  "Fish2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.3333,
+                        "angle": 11
+                      },
+                      {
+                        "time": 0.7667,
+                        "angle": -12.65
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": 14.82
+                      },
+                      {
+                        "time": 1.7667,
+                        "angle": -11.76
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ]
+                  },
+                  "Zong17": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.3333,
+                        "angle": 7.84
+                      },
+                      {
+                        "time": 0.7667,
+                        "angle": -12.77
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": 2
+                      },
+                      {
+                        "time": 1.7667,
+                        "angle": -13.78
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ]
+                  },
+                  "Zong16": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.3333,
+                        "angle": 1.91
+                      },
+                      {
+                        "time": 0.7667,
+                        "angle": -1.83
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": 4.92
+                      },
+                      {
+                        "time": 1.7667,
+                        "angle": -4.68
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ]
+                  },
+                  "Fish": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.7667,
+                        "angle": -1.87
+                      },
+                      {
+                        "time": 1.6,
+                        "angle": -3.24
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ],
+                    "translate": [
+                      {},
+                      {
+                        "time": 0.8,
+                        "x": 4.85,
+                        "y": 1.03
+                      },
+                      {
+                        "time": 1.6333,
+                        "x": -3.77,
+                        "y": 1.4
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ]
+                  },
+                  "Zong13": {
+                    "rotate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1667,
+                        "angle": 2.38,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "curve": 0.251,
+                        "c3": 0.624,
+                        "c4": 0.49
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": -3.24,
+                        "y": -0.46,
+                        "curve": 0.374,
+                        "c2": 0.49,
+                        "c3": 0.751
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ]
+                  },
+                  "Zong10": {
+                    "rotate": [
+                      {
+                        "angle": 1.84,
+                        "curve": 0.378,
+                        "c2": 0.61,
+                        "c3": 0.721
+                      },
+                      {
+                        "time": 0.2667,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.4333,
+                        "angle": 11.39,
+                        "curve": 0.242,
+                        "c3": 0.672,
+                        "c4": 0.69
+                      },
+                      {
+                        "time": 2.3333,
+                        "angle": 1.84
+                      }
+                    ]
+                  },
+                  "Zong9": {
+                    "rotate": [
+                      {
+                        "angle": 0.78,
+                        "curve": 0.372,
+                        "c2": 0.62,
+                        "c3": 0.711
+                      },
+                      {
+                        "time": 0.2,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.3667,
+                        "angle": 7.79,
+                        "curve": 0.243,
+                        "c3": 0.688,
+                        "c4": 0.74
+                      },
+                      {
+                        "time": 2.3333,
+                        "angle": 0.78
+                      }
+                    ]
+                  },
+                  "R_Arm": {
+                    "rotate": [
+                      {
+                        "angle": 0.65,
+                        "curve": 0.363,
+                        "c2": 0.64,
+                        "c3": 0.698
+                      },
+                      {
+                        "time": 0.1333,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.3,
+                        "angle": 11.95,
+                        "curve": 0.245,
+                        "c3": 0.706,
+                        "c4": 0.81
+                      },
+                      {
+                        "time": 2.3333,
+                        "angle": 0.65
+                      }
+                    ]
+                  },
+                  "Zong7": {
+                    "rotate": [
+                      {
+                        "angle": -0.67,
+                        "curve": 0.363,
+                        "c2": 0.64,
+                        "c3": 0.698
+                      },
+                      {
+                        "time": 0.1333,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.3,
+                        "angle": -12.46,
+                        "curve": 0.245,
+                        "c3": 0.706,
+                        "c4": 0.81
+                      },
+                      {
+                        "time": 2.3333,
+                        "angle": -0.67
+                      }
+                    ]
+                  },
+                  "Zong6": {
+                    "rotate": [
+                      {
+                        "angle": -0.12,
+                        "curve": 0.35,
+                        "c2": 0.65,
+                        "c3": 0.684
+                      },
+                      {
+                        "time": 0.0667,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.2333,
+                        "angle": -5.99,
+                        "curve": 0.247,
+                        "c3": 0.727,
+                        "c4": 0.9
+                      },
+                      {
+                        "time": 2.3333,
+                        "angle": -0.12
+                      }
+                    ]
+                  },
+                  "L_Arm": {
+                    "rotate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1667,
+                        "angle": -11.15,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ]
+                  },
+                  "Body": {
+                    "rotate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1667,
+                        "angle": -2.72,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 1.018,
+                        "y": 1.027,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 2.3333
+                      }
+                    ]
+                  }
+                }
+              },
+              "Run": {
+                "slots": {
+                  "Shaow_00003": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong2": {
+                    "translate": [
+                      {
+                        "x": -0.42,
+                        "y": 1.67
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": -0.42,
+                        "y": -0.94
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": -0.42,
+                        "y": 1.67,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.2,
+                        "x": -0.42,
+                        "y": 1.67
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 0.1,
+                        "y": -0.94
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": -0.42,
+                        "y": 1.67
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 0.63,
+                        "y": 2.71
+                      }
+                    ]
+                  },
+                  "Body": {
+                    "rotate": [
+                      {
+                        "angle": 2.68
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": 1.48
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": 2.68
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -0.87,
+                        "y": -6.84
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": -0.18,
+                        "y": -1.43
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": -0.87,
+                        "y": -6.84
+                      }
+                    ]
+                  },
+                  "L_Arm": {
+                    "rotate": [
+                      {
+                        "angle": 19.31,
+                        "curve": 0.278,
+                        "c2": 0.02,
+                        "c3": 0.42,
+                        "c4": 0.94
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -15.39
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": 19.31
+                      }
+                    ]
+                  },
+                  "Zong6": {
+                    "rotate": [
+                      {
+                        "angle": 8.37
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": 4.22
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": 8.37
+                      }
+                    ]
+                  },
+                  "Zong7": {
+                    "rotate": [
+                      {
+                        "angle": 21.59
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -27.64
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": 21.59
+                      }
+                    ]
+                  },
+                  "R_Arm": {
+                    "rotate": [
+                      {
+                        "angle": -24.62,
+                        "curve": 0.672,
+                        "c2": 0.01,
+                        "c3": 0.502
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": 19.14
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": -24.62
+                      }
+                    ]
+                  },
+                  "Zong9": {
+                    "rotate": [
+                      {
+                        "angle": -3.95
+                      },
+                      {
+                        "time": 0.1333,
+                        "angle": -8.75
+                      },
+                      {
+                        "time": 0.4,
+                        "angle": 0.85
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": -3.95
+                      }
+                    ]
+                  },
+                  "Zong10": {
+                    "rotate": [
+                      {
+                        "angle": 4.78,
+                        "curve": 0.196,
+                        "c2": 0.57,
+                        "c3": 0.469
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -20.04,
+                        "curve": 0.415,
+                        "c2": 0.31,
+                        "c3": 0.636,
+                        "c4": 0.69
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": 4.78
+                      }
+                    ]
+                  },
+                  "bone": {
+                    "rotate": [
+                      {
+                        "angle": -35.4
+                      },
+                      {
+                        "time": 0.1667,
+                        "angle": -16.81
+                      },
+                      {
+                        "time": 0.3667,
+                        "angle": 34.73
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": -35.4
+                      }
+                    ]
+                  },
+                  "bone2": {
+                    "rotate": [
+                      {
+                        "angle": -4.45
+                      },
+                      {
+                        "time": 0.1667,
+                        "angle": 22.67
+                      },
+                      {
+                        "time": 0.3667,
+                        "angle": 2.99
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": -4.45
+                      }
+                    ]
+                  },
+                  "Zong11": {
+                    "rotate": [
+                      {
+                        "angle": 28.85
+                      },
+                      {
+                        "time": 0.1667,
+                        "angle": -21.51
+                      },
+                      {
+                        "time": 0.3,
+                        "angle": -50.11
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": 28.85
+                      }
+                    ]
+                  },
+                  "Zong12": {
+                    "rotate": [
+                      {
+                        "angle": 6.8
+                      },
+                      {
+                        "time": 0.1667,
+                        "angle": 51.91
+                      },
+                      {
+                        "time": 0.3,
+                        "angle": 30.24
+                      },
+                      {
+                        "time": 0.5333,
+                        "angle": 6.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 3.32,
+                        "y": 1.72
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 1.69,
+                        "y": 0.81
+                      },
+                      {
+                        "time": 0.5333
+                      }
+                    ]
+                  },
+                  "Zong13": {
+                    "rotate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -4.8,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5333
+                      }
+                    ]
+                  },
+                  "Fish": {
+                    "translate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 7.12,
+                        "y": 6.71,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": -1.27,
+                        "y": 0.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5333
+                      }
+                    ]
+                  },
+                  "Zong16": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1333,
+                        "angle": 9.39
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -2.59
+                      },
+                      {
+                        "time": 0.4,
+                        "angle": 8.76
+                      },
+                      {
+                        "time": 0.5333
+                      }
+                    ]
+                  },
+                  "Zong17": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1333,
+                        "angle": 22.88
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -28.18
+                      },
+                      {
+                        "time": 0.4,
+                        "angle": 3.04
+                      },
+                      {
+                        "time": 0.5333
+                      }
+                    ]
+                  },
+                  "Fish2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1333,
+                        "angle": 47.47
+                      },
+                      {
+                        "time": 0.2667,
+                        "angle": -10.9
+                      },
+                      {
+                        "time": 0.4,
+                        "angle": 24.34
+                      },
+                      {
+                        "time": 0.5333
+                      }
+                    ]
+                  }
+                },
+                "deform": {
+                  "default": {
+                    "Down": {
+                      "Down": [
+                        {
+                          "offset": 16,
+                          "vertices": [
+                            -0.12093,
+                            -0.8716,
+                            0.76038,
+                            -0.44292,
+                            0.61425,
+                            -0.63013
+                          ]
+                        },
+                        {
+                          "time": 0.0667,
+                          "vertices": [
+                            -3.07542,
+                            0.42661,
+                            1.06923,
+                            -2.91498,
+                            -2.01525,
+                            -2.36212,
+                            1.02532,
+                            4.89672,
+                            -3.01072,
+                            0.10896,
+                            -2.72481,
+                            2.44356,
+                            -9.03089,
+                            15.47595,
+                            3.1274,
+                            5.76057,
+                            2.39902,
+                            8.93985,
+                            -9.0183,
+                            -2.08562,
+                            -7.84684,
+                            6.2778,
+                            -0.21676,
+                            -1.56313,
+                            1.4814,
+                            0.54348,
+                            1.20051,
+                            -1.02413,
+                            1.47545,
+                            0.55925,
+                            1.5266,
+                            -0.39948,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            9.22674,
+                            -1.28012
+                          ]
+                        },
+                        {
+                          "time": 0.1667,
+                          "vertices": [
+                            4.80478,
+                            -0.66651,
+                            -3.64656,
+                            3.19878,
+                            -2.0083,
+                            4.41554,
+                            6.31215,
+                            -2.70484,
+                            -1.08626,
+                            7.58077,
+                            5.94836,
+                            5.7894,
+                            0,
+                            0,
+                            -3.01867,
+                            -6.05313,
+                            -1.69194,
+                            1.2382,
+                            0.7324,
+                            -1.96455,
+                            -0.14046,
+                            -2.09188,
+                            -1.09602,
+                            -1.30583,
+                            2.88078,
+                            -1.33055,
+                            1.02227,
+                            -4.97241,
+                            1.11623,
+                            2.34934,
+                            1.58335,
+                            0.43788,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            8.54214,
+                            -1.18504
+                          ]
+                        },
+                        {
+                          "time": 0.2333,
+                          "vertices": [
+                            4.80478,
+                            -0.66651,
+                            -3.64656,
+                            3.19878,
+                            -2.0083,
+                            4.41554,
+                            4.72087,
+                            -1.61586,
+                            -1.48702,
+                            5.26748,
+                            4.65895,
+                            3.9929,
+                            0,
+                            0,
+                            -3.01867,
+                            -6.05313,
+                            -1.69194,
+                            1.2382,
+                            0.7324,
+                            -1.96455,
+                            -0.14046,
+                            -2.09188,
+                            -1.1639,
+                            -1.797,
+                            2.78017,
+                            -0.06238,
+                            2.40967,
+                            -3.38662,
+                            1.89211,
+                            1.07678,
+                            1.74954,
+                            -0.55033,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            10.07546,
+                            -1.3977
+                          ]
+                        },
+                        {
+                          "time": 0.3,
+                          "vertices": [
+                            4.80478,
+                            -0.66651,
+                            -3.64656,
+                            3.19878,
+                            -2.0083,
+                            4.41554,
+                            3.1296,
+                            -0.52688,
+                            -1.88778,
+                            2.95418,
+                            3.36954,
+                            2.19641,
+                            0,
+                            0,
+                            -3.01867,
+                            -6.05313,
+                            -1.69194,
+                            1.2382,
+                            0.7324,
+                            -1.96455,
+                            -0.14046,
+                            -2.09188,
+                            -0.48255,
+                            3.11588,
+                            -1.31023,
+                            -2.86787,
+                            -2.37384,
+                            -2.07514,
+                            -3.05822,
+                            0.76748,
+                            -2.7351,
+                            1.56857,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            11.60878,
+                            -1.61036
+                          ]
+                        },
+                        {
+                          "time": 0.4667,
+                          "vertices": [
+                            4.80478,
+                            -0.66651,
+                            -3.64656,
+                            3.19878,
+                            -2.0083,
+                            4.41554,
+                            -0.61355,
+                            -1.74402,
+                            -0.91964,
+                            0.59074,
+                            3.8278,
+                            -0.87333,
+                            0,
+                            0,
+                            -3.01867,
+                            -6.05313,
+                            -1.69194,
+                            1.2382,
+                            0.7324,
+                            -1.96455,
+                            -0.14046,
+                            -2.09188,
+                            -0.48255,
+                            3.11588,
+                            -1.31023,
+                            -2.86787,
+                            -2.37384,
+                            -2.07514,
+                            -3.05822,
+                            0.76748,
+                            -2.7351,
+                            1.56857,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            8.54214,
+                            -1.18504
+                          ]
+                        },
+                        {
+                          "time": 0.5333,
+                          "offset": 16,
+                          "vertices": [
+                            -0.12093,
+                            -0.8716,
+                            0.76038,
+                            -0.44292,
+                            0.61425,
+                            -0.63013
+                          ]
+                        }
+                      ]
+                    },
+                    "L_Arm": {
+                      "L_Arm": [
+                        {
+                          "time": 0.3,
+                          "vertices": [
+                            -0.10626,
+                            -2.10019,
+                            -0.70337,
+                            -1.43356,
+                            -0.55807,
+                            -1.49612,
+                            -0.73138,
+                            1.61975,
+                            -1.24879,
+                            1.2645,
+                            -1.36781,
+                            1.1347,
+                            -0.30048,
+                            1.89185,
+                            -0.93936,
+                            1.66942,
+                            0.03424,
+                            2.1985,
+                            -0.73212,
+                            2.0733,
+                            0.68558,
+                            2.0871,
+                            -0.08267,
+                            2.19526,
+                            0.97182,
+                            1.78011,
+                            1.24512,
+                            0.87244,
+                            0.86421,
+                            1.25085,
+                            1.08748,
+                            0.06172,
+                            1.07602,
+                            0.16904,
+                            0.9482,
+                            -0.16782,
+                            0.96013,
+                            -0.07317,
+                            0.9946,
+                            -1.48534,
+                            1.13669,
+                            -1.37964,
+                            0.9541,
+                            -2.09883,
+                            0.36304,
+                            -2.30507
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "Ultra": {
+                "slots": {
+                  "Bubble_0": {
+                    "color": [
+                      {
+                        "time": 0.8667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.7,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3667,
+                        "name": "Bubble_00000"
+                      }
+                    ]
+                  },
+                  "Bubble_00000": {
+                    "color": [
+                      {
+                        "time": 0.5,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.2,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Bubble_00000"
+                      }
+                    ]
+                  },
+                  "Bubble_1": {
+                    "color": [
+                      {
+                        "time": 1.2667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.7667,
+                        "name": "Bubble_00000"
+                      }
+                    ]
+                  },
+                  "Cir": {
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": null
+                      },
+                      {
+                        "time": 1.4333,
+                        "name": "Cir"
+                      },
+                      {
+                        "time": 1.7,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Di_00000": {
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Di_00000"
+                      },
+                      {
+                        "time": 1.4333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Flash_0": {
+                    "color": [
+                      {
+                        "time": 0.6,
+                        "color": "ff0d0d71"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Flash_00000"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Flash_00000": {
+                    "color": [
+                      {
+                        "time": 0.5667,
+                        "color": "ff0e0eff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Flash_00000"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Open/Open_00006": {
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Open/Open_00006"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Open/Open_00007"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Open/Open_00008"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Open/Open_00009"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Open/Open_00010"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Open/Open_00011"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Open/Open_00012"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": null
+                      },
+                      {
+                        "time": 1.2,
+                        "name": "Open/Open_00012"
+                      },
+                      {
+                        "time": 1.2333,
+                        "name": "Open/Open_00011"
+                      },
+                      {
+                        "time": 1.2667,
+                        "name": "Open/Open_00010"
+                      },
+                      {
+                        "time": 1.3,
+                        "name": "Open/Open_00009"
+                      },
+                      {
+                        "time": 1.3333,
+                        "name": "Open/Open_00008"
+                      },
+                      {
+                        "time": 1.3667,
+                        "name": "Open/Open_00007"
+                      },
+                      {
+                        "time": 1.4,
+                        "name": "Open/Open_00006"
+                      },
+                      {
+                        "time": 1.4333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Shaow_00003": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Shaow_00003"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "R_Arm": {
+                    "rotate": [
+                      {
+                        "angle": 10.51,
+                        "curve": 0.067,
+                        "c2": 0.37,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": -98.81,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7333,
+                        "angle": 68.82
+                      },
+                      {
+                        "time": 0.8333,
+                        "angle": 73.98,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.0333,
+                        "angle": 10.51
+                      }
+                    ]
+                  },
+                  "Zong13": {
+                    "rotate": [
+                      {
+                        "angle": -2.46
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.7
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 76.77,
+                        "y": 4.36
+                      },
+                      {
+                        "time": 0.8667
+                      }
+                    ]
+                  },
+                  "Cir": {
+                    "rotate": [
+                      {
+                        "curve": 0,
+                        "c2": 0.07,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2333,
+                        "angle": -88.8,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.4333,
+                        "angle": -88.8
+                      },
+                      {
+                        "time": 1.6667
+                      }
+                    ]
+                  },
+                  "Flash": {
+                    "rotate": [
+                      {
+                        "time": 0.5333,
+                        "angle": 20.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": -2.64,
+                        "y": -46.87
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": 3.777,
+                        "y": 0.468
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 4.2,
+                        "y": 1.152
+                      },
+                      {
+                        "time": 0.6,
+                        "x": 3.227
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 1.073
+                      }
+                    ]
+                  },
+                  "Shaow": {
+                    "scale": [
+                      {
+                        "x": 0.5,
+                        "y": 0.5,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.6
+                      }
+                    ]
+                  },
+                  "Door": {
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": -111.15,
+                        "y": 20.56
+                      }
+                    ]
+                  },
+                  "Di": {
+                    "translate": [
+                      {
+                        "x": -112.51,
+                        "y": 20.77,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": -112.51,
+                        "y": 20.77
+                      },
+                      {
+                        "time": 0.5,
+                        "x": -112.51,
+                        "y": 20.46
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "translate": [
+                      {
+                        "x": 317.55,
+                        "y": -53.17
+                      }
+                    ]
+                  },
+                  "Flash2": {
+                    "rotate": [
+                      {
+                        "time": 0.5333,
+                        "angle": 20.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": -2.64,
+                        "y": -46.87
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": 0.932,
+                        "y": 0.373
+                      },
+                      {
+                        "time": 0.6,
+                        "x": 1.684,
+                        "y": 1.2
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 0.19
+                      }
+                    ]
+                  },
+                  "Body": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.7,
+                        "angle": -16.34
+                      },
+                      {
+                        "time": 0.7333,
+                        "angle": 4.67
+                      },
+                      {
+                        "time": 0.8,
+                        "angle": 7.06
+                      },
+                      {
+                        "time": 0.9333
+                      }
+                    ],
+                    "translate": [
+                      {},
+                      {
+                        "time": 0.7,
+                        "x": -6.97,
+                        "y": -4.34
+                      },
+                      {
+                        "time": 0.9
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333
+                      },
+                      {
+                        "time": 0.7,
+                        "x": 0.963
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 1.026,
+                        "y": 0.961
+                      },
+                      {
+                        "time": 0.8
+                      }
+                    ]
+                  },
+                  "L_Arm": {
+                    "rotate": [
+                      {
+                        "angle": -177.27
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": 112.97,
+                        "curve": 0,
+                        "c2": 0.35,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7333,
+                        "angle": 51.5,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": -6.89
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": -1,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.7,
+                        "x": -1
+                      },
+                      {
+                        "time": 0.7333
+                      }
+                    ]
+                  },
+                  "Zong6": {
+                    "rotate": [
+                      {
+                        "curve": 0,
+                        "c2": 0.29,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": 49.9,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7667
+                      }
+                    ]
+                  },
+                  "Zong9": {
+                    "rotate": [
+                      {
+                        "curve": 0.002,
+                        "c2": 0.28,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": -64.74
+                      },
+                      {
+                        "time": 0.7333,
+                        "angle": -52.76
+                      },
+                      {
+                        "time": 0.8333,
+                        "angle": -36.29,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1333
+                      }
+                    ]
+                  },
+                  "Zong17": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.4,
+                        "angle": 19.08
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": -32.67
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": 10.04,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7667,
+                        "angle": -23.72,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8667,
+                        "angle": 23.35,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.9667,
+                        "angle": -31.04,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1,
+                        "angle": 17.1,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.2333,
+                        "angle": -32.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.3667,
+                        "angle": 24.6,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.5333,
+                        "angle": 10.04,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.7
+                      }
+                    ]
+                  },
+                  "Fish": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.7,
+                        "angle": -7.2
+                      },
+                      {
+                        "time": 1.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7,
+                        "x": -5.04,
+                        "y": -34.89
+                      },
+                      {
+                        "time": 0.8667,
+                        "x": 13.53,
+                        "y": 32.31
+                      },
+                      {
+                        "time": 1.1
+                      }
+                    ]
+                  },
+                  "Zong16": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.3667,
+                        "angle": -4.69
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": 11.93
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": 3.44,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7667,
+                        "angle": 11.35,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8333,
+                        "angle": 13.06,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -3.9,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.0333,
+                        "angle": 20.06,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": 7.66,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.2667,
+                        "angle": 26.62,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.4,
+                        "angle": 20.36,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.6667
+                      }
+                    ]
+                  },
+                  "Fish2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.6667,
+                        "angle": 16.43
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": -10.68,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7667,
+                        "angle": 34.6,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8667,
+                        "angle": 3.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.9667,
+                        "angle": 21.79,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": 3.27,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": 31.76,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.4,
+                        "angle": -2.69,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.5667,
+                        "angle": -10.68,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.7
+                      }
+                    ]
+                  },
+                  "Bubble": {
+                    "translate": [
+                      {},
+                      {
+                        "time": 1.2,
+                        "x": 30.39,
+                        "y": 5.8
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 1.2,
+                        "x": 0.7,
+                        "y": 0.7
+                      }
+                    ]
+                  },
+                  "Bubble2": {
+                    "translate": [
+                      {
+                        "time": 0.3667,
+                        "x": 39.95,
+                        "y": -96.89
+                      },
+                      {
+                        "time": 1.7,
+                        "x": 70.34,
+                        "y": -91.09
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3667,
+                        "x": 0.166,
+                        "y": 0.166
+                      },
+                      {
+                        "time": 0.6667
+                      },
+                      {
+                        "time": 1.7,
+                        "x": 0.7,
+                        "y": 0.7
+                      }
+                    ]
+                  },
+                  "Bubble3": {
+                    "translate": [
+                      {
+                        "time": 0.7667,
+                        "x": 19.98,
+                        "y": -185.68
+                      },
+                      {
+                        "time": 1.7667,
+                        "x": 50.37,
+                        "y": -179.88
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.7667,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": 0.7,
+                        "y": 0.7,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.7667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 1.8,
+                        "x": 0.5,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "ZZZong": {
+                    "translate": [
+                      {
+                        "x": -477.4,
+                        "y": 79.54
+                      }
+                    ]
+                  }
+                },
+                "drawOrder": [
+                  {
+                    "time": 0.1333,
+                    "offsets": [
+                      {
+                        "slot": "R_Arm",
+                        "offset": 9
+                      }
+                    ]
+                  },
+                  {
+                    "time": 1.8333,
+                    "offsets": [
+                      {
+                        "slot": "R_Arm",
+                        "offset": 6
+                      }
+                    ]
+                  }
+                ],
+                "events": [
+                  {
+                    "time": 0.7333,
+                    "name": "Shoot"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        8
+      ]
+    ],
+    [
+      [
+        [
+          33,
+          "boss01"
+        ],
+        [
+          34,
+          "boss01",
+          [
+            -23,
+            -24,
+            -25,
+            -26,
+            -27,
+            -28,
+            -29,
+            -30,
+            -31,
+            -32,
+            -33,
+            -34,
+            -35,
+            -36,
+            -37,
+            -38,
+            -39,
+            -40,
+            -41,
+            -42,
+            -43,
+            -44,
+            -45,
+            -46
+          ],
+          [
+            [
+              46,
+              -22,
+              -21,
+              -20,
+              -19,
+              -18,
+              -17,
+              -16,
+              -15,
+              -14,
+              -13,
+              -12,
+              -11,
+              -10,
+              -9,
+              -8,
+              -7,
+              -6,
+              [
+                -4,
+                -5
+              ],
+              -3,
+              -2
+            ]
+          ],
+          [
+            47,
+            -1
+          ],
+          [
+            5,
+            100,
+            240
+          ],
+          [
+            0,
+            0.5,
+            0
+          ]
+        ],
+        [
+          16,
+          "aniLabel",
+          [
+            -51
+          ],
+          [
+            [
+              24,
+              -49,
+              -48
+            ],
+            [
+              11,
+              1,
+              1,
+              -50,
+              [
+                5,
+                4,
+                50
+              ]
+            ]
+          ],
+          [
+            0,
+            "6cuMh4FPBPLY7XvgzZ1taj",
+            -47
+          ],
+          [
+            5,
+            4,
+            50
+          ],
+          [
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          20,
+          "UltimateProgBar",
+          1,
+          [
+            -55,
+            -56,
+            -57
+          ],
+          [
+            [
+              [
+                25,
+                2,
+                -52,
+                [
+                  42
+                ],
+                43
+              ],
+              -53,
+              -54
+            ],
+            4,
+            1,
+            1
+          ],
+          [
+            0,
+            "04lWORZihNwaxHhdxuhWzq",
+            1
+          ],
+          [
+            5,
+            164,
+            22
+          ],
+          [
+            0,
+            -60,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          16,
+          "aniLabel",
+          [
+            -62
+          ],
+          [
+            [
+              24,
+              -60,
+              -59
+            ],
+            [
+              11,
+              1,
+              1,
+              -61,
+              [
+                5,
+                4,
+                50
+              ]
+            ]
+          ],
+          [
+            0,
+            "e7s5PUXplBA7oX6odpHPxw",
+            -58
+          ],
+          [
+            5,
+            4,
+            50
+          ],
+          [
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          20,
+          "HPprogBar",
+          1,
+          [
+            -66,
+            -67
+          ],
+          [
+            [
+              [
+                25,
+                2,
+                -63,
+                [
+                  27
+                ],
+                28
+              ],
+              -64,
+              -65
+            ],
+            4,
+            1,
+            1
+          ],
+          [
+            0,
+            "e2ysO5mmlOMp6yyB2Abqpx",
+            1
+          ],
+          [
+            5,
+            164,
+            28
+          ],
+          [
+            0,
+            -28,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          21,
+          "debuff_as",
+          false,
+          [
+            -70,
+            -71
+          ],
+          [
+            [
+              [
+                1,
+                1,
+                0,
+                -68,
+                [
+                  35
+                ],
+                36
+              ],
+              -69
+            ],
+            4,
+            1
+          ],
+          [
+            0,
+            "dfdp2DE+9CgKuQb7AsLXPL",
+            1
+          ],
+          [
+            5,
+            50,
+            50
+          ],
+          [
+            -30,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          21,
+          "debuff_ad",
+          false,
+          [
+            -74,
+            -75
+          ],
+          [
+            [
+              [
+                1,
+                1,
+                0,
+                -72,
+                [
+                  40
+                ],
+                41
+              ],
+              -73
+            ],
+            4,
+            1
+          ],
+          [
+            0,
+            "ecO5VwxJpJK6h7uGGB9I2Q",
+            1
+          ],
+          [
+            5,
+            50,
+            50
+          ],
+          [
+            30,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "Background",
+          512,
+          [
+            -78
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              -76,
+              [
+                45
+              ],
+              46
+            ],
+            [
+              6,
+              0,
+              45,
+              100,
+              40,
+              -77
+            ]
+          ],
+          [
+            0,
+            "62goPXl45K9J28shFT+V9u",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          2,
+          "Background",
+          512,
+          [
+            -81
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              -79,
+              [
+                52
+              ],
+              53
+            ],
+            [
+              6,
+              0,
+              45,
+              100,
+              40,
+              -80
+            ]
+          ],
+          [
+            0,
+            "08sptlyTRM+a4wBejWF00g",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          2,
+          "Background",
+          512,
+          [
+            -84
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              -82,
+              [
+                59
+              ],
+              60
+            ],
+            [
+              6,
+              0,
+              45,
+              100,
+              40,
+              -83
+            ]
+          ],
+          [
+            0,
+            "00Fu3cDi5KL7SFvvQgKlyR",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          2,
+          "Background",
+          512,
+          [
+            -87
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              -85,
+              [
+                66
+              ],
+              67
+            ],
+            [
+              6,
+              0,
+              45,
+              100,
+              40,
+              -86
+            ]
+          ],
+          [
+            0,
+            "11XfRAKWxPLJux09VeiEJm",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          2,
+          "Background",
+          512,
+          [
+            -90
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              -88,
+              [
+                73
+              ],
+              74
+            ],
+            [
+              6,
+              0,
+              45,
+              100,
+              40,
+              -89
+            ]
+          ],
+          [
+            0,
+            "09SjQ3co1EJ7ytdXGycnq7",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          2,
+          "Background",
+          512,
+          [
+            -93
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              -91,
+              [
+                80
+              ],
+              81
+            ],
+            [
+              6,
+              0,
+              45,
+              100,
+              40,
+              -92
+            ]
+          ],
+          [
+            0,
+            "fcS+FsA19GRpkcS0kEQHcr",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          17,
+          "layout",
+          5,
+          [
+            2,
+            -95
+          ],
+          [
+            [
+              11,
+              1,
+              1,
+              -94,
+              [
+                5,
+                8,
+                50
+              ]
+            ]
+          ],
+          [
+            0,
+            "a93i9cuaZD9qJX/6vCkIZi",
+            1
+          ],
+          [
+            5,
+            8,
+            50
+          ]
+        ],
+        [
+          17,
+          "layout",
+          3,
+          [
+            4,
+            -97
+          ],
+          [
+            [
+              11,
+              1,
+              1,
+              -96,
+              [
+                5,
+                8,
+                50
+              ]
+            ]
+          ],
+          [
+            0,
+            "767zkjPYJOVLFUpFcnSUKJ",
+            1
+          ],
+          [
+            5,
+            8,
+            50
+          ]
+        ],
+        [
+          35,
+          "debuffRootNode",
+          3,
+          [
+            6,
+            7
+          ],
+          [
+            [
+              48,
+              1,
+              1,
+              10,
+              -98,
+              [
+                5,
+                -10,
+                50
+              ]
+            ]
+          ],
+          [
+            0,
+            "24PobL0yNPKLohpA3wUX9l",
+            1
+          ],
+          [
+            5,
+            -10,
+            50
+          ],
+          [
+            0,
+            -40,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "emergencySpine",
+          false,
+          1,
+          [
+            [
+              13,
+              "default",
+              "Jinji",
+              0,
+              false,
+              "Jinji",
+              -99,
+              [
+                0
+              ],
+              1
+            ]
+          ],
+          [
+            0,
+            "c44IU67iJEG6eNr//U4zg0",
+            1
+          ],
+          [
+            5,
+            230.54,
+            304.04
+          ]
+        ],
+        [
+          3,
+          "emergencySmallSpine",
+          false,
+          1,
+          [
+            [
+              13,
+              "default",
+              "S_Jinji",
+              0,
+              false,
+              "S_Jinji",
+              -100,
+              [
+                2
+              ],
+              3
+            ]
+          ],
+          [
+            0,
+            "bbpMKCBKxLn4X/h1GHX8So",
+            1
+          ],
+          [
+            5,
+            168,
+            263
+          ]
+        ],
+        [
+          36,
+          "battleSmokeSpine",
+          false,
+          1,
+          [
+            [
+              13,
+              "default",
+              "Battle_Smoke",
+              0,
+              false,
+              "Battle_Smoke",
+              -101,
+              [
+                4
+              ],
+              5
+            ]
+          ],
+          [
+            0,
+            "996oNYORdKwY1mHsAYHBMm",
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1.5,
+            1.5,
+            1
+          ]
+        ],
+        [
+          41,
+          "basketSpine",
+          [
+            [
+              -102,
+              [
+                53,
+                -103,
+                7
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "8c5W6bThVAmqQqNiB7wdvH",
+            1
+          ],
+          [
+            5,
+            163.39,
+            150
+          ]
+        ],
+        [
+          42,
+          "roleSpine",
+          1,
+          [
+            [
+              -104,
+              [
+                54,
+                -105,
+                9
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "c4SqBBVbZCQ6HQMjmnn8VJ",
+            1
+          ],
+          [
+            5,
+            1051.23,
+            710.89
+          ]
+        ],
+        [
+          3,
+          "chargeSpine",
+          false,
+          1,
+          [
+            [
+              13,
+              "default",
+              "FLash",
+              0,
+              false,
+              "FLash",
+              -106,
+              [
+                10
+              ],
+              11
+            ]
+          ],
+          [
+            0,
+            "df57Oy7xpJrJkBdvRgOKUw",
+            1
+          ],
+          [
+            5,
+            168,
+            403.96
+          ]
+        ],
+        [
+          37,
+          "boomSpine",
+          false,
+          1,
+          [
+            [
+              12,
+              "default",
+              "Hurt1",
+              0,
+              "Hurt1",
+              -107,
+              [
+                12
+              ],
+              13
+            ]
+          ],
+          [
+            0,
+            "43lvSkMgBN176SmgvAWv6W",
+            1
+          ]
+        ],
+        [
+          45,
+          "rebornSpine",
+          1,
+          [
+            -108,
+            -109
+          ],
+          [
+            0,
+            "c33RPPpS1FgJf4H5L9zypj",
+            1
+          ]
+        ],
+        [
+          3,
+          "attackSpeedSpine",
+          false,
+          1,
+          [
+            [
+              12,
+              "default",
+              "Blood_1",
+              0,
+              "Blood_1",
+              -110,
+              [
+                15
+              ],
+              16
+            ]
+          ],
+          [
+            0,
+            "cfalZhephF34iMRIkjaZoS",
+            1
+          ],
+          [
+            5,
+            1080,
+            2340
+          ]
+        ],
+        [
+          3,
+          "amplifiedDamageSpine",
+          false,
+          1,
+          [
+            [
+              12,
+              "default",
+              "Blood_1",
+              0,
+              "Blood_1",
+              -111,
+              [
+                17
+              ],
+              18
+            ]
+          ],
+          [
+            0,
+            "1fvuEZPtNDYIalhsG+OHY5",
+            1
+          ],
+          [
+            5,
+            1080,
+            2340
+          ]
+        ],
+        [
+          38,
+          "stunSpine",
+          false,
+          1,
+          [
+            [
+              12,
+              "default",
+              "Xunyun",
+              0,
+              "Xunyun",
+              -112,
+              [
+                19
+              ],
+              20
+            ]
+          ],
+          [
+            0,
+            "6fXssCznBAmJieiw6gAAer",
+            1
+          ],
+          [
+            5,
+            1080,
+            2340
+          ],
+          [
+            0,
+            190,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "toxicSpine",
+          false,
+          1,
+          [
+            [
+              12,
+              "default",
+              "Toxic_1",
+              0,
+              "Toxic_1",
+              -113,
+              [
+                21
+              ],
+              22
+            ]
+          ],
+          [
+            0,
+            "0amO79sZlCAo/MUZdiUSeD",
+            1
+          ],
+          [
+            5,
+            1080,
+            2340
+          ]
+        ],
+        [
+          15,
+          "abilityUpSpine",
+          1,
+          [
+            -114,
+            -115
+          ],
+          [
+            0,
+            "49DhiNUjRCn5TGnQG2OZgg",
+            1
+          ],
+          [
+            5,
+            1080,
+            2340
+          ]
+        ],
+        [
+          39,
+          "dialogueRootNode",
+          1,
+          [
+            [
+              11,
+              1,
+              2,
+              -116,
+              [
+                5,
+                300,
+                286.2
+              ]
+            ]
+          ],
+          [
+            0,
+            "49IjZEGSJBmLQj6opFO3z0",
+            1
+          ],
+          [
+            5,
+            300,
+            286.2
+          ],
+          [
+            0,
+            0.5,
+            0
+          ],
+          [
+            0,
+            200,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          22,
+          "numLab",
+          2,
+          [
+            [
+              -117,
+              [
+                7,
+                2,
+                -118,
+                [
+                  4,
+                  4280885268
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "05Nzp8/zhHbYCS/XeRdFp6",
+            2
+          ],
+          [
+            5,
+            4,
+            48.1
+          ],
+          [
+            0,
+            2.442,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          22,
+          "numLab",
+          14,
+          [
+            [
+              -119,
+              [
+                7,
+                2,
+                -120,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "4c6AINZtNNI7+jpR8RVgdF",
+            1
+          ],
+          [
+            5,
+            4,
+            48.1
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          43,
+          "numLab",
+          4,
+          [
+            [
+              -121,
+              [
+                7,
+                2,
+                -122,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "bd+yXCtr1MMKkLsgsuXjIx",
+            4
+          ],
+          [
+            4,
+            4294940603
+          ],
+          [
+            5,
+            4,
+            48.1
+          ]
+        ],
+        [
+          44,
+          "numLab",
+          15,
+          [
+            [
+              -123,
+              [
+                7,
+                2,
+                -124,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "a03Nxao/tNILSJOPh/BasK",
+            1
+          ],
+          [
+            4,
+            4294940603
+          ],
+          [
+            5,
+            4,
+            48.1
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          23,
+          "numLab",
+          6,
+          [
+            [
+              -125,
+              [
+                7,
+                2,
+                -126,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "23u9Cup+NFJaj9ahJrW6QW",
+            1
+          ],
+          [
+            5,
+            20.52,
+            41.8
+          ],
+          [
+            0,
+            1,
+            0.5
+          ],
+          [
+            22.789,
+            -10,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          23,
+          "numLab",
+          7,
+          [
+            [
+              -127,
+              [
+                7,
+                2,
+                -128,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "8dwVL1Ej5IlYNUETSo+UrP",
+            1
+          ],
+          [
+            5,
+            20.52,
+            41.8
+          ],
+          [
+            0,
+            1,
+            0.5
+          ],
+          [
+            22.789,
+            -10,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          4,
+          "New Button",
+          false,
+          1,
+          [
+            8
+          ],
+          [
+            [
+              8,
+              2,
+              -129,
+              [
+                [
+                  9,
+                  "01bbaRyGidIPr1YdqgXBp/W",
+                  "idle",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              8,
+              47,
+              48,
+              49,
+              50
+            ]
+          ],
+          [
+            0,
+            "873HrxEONJZbOUi10/tRwu",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ],
+          [
+            -160.274,
+            242.232,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          4,
+          "New Button",
+          false,
+          1,
+          [
+            9
+          ],
+          [
+            [
+              8,
+              2,
+              -130,
+              [
+                [
+                  9,
+                  "01bbaRyGidIPr1YdqgXBp/W",
+                  "run",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              9,
+              54,
+              55,
+              56,
+              57
+            ]
+          ],
+          [
+            0,
+            "50RnrP4rxJVbv3iLpn7sDh",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ],
+          [
+            130.526,
+            245.875,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          4,
+          "New Button",
+          false,
+          1,
+          [
+            10
+          ],
+          [
+            [
+              8,
+              2,
+              -131,
+              [
+                [
+                  9,
+                  "01bbaRyGidIPr1YdqgXBp/W",
+                  "vic",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              10,
+              61,
+              62,
+              63,
+              64
+            ]
+          ],
+          [
+            0,
+            "beVA1ki9ZKh6Qfmp2t5QLE",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ],
+          [
+            -158.452,
+            175.452,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          4,
+          "New Button",
+          false,
+          1,
+          [
+            11
+          ],
+          [
+            [
+              8,
+              2,
+              -132,
+              [
+                [
+                  9,
+                  "01bbaRyGidIPr1YdqgXBp/W",
+                  "death",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              11,
+              68,
+              69,
+              70,
+              71
+            ]
+          ],
+          [
+            0,
+            "cbKhuQ3Z5KvKRHrybQNDm7",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ],
+          [
+            132.348,
+            179.702,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          4,
+          "New Button",
+          false,
+          1,
+          [
+            12
+          ],
+          [
+            [
+              8,
+              2,
+              -133,
+              [
+                [
+                  9,
+                  "01bbaRyGidIPr1YdqgXBp/W",
+                  "atk",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              12,
+              75,
+              76,
+              77,
+              78
+            ]
+          ],
+          [
+            0,
+            "1f6vn4uZxC1bAMo8hSrn89",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ],
+          [
+            -157.237,
+            105.029,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          4,
+          "New Button",
+          false,
+          1,
+          [
+            13
+          ],
+          [
+            [
+              8,
+              2,
+              -134,
+              [
+                [
+                  9,
+                  "01bbaRyGidIPr1YdqgXBp/W",
+                  "atk_2",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              13,
+              82,
+              83,
+              84,
+              85
+            ]
+          ],
+          [
+            0,
+            "fdenuZXb1A14BIin1LirwZ",
+            1
+          ],
+          [
+            5,
+            100,
+            40
+          ],
+          [
+            125.063,
+            98.351,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          40,
+          "basket",
+          1,
+          [
+            20
+          ],
+          [
+            0,
+            "casXNsP5NGfYCaAI4uUT0f",
+            1
+          ],
+          [
+            5,
+            160,
+            150
+          ],
+          [
+            0,
+            0.837322,
+            0.123067
+          ]
+        ],
+        [
+          49,
+          0,
+          "1_Idle",
+          20,
+          [
+            6
+          ]
+        ],
+        [
+          50,
+          "default",
+          0,
+          false,
+          0.1,
+          "Idle",
+          21,
+          [
+            8
+          ]
+        ],
+        [
+          51,
+          "default",
+          0,
+          "Reborn",
+          24,
+          [
+            14
+          ]
+        ],
+        [
+          28,
+          24,
+          46
+        ],
+        [
+          52,
+          "default",
+          0,
+          false,
+          false,
+          "UP",
+          1,
+          29,
+          [
+            23
+          ]
+        ],
+        [
+          28,
+          29,
+          48
+        ],
+        [
+          18,
+          "areaRootNode",
+          1,
+          [
+            0,
+            "0aZu8KBiFPUox1L6m9otgK",
+            1
+          ],
+          [
+            5,
+            100,
+            200
+          ],
+          [
+            10,
+            135,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          18,
+          "valueRootNode",
+          1,
+          [
+            0,
+            "adyNaqXS5JcJqfwMAgNGd1",
+            1
+          ],
+          [
+            5,
+            100,
+            200
+          ],
+          [
+            10,
+            135,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          15,
+          "Bar",
+          5,
+          [
+            -135
+          ],
+          [
+            0,
+            "05AK3LtZtJM6+gB7GZ/pEH",
+            1
+          ],
+          [
+            5,
+            154,
+            20
+          ]
+        ],
+        [
+          26,
+          3,
+          2,
+          0.1,
+          52,
+          [
+            24
+          ]
+        ],
+        [
+          14,
+          32,
+          35,
+          false,
+          2,
+          1,
+          1,
+          31,
+          [
+            25
+          ]
+        ],
+        [
+          14,
+          32,
+          35,
+          false,
+          2,
+          1,
+          1,
+          32,
+          [
+            26
+          ]
+        ],
+        [
+          30,
+          2,
+          0.1,
+          5,
+          53
+        ],
+        [
+          55,
+          1,
+          5,
+          56,
+          55,
+          2
+        ],
+        [
+          15,
+          "Bar",
+          3,
+          [
+            -136
+          ],
+          [
+            0,
+            "6aKPBH875NWa3pnigIU1wR",
+            1
+          ],
+          [
+            5,
+            154,
+            14
+          ]
+        ],
+        [
+          26,
+          3,
+          2,
+          0.2,
+          58,
+          [
+            29
+          ]
+        ],
+        [
+          14,
+          32,
+          35,
+          false,
+          2,
+          1,
+          1,
+          33,
+          [
+            30
+          ]
+        ],
+        [
+          14,
+          28,
+          35,
+          false,
+          2,
+          1,
+          1,
+          34,
+          [
+            31
+          ]
+        ],
+        [
+          19,
+          "icon",
+          6,
+          [
+            [
+              27,
+              -137,
+              [
+                32
+              ],
+              33
+            ]
+          ],
+          [
+            0,
+            "60kEL6N1hKwZueTnhF5I38",
+            1
+          ],
+          [
+            5,
+            38,
+            42
+          ]
+        ],
+        [
+          29,
+          "0",
+          28,
+          30,
+          false,
+          2,
+          1,
+          35,
+          [
+            34
+          ]
+        ],
+        [
+          31,
+          "attack_speed",
+          6,
+          63
+        ],
+        [
+          19,
+          "icon",
+          7,
+          [
+            [
+              27,
+              -138,
+              [
+                37
+              ],
+              38
+            ]
+          ],
+          [
+            0,
+            "c943VIIfxAOYYqTbBBrxMq",
+            1
+          ],
+          [
+            5,
+            42,
+            39
+          ]
+        ],
+        [
+          29,
+          "0",
+          28,
+          30,
+          false,
+          2,
+          1,
+          36,
+          [
+            39
+          ]
+        ],
+        [
+          31,
+          "amplified_damage",
+          7,
+          66
+        ],
+        [
+          30,
+          2,
+          0.2,
+          3,
+          59
+        ],
+        [
+          56,
+          1,
+          3,
+          68,
+          61,
+          4
+        ],
+        [
+          5,
+          "Label",
+          512,
+          8,
+          [
+            [
+              10,
+              "待机",
+              20,
+              false,
+              1,
+              1,
+              1,
+              1,
+              -139,
+              [
+                44
+              ]
+            ]
+          ],
+          [
+            0,
+            "9dNkWnDzFC+qtk7eH+NnIL",
+            1
+          ],
+          [
+            4,
+            4278190080
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          5,
+          "Label",
+          512,
+          9,
+          [
+            [
+              10,
+              "跑",
+              20,
+              false,
+              1,
+              1,
+              1,
+              1,
+              -140,
+              [
+                51
+              ]
+            ]
+          ],
+          [
+            0,
+            "b63EPnwJxHA4s4N6n9vrSZ",
+            1
+          ],
+          [
+            4,
+            4278190080
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          5,
+          "Label",
+          512,
+          10,
+          [
+            [
+              10,
+              "胜利",
+              20,
+              false,
+              1,
+              1,
+              1,
+              1,
+              -141,
+              [
+                58
+              ]
+            ]
+          ],
+          [
+            0,
+            "f0N1qBz0lNsYOUOP3+8kZ/",
+            1
+          ],
+          [
+            4,
+            4278190080
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          5,
+          "Label",
+          512,
+          11,
+          [
+            [
+              10,
+              "死亡",
+              20,
+              false,
+              1,
+              1,
+              1,
+              1,
+              -142,
+              [
+                65
+              ]
+            ]
+          ],
+          [
+            0,
+            "e57275rbVDGIKS4III1l4G",
+            1
+          ],
+          [
+            4,
+            4278190080
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          5,
+          "Label",
+          512,
+          12,
+          [
+            [
+              10,
+              "攻击",
+              20,
+              false,
+              1,
+              1,
+              1,
+              1,
+              -143,
+              [
+                72
+              ]
+            ]
+          ],
+          [
+            0,
+            "4atocuTHpCyJ6IeTCQjQA7",
+            1
+          ],
+          [
+            4,
+            4278190080
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ],
+        [
+          5,
+          "Label",
+          512,
+          13,
+          [
+            [
+              10,
+              "攻击2",
+              20,
+              false,
+              1,
+              1,
+              1,
+              1,
+              -144,
+              [
+                79
+              ]
+            ]
+          ],
+          [
+            0,
+            "actrR0TTNKuIAzX2wlTwA5",
+            1
+          ],
+          [
+            4,
+            4278190080
+          ],
+          [
+            5,
+            100,
+            40
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        9,
+        1,
+        0,
+        13,
+        69,
+        0,
+        14,
+        57,
+        0,
+        -1,
+        64,
+        0,
+        -2,
+        67,
+        0,
+        15,
+        30,
+        0,
+        16,
+        51,
+        0,
+        17,
+        50,
+        0,
+        18,
+        49,
+        0,
+        19,
+        28,
+        0,
+        20,
+        27,
+        0,
+        21,
+        26,
+        0,
+        22,
+        25,
+        0,
+        23,
+        47,
+        0,
+        24,
+        23,
+        0,
+        25,
+        22,
+        0,
+        26,
+        45,
+        0,
+        27,
+        44,
+        0,
+        28,
+        19,
+        0,
+        29,
+        18,
+        0,
+        30,
+        17,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        17,
+        0,
+        -2,
+        18,
+        0,
+        -3,
+        19,
+        0,
+        -4,
+        43,
+        0,
+        -5,
+        21,
+        0,
+        -6,
+        22,
+        0,
+        -7,
+        23,
+        0,
+        -8,
+        24,
+        0,
+        -9,
+        25,
+        0,
+        -10,
+        26,
+        0,
+        -11,
+        27,
+        0,
+        -12,
+        28,
+        0,
+        -13,
+        29,
+        0,
+        -14,
+        50,
+        0,
+        -15,
+        51,
+        0,
+        -16,
+        30,
+        0,
+        -17,
+        5,
+        0,
+        -18,
+        3,
+        0,
+        -19,
+        37,
+        0,
+        -20,
+        38,
+        0,
+        -21,
+        39,
+        0,
+        -22,
+        40,
+        0,
+        -23,
+        41,
+        0,
+        -24,
+        42,
+        0,
+        9,
+        2,
+        0,
+        10,
+        54,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        31,
+        0,
+        0,
+        3,
+        0,
+        -2,
+        68,
+        0,
+        -3,
+        69,
+        0,
+        -1,
+        58,
+        0,
+        -2,
+        15,
+        0,
+        -3,
+        16,
+        0,
+        9,
+        4,
+        0,
+        10,
+        60,
+        0,
+        0,
+        4,
+        0,
+        0,
+        4,
+        0,
+        -1,
+        33,
+        0,
+        0,
+        5,
+        0,
+        -2,
+        56,
+        0,
+        -3,
+        57,
+        0,
+        -1,
+        52,
+        0,
+        -2,
+        14,
+        0,
+        0,
+        6,
+        0,
+        -2,
+        64,
+        0,
+        -1,
+        62,
+        0,
+        -2,
+        35,
+        0,
+        0,
+        7,
+        0,
+        -2,
+        67,
+        0,
+        -1,
+        65,
+        0,
+        -2,
+        36,
+        0,
+        0,
+        8,
+        0,
+        0,
+        8,
+        0,
+        -1,
+        70,
+        0,
+        0,
+        9,
+        0,
+        0,
+        9,
+        0,
+        -1,
+        71,
+        0,
+        0,
+        10,
+        0,
+        0,
+        10,
+        0,
+        -1,
+        72,
+        0,
+        0,
+        11,
+        0,
+        0,
+        11,
+        0,
+        -1,
+        73,
+        0,
+        0,
+        12,
+        0,
+        0,
+        12,
+        0,
+        -1,
+        74,
+        0,
+        0,
+        13,
+        0,
+        0,
+        13,
+        0,
+        -1,
+        75,
+        0,
+        0,
+        14,
+        0,
+        -2,
+        32,
+        0,
+        0,
+        15,
+        0,
+        -2,
+        34,
+        0,
+        0,
+        16,
+        0,
+        0,
+        17,
+        0,
+        0,
+        18,
+        0,
+        0,
+        19,
+        0,
+        -1,
+        44,
+        0,
+        0,
+        20,
+        0,
+        -1,
+        45,
+        0,
+        0,
+        21,
+        0,
+        0,
+        22,
+        0,
+        0,
+        23,
+        0,
+        -1,
+        46,
+        0,
+        -2,
+        47,
+        0,
+        0,
+        25,
+        0,
+        0,
+        26,
+        0,
+        0,
+        27,
+        0,
+        0,
+        28,
+        0,
+        -1,
+        48,
+        0,
+        -2,
+        49,
+        0,
+        0,
+        30,
+        0,
+        -1,
+        54,
+        0,
+        0,
+        31,
+        0,
+        -1,
+        55,
+        0,
+        0,
+        32,
+        0,
+        -1,
+        60,
+        0,
+        0,
+        33,
+        0,
+        -1,
+        61,
+        0,
+        0,
+        34,
+        0,
+        -1,
+        63,
+        0,
+        0,
+        35,
+        0,
+        -1,
+        66,
+        0,
+        0,
+        36,
+        0,
+        0,
+        37,
+        0,
+        0,
+        38,
+        0,
+        0,
+        39,
+        0,
+        0,
+        40,
+        0,
+        0,
+        41,
+        0,
+        0,
+        42,
+        0,
+        -1,
+        53,
+        0,
+        -1,
+        59,
+        0,
+        0,
+        62,
+        0,
+        0,
+        65,
+        0,
+        0,
+        70,
+        0,
+        0,
+        71,
+        0,
+        0,
+        72,
+        0,
+        0,
+        73,
+        0,
+        0,
+        74,
+        0,
+        0,
+        75,
+        0,
+        31,
+        1,
+        2,
+        3,
+        14,
+        4,
+        3,
+        15,
+        6,
+        3,
+        16,
+        7,
+        3,
+        16,
+        8,
+        3,
+        37,
+        9,
+        3,
+        38,
+        10,
+        3,
+        39,
+        11,
+        3,
+        40,
+        12,
+        3,
+        41,
+        13,
+        3,
+        42,
+        20,
+        3,
+        43,
+        144
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        45,
+        46,
+        48,
+        53,
+        54,
+        55,
+        57,
+        59,
+        60,
+        61,
+        63,
+        66,
+        69
+      ],
+      [
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        11,
+        -1,
+        11,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        4,
+        5,
+        6,
+        7,
+        -1,
+        -1,
+        1,
+        4,
+        5,
+        6,
+        7,
+        -1,
+        -1,
+        1,
+        4,
+        5,
+        6,
+        7,
+        -1,
+        -1,
+        1,
+        4,
+        5,
+        6,
+        7,
+        -1,
+        -1,
+        1,
+        4,
+        5,
+        6,
+        7,
+        -1,
+        -1,
+        1,
+        4,
+        5,
+        6,
+        7,
+        2,
+        2,
+        2,
+        1,
+        8,
+        8,
+        12,
+        1,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      [
+        2,
+        9,
+        2,
+        10,
+        2,
+        11,
+        2,
+        12,
+        2,
+        13,
+        2,
+        14,
+        2,
+        15,
+        2,
+        2,
+        16,
+        2,
+        17,
+        2,
+        18,
+        2,
+        19,
+        2,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0,
+        6,
+        0,
+        22,
+        0,
+        0,
+        6,
+        0,
+        23,
+        0,
+        0,
+        1,
+        1,
+        3,
+        1,
+        4,
+        0,
+        0,
+        1,
+        1,
+        3,
+        1,
+        4,
+        0,
+        0,
+        1,
+        1,
+        3,
+        1,
+        4,
+        0,
+        0,
+        1,
+        1,
+        3,
+        1,
+        4,
+        0,
+        0,
+        1,
+        1,
+        3,
+        1,
+        4,
+        0,
+        0,
+        1,
+        1,
+        3,
+        1,
+        4,
+        24,
+        25,
+        26,
+        27,
+        5,
+        5,
+        7,
+        28,
+        5,
+        5,
+        5,
+        5,
+        7
+      ]
+    ]
+  ]
+]

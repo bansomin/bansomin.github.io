@@ -1,0 +1,595 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "94iFm3rNREBKeKwkwXl9Vx",
+    "75Ry4ph8xGjphSgk+ZIyNQ"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "ultimate_boom_1013"
+        ],
+        [
+          1,
+          "ultimate_boom_1013",
+          [
+            [
+              -2,
+              [
+                2,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            281,
+            272
+          ]
+        ],
+        [
+          4,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "Ultra_1013_Blast",
+          "\r\nUltra_1013_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nB_Smoke/B_Black_00000\r\n  rotate: false\r\n  xy: 234, 120\r\n  size: 41, 37\r\n  orig: 90, 51\r\n  offset: 0, 0\r\n  index: -1\r\nB_Smoke/B_Black_00001\r\n  rotate: false\r\n  xy: 131, 148\r\n  size: 53, 45\r\n  orig: 90, 51\r\n  offset: 33, 4\r\n  index: -1\r\nB_Smoke/B_Black_00002\r\n  rotate: false\r\n  xy: 186, 152\r\n  size: 46, 41\r\n  orig: 90, 51\r\n  offset: 42, 8\r\n  index: -1\r\nB_Smoke/B_Black_00003\r\n  rotate: false\r\n  xy: 186, 152\r\n  size: 46, 41\r\n  orig: 90, 51\r\n  offset: 42, 8\r\n  index: -1\r\nB_Smoke/B_Black_00004\r\n  rotate: false\r\n  xy: 234, 159\r\n  size: 47, 35\r\n  orig: 90, 51\r\n  offset: 43, 16\r\n  index: -1\r\nB_Smoke/B_Black_00005\r\n  rotate: false\r\n  xy: 131, 119\r\n  size: 39, 27\r\n  orig: 90, 51\r\n  offset: 51, 24\r\n  index: -1\r\nB_Smoke/B_Black_00006\r\n  rotate: false\r\n  xy: 131, 119\r\n  size: 39, 27\r\n  orig: 90, 51\r\n  offset: 51, 24\r\n  index: -1\r\nBalst/Blast_00036\r\n  rotate: false\r\n  xy: 200, 196\r\n  size: 92, 86\r\n  orig: 138, 106\r\n  offset: 18, 3\r\n  index: -1\r\nBalst/Blast_00037\r\n  rotate: false\r\n  xy: 380, 200\r\n  size: 111, 86\r\n  orig: 138, 106\r\n  offset: 9, 7\r\n  index: -1\r\nBalst/Blast_00038\r\n  rotate: false\r\n  xy: 140, 386\r\n  size: 130, 105\r\n  orig: 138, 106\r\n  offset: 0, 0\r\n  index: -1\r\nBalst/Blast_00039\r\n  rotate: false\r\n  xy: 2, 385\r\n  size: 136, 106\r\n  orig: 138, 106\r\n  offset: 0, 0\r\n  index: -1\r\nBalst/Blast_00040\r\n  rotate: false\r\n  xy: 2, 385\r\n  size: 136, 106\r\n  orig: 138, 106\r\n  offset: 0, 0\r\n  index: -1\r\nBalst/Blast_00041\r\n  rotate: true\r\n  xy: 294, 175\r\n  size: 107, 68\r\n  orig: 138, 106\r\n  offset: 31, 12\r\n  index: -1\r\nLizi/Liz_00001\r\n  rotate: false\r\n  xy: 186, 119\r\n  size: 33, 31\r\n  orig: 112, 109\r\n  offset: 36, 38\r\n  index: -1\r\nLizi/Liz_00002\r\n  rotate: false\r\n  xy: 77, 136\r\n  size: 52, 52\r\n  orig: 112, 109\r\n  offset: 25, 29\r\n  index: -1\r\nLizi/Liz_00003\r\n  rotate: false\r\n  xy: 2, 119\r\n  size: 73, 69\r\n  orig: 112, 109\r\n  offset: 14, 21\r\n  index: -1\r\nLizi/Liz_00004\r\n  rotate: false\r\n  xy: 364, 117\r\n  size: 89, 81\r\n  orig: 112, 109\r\n  offset: 6, 15\r\n  index: -1\r\nLizi/Liz_00005\r\n  rotate: false\r\n  xy: 103, 195\r\n  size: 95, 87\r\n  orig: 112, 109\r\n  offset: 4, 12\r\n  index: -1\r\nLizi/Liz_00006\r\n  rotate: false\r\n  xy: 2, 190\r\n  size: 99, 92\r\n  orig: 112, 109\r\n  offset: 3, 9\r\n  index: -1\r\nLizi/Liz_00007\r\n  rotate: false\r\n  xy: 380, 288\r\n  size: 103, 96\r\n  orig: 112, 109\r\n  offset: 2, 7\r\n  index: -1\r\nLizi/Liz_00008\r\n  rotate: false\r\n  xy: 140, 284\r\n  size: 105, 100\r\n  orig: 112, 109\r\n  offset: 2, 5\r\n  index: -1\r\nLizi/Liz_00009\r\n  rotate: true\r\n  xy: 383, 386\r\n  size: 105, 102\r\n  orig: 112, 109\r\n  offset: 4, 4\r\n  index: -1\r\nLizi/Liz_00010\r\n  rotate: false\r\n  xy: 272, 387\r\n  size: 109, 104\r\n  orig: 112, 109\r\n  offset: 2, 3\r\n  index: -1\r\nLizi/Liz_00011\r\n  rotate: true\r\n  xy: 2, 284\r\n  size: 99, 105\r\n  orig: 112, 109\r\n  offset: 1, 3\r\n  index: -1\r\nLizi/Liz_00012\r\n  rotate: true\r\n  xy: 272, 284\r\n  size: 101, 106\r\n  orig: 112, 109\r\n  offset: 0, 2\r\n  index: -1\r\n",
+          [
+            "Ultra_1013_Blast.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "F8w8iJIvZbFpJL7Dh69y+wJLoZ8",
+              "spine": "3.8.99",
+              "x": -140,
+              "y": -136,
+              "width": 281,
+              "height": 272,
+              "images": "./images/",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Boom",
+                "parent": "root"
+              },
+              {
+                "name": "Bom",
+                "parent": "Boom"
+              },
+              {
+                "name": "Smkoe",
+                "parent": "Boom"
+              },
+              {
+                "name": "Liz",
+                "parent": "Boom"
+              }
+            ],
+            "slots": [
+              {
+                "name": "B_Smoke/B_Black_00000",
+                "bone": "Smkoe"
+              },
+              {
+                "name": "Balst/Blast_00036",
+                "bone": "Bom"
+              },
+              {
+                "name": "Lizi/Liz_00001",
+                "bone": "Liz",
+                "attachment": "Lizi/Liz_00012"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "B_Smoke/B_Black_00000": {
+                    "B_Smoke/B_Black_00000": {
+                      "y": 0.5,
+                      "width": 226,
+                      "height": 127
+                    },
+                    "B_Smoke/B_Black_00001": {
+                      "y": 0.5,
+                      "width": 226,
+                      "height": 127
+                    },
+                    "B_Smoke/B_Black_00002": {
+                      "y": 0.5,
+                      "width": 226,
+                      "height": 127
+                    },
+                    "B_Smoke/B_Black_00003": {
+                      "y": 0.5,
+                      "width": 226,
+                      "height": 127
+                    },
+                    "B_Smoke/B_Black_00004": {
+                      "y": 0.5,
+                      "width": 226,
+                      "height": 127
+                    },
+                    "B_Smoke/B_Black_00005": {
+                      "y": 0.5,
+                      "width": 226,
+                      "height": 127
+                    },
+                    "B_Smoke/B_Black_00006": {
+                      "y": 0.5,
+                      "width": 226,
+                      "height": 127
+                    }
+                  },
+                  "Balst/Blast_00036": {
+                    "Balst/Blast_00036": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Balst/Blast_00037": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Balst/Blast_00038": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Balst/Blast_00039": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Balst/Blast_00040": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    },
+                    "Balst/Blast_00041": {
+                      "y": 0.5,
+                      "width": 344,
+                      "height": 265
+                    }
+                  },
+                  "Lizi/Liz_00001": {
+                    "Lizi/Liz_00001": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00002": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00003": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00004": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00005": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00006": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00007": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00008": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00009": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00010": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00011": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    },
+                    "Lizi/Liz_00012": {
+                      "x": 0.5,
+                      "width": 281,
+                      "height": 272
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "B_Smoke/B_Black_00000": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "ffffffad"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.0333,
+                        "name": "B_Smoke/B_Black_00000"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "B_Smoke/B_Black_00001"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "B_Smoke/B_Black_00002"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "B_Smoke/B_Black_00004"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "B_Smoke/B_Black_00005"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Balst/Blast_00036": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "4dcdffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Balst/Blast_00036"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Balst/Blast_00037"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Balst/Blast_00038"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Balst/Blast_00039"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Balst/Blast_00040"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Balst/Blast_00041"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Lizi/Liz_00001": {
+                    "color": [
+                      {
+                        "time": 0.3,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.4,
+                        "color": "ffffff56"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Lizi/Liz_00001"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Lizi/Liz_00002"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Lizi/Liz_00003"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Lizi/Liz_00004"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Lizi/Liz_00005"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Lizi/Liz_00006"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Lizi/Liz_00007"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Lizi/Liz_00008"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Lizi/Liz_00009"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Lizi/Liz_00010"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Lizi/Liz_00011"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Lizi/Liz_00012"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Bom": {
+                    "translate": [
+                      {
+                        "y": 23.18
+                      }
+                    ]
+                  },
+                  "Smkoe": {
+                    "translate": [
+                      {
+                        "y": 21.73
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 121.34,
+                        "y": 59.59,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 121.34,
+                        "y": 59.59
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 130.78,
+                        "y": 68.35
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,504 @@
+[
+  1,
+  [
+    "84mb3EjJdKOL+NVrJjKcF9",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "173ccRcMNJI5Xs4Bt6ygWd"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_3006_Blast",
+          "\r\nUltra_3006_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImgae/Center/Impact_00000\r\n  rotate: true\r\n  xy: 304, 400\r\n  size: 104, 103\r\n  orig: 175, 232\r\n  offset: 9, 59\r\n  index: -1\r\nImgae/Center/Impact_00001\r\n  rotate: false\r\n  xy: 2, 284\r\n  size: 167, 220\r\n  orig: 175, 232\r\n  offset: 4, 6\r\n  index: -1\r\nImgae/Center/Impact_00002\r\n  rotate: false\r\n  xy: 171, 319\r\n  size: 131, 185\r\n  orig: 175, 232\r\n  offset: 10, 23\r\n  index: -1\r\nImgae/Center/Impact_00003\r\n  rotate: false\r\n  xy: 264, 237\r\n  size: 55, 65\r\n  orig: 175, 232\r\n  offset: 26, 65\r\n  index: -1\r\nImgae/Liz/Lizi_00000\r\n  rotate: true\r\n  xy: 2, 239\r\n  size: 43, 54\r\n  orig: 106, 111\r\n  offset: 25, 33\r\n  index: -1\r\nImgae/Liz/Lizi_00001\r\n  rotate: false\r\n  xy: 409, 234\r\n  size: 67, 76\r\n  orig: 106, 111\r\n  offset: 14, 21\r\n  index: -1\r\nImgae/Liz/Lizi_00002\r\n  rotate: true\r\n  xy: 171, 231\r\n  size: 86, 91\r\n  orig: 106, 111\r\n  offset: 4, 17\r\n  index: -1\r\nImgae/Liz/Lizi_00003\r\n  rotate: true\r\n  xy: 304, 304\r\n  size: 94, 103\r\n  orig: 106, 111\r\n  offset: 4, 6\r\n  index: -1\r\nImgae/Liz/Lizi_00004\r\n  rotate: false\r\n  xy: 409, 406\r\n  size: 95, 98\r\n  orig: 106, 111\r\n  offset: 9, 3\r\n  index: -1\r\nImgae/Liz/Lizi_00005\r\n  rotate: true\r\n  xy: 321, 271\r\n  size: 31, 79\r\n  orig: 106, 111\r\n  offset: 23, 3\r\n  index: -1\r\nImgae/glow1\r\n  rotate: false\r\n  xy: 409, 312\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          [
+            "Ultra_3006_Blast.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "se1Ggv8dp9WqmlDK5jK7L42T4qA",
+              "spine": "3.8.99",
+              "x": -182.86,
+              "y": -94.02,
+              "width": 1051.23,
+              "height": 644.27,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "B_Zong",
+                "parent": "root"
+              },
+              {
+                "name": "C",
+                "parent": "B_Zong"
+              },
+              {
+                "name": "Liz",
+                "parent": "B_Zong"
+              },
+              {
+                "name": "Glow",
+                "parent": "B_Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Imgae/Center/Impact_00000",
+                "bone": "C"
+              },
+              {
+                "name": "Imgae/Liz/Lizi_00000",
+                "bone": "Liz"
+              },
+              {
+                "name": "Imgae/glow1",
+                "bone": "Glow",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Imgae/Center/Impact_00000": {
+                    "Imgae/Center/Impact_00000": {
+                      "x": 0.5,
+                      "width": 175,
+                      "height": 232
+                    },
+                    "Imgae/Center/Impact_00001": {
+                      "x": 0.5,
+                      "width": 175,
+                      "height": 232
+                    },
+                    "Imgae/Center/Impact_00002": {
+                      "x": 0.5,
+                      "width": 175,
+                      "height": 232
+                    },
+                    "Imgae/Center/Impact_00003": {
+                      "x": 0.5,
+                      "width": 175,
+                      "height": 232
+                    }
+                  },
+                  "Imgae/Liz/Lizi_00000": {
+                    "Imgae/Liz/Lizi_00000": {
+                      "y": 0.5,
+                      "width": 106,
+                      "height": 111
+                    },
+                    "Imgae/Liz/Lizi_00001": {
+                      "y": 0.5,
+                      "width": 106,
+                      "height": 111
+                    },
+                    "Imgae/Liz/Lizi_00002": {
+                      "y": 0.5,
+                      "width": 106,
+                      "height": 111
+                    },
+                    "Imgae/Liz/Lizi_00003": {
+                      "y": 0.5,
+                      "width": 106,
+                      "height": 111
+                    },
+                    "Imgae/Liz/Lizi_00004": {
+                      "y": 0.5,
+                      "width": 106,
+                      "height": 111
+                    },
+                    "Imgae/Liz/Lizi_00005": {
+                      "y": 0.5,
+                      "width": 106,
+                      "height": 111
+                    }
+                  },
+                  "Imgae/glow1": {
+                    "Imgae/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Imgae/Center/Impact_00000": {
+                    "attachment": [
+                      {
+                        "name": "Imgae/Center/Impact_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Imgae/Center/Impact_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Imgae/Center/Impact_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Imgae/Center/Impact_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Imgae/Liz/Lizi_00000": {
+                    "attachment": [
+                      {
+                        "name": "Imgae/Liz/Lizi_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Imgae/Liz/Lizi_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Imgae/Liz/Lizi_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Imgae/Liz/Lizi_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Imgae/Liz/Lizi_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Imgae/Liz/Lizi_00005"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Imgae/glow1": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "fff36cff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "f79f3287"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "ffbd6b00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/glow1"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "C": {
+                    "rotate": [
+                      {
+                        "time": 0.0333,
+                        "angle": 39.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 698.36,
+                        "y": 104.31
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 641.48,
+                        "y": 111.32
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 1.5,
+                        "y": 1.5
+                      }
+                    ]
+                  },
+                  "Liz": {
+                    "translate": [
+                      {
+                        "x": 648.86,
+                        "y": 63.65
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 3,
+                        "y": 3
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "translate": [
+                      {
+                        "x": 623.77,
+                        "y": 81.47
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 2.075,
+                        "y": 2.52
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 3.586,
+                        "y": 3.722
+                      }
+                    ]
+                  },
+                  "B_Zong": {
+                    "translate": [
+                      {
+                        "x": -622.42,
+                        "y": -67.29
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_boom_3006"
+        ],
+        [
+          2,
+          "ultimate_boom_3006",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            1051.23,
+            644.27
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

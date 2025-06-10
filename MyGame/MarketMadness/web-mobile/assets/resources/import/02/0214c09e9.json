@@ -1,0 +1,96 @@
+[
+  1,
+  [
+    "de2KrR3nRP2YBzqc3ziCdp",
+    "a8owioazdPi58amDnIT0rs"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "train_btn_train",
+          "rect": [
+            0,
+            0,
+            259,
+            391
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            259,
+            391
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "train_btn_trainmax",
+          "rect": [
+            0,
+            0,
+            259,
+            391
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            259,
+            391
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

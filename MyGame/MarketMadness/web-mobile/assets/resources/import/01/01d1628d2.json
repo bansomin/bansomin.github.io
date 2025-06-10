@@ -1,0 +1,3085 @@
+[
+  1,
+  [
+    "ecpdLyjvZBwrvm+cedCcQy",
+    "d0b8yR2vdPc5xvhAVPSM9c",
+    "f0BIwQ8D5Ml7nTNQbh1YlS",
+    "6dpmwOW6xNq5N1DGI4x1tQ",
+    "735uAuQVBHQK9G2LhVvXzW",
+    "c20kXsBRxLUIy8p9Bafs+G",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "e4LBEr549P+o9MVO+FBqZt",
+    "71z2KUt1BHLbTRQQ2GAYNd",
+    "d03DqQu/BGdLYngmp80tgn",
+    "2fW6LhWGhNIa7J8Ig+Uaxa",
+    "1cTPFKrLpNWr63mMD9K4QJ",
+    "e97GVMl6JHh5Ml5qEDdSGa",
+    "29FYIk+N1GYaeWH/q1NxQO",
+    "50SPMnHPZFNK626t52VrlS",
+    "4eE6iK2NVAsL4SnpU+AoCV",
+    "e2c8n2m8NEp5KntnGcmI65",
+    "aeGjRAFcRAeKM/BYDG5vLf",
+    "a3zZjf021MLp9PiaOIeItc"
+  ],
+  [
+    "node",
+    "root",
+    "_parent",
+    "_spriteFrame",
+    "labelText",
+    "_N$file",
+    "_textureSetter",
+    "boxGet10KeyLabel",
+    "boxGet10DiamondLabel",
+    "boxGet10DiamondNode",
+    "boxGet10KeyNode",
+    "checkBox",
+    "uiContainer",
+    "container",
+    "flash",
+    "data",
+    "_N$normalSprite",
+    "_N$pressedSprite",
+    "_N$hoverSprite",
+    "_N$disabledSprite",
+    "equipmentItemPrefab",
+    "bagItemPrefab",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_objFlags",
+        "_active",
+        "_prefab",
+        "_components",
+        "_contentSize",
+        "_children",
+        "_parent",
+        "_trs",
+        "_anchorPoint"
+      ],
+      0,
+      4,
+      9,
+      5,
+      2,
+      1,
+      7,
+      5
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_objFlags",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_children",
+        "_trs",
+        "_color"
+      ],
+      1,
+      1,
+      2,
+      4,
+      5,
+      2,
+      7,
+      5
+    ],
+    [
+      "cc.Sprite",
+      [
+        "_sizeMode",
+        "_type",
+        "_isTrimmedMode",
+        "node",
+        "_materials",
+        "_spriteFrame"
+      ],
+      0,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.Layout",
+      [
+        "_resize",
+        "_N$layoutType",
+        "_N$affectedByScale",
+        "_N$spacingX",
+        "node",
+        "_layoutSize"
+      ],
+      -1,
+      1,
+      5
+    ],
+    "cc.SpriteFrame",
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_color"
+      ],
+      2,
+      1,
+      12,
+      4,
+      5,
+      5
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "fileId",
+        "root"
+      ],
+      2,
+      1
+    ],
+    [
+      "cc.Button",
+      [
+        "_N$transition",
+        "node",
+        "clickEvents",
+        "_N$normalColor",
+        "_N$pressedColor",
+        "_N$disabledColor",
+        "_N$target",
+        "_N$normalSprite",
+        "_N$pressedSprite",
+        "_N$hoverSprite",
+        "_N$disabledSprite"
+      ],
+      2,
+      1,
+      9,
+      5,
+      5,
+      5,
+      1,
+      6,
+      6,
+      6,
+      6
+    ],
+    [
+      "45b04ht0XdAQaoYo7rqrt52",
+      [
+        "key",
+        "node",
+        "labelText"
+      ],
+      2,
+      1,
+      1
+    ],
+    [
+      "cc.Widget",
+      [
+        "_alignFlags",
+        "_originalWidth",
+        "_left",
+        "_right",
+        "_bottom",
+        "alignMode",
+        "_originalHeight",
+        "node"
+      ],
+      -4,
+      1
+    ],
+    [
+      "cc.Label",
+      [
+        "_string",
+        "_isSystemFontUsed",
+        "_N$horizontalAlign",
+        "_N$verticalAlign",
+        "_fontSize",
+        "_lineHeight",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "b674fWKikFN95iNyJSZoRCM",
+      [
+        "node",
+        "flash",
+        "container",
+        "uiContainer",
+        "checkBox",
+        "boxGet10KeyNode",
+        "boxGet10DiamondNode",
+        "boxGet10DiamondLabel",
+        "boxGet10KeyLabel",
+        "equipmentItemPrefab",
+        "bagItemPrefab"
+      ],
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      6,
+      6
+    ],
+    [
+      "cc.BlockInputEvents",
+      [
+        "node"
+      ],
+      3,
+      1
+    ],
+    [
+      "cc.ClickEvent",
+      [
+        "_componentId",
+        "handler",
+        "target"
+      ],
+      1,
+      1
+    ],
+    [
+      "cc.LabelOutline",
+      [
+        "_width",
+        "node",
+        "_color"
+      ],
+      2,
+      1,
+      5
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "node",
+        "_materials"
+      ],
+      0,
+      1,
+      3
+    ],
+    [
+      "cc.Toggle",
+      [
+        "_N$transition",
+        "node",
+        "_N$normalColor",
+        "_N$target",
+        "checkMark"
+      ],
+      2,
+      1,
+      5,
+      1,
+      1
+    ]
+  ],
+  [
+    [
+      6,
+      0,
+      1,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      4,
+      5,
+      3
+    ],
+    [
+      0,
+      0,
+      6,
+      4,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      0,
+      0,
+      7,
+      6,
+      4,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      16,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      10,
+      0,
+      4,
+      5,
+      1,
+      2,
+      3,
+      6,
+      7,
+      7
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      8,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      3,
+      4,
+      5,
+      1
+    ],
+    [
+      0,
+      0,
+      7,
+      4,
+      3,
+      5,
+      8,
+      2
+    ],
+    [
+      2,
+      0,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      15,
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      8,
+      1,
+      2,
+      1
+    ],
+    [
+      11,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      12,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      4,
+      3,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      7,
+      6,
+      4,
+      3,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      6,
+      4,
+      3,
+      5,
+      8,
+      3
+    ],
+    [
+      0,
+      0,
+      7,
+      6,
+      3,
+      2
+    ],
+    [
+      0,
+      0,
+      2,
+      7,
+      6,
+      4,
+      3,
+      5,
+      8,
+      3
+    ],
+    [
+      0,
+      0,
+      1,
+      7,
+      4,
+      3,
+      5,
+      8,
+      3
+    ],
+    [
+      0,
+      0,
+      7,
+      3,
+      9,
+      8,
+      2
+    ],
+    [
+      1,
+      0,
+      2,
+      6,
+      3,
+      4,
+      5,
+      7,
+      2
+    ],
+    [
+      1,
+      0,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      3
+    ],
+    [
+      1,
+      0,
+      2,
+      3,
+      4,
+      8,
+      5,
+      2
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      5,
+      4,
+      2
+    ],
+    [
+      13,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      1
+    ],
+    [
+      6,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      0,
+      3,
+      4,
+      5,
+      3
+    ],
+    [
+      2,
+      0,
+      2,
+      3,
+      4,
+      3
+    ],
+    [
+      14,
+      0,
+      1
+    ],
+    [
+      7,
+      1,
+      2,
+      1
+    ],
+    [
+      7,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      2,
+      4,
+      5,
+      4
+    ],
+    [
+      3,
+      0,
+      1,
+      3,
+      4,
+      5,
+      4
+    ],
+    [
+      3,
+      0,
+      1,
+      3,
+      2,
+      4,
+      5,
+      5
+    ],
+    [
+      9,
+      0,
+      2,
+      3,
+      4,
+      1,
+      7,
+      6
+    ],
+    [
+      9,
+      5,
+      0,
+      1,
+      6,
+      7,
+      5
+    ],
+    [
+      17,
+      0,
+      1,
+      2,
+      3,
+      4,
+      4
+    ],
+    [
+      10,
+      0,
+      1,
+      2,
+      3,
+      6,
+      7,
+      5
+    ],
+    [
+      18,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "common_bgn_checkbox0",
+          "rect": [
+            0,
+            0,
+            68,
+            68
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            68,
+            68
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        4
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        6
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_bgn_checkbox1",
+          "rect": [
+            0,
+            0,
+            68,
+            68
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            68,
+            68
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        4
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        6
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        [
+          13,
+          "Card_Front",
+          "\r\nCard_Front.png\r\nsize: 192,384\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Cir_00000\r\n  rotate: false\r\n  xy: 96, 22\r\n  size: 72, 72\r\n  orig: 72, 72\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Line_00000\r\n  rotate: false\r\n  xy: 2, 96\r\n  size: 173, 95\r\n  orig: 184, 99\r\n  offset: 0, 2\r\n  index: -1\r\nImage/Star_00000\r\n  rotate: false\r\n  xy: 2, 193\r\n  size: 188, 189\r\n  orig: 190, 190\r\n  offset: 1, 0\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          [
+            "Card_Front.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "6X1XTOlEhq/Td8PwBgVw+RAVTT8",
+              "spine": "3.8.99",
+              "x": -95,
+              "y": -95,
+              "width": 190,
+              "height": 190,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "C_BLAST",
+                "parent": "root"
+              },
+              {
+                "name": "Star5",
+                "parent": "C_BLAST"
+              },
+              {
+                "name": "Cir11",
+                "parent": "C_BLAST",
+                "scaleX": 0.8,
+                "scaleY": 0.8
+              },
+              {
+                "name": "Cir12",
+                "parent": "C_BLAST",
+                "scaleX": 0.8,
+                "scaleY": 0.8
+              },
+              {
+                "name": "Glow3",
+                "parent": "C_BLAST",
+                "x": -343.97,
+                "y": 240.19,
+                "scaleX": 3.18,
+                "scaleY": 3.18
+              },
+              {
+                "name": "F4",
+                "parent": "C_BLAST",
+                "x": -246.82,
+                "y": 240.19
+              },
+              {
+                "name": "F5",
+                "parent": "C_BLAST",
+                "x": -246.82,
+                "y": 240.19
+              },
+              {
+                "name": "F6",
+                "parent": "C_BLAST",
+                "x": -246.82,
+                "y": 240.19
+              },
+              {
+                "name": "F7",
+                "parent": "C_BLAST",
+                "x": -246.82,
+                "y": 240.19
+              },
+              {
+                "name": "F8",
+                "parent": "C_BLAST",
+                "x": -246.82,
+                "y": 240.19
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/glow3",
+                "bone": "Glow3",
+                "color": "0b5cffff"
+              },
+              {
+                "name": "Image/Cir_10",
+                "bone": "Cir12",
+                "color": "66e4ffff"
+              },
+              {
+                "name": "Image/Cir_9",
+                "bone": "Cir11",
+                "color": "66e4ffff",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star_4",
+                "bone": "Star5",
+                "attachment": "Image/Star_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Line_2",
+                "bone": "F4",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Line_3",
+                "bone": "F5",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Line_4",
+                "bone": "F6",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Line_5",
+                "bone": "F7",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Line_6",
+                "bone": "F8",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Cir_9": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Cir_10": {
+                    "Image/Cir_00000": {
+                      "width": 72,
+                      "height": 72
+                    }
+                  },
+                  "Image/Line_2": {
+                    "Image/Line_00000": {
+                      "x": 79.93,
+                      "y": 0.5,
+                      "width": 184,
+                      "height": 99
+                    }
+                  },
+                  "Image/Line_3": {
+                    "Image/Line_00000": {
+                      "x": 79.93,
+                      "y": 0.5,
+                      "width": 184,
+                      "height": 99
+                    }
+                  },
+                  "Image/Line_4": {
+                    "Image/Line_00000": {
+                      "x": 79.93,
+                      "y": 0.5,
+                      "width": 184,
+                      "height": 99
+                    }
+                  },
+                  "Image/Line_5": {
+                    "Image/Line_00000": {
+                      "x": 79.93,
+                      "y": 0.5,
+                      "width": 184,
+                      "height": 99
+                    }
+                  },
+                  "Image/Line_6": {
+                    "Image/Line_00000": {
+                      "x": 79.93,
+                      "y": 0.5,
+                      "width": 184,
+                      "height": 99
+                    }
+                  },
+                  "Image/Star_4": {
+                    "Image/Star_00000": {
+                      "width": 190,
+                      "height": 190
+                    }
+                  },
+                  "Image/glow3": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Start": {}
+            },
+            "animations": {
+              "Card_Front": {
+                "slots": {
+                  "Image/Cir_9": {
+                    "color": [
+                      {
+                        "color": "05a7fdff"
+                      },
+                      {
+                        "time": 0.0333,
+                        "color": "0badfd77"
+                      },
+                      {
+                        "time": 0.1333,
+                        "color": "28c6ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Cir_00000"
+                      }
+                    ]
+                  },
+                  "Image/Cir_10": {
+                    "color": [
+                      {
+                        "color": "1d8df464"
+                      },
+                      {
+                        "time": 0.1667,
+                        "color": "28c6ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Cir_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_2": {
+                    "color": [
+                      {
+                        "color": "279effff"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "29a0ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_3": {
+                    "color": [
+                      {
+                        "color": "279effff"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "29a0ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_4": {
+                    "color": [
+                      {
+                        "color": "279effff"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "29a0ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_5": {
+                    "color": [
+                      {
+                        "color": "279effff"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "29a0ff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Line_6": {
+                    "color": [
+                      {
+                        "color": "279effff"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "289fff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Line_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_4": {
+                    "color": [
+                      {
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.0333,
+                        "color": "40d8ffb6"
+                      },
+                      {
+                        "time": 0.1,
+                        "color": "41caff00"
+                      }
+                    ]
+                  },
+                  "Image/glow3": {
+                    "color": [
+                      {
+                        "color": "0d67eeff"
+                      },
+                      {
+                        "time": 0.1667,
+                        "color": "0c67ee00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Star5": {
+                    "scale": [
+                      {
+                        "x": 6,
+                        "y": 6
+                      }
+                    ]
+                  },
+                  "Cir11": {
+                    "translate": [
+                      {
+                        "y": 3.86
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 18.75,
+                        "y": 18.75,
+                        "curve": 0,
+                        "c2": 0.67,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 22.5,
+                        "y": 22.5
+                      }
+                    ]
+                  },
+                  "Cir12": {
+                    "scale": [
+                      {
+                        "x": 28.75,
+                        "y": 28.75,
+                        "curve": 0,
+                        "c2": 0.67,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 35,
+                        "y": 35
+                      }
+                    ]
+                  },
+                  "Glow3": {
+                    "translate": [
+                      {
+                        "x": 304.68,
+                        "y": -248.82
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 7.862,
+                        "y": 7.862
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 10.063,
+                        "y": 10.063
+                      }
+                    ]
+                  },
+                  "F4": {
+                    "rotate": [
+                      {
+                        "angle": 105.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 228.57,
+                        "y": -171.35
+                      },
+                      {
+                        "time": 0.1,
+                        "x": 224.47,
+                        "y": -162.63
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 11.243,
+                        "y": 5.035
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 11.243,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "F5": {
+                    "rotate": [
+                      {
+                        "angle": 50.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 282.48,
+                        "y": -223.21
+                      },
+                      {
+                        "time": 0.1,
+                        "x": 275.84,
+                        "y": -157.34
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 11.243,
+                        "y": 3.952
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 11.243,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "F6": {
+                    "rotate": [
+                      {
+                        "angle": -51.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 228.57,
+                        "y": -171.35
+                      },
+                      {
+                        "time": 0.1,
+                        "x": 262.89,
+                        "y": -245.56
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 10.568,
+                        "y": 5.616
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 11.243,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "F7": {
+                    "rotate": [
+                      {
+                        "angle": -112.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 228.57,
+                        "y": -171.35
+                      },
+                      {
+                        "time": 0.1,
+                        "x": 200.2,
+                        "y": -238.84
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 11.243,
+                        "y": 5.035
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 11.243,
+                        "y": 0.128
+                      }
+                    ]
+                  },
+                  "F8": {
+                    "rotate": [
+                      {
+                        "angle": 172.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 228.57,
+                        "y": -171.35
+                      },
+                      {
+                        "time": 0.1,
+                        "x": 221.34,
+                        "y": -184.61
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 11.243,
+                        "y": 5.035
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 11.243,
+                        "y": 0.128
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 0.1333,
+                    "name": "Start"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        5
+      ]
+    ],
+    [
+      [
+        [
+          14,
+          "openBoxResult"
+        ],
+        [
+          15,
+          "openBoxResult",
+          [
+            -11
+          ],
+          [
+            [
+              27,
+              -10,
+              -9,
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              24,
+              25
+            ]
+          ],
+          [
+            28,
+            -1
+          ],
+          [
+            5,
+            1080,
+            1920
+          ]
+        ],
+        [
+          16,
+          "common_bg_mask",
+          1,
+          [
+            -15,
+            -16,
+            -17,
+            -18
+          ],
+          [
+            [
+              10,
+              0,
+              -12,
+              [
+                22
+              ],
+              23
+            ],
+            [
+              31,
+              -13
+            ],
+            [
+              32,
+              -14,
+              [
+                [
+                  11,
+                  "b674fWKikFN95iNyJSZoRCM",
+                  "onClickClose",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "9fknx0+bNJJrAKtAzfEOuB",
+            1
+          ],
+          [
+            5,
+            1440,
+            2340
+          ]
+        ],
+        [
+          2,
+          "customLabel",
+          [
+            -24
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -20,
+              [
+                5,
+                104.86,
+                79.6
+              ]
+            ],
+            [
+              12,
+              -22,
+              -21
+            ],
+            [
+              1,
+              1,
+              1,
+              -23,
+              [
+                5,
+                104.86,
+                79.6
+              ]
+            ]
+          ],
+          [
+            0,
+            "b0BQB94ftM1beoADdo5IhZ",
+            -19
+          ],
+          [
+            5,
+            104.86,
+            79.6
+          ],
+          [
+            33.99999999999999,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "customLabel",
+          [
+            -30
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -26,
+              [
+                5,
+                78.34,
+                56.92
+              ]
+            ],
+            [
+              12,
+              -28,
+              -27
+            ],
+            [
+              1,
+              1,
+              1,
+              -29,
+              [
+                5,
+                78.34,
+                56.92
+              ]
+            ]
+          ],
+          [
+            0,
+            "ffPp8vYOFC0rZlgeO2zmEZ",
+            -25
+          ],
+          [
+            5,
+            78.34,
+            56.92
+          ],
+          [
+            22.400000000000006,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "closeTip",
+          [
+            -37
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -32,
+              [
+                5,
+                139.62,
+                65.52
+              ]
+            ],
+            [
+              7,
+              "rewards_tips",
+              -34,
+              -33
+            ],
+            [
+              1,
+              1,
+              1,
+              -35,
+              [
+                5,
+                139.62,
+                65.52
+              ]
+            ],
+            [
+              37,
+              44,
+              -69.81,
+              -69.81,
+              -782.76,
+              139.62,
+              -36
+            ]
+          ],
+          [
+            0,
+            "4b3tkGrSRBR7rDlvFIeEuZ",
+            -31
+          ],
+          [
+            5,
+            139.62,
+            65.52
+          ],
+          [
+            0,
+            -750,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          2,
+          "customLabel",
+          [
+            -43
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -39,
+              [
+                5,
+                156.36,
+                76.56
+              ]
+            ],
+            [
+              7,
+              "rewards_title",
+              -41,
+              -40
+            ],
+            [
+              1,
+              1,
+              1,
+              -42,
+              [
+                5,
+                156.36,
+                76.56
+              ]
+            ]
+          ],
+          [
+            0,
+            "62j7PPB/xCr4gHzWuq9TNT",
+            -38
+          ],
+          [
+            5,
+            156.36,
+            76.56
+          ],
+          [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "customLabel",
+          [
+            -49
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -45,
+              [
+                5,
+                113.4,
+                56.4
+              ]
+            ],
+            [
+              7,
+              "btn_checkout_skip",
+              -47,
+              -46
+            ],
+            [
+              1,
+              1,
+              1,
+              -48,
+              [
+                5,
+                113.4,
+                56.4
+              ]
+            ]
+          ],
+          [
+            0,
+            "3fUBJcabNBZoOzFQN6lT49",
+            -44
+          ],
+          [
+            5,
+            113.4,
+            56.4
+          ],
+          [
+            44,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "customLabel",
+          [
+            -55
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -51,
+              [
+                5,
+                39.4,
+                79.6
+              ]
+            ],
+            [
+              7,
+              "btn_again",
+              -53,
+              -52
+            ],
+            [
+              1,
+              1,
+              1,
+              -54,
+              [
+                5,
+                39.4,
+                79.6
+              ]
+            ]
+          ],
+          [
+            0,
+            "91bnZvcyFH840Yha6ZDVq/",
+            -50
+          ],
+          [
+            5,
+            39.4,
+            79.6
+          ],
+          [
+            10.179999999999996,
+            -22.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          17,
+          "Background",
+          512,
+          [
+            -58,
+            -59
+          ],
+          [
+            [
+              29,
+              1,
+              0,
+              -56,
+              [
+                15
+              ],
+              16
+            ],
+            [
+              38,
+              0,
+              45,
+              100,
+              40,
+              -57
+            ]
+          ],
+          [
+            0,
+            "ac9nNLJsdH9Kaboa8w/4b6",
+            1
+          ],
+          [
+            5,
+            478,
+            200
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          18,
+          "uiContainer",
+          2,
+          [
+            -60,
+            -61,
+            5
+          ],
+          [
+            0,
+            "abwCRS4V1Ck4exnd5DKeua",
+            1
+          ]
+        ],
+        [
+          19,
+          "key",
+          false,
+          9,
+          [
+            -63,
+            3
+          ],
+          [
+            [
+              34,
+              1,
+              1,
+              true,
+              -62,
+              [
+                5,
+                172.86,
+                133
+              ]
+            ]
+          ],
+          [
+            0,
+            "29uukxcA5IJ6QMPKdtq/Nl",
+            1
+          ],
+          [
+            5,
+            172.86,
+            133
+          ],
+          [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "diamond",
+          9,
+          [
+            -65,
+            8
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              -64,
+              [
+                5,
+                300,
+                124.6
+              ]
+            ]
+          ],
+          [
+            0,
+            "a4g8EyXp9F9I00LS9HDH6Q",
+            1
+          ],
+          [
+            5,
+            300,
+            124.6
+          ],
+          [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "layout",
+          10,
+          [
+            -67,
+            7
+          ],
+          [
+            [
+              35,
+              1,
+              1,
+              20,
+              -66,
+              [
+                5,
+                201.4,
+                70
+              ]
+            ]
+          ],
+          [
+            0,
+            "99Y256a0pP4KZIiQo1t3Rb",
+            1
+          ],
+          [
+            5,
+            201.4,
+            70
+          ],
+          [
+            0,
+            -400,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          22,
+          "New Toggle",
+          13,
+          [
+            -69,
+            -70
+          ],
+          [
+            -68
+          ],
+          [
+            0,
+            "68vLXzFjdI+4fTsv0MPcoW",
+            1
+          ],
+          [
+            5,
+            68,
+            68
+          ],
+          [
+            -66.7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "layout",
+          12,
+          [
+            -72,
+            4
+          ],
+          [
+            [
+              36,
+              1,
+              1,
+              10,
+              true,
+              -71,
+              [
+                5,
+                123.14,
+                45
+              ]
+            ]
+          ],
+          [
+            0,
+            "f9CCYWuyZOs6HJQmZohyle",
+            1
+          ],
+          [
+            5,
+            123.14,
+            45
+          ],
+          [
+            0,
+            39.8,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "titleBg",
+          2,
+          [
+            6
+          ],
+          [
+            [
+              10,
+              0,
+              -73,
+              [
+                2
+              ],
+              3
+            ]
+          ],
+          [
+            0,
+            "92nDAytWBO64loZAUiIxld",
+            1
+          ],
+          [
+            5,
+            761,
+            100
+          ],
+          [
+            0,
+            600,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          26,
+          "label",
+          6,
+          [
+            [
+              -74,
+              [
+                4,
+                3,
+                -75,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            6
+          ],
+          [
+            4,
+            4287952639
+          ],
+          [
+            5,
+            156.36,
+            76.56
+          ]
+        ],
+        [
+          20,
+          "Background",
+          512,
+          14,
+          [
+            [
+              8,
+              -76,
+              [
+                4
+              ],
+              5
+            ]
+          ],
+          [
+            0,
+            "46hIwOkzpHNJgjXkMP/Tqp",
+            1
+          ],
+          [
+            5,
+            68,
+            68
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          6,
+          "label",
+          7,
+          [
+            [
+              -77,
+              [
+                4,
+                3,
+                -78,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            7
+          ],
+          [
+            5,
+            113.4,
+            56.4
+          ]
+        ],
+        [
+          3,
+          "New Button",
+          10,
+          [
+            9
+          ],
+          [
+            [
+              33,
+              3,
+              -79,
+              [
+                [
+                  11,
+                  "b674fWKikFN95iNyJSZoRCM",
+                  "onClickAgain",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              9,
+              17,
+              18,
+              19,
+              20
+            ]
+          ],
+          [
+            0,
+            "ec2Ys+30dBI5iQb7933Id7",
+            1
+          ],
+          [
+            5,
+            478,
+            200
+          ],
+          [
+            0,
+            -600,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          6,
+          "label",
+          3,
+          [
+            [
+              -80,
+              [
+                4,
+                2,
+                -81,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            3
+          ],
+          [
+            5,
+            104.86,
+            79.6
+          ]
+        ],
+        [
+          6,
+          "label",
+          4,
+          [
+            [
+              -82,
+              [
+                4,
+                2,
+                -83,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            4
+          ],
+          [
+            5,
+            78.34,
+            56.92
+          ]
+        ],
+        [
+          6,
+          "label",
+          8,
+          [
+            [
+              -84,
+              [
+                4,
+                2,
+                -85,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            8
+          ],
+          [
+            5,
+            39.4,
+            79.6
+          ]
+        ],
+        [
+          23,
+          "Card_Front",
+          2,
+          [
+            -86
+          ],
+          [
+            0,
+            "b5kC9wrv5OHqt7TK43HTum",
+            1
+          ],
+          [
+            5,
+            190,
+            190
+          ]
+        ],
+        [
+          39,
+          "default",
+          0,
+          false,
+          24,
+          [
+            0
+          ]
+        ],
+        [
+          5,
+          "Label",
+          56,
+          56,
+          false,
+          1,
+          1,
+          17,
+          [
+            1
+          ]
+        ],
+        [
+          21,
+          "container",
+          2,
+          [
+            0,
+            "b8UjykFltN1Zrb8y3jxvhD",
+            1
+          ],
+          [
+            0,
+            0.5,
+            1
+          ],
+          [
+            0,
+            300,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          24,
+          "checkmark",
+          512,
+          14,
+          [
+            -87
+          ],
+          [
+            0,
+            "415d2rPYFDW7ClyJEr+N4I",
+            1
+          ],
+          [
+            5,
+            68,
+            68
+          ]
+        ],
+        [
+          30,
+          2,
+          false,
+          28,
+          [
+            6
+          ]
+        ],
+        [
+          41,
+          3,
+          14,
+          [
+            4,
+            4292269782
+          ],
+          18,
+          29
+        ],
+        [
+          40,
+          "Label",
+          false,
+          1,
+          1,
+          19,
+          [
+            7
+          ]
+        ],
+        [
+          9,
+          "item_1015",
+          11,
+          [
+            [
+              8,
+              -88,
+              [
+                8
+              ],
+              9
+            ]
+          ],
+          [
+            0,
+            "4aJHloIRNLTrAmD8JAlXuv",
+            1
+          ],
+          [
+            5,
+            136,
+            158
+          ],
+          [
+            -52.43000000000001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.5,
+            0.5,
+            1
+          ]
+        ],
+        [
+          5,
+          "0/1",
+          60,
+          60,
+          false,
+          1,
+          1,
+          21,
+          [
+            10
+          ]
+        ],
+        [
+          9,
+          "item_2002",
+          15,
+          [
+            [
+              8,
+              -89,
+              [
+                11
+              ],
+              12
+            ]
+          ],
+          [
+            0,
+            "93IcqqywBDa5dy2ndMB6cK",
+            1
+          ],
+          [
+            5,
+            116,
+            133
+          ],
+          [
+            -44.169999999999995,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.3,
+            0.3,
+            1
+          ]
+        ],
+        [
+          5,
+          "320",
+          42,
+          42,
+          false,
+          1,
+          1,
+          22,
+          [
+            13
+          ]
+        ],
+        [
+          5,
+          "0",
+          60,
+          60,
+          false,
+          1,
+          1,
+          23,
+          [
+            14
+          ]
+        ],
+        [
+          25,
+          "label",
+          5,
+          [
+            -90
+          ],
+          [
+            0,
+            "39UVZqGiVI3a4l2VhTgRh3",
+            5
+          ],
+          [
+            4,
+            4289769392
+          ],
+          [
+            5,
+            139.62,
+            65.52
+          ]
+        ],
+        [
+          5,
+          "Label",
+          52,
+          52,
+          false,
+          1,
+          1,
+          37,
+          [
+            21
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        1,
+        1,
+        0,
+        7,
+        3,
+        0,
+        8,
+        4,
+        0,
+        9,
+        12,
+        0,
+        10,
+        11,
+        0,
+        11,
+        30,
+        0,
+        12,
+        10,
+        0,
+        13,
+        27,
+        0,
+        14,
+        25,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        24,
+        0,
+        -2,
+        16,
+        0,
+        -3,
+        27,
+        0,
+        -4,
+        10,
+        0,
+        1,
+        3,
+        0,
+        0,
+        3,
+        0,
+        4,
+        33,
+        0,
+        0,
+        3,
+        0,
+        0,
+        3,
+        0,
+        -1,
+        21,
+        0,
+        1,
+        4,
+        0,
+        0,
+        4,
+        0,
+        4,
+        35,
+        0,
+        0,
+        4,
+        0,
+        0,
+        4,
+        0,
+        -1,
+        22,
+        0,
+        1,
+        5,
+        0,
+        0,
+        5,
+        0,
+        4,
+        38,
+        0,
+        0,
+        5,
+        0,
+        0,
+        5,
+        0,
+        0,
+        5,
+        0,
+        -1,
+        37,
+        0,
+        1,
+        6,
+        0,
+        0,
+        6,
+        0,
+        4,
+        26,
+        0,
+        0,
+        6,
+        0,
+        0,
+        6,
+        0,
+        -1,
+        17,
+        0,
+        1,
+        7,
+        0,
+        0,
+        7,
+        0,
+        4,
+        31,
+        0,
+        0,
+        7,
+        0,
+        0,
+        7,
+        0,
+        -1,
+        19,
+        0,
+        1,
+        8,
+        0,
+        0,
+        8,
+        0,
+        4,
+        36,
+        0,
+        0,
+        8,
+        0,
+        0,
+        8,
+        0,
+        -1,
+        23,
+        0,
+        0,
+        9,
+        0,
+        0,
+        9,
+        0,
+        -1,
+        11,
+        0,
+        -2,
+        12,
+        0,
+        -1,
+        13,
+        0,
+        -2,
+        20,
+        0,
+        0,
+        11,
+        0,
+        -1,
+        32,
+        0,
+        0,
+        12,
+        0,
+        -1,
+        15,
+        0,
+        0,
+        13,
+        0,
+        -1,
+        14,
+        0,
+        -1,
+        30,
+        0,
+        -1,
+        18,
+        0,
+        -2,
+        28,
+        0,
+        0,
+        15,
+        0,
+        -1,
+        34,
+        0,
+        0,
+        16,
+        0,
+        -1,
+        26,
+        0,
+        0,
+        17,
+        0,
+        0,
+        18,
+        0,
+        -1,
+        31,
+        0,
+        0,
+        19,
+        0,
+        0,
+        20,
+        0,
+        -1,
+        33,
+        0,
+        0,
+        21,
+        0,
+        -1,
+        35,
+        0,
+        0,
+        22,
+        0,
+        -1,
+        36,
+        0,
+        0,
+        23,
+        0,
+        -1,
+        25,
+        0,
+        -1,
+        29,
+        0,
+        0,
+        32,
+        0,
+        0,
+        34,
+        0,
+        -1,
+        38,
+        0,
+        15,
+        1,
+        3,
+        2,
+        11,
+        4,
+        2,
+        15,
+        5,
+        2,
+        10,
+        6,
+        2,
+        16,
+        7,
+        2,
+        13,
+        8,
+        2,
+        12,
+        9,
+        2,
+        20,
+        90
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        26,
+        29,
+        31,
+        33,
+        35,
+        36,
+        38
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        3,
+        -1,
+        3,
+        -1,
+        -1,
+        -1,
+        3,
+        -1,
+        -1,
+        3,
+        -1,
+        -1,
+        -1,
+        3,
+        16,
+        17,
+        18,
+        19,
+        -1,
+        -1,
+        3,
+        20,
+        21,
+        22,
+        5,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      [
+        6,
+        0,
+        0,
+        7,
+        0,
+        8,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        11,
+        2,
+        12,
+        2,
+        13,
+        0,
+        0,
+        14,
+        15,
+        16,
+        17,
+        1,
+        18,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  ]
+]

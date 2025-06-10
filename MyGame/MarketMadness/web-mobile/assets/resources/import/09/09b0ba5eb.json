@@ -1,0 +1,517 @@
+[
+  1,
+  [
+    "9bm457651F4r5Ri+K0XYkq",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "11wZAfTj9G85y94Xzuj14U"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_1010",
+          "\r\nUltra_1010.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Dg/Dg_00000\r\n  rotate: false\r\n  xy: 227, 62\r\n  size: 99, 54\r\n  orig: 315, 303\r\n  offset: 61, 179\r\n  index: -1\r\nImage/Dg/Dg_00001\r\n  rotate: false\r\n  xy: 2, 314\r\n  size: 257, 186\r\n  orig: 315, 303\r\n  offset: 0, 117\r\n  index: -1\r\nImage/Dg/Dg_00002\r\n  rotate: true\r\n  xy: 2, 2\r\n  size: 152, 223\r\n  orig: 315, 303\r\n  offset: 138, 49\r\n  index: -1\r\nImage/Dg/Dg_00003\r\n  rotate: true\r\n  xy: 2, 156\r\n  size: 156, 235\r\n  orig: 315, 303\r\n  offset: 159, 8\r\n  index: -1\r\nImage/Dg/Dg_00004\r\n  rotate: false\r\n  xy: 239, 118\r\n  size: 151, 194\r\n  orig: 315, 303\r\n  offset: 152, 0\r\n  index: -1\r\nImage/Weapon_18\r\n  rotate: false\r\n  xy: 261, 380\r\n  size: 129, 120\r\n  orig: 129, 120\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Ultra_1010.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "x0zs8lyOpAGJfrMuFsbvexWItlI",
+              "spine": "3.8.99",
+              "x": -180.9,
+              "y": -94.01,
+              "width": 1051.23,
+              "height": 644.27,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root",
+                "y": 238.69
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Hammer",
+                "parent": "Zong",
+                "length": 117.22,
+                "rotation": 90.1,
+                "x": -2.61,
+                "y": -67.91
+              },
+              {
+                "name": "Dg",
+                "parent": "Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "hh",
+                "bone": "Hammer",
+                "attachment": "Image/Weapon_18"
+              },
+              {
+                "name": "Image/Dg/Dg_00000",
+                "bone": "Dg"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Dg/Dg_00000": {
+                    "Image/Dg/Dg_00000": {
+                      "y": 0.5,
+                      "width": 450,
+                      "height": 433
+                    },
+                    "Image/Dg/Dg_00001": {
+                      "y": 0.5,
+                      "width": 450,
+                      "height": 433
+                    },
+                    "Image/Dg/Dg_00002": {
+                      "y": 0.5,
+                      "width": 450,
+                      "height": 433
+                    },
+                    "Image/Dg/Dg_00003": {
+                      "y": 0.5,
+                      "width": 450,
+                      "height": 433
+                    },
+                    "Image/Dg/Dg_00004": {
+                      "y": 0.5,
+                      "width": 450,
+                      "height": 433
+                    }
+                  },
+                  "hh": {
+                    "Image/Weapon_18": {
+                      "x": 67.9,
+                      "y": -2.73,
+                      "rotation": -90.1,
+                      "width": 184,
+                      "height": 171
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/Dg/Dg_00000": {
+                    "attachment": [
+                      {
+                        "time": 1.1,
+                        "name": "Image/Dg/Dg_00000"
+                      },
+                      {
+                        "time": 1.1333,
+                        "name": "Image/Dg/Dg_00001"
+                      },
+                      {
+                        "time": 1.1667,
+                        "name": "Image/Dg/Dg_00002"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": "Image/Dg/Dg_00003"
+                      },
+                      {
+                        "time": 1.2333,
+                        "name": "Image/Dg/Dg_00004"
+                      },
+                      {
+                        "time": 1.2667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "hh": {
+                    "color": [
+                      {
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.6333,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.2,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.4333,
+                        "color": "ffffff00"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Hammer": {
+                    "rotate": [
+                      {
+                        "curve": 0.097,
+                        "c2": 0.21,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": 26.72
+                      },
+                      {
+                        "time": 1.1,
+                        "angle": -12.33
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": -76.77
+                      },
+                      {
+                        "time": 1.1667,
+                        "angle": -116.31
+                      },
+                      {
+                        "time": 1.4,
+                        "angle": -126.57
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 113.43,
+                        "y": 14.88,
+                        "curve": 0.074,
+                        "c2": 0.4,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 147.88,
+                        "y": 41.53
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 150.89,
+                        "y": 45.3
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 149.7,
+                        "y": 38.7
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 154.22,
+                        "y": 41.72
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": 153.82,
+                        "y": 43.73
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 154.32,
+                        "y": 47.28
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": 154.83,
+                        "y": 44.74
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 198.67,
+                        "y": 36.04
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 209.17,
+                        "y": 30.88
+                      },
+                      {
+                        "time": 1.3667,
+                        "x": 209.59,
+                        "y": 23.67
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.0667
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 1.045
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": 1.045,
+                        "y": 1.14
+                      },
+                      {
+                        "time": 1.1667
+                      }
+                    ]
+                  },
+                  "Dg": {
+                    "translate": [
+                      {
+                        "time": 1.1,
+                        "x": 223.05,
+                        "y": 14.79
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": 224.9
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 215.3
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "translate": [
+                      {
+                        "x": 355.97
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 1.2,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_1010"
+        ],
+        [
+          2,
+          "ultimate_1010",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            1051.23,
+            644.27
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,524 @@
+[
+  1,
+  [
+    "f2nrzVAfVH14fqcTEmCZX9",
+    "84DKpkIqpGOLprAbWUYht/",
+    "0e5pNdatBP8pi7oC7JyK9d"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Battle_Smoke",
+          "\r\nBattle_Smoke.png\r\nsize: 411,349\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Smkoe/Smkoe_00000\r\n  rotate: false\r\n  xy: 208, 245\r\n  size: 201, 102\r\n  orig: 216, 135\r\n  offset: 14, 2\r\n  index: -1\r\nImage/Smkoe/Smkoe_00001\r\n  rotate: false\r\n  xy: 208, 2\r\n  size: 196, 120\r\n  orig: 216, 135\r\n  offset: 15, 2\r\n  index: -1\r\nImage/Smkoe/Smkoe_00002\r\n  rotate: true\r\n  xy: 79, 151\r\n  size: 196, 122\r\n  orig: 216, 135\r\n  offset: 16, 8\r\n  index: -1\r\nImage/Smkoe/Smkoe_00003\r\n  rotate: false\r\n  xy: 2, 6\r\n  size: 204, 128\r\n  orig: 216, 135\r\n  offset: 2, 7\r\n  index: -1\r\nImage/Smkoe/Smkoe_00004\r\n  rotate: false\r\n  xy: 208, 124\r\n  size: 200, 119\r\n  orig: 216, 135\r\n  offset: 0, 5\r\n  index: -1\r\nImage/Smkoe/Smkoe_00005\r\n  rotate: true\r\n  xy: 2, 136\r\n  size: 211, 75\r\n  orig: 216, 135\r\n  offset: 3, 0\r\n  index: -1\r\n",
+          [
+            "Battle_Smoke.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "unQzN8MSqomfY82CkJ/GpB8yS1g",
+              "spine": "3.8.99",
+              "images": "",
+              "audio": "E:/BIGBIG/键盘侠/战斗表现"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Smoke",
+                "parent": "root"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/Smkoe/Smkoe_00000",
+                "bone": "Smoke"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Smkoe/Smkoe_00000": {
+                    "Image/Smkoe/Smkoe_00000": {
+                      "y": 0.5,
+                      "width": 216,
+                      "height": 135
+                    },
+                    "Image/Smkoe/Smkoe_00001": {
+                      "y": 0.5,
+                      "width": 216,
+                      "height": 135
+                    },
+                    "Image/Smkoe/Smkoe_00002": {
+                      "y": 0.5,
+                      "width": 216,
+                      "height": 135
+                    },
+                    "Image/Smkoe/Smkoe_00003": {
+                      "y": 0.5,
+                      "width": 216,
+                      "height": 135
+                    },
+                    "Image/Smkoe/Smkoe_00004": {
+                      "y": 0.5,
+                      "width": 216,
+                      "height": 135
+                    },
+                    "Image/Smkoe/Smkoe_00005": {
+                      "y": 0.5,
+                      "width": 216,
+                      "height": 135
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Battle_Smoke": {
+                "slots": {
+                  "Image/Smkoe/Smkoe_00000": {
+                    "attachment": [
+                      {
+                        "name": "Image/Smkoe/Smkoe_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Smkoe/Smkoe_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Smkoe/Smkoe_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Smkoe/Smkoe_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Smkoe/Smkoe_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Smkoe/Smkoe_00005"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Smoke": {
+                    "translate": [
+                      {
+                        "x": -84,
+                        "y": 46
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "FLash",
+          "\r\nFLash.png\r\nsize: 512,323\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Flash/Flash_00000\r\n  rotate: true\r\n  xy: 269, 20\r\n  size: 123, 174\r\n  orig: 138, 218\r\n  offset: 8, 18\r\n  index: -1\r\nImage/Flash/Flash_00001\r\n  rotate: false\r\n  xy: 2, 112\r\n  size: 131, 209\r\n  orig: 138, 218\r\n  offset: 7, 0\r\n  index: -1\r\nImage/Flash/Flash_00002\r\n  rotate: false\r\n  xy: 135, 116\r\n  size: 132, 205\r\n  orig: 138, 218\r\n  offset: 6, 11\r\n  index: -1\r\nImage/Flash/Flash_00003\r\n  rotate: false\r\n  xy: 269, 145\r\n  size: 134, 176\r\n  orig: 138, 218\r\n  offset: 4, 42\r\n  index: -1\r\nImage/Flash/Flash_00004\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 135, 108\r\n  orig: 138, 218\r\n  offset: 1, 19\r\n  index: -1\r\nImage/Flash/Flash_00005\r\n  rotate: true\r\n  xy: 405, 183\r\n  size: 138, 105\r\n  orig: 138, 218\r\n  offset: 0, 25\r\n  index: -1\r\nImage/glow_00000\r\n  rotate: false\r\n  xy: 139, 68\r\n  size: 72, 46\r\n  orig: 78, 51\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          [
+            "FLash.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "xaAoNE/8CxjAjaowMtPSoqCZUbA",
+              "spine": "3.8.99",
+              "x": -84,
+              "y": -144.39,
+              "width": 168,
+              "height": 403.96,
+              "images": "",
+              "audio": "E:/BIGBIG/键盘侠/战斗表现"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Flash",
+                "parent": "root"
+              },
+              {
+                "name": "Glow",
+                "parent": "Flash",
+                "y": -130.43
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/Flash/Flash_00000",
+                "bone": "Flash"
+              },
+              {
+                "name": "Image/glow_00000",
+                "bone": "Glow",
+                "attachment": "Image/glow_00000",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Flash/Flash_00000": {
+                    "Image/Flash/Flash_00000": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 173,
+                      "height": 273
+                    },
+                    "Image/Flash/Flash_00001": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 173,
+                      "height": 273
+                    },
+                    "Image/Flash/Flash_00002": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 173,
+                      "height": 273
+                    },
+                    "Image/Flash/Flash_00003": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 173,
+                      "height": 273
+                    },
+                    "Image/Flash/Flash_00004": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 173,
+                      "height": 273
+                    },
+                    "Image/Flash/Flash_00005": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 173,
+                      "height": 273
+                    }
+                  },
+                  "Image/glow_00000": {
+                    "Image/glow_00000": {
+                      "y": 18.03,
+                      "width": 98,
+                      "height": 64
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "FLash": {
+                "slots": {
+                  "Image/Flash/Flash_00000": {
+                    "attachment": [
+                      {
+                        "name": "Image/Flash/Flash_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Flash/Flash_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Flash/Flash_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Flash/Flash_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Flash/Flash_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Flash/Flash_00005"
+                      }
+                    ]
+                  },
+                  "Image/glow_00000": {
+                    "color": [
+                      {
+                        "color": "ffe66300"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "fff4c2ff"
+                      },
+                      {
+                        "time": 0.1667,
+                        "color": "ffe66300"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Flash": {
+                    "rotate": [
+                      {
+                        "angle": -7.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 1.32,
+                        "y": 145.5
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.2,
+                        "y": 1.359
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "rotate": [
+                      {
+                        "angle": 7.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 11.45,
+                        "y": 34.9
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "y": 2.551
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 1.127,
+                        "y": 3.647
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Jinji",
+          "\r\nJinji.png\r\nsize: 508,461\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/jinji_00000\r\n  rotate: true\r\n  xy: 184, 2\r\n  size: 139, 158\r\n  orig: 154, 190\r\n  offset: 15, 4\r\n  index: -1\r\nImage/jinji_00001\r\n  rotate: true\r\n  xy: 2, 131\r\n  size: 143, 180\r\n  orig: 154, 190\r\n  offset: 10, 0\r\n  index: -1\r\nImage/jinji_00002\r\n  rotate: false\r\n  xy: 158, 278\r\n  size: 145, 181\r\n  orig: 154, 190\r\n  offset: 9, 2\r\n  index: -1\r\nImage/jinji_00003\r\n  rotate: false\r\n  xy: 305, 276\r\n  size: 143, 183\r\n  orig: 154, 190\r\n  offset: 8, 4\r\n  index: -1\r\nImage/jinji_00004\r\n  rotate: true\r\n  xy: 184, 143\r\n  size: 131, 184\r\n  orig: 154, 190\r\n  offset: 9, 6\r\n  index: -1\r\nImage/jinji_00005\r\n  rotate: false\r\n  xy: 370, 108\r\n  size: 136, 166\r\n  orig: 154, 190\r\n  offset: 3, 17\r\n  index: -1\r\nImage/jinji_00006\r\n  rotate: false\r\n  xy: 2, 276\r\n  size: 154, 183\r\n  orig: 154, 190\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Jinji.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "yEphkOYgVTDsbMyaECUTHQSwemo",
+              "spine": "3.8.99",
+              "x": -111.15,
+              "y": -6.95,
+              "width": 230.54,
+              "height": 304.04,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root",
+                "rotation": -0.03,
+                "x": 4.12,
+                "y": 154.24,
+                "scaleX": 1.2,
+                "scaleY": 1.2
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/jinji_00000",
+                "bone": "Zong",
+                "attachment": "Image/jinji_00006"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/jinji_00000": {
+                    "Image/jinji_00000": {
+                      "width": 192,
+                      "height": 238
+                    },
+                    "Image/jinji_00001": {
+                      "width": 192,
+                      "height": 238
+                    },
+                    "Image/jinji_00002": {
+                      "width": 192,
+                      "height": 238
+                    },
+                    "Image/jinji_00003": {
+                      "width": 192,
+                      "height": 238
+                    },
+                    "Image/jinji_00004": {
+                      "width": 192,
+                      "height": 238
+                    },
+                    "Image/jinji_00005": {
+                      "width": 192,
+                      "height": 238
+                    },
+                    "Image/jinji_00006": {
+                      "width": 192,
+                      "height": 238
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Jinji": {
+                "slots": {
+                  "Image/jinji_00000": {
+                    "attachment": [
+                      {
+                        "name": "Image/jinji_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/jinji_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/jinji_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/jinji_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/jinji_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/jinji_00005"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/jinji_00006"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong": {
+                    "translate": [
+                      {
+                        "x": -6.34,
+                        "y": -5.27
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.2,
+                        "y": 1.2
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

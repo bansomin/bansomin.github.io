@@ -1,0 +1,859 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "cfvo5BBKRPbop7BZnMz8T+",
+    "9fxmEVgpdJgLLFGCpgR5b1"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "ultimate_boom_1010"
+        ],
+        [
+          1,
+          "ultimate_boom_1010",
+          [
+            [
+              -2,
+              [
+                2,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            1051.23,
+            644.27
+          ]
+        ],
+        [
+          4,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "Ultra_1010_Blast",
+          "\r\nUltra_1010_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/S_Blast/star_00000\r\n  rotate: false\r\n  xy: 2, 346\r\n  size: 84, 84\r\n  orig: 84, 84\r\n  offset: 0, 0\r\n  index: -1\r\nImage/S_Blast/star_00001\r\n  rotate: false\r\n  xy: 2, 260\r\n  size: 84, 84\r\n  orig: 84, 84\r\n  offset: 0, 0\r\n  index: -1\r\nImage/S_Blast/star_00002\r\n  rotate: false\r\n  xy: 2, 174\r\n  size: 84, 84\r\n  orig: 84, 84\r\n  offset: 0, 0\r\n  index: -1\r\nImage/S_Blast/star_00003\r\n  rotate: false\r\n  xy: 2, 88\r\n  size: 84, 84\r\n  orig: 84, 84\r\n  offset: 0, 0\r\n  index: -1\r\nImage/S_Blast/star_00004\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 84, 84\r\n  orig: 84, 84\r\n  offset: 0, 0\r\n  index: -1\r\nImage/S_Blast/star_00005\r\n  rotate: false\r\n  xy: 88, 346\r\n  size: 84, 84\r\n  orig: 84, 84\r\n  offset: 0, 0\r\n  index: -1\r\nImage/S_Blast/star_00006\r\n  rotate: false\r\n  xy: 88, 260\r\n  size: 84, 84\r\n  orig: 84, 84\r\n  offset: 0, 0\r\n  index: -1\r\nImage/star_00000\r\n  rotate: false\r\n  xy: 88, 228\r\n  size: 29, 30\r\n  orig: 29, 30\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Ultra_1010_Blast.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "lG5+rqTFmixe2McgeBNvrgQ5WPw",
+              "spine": "3.8.99",
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root",
+                "y": 238.69
+              },
+              {
+                "name": "B_Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Blast",
+                "parent": "B_Zong"
+              },
+              {
+                "name": "Lizong",
+                "parent": "B_Zong"
+              },
+              {
+                "name": "Star",
+                "parent": "Lizong"
+              },
+              {
+                "name": "Star2",
+                "parent": "Lizong"
+              },
+              {
+                "name": "Star3",
+                "parent": "Lizong"
+              },
+              {
+                "name": "Star4",
+                "parent": "Lizong"
+              },
+              {
+                "name": "Star5",
+                "parent": "Lizong"
+              },
+              {
+                "name": "Star6",
+                "parent": "Lizong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/S_Blast/star_00000",
+                "bone": "Blast"
+              },
+              {
+                "name": "Image/star_00000",
+                "bone": "Star"
+              },
+              {
+                "name": "Image/star_4",
+                "bone": "Star6",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/star_1",
+                "bone": "Star3"
+              },
+              {
+                "name": "Image/star_2",
+                "bone": "Star4",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/star_3",
+                "bone": "Star5",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/star_0",
+                "bone": "Star2"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/S_Blast/star_00000": {
+                    "Image/S_Blast/star_00000": {
+                      "width": 84,
+                      "height": 84
+                    },
+                    "Image/S_Blast/star_00001": {
+                      "width": 84,
+                      "height": 84
+                    },
+                    "Image/S_Blast/star_00002": {
+                      "width": 84,
+                      "height": 84
+                    },
+                    "Image/S_Blast/star_00003": {
+                      "width": 84,
+                      "height": 84
+                    },
+                    "Image/S_Blast/star_00004": {
+                      "width": 84,
+                      "height": 84
+                    },
+                    "Image/S_Blast/star_00005": {
+                      "width": 84,
+                      "height": 84
+                    },
+                    "Image/S_Blast/star_00006": {
+                      "width": 84,
+                      "height": 84
+                    }
+                  },
+                  "Image/star_0": {
+                    "Image/star_00000": {
+                      "x": 0.5,
+                      "width": 29,
+                      "height": 30
+                    }
+                  },
+                  "Image/star_00000": {
+                    "Image/star_00000": {
+                      "x": 0.5,
+                      "width": 29,
+                      "height": 30
+                    }
+                  },
+                  "Image/star_1": {
+                    "Image/star_00000": {
+                      "x": 0.5,
+                      "width": 29,
+                      "height": 30
+                    }
+                  },
+                  "Image/star_2": {
+                    "Image/star_00000": {
+                      "x": 0.5,
+                      "width": 29,
+                      "height": 30
+                    }
+                  },
+                  "Image/star_3": {
+                    "Image/star_00000": {
+                      "x": 0.5,
+                      "width": 29,
+                      "height": 30
+                    }
+                  },
+                  "Image/star_4": {
+                    "Image/star_00000": {
+                      "x": 0.5,
+                      "width": 29,
+                      "height": 30
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/S_Blast/star_00000": {
+                    "color": [
+                      {
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.0333,
+                        "color": "ffe238ff"
+                      },
+                      {
+                        "time": 0.2333,
+                        "color": "ffe13700"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/S_Blast/star_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/S_Blast/star_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/S_Blast/star_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/S_Blast/star_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/S_Blast/star_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/S_Blast/star_00005"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/S_Blast/star_00006"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/star_0": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "fffd2fff"
+                      },
+                      {
+                        "time": 0.2333,
+                        "color": "ffca2bff"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "f5ab1200"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.0333,
+                        "name": "Image/star_00000"
+                      }
+                    ]
+                  },
+                  "Image/star_00000": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "fffd2fff"
+                      },
+                      {
+                        "time": 0.2333,
+                        "color": "ffca2bff"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "f5ab1200"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.0333,
+                        "name": "Image/star_00000"
+                      }
+                    ]
+                  },
+                  "Image/star_1": {
+                    "color": [
+                      {
+                        "time": 0.0667,
+                        "color": "ff82f8ff"
+                      },
+                      {
+                        "time": 0.6,
+                        "color": "e860e000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.0667,
+                        "name": "Image/star_00000"
+                      }
+                    ]
+                  },
+                  "Image/star_2": {
+                    "color": [
+                      {
+                        "time": 0.0667,
+                        "color": "ff82f8ff"
+                      },
+                      {
+                        "time": 0.4,
+                        "color": "e860e000"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.0667,
+                        "name": "Image/star_00000"
+                      }
+                    ]
+                  },
+                  "Image/star_3": {
+                    "color": [
+                      {
+                        "time": 0.0667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.4,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.0667,
+                        "name": "Image/star_00000"
+                      }
+                    ]
+                  },
+                  "Image/star_4": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "fffd2fff"
+                      },
+                      {
+                        "time": 0.1333,
+                        "color": "ffca2bff"
+                      },
+                      {
+                        "time": 0.3,
+                        "color": "f5ab1200"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.0333,
+                        "name": "Image/star_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Blast": {
+                    "rotate": [
+                      {
+                        "angle": -18
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 310.63,
+                        "y": -116.29
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 2,
+                        "y": 2.879
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 3,
+                        "y": 3.774
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 3.2,
+                        "y": 3.741
+                      }
+                    ]
+                  },
+                  "Star": {
+                    "rotate": [
+                      {
+                        "time": 0.0333
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": -33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0333,
+                        "x": 398.05,
+                        "y": -57.69
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 433.53,
+                        "y": -22.22,
+                        "curve": 0.09,
+                        "c2": 0.07,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 489.3,
+                        "y": 22.03
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0333
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 1.065,
+                        "y": 1.065
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.43,
+                        "y": 0.43
+                      }
+                    ]
+                  },
+                  "Star2": {
+                    "rotate": [
+                      {
+                        "time": 0.0333
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": -33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0333,
+                        "x": 371.46,
+                        "y": -185.15
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 387.97,
+                        "y": -210.83
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 399.82,
+                        "y": -228.84
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0333,
+                        "x": 0.463,
+                        "y": 0.463
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 1.085,
+                        "y": 1.085
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.394,
+                        "y": 0.394
+                      }
+                    ]
+                  },
+                  "Star3": {
+                    "rotate": [
+                      {
+                        "time": 0.0667
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0667,
+                        "x": 251.26,
+                        "y": -57.69
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": 249.17,
+                        "y": -47.2
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0667,
+                        "x": 0.758,
+                        "y": 0.758
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 1.187,
+                        "y": 1.187
+                      },
+                      {
+                        "time": 0.6,
+                        "x": 0.24,
+                        "y": 0.24
+                      }
+                    ]
+                  },
+                  "Star4": {
+                    "rotate": [
+                      {
+                        "time": 0.0667
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0667,
+                        "x": 251.26,
+                        "y": -57.69
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": 249.17,
+                        "y": -47.2
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0667,
+                        "x": 0.758,
+                        "y": 0.758
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 1.187,
+                        "y": 1.187
+                      },
+                      {
+                        "time": 0.6,
+                        "x": 0.24,
+                        "y": 0.24
+                      }
+                    ]
+                  },
+                  "Star5": {
+                    "rotate": [
+                      {
+                        "time": 0.0667,
+                        "angle": -33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0667,
+                        "x": 271.97,
+                        "y": -157.44
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0667,
+                        "x": 0.397,
+                        "y": 0.397
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 0.797,
+                        "y": 0.797
+                      },
+                      {
+                        "time": 0.6,
+                        "x": 0.114,
+                        "y": 0.114
+                      }
+                    ]
+                  },
+                  "Star6": {
+                    "rotate": [
+                      {
+                        "time": 0.0333
+                      },
+                      {
+                        "time": 0.9,
+                        "angle": -33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.0333,
+                        "x": 398.05,
+                        "y": -57.69
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 433.53,
+                        "y": -22.22,
+                        "curve": 0.09,
+                        "c2": 0.07,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 489.3,
+                        "y": 22.03
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0333
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 1.065,
+                        "y": 1.065
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.43,
+                        "y": 0.43
+                      }
+                    ]
+                  },
+                  "B_Zong": {
+                    "translate": [
+                      {
+                        "x": -305.25,
+                        "y": -102.78
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

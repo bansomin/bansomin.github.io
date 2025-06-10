@@ -1,0 +1,1124 @@
+[
+  1,
+  [
+    "f9XNftL99MeqebqZpXF98P",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "a86M5NdD9PxavKkpA2vW6V"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_2001_Blast",
+          "\r\nUltra_2001_Blast.png\r\nsize: 509,490\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nDi_Glow_00000\r\n  rotate: false\r\n  xy: 436, 65\r\n  size: 70, 23\r\n  orig: 72, 23\r\n  offset: 1, 0\r\n  index: -1\r\nRing/Lianyi_00028\r\n  rotate: false\r\n  xy: 2, 313\r\n  size: 56, 17\r\n  orig: 148, 51\r\n  offset: 45, 24\r\n  index: -1\r\nRing/Lianyi_00029\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 80, 21\r\n  orig: 148, 51\r\n  offset: 35, 22\r\n  index: -1\r\nRing/Lianyi_00030\r\n  rotate: false\r\n  xy: 392, 27\r\n  size: 96, 28\r\n  orig: 148, 51\r\n  offset: 26, 17\r\n  index: -1\r\nRing/Lianyi_00031\r\n  rotate: false\r\n  xy: 278, 22\r\n  size: 112, 33\r\n  orig: 148, 51\r\n  offset: 20, 14\r\n  index: -1\r\nRing/Lianyi_00032\r\n  rotate: false\r\n  xy: 150, 17\r\n  size: 126, 39\r\n  orig: 148, 51\r\n  offset: 13, 11\r\n  index: -1\r\nRing/Lianyi_00033\r\n  rotate: false\r\n  xy: 2, 332\r\n  size: 130, 42\r\n  orig: 148, 51\r\n  offset: 10, 8\r\n  index: -1\r\nRing/Lianyi_00034\r\n  rotate: false\r\n  xy: 301, 57\r\n  size: 133, 44\r\n  orig: 148, 51\r\n  offset: 8, 6\r\n  index: -1\r\nRing/Lianyi_00035\r\n  rotate: false\r\n  xy: 165, 169\r\n  size: 136, 47\r\n  orig: 148, 51\r\n  offset: 7, 4\r\n  index: -1\r\nRing/Lianyi_00036\r\n  rotate: true\r\n  xy: 442, 90\r\n  size: 140, 49\r\n  orig: 148, 51\r\n  offset: 5, 2\r\n  index: -1\r\nRing/Lianyi_00037\r\n  rotate: false\r\n  xy: 297, 103\r\n  size: 143, 50\r\n  orig: 148, 51\r\n  offset: 4, 1\r\n  index: -1\r\nRing/Lianyi_00038\r\n  rotate: true\r\n  xy: 456, 344\r\n  size: 144, 51\r\n  orig: 148, 51\r\n  offset: 3, 0\r\n  index: -1\r\nRing/Lianyi_00039\r\n  rotate: false\r\n  xy: 150, 112\r\n  size: 145, 50\r\n  orig: 148, 51\r\n  offset: 2, 1\r\n  index: -1\r\nRing/Lianyi_00040\r\n  rotate: false\r\n  xy: 2, 112\r\n  size: 146, 50\r\n  orig: 148, 51\r\n  offset: 2, 1\r\n  index: -1\r\nRing/Lianyi_00041\r\n  rotate: false\r\n  xy: 2, 65\r\n  size: 147, 45\r\n  orig: 148, 51\r\n  offset: 1, 0\r\n  index: -1\r\nRing/Lianyi_00042\r\n  rotate: false\r\n  xy: 151, 58\r\n  size: 148, 43\r\n  orig: 148, 51\r\n  offset: 0, 0\r\n  index: -1\r\nRing/Lianyi_00043\r\n  rotate: false\r\n  xy: 2, 25\r\n  size: 146, 38\r\n  orig: 148, 51\r\n  offset: 0, 1\r\n  index: -1\r\nZhu_water/zhuti_00035\r\n  rotate: true\r\n  xy: 305, 155\r\n  size: 75, 113\r\n  orig: 167, 171\r\n  offset: 37, 4\r\n  index: -1\r\nZhu_water/zhuti_00036\r\n  rotate: true\r\n  xy: 2, 229\r\n  size: 81, 156\r\n  orig: 167, 171\r\n  offset: 35, 4\r\n  index: -1\r\nZhu_water/zhuti_00037\r\n  rotate: true\r\n  xy: 135, 403\r\n  size: 85, 168\r\n  orig: 167, 171\r\n  offset: 33, 3\r\n  index: -1\r\nZhu_water/zhuti_00038\r\n  rotate: true\r\n  xy: 294, 308\r\n  size: 84, 160\r\n  orig: 167, 171\r\n  offset: 37, 2\r\n  index: -1\r\nZhu_water/zhuti_00039\r\n  rotate: true\r\n  xy: 135, 312\r\n  size: 89, 157\r\n  orig: 167, 171\r\n  offset: 33, 0\r\n  index: -1\r\nZhu_water/zhuti_00040\r\n  rotate: true\r\n  xy: 305, 394\r\n  size: 94, 149\r\n  orig: 167, 171\r\n  offset: 32, 0\r\n  index: -1\r\nZhu_water/zhuti_00041\r\n  rotate: true\r\n  xy: 305, 394\r\n  size: 94, 149\r\n  orig: 167, 171\r\n  offset: 32, 0\r\n  index: -1\r\nZhu_water/zhuti_00042\r\n  rotate: false\r\n  xy: 2, 376\r\n  size: 131, 112\r\n  orig: 167, 171\r\n  offset: 19, 0\r\n  index: -1\r\nZhu_water/zhuti_00043\r\n  rotate: false\r\n  xy: 2, 376\r\n  size: 131, 112\r\n  orig: 167, 171\r\n  offset: 19, 0\r\n  index: -1\r\nZhu_water/zhuti_00044\r\n  rotate: false\r\n  xy: 160, 218\r\n  size: 143, 88\r\n  orig: 167, 171\r\n  offset: 11, 0\r\n  index: -1\r\nZhu_water/zhuti_00045\r\n  rotate: false\r\n  xy: 160, 218\r\n  size: 143, 88\r\n  orig: 167, 171\r\n  offset: 11, 0\r\n  index: -1\r\nZhu_water/zhuti_00046\r\n  rotate: false\r\n  xy: 305, 232\r\n  size: 161, 74\r\n  orig: 167, 171\r\n  offset: 2, 1\r\n  index: -1\r\nZhu_water/zhuti_00047\r\n  rotate: false\r\n  xy: 2, 164\r\n  size: 161, 52\r\n  orig: 167, 171\r\n  offset: 0, 4\r\n  index: -1\r\nZhu_water/zhuti_00048\r\n  rotate: false\r\n  xy: 392, 2\r\n  size: 115, 23\r\n  orig: 167, 171\r\n  offset: 52, 6\r\n  index: -1\r\nZhu_water/zhuti_00049\r\n  rotate: false\r\n  xy: 392, 2\r\n  size: 115, 23\r\n  orig: 167, 171\r\n  offset: 52, 6\r\n  index: -1\r\n",
+          [
+            "Ultra_2001_Blast.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "FrECrLx1bo2VryxkAipB5SHLifc",
+              "spine": "3.8.99",
+              "images": "./images/",
+              "audio": "E:/BIGBIG/键盘侠/Bos/images"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "ZZZong",
+                "parent": "root"
+              },
+              {
+                "name": "Bomm_Zomg",
+                "parent": "ZZZong"
+              },
+              {
+                "name": "Zhuti",
+                "parent": "Bomm_Zomg"
+              },
+              {
+                "name": "Di_Glow",
+                "parent": "Bomm_Zomg"
+              },
+              {
+                "name": "Ring",
+                "parent": "Bomm_Zomg"
+              },
+              {
+                "name": "Ring2",
+                "parent": "Bomm_Zomg",
+                "scaleX": 0.6,
+                "scaleY": 0.6
+              },
+              {
+                "name": "Ring3",
+                "parent": "Bomm_Zomg",
+                "scaleX": 0.5,
+                "scaleY": 0.5
+              }
+            ],
+            "slots": [
+              {
+                "name": "Di_Glow_00000",
+                "bone": "Di_Glow"
+              },
+              {
+                "name": "Ring/Lianyi_00028",
+                "bone": "Ring"
+              },
+              {
+                "name": "Ring/Lianyi_28",
+                "bone": "Ring2"
+              },
+              {
+                "name": "Ring/Lianyi_29",
+                "bone": "Ring3"
+              },
+              {
+                "name": "Zhu_water/zhuti_00035",
+                "bone": "Zhuti"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Di_Glow_00000": {
+                    "Di_Glow_00000": {
+                      "y": 0.5,
+                      "width": 144,
+                      "height": 45
+                    }
+                  },
+                  "Ring/Lianyi_00028": {
+                    "Ring/Lianyi_00028": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00029": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00030": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00031": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00032": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00033": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00034": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00035": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00036": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00037": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00038": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00039": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00040": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00041": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00042": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00043": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    }
+                  },
+                  "Ring/Lianyi_28": {
+                    "Ring/Lianyi_00028": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00029": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00030": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00031": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00032": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00033": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00034": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00035": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00036": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00037": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00038": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00039": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00040": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00041": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00042": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00043": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    }
+                  },
+                  "Ring/Lianyi_29": {
+                    "Ring/Lianyi_00028": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00029": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00030": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00031": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00032": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00033": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00034": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00035": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00036": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00037": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00038": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00039": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00040": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00041": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00042": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    },
+                    "Ring/Lianyi_00043": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 295,
+                      "height": 101
+                    }
+                  },
+                  "Zhu_water/zhuti_00035": {
+                    "Zhu_water/zhuti_00035": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00036": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00037": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00038": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00039": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00040": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00041": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00042": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00043": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00044": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00045": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00046": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00047": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00048": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    },
+                    "Zhu_water/zhuti_00049": {
+                      "x": 0.5,
+                      "width": 333,
+                      "height": 342
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Di_Glow_00000": {
+                    "color": [
+                      {
+                        "time": 0.0667,
+                        "color": "4da2cfff"
+                      },
+                      {
+                        "time": 0.2667,
+                        "color": "1685c3cd"
+                      },
+                      {
+                        "time": 0.7,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.0333,
+                        "name": "Di_Glow_00000"
+                      }
+                    ]
+                  },
+                  "Ring/Lianyi_00028": {
+                    "attachment": [
+                      {
+                        "name": "Ring/Lianyi_00028"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Ring/Lianyi_00029"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Ring/Lianyi_00030"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Ring/Lianyi_00031"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Ring/Lianyi_00032"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Ring/Lianyi_00033"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Ring/Lianyi_00034"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Ring/Lianyi_00035"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Ring/Lianyi_00036"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Ring/Lianyi_00037"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Ring/Lianyi_00038"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Ring/Lianyi_00039"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Ring/Lianyi_00040"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Ring/Lianyi_00041"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Ring/Lianyi_00042"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Ring/Lianyi_00043"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Ring/Lianyi_28": {
+                    "color": [
+                      {
+                        "time": 0.5333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.8333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.1667,
+                        "name": "Ring/Lianyi_00028"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Ring/Lianyi_00029"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Ring/Lianyi_00030"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Ring/Lianyi_00031"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Ring/Lianyi_00032"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Ring/Lianyi_00033"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Ring/Lianyi_00034"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Ring/Lianyi_00035"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Ring/Lianyi_00036"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Ring/Lianyi_00037"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Ring/Lianyi_00038"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Ring/Lianyi_00039"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Ring/Lianyi_00040"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Ring/Lianyi_00041"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Ring/Lianyi_00042"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Ring/Lianyi_00043"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": null
+                      },
+                      {
+                        "time": 1.3,
+                        "name": "Ring/Lianyi_00043"
+                      }
+                    ]
+                  },
+                  "Ring/Lianyi_29": {
+                    "color": [
+                      {
+                        "time": 0.5333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Ring/Lianyi_00028"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Ring/Lianyi_00029"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Ring/Lianyi_00030"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Ring/Lianyi_00031"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Ring/Lianyi_00032"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Ring/Lianyi_00033"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Ring/Lianyi_00034"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Ring/Lianyi_00035"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Ring/Lianyi_00036"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Ring/Lianyi_00037"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Ring/Lianyi_00038"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Ring/Lianyi_00039"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Ring/Lianyi_00040"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Ring/Lianyi_00041"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Ring/Lianyi_00042"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Ring/Lianyi_00043"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": null
+                      },
+                      {
+                        "time": 1.4333,
+                        "name": "Ring/Lianyi_00043"
+                      }
+                    ]
+                  },
+                  "Zhu_water/zhuti_00035": {
+                    "attachment": [
+                      {
+                        "name": "Zhu_water/zhuti_00035"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Zhu_water/zhuti_00036"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Zhu_water/zhuti_00037"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Zhu_water/zhuti_00038"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Zhu_water/zhuti_00039"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Zhu_water/zhuti_00040"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Zhu_water/zhuti_00041"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Zhu_water/zhuti_00042"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Zhu_water/zhuti_00043"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Zhu_water/zhuti_00044"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Zhu_water/zhuti_00045"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Zhu_water/zhuti_00046"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Zhu_water/zhuti_00047"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Zhu_water/zhuti_00048"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Zhu_water/zhuti_00049"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zhuti": {
+                    "rotate": [
+                      {
+                        "angle": 2.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -294.8,
+                        "y": 142.35
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.3,
+                        "y": 1.3
+                      }
+                    ]
+                  },
+                  "Ring": {
+                    "translate": [
+                      {
+                        "x": -307.75,
+                        "y": -80.97
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 2,
+                        "y": 2
+                      }
+                    ]
+                  },
+                  "Ring2": {
+                    "translate": [
+                      {
+                        "time": 0.1667,
+                        "x": -153.03,
+                        "y": -125.79
+                      }
+                    ]
+                  },
+                  "Ring3": {
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": -450.9,
+                        "y": -24.57
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.8,
+                        "y": 0.8
+                      }
+                    ]
+                  },
+                  "Di_Glow": {
+                    "translate": [
+                      {
+                        "time": 0.0333,
+                        "x": -300.77,
+                        "y": -65.07
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -300.77,
+                        "y": -83.2
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0333,
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 5,
+                        "y": 5
+                      }
+                    ]
+                  },
+                  "ZZZong": {
+                    "rotate": [
+                      {
+                        "angle": 0.11
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 310.83,
+                        "y": 48.07
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_boom_2001"
+        ],
+        [
+          2,
+          "ultimate_boom_2001",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            281,
+            272
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

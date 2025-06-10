@@ -1,0 +1,1092 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "9fG2kQhONEaazcMt0j0xDN",
+    "2ap/vs73xDW58aqIfVtHGz"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "defaultAnimation",
+        "_preCacheMode",
+        "premultipliedAlpha",
+        "_animationName",
+        "node",
+        "_materials"
+      ],
+      -2,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      6
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "car"
+        ],
+        [
+          1,
+          "car",
+          [
+            [
+              -2,
+              [
+                2,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            1080,
+            2340
+          ]
+        ],
+        [
+          4,
+          "default",
+          "animation",
+          0,
+          false,
+          "animation",
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "Car",
+          "\r\nCar.png\r\nsize: 496,447\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBox\r\n  rotate: false\r\n  xy: 2, 205\r\n  size: 285, 240\r\n  orig: 285, 240\r\n  offset: 0, 0\r\n  index: -1\r\nDuck\r\n  rotate: false\r\n  xy: 432, 279\r\n  size: 49, 42\r\n  orig: 49, 42\r\n  offset: 0, 0\r\n  index: -1\r\nHead\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 229, 201\r\n  orig: 229, 201\r\n  offset: 0, 0\r\n  index: -1\r\nPengzi\r\n  rotate: true\r\n  xy: 233, 30\r\n  size: 173, 47\r\n  orig: 173, 47\r\n  offset: 0, 0\r\n  index: -1\r\nRound\r\n  rotate: false\r\n  xy: 412, 130\r\n  size: 70, 70\r\n  orig: 70, 70\r\n  offset: 0, 0\r\n  index: -1\r\nShadow\r\n  rotate: true\r\n  xy: 367, 36\r\n  size: 409, 43\r\n  orig: 409, 43\r\n  offset: 0, 0\r\n  index: -1\r\nSmoke/Smoke_00006\r\n  rotate: true\r\n  xy: 360, 165\r\n  size: 26, 4\r\n  orig: 54, 10\r\n  offset: 25, 0\r\n  index: -1\r\nSmoke/Smoke_00007\r\n  rotate: false\r\n  xy: 412, 96\r\n  size: 37, 10\r\n  orig: 54, 10\r\n  offset: 16, 0\r\n  index: -1\r\nSmoke/Smoke_00008\r\n  rotate: true\r\n  xy: 483, 280\r\n  size: 41, 10\r\n  orig: 54, 10\r\n  offset: 13, 0\r\n  index: -1\r\nSmoke/Smoke_00009\r\n  rotate: false\r\n  xy: 233, 7\r\n  size: 45, 10\r\n  orig: 54, 10\r\n  offset: 9, 0\r\n  index: -1\r\nSmoke/Smoke_00010\r\n  rotate: false\r\n  xy: 233, 19\r\n  size: 47, 9\r\n  orig: 54, 10\r\n  offset: 7, 0\r\n  index: -1\r\nSmoke/Smoke_00012\r\n  rotate: false\r\n  xy: 412, 108\r\n  size: 44, 9\r\n  orig: 54, 10\r\n  offset: 10, 0\r\n  index: -1\r\nSmoke/Smoke_00014\r\n  rotate: false\r\n  xy: 412, 119\r\n  size: 54, 9\r\n  orig: 54, 10\r\n  offset: 0, 0\r\n  index: -1\r\nSmoke/Smoke_00016\r\n  rotate: false\r\n  xy: 412, 85\r\n  size: 35, 9\r\n  orig: 54, 10\r\n  offset: 19, 0\r\n  index: -1\r\nTai\r\n  rotate: true\r\n  xy: 412, 276\r\n  size: 169, 18\r\n  orig: 169, 18\r\n  offset: 0, 0\r\n  index: -1\r\nW1\r\n  rotate: false\r\n  xy: 412, 202\r\n  size: 34, 72\r\n  orig: 34, 72\r\n  offset: 0, 0\r\n  index: -1\r\nW2\r\n  rotate: false\r\n  xy: 412, 202\r\n  size: 34, 72\r\n  orig: 34, 72\r\n  offset: 0, 0\r\n  index: -1\r\nWheel_Back\r\n  rotate: true\r\n  xy: 289, 193\r\n  size: 252, 76\r\n  orig: 252, 76\r\n  offset: 0, 0\r\n  index: -1\r\nWheel_L\r\n  rotate: true\r\n  xy: 282, 105\r\n  size: 86, 76\r\n  orig: 86, 76\r\n  offset: 0, 0\r\n  index: -1\r\nWheel_R\r\n  rotate: true\r\n  xy: 282, 17\r\n  size: 86, 76\r\n  orig: 86, 76\r\n  offset: 0, 0\r\n  index: -1\r\nZhaop\r\n  rotate: true\r\n  xy: 432, 323\r\n  size: 122, 62\r\n  orig: 122, 62\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Car.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "T7jbMeqsVLEyox1nfDmbV4K9CRo",
+              "spine": "3.8.99",
+              "x": -540,
+              "y": -1223.52,
+              "width": 1080,
+              "height": 2340,
+              "images": "./images/",
+              "audio": "E:/BIGBIG/键盘侠/货车/images"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root",
+                "x": -64.65,
+                "scaleX": 0.3333,
+                "scaleY": 0.3333
+              },
+              {
+                "name": "Box",
+                "parent": "Zong",
+                "length": 742,
+                "rotation": 90,
+                "x": 739.37,
+                "y": 194.22
+              },
+              {
+                "name": "Head",
+                "parent": "Box",
+                "length": 459.98,
+                "rotation": 90,
+                "x": 41.07,
+                "y": 791.28
+              },
+              {
+                "name": "Pengzi",
+                "parent": "Box",
+                "length": 125.98,
+                "rotation": -149.35,
+                "x": 815.03,
+                "y": 246.92
+              },
+              {
+                "name": "Tai",
+                "parent": "Box",
+                "x": 285.48,
+                "y": 214.03
+              },
+              {
+                "name": "Duck",
+                "parent": "Box",
+                "length": 79.97,
+                "rotation": 1.3,
+                "x": 310.92,
+                "y": 415.71
+              },
+              {
+                "name": "W1",
+                "parent": "Box",
+                "length": 187.29,
+                "rotation": 2.22,
+                "x": 316.37,
+                "y": 152.25
+              },
+              {
+                "name": "W2",
+                "parent": "Box",
+                "length": 170.8,
+                "x": 314.55,
+                "y": 21.43
+              },
+              {
+                "name": "Wheel_Back",
+                "parent": "Box",
+                "x": -57.93,
+                "y": 682.81
+              },
+              {
+                "name": "Wheel_R",
+                "parent": "Box",
+                "x": -61.57,
+                "y": 232.2
+              },
+              {
+                "name": "Wheel_L",
+                "parent": "Box",
+                "x": -65.2,
+                "y": 895.4
+              },
+              {
+                "name": "Round",
+                "parent": "Wheel_R",
+                "x": -8.27,
+                "y": -16.51
+              },
+              {
+                "name": "Zhaop",
+                "parent": "Box",
+                "length": 134.37,
+                "rotation": 3.87,
+                "x": 853.05,
+                "y": 247.74
+              },
+              {
+                "name": "Shadow",
+                "parent": "Zong",
+                "x": 53.41,
+                "y": -5.95
+              },
+              {
+                "name": "Round2",
+                "parent": "Wheel_R",
+                "x": -8.27,
+                "y": -16.51
+              },
+              {
+                "name": "Pengzi2",
+                "parent": "Pengzi",
+                "x": 12.19,
+                "y": -229.41
+              },
+              {
+                "name": "Pengzi3",
+                "parent": "Pengzi",
+                "x": 267.65,
+                "y": 204.3
+              },
+              {
+                "name": "Smoke",
+                "parent": "root"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Shadow",
+                "bone": "Shadow",
+                "attachment": "Shadow"
+              },
+              {
+                "name": "Wheel_Back",
+                "bone": "Wheel_Back",
+                "attachment": "Wheel_Back"
+              },
+              {
+                "name": "Box",
+                "bone": "Box",
+                "attachment": "Box"
+              },
+              {
+                "name": "Duck",
+                "bone": "Duck",
+                "attachment": "Duck"
+              },
+              {
+                "name": "W2",
+                "bone": "W2",
+                "attachment": "W2"
+              },
+              {
+                "name": "W1",
+                "bone": "W1",
+                "attachment": "W1"
+              },
+              {
+                "name": "Tai",
+                "bone": "Tai",
+                "attachment": "Tai"
+              },
+              {
+                "name": "Zhaop",
+                "bone": "Zhaop",
+                "attachment": "Zhaop"
+              },
+              {
+                "name": "Pengzi",
+                "bone": "Pengzi",
+                "attachment": "Pengzi"
+              },
+              {
+                "name": "Head",
+                "bone": "Head",
+                "attachment": "Head"
+              },
+              {
+                "name": "Wheel_L",
+                "bone": "Wheel_L",
+                "attachment": "Wheel_L"
+              },
+              {
+                "name": "Wheel_R",
+                "bone": "Wheel_R",
+                "attachment": "Wheel_R"
+              },
+              {
+                "name": "Round",
+                "bone": "Round",
+                "attachment": "Round"
+              },
+              {
+                "name": "Round2",
+                "bone": "Round2",
+                "attachment": "Round"
+              },
+              {
+                "name": "Smoke/Smoke_00006",
+                "bone": "Smoke"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Box": {
+                    "Box": {
+                      "x": 405.21,
+                      "y": 470.09,
+                      "rotation": -90,
+                      "width": 1138,
+                      "height": 958
+                    }
+                  },
+                  "Duck": {
+                    "Duck": {
+                      "x": 61.97,
+                      "y": -15.03,
+                      "rotation": -91.3,
+                      "width": 196,
+                      "height": 168
+                    }
+                  },
+                  "Head": {
+                    "Head": {
+                      "x": 329.31,
+                      "y": -233.14,
+                      "rotation": -180,
+                      "width": 917,
+                      "height": 802
+                    }
+                  },
+                  "Pengzi": {
+                    "Pengzi": {
+                      "type": "mesh",
+                      "hull": 8,
+                      "width": 692,
+                      "height": 186,
+                      "uvs": [
+                        1,
+                        0.45197,
+                        1,
+                        0.53369,
+                        1,
+                        1,
+                        0.09146,
+                        1,
+                        0.09276,
+                        0.55772,
+                        0.00001,
+                        0.23566,
+                        0.00001,
+                        0,
+                        0.9132,
+                        0,
+                        0.1186,
+                        0.51446,
+                        0.40414,
+                        0.52888,
+                        0.75945,
+                        0.52407
+                      ],
+                      "triangles": [
+                        10,
+                        1,
+                        2,
+                        2,
+                        3,
+                        9,
+                        8,
+                        9,
+                        3,
+                        3,
+                        4,
+                        8,
+                        4,
+                        5,
+                        8,
+                        9,
+                        10,
+                        2,
+                        6,
+                        9,
+                        8,
+                        5,
+                        6,
+                        8,
+                        6,
+                        7,
+                        9,
+                        7,
+                        10,
+                        9,
+                        10,
+                        7,
+                        0,
+                        10,
+                        0,
+                        1
+                      ],
+                      "vertices": [
+                        2,
+                        4,
+                        239.38,
+                        284.54,
+                        0.896,
+                        17,
+                        -28.27,
+                        80.24,
+                        0.104,
+                        2,
+                        4,
+                        252.46,
+                        276.79,
+                        0.504,
+                        17,
+                        -15.19,
+                        72.49,
+                        0.496,
+                        1,
+                        17,
+                        59.43,
+                        28.27,
+                        1,
+                        1,
+                        16,
+                        -5.63,
+                        -78.89,
+                        1,
+                        2,
+                        4,
+                        -63.76,
+                        -265.59,
+                        0.49118,
+                        16,
+                        -75.95,
+                        -36.19,
+                        0.50882,
+                        1,
+                        4,
+                        -148.01,
+                        -290.27,
+                        1,
+                        1,
+                        4,
+                        -185.72,
+                        -267.92,
+                        1,
+                        1,
+                        4,
+                        136.44,
+                        275.72,
+                        1,
+                        2,
+                        4,
+                        -61.56,
+                        -246.11,
+                        0.45859,
+                        16,
+                        -73.75,
+                        -16.7,
+                        0.54141,
+                        2,
+                        4,
+                        41.48,
+                        -77.49,
+                        0.728,
+                        16,
+                        29.29,
+                        151.92,
+                        0.272,
+                        2,
+                        4,
+                        166.06,
+                        134.49,
+                        0.72216,
+                        17,
+                        -101.59,
+                        -69.81,
+                        0.27784
+                      ],
+                      "edges": [
+                        10,
+                        12,
+                        8,
+                        10,
+                        4,
+                        6,
+                        8,
+                        6,
+                        12,
+                        14,
+                        0,
+                        14,
+                        16,
+                        18,
+                        18,
+                        20,
+                        0,
+                        2,
+                        2,
+                        4,
+                        20,
+                        2
+                      ]
+                    }
+                  },
+                  "Round": {
+                    "Round": {
+                      "x": 2.05,
+                      "y": 0.41,
+                      "rotation": -90,
+                      "width": 280,
+                      "height": 280
+                    }
+                  },
+                  "Round2": {
+                    "Round": {
+                      "x": 2.05,
+                      "y": 0.41,
+                      "rotation": -90,
+                      "width": 280,
+                      "height": 280
+                    }
+                  },
+                  "Shadow": {
+                    "Shadow": {
+                      "x": -58.14,
+                      "y": 6.88,
+                      "width": 1636,
+                      "height": 173
+                    }
+                  },
+                  "Smoke/Smoke_00006": {
+                    "Smoke/Smoke_00006": {
+                      "x": 0.5,
+                      "width": 217,
+                      "height": 40
+                    },
+                    "Smoke/Smoke_00007": {
+                      "x": 0.5,
+                      "width": 217,
+                      "height": 40
+                    },
+                    "Smoke/Smoke_00008": {
+                      "x": 0.5,
+                      "width": 217,
+                      "height": 40
+                    },
+                    "Smoke/Smoke_00009": {
+                      "x": 0.5,
+                      "width": 217,
+                      "height": 40
+                    },
+                    "Smoke/Smoke_00010": {
+                      "x": 0.5,
+                      "width": 217,
+                      "height": 40
+                    },
+                    "Smoke/Smoke_00012": {
+                      "x": 0.5,
+                      "width": 217,
+                      "height": 40
+                    },
+                    "Smoke/Smoke_00014": {
+                      "x": 0.5,
+                      "width": 217,
+                      "height": 40
+                    },
+                    "Smoke/Smoke_00016": {
+                      "x": 0.5,
+                      "width": 217,
+                      "height": 40
+                    }
+                  },
+                  "Tai": {
+                    "Tai": {
+                      "x": -10.77,
+                      "y": 5.57,
+                      "rotation": -90,
+                      "width": 677,
+                      "height": 73
+                    }
+                  },
+                  "W1": {
+                    "W1": {
+                      "x": 117.98,
+                      "y": 1.27,
+                      "rotation": -92.22,
+                      "width": 134,
+                      "height": 286
+                    }
+                  },
+                  "W2": {
+                    "W2": {
+                      "x": 119.66,
+                      "y": -2.33,
+                      "rotation": -90,
+                      "width": 134,
+                      "height": 286
+                    }
+                  },
+                  "Wheel_Back": {
+                    "Wheel_Back": {
+                      "x": 10.15,
+                      "y": 244.78,
+                      "rotation": -90,
+                      "width": 1009,
+                      "height": 304
+                    }
+                  },
+                  "Wheel_L": {
+                    "Wheel_L": {
+                      "x": -2.59,
+                      "y": 0.19,
+                      "rotation": -90,
+                      "width": 345,
+                      "height": 304
+                    }
+                  },
+                  "Wheel_R": {
+                    "Wheel_R": {
+                      "x": -6.22,
+                      "y": 4.4,
+                      "rotation": -90,
+                      "width": 345,
+                      "height": 304
+                    }
+                  },
+                  "Zhaop": {
+                    "Zhaop": {
+                      "x": 47.36,
+                      "y": 16.19,
+                      "rotation": -93.87,
+                      "width": 486,
+                      "height": 248
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Shop": {}
+            },
+            "animations": {
+              "animation": {
+                "slots": {
+                  "Smoke/Smoke_00006": {
+                    "color": [
+                      {
+                        "time": 0.4,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.9,
+                        "color": "e1e1e1a0"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2667,
+                        "name": "Smoke/Smoke_00006"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Smoke/Smoke_00007"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Smoke/Smoke_00008"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Smoke/Smoke_00009"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Smoke/Smoke_00010"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Smoke/Smoke_00012"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Smoke/Smoke_00014"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Smoke/Smoke_00016"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong": {
+                    "translate": [
+                      {
+                        "x": 897.75,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 897.75,
+                        "curve": 0,
+                        "c2": 0.3,
+                        "c3": 0.655,
+                        "c4": 0.98
+                      },
+                      {
+                        "time": 0.5667
+                      }
+                    ]
+                  },
+                  "Round": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "angle": 90
+                      },
+                      {
+                        "time": 0.3333,
+                        "angle": 180
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -90
+                      },
+                      {
+                        "time": 0.8,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.6
+                      }
+                    ]
+                  },
+                  "Round2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1667,
+                        "angle": 90
+                      },
+                      {
+                        "time": 0.3333,
+                        "angle": 180
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -90,
+                        "curve": 0,
+                        "c2": 0.23,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8667
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "y": 657.17
+                      }
+                    ]
+                  },
+                  "Head": {
+                    "rotate": [
+                      {
+                        "time": 0.3333,
+                        "curve": 0,
+                        "c2": 0.18,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -8.85,
+                        "curve": 0,
+                        "c2": 0.18,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8
+                      }
+                    ]
+                  },
+                  "Box": {
+                    "rotate": [
+                      {
+                        "time": 0.3333
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": 3.6
+                      },
+                      {
+                        "time": 0.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3333
+                      },
+                      {
+                        "time": 0.5,
+                        "x": -1.77,
+                        "y": 28.21
+                      },
+                      {
+                        "time": 0.8
+                      }
+                    ]
+                  },
+                  "Pengzi2": {
+                    "translate": [
+                      {},
+                      {
+                        "time": 0.4333,
+                        "x": 19.27,
+                        "y": 44.11
+                      },
+                      {
+                        "time": 0.9
+                      }
+                    ]
+                  },
+                  "Pengzi3": {
+                    "translate": [
+                      {},
+                      {
+                        "time": 0.4333,
+                        "x": 4.06,
+                        "y": 37.11
+                      },
+                      {
+                        "time": 1.3
+                      }
+                    ]
+                  },
+                  "Duck": {
+                    "rotate": [
+                      {
+                        "time": 0.4
+                      },
+                      {
+                        "time": 0.4667,
+                        "angle": 12
+                      },
+                      {
+                        "time": 0.7333
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.4
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 33.29,
+                        "y": -30.2
+                      },
+                      {
+                        "time": 0.7333
+                      }
+                    ]
+                  },
+                  "W1": {
+                    "rotate": [
+                      {
+                        "time": 0.3667
+                      },
+                      {
+                        "time": 0.5667,
+                        "angle": 6
+                      },
+                      {
+                        "time": 1.0333
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3667
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 25.38,
+                        "y": -12.97
+                      },
+                      {
+                        "time": 1.0333
+                      }
+                    ]
+                  },
+                  "W2": {
+                    "rotate": [
+                      {
+                        "time": 0.3667
+                      },
+                      {
+                        "time": 0.4333,
+                        "angle": 9.6
+                      },
+                      {
+                        "time": 0.7667
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3667
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 30.18
+                      },
+                      {
+                        "time": 0.7667
+                      }
+                    ]
+                  },
+                  "Smoke": {
+                    "translate": [
+                      {
+                        "time": 0.2667,
+                        "x": 210.59,
+                        "y": 36.35
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2667,
+                        "x": 3,
+                        "y": 3
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 0.9,
+                    "name": "Shop"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

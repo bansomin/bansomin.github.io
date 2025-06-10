@@ -1,0 +1,219 @@
+[
+  1,
+  [
+    "beYNZ+T+VHjawyKqs4gHGU",
+    "fe8FV7JKFDnL6C21eBGAJE",
+    "655F7BA/xFDbtYzukxaN/M",
+    "81uufthjlEAKIK1nEHVDt/",
+    "0dvtKplv1HULom84C37SuX"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "common_bg_item1",
+          "rect": [
+            0,
+            0,
+            190,
+            190
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            190,
+            190
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_bg_item5",
+          "rect": [
+            0,
+            0,
+            190,
+            190
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            190,
+            190
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_bg_item2",
+          "rect": [
+            0,
+            0,
+            190,
+            190
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            190,
+            190
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_bg_item4",
+          "rect": [
+            0,
+            0,
+            190,
+            190
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            190,
+            190
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_bg_item3",
+          "rect": [
+            0,
+            0,
+            190,
+            190
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            190,
+            190
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ]
+    ]
+  ]
+]

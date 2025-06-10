@@ -1,0 +1,1001 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "zh_event",
+      [
+        {
+          "id": "events_name_1001",
+          "content": "1",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1007",
+          "content": "下雪的时候你会怎么做?",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1008",
+          "content": "张嘴等雪花落嘴里。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1009",
+          "content": "那就祈祷别有只鸟飞过去顺便给你加点料。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1010",
+          "content": "去舔路边的铁电线杆。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1011",
+          "content": "记得让我录下来，发朋友圈用！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1012",
+          "content": "打雪仗",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1013",
+          "content": "行啊，你就负责当那个靶子。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1002",
+          "content": "2",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1014",
+          "content": "昨天看到一个朋友晒的旅游照.感觉自己也需要放松一下，我们一起？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1015",
+          "content": "去，我们一起规划一下吧！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1016",
+          "content": "太好了，你愿意陪我。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1017",
+          "content": "不去，太花时间和钱了。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1018",
+          "content": "确实，需要开销的地方还有很多。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1019",
+          "content": "下次有时间再去吧！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1020",
+          "content": "等你有时间太难了。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1003",
+          "content": "3",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1021",
+          "content": "这么好的天气，我们出去玩吧？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1022",
+          "content": " 真是个好主意！你想去哪里吗？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1023",
+          "content": "去公园晒太阳。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1024",
+          "content": "不如在家打游戏。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1025",
+          "content": "你快发霉了。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1026",
+          "content": "我要加班。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1027",
+          "content": "你每天都有加不完的班。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1004",
+          "content": "4",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1028",
+          "content": "听说昨天隔壁街垃圾都被人翻了一遍",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1029",
+          "content": "会不会有什么好东西？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1030",
+          "content": "你也要去翻？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1031",
+          "content": "我饿了也会去隔壁街区。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1032",
+          "content": "真恶心！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1033",
+          "content": "呃...要被发现了么。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1034",
+          "content": "？？？？？",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1005",
+          "content": "5",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1035",
+          "content": "如果我变成丧尸，你会怎么办？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1036",
+          "content": "那我可就不客气了！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1037",
+          "content": "你要干嘛？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1038",
+          "content": "我给你找G病毒血清",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1039",
+          "content": "你确定救我，不是艾达?",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1040",
+          "content": "没时间管你，我要拯救世界！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1041",
+          "content": "你........",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1006",
+          "content": "6",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1042",
+          "content": "如果有一天你中了5000万，你会干什么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1043",
+          "content": "买一个岛，养一群狗，然后躺着数星星。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1044",
+          "content": "哇，那感觉不错！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1045",
+          "content": "我会认为是个梦，希望自己能晚点醒。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1046",
+          "content": "梦里要好好享受！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1047",
+          "content": "投资！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1048",
+          "content": "你不先给自己花一些么。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1007",
+          "content": "7",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1049",
+          "content": "我要把我家打造成一个坚固的城堡！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1050",
+          "content": "你想当国王？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1051",
+          "content": "你要当我的骑士么！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1052",
+          "content": "世界末日要来了吗？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1053",
+          "content": "嘘~我只告诉你。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1054",
+          "content": "那可能也需要准备一些武器",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1055",
+          "content": "你说的太对了！",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1008",
+          "content": "8",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1056",
+          "content": "假期我要去夏威夷玩，你去哪里？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1057",
+          "content": "我要去洛圣都。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1058",
+          "content": "替我给崔佛一拳。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1059",
+          "content": "我要拯救世界，没空。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1060",
+          "content": "带上我，我要看你拯救世界。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1061",
+          "content": "我要宅在家看电视剧。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1062",
+          "content": "把你的网飞会员借我用用。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1009",
+          "content": "9",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1063",
+          "content": "哇！这是我今天做的午饭，我从来没吃过这么美味的牛排！（牛排图片）",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1064",
+          "content": "试着加点巧克力酱？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1065",
+          "content": "你口味真奇怪。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1066",
+          "content": "你自己做的么，太棒了！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1067",
+          "content": "在视频网站上学到的新配方。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1068",
+          "content": "我马上就到你家！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1069",
+          "content": "我的牛排是我的！",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1010",
+          "content": "10",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1070",
+          "content": "你有没有什么特别的饮食偏好？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1071",
+          "content": "我喜欢先把三明治拆开吃，一层一层的吃掉。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1072",
+          "content": "跟我吃夹心饼干时候一样！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1073",
+          "content": "我喜欢薯条沾着冰淇淋吃。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1074",
+          "content": "你不怕拉肚子么。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1075",
+          "content": "我喜欢把水煮蛋的蛋清丢掉。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1076",
+          "content": "总有这样的。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1011",
+          "content": "11",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1077",
+          "content": "周末我要组织派对，你有什么好的点子！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1078",
+          "content": "篝火晚会，举办真心话挑战。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1079",
+          "content": "我要参加！顺便问你什么时候还我钱。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1080",
+          "content": "酒！各种酒！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1081",
+          "content": "准备一个调酒台给你们DIY鸡尾酒。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1082",
+          "content": "准备一些小礼物。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1083",
+          "content": "大家都喜欢小礼物。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1012",
+          "content": "12",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1084",
+          "content": "最近的优惠购物券你有收集吗？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1085",
+          "content": "我连邻居的都拿过来了",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1086",
+          "content": "你有什么想买的东西？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1087",
+          "content": "我已经花光了，你要给我买东西吗？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1088",
+          "content": "再见！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1089",
+          "content": "我会用优惠卷吗？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1090",
+          "content": "借我100块。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1013",
+          "content": "13",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1091",
+          "content": "你有没有发现自己离不开手机了？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1092",
+          "content": "确实啊，有时候手机没电比钱包没钱还恐慌。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1093",
+          "content": "这年头，手机没电才是真正的“失联”吧。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1094",
+          "content": "没那么严重，我手机经常静音扔一边。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1095",
+          "content": "然后过几个小时一看，发现 missed call 十几个？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1096",
+          "content": "如果我有很多钱的话，我会丢掉手机。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1097",
+          "content": "手机让我也很焦虑。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1014",
+          "content": "14",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1098",
+          "content": "你的猫为什么总是盯着我看？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1099",
+          "content": "可能它觉得你长得像鱼吧。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1100",
+          "content": "你像猫罐头！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1101",
+          "content": "你是不是偷偷带它去干什么了？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1102",
+          "content": "带它去约会了。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1103",
+          "content": "它想要你给它买玩具了。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1104",
+          "content": "买个扫地机器人陪它玩。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1015",
+          "content": "15",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1105",
+          "content": "你最近为什么总是加班？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1106",
+          "content": "总是有做不完的事。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1107",
+          "content": "60岁就能做完了。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1108",
+          "content": "最近和家人吵架了。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1109",
+          "content": "好好和家人谈谈吧。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1110",
+          "content": "嘘~我是下班偷偷在打公司打游戏。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1111",
+          "content": "因为蹭公司电费么？",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1016",
+          "content": "16",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1112",
+          "content": "如果以后只能吃一个东西一辈子，你会选什么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1113",
+          "content": "选披萨！怎么吃都不会腻！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1114",
+          "content": "那你可能会变成一个行走的龙猫。 ",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1115",
+          "content": "选炸鸡，炸的东西我永远吃不腻。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1116",
+          "content": "你肯定撑不过一周。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1117",
+          "content": "选三明治，健康而且可以有很多种做法。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1118",
+          "content": "你可以做点三明治给我吃么。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1017",
+          "content": "17",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1119",
+          "content": "昨天半夜，我听到窗外有奇怪的敲击声，感觉自己像被人追踪了！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1120",
+          "content": "你确定不是树枝被风吹的声音？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1121",
+          "content": "树枝敲击也不会敲出有节奏的“咚咚咚”，简直像打代码！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1122",
+          "content": "太吓人了！你有没有去看？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1123",
+          "content": "看了，结果发现是楼下的猫在用尾巴敲玻璃。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1124",
+          "content": "会是九头牛组织么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1125",
+          "content": "你有超级血清么？",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1018",
+          "content": "18",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1126",
+          "content": "如果50年后，机器人替代了我们大部分工作，你觉得我们该干嘛？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1127",
+          "content": "当然是享受生活，去实现那些现在没时间做的事情！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1128",
+          "content": "可如果机器人替代了我们思考的部分呢？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1129",
+          "content": "拼命争夺没被机器人替代的工作。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1130",
+          "content": "为什么一定要工作呢。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1131",
+          "content": "不知道，很难想象那时候的我们想要什么。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1132",
+          "content": "物质以外的东西吧。",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1019",
+          "content": "19",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1133",
+          "content": "如果你能变成任何一种动物，你会选什么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1134",
+          "content": "猫，睡觉和吃饭就是生活的全部！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1135",
+          "content": "那你会享受铲屎的快乐。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1136",
+          "content": "鸟，想飞到哪就飞到哪，自由自在。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1137",
+          "content": "我想做一个一辈子不落地的鸟！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1138",
+          "content": "大熊猫，大家都很喜欢我。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1139",
+          "content": "我也喜欢大熊猫！",
+          "valueList": ""
+        },
+        {
+          "id": "events_name_1020",
+          "content": "20",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1140",
+          "content": "如果你能选一个超能力，你会选什么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1141",
+          "content": "瞬间移动，想去哪就去哪。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1142",
+          "content": "每次要迟到的时候，我也会这样想。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1143",
+          "content": "读心术，可以知道别人心里想什么。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1144",
+          "content": "那你肯定会伤心的。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1145",
+          "content": "隐身术，去做一些以前不敢做的事情。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_1146",
+          "content": "你想做什么。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2001",
+          "content": "你想和我比谁跳得高么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2002",
+          "content": "是我不够努力么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2003",
+          "content": "你要不也吃点蘑菇？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2004",
+          "content": "你想要双份肉饼么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2005",
+          "content": "为什么不喜欢我的汉堡！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2006",
+          "content": "我的手艺还行吧。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2007",
+          "content": "你喜欢什么颜色？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2008",
+          "content": "不要告诉我是白色！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2009",
+          "content": "我还会回来的！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2010",
+          "content": "给你上点颜色",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2011",
+          "content": "你想吃什么口味的冰棒？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2012",
+          "content": "草莓还是香蕉？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2013",
+          "content": "我可能需要换一个冰箱。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2014",
+          "content": "建议你挂内科。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2015",
+          "content": "别把自己打疼了。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2016",
+          "content": "你居然比我还硬！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2017",
+          "content": "用点力！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2018",
+          "content": "SF世界第一！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2019",
+          "content": "不要把我拆掉!",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2020",
+          "content": "你需要换一个WIFI么？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2021",
+          "content": "我来帮你练练肌肉！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2022",
+          "content": "你练腿了？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2023",
+          "content": "肌肉肌肉！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2024",
+          "content": "咕噜咕噜？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2025",
+          "content": "咕噜！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2026",
+          "content": "咕噜",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2027",
+          "content": "咕噜？？？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2028",
+          "content": "能见到我们你还是有点实力。",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2029",
+          "content": "你为什么不喜欢我们？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2030",
+          "content": "想不想加入我们？",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2031",
+          "content": "不许抢我的食物，哼哼！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2032",
+          "content": "我会把你记下来的！",
+          "valueList": ""
+        },
+        {
+          "id": "msg_2033",
+          "content": "我还没有玩够。",
+          "valueList": ""
+        }
+      ]
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

@@ -1,0 +1,256 @@
+[
+  1,
+  [
+    "b1PYmqmuxIMqMNdnffpphc"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "S_Jinji",
+      "\r\nS_Jinji.png\r\nsize: 147,487\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/1/J1_00000\r\n  rotate: false\r\n  xy: 92, 82\r\n  size: 27, 30\r\n  orig: 94, 82\r\n  offset: 12, 6\r\n  index: -1\r\nImage/1/J1_00001\r\n  rotate: false\r\n  xy: 87, 181\r\n  size: 43, 76\r\n  orig: 94, 82\r\n  offset: 15, 6\r\n  index: -1\r\nImage/1/J1_00002\r\n  rotate: false\r\n  xy: 94, 341\r\n  size: 47, 53\r\n  orig: 94, 82\r\n  offset: 23, 16\r\n  index: -1\r\nImage/1/J1_00003\r\n  rotate: true\r\n  xy: 90, 18\r\n  size: 62, 51\r\n  orig: 94, 82\r\n  offset: 24, 24\r\n  index: -1\r\nImage/1/J1_00004\r\n  rotate: false\r\n  xy: 94, 259\r\n  size: 35, 39\r\n  orig: 94, 82\r\n  offset: 59, 35\r\n  index: -1\r\nImage/1/J1_00005\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 86, 78\r\n  orig: 94, 82\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2/J2_00000\r\n  rotate: false\r\n  xy: 92, 117\r\n  size: 51, 62\r\n  orig: 105, 126\r\n  offset: 22, 9\r\n  index: -1\r\nImage/2/J2_00001\r\n  rotate: false\r\n  xy: 82, 396\r\n  size: 63, 89\r\n  orig: 105, 126\r\n  offset: 33, 13\r\n  index: -1\r\nImage/2/J2_00002\r\n  rotate: false\r\n  xy: 2, 161\r\n  size: 83, 96\r\n  orig: 105, 126\r\n  offset: 21, 14\r\n  index: -1\r\nImage/2/J2_00003\r\n  rotate: false\r\n  xy: 2, 259\r\n  size: 90, 98\r\n  orig: 105, 126\r\n  offset: 8, 23\r\n  index: -1\r\nImage/2/J2_00004\r\n  rotate: false\r\n  xy: 2, 82\r\n  size: 88, 77\r\n  orig: 105, 126\r\n  offset: 0, 47\r\n  index: -1\r\nImage/2/J2_00005\r\n  rotate: false\r\n  xy: 2, 359\r\n  size: 78, 126\r\n  orig: 105, 126\r\n  offset: 1, 0\r\n  index: -1\r\n",
+      [
+        "S_Jinji.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "bxsgWXDLjRU6sAgjZnMdUzZ6N2g",
+          "spine": "3.8.99",
+          "x": -82.65,
+          "y": -1.4,
+          "width": 168,
+          "height": 263,
+          "images": "",
+          "audio": ""
+        },
+        "bones": [
+          {
+            "name": "root",
+            "x": 300.89,
+            "y": 52.25
+          },
+          {
+            "name": "Zong",
+            "parent": "root"
+          },
+          {
+            "name": "1",
+            "parent": "Zong"
+          },
+          {
+            "name": "2",
+            "parent": "Zong"
+          }
+        ],
+        "slots": [
+          {
+            "name": "Image/1/J1_00000",
+            "bone": "1"
+          },
+          {
+            "name": "Image/2/J2_00000",
+            "bone": "2"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Image/1/J1_00000": {
+                "Image/1/J1_00000": {
+                  "width": 118,
+                  "height": 102
+                },
+                "Image/1/J1_00001": {
+                  "width": 118,
+                  "height": 102
+                },
+                "Image/1/J1_00002": {
+                  "width": 118,
+                  "height": 102
+                },
+                "Image/1/J1_00003": {
+                  "width": 118,
+                  "height": 102
+                },
+                "Image/1/J1_00004": {
+                  "width": 118,
+                  "height": 102
+                },
+                "Image/1/J1_00005": {
+                  "width": 118,
+                  "height": 102
+                }
+              },
+              "Image/2/J2_00000": {
+                "Image/2/J2_00000": {
+                  "x": 0.5,
+                  "width": 131,
+                  "height": 158
+                },
+                "Image/2/J2_00001": {
+                  "x": 0.5,
+                  "width": 131,
+                  "height": 158
+                },
+                "Image/2/J2_00002": {
+                  "x": 0.5,
+                  "width": 131,
+                  "height": 158
+                },
+                "Image/2/J2_00003": {
+                  "x": 0.5,
+                  "width": 131,
+                  "height": 158
+                },
+                "Image/2/J2_00004": {
+                  "x": 0.5,
+                  "width": 131,
+                  "height": 158
+                },
+                "Image/2/J2_00005": {
+                  "x": 0.5,
+                  "width": 131,
+                  "height": 158
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "S_Jinji": {
+            "slots": {
+              "Image/1/J1_00000": {
+                "attachment": [
+                  {
+                    "name": "Image/1/J1_00000"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/1/J1_00001"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/1/J1_00002"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/1/J1_00003"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/1/J1_00004"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Image/1/J1_00005"
+                  }
+                ]
+              },
+              "Image/2/J2_00000": {
+                "attachment": [
+                  {
+                    "name": "Image/2/J2_00000"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/2/J2_00001"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/2/J2_00002"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/2/J2_00003"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/2/J2_00004"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Image/2/J2_00005"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Image/2/J2_00005"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "1": {
+                "translate": [
+                  {
+                    "x": -226.54,
+                    "y": 1.37
+                  }
+                ]
+              },
+              "2": {
+                "rotate": [
+                  {
+                    "angle": 24
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": -432.36,
+                    "y": 19.56
+                  }
+                ]
+              },
+              "Zong": {
+                "translate": [
+                  {
+                    "x": -3.66
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

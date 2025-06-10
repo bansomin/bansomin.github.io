@@ -1,0 +1,443 @@
+[
+  1,
+  [
+    "0cHPTQUGpHJ56TeJuJvpXr",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "86CtBKvIpP7LO4yEEfkURx"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_3007",
+          "\r\nUltra_3007.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/OWater\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 211, 424\r\n  orig: 211, 424\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Ultra_3007.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "uyrXIJu+PPQaM6WahqIcE5Txxpk",
+              "spine": "3.8.99",
+              "x": 517.35,
+              "y": 227.35,
+              "width": 302,
+              "height": 605,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Zong2",
+                "parent": "Zong",
+                "length": 427.07,
+                "rotation": 91.31,
+                "x": 670.24,
+                "y": 273.79
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/OWater",
+                "bone": "Zong2",
+                "attachment": "Image/OWater"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/OWater": {
+                    "Image/OWater": {
+                      "x": 256.04,
+                      "y": -3.95,
+                      "rotation": -91.31,
+                      "width": 302,
+                      "height": 605
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/OWater": {
+                    "color": [
+                      {
+                        "time": 1.5,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.7667,
+                        "color": "ffffff00"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong2": {
+                    "rotate": [
+                      {
+                        "angle": -89.44
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": -93.04,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": -93.04
+                      },
+                      {
+                        "time": 1.2333,
+                        "angle": -120.54
+                      },
+                      {
+                        "time": 1.3667,
+                        "angle": -156.91
+                      },
+                      {
+                        "time": 1.6,
+                        "angle": 166.7
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -1357.35,
+                        "y": 130.46,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": -1357.35,
+                        "y": 130.46
+                      },
+                      {
+                        "time": 1.1,
+                        "x": -559,
+                        "y": 106.39
+                      },
+                      {
+                        "time": 1.2,
+                        "x": 911.47,
+                        "y": 62.05
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": 1153.18,
+                        "y": 639.12
+                      },
+                      {
+                        "time": 1.3667,
+                        "x": 1525.03,
+                        "y": 1031.97
+                      },
+                      {
+                        "time": 1.6,
+                        "x": 1917.66,
+                        "y": 1150.08
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 2203.59,
+                        "y": 1089.33
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.801,
+                        "y": 0.644
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.693,
+                        "y": 0.737
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 0.911,
+                        "y": 0.767
+                      },
+                      {
+                        "time": 0.8,
+                        "x": 0.812,
+                        "y": 0.809
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 1.106,
+                        "y": 0.817
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 0.805,
+                        "y": 1.137
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": 1.219,
+                        "y": 0.862
+                      },
+                      {
+                        "time": 1.1,
+                        "y": 0.655
+                      },
+                      {
+                        "time": 1.2,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": 0.8,
+                        "y": 0.6
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 1.2,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_3007"
+        ],
+        [
+          2,
+          "ultimate_3007",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            302,
+            605
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

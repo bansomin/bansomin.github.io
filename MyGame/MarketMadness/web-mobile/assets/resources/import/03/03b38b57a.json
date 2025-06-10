@@ -1,0 +1,629 @@
+[
+  1,
+  [
+    "08WCkqT25DppgaXbaa9nuG",
+    "53+ENo1I9GMZMLuxpE2HXS",
+    "b7WNrlDAhIaaLtCbHs0UWj",
+    "42rrYSw0tNSYOMsVkHib7w",
+    "74frKNwYNFUI8SsYzxBbGC",
+    "12yAav+6tP16ree5/y3K+9",
+    "706PrUVC5Gd5wOndO/TQIZ",
+    "0e4jEKk9pI56W6HNMpZD4b",
+    "81XyP0prBAyYoUPWEp4e4S",
+    "baAjDsKxxDD7a8wnqZUq8t",
+    "058CVzHbVItL5YZp7DHJKT",
+    "153ZDmvMREYYpWN2JUiUHJ",
+    "e8+E2vHVhBra3jpx8J9gmm",
+    "c1fKWI6lxPvpmGfsXF4MCk",
+    "bdyIcf8LBDT47ImXBtOGWR"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "equip_img_quality31",
+          "rect": [
+            0,
+            0,
+            78,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_ico_equipweapon",
+          "rect": [
+            0,
+            0,
+            24,
+            28
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            24,
+            28
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality2",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality4",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality0",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_ico_sequip",
+          "rect": [
+            0,
+            0,
+            39,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            39,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        5
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_quality41",
+          "rect": [
+            0,
+            0,
+            78,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality3",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_ico_equipbackpack",
+          "rect": [
+            0,
+            0,
+            26,
+            24
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            26,
+            24
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_ico_equipring",
+          "rect": [
+            0,
+            0,
+            20,
+            24
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            20,
+            24
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_quality42",
+          "rect": [
+            0,
+            0,
+            78,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        10
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_quality32",
+          "rect": [
+            0,
+            0,
+            78,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        11
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality1",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        12
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_ico_equipaccessory",
+          "rect": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            24,
+            24
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        13
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality5",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        14
+      ]
+    ]
+  ]
+]

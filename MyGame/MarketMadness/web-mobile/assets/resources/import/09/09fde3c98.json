@@ -1,0 +1,8968 @@
+[
+  1,
+  [
+    "ecpdLyjvZBwrvm+cedCcQy",
+    "d0b8yR2vdPc5xvhAVPSM9c",
+    "220EIUEStH8rnzhb/v0fry",
+    "05v70I0dJLGIHeKHIXrCIU",
+    "3fpsP4AcBH2YASYIV60P/L",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "d1XyhwnfJLBJ85e3Dpe5CX",
+    "16CLroYXNO+5lEIoqUYo1c",
+    "b5ZK3jhOVMoq33qzKD18qk",
+    "b4hPm5fW1CbIKi5aGxTRSH",
+    "48B9HtiVBCyYr0U7uWK72e",
+    "22CRQzKpNK/bK0A2pFOYzA",
+    "cfxyuMpDNH1oy0/pqeAnaX",
+    "11S/vYXFJP468X+2WpVoMi",
+    "30j5AO5C5MxLWLR++MDyrZ",
+    "e1ei/oGzNL0aS8dn5ZsHHu",
+    "83V9MsxtZIXaIkeLh6mQ+X",
+    "8fWOa4Uf9L7YWeF8Kpa2fb",
+    "a30USgoE1K/qmFfroqDJIC",
+    "abv+7/ZQlMB4B0m5Jkxjdw",
+    "dbBvCdDU9IG6Sa5dyVaB8k",
+    "6dYvRvfY1DwKo1wpZOtcPm",
+    "87QRujsHRFhJYQ99lQllQk",
+    "3aVHHWi9ZBhIlh/iOYh0zq",
+    "2bqAF9KsBGnbuEAh6UYhZC",
+    "95hBRx3BFL/JwTmpkfev7Z",
+    "addxYhO5RF/qq/83qVHsjn",
+    "a5fs3dZqtNN4MXgwEcGMQr",
+    "770FfmOfFPgICDwzyAUBAD",
+    "9d0BN7G9VAsqjuKbxRdgf5",
+    "57NujI6UVHw4R2ziVVLiIC",
+    "4a9xHF/EJFH5py3+wbUJsy",
+    "02ZcHZ/zNLva+npUzVf4tN",
+    "9bI4xt2gtPLrO0/rIKrWWr",
+    "b7KirVK7dDU5AxXhF5EtUb"
+  ],
+  [
+    "node",
+    "_N$file",
+    "_spriteFrame",
+    "root",
+    "_parent",
+    "richText",
+    "_N$font",
+    "_N$imageAtlas",
+    "_defaultClip",
+    "_textureSetter",
+    "_N$skeletonData",
+    "roleRootNode",
+    "bestLevelNode",
+    "chapterTitleNode",
+    "data"
+  ],
+  [
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_prefab",
+        "_components",
+        "_contentSize",
+        "_trs",
+        "_parent",
+        "_children",
+        "_anchorPoint",
+        "_color"
+      ],
+      2,
+      4,
+      9,
+      5,
+      7,
+      1,
+      2,
+      5,
+      5
+    ],
+    "cc.SpriteFrame",
+    [
+      "cc.Label",
+      [
+        "_fontSize",
+        "_isSystemFontUsed",
+        "_N$verticalAlign",
+        "_string",
+        "_underlineHeight",
+        "_N$horizontalAlign",
+        "_lineHeight",
+        "_N$overflow",
+        "node",
+        "_materials",
+        "_N$file"
+      ],
+      -5,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.Widget",
+      [
+        "_alignFlags",
+        "_bottom",
+        "_left",
+        "_top",
+        "node"
+      ],
+      -1,
+      1
+    ],
+    [
+      "cc.Layout",
+      [
+        "_resize",
+        "_N$layoutType",
+        "_N$spacingY",
+        "_N$spacingX",
+        "node",
+        "_layoutSize"
+      ],
+      -1,
+      1,
+      5
+    ],
+    [
+      "cc.Sprite",
+      [
+        "_isTrimmedMode",
+        "_sizeMode",
+        "node",
+        "_materials",
+        "_spriteFrame"
+      ],
+      1,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_children",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_trs"
+      ],
+      2,
+      1,
+      2,
+      2,
+      4,
+      5,
+      7
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "fileId",
+        "root"
+      ],
+      2,
+      1
+    ],
+    [
+      "c6b65CoEUZGPY1KwOiJVjoc",
+      [
+        "key",
+        "node",
+        "richText"
+      ],
+      2,
+      1,
+      1
+    ],
+    [
+      "cc.ClickEvent",
+      [
+        "_componentId",
+        "handler",
+        "customEventData",
+        "target"
+      ],
+      0,
+      1
+    ],
+    [
+      "cc.Animation",
+      [
+        "playOnLoad",
+        "node",
+        "_clips",
+        "_defaultClip"
+      ],
+      2,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.RichText",
+      [
+        "_isSystemFontUsed",
+        "_N$string",
+        "_N$horizontalAlign",
+        "_N$fontSize",
+        "_N$lineHeight",
+        "node"
+      ],
+      -2,
+      1
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "f6b26Px+bdGh68C6wJwWwfD",
+      [
+        "node",
+        "chapterTitleNode",
+        "bestLevelNode",
+        "roleRootNode"
+      ],
+      3,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      "cc.Button",
+      [
+        "zoomScale",
+        "_N$transition",
+        "node",
+        "clickEvents"
+      ],
+      1,
+      1,
+      9
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "defaultAnimation",
+        "_preCacheMode",
+        "_animationName",
+        "node",
+        "_materials",
+        "_N$skeletonData"
+      ],
+      -1,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.LabelOutline",
+      [
+        "_width",
+        "node",
+        "_color"
+      ],
+      2,
+      1,
+      5
+    ],
+    [
+      "cc.PrivateNode",
+      [
+        "_name",
+        "_objFlags",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_anchorPoint",
+        "_trs"
+      ],
+      1,
+      1,
+      9,
+      4,
+      5,
+      5,
+      7
+    ]
+  ],
+  [
+    [
+      7,
+      0,
+      1,
+      2
+    ],
+    [
+      5,
+      2,
+      3,
+      4,
+      1
+    ],
+    [
+      0,
+      0,
+      5,
+      2,
+      1,
+      3,
+      4,
+      2
+    ],
+    [
+      0,
+      0,
+      5,
+      6,
+      2,
+      1,
+      3,
+      4,
+      2
+    ],
+    [
+      17,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      18,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      3
+    ],
+    [
+      2,
+      3,
+      0,
+      6,
+      1,
+      2,
+      8,
+      9,
+      10,
+      6
+    ],
+    [
+      0,
+      0,
+      5,
+      6,
+      2,
+      1,
+      3,
+      7,
+      4,
+      2
+    ],
+    [
+      6,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      8,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      15,
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    [
+      11,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    [
+      2,
+      0,
+      1,
+      5,
+      2,
+      8,
+      9,
+      10,
+      5
+    ],
+    [
+      10,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      9,
+      0,
+      1,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      6,
+      2,
+      1,
+      3,
+      4,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      2,
+      1,
+      4,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      4,
+      3
+    ],
+    [
+      16,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      5
+    ],
+    [
+      0,
+      0,
+      5,
+      6,
+      2,
+      1,
+      4,
+      2
+    ],
+    [
+      0,
+      0,
+      5,
+      2,
+      1,
+      3,
+      2
+    ],
+    [
+      9,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      4,
+      5,
+      2,
+      7,
+      8,
+      9,
+      10,
+      8
+    ],
+    [
+      12,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      6,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      2
+    ],
+    [
+      3,
+      0,
+      4,
+      2
+    ],
+    [
+      8,
+      1,
+      2,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      3,
+      4,
+      5,
+      4
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      2,
+      8,
+      9,
+      10,
+      5
+    ],
+    [
+      11,
+      0,
+      1,
+      2,
+      3,
+      5,
+      5
+    ],
+    [
+      13,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      2,
+      1,
+      3,
+      2
+    ],
+    [
+      0,
+      0,
+      5,
+      6,
+      2,
+      1,
+      3,
+      2
+    ],
+    [
+      0,
+      0,
+      5,
+      1,
+      7,
+      4,
+      2
+    ],
+    [
+      0,
+      0,
+      5,
+      2,
+      1,
+      3,
+      7,
+      4,
+      2
+    ],
+    [
+      0,
+      0,
+      5,
+      2,
+      1,
+      8,
+      3,
+      7,
+      4,
+      2
+    ],
+    [
+      3,
+      0,
+      2,
+      4,
+      3
+    ],
+    [
+      3,
+      4,
+      1
+    ],
+    [
+      3,
+      0,
+      3,
+      1,
+      4,
+      4
+    ],
+    [
+      14,
+      0,
+      1,
+      2,
+      3,
+      1
+    ],
+    [
+      7,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      4,
+      5,
+      4
+    ],
+    [
+      4,
+      0,
+      1,
+      4,
+      5,
+      3
+    ],
+    [
+      5,
+      0,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      5,
+      1,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      10,
+      1,
+      2,
+      3,
+      1
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      5,
+      2,
+      8,
+      9,
+      10,
+      6
+    ],
+    [
+      2,
+      3,
+      0,
+      6,
+      1,
+      4,
+      2,
+      8,
+      9,
+      10,
+      7
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      4,
+      2,
+      8,
+      9,
+      10,
+      6
+    ]
+  ],
+  [
+    [
+      [
+        [
+          23,
+          "Clear_Gift",
+          "\r\nClear_Gift.png\r\nsize: 437,214\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/1\r\n  rotate: true\r\n  xy: 243, 112\r\n  size: 100, 106\r\n  orig: 100, 106\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2\r\n  rotate: false\r\n  xy: 243, 6\r\n  size: 98, 104\r\n  orig: 98, 104\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Ring\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 239, 210\r\n  orig: 252, 244\r\n  offset: 0, 17\r\n  index: -1\r\nImage/Star\r\n  rotate: true\r\n  xy: 351, 138\r\n  size: 74, 75\r\n  orig: 74, 75\r\n  offset: 0, 0\r\n  index: -1\r\nImage/glow\r\n  rotate: false\r\n  xy: 343, 18\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          [
+            "Clear_Gift.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "R2T3W2hmTSNGFDpUIU5YXZkA2wU",
+              "spine": "3.8.99",
+              "x": -126,
+              "y": -121.5,
+              "width": 252,
+              "height": 244,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Gift",
+                "parent": "Zong"
+              },
+              {
+                "name": "Back",
+                "parent": "Zong"
+              },
+              {
+                "name": "Star",
+                "parent": "Zong"
+              },
+              {
+                "name": "S1",
+                "parent": "Star"
+              },
+              {
+                "name": "Gift2",
+                "parent": "Gift",
+                "length": 23.95,
+                "rotation": 88.36,
+                "x": -1.71,
+                "y": -39.88
+              },
+              {
+                "name": "Gift3",
+                "parent": "Gift2",
+                "length": 24.4,
+                "rotation": 0.91,
+                "x": 31.22,
+                "y": 0.89
+              },
+              {
+                "name": "Gift4",
+                "parent": "Gift3",
+                "length": 10.49,
+                "rotation": 1.07,
+                "x": 33.75,
+                "y": 0.17
+              },
+              {
+                "name": "Ring",
+                "parent": "Zong"
+              },
+              {
+                "name": "S2",
+                "parent": "Star"
+              },
+              {
+                "name": "S3",
+                "parent": "Star"
+              },
+              {
+                "name": "S4",
+                "parent": "Star"
+              },
+              {
+                "name": "S5",
+                "parent": "Star"
+              },
+              {
+                "name": "S6",
+                "parent": "Star"
+              },
+              {
+                "name": "S7",
+                "parent": "Star"
+              },
+              {
+                "name": "S8",
+                "parent": "Star"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/glow",
+                "bone": "Back",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Ring",
+                "bone": "Ring",
+                "attachment": "Image/Ring",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/1",
+                "bone": "Gift",
+                "attachment": "Image/1"
+              },
+              {
+                "name": "Image/Star",
+                "bone": "S1",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star5",
+                "bone": "S5",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star7",
+                "bone": "S7",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star2",
+                "bone": "S2",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star3",
+                "bone": "S3",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star8",
+                "bone": "S8",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star6",
+                "bone": "S6",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star4",
+                "bone": "S4",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/1": {
+                    "Image/1": {
+                      "type": "mesh",
+                      "hull": 8,
+                      "width": 100,
+                      "height": 106,
+                      "uvs": [
+                        1,
+                        0.2854,
+                        1,
+                        0.67865,
+                        1,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0.63965,
+                        0,
+                        0.27565,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "triangles": [
+                        4,
+                        0,
+                        1,
+                        3,
+                        4,
+                        1,
+                        3,
+                        1,
+                        2,
+                        4,
+                        5,
+                        0,
+                        5,
+                        6,
+                        7,
+                        5,
+                        7,
+                        0
+                      ],
+                      "vertices": [
+                        3,
+                        8,
+                        -2.78,
+                        -50.25,
+                        0.49738,
+                        7,
+                        31.91,
+                        -50.12,
+                        0.34819,
+                        6,
+                        63.63,
+                        -48.91,
+                        0.15442,
+                        3,
+                        8,
+                        -43.67,
+                        -50.25,
+                        0.04077,
+                        7,
+                        -8.98,
+                        -50.88,
+                        0.21058,
+                        6,
+                        22.75,
+                        -50.08,
+                        0.74866,
+                        1,
+                        6,
+                        -10.66,
+                        -51.03,
+                        1,
+                        1,
+                        6,
+                        -13.46,
+                        46.93,
+                        1,
+                        3,
+                        8,
+                        -39.62,
+                        47.75,
+                        0.06663,
+                        7,
+                        -6.76,
+                        47.18,
+                        0.53371,
+                        6,
+                        24,
+                        48,
+                        0.39966,
+                        3,
+                        8,
+                        -1.76,
+                        47.75,
+                        0.48224,
+                        7,
+                        31.09,
+                        47.88,
+                        0.50033,
+                        6,
+                        61.84,
+                        49.08,
+                        0.01743,
+                        2,
+                        8,
+                        26.9,
+                        47.75,
+                        0.71346,
+                        7,
+                        59.75,
+                        48.42,
+                        0.28654,
+                        3,
+                        8,
+                        26.9,
+                        -50.25,
+                        0.79126,
+                        7,
+                        61.59,
+                        -49.56,
+                        0.18453,
+                        6,
+                        93.3,
+                        -48.06,
+                        0.02422
+                      ],
+                      "edges": [
+                        4,
+                        6,
+                        12,
+                        14,
+                        10,
+                        12,
+                        0,
+                        14,
+                        6,
+                        8,
+                        8,
+                        10,
+                        0,
+                        2,
+                        2,
+                        4
+                      ]
+                    },
+                    "Image/2": {
+                      "width": 98,
+                      "height": 104
+                    }
+                  },
+                  "Image/Ring": {
+                    "Image/Ring": {
+                      "y": 0.5,
+                      "width": 252,
+                      "height": 244
+                    }
+                  },
+                  "Image/Star": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 74,
+                      "height": 75
+                    }
+                  },
+                  "Image/Star2": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 74,
+                      "height": 75
+                    }
+                  },
+                  "Image/Star3": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 74,
+                      "height": 75
+                    }
+                  },
+                  "Image/Star4": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 74,
+                      "height": 75
+                    }
+                  },
+                  "Image/Star5": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 74,
+                      "height": 75
+                    }
+                  },
+                  "Image/Star6": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 74,
+                      "height": 75
+                    }
+                  },
+                  "Image/Star7": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 74,
+                      "height": 75
+                    }
+                  },
+                  "Image/Star8": {
+                    "Image/Star": {
+                      "y": 0.5,
+                      "width": 74,
+                      "height": 75
+                    }
+                  },
+                  "Image/glow": {
+                    "Image/glow": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "1": {
+                "slots": {
+                  "Image/Ring": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  }
+                }
+              },
+              "2": {
+                "slots": {
+                  "Image/1": {
+                    "attachment": [
+                      {
+                        "name": "Image/2"
+                      }
+                    ]
+                  },
+                  "Image/Ring": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  }
+                }
+              },
+              "3": {
+                "slots": {
+                  "Image/Star": {
+                    "attachment": [
+                      {
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star2": {
+                    "attachment": [
+                      {
+                        "time": 1.5,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 1.9333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star3": {
+                    "attachment": [
+                      {
+                        "time": 3.9,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 4.3333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star4": {
+                    "attachment": [
+                      {
+                        "time": 6.6333,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 7.0667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star5": {
+                    "attachment": [
+                      {
+                        "time": 2.6333,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 3.0667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star6": {
+                    "attachment": [
+                      {
+                        "time": 5.4333,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 5.8667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star7": {
+                    "attachment": [
+                      {
+                        "time": 7.8,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 8.2333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star8": {
+                    "attachment": [
+                      {
+                        "time": 9.1667,
+                        "name": "Image/Star"
+                      },
+                      {
+                        "time": 9.6,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow": {
+                    "color": [
+                      {
+                        "color": "eea82994"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "S1": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.4333,
+                        "angle": -12
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 28.22,
+                        "y": 20.4
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "Back": {
+                    "translate": [
+                      {
+                        "y": -4.07
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 2,
+                        "y": 2
+                      }
+                    ]
+                  },
+                  "Gift3": {
+                    "rotate": [
+                      {
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 2,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 2.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 3,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 3.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 4,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 4.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 5,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 5.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 6,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 6.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 7,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 7.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 8,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 8.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 9,
+                        "angle": 11.75,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 9.5,
+                        "angle": -19.11,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 10,
+                        "angle": 11.75
+                      }
+                    ]
+                  },
+                  "Gift4": {
+                    "rotate": [
+                      {
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 0.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 1,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 1.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 2,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 2.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 2.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 3,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 3.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 3.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 4,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 4.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 4.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 5,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 5.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 5.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 6,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 6.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 6.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 7,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 7.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 7.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 8,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 8.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 8.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 9,
+                        "angle": 9.97,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 9.1667,
+                        "angle": 13.48,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 9.6667,
+                        "angle": 1.1,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 10,
+                        "angle": 9.97
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 1,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 2,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 2.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 2.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 3,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 3.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 3.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 4,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 4.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 4.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 5,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 5.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 5.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 6,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 6.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 6.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 7,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 7.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 7.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 8,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 8.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 8.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 9,
+                        "x": -1.72,
+                        "y": 5.11,
+                        "curve": 0.382,
+                        "c2": 0.57,
+                        "c3": 0.735
+                      },
+                      {
+                        "time": 9.1667,
+                        "x": -1.78,
+                        "y": 6.87,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 9.6667,
+                        "x": -1.55,
+                        "y": 0.68,
+                        "curve": 0.243,
+                        "c3": 0.649,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 10,
+                        "x": -1.72,
+                        "y": 5.11
+                      }
+                    ]
+                  },
+                  "Gift2": {
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 1
+                      },
+                      {
+                        "time": 1.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 2
+                      },
+                      {
+                        "time": 2.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 3
+                      },
+                      {
+                        "time": 3.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 4
+                      },
+                      {
+                        "time": 4.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 5
+                      },
+                      {
+                        "time": 5.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 6
+                      },
+                      {
+                        "time": 6.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 7
+                      },
+                      {
+                        "time": 7.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 8
+                      },
+                      {
+                        "time": 8.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 9
+                      },
+                      {
+                        "time": 9.5,
+                        "x": 1.04,
+                        "y": 1.04
+                      },
+                      {
+                        "time": 10
+                      }
+                    ]
+                  },
+                  "Ring": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 2.4,
+                        "angle": 90
+                      },
+                      {
+                        "time": 4.7667,
+                        "angle": 180
+                      },
+                      {
+                        "time": 7.2333,
+                        "angle": -90
+                      },
+                      {
+                        "time": 10
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.8,
+                        "y": 0.8
+                      }
+                    ]
+                  },
+                  "S2": {
+                    "rotate": [
+                      {
+                        "time": 1.5
+                      },
+                      {
+                        "time": 1.9333,
+                        "angle": -12
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.5,
+                        "x": -30.56,
+                        "y": -25.58
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.5,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.7,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.9,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "S3": {
+                    "rotate": [
+                      {
+                        "time": 3.9,
+                        "angle": -10.8
+                      },
+                      {
+                        "time": 4.3333,
+                        "angle": -25.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 3.9,
+                        "x": 18.21,
+                        "y": -4.17
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 3.9,
+                        "x": 0.135,
+                        "y": 0.135
+                      },
+                      {
+                        "time": 4.1,
+                        "x": 0.335,
+                        "y": 0.335
+                      },
+                      {
+                        "time": 4.3,
+                        "x": 0.035,
+                        "y": 0.035
+                      }
+                    ]
+                  },
+                  "S4": {
+                    "rotate": [
+                      {
+                        "time": 6.6333,
+                        "angle": 15.6
+                      },
+                      {
+                        "time": 7.0667,
+                        "angle": 31.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 6.6333,
+                        "x": -27.54,
+                        "y": -18.96
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 6.6333,
+                        "x": 0.18,
+                        "y": 0.18
+                      },
+                      {
+                        "time": 6.8333,
+                        "x": 0.36,
+                        "y": 0.36
+                      },
+                      {
+                        "time": 7.0667,
+                        "x": 0.18,
+                        "y": 0.18
+                      }
+                    ]
+                  },
+                  "S5": {
+                    "rotate": [
+                      {
+                        "time": 2.6333
+                      },
+                      {
+                        "time": 3.0667,
+                        "angle": -12
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 2.6333,
+                        "x": 28.22,
+                        "y": 20.4
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 2.6333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 2.8333,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 3.0333,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "S6": {
+                    "rotate": [
+                      {
+                        "time": 5.4333,
+                        "angle": -10.8
+                      },
+                      {
+                        "time": 5.8667,
+                        "angle": -25.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 5.4333,
+                        "x": -18.36,
+                        "y": 15.9
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 5.4333,
+                        "x": 0.135,
+                        "y": 0.135
+                      },
+                      {
+                        "time": 5.6333,
+                        "x": 0.335,
+                        "y": 0.335
+                      },
+                      {
+                        "time": 5.8333,
+                        "x": 0.035,
+                        "y": 0.035
+                      }
+                    ]
+                  },
+                  "S7": {
+                    "rotate": [
+                      {
+                        "time": 7.8
+                      },
+                      {
+                        "time": 8.2333,
+                        "angle": -12
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 7.8,
+                        "x": 28.22,
+                        "y": 20.4
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 7.8,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 8,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 8.2,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "S8": {
+                    "rotate": [
+                      {
+                        "time": 9.1667,
+                        "angle": -10.8
+                      },
+                      {
+                        "time": 9.6,
+                        "angle": -25.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 9.1667,
+                        "x": 29.44,
+                        "y": -21.4
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 9.1667,
+                        "x": 0.135,
+                        "y": 0.135
+                      },
+                      {
+                        "time": 9.3667,
+                        "x": 0.335,
+                        "y": 0.335
+                      },
+                      {
+                        "time": 9.5667,
+                        "x": 0.035,
+                        "y": 0.035
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        9
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_btn_login",
+          "rect": [
+            0,
+            0,
+            118,
+            126
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            118,
+            126
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_btn_play",
+          "rect": [
+            0,
+            0,
+            494,
+            195
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            494,
+            195
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        11
+      ]
+    ],
+    [
+      [
+        [
+          23,
+          "MoneyBox",
+          "\r\nMoneyBox.png\r\nsize: 294,175\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Sg/Sg\r\n  rotate: true\r\n  xy: 241, 90\r\n  size: 43, 34\r\n  orig: 55, 40\r\n  offset: 6, 0\r\n  index: 6\r\nImage/Sg/Sg\r\n  rotate: true\r\n  xy: 241, 48\r\n  size: 40, 34\r\n  orig: 55, 40\r\n  offset: 3, 0\r\n  index: 5\r\nImage/Sg/Sg\r\n  rotate: true\r\n  xy: 241, 11\r\n  size: 35, 34\r\n  orig: 55, 40\r\n  offset: 1, 0\r\n  index: 4\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 277, 102\r\n  size: 15, 31\r\n  orig: 55, 40\r\n  offset: 40, 9\r\n  index: 11\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 280, 151\r\n  size: 12, 22\r\n  orig: 55, 40\r\n  offset: 43, 18\r\n  index: 12\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 280, 135\r\n  size: 10, 14\r\n  orig: 55, 40\r\n  offset: 45, 26\r\n  index: 13\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 277, 79\r\n  size: 14, 21\r\n  orig: 55, 40\r\n  offset: 0, 0\r\n  index: 1\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 277, 66\r\n  size: 9, 11\r\n  orig: 55, 40\r\n  offset: 46, 29\r\n  index: 14\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 277, 53\r\n  size: 8, 11\r\n  orig: 55, 40\r\n  offset: 0, 1\r\n  index: 0\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 277, 42\r\n  size: 7, 9\r\n  orig: 55, 40\r\n  offset: 48, 31\r\n  index: 15\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 38, 33\r\n  orig: 55, 40\r\n  offset: 14, 0\r\n  index: 7\r\nImage/Sg/Sg\r\n  rotate: true\r\n  xy: 42, 4\r\n  size: 31, 35\r\n  orig: 55, 40\r\n  offset: 21, 0\r\n  index: 8\r\nImage/Sg/Sg\r\n  rotate: true\r\n  xy: 79, 6\r\n  size: 29, 34\r\n  orig: 55, 40\r\n  offset: 0, 0\r\n  index: 3\r\nImage/Sg/Sg\r\n  rotate: true\r\n  xy: 115, 10\r\n  size: 25, 40\r\n  orig: 55, 40\r\n  offset: 28, 0\r\n  index: 9\r\nImage/Sg/Sg\r\n  rotate: true\r\n  xy: 157, 13\r\n  size: 22, 37\r\n  orig: 55, 40\r\n  offset: 33, 3\r\n  index: 10\r\nImage/Sg/Sg\r\n  rotate: false\r\n  xy: 196, 5\r\n  size: 21, 30\r\n  orig: 55, 40\r\n  offset: 0, 0\r\n  index: 2\r\nImage/Star\r\n  rotate: true\r\n  xy: 241, 135\r\n  size: 38, 37\r\n  orig: 38, 39\r\n  offset: 0, 1\r\n  index: 0\r\nImage/home_btn_afk0\r\n  rotate: true\r\n  xy: 141, 37\r\n  size: 136, 98\r\n  orig: 136, 137\r\n  offset: 0, 0\r\n  index: -1\r\nImage/home_btn_afk1\r\n  rotate: true\r\n  xy: 2, 37\r\n  size: 136, 137\r\n  orig: 136, 137\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "MoneyBox.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "IvCCtoYbUcgLmJ5AsmiB/nHj6p4",
+              "spine": "3.8.99",
+              "x": -68,
+              "y": -68,
+              "width": 136,
+              "height": 137,
+              "images": "",
+              "audio": "E:/BIGBIG/键盘侠/满箱子"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Box",
+                "parent": "Zong"
+              },
+              {
+                "name": "Sg",
+                "parent": "Zong",
+                "scaleX": 3,
+                "scaleY": 3
+              },
+              {
+                "name": "LiZong",
+                "parent": "Zong"
+              },
+              {
+                "name": "Star",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Star2",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Star3",
+                "parent": "LiZong"
+              },
+              {
+                "name": "Star4",
+                "parent": "LiZong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/home_btn_afk0",
+                "bone": "Box"
+              },
+              {
+                "name": "Box2",
+                "bone": "Box",
+                "attachment": "Image/home_btn_afk1"
+              },
+              {
+                "name": "Image/Sg/Sg_00000",
+                "bone": "Sg",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Star_00000",
+                "bone": "Star"
+              },
+              {
+                "name": "Image/Star_0",
+                "bone": "Star2"
+              },
+              {
+                "name": "Image/Star_1",
+                "bone": "Star3"
+              },
+              {
+                "name": "Image/Star_2",
+                "bone": "Star4"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Box2": {
+                    "Image/home_btn_afk1": {
+                      "y": 0.5,
+                      "width": 136,
+                      "height": 137
+                    }
+                  },
+                  "Image/Sg/Sg_00000": {
+                    "Image/Sg/Sg_00000": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00001": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00002": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00003": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00004": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00005": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00006": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00007": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00008": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00009": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00010": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00011": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00012": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00013": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00014": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    },
+                    "Image/Sg/Sg_00015": {
+                      "x": 0.17,
+                      "scaleX": 0.3333,
+                      "scaleY": 0.3333,
+                      "width": 55,
+                      "height": 40
+                    }
+                  },
+                  "Image/Star_0": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 38,
+                      "height": 39
+                    }
+                  },
+                  "Image/Star_00000": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 38,
+                      "height": 39
+                    }
+                  },
+                  "Image/Star_1": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 38,
+                      "height": 39
+                    }
+                  },
+                  "Image/Star_2": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 38,
+                      "height": 39
+                    }
+                  },
+                  "Image/home_btn_afk0": {
+                    "Image/home_btn_afk0": {
+                      "y": 0.5,
+                      "width": 136,
+                      "height": 137
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "1": {
+                "slots": {
+                  "Box2": {
+                    "attachment": [
+                      {
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/home_btn_afk0": {
+                    "attachment": [
+                      {
+                        "name": "Image/home_btn_afk0"
+                      }
+                    ]
+                  }
+                }
+              },
+              "2": {
+                "slots": {
+                  "Image/Sg/Sg_00000": {
+                    "color": [
+                      {
+                        "color": "ffffffd6"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Sg/Sg_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Sg/Sg_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Sg/Sg_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Sg/Sg_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Sg/Sg_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Sg/Sg_00005"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Sg/Sg_00006"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Sg/Sg_00007"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Sg/Sg_00008"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Sg/Sg_00009"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Sg/Sg_00010"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Sg/Sg_00011"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Sg/Sg_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Sg/Sg_00013"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Sg/Sg_00014"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Sg/Sg_00015"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_0": {
+                    "attachment": [
+                      {
+                        "time": 1.3667,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.7,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_00000": {
+                    "attachment": [
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.0667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_1": {
+                    "attachment": [
+                      {
+                        "time": 2.0333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 2.3667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_2": {
+                    "attachment": [
+                      {
+                        "time": 2.6,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 2.9333,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Sg": {
+                    "translate": [
+                      {
+                        "x": -1.77,
+                        "y": 27.14
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 2,
+                        "y": 2
+                      }
+                    ]
+                  },
+                  "Star": {
+                    "rotate": [
+                      {
+                        "time": 0.7333,
+                        "angle": -16.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.7333,
+                        "x": 42.19,
+                        "y": 35.55
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.7333,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.8667
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "Star2": {
+                    "rotate": [
+                      {
+                        "time": 1.3667,
+                        "angle": 15.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.3667,
+                        "x": -20.37,
+                        "y": 6
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.3667,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.5
+                      },
+                      {
+                        "time": 1.6667,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "Star3": {
+                    "rotate": [
+                      {
+                        "time": 2.0333,
+                        "angle": -40.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 2.0333,
+                        "x": 31.48,
+                        "y": 0.09
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 2.0333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 2.1667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.3333,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  },
+                  "Star4": {
+                    "rotate": [
+                      {
+                        "time": 2.6,
+                        "angle": 24
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 2.6,
+                        "x": -41.56,
+                        "y": 36.07
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 2.6,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 2.7333
+                      },
+                      {
+                        "time": 2.9,
+                        "x": 0.2,
+                        "y": 0.2
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        12
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_btn_set",
+          "rect": [
+            0,
+            0,
+            120,
+            126
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            120,
+            126
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        13
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_btn_tasks",
+          "rect": [
+            0,
+            0,
+            102,
+            129
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            102,
+            129
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        14
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_bg_levelrewards",
+          "rect": [
+            0,
+            0,
+            612,
+            96
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            612,
+            96
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        15
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_btn_raid",
+          "rect": [
+            0,
+            0,
+            118,
+            131
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            118,
+            131
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        16
+      ]
+    ],
+    [
+      [
+        [
+          30,
+          "battlePagePanel"
+        ],
+        [
+          15,
+          "battlePagePanel",
+          [
+            -7,
+            -8,
+            -9,
+            -10,
+            -11,
+            -12,
+            -13,
+            -14,
+            -15,
+            -16,
+            -17
+          ],
+          [
+            [
+              25,
+              45,
+              -2
+            ],
+            [
+              39,
+              -6,
+              -5,
+              -4,
+              -3
+            ]
+          ],
+          [
+            40,
+            -1
+          ],
+          [
+            5,
+            1080,
+            1920
+          ],
+          [
+            540,
+            960,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          19,
+          "chapterTitleNode",
+          1,
+          [
+            -21
+          ],
+          [
+            [
+              26,
+              -20,
+              -19
+            ]
+          ],
+          [
+            0,
+            "09GaoRl3dPPKgOZahIcgHw",
+            -18
+          ],
+          [
+            0,
+            515,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          19,
+          "bestLevelNode",
+          1,
+          [
+            -25
+          ],
+          [
+            [
+              26,
+              -24,
+              -23
+            ]
+          ],
+          [
+            0,
+            "94MLzYZNZDRbX4AkeVwCAJ",
+            -22
+          ],
+          [
+            0,
+            530,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "left",
+          1,
+          [
+            -28,
+            -29,
+            -30,
+            -31
+          ],
+          [
+            [
+              41,
+              1,
+              2,
+              50,
+              -26,
+              [
+                5,
+                140,
+                631
+              ]
+            ],
+            [
+              36,
+              8,
+              30,
+              -27
+            ]
+          ],
+          [
+            0,
+            "dalSwMKK5A44/Z0oR0wKJ+",
+            1
+          ],
+          [
+            5,
+            140,
+            631
+          ],
+          [
+            -440,
+            480,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          16,
+          "name",
+          [
+            -35
+          ],
+          [
+            [
+              9,
+              "homepage_privilegecard",
+              -34,
+              -33
+            ]
+          ],
+          [
+            0,
+            "aeVLR8g6lOuaqX3LTLWmKr",
+            -32
+          ],
+          [
+            0,
+            -75,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          15,
+          "container",
+          [
+            -38,
+            -39,
+            -40
+          ],
+          [
+            [
+              27,
+              1,
+              1,
+              50,
+              -36,
+              [
+                5,
+                628,
+                100
+              ]
+            ],
+            [
+              37,
+              -37
+            ]
+          ],
+          [
+            0,
+            "67C0EJrjBE+LzLouenqSJd",
+            1
+          ],
+          [
+            5,
+            628,
+            100
+          ],
+          [
+            205,
+            8,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          16,
+          "name",
+          [
+            -44
+          ],
+          [
+            [
+              9,
+              "homepage_settings",
+              -43,
+              -42
+            ]
+          ],
+          [
+            0,
+            "aeVLR8g6lOuaqX3LTLWmKr",
+            -41
+          ],
+          [
+            0,
+            -50,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          16,
+          "name",
+          [
+            -48
+          ],
+          [
+            [
+              9,
+              "homepage_email",
+              -47,
+              -46
+            ]
+          ],
+          [
+            0,
+            "aeVLR8g6lOuaqX3LTLWmKr",
+            -45
+          ],
+          [
+            0,
+            -50,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          16,
+          "name",
+          [
+            -52
+          ],
+          [
+            [
+              9,
+              "homepage_signin",
+              -51,
+              -50
+            ]
+          ],
+          [
+            0,
+            "aeVLR8g6lOuaqX3LTLWmKr",
+            -49
+          ],
+          [
+            0,
+            -55,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          16,
+          "name",
+          [
+            -56
+          ],
+          [
+            [
+              9,
+              "homepage_tasks",
+              -55,
+              -54
+            ]
+          ],
+          [
+            0,
+            "aeVLR8g6lOuaqX3LTLWmKr",
+            -53
+          ],
+          [
+            0,
+            -55,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          16,
+          "name",
+          [
+            -60
+          ],
+          [
+            [
+              9,
+              "homepage_raid",
+              -59,
+              -58
+            ]
+          ],
+          [
+            0,
+            "aeVLR8g6lOuaqX3LTLWmKr",
+            -57
+          ],
+          [
+            0,
+            -55,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          16,
+          "name",
+          [
+            -64
+          ],
+          [
+            [
+              9,
+              "homepage_max",
+              -63,
+              -62
+            ]
+          ],
+          [
+            0,
+            "aeVLR8g6lOuaqX3LTLWmKr",
+            -61
+          ],
+          [
+            0,
+            -60,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "home_bg_levelrewards",
+          1,
+          [
+            -67,
+            -68,
+            -69
+          ],
+          [
+            [
+              1,
+              -65,
+              [
+                136
+              ],
+              137
+            ],
+            [
+              17,
+              4,
+              610,
+              -66
+            ]
+          ],
+          [
+            0,
+            "e5PncRPatLIZQvVYDwUS9Z",
+            1
+          ],
+          [
+            5,
+            612,
+            96
+          ],
+          [
+            0,
+            -302,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          15,
+          "name",
+          [
+            -73
+          ],
+          [
+            [
+              9,
+              "homepage_levelrewards0",
+              -72,
+              -71
+            ]
+          ],
+          [
+            0,
+            "77JMu8wt1O3q05Xkzz6TfO",
+            -70
+          ],
+          [
+            5,
+            0,
+            40
+          ],
+          [
+            0,
+            -60,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          15,
+          "name",
+          [
+            -77
+          ],
+          [
+            [
+              9,
+              "homepage_levelrewards1",
+              -76,
+              -75
+            ]
+          ],
+          [
+            0,
+            "77JMu8wt1O3q05Xkzz6TfO",
+            -74
+          ],
+          [
+            5,
+            0,
+            40
+          ],
+          [
+            0,
+            -60,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          15,
+          "name",
+          [
+            -81
+          ],
+          [
+            [
+              9,
+              "homepage_levelrewards2",
+              -80,
+              -79
+            ]
+          ],
+          [
+            0,
+            "77JMu8wt1O3q05Xkzz6TfO",
+            -78
+          ],
+          [
+            5,
+            0,
+            40
+          ],
+          [
+            0,
+            -60,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "startBtn",
+          1,
+          [
+            -85,
+            -86
+          ],
+          [
+            [
+              1,
+              -82,
+              [
+                144
+              ],
+              145
+            ],
+            [
+              10,
+              0.9,
+              3,
+              -83,
+              [
+                [
+                  14,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickStartBtn",
+                  1
+                ]
+              ]
+            ],
+            [
+              17,
+              4,
+              360,
+              -84
+            ]
+          ],
+          [
+            0,
+            "0d5qs7BQJE7aa1VskbRKEK",
+            1
+          ],
+          [
+            5,
+            494,
+            195
+          ],
+          [
+            0,
+            -502.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          19,
+          "startNode",
+          17,
+          [
+            -90
+          ],
+          [
+            [
+              9,
+              "homepage_start",
+              -89,
+              -88
+            ]
+          ],
+          [
+            0,
+            "aeVLR8g6lOuaqX3LTLWmKr",
+            -87
+          ],
+          [
+            0,
+            34,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          31,
+          "common_bg_poptitle",
+          [
+            6,
+            -92,
+            -93
+          ],
+          [
+            [
+              43,
+              false,
+              -91,
+              [
+                28
+              ],
+              29
+            ]
+          ],
+          [
+            0,
+            "feKj0yVMRBZJvcXDAff3wl",
+            1
+          ],
+          [
+            5,
+            1080,
+            127
+          ]
+        ],
+        [
+          3,
+          "settingsBtn",
+          4,
+          [
+            7,
+            -96
+          ],
+          [
+            [
+              1,
+              -94,
+              [
+                38
+              ],
+              39
+            ],
+            [
+              10,
+              0.9,
+              3,
+              -95,
+              [
+                [
+                  14,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickSettingsBtn",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "c6auyRnYRASZwS2mduVabm",
+            1
+          ],
+          [
+            5,
+            120,
+            126
+          ],
+          [
+            0,
+            252.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          3,
+          "emailBtn",
+          4,
+          [
+            8,
+            -99
+          ],
+          [
+            [
+              1,
+              -97,
+              [
+                48
+              ],
+              49
+            ],
+            [
+              10,
+              0.9,
+              3,
+              -98,
+              [
+                [
+                  14,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickEmailBtn",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "0efZyoZ55G57bhANxmM0YN",
+            1
+          ],
+          [
+            5,
+            130,
+            100
+          ],
+          [
+            0,
+            89.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          3,
+          "signinBtn",
+          4,
+          [
+            9,
+            -102
+          ],
+          [
+            [
+              1,
+              -100,
+              [
+                58
+              ],
+              59
+            ],
+            [
+              10,
+              0.9,
+              3,
+              -101,
+              [
+                [
+                  14,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickSigninBtn",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "fdGuX/ti5ALZkYXo4OJEof",
+            1
+          ],
+          [
+            5,
+            118,
+            126
+          ],
+          [
+            0,
+            -73.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          3,
+          "tasksBtn",
+          4,
+          [
+            10,
+            -105
+          ],
+          [
+            [
+              1,
+              -103,
+              [
+                68
+              ],
+              69
+            ],
+            [
+              10,
+              0.9,
+              3,
+              -104,
+              [
+                [
+                  14,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickTasksBtn",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "3e70tfxSxF7oX8TGchF9gQ",
+            1
+          ],
+          [
+            5,
+            102,
+            129
+          ],
+          [
+            0,
+            -251,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          3,
+          "pCardBtn",
+          1,
+          [
+            5,
+            -108
+          ],
+          [
+            [
+              1,
+              -106,
+              [
+                80
+              ],
+              81
+            ],
+            [
+              10,
+              0.9,
+              3,
+              -107,
+              [
+                [
+                  14,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickPCardBtn",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "e5fyQxAQFLubbjIuf3OVnr",
+            1
+          ],
+          [
+            5,
+            143,
+            130
+          ],
+          [
+            446,
+            730,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          15,
+          "raidBtn",
+          [
+            11,
+            -111
+          ],
+          [
+            [
+              1,
+              -109,
+              [
+                90
+              ],
+              91
+            ],
+            [
+              10,
+              0.9,
+              3,
+              -110,
+              [
+                [
+                  14,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickRaidBtn",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "e8mFN0RvxMProwujiJAyWI",
+            1
+          ],
+          [
+            5,
+            118,
+            131
+          ],
+          [
+            10,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          15,
+          "maxBtn",
+          [
+            12,
+            -114
+          ],
+          [
+            [
+              10,
+              0.9,
+              3,
+              -112,
+              [
+                [
+                  14,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickMaxBtn",
+                  1
+                ]
+              ]
+            ],
+            [
+              18,
+              "default",
+              2,
+              0,
+              2,
+              -113,
+              [
+                104
+              ],
+              105
+            ]
+          ],
+          [
+            0,
+            "85gX8rV4FJqYfXPm8D6DQq",
+            1
+          ],
+          [
+            5,
+            136,
+            137
+          ],
+          [
+            -10,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          3,
+          "gift0",
+          13,
+          [
+            -116,
+            14,
+            -117
+          ],
+          [
+            [
+              10,
+              0.9,
+              3,
+              -115,
+              [
+                [
+                  21,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickGiftBtn",
+                  "0",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "279sz82n9C+rwriYWGEDPL",
+            1
+          ],
+          [
+            5,
+            100,
+            100
+          ],
+          [
+            -210,
+            15,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          3,
+          "gift1",
+          13,
+          [
+            -119,
+            15,
+            -120
+          ],
+          [
+            [
+              10,
+              0.9,
+              3,
+              -118,
+              [
+                [
+                  21,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickGiftBtn",
+                  "1",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "bdOLo999FB6bWRp8PnJS2R",
+            1
+          ],
+          [
+            5,
+            100,
+            100
+          ],
+          [
+            0,
+            15,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          3,
+          "gift2",
+          13,
+          [
+            -122,
+            16,
+            -123
+          ],
+          [
+            [
+              10,
+              0.9,
+              3,
+              -121,
+              [
+                [
+                  21,
+                  "f6b26Px+bdGh68C6wJwWwfD",
+                  "onClickGiftBtn",
+                  "2",
+                  1
+                ]
+              ]
+            ]
+          ],
+          [
+            0,
+            "6b+67k351EHqM5StXVpNqQ",
+            1
+          ],
+          [
+            5,
+            100,
+            100
+          ],
+          [
+            210,
+            15,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          3,
+          "common_bg_coin",
+          6,
+          [
+            -125,
+            -126
+          ],
+          [
+            [
+              1,
+              -124,
+              [
+                8
+              ],
+              9
+            ]
+          ],
+          [
+            0,
+            "e7P/6mhSFJWLAkO6Kz8Jp8",
+            1
+          ],
+          [
+            5,
+            176,
+            68
+          ],
+          [
+            -226,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          32,
+          "common_bg_coin",
+          6,
+          [
+            -128,
+            -129
+          ],
+          [
+            [
+              1,
+              -127,
+              [
+                14
+              ],
+              15
+            ]
+          ],
+          [
+            0,
+            "7cebtnkWdLhKbTW4o0wi5i",
+            1
+          ],
+          [
+            5,
+            176,
+            68
+          ]
+        ],
+        [
+          3,
+          "common_bg_coin",
+          6,
+          [
+            -131,
+            -132
+          ],
+          [
+            [
+              1,
+              -130,
+              [
+                20
+              ],
+              21
+            ]
+          ],
+          [
+            0,
+            "3bxXBwO5JOsbNkHPWfPwn2",
+            1
+          ],
+          [
+            5,
+            176,
+            68
+          ],
+          [
+            226,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "powerLayout",
+          19,
+          [
+            -134,
+            -135
+          ],
+          [
+            [
+              27,
+              1,
+              1,
+              5,
+              -133,
+              [
+                5,
+                108.72,
+                45
+              ]
+            ]
+          ],
+          [
+            0,
+            "e8DMvVL+1OG46W5SWXrrec",
+            1
+          ],
+          [
+            5,
+            108.72,
+            45
+          ],
+          [
+            0,
+            0,
+            0.5
+          ],
+          [
+            -515,
+            -14.714,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          20,
+          [
+            -138
+          ],
+          [
+            [
+              1,
+              -136,
+              [
+                34
+              ],
+              35
+            ],
+            [
+              13,
+              true,
+              -137,
+              [
+                37
+              ],
+              36
+            ]
+          ],
+          [
+            0,
+            "e5dpLPcx5K74JCMVoSVxKs",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            30,
+            12,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          21,
+          [
+            -141
+          ],
+          [
+            [
+              1,
+              -139,
+              [
+                44
+              ],
+              45
+            ],
+            [
+              13,
+              true,
+              -140,
+              [
+                47
+              ],
+              46
+            ]
+          ],
+          [
+            0,
+            "96rR+AVC5Hkbq+Q2zOkjyW",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            30,
+            12,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          22,
+          [
+            -144
+          ],
+          [
+            [
+              1,
+              -142,
+              [
+                54
+              ],
+              55
+            ],
+            [
+              13,
+              true,
+              -143,
+              [
+                57
+              ],
+              56
+            ]
+          ],
+          [
+            0,
+            "8aibp7BfJOtr+VDyUvxCIX",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            30,
+            12,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          23,
+          [
+            -147
+          ],
+          [
+            [
+              1,
+              -145,
+              [
+                64
+              ],
+              65
+            ],
+            [
+              13,
+              true,
+              -146,
+              [
+                67
+              ],
+              66
+            ]
+          ],
+          [
+            0,
+            "efLOLcIthKcY512yIiw+xB",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            30,
+            12,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          5,
+          [
+            -149,
+            -150
+          ],
+          [
+            -148
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            5
+          ],
+          [
+            5,
+            113.98,
+            67.8
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          24,
+          [
+            -153
+          ],
+          [
+            [
+              1,
+              -151,
+              [
+                76
+              ],
+              77
+            ],
+            [
+              13,
+              true,
+              -152,
+              [
+                79
+              ],
+              78
+            ]
+          ],
+          [
+            0,
+            "3d9awPazFPtKDZ3esaEaVG",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            30,
+            12,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "home_btn_sidebtnbg",
+          1,
+          [
+            25
+          ],
+          [
+            [
+              1,
+              -154,
+              [
+                92
+              ],
+              93
+            ],
+            [
+              17,
+              12,
+              370,
+              -155
+            ]
+          ],
+          [
+            0,
+            "24nSC3VWlJArJdJVD4+bmY",
+            1
+          ],
+          [
+            5,
+            186,
+            147
+          ],
+          [
+            -447,
+            -516.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          25,
+          [
+            -158
+          ],
+          [
+            [
+              1,
+              -156,
+              [
+                86
+              ],
+              87
+            ],
+            [
+              13,
+              true,
+              -157,
+              [
+                89
+              ],
+              88
+            ]
+          ],
+          [
+            0,
+            "5245RBI5xNGrm+KxPxQ7US",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            18,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "home_btn_sidebtnbg",
+          1,
+          [
+            -160,
+            26
+          ],
+          [
+            [
+              17,
+              36,
+              370,
+              -159
+            ]
+          ],
+          [
+            0,
+            "8a2gNc0gFKsLaZ4BRhcrdl",
+            1
+          ],
+          [
+            5,
+            186,
+            147
+          ],
+          [
+            447,
+            -516.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          26,
+          [
+            -163
+          ],
+          [
+            [
+              1,
+              -161,
+              [
+                100
+              ],
+              101
+            ],
+            [
+              13,
+              true,
+              -162,
+              [
+                103
+              ],
+              102
+            ]
+          ],
+          [
+            0,
+            "97U19jKPpNd4TZNsMgv/rF",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            18,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          27,
+          [
+            -166
+          ],
+          [
+            [
+              1,
+              -164,
+              [
+                112
+              ],
+              113
+            ],
+            [
+              13,
+              true,
+              -165,
+              [
+                115
+              ],
+              114
+            ]
+          ],
+          [
+            0,
+            "19SOaoHLBGobQFXQXRuaX+",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            25,
+            12,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          28,
+          [
+            -169
+          ],
+          [
+            [
+              1,
+              -167,
+              [
+                122
+              ],
+              123
+            ],
+            [
+              45,
+              -168,
+              [
+                125
+              ],
+              124
+            ]
+          ],
+          [
+            0,
+            "femRwo2bZAmrxxACi34dln",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            25,
+            12,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "reddot",
+          29,
+          [
+            -172
+          ],
+          [
+            [
+              1,
+              -170,
+              [
+                132
+              ],
+              133
+            ],
+            [
+              13,
+              true,
+              -171,
+              [
+                135
+              ],
+              134
+            ]
+          ],
+          [
+            0,
+            "8aH7C0OhdGcJfrdQ/FUZKk",
+            1
+          ],
+          [
+            5,
+            48,
+            52
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            25,
+            12,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "layout",
+          17,
+          [
+            -174,
+            -175
+          ],
+          [
+            [
+              42,
+              1,
+              1,
+              -173,
+              [
+                5,
+                143.06,
+                56
+              ]
+            ]
+          ],
+          [
+            0,
+            "36xEpOsKdMjbK0jvlayR7S",
+            1
+          ],
+          [
+            5,
+            143.06,
+            56
+          ],
+          [
+            0,
+            -30.564,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          24,
+          "richText",
+          2,
+          [
+            -177
+          ],
+          [
+            -176
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            2
+          ],
+          [
+            5,
+            420,
+            107.1
+          ],
+          [
+            0,
+            83.573,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          24,
+          "richText",
+          3,
+          [
+            -179
+          ],
+          [
+            -178
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            3
+          ],
+          [
+            5,
+            252,
+            63
+          ],
+          [
+            0,
+            -13.448,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "top",
+          1,
+          [
+            19
+          ],
+          [
+            [
+              25,
+              17,
+              -180
+            ]
+          ],
+          [
+            0,
+            "23fYkIuwVEc7eoHIV1BmSE",
+            1
+          ],
+          [
+            5,
+            1080,
+            127
+          ],
+          [
+            0,
+            896.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "label",
+          30,
+          [
+            [
+              22,
+              "27/30",
+              36,
+              false,
+              2,
+              1,
+              1,
+              2,
+              -181,
+              [
+                6
+              ],
+              7
+            ],
+            [
+              4,
+              2,
+              -182,
+              [
+                4,
+                4280885268
+              ]
+            ]
+          ],
+          [
+            0,
+            "21kQclFsZJoIR8vMbYQrUB",
+            1
+          ],
+          [
+            5,
+            152.68,
+            54.4
+          ],
+          [
+            10,
+            2.442,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "label",
+          31,
+          [
+            [
+              22,
+              "100",
+              36,
+              false,
+              2,
+              1,
+              1,
+              2,
+              -183,
+              [
+                12
+              ],
+              13
+            ],
+            [
+              4,
+              2,
+              -184,
+              [
+                4,
+                4280885268
+              ]
+            ]
+          ],
+          [
+            0,
+            "c34Vw2/sBH/78UuliWbBnE",
+            1
+          ],
+          [
+            5,
+            152.68,
+            54.4
+          ],
+          [
+            10,
+            2.442,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "label",
+          32,
+          [
+            [
+              22,
+              "2914",
+              36,
+              false,
+              2,
+              1,
+              1,
+              2,
+              -185,
+              [
+                18
+              ],
+              19
+            ],
+            [
+              4,
+              2,
+              -186,
+              [
+                4,
+                4280885268
+              ]
+            ]
+          ],
+          [
+            0,
+            "cd44oGYJVAzrkHBj7Mr16o",
+            1
+          ],
+          [
+            5,
+            152.68,
+            54.4
+          ],
+          [
+            10,
+            2.442,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          7,
+          [
+            -188
+          ],
+          [
+            -187
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            7
+          ],
+          [
+            5,
+            101.19,
+            37.8
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          34,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -189,
+              [
+                32
+              ],
+              33
+            ],
+            [
+              4,
+              3,
+              -190,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "5cthay5L5GoKbk/LCBWK/n",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          8,
+          [
+            -192
+          ],
+          [
+            -191
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            8
+          ],
+          [
+            5,
+            54.89,
+            37.8
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          35,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -193,
+              [
+                42
+              ],
+              43
+            ],
+            [
+              4,
+              3,
+              -194,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "95lOqV7d5OdoTf/9D2z+zW",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          9,
+          [
+            -196
+          ],
+          [
+            -195
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            9
+          ],
+          [
+            5,
+            75.92,
+            37.8
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          36,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -197,
+              [
+                52
+              ],
+              53
+            ],
+            [
+              4,
+              3,
+              -198,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "b5G5OX8zpNk5bmvmgyz9Ki",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          10,
+          [
+            -200
+          ],
+          [
+            -199
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            10
+          ],
+          [
+            5,
+            68.28,
+            37.8
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          37,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -201,
+              [
+                62
+              ],
+              63
+            ],
+            [
+              4,
+              3,
+              -202,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "fbXFBBmeVGZ5DTN3PU/AMX",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          39,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -203,
+              [
+                74
+              ],
+              75
+            ],
+            [
+              4,
+              3,
+              -204,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "c0X0Q70nJKB6Qvg1AqJsK9",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          11,
+          [
+            -206
+          ],
+          [
+            -205
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            11
+          ],
+          [
+            5,
+            78.26,
+            50.4
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          41,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -207,
+              [
+                84
+              ],
+              85
+            ],
+            [
+              4,
+              3,
+              -208,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "3aFZ7rIcBMBI+vJGLtidN4",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          12,
+          [
+            -210
+          ],
+          [
+            -209
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            12
+          ],
+          [
+            5,
+            76.07,
+            50.4
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          43,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -211,
+              [
+                98
+              ],
+              99
+            ],
+            [
+              4,
+              3,
+              -212,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "3dt0GTJsdAZ4/7hzjQOtWM",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          14,
+          [
+            -214
+          ],
+          [
+            -213
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            14
+          ],
+          [
+            5,
+            61.46,
+            37.8
+          ]
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          67,
+          [
+            [
+              6,
+              "1-10",
+              26,
+              30,
+              false,
+              1,
+              -215,
+              [
+                108
+              ],
+              109
+            ],
+            [
+              4,
+              2,
+              -216,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "48FKeQ5b9Avrx9dE+wZSd1",
+            14
+          ],
+          [
+            5,
+            61.46,
+            41.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -30.73,
+            -20.9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          44,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -217,
+              [
+                110
+              ],
+              111
+            ],
+            [
+              4,
+              3,
+              -218,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "cckv3ymtlM+5vyHpG9ZoLc",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          15,
+          [
+            -220
+          ],
+          [
+            -219
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            15
+          ],
+          [
+            5,
+            61.46,
+            37.8
+          ]
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          70,
+          [
+            [
+              6,
+              "1-10",
+              26,
+              30,
+              false,
+              1,
+              -221,
+              [
+                118
+              ],
+              119
+            ],
+            [
+              4,
+              2,
+              -222,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "aauF0vIe9JBIbJIX0aifyG",
+            15
+          ],
+          [
+            5,
+            61.46,
+            41.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -30.73,
+            -20.9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          45,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -223,
+              [
+                120
+              ],
+              121
+            ],
+            [
+              4,
+              3,
+              -224,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "b8WGLD0k5LU4PlA5GDk78L",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          16,
+          [
+            -226
+          ],
+          [
+            -225
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            16
+          ],
+          [
+            5,
+            61.46,
+            37.8
+          ]
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          73,
+          [
+            [
+              6,
+              "1-10",
+              26,
+              30,
+              false,
+              1,
+              -227,
+              [
+                128
+              ],
+              129
+            ],
+            [
+              4,
+              2,
+              -228,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "e9QZsgbktEbrl/W5tTVLjL",
+            16
+          ],
+          [
+            5,
+            61.46,
+            41.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -30.73,
+            -20.9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          46,
+          [
+            [
+              12,
+              30,
+              false,
+              1,
+              1,
+              -229,
+              [
+                130
+              ],
+              131
+            ],
+            [
+              4,
+              3,
+              -230,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "10IPbL0KVBVZvLYvvxfMPk",
+            1
+          ],
+          [
+            5,
+            6,
+            56.4
+          ],
+          [
+            22,
+            30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          8,
+          "richText",
+          18,
+          [
+            -232
+          ],
+          [
+            -231
+          ],
+          [
+            0,
+            "cebj++qxRIRJinZrT6V1XS",
+            18
+          ],
+          [
+            5,
+            148.93,
+            81.9
+          ]
+        ],
+        [
+          2,
+          "numLab",
+          47,
+          [
+            [
+              46,
+              "x5",
+              36,
+              false,
+              1,
+              1,
+              -233,
+              [
+                142
+              ],
+              143
+            ],
+            [
+              4,
+              3,
+              -234,
+              [
+                4,
+                4278190080
+              ]
+            ]
+          ],
+          [
+            0,
+            "a0PaFiYsNLULPMv6mVS6ZF",
+            1
+          ],
+          [
+            5,
+            49.06,
+            56.4
+          ],
+          [
+            47,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "scrollRootNode",
+          1,
+          [
+            [
+              38,
+              45,
+              160,
+              -160,
+              -235
+            ]
+          ],
+          [
+            0,
+            "49czpZLu9PA7fjoSXsP9Fh",
+            1
+          ],
+          [
+            5,
+            1080,
+            1920
+          ],
+          [
+            0,
+            -160,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          48,
+          [
+            [
+              6,
+              "第一章标题",
+              84,
+              85,
+              false,
+              1,
+              -236,
+              [
+                0
+              ],
+              1
+            ]
+          ],
+          [
+            0,
+            "aerI+aTNVJi4R/dWFjYj6S",
+            2
+          ],
+          [
+            5,
+            420,
+            107.1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -210,
+            -53.55,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          11,
+          false,
+          "第一章标题",
+          1,
+          84,
+          85,
+          48
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          49,
+          [
+            [
+              6,
+              "最高关卡进度",
+              42,
+              50,
+              false,
+              1,
+              -237,
+              [
+                2
+              ],
+              3
+            ]
+          ],
+          [
+            0,
+            "b0SXTA6axE86HNKmqFOSt0",
+            3
+          ],
+          [
+            5,
+            252,
+            63
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -126,
+            -31.5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          11,
+          false,
+          "最高关卡进度",
+          1,
+          42,
+          50,
+          49
+        ],
+        [
+          33,
+          "roleRootNode",
+          1,
+          [
+            0,
+            "abJr22eq5EiY5yN9kK+Zs4",
+            1
+          ],
+          [
+            0,
+            0.5,
+            0
+          ],
+          [
+            0,
+            -30,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "common_ico_hp",
+          30,
+          [
+            [
+              1,
+              -238,
+              [
+                4
+              ],
+              5
+            ]
+          ],
+          [
+            0,
+            "52AcLv6x1IYoOASdp6NqYb",
+            1
+          ],
+          [
+            5,
+            53,
+            67
+          ],
+          [
+            -80,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "common_ico_str",
+          31,
+          [
+            [
+              1,
+              -239,
+              [
+                10
+              ],
+              11
+            ]
+          ],
+          [
+            0,
+            "25Yzl+uMpCV78a9TwKx3eZ",
+            1
+          ],
+          [
+            5,
+            60,
+            65
+          ],
+          [
+            -80,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "common_ico_am",
+          32,
+          [
+            [
+              1,
+              -240,
+              [
+                16
+              ],
+              17
+            ]
+          ],
+          [
+            0,
+            "798XLbJOhKnZLbsjJv0s25",
+            1
+          ],
+          [
+            5,
+            60,
+            63
+          ],
+          [
+            -80,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          34,
+          "playerIdLab",
+          19,
+          [
+            [
+              47,
+              "Player00000",
+              26,
+              30,
+              false,
+              2,
+              1,
+              -241,
+              [
+                22
+              ],
+              23
+            ]
+          ],
+          [
+            0,
+            "01QA+qpvNL6at0ikGKQB+s",
+            1
+          ],
+          [
+            5,
+            159.77,
+            37.8
+          ],
+          [
+            0,
+            0,
+            0.5
+          ],
+          [
+            -515,
+            35,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          2,
+          "common_ico_power",
+          33,
+          [
+            [
+              44,
+              0,
+              -242,
+              [
+                24
+              ],
+              25
+            ]
+          ],
+          [
+            0,
+            "8aAOFe0ohKlZG77zk9hChb",
+            1
+          ],
+          [
+            5,
+            40,
+            43
+          ],
+          [
+            20,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          35,
+          "playerIdLab",
+          33,
+          [
+            [
+              48,
+              "100",
+              36,
+              false,
+              2,
+              1,
+              -243,
+              [
+                26
+              ],
+              27
+            ]
+          ],
+          [
+            0,
+            "4583ITHxxN96lel02sVggR",
+            1
+          ],
+          [
+            4,
+            4286575102
+          ],
+          [
+            5,
+            63.72,
+            50.4
+          ],
+          [
+            0,
+            0,
+            0.5
+          ],
+          [
+            45,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          54,
+          [
+            [
+              6,
+              "Settings",
+              26,
+              30,
+              false,
+              1,
+              -244,
+              [
+                30
+              ],
+              31
+            ]
+          ],
+          [
+            0,
+            "7bTCWINLpLY5Dgz/mGmvY7",
+            7
+          ],
+          [
+            5,
+            101.19,
+            37.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -50.595,
+            -18.9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          11,
+          false,
+          "Settings",
+          1,
+          26,
+          30,
+          54
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          56,
+          [
+            [
+              6,
+              "Mail",
+              26,
+              30,
+              false,
+              1,
+              -245,
+              [
+                40
+              ],
+              41
+            ]
+          ],
+          [
+            0,
+            "60b2VqkEdJU4LGG1OrABhB",
+            8
+          ],
+          [
+            5,
+            54.89,
+            37.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -27.445,
+            -18.9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          11,
+          false,
+          "Mail",
+          1,
+          26,
+          30,
+          56
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          58,
+          [
+            [
+              6,
+              "Log In",
+              26,
+              30,
+              false,
+              1,
+              -246,
+              [
+                50
+              ],
+              51
+            ]
+          ],
+          [
+            0,
+            "1ebe4os0FDBZhcFWOA729h",
+            9
+          ],
+          [
+            5,
+            75.92,
+            37.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -37.96,
+            -18.9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          11,
+          false,
+          "Log In",
+          1,
+          26,
+          30,
+          58
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          60,
+          [
+            [
+              6,
+              "Tasks",
+              26,
+              30,
+              false,
+              1,
+              -247,
+              [
+                60
+              ],
+              61
+            ]
+          ],
+          [
+            0,
+            "96ARlPa2BL07ofX9Z+t6qv",
+            10
+          ],
+          [
+            5,
+            68.28,
+            37.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -34.14,
+            -18.9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          11,
+          false,
+          "Tasks",
+          1,
+          26,
+          30,
+          60
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          38,
+          [
+            [
+              6,
+              "Privilege",
+              26,
+              30,
+              false,
+              1,
+              -248,
+              [
+                70
+              ],
+              71
+            ]
+          ],
+          [
+            0,
+            "36xY7WcgJJopiUT+xmalnk",
+            5
+          ],
+          [
+            5,
+            113.98,
+            37.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -56.99,
+            -3.8999999999999986,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          38,
+          [
+            [
+              6,
+              "Card",
+              26,
+              30,
+              false,
+              1,
+              -249,
+              [
+                72
+              ],
+              73
+            ]
+          ],
+          [
+            0,
+            "fegC9LXZ1Ft4NBWAJCWPrR",
+            5
+          ],
+          [
+            5,
+            60.58,
+            37.8
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -30.29,
+            -33.9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          11,
+          false,
+          "Privilege\nCard",
+          1,
+          26,
+          30,
+          38
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          63,
+          [
+            [
+              28,
+              "Raid",
+              36,
+              false,
+              1,
+              -250,
+              [
+                82
+              ],
+              83
+            ]
+          ],
+          [
+            0,
+            "cf7Vq0aCRL4buAYUt/vClK",
+            11
+          ],
+          [
+            5,
+            78.26,
+            50.4
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -39.13,
+            -25.2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          29,
+          false,
+          "Raid",
+          1,
+          36,
+          63
+        ],
+        [
+          2,
+          "home_btn_sidebtnbg",
+          42,
+          [
+            [
+              1,
+              -251,
+              [
+                94
+              ],
+              95
+            ]
+          ],
+          [
+            0,
+            "aeCMDEnTVIs4OftRdwPDwj",
+            1
+          ],
+          [
+            5,
+            186,
+            147
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1
+          ]
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          65,
+          [
+            [
+              28,
+              "Max",
+              36,
+              false,
+              1,
+              -252,
+              [
+                96
+              ],
+              97
+            ]
+          ],
+          [
+            0,
+            "46PxmTWo9LgKsojsgC+Z3K",
+            12
+          ],
+          [
+            5,
+            76.07,
+            50.4
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -38.035,
+            -25.2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          29,
+          false,
+          "Max",
+          1,
+          36,
+          65
+        ],
+        [
+          20,
+          "spine",
+          27,
+          [
+            [
+              18,
+              "default",
+              3,
+              0,
+              3,
+              -253,
+              [
+                106
+              ],
+              107
+            ]
+          ],
+          [
+            0,
+            "617ht7/0xAY4UNGNvfOGyA",
+            1
+          ],
+          [
+            5,
+            252,
+            244
+          ]
+        ],
+        [
+          11,
+          false,
+          "<outline color=black width=2>1-10</outline>",
+          1,
+          26,
+          30,
+          67
+        ],
+        [
+          20,
+          "spine",
+          28,
+          [
+            [
+              18,
+              "default",
+              3,
+              0,
+              3,
+              -254,
+              [
+                116
+              ],
+              117
+            ]
+          ],
+          [
+            0,
+            "63YatcdMVJEY7F/hl7UCQu",
+            1
+          ],
+          [
+            5,
+            252,
+            244
+          ]
+        ],
+        [
+          11,
+          false,
+          "<outline color=black width=2>1-10</outline>",
+          1,
+          26,
+          30,
+          70
+        ],
+        [
+          20,
+          "spine",
+          29,
+          [
+            [
+              18,
+              "default",
+              3,
+              0,
+              3,
+              -255,
+              [
+                126
+              ],
+              127
+            ]
+          ],
+          [
+            0,
+            "6cnwgMiIBE2JY28XDTlAl1",
+            1
+          ],
+          [
+            5,
+            252,
+            244
+          ]
+        ],
+        [
+          11,
+          false,
+          "<outline color=black width=2>1-10</outline>",
+          1,
+          26,
+          30,
+          73
+        ],
+        [
+          5,
+          "RICHTEXT_CHILD",
+          1024,
+          76,
+          [
+            [
+              6,
+              "Start",
+              64,
+              65,
+              false,
+              1,
+              -256,
+              [
+                138
+              ],
+              139
+            ]
+          ],
+          [
+            0,
+            "f7N+FI0XBMy46C/atU3Oh0",
+            18
+          ],
+          [
+            5,
+            148.93,
+            81.9
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -74.465,
+            -40.95,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          11,
+          false,
+          "Start",
+          1,
+          64,
+          65,
+          76
+        ],
+        [
+          2,
+          "skill_1083",
+          47,
+          [
+            [
+              1,
+              -257,
+              [
+                140
+              ],
+              141
+            ]
+          ],
+          [
+            0,
+            "97+2wsra5BY5LH9WemTLqt",
+            1
+          ],
+          [
+            5,
+            94,
+            137
+          ],
+          [
+            -24.53,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.4,
+            0.4,
+            1
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        3,
+        1,
+        0,
+        0,
+        1,
+        0,
+        11,
+        83,
+        0,
+        12,
+        3,
+        0,
+        13,
+        2,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        78,
+        0,
+        -2,
+        2,
+        0,
+        -3,
+        3,
+        0,
+        -4,
+        83,
+        0,
+        -5,
+        50,
+        0,
+        -6,
+        4,
+        0,
+        -7,
+        24,
+        0,
+        -8,
+        40,
+        0,
+        -9,
+        42,
+        0,
+        -10,
+        13,
+        0,
+        -11,
+        17,
+        0,
+        3,
+        2,
+        0,
+        5,
+        80,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        48,
+        0,
+        3,
+        3,
+        0,
+        5,
+        82,
+        0,
+        0,
+        3,
+        0,
+        -1,
+        49,
+        0,
+        0,
+        4,
+        0,
+        0,
+        4,
+        0,
+        -1,
+        20,
+        0,
+        -2,
+        21,
+        0,
+        -3,
+        22,
+        0,
+        -4,
+        23,
+        0,
+        3,
+        5,
+        0,
+        5,
+        100,
+        0,
+        0,
+        5,
+        0,
+        -1,
+        38,
+        0,
+        0,
+        6,
+        0,
+        0,
+        6,
+        0,
+        -1,
+        30,
+        0,
+        -2,
+        31,
+        0,
+        -3,
+        32,
+        0,
+        3,
+        7,
+        0,
+        5,
+        91,
+        0,
+        0,
+        7,
+        0,
+        -1,
+        54,
+        0,
+        3,
+        8,
+        0,
+        5,
+        93,
+        0,
+        0,
+        8,
+        0,
+        -1,
+        56,
+        0,
+        3,
+        9,
+        0,
+        5,
+        95,
+        0,
+        0,
+        9,
+        0,
+        -1,
+        58,
+        0,
+        3,
+        10,
+        0,
+        5,
+        97,
+        0,
+        0,
+        10,
+        0,
+        -1,
+        60,
+        0,
+        3,
+        11,
+        0,
+        5,
+        102,
+        0,
+        0,
+        11,
+        0,
+        -1,
+        63,
+        0,
+        3,
+        12,
+        0,
+        5,
+        105,
+        0,
+        0,
+        12,
+        0,
+        -1,
+        65,
+        0,
+        0,
+        13,
+        0,
+        0,
+        13,
+        0,
+        -1,
+        27,
+        0,
+        -2,
+        28,
+        0,
+        -3,
+        29,
+        0,
+        3,
+        14,
+        0,
+        5,
+        107,
+        0,
+        0,
+        14,
+        0,
+        -1,
+        67,
+        0,
+        3,
+        15,
+        0,
+        5,
+        109,
+        0,
+        0,
+        15,
+        0,
+        -1,
+        70,
+        0,
+        3,
+        16,
+        0,
+        5,
+        111,
+        0,
+        0,
+        16,
+        0,
+        -1,
+        73,
+        0,
+        0,
+        17,
+        0,
+        0,
+        17,
+        0,
+        0,
+        17,
+        0,
+        -1,
+        18,
+        0,
+        -2,
+        47,
+        0,
+        3,
+        18,
+        0,
+        5,
+        113,
+        0,
+        0,
+        18,
+        0,
+        -1,
+        76,
+        0,
+        0,
+        19,
+        0,
+        -2,
+        87,
+        0,
+        -3,
+        33,
+        0,
+        0,
+        20,
+        0,
+        0,
+        20,
+        0,
+        -2,
+        34,
+        0,
+        0,
+        21,
+        0,
+        0,
+        21,
+        0,
+        -2,
+        35,
+        0,
+        0,
+        22,
+        0,
+        0,
+        22,
+        0,
+        -2,
+        36,
+        0,
+        0,
+        23,
+        0,
+        0,
+        23,
+        0,
+        -2,
+        37,
+        0,
+        0,
+        24,
+        0,
+        0,
+        24,
+        0,
+        -2,
+        39,
+        0,
+        0,
+        25,
+        0,
+        0,
+        25,
+        0,
+        -2,
+        41,
+        0,
+        0,
+        26,
+        0,
+        0,
+        26,
+        0,
+        -2,
+        43,
+        0,
+        0,
+        27,
+        0,
+        -1,
+        106,
+        0,
+        -3,
+        44,
+        0,
+        0,
+        28,
+        0,
+        -1,
+        108,
+        0,
+        -3,
+        45,
+        0,
+        0,
+        29,
+        0,
+        -1,
+        110,
+        0,
+        -3,
+        46,
+        0,
+        0,
+        30,
+        0,
+        -1,
+        84,
+        0,
+        -2,
+        51,
+        0,
+        0,
+        31,
+        0,
+        -1,
+        85,
+        0,
+        -2,
+        52,
+        0,
+        0,
+        32,
+        0,
+        -1,
+        86,
+        0,
+        -2,
+        53,
+        0,
+        0,
+        33,
+        0,
+        -1,
+        88,
+        0,
+        -2,
+        89,
+        0,
+        0,
+        34,
+        0,
+        0,
+        34,
+        0,
+        -1,
+        55,
+        0,
+        0,
+        35,
+        0,
+        0,
+        35,
+        0,
+        -1,
+        57,
+        0,
+        0,
+        36,
+        0,
+        0,
+        36,
+        0,
+        -1,
+        59,
+        0,
+        0,
+        37,
+        0,
+        0,
+        37,
+        0,
+        -1,
+        61,
+        0,
+        -1,
+        100,
+        0,
+        -1,
+        98,
+        0,
+        -2,
+        99,
+        0,
+        0,
+        39,
+        0,
+        0,
+        39,
+        0,
+        -1,
+        62,
+        0,
+        0,
+        40,
+        0,
+        0,
+        40,
+        0,
+        0,
+        41,
+        0,
+        0,
+        41,
+        0,
+        -1,
+        64,
+        0,
+        0,
+        42,
+        0,
+        -1,
+        103,
+        0,
+        0,
+        43,
+        0,
+        0,
+        43,
+        0,
+        -1,
+        66,
+        0,
+        0,
+        44,
+        0,
+        0,
+        44,
+        0,
+        -1,
+        69,
+        0,
+        0,
+        45,
+        0,
+        0,
+        45,
+        0,
+        -1,
+        72,
+        0,
+        0,
+        46,
+        0,
+        0,
+        46,
+        0,
+        -1,
+        75,
+        0,
+        0,
+        47,
+        0,
+        -1,
+        114,
+        0,
+        -2,
+        77,
+        0,
+        -1,
+        80,
+        0,
+        -1,
+        79,
+        0,
+        -1,
+        82,
+        0,
+        -1,
+        81,
+        0,
+        0,
+        50,
+        0,
+        0,
+        51,
+        0,
+        0,
+        51,
+        0,
+        0,
+        52,
+        0,
+        0,
+        52,
+        0,
+        0,
+        53,
+        0,
+        0,
+        53,
+        0,
+        -1,
+        91,
+        0,
+        -1,
+        90,
+        0,
+        0,
+        55,
+        0,
+        0,
+        55,
+        0,
+        -1,
+        93,
+        0,
+        -1,
+        92,
+        0,
+        0,
+        57,
+        0,
+        0,
+        57,
+        0,
+        -1,
+        95,
+        0,
+        -1,
+        94,
+        0,
+        0,
+        59,
+        0,
+        0,
+        59,
+        0,
+        -1,
+        97,
+        0,
+        -1,
+        96,
+        0,
+        0,
+        61,
+        0,
+        0,
+        61,
+        0,
+        0,
+        62,
+        0,
+        0,
+        62,
+        0,
+        -1,
+        102,
+        0,
+        -1,
+        101,
+        0,
+        0,
+        64,
+        0,
+        0,
+        64,
+        0,
+        -1,
+        105,
+        0,
+        -1,
+        104,
+        0,
+        0,
+        66,
+        0,
+        0,
+        66,
+        0,
+        -1,
+        107,
+        0,
+        -1,
+        68,
+        0,
+        0,
+        68,
+        0,
+        0,
+        68,
+        0,
+        0,
+        69,
+        0,
+        0,
+        69,
+        0,
+        -1,
+        109,
+        0,
+        -1,
+        71,
+        0,
+        0,
+        71,
+        0,
+        0,
+        71,
+        0,
+        0,
+        72,
+        0,
+        0,
+        72,
+        0,
+        -1,
+        111,
+        0,
+        -1,
+        74,
+        0,
+        0,
+        74,
+        0,
+        0,
+        74,
+        0,
+        0,
+        75,
+        0,
+        0,
+        75,
+        0,
+        -1,
+        113,
+        0,
+        -1,
+        112,
+        0,
+        0,
+        77,
+        0,
+        0,
+        77,
+        0,
+        0,
+        78,
+        0,
+        0,
+        79,
+        0,
+        0,
+        81,
+        0,
+        0,
+        84,
+        0,
+        0,
+        85,
+        0,
+        0,
+        86,
+        0,
+        0,
+        87,
+        0,
+        0,
+        88,
+        0,
+        0,
+        89,
+        0,
+        0,
+        90,
+        0,
+        0,
+        92,
+        0,
+        0,
+        94,
+        0,
+        0,
+        96,
+        0,
+        0,
+        98,
+        0,
+        0,
+        99,
+        0,
+        0,
+        101,
+        0,
+        0,
+        103,
+        0,
+        0,
+        104,
+        0,
+        0,
+        106,
+        0,
+        0,
+        108,
+        0,
+        0,
+        110,
+        0,
+        0,
+        112,
+        0,
+        0,
+        114,
+        0,
+        14,
+        1,
+        5,
+        4,
+        24,
+        6,
+        4,
+        19,
+        7,
+        4,
+        20,
+        8,
+        4,
+        21,
+        9,
+        4,
+        22,
+        10,
+        4,
+        23,
+        11,
+        4,
+        25,
+        12,
+        4,
+        26,
+        14,
+        4,
+        27,
+        15,
+        4,
+        28,
+        16,
+        4,
+        29,
+        19,
+        4,
+        50,
+        25,
+        4,
+        40,
+        26,
+        4,
+        42,
+        257
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        80,
+        80,
+        82,
+        82,
+        91,
+        91,
+        93,
+        93,
+        95,
+        95,
+        97,
+        97,
+        100,
+        100,
+        102,
+        102,
+        105,
+        105,
+        107,
+        107,
+        109,
+        109,
+        111,
+        111,
+        113,
+        113
+      ],
+      [
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        10,
+        -1,
+        10,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        10,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        10,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        8,
+        -1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        1,
+        -1,
+        2,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7,
+        6,
+        7
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        17,
+        0,
+        1,
+        0,
+        6,
+        0,
+        18,
+        0,
+        1,
+        0,
+        6,
+        0,
+        19,
+        0,
+        1,
+        0,
+        6,
+        0,
+        1,
+        0,
+        20,
+        0,
+        1,
+        0,
+        21,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        0,
+        22,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        0,
+        23,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        0,
+        24,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        0,
+        25,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        0,
+        26,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        0,
+        27,
+        0,
+        8,
+        0,
+        8,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        5,
+        28,
+        5,
+        7,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        5,
+        7,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        5,
+        7,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        2,
+        2,
+        0,
+        29,
+        0,
+        1,
+        0,
+        30,
+        0,
+        1,
+        0,
+        31,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_btn_card",
+          "rect": [
+            0,
+            0,
+            143,
+            130
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            143,
+            130
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        32
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_btn_sidebtnbg",
+          "rect": [
+            0,
+            0,
+            186,
+            147
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            186,
+            147
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        33
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_ico_power",
+          "rect": [
+            0,
+            0,
+            134,
+            143
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            134,
+            143
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        1
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        34
+      ]
+    ]
+  ]
+]

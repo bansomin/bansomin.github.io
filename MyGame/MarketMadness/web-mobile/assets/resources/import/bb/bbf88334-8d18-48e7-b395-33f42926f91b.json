@@ -1,0 +1,54 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "config",
+      {
+        "config": {
+          "version": "1.0.33",
+          "frameRate": "60",
+          "localDataKey": "MarketMadness",
+          "localDataIv": "MarketMadness"
+        },
+        "language": {
+          "default": "zh",
+          "type": [
+            "zh",
+            "en"
+          ],
+          "path": {
+            "json": "language/json",
+            "texture": "language/texture",
+            "spine": "language/spine"
+          }
+        }
+      }
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

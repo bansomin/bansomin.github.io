@@ -1,0 +1,774 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "d9vK09Pq9B6adUB/x8txRt",
+    "18PdLwLSZJ3YoUZUSz0akZ"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "ultimate_boom_1004"
+        ],
+        [
+          1,
+          "ultimate_boom_1004",
+          [
+            [
+              -2,
+              [
+                2,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            1051.23,
+            644.27
+          ]
+        ],
+        [
+          4,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "Ultra_1004_Blast",
+          "\r\nUltra_1004_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/B/BBBBLS_00000\r\n  rotate: false\r\n  xy: 305, 51\r\n  size: 35, 45\r\n  orig: 109, 105\r\n  offset: 38, 31\r\n  index: -1\r\nImage/B/BBBBLS_00001\r\n  rotate: false\r\n  xy: 304, 207\r\n  size: 80, 87\r\n  orig: 109, 105\r\n  offset: 16, 5\r\n  index: -1\r\nImage/B/BBBBLS_00002\r\n  rotate: false\r\n  xy: 300, 296\r\n  size: 84, 92\r\n  orig: 109, 105\r\n  offset: 15, 4\r\n  index: -1\r\nImage/B/BBBBLS_00003\r\n  rotate: false\r\n  xy: 207, 292\r\n  size: 91, 96\r\n  orig: 109, 105\r\n  offset: 13, 3\r\n  index: -1\r\nImage/B/BBBBLS_00004\r\n  rotate: false\r\n  xy: 211, 194\r\n  size: 91, 96\r\n  orig: 109, 105\r\n  offset: 13, 3\r\n  index: -1\r\nImage/B/BBBBLS_00005\r\n  rotate: false\r\n  xy: 111, 279\r\n  size: 94, 99\r\n  orig: 109, 105\r\n  offset: 12, 2\r\n  index: -1\r\nImage/B/BBBBLS_00006\r\n  rotate: false\r\n  xy: 110, 169\r\n  size: 99, 102\r\n  orig: 109, 105\r\n  offset: 9, 1\r\n  index: -1\r\nImage/B/BBBBLS_00007\r\n  rotate: false\r\n  xy: 108, 63\r\n  size: 102, 102\r\n  orig: 109, 105\r\n  offset: 6, 1\r\n  index: -1\r\nImage/B/BBBBLS_00008\r\n  rotate: false\r\n  xy: 2, 61\r\n  size: 104, 104\r\n  orig: 109, 105\r\n  offset: 5, 0\r\n  index: -1\r\nImage/B/BBBBLS_00009\r\n  rotate: false\r\n  xy: 2, 167\r\n  size: 106, 104\r\n  orig: 109, 105\r\n  offset: 3, 0\r\n  index: -1\r\nImage/B/BBBBLS_00010\r\n  rotate: false\r\n  xy: 2, 380\r\n  size: 107, 105\r\n  orig: 109, 105\r\n  offset: 2, 0\r\n  index: -1\r\nImage/B/BBBBLS_00011\r\n  rotate: false\r\n  xy: 2, 273\r\n  size: 107, 105\r\n  orig: 109, 105\r\n  offset: 2, 0\r\n  index: -1\r\nImage/B/BBBBLS_00012\r\n  rotate: false\r\n  xy: 111, 380\r\n  size: 93, 105\r\n  orig: 109, 105\r\n  offset: 1, 0\r\n  index: -1\r\nImage/B/BBBBLS_00013\r\n  rotate: true\r\n  xy: 212, 2\r\n  size: 94, 91\r\n  orig: 109, 105\r\n  offset: 0, 12\r\n  index: -1\r\nImage/B/BBBBLS_00014\r\n  rotate: true\r\n  xy: 212, 98\r\n  size: 94, 92\r\n  orig: 109, 105\r\n  offset: 0, 11\r\n  index: -1\r\nImage/B/BBBBLS_00015\r\n  rotate: true\r\n  xy: 206, 390\r\n  size: 95, 92\r\n  orig: 109, 105\r\n  offset: 0, 10\r\n  index: -1\r\nImage/B/BBBBLS_00016\r\n  rotate: true\r\n  xy: 300, 390\r\n  size: 95, 88\r\n  orig: 109, 105\r\n  offset: 0, 10\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 305, 12\r\n  size: 37, 37\r\n  orig: 39, 39\r\n  offset: 1, 1\r\n  index: -1\r\n",
+          [
+            "Ultra_1004_Blast.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "1Z3EGXWhLtQq+Kw5Uo0AZ7JNT8M",
+              "spine": "3.8.99",
+              "x": -182.62,
+              "y": -93.74,
+              "width": 1051.23,
+              "height": 644.27,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "BB_Zong",
+                "parent": "root"
+              },
+              {
+                "name": "B",
+                "parent": "BB_Zong"
+              },
+              {
+                "name": "Glow",
+                "parent": "BB_Zong"
+              },
+              {
+                "name": "Glow2",
+                "parent": "BB_Zong"
+              },
+              {
+                "name": "B2",
+                "parent": "BB_Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/glow2",
+                "bone": "Glow2"
+              },
+              {
+                "name": "Image/B/BBBBLS_00000",
+                "bone": "B"
+              },
+              {
+                "name": "Image/B/BBBBLS_0",
+                "bone": "B2",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/glow1",
+                "bone": "Glow",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/B/BBBBLS_0": {
+                    "Image/B/BBBBLS_00000": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00001": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00002": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00003": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00004": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00005": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00006": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00007": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00008": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00009": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00010": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00011": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00012": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00013": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00014": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00015": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00016": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    }
+                  },
+                  "Image/B/BBBBLS_00000": {
+                    "Image/B/BBBBLS_00000": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00001": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00002": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00003": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00004": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00005": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00006": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00007": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00008": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00009": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00010": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00011": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00012": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00013": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00014": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00015": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    },
+                    "Image/B/BBBBLS_00016": {
+                      "x": 0.5,
+                      "width": 273,
+                      "height": 262
+                    }
+                  },
+                  "Image/glow1": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  },
+                  "Image/glow2": {
+                    "Image/glow1": {
+                      "width": 98,
+                      "height": 98
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/B/BBBBLS_0": {
+                    "color": [
+                      {
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.2333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/B/BBBBLS_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/B/BBBBLS_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/B/BBBBLS_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/B/BBBBLS_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/B/BBBBLS_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/B/BBBBLS_00005"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/B/BBBBLS_00006"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/B/BBBBLS_00007"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/B/BBBBLS_00008"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/B/BBBBLS_00009"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/B/BBBBLS_00010"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/B/BBBBLS_00011"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/B/BBBBLS_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/B/BBBBLS_00013"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/B/BBBBLS_00014"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/B/BBBBLS_00015"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/B/BBBBLS_00016"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/B/BBBBLS_00000": {
+                    "color": [
+                      {
+                        "time": 0.5,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.7,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/B/BBBBLS_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/B/BBBBLS_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/B/BBBBLS_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/B/BBBBLS_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/B/BBBBLS_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/B/BBBBLS_00005"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/B/BBBBLS_00006"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/B/BBBBLS_00007"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/B/BBBBLS_00008"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/B/BBBBLS_00009"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/B/BBBBLS_00010"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/B/BBBBLS_00011"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/B/BBBBLS_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/B/BBBBLS_00013"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/B/BBBBLS_00014"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/B/BBBBLS_00015"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/B/BBBBLS_00016"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/glow1": {
+                    "color": [
+                      {
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ffd5a9ff"
+                      },
+                      {
+                        "time": 0.4,
+                        "color": "f3b72300"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  },
+                  "Image/glow2": {
+                    "color": [
+                      {
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.1,
+                        "color": "ffac2fff"
+                      },
+                      {
+                        "time": 0.4,
+                        "color": "f3b72300"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/glow1"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "B": {
+                    "scale": [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 1.5,
+                        "y": 1.5
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "translate": [
+                      {
+                        "x": -0.01,
+                        "y": 38.81
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 3,
+                        "y": 3
+                      }
+                    ]
+                  },
+                  "BB_Zong": {
+                    "translate": [
+                      {
+                        "y": -20.85
+                      }
+                    ]
+                  },
+                  "Glow2": {
+                    "translate": [
+                      {
+                        "time": 0.1,
+                        "x": 9.95,
+                        "y": 2.41
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": -33.61,
+                        "y": 2.41
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "time": 0.1,
+                        "x": 5.773,
+                        "y": 5.274
+                      }
+                    ]
+                  },
+                  "B2": {
+                    "scale": [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 1.5,
+                        "y": 1.5
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

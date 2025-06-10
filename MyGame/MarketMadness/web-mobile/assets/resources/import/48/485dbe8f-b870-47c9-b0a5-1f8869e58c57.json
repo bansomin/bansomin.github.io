@@ -1,0 +1,1841 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "zh_skill",
+      [
+        {
+          "id": "settings_language_zh",
+          "content": "中文简体",
+          "valueList": ""
+        },
+        {
+          "id": "settings_language_switch_suc",
+          "content": "切换语言成功",
+          "valueList": ""
+        },
+        {
+          "id": "settings_language_en",
+          "content": "英文",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1001_name",
+          "content": "纸团",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1002_name",
+          "content": "纸团X2",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1003_name",
+          "content": "运动湿巾",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1004_name",
+          "content": "抽纸",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1005_name",
+          "content": "生理盐水",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1006_name",
+          "content": "跑步机",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1007_name",
+          "content": "1007",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1008_name",
+          "content": "再来一瓶",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1009_name",
+          "content": "菠菜",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1010_name",
+          "content": "能量加倍",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1011_name",
+          "content": "蛋白粉",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1012_name",
+          "content": "能量饮料",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1013_name",
+          "content": "油漆桶",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1014_name",
+          "content": "两桶油漆",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1015_name",
+          "content": "手机防护套",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1016_name",
+          "content": "防狼喷雾",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1017_name",
+          "content": "餐具",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1018_name",
+          "content": "叉子",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1019_name",
+          "content": "硬化涂层",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1020_name",
+          "content": "滑冰鞋",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1021_name",
+          "content": "煎牛排",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1022_name",
+          "content": "炸锅",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1023_name",
+          "content": "石头+1",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1024_name",
+          "content": "手柄",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1025_name",
+          "content": "2p",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1026_name",
+          "content": "插卡",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1027_name",
+          "content": "金属手柄",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1028_name",
+          "content": "操盘手",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1029_name",
+          "content": "多巴胺",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1030_name",
+          "content": "大招伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1031_name",
+          "content": "雪糕",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1032_name",
+          "content": "甜筒",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1033_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1034_name",
+          "content": "冰块",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1035_name",
+          "content": "巧克力",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1036_name",
+          "content": "汉堡",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1037_name",
+          "content": "滑雪头盔",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1038_name",
+          "content": "跑鞋",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1039_name",
+          "content": "蓝色药丸",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1040_name",
+          "content": "旱冰鞋",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1041_name",
+          "content": "橄榄球套装",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1042_name",
+          "content": "能量补给",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1043_name",
+          "content": "爆竹",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1044_name",
+          "content": "紧急治疗",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1045_name",
+          "content": "紧急充能",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1046_name",
+          "content": "紧急护甲",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1047_name",
+          "content": "紧急反伤",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1048_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1049_name",
+          "content": "太阳镜",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1050_name",
+          "content": "加油",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1051_name",
+          "content": "维生素C",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1052_name",
+          "content": "冥想",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1053_name",
+          "content": "加餐",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1054_name",
+          "content": "拳击训练",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1055_name",
+          "content": "最佳员工",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1056_name",
+          "content": "跑步机",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1057_name",
+          "content": "幸运饼干",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1058_name",
+          "content": "薯片",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1059_name",
+          "content": "备用电池",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1060_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1061_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1062_name",
+          "content": "图钉",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1063_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1064_name",
+          "content": "攻击提升",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1065_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1066_name",
+          "content": "番茄",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1067_name",
+          "content": "急救包",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1068_name",
+          "content": "礼盒",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1069_name",
+          "content": "罐头",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1070_name",
+          "content": "跳伞",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1071_name",
+          "content": "健身课",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1072_name",
+          "content": "伤口愈合",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1073_name",
+          "content": "治疗增强",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1074_name",
+          "content": "三明治",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1075_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1076_name",
+          "content": "拉伸",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1077_name",
+          "content": "施瓦星哥",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1078_name",
+          "content": "能量棒",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1079_name",
+          "content": "B回",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1080_name",
+          "content": "点滴吊瓶",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1081_name",
+          "content": "肾上腺素",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1082_name",
+          "content": "输液血包",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1083_name",
+          "content": "血量提升",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1084_name",
+          "content": "跑步图标",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1085_name",
+          "content": "薯条",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1086_name",
+          "content": "咖啡",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1087_name",
+          "content": "矿泉水",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1088_name",
+          "content": "A能量",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1089_name",
+          "content": "抢劫面罩",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1090_name",
+          "content": "小丑面罩",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1091_name",
+          "content": "饭团",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1092_name",
+          "content": "1092",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1093_name",
+          "content": "毒蜘蛛",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1094_name",
+          "content": "面具",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1095_name",
+          "content": "暴击几率上升",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1096_name",
+          "content": "拳击手套",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1097_name",
+          "content": "愤怒表情",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1098_name",
+          "content": "正经",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1099_name",
+          "content": "小黄鸭",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1100_name",
+          "content": "弓箭",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1101_name",
+          "content": "指虎",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1102_name",
+          "content": "A疲劳",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1103_name",
+          "content": "运动手套",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1104_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1105_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1106_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1107_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1108_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1109_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1110_name",
+          "content": "?",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1111_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1112_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1113_name",
+          "content": "背心",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1114_name",
+          "content": "护甲提升",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1115_name",
+          "content": "夹克",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1116_name",
+          "content": "河豚",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1117_name",
+          "content": "螃蟹",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1118_name",
+          "content": "反伤提升",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1119_name",
+          "content": "盔甲",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1120_name",
+          "content": "仙人掌",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1121_name",
+          "content": "图腾",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1122_name",
+          "content": "鲱鱼罐头",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1123_name",
+          "content": "闪避提升",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1124_name",
+          "content": "鸽子",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1125_name",
+          "content": "可乐",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1126_name",
+          "content": "蜂鸟",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1127_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1128_name",
+          "content": "乌鸦",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1129_name",
+          "content": "稻草人",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1130_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1131_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1132_name",
+          "content": "反伤",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1133_name",
+          "content": "棒球手套",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1134_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1135_name",
+          "content": "高尔夫球杆",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1136_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1137_name",
+          "content": "积分卡",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1138_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1139_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1140_name",
+          "content": "苹果股票",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1141_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1142_name",
+          "content": "销冠",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1143_name",
+          "content": "收入提升",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1144_name",
+          "content": "招财猫",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1145_name",
+          "content": "VIP",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1146_name",
+          "content": "金条",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1147_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1148_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1149_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1151_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1152_name",
+          "content": "盆栽",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1153_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1154_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1155_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1156_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1157_name",
+          "content": "A",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1158_name",
+          "content": "斧头＋1",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1159_name",
+          "content": "能量饮料+1",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1160_name",
+          "content": "大便+1",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1161_name",
+          "content": "事件疲劳",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1162_name",
+          "content": "事件治疗增强",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1163_name",
+          "content": "冲锋暴击",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1164_name",
+          "content": "手柄+1",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1165_name",
+          "content": "能量上限",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1232_name",
+          "content": "1232",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1233_name",
+          "content": "1233",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1234_name",
+          "content": "1234",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1235_name",
+          "content": "1235",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1236_name",
+          "content": "1236",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1237_name",
+          "content": "1237",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1001_desc",
+          "content": "获得&lt;img src='txt_ico_1001' width=36 height=36/&gt;\n(造成&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量的伤害)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1002_desc",
+          "content": "获得<color=#00b411>2</color>&lt;img src='txt_ico_1001' width=36 height=36/&gt;\n(造成&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量的伤害)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1003_desc",
+          "content": "&lt;img src='txt_ico_1001' width=30 height=30/&gt;造成<color=#00b411>+10%</color>额外&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1004_desc",
+          "content": "获得<color=#00b411>2</color>&lt;img src='txt_ico_1001' width=30 height=30/&gt;\n同时失去<color=#f72c58>{0}</color>力量",
+          "valueList": "16.67|strength"
+        },
+        {
+          "id": "skill_1005_desc",
+          "content": "每受到<color=#00b411>{0}</color>治疗,发射<color=#00b411>1</color>&lt;img src='txt_ico_1004' width=36 height=36/&gt;",
+          "valueList": "10|basic_hp"
+        },
+        {
+          "id": "skill_1006_desc",
+          "content": "每66次&lt;img src='txt_ico_1004' width=36 height=36/&gt;击中永久提升<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "3.34|strength"
+        },
+        {
+          "id": "skill_1007_desc",
+          "content": "获得<color=#00b411>2</color>&lt;img src='txt_ico_1004' width=36 height=36/&gt;\n获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值\n当获得任何稀有能力时获得<color=#00b411>60</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;钞票",
+          "valueList": "27.5|basic_hp"
+        },
+        {
+          "id": "skill_1008_desc",
+          "content": "&lt;img src='txt_ico_1004' width=36 height=36/&gt;击中目标时<color=#00b411>+20%</color>几率再发射<color=#00b411>1</color>个&lt;img src='txt_ico_1009' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1009_desc",
+          "content": "获得<color=#00b411>1</color>&lt;img src='txt_ico_1004' width=36 height=36/&gt;\n获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "18.34|basic_hp"
+        },
+        {
+          "id": "skill_1010_desc",
+          "content": "获得<color=#00b411>2</color>&lt;img src='txt_ico_1004' width=36 height=36/&gt;\n(瞄准自己,击中时获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量)",
+          "valueList": "3.34|strength"
+        },
+        {
+          "id": "skill_1011_desc",
+          "content": "&lt;img src='txt_ico_1004' width=36 height=36/&gt;击中目标时<color=#00b411>+33%</color>几率发射<color=#00b411>1</color>&lt;img src='txt_ico_1005' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1012_desc",
+          "content": "获得&lt;img src='txt_ico_1004' width=36 height=36/&gt;\n(瞄准自己,击中时获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量)",
+          "valueList": "3.34|strength"
+        },
+        {
+          "id": "skill_1013_desc",
+          "content": "获得&lt;img src='txt_ico_1005' width=36 height=36/&gt;\n(击中目标时每秒造成<color=#00b411>{0}</color>中毒伤害)",
+          "valueList": "23.34|strength"
+        },
+        {
+          "id": "skill_1014_desc",
+          "content": "获得<color=#00b411>2</color>&lt;img src='txt_ico_1005' width=36 height=36/&gt;\n(击中目标时每秒造成<color=#00b411>{0}</color>中毒伤害)",
+          "valueList": "23.34|strength"
+        },
+        {
+          "id": "skill_1015_desc",
+          "content": "&lt;img src='txt_ico_1005' width=36 height=36/&gt;击中目标时<color=#00b411>+33%</color>几率发射<color=#00b411>1</color>&lt;img src='txt_ico_1003' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1016_desc",
+          "content": "&lt;img src='txt_ico_1005' width=36 height=36/&gt;造成伤害<color=#00b411>+100%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1017_desc",
+          "content": "获得<color=#00b411>2</color>&lt;img src='txt_ico_1002' width=36 height=36/&gt;\n(造成<color=#00b411>{0}</color>伤害)",
+          "valueList": "200|strength"
+        },
+        {
+          "id": "skill_1018_desc",
+          "content": "获得&lt;img src='txt_ico_1002' width=36 height=36/&gt;\n(造成<color=#00b411>{0}</color>伤害)",
+          "valueList": "200|strength"
+        },
+        {
+          "id": "skill_1019_desc",
+          "content": "&lt;img src='txt_ico_1002' width=36 height=36/&gt;造成伤害<color=#00b411>+100%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1020_desc",
+          "content": "&lt;img src='txt_ico_1002' width=36 height=36/&gt;击中目标时<color=#00b411>+33%</color>几率发射<color=#00b411>1</color>&lt;img src='txt_ico_1006' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1021_desc",
+          "content": "&lt;img src='txt_ico_1002' width=36 height=36/&gt;暴击时立刻发射<color=#00b411>+1</color>&lt;img src='txt_ico_1004' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1022_desc",
+          "content": "&lt;img src='txt_ico_1002' width=36 height=36/&gt;基础伤害提高<color=#00b411>50%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1023_desc",
+          "content": "获得&lt;img src='txt_ico_1001' width=36 height=36/&gt;\n(造成&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量的伤害)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1024_desc",
+          "content": "获得&lt;img src='txt_ico_1003' width=36 height=36/&gt;\n(击中时损毁<color=#f72c58>20</color>能量)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1025_desc",
+          "content": "获得<color=#00b411>2</color>&lt;img src='txt_ico_1003' width=36 height=36/&gt;\n(击中时损毁<color=#f72c58>20</color>能量)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1026_desc",
+          "content": "&lt;img src='txt_ico_1003' width=36 height=36/&gt;损毁&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量额外的<color=#f72c58>-10</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1027_desc",
+          "content": "&lt;img src='txt_ico_1003' width=36 height=36/&gt;击中目标时<color=#00b411>+33%</color>几率发射一个&lt;img src='txt_ico_1002' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1028_desc",
+          "content": "&lt;img src='txt_ico_1003' width=36 height=36/&gt;同时也会造成<color=#00b411>+100%</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;的伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1029_desc",
+          "content": "&lt;img src='txt_ico_1003' width=36 height=36/&gt;同时为自己回复&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量,数值等同于<color=#00b411>50%</color>损毁值",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1030_desc",
+          "content": "获得<color=#00b411>20%</color>&lt;img src='txt_ico_ul' width=36 height=36/&gt;大招伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1031_desc",
+          "content": "获得&lt;img src='txt_ico_1006' width=36 height=36/&gt;\n(敌人被击中时降低<color=#00b411>1%</color>攻击速度,持续<color=#00b411>3</color>秒)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1032_desc",
+          "content": "&lt;img src='txt_ico_1006' width=36 height=36/&gt;的效果<color=#00b411>+100%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1033_desc",
+          "content": "获得<color=#00b411>1</color>&lt;img src='txt_ico_1006' width=36 height=36/&gt;\n获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "62.5|basic_hp"
+        },
+        {
+          "id": "skill_1034_desc",
+          "content": "获得&lt;img src='txt_ico_1006' width=36 height=36/&gt;\n(敌人被击中时降低<color=#00b411>1</color>攻击速度,持续<color=#00b411>3</color>秒)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1035_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】在前<color=#00b411>3</color>秒获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "33.34|strength"
+        },
+        {
+          "id": "skill_1036_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】在前<color=#00b411>3</color>秒获得<color=#00b411>{0}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": "6.67|basic_hp"
+        },
+        {
+          "id": "skill_1037_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】在前<color=#00b411>3</color>秒获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲",
+          "valueList": "100|armor"
+        },
+        {
+          "id": "skill_1038_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】在前<color=#00b411>3</color>秒获得<color=#00b411>20%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻速",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1039_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】能力多持续<color=#00b411>1</color>秒",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1040_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】在前<color=#00b411>3</color>秒获得<color=#00b411>+15%</color>&lt;img src='txt_ico_dodge' width=36 height=36/&gt;闪避",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1041_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】能力的效果提升<color=#00b411>100%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1042_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】能力多持续<color=#00b411>2</color>秒",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1043_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】能力多持续<color=#00b411>1.5</color>秒",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1044_desc",
+          "content": "&lt;img src='txt_ico_emergency' width=36 height=36/&gt;【紧急】当生命值低于<color=#00b411>50%</color>时获得<color=#00b411>{0}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": "4.17|basic_hp"
+        },
+        {
+          "id": "skill_1045_desc",
+          "content": "&lt;img src='txt_ico_emergency' width=36 height=36/&gt;【紧急】当生命值低于<color=#00b411>50%</color>时获得<color=#00b411>90</color>&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量恢复",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1046_desc",
+          "content": "&lt;img src='txt_ico_emergency' width=36 height=36/&gt;【紧急】当生命值低于<color=#00b411>50%</color>时获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲",
+          "valueList": "80|armor"
+        },
+        {
+          "id": "skill_1047_desc",
+          "content": "&lt;img src='txt_ico_emergency' width=36 height=36/&gt;【紧急】当生命值低于<color=#00b411>50%</color>时获得<color=#00b411>{0}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤",
+          "valueList": "50|strength"
+        },
+        {
+          "id": "skill_1048_desc",
+          "content": "所有的&lt;img src='txt_ico_emergency' width=36 height=36/&gt;【紧急】能力触发线提高<color=#00b411>15%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1049_desc",
+          "content": "所有的&lt;img src='txt_ico_emergency' width=36 height=36/&gt;【紧急】能力效果提升<color=#00b411>100%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1050_desc",
+          "content": "击败敌人后获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "3.34|strength"
+        },
+        {
+          "id": "skill_1051_desc",
+          "content": "击败敌人后获得<color=#00b411>{0}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": "0.34|basic_hp"
+        },
+        {
+          "id": "skill_1052_desc",
+          "content": "击败敌人后获得<color=#00b411>{0}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": "0.34|basic_hp"
+        },
+        {
+          "id": "skill_1053_desc",
+          "content": "击败敌人后获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "4.17|basic_hp"
+        },
+        {
+          "id": "skill_1054_desc",
+          "content": "击败敌人后获得<color=#00b411>1%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1055_desc",
+          "content": "击败敌人后获得<color=#00b411>{0}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤",
+          "valueList": "3.34|strength"
+        },
+        {
+          "id": "skill_1056_desc",
+          "content": "击败敌人后获得<color=#00b411>1%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1057_desc",
+          "content": "击败敌人后获得<color=#00b411>4</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1058_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量,击败敌人后自身获得<color=#00b411>2</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳(持续<color=#00b411>3</color>秒)",
+          "valueList": "100|strength"
+        },
+        {
+          "id": "skill_1059_desc",
+          "content": "获得<color=#00b411>300</color>&lt;img src='txt_ico_energy' width=36 height=36/&gt;初始能量",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1060_desc",
+          "content": "战斗开始时对敌人造成<color=#00b411>5%</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值的伤害(最高伤害为当前&lt;img src='txt_ico_strength' width=36 height=36/&gt;的30倍)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1061_desc",
+          "content": "战斗开始时眩晕敌人<color=#00b411>0.5</color>秒",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1062_desc",
+          "content": "战斗开始时给敌人施加<color=#00b411>3</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳(持续<color=#00b411>3</color>秒)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1063_desc",
+          "content": "战斗开始时立刻释放一个大招",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1064_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "16.67|strength"
+        },
+        {
+          "id": "skill_1065_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "116.67|strength"
+        },
+        {
+          "id": "skill_1066_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "16.67|strength"
+        },
+        {
+          "id": "skill_1067_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量\n获得<color=#00b411>{1}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值\n获得&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;最大生命值的<color=#00b411>1%</color>作为回血",
+          "valueList": "16.67|strength,18.34|basic_hp"
+        },
+        {
+          "id": "skill_1068_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量\n获得<color=#00b411>4%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度\n获得<color=#00b411>4%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率\n获得<color=#00b411>4%</color>&lt;img src='txt_ico_dodge' width=36 height=36/&gt;闪避率",
+          "valueList": "16.67|strength"
+        },
+        {
+          "id": "skill_1069_desc",
+          "content": "花费<color=#f72c58>50</color>钞票,获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "33.34|strength"
+        },
+        {
+          "id": "skill_1070_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量\n但是也会获得<color=#f72c58>3</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳(持续<color=#00b411>3</color>秒)",
+          "valueList": "33.34|strength"
+        },
+        {
+          "id": "skill_1071_desc",
+          "content": "从现在起,每花掉<color=#00b411>30</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;钞票,获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "3.34|strength"
+        },
+        {
+          "id": "skill_1072_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": "2.09|basic_hp"
+        },
+        {
+          "id": "skill_1073_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_healenhance' width=36 height=36/&gt;治疗增强",
+          "valueList": "0.17|basic_hp"
+        },
+        {
+          "id": "skill_1074_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": "2.09|basic_hp"
+        },
+        {
+          "id": "skill_1075_desc",
+          "content": "获得等同于最大生命值<color=#00b411>2%</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1076_desc",
+          "content": "释放大招后获得<color=#00b411>{0}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": "2.09|basic_hp"
+        },
+        {
+          "id": "skill_1077_desc",
+          "content": "获得等同于最大生命值<color=#00b411>1%</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1078_desc",
+          "content": "战斗开始后,第<color=#00b411>6</color>秒获得<color=#00b411>{0}</color>恢复",
+          "valueList": "83.34|basic_hp"
+        },
+        {
+          "id": "skill_1079_desc",
+          "content": "获得等同于最大生命值<color=#00b411>3%</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血\n获得<color=#00b411>60%</color>&lt;img src='txt_ico_critdmg' width=36 height=36/&gt;暴击伤害。",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1080_desc",
+          "content": "每秒治疗自己乘以<color=#00b411>100%</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量的数值",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1081_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血,同时失去<color=#f72c58>{1}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "2.09|basic_hp,18.34|basic_hp"
+        },
+        {
+          "id": "skill_1082_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "18.34|basic_hp"
+        },
+        {
+          "id": "skill_1083_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "27.5|basic_hp"
+        },
+        {
+          "id": "skill_1084_desc",
+          "content": "战斗开始前,每拥有<color=#00b411>1</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量获得<color=#00b411>10</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1085_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值\n但是也会获得<color=#f72c58>3</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳(持续<color=#00b411>3</color>秒)",
+          "valueList": "58|basic_hp"
+        },
+        {
+          "id": "skill_1086_desc",
+          "content": "获得<color=#00b411>40</color>&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量恢复",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1087_desc",
+          "content": "获得<color=#00b411>33</color>&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量恢复",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1088_desc",
+          "content": "释放大招后获得<color=#00b411>190</color>&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1089_desc",
+          "content": "闪避时获得<color=#00b411>10</color>&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1090_desc",
+          "content": "使用大招后获得<color=#00b411>250</color>&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1091_desc",
+          "content": "获得<color=#00b411>{0}</color>回血\n获得<color=#00b411>75</color>&lt;img src='txt_ico_energy' width=36 height=36/&gt;能量恢复",
+          "valueList": "2.09|basic_hp"
+        },
+        {
+          "id": "skill_1092_desc",
+          "content": "每次发出大招永久提升<color=#00b411>3%</color>&lt;img src='txt_ico_ul' width=36 height=36/&gt;大招伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1093_desc",
+          "content": "获得<color=#00b411>20%</color>&lt;img src='txt_ico_ul' width=36 height=36/&gt;大招伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1094_desc",
+          "content": "暴击时有<color=#00b411>+20%</color>几率发射&lt;img src='txt_ico_1004' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1095_desc",
+          "content": "获得<color=#00b411>5%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1096_desc",
+          "content": "获得<color=#00b411>66%</color>&lt;img src='txt_ico_critdmg' width=36 height=36/&gt;暴击伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1097_desc",
+          "content": "获得<color=#00b411>50%</color>&lt;img src='txt_ico_critdmg' width=36 height=36/&gt;暴击伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1098_desc",
+          "content": "获得<color=#00b411>3%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1099_desc",
+          "content": "获得<color=#00b411>6%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1100_desc",
+          "content": "获得<color=#00b411>6%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;\n暴击率你的大招可以暴击了",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1101_desc",
+          "content": "获得<color=#00b411>33%</color>&lt;img src='txt_ico_critdmg' width=36 height=36/&gt;暴击伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1102_desc",
+          "content": "失去<color=#f72c58>10</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳(持续<color=#00b411>3</color>秒)\n获得<color=#00b411>77%</color>&lt;img src='txt_ico_critdmg' width=36 height=36/&gt;暴击伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1103_desc",
+          "content": "花费<color=#f72c58>75</color>钞票,获得<color=#00b411>6%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率,获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "50|basic_hp"
+        },
+        {
+          "id": "skill_1104_desc",
+          "content": "每<color=#00b411>60</color>次暴击永久提升&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率<color=#00b411>1%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1105_desc",
+          "content": "每<color=#00b411>60</color>次闪避永久提升闪避率&lt;img src='txt_ico_dodge' width=36 height=36/&gt;<color=#00b411>1%</color>",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1106_desc",
+          "content": "暴击时有<color=#00b411>+50%</color>几率发射&lt;img src='txt_ico_1005' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1107_desc",
+          "content": "获得<color=#00b411>9%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率\n获得<color=#00b411>{1}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "90|armor,57|basic_hp"
+        },
+        {
+          "id": "skill_1108_desc",
+          "content": "被&lt;img src='txt_ico_ul' width=36 height=36/&gt;大招击中时发射<color=#00b411>+8</color>&lt;img src='txt_ico_1006' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1109_desc",
+          "content": "被任何子弹击中时<color=#00b411>+15%</color>几率发射&lt;img src='txt_ico_1001' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1110_desc",
+          "content": "被任何子弹击中时<color=#00b411>+15%</color>几率回复<color=#00b411>{0}</color>生命",
+          "valueList": "16.67|strength"
+        },
+        {
+          "id": "skill_1111_desc",
+          "content": "每次受到子弹的伤害时<color=#00b411>+5%</color>几率发射&lt;img src='txt_ico_1006' width=36 height=36/&gt;",
+          "valueList": "5|basic_hp"
+        },
+        {
+          "id": "skill_1112_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲和\n<color=#00b411>{1}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤",
+          "valueList": "50|armor,20|strength"
+        },
+        {
+          "id": "skill_1113_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲",
+          "valueList": "40|armor"
+        },
+        {
+          "id": "skill_1114_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲",
+          "valueList": "40|armor"
+        },
+        {
+          "id": "skill_1115_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲",
+          "valueList": "80|armor"
+        },
+        {
+          "id": "skill_1116_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲\n同时失去<color=#f72c58>{1}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "100|armor,45.84|basic_hp"
+        },
+        {
+          "id": "skill_1117_desc",
+          "content": "从现在起,当永久获得&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤时,获得同等&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1118_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤",
+          "valueList": "20|strength"
+        },
+        {
+          "id": "skill_1119_desc",
+          "content": "造成&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤伤害时<color=#00b411>+10%</color>几率发射&lt;img src='txt_ico_1002' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1120_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤",
+          "valueList": "33.34|strength"
+        },
+        {
+          "id": "skill_1121_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤,暴击时有<color=#00b411>+50%</color>几率发射<color=#00b411>1</color>&lt;img src='txt_ico_1004' width=36 height=36/&gt;",
+          "valueList": "50|strength"
+        },
+        {
+          "id": "skill_1122_desc",
+          "content": "造成&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤伤害时<color=#00b411>+10%</color>几率回复<color=#00b411>1%</color>最大生命值",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1123_desc",
+          "content": "获得<color=#00b411>5%</color>&lt;img src='txt_ico_dodge' width=36 height=36/&gt;闪避",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1124_desc",
+          "content": "获得<color=#00b411>6%</color>&lt;img src='txt_ico_dodge' width=36 height=36/&gt;闪避",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1125_desc",
+          "content": "每受到<color=#00b411>{0}</color>治疗,发射<color=#00b411>+1</color>&lt;img src='txt_ico_1002' width=36 height=36/&gt;",
+          "valueList": "8.34|basic_hp"
+        },
+        {
+          "id": "skill_1126_desc",
+          "content": "闪避时获得<color=#00b411>{0}</color>治疗",
+          "valueList": "2.09|basic_hp"
+        },
+        {
+          "id": "skill_1127_desc",
+          "content": "发射&lt;img src='txt_ico_ul' width=36 height=36/&gt;大招时治疗自己<color=#00b411>{0}</color>",
+          "valueList": "20.84|basic_hp"
+        },
+        {
+          "id": "skill_1128_desc",
+          "content": "获得<color=#00b411>4%</color>&lt;img src='txt_ico_dodge' width=36 height=36/&gt;闪避\n你可以闪避大招了",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1129_desc",
+          "content": "闪避时发射<color=#00b411>+1</color>&lt;img src='txt_ico_1003' width=36 height=36/&gt;",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1130_desc",
+          "content": "获得<color=#00b411>10%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1131_desc",
+          "content": "获得<color=#00b411>6%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1132_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤",
+          "valueList": "13.35|strength"
+        },
+        {
+          "id": "skill_1133_desc",
+          "content": "获得<color=#00b411>15%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度\n同时失去<color=#f72c58>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量",
+          "valueList": "16.67|strength"
+        },
+        {
+          "id": "skill_1134_desc",
+          "content": "获得<color=#00b411>25%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1135_desc",
+          "content": "获得<color=#00b411>25%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度\n但是失去<color=#f72c58>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量\n当获得任意史诗能力时获得<color=#00b411>100</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;钞票",
+          "valueList": "16.67|strength"
+        },
+        {
+          "id": "skill_1136_desc",
+          "content": "获得<color=#00b411>35%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度\n获得<color=#00b411>10%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1137_desc",
+          "content": "获得<color=#00b411>12%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;攻击速度",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1138_desc",
+          "content": "获得<color=#00b411>40%</color>商店折扣\n但是失去<color=#f72c58>25</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1139_desc",
+          "content": "获得<color=#00b411>25</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1140_desc",
+          "content": "花费<color=#f72c58>50</color>钞票,获得<color=#00b411>10</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1141_desc",
+          "content": "失去<color=#f72c58>20</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入,获得<color=#00b411>250</color>钞票",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1142_desc",
+          "content": "获得<color=#00b411>8</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1143_desc",
+          "content": "获得<color=#00b411>10</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1144_desc",
+          "content": "获得<color=#00b411>30</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入\n获得<color=#00b411>10%</color>&lt;img src='txt_ico_dodge' width=36 height=36/&gt;闪避",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1145_desc",
+          "content": "获得<color=#00b411>50%</color>商店折扣\n但是失去<color=#f72c58>25</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;收入",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1146_desc",
+          "content": "立刻获得<color=#00b411>400</color>&lt;img src='txt_ico_income' width=36 height=36/&gt;钞票",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1147_desc",
+          "content": "当获得任何<color=#923fec>史诗能力</color>时,获得<color=#00b411>50</color>钞票",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1148_desc",
+          "content": "当获得任何<color=#3e70e4>稀有能力</color>时,获得<color=#00b411>20</color>钞票",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1149_desc",
+          "content": "当获得任何<color=#ea6e2b>传说能力</color>时,获得<color=#00b411>120</color>钞票",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1151_desc",
+          "content": "获得<color=#f72c58>3</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳(持续<color=#00b411>3</color>秒),但造成反伤时,多造成<color=#00b411>1</color>次",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1152_desc",
+          "content": "失去<color=#00b411>6</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1153_desc",
+          "content": "&lt;img src='txt_ico_1001' width=36 height=36/&gt;造成伤害时,<color=#00b411>+9%</color>几率增加<color=#00b411>1</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳(持续<color=#00b411>3</color>秒)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1154_desc",
+          "content": "似乎没什么作用(可以和蓝色药水合成)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1155_desc",
+          "content": "似乎没什么作用(可以和红色药水合成)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1156_desc",
+          "content": "每<color=#00b411>6</color>秒,触发所有在游戏开局触发的能力(不包括【冲锋强化】)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1157_desc",
+          "content": "击败敌人后获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲",
+          "valueList": "10|armor"
+        },
+        {
+          "id": "skill_1158_desc",
+          "content": "获得&lt;img src='txt_ico_1002' width=36 height=36/&gt;(造成<color=#00b411>{0}</color>伤害)",
+          "valueList": "200|strength"
+        },
+        {
+          "id": "skill_1159_desc",
+          "content": "获得&lt;img src='txt_ico_1004' width=36 height=36/&gt;\n(瞄准自己,击中时获得<color=#00b411>{0}</color>&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量)",
+          "valueList": "3.34|strength"
+        },
+        {
+          "id": "skill_1160_desc",
+          "content": "获得&lt;img src='txt_ico_1005' width=36 height=36/&gt;\n(击中时每秒造成<color=#00b411>{0}</color>中毒伤害)",
+          "valueList": "23.34|strength"
+        },
+        {
+          "id": "skill_1161_desc",
+          "content": "战斗开始时给敌人施加<color=#00b411>3</color>&lt;img src='txt_ico_vul' width=36 height=36/&gt;疲劳(持续<color=#00b411>3</color>秒)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1162_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_healenhance' width=36 height=36/&gt;治疗增强",
+          "valueList": "0.17|basic_hp"
+        },
+        {
+          "id": "skill_1163_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】在前<color=#00b411>3</color>秒获得<color=#00b411>10%</color>&lt;img src='txt_ico_atkspd' width=36 height=36/&gt;暴击率",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1164_desc",
+          "content": "获得&lt;img src='txt_ico_1003' width=36 height=36/&gt;\n(击中时损毁<color=#f72c58>20</color>能量)",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1165_desc",
+          "content": "战斗开始时,双方获得<color=#f72c58>200</color>能量上限",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1232_desc",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【冲锋】能力多持续<color=#00b411>2</color>秒",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1233_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_healenhance' width=36 height=36/&gt;治疗增强/n获得<color=#00b411>{1}</color>&lt;img src='txt_ico_hpregen' width=36 height=36/&gt;回血",
+          "valueList": "0.25|basic_hp,4.17|basic_hp"
+        },
+        {
+          "id": "skill_1234_desc",
+          "content": "获得<color=#00b411>+4%</color>暴击率,你的大招可以暴击了",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1235_desc",
+          "content": "获得<color=#00b411>+100%</color>暴击伤害",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1236_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲\n获得<color=#00b411>{1}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤",
+          "valueList": "60|armor,33.34|strength"
+        },
+        {
+          "id": "ability_up_0",
+          "content": "获得子弹!",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_1",
+          "content": "力量提升!",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_2",
+          "content": "生命提升!",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_3",
+          "content": "子弹强化！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_4",
+          "content": "大招提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_5",
+          "content": "冲锋提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_6",
+          "content": "紧急提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_7",
+          "content": "回血提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_8",
+          "content": "暴击几率提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_9",
+          "content": "反伤提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_10",
+          "content": "攻速提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_11",
+          "content": "收入提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_12",
+          "content": "初始能量+",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_13",
+          "content": "治疗增强！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_14",
+          "content": "能量恢复提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_15",
+          "content": "暴击伤害提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_16",
+          "content": "闪避率提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_17",
+          "content": "护甲提升！",
+          "valueList": ""
+        },
+        {
+          "id": "ability_up_18",
+          "content": "未知能力！",
+          "valueList": ""
+        }
+      ]
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

@@ -1,0 +1,5216 @@
+[
+  1,
+  [
+    "5aVRGe2UxEVqRkCPwz3NIF",
+    "135ZND1hJImburX6ghytd6",
+    "f0+TYLmQVOuY0WhmR6TkaV",
+    "21OMh/86xBMbH2VC7S62Sw",
+    "37Zv1CZalJSqfR2bpGeXQG",
+    "d0m257T7xIXadh34WSLOUE",
+    "61K09sIIBCiZ4leie8WtjD",
+    "34AqjF1ehFabaz51LmhHL1",
+    "e6g9Tl9OpC67jcHnDVZpaU",
+    "09ph0eXsBGIaIv8V3te8oL",
+    "49jt1NJkJOGrSs17otvmzH"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      [
+        [
+          1,
+          "role_edit",
+          {
+            "animator": "1.0.0",
+            "defaultState": "Idle",
+            "mainStateMachine": {
+              "layerScale": 0.5000000000000001,
+              "layerPos": [
+                62.963257874579,
+                145.4471293456457
+              ],
+              "anyStatePos": [
+                -1080,
+                600
+              ],
+              "subStates": [
+                "Idle",
+                "Run",
+                "Atk",
+                "Death",
+                "Vic",
+                "Atk_2",
+                "Ultra"
+              ],
+              "subStateMachines": []
+            },
+            "subStateMachines": [],
+            "anyState": {
+              "transitions": []
+            },
+            "states": [
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Idle",
+                "motion": "Idle",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  600,
+                  0
+                ],
+                "transitions": [
+                  {
+                    "toState": "Run",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Run",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk_2",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk_2",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Ultra",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Ultra",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Run",
+                "motion": "Run",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -780,
+                  420
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Atk",
+                "motion": "Atk",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -1050,
+                  0
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk_2",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk_2",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Ultra",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Ultra",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Death",
+                "motion": "Death",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  330,
+                  -480
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Vic",
+                "motion": "Vic",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  330,
+                  420
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": true,
+                    "conditions": []
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Atk_2",
+                "motion": "Atk_2",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -780,
+                  -480
+                ],
+                "transitions": [
+                  {
+                    "toState": "Atk",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Ultra",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Ultra",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Ultra",
+                "motion": "Ultra",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  -900,
+                  -1080
+                ],
+                "transitions": [
+                  {
+                    "toState": "Atk",
+                    "hasExitTime": true,
+                    "conditions": [
+                      {
+                        "param": "Atk",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk_2",
+                    "hasExitTime": true,
+                    "conditions": [
+                      {
+                        "param": "Atk_2",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": true,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "parameters": [
+              {
+                "param": "Atk",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Death",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Idle",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Run",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Vic",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Atk_2",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Ultra",
+                "type": 4,
+                "init": 0
+              }
+            ]
+          }
+        ]
+      ],
+      0,
+      0,
+      [],
+      [],
+      []
+    ],
+    [
+      [
+        {
+          "name": "battle_bar_energy",
+          "rect": [
+            0,
+            0,
+            154,
+            14
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            154,
+            14
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Toxic",
+          "\r\nToxic.png\r\nsize: 40,39\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImgae/Toxic_00000\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 36, 35\r\n  orig: 36, 35\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Toxic.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "0go0f5vJPPpkUu54QsOfVle8yfk",
+              "spine": "3.8.99",
+              "x": -236.13,
+              "y": -1124.76,
+              "width": 1080,
+              "height": 2340,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "p1",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p2",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p3",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p4",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p5",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p6",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p7",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p8",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p9",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p10",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              }
+            ],
+            "slots": [
+              {
+                "name": "Imgae/Toxic_00000",
+                "bone": "p1"
+              },
+              {
+                "name": "Imgae/Toxic_2",
+                "bone": "p4"
+              },
+              {
+                "name": "Imgae/Toxic_3",
+                "bone": "p5"
+              },
+              {
+                "name": "Imgae/Toxic_4",
+                "bone": "p6"
+              },
+              {
+                "name": "Imgae/Toxic_5",
+                "bone": "p7"
+              },
+              {
+                "name": "Imgae/Toxic_6",
+                "bone": "p8"
+              },
+              {
+                "name": "Imgae/Toxic_7",
+                "bone": "p9"
+              },
+              {
+                "name": "Imgae/Toxic_8",
+                "bone": "p10"
+              },
+              {
+                "name": "Imgae/Toxic_1",
+                "bone": "p3"
+              },
+              {
+                "name": "Imgae/Toxic_0",
+                "bone": "p2"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Imgae/Toxic_0": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_00000": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_1": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_2": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_3": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_4": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_5": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_6": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_7": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_8": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 36,
+                      "height": 35
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Toxic_1": {
+                "slots": {
+                  "Imgae/Toxic_0": {
+                    "color": [
+                      {
+                        "time": 2.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_00000": {
+                    "color": [
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.8667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_1": {
+                    "color": [
+                      {
+                        "time": 0.5333,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.4,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.4333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_2": {
+                    "color": [
+                      {
+                        "time": 1.2,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "p1": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 1.8667,
+                        "angle": -14.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 13.2,
+                        "y": -1.52
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": 17.98,
+                        "y": 17.3
+                      },
+                      {
+                        "time": 1.4667,
+                        "x": 23.61,
+                        "y": 43.54
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 25.1,
+                        "y": 51.99
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1,
+                        "x": 0.477,
+                        "y": 0.447
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p2": {
+                    "rotate": [
+                      {
+                        "time": 0.9
+                      },
+                      {
+                        "time": 2.7667,
+                        "angle": -14.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -42.77,
+                        "y": 30.8
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": -38.47,
+                        "y": 63.15
+                      },
+                      {
+                        "time": 2.3667,
+                        "x": -47.12,
+                        "y": 85.55
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": -48.31,
+                        "y": 103.1
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.9,
+                        "x": 0.8,
+                        "y": 0.75
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p3": {
+                    "rotate": [
+                      {
+                        "time": 0.5333
+                      },
+                      {
+                        "time": 2.4,
+                        "angle": -14.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": -27.31,
+                        "y": -30.42
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": -25.68,
+                        "y": -13.16
+                      },
+                      {
+                        "time": 2.5,
+                        "x": -26,
+                        "y": 2.32
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": 0.28,
+                        "y": 0.263
+                      },
+                      {
+                        "time": 2.4,
+                        "x": 0.277,
+                        "y": 0.259
+                      }
+                    ]
+                  },
+                  "p4": {
+                    "rotate": [
+                      {
+                        "time": 1.2
+                      },
+                      {
+                        "time": 2.7667,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 10.07,
+                        "y": 108.75
+                      },
+                      {
+                        "time": 2.0333,
+                        "x": 13.04,
+                        "y": 132.06
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 10.37,
+                        "y": 155.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.7667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.6,
+                        "y": 0.6
+                      }
+                    ]
+                  }
+                }
+              },
+              "Toxic_2": {
+                "slots": {
+                  "Imgae/Toxic_0": {
+                    "color": [
+                      {
+                        "time": 2.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_00000": {
+                    "color": [
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.8667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_1": {
+                    "color": [
+                      {
+                        "time": 0.5333,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.4,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.4333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_2": {
+                    "color": [
+                      {
+                        "time": 1.2,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_3": {
+                    "color": [
+                      {
+                        "time": 0.7,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.3333,
+                        "color": "ffffff00",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.8,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 2.3667,
+                        "color": "ffffffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_4": {
+                    "color": [
+                      {
+                        "time": 0.1333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.5667,
+                        "color": "ffffff00",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.6,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.9333,
+                        "color": "ffffffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_5": {
+                    "color": [
+                      {
+                        "time": 0.8667,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.3667,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 2.3667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.8667,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "p1": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 1.8667,
+                        "angle": -14.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 13.2,
+                        "y": -1.52
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": 17.98,
+                        "y": 17.3
+                      },
+                      {
+                        "time": 1.4667,
+                        "x": 23.61,
+                        "y": 43.54
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 25.1,
+                        "y": 51.99
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1,
+                        "x": 0.477,
+                        "y": 0.447
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p2": {
+                    "rotate": [
+                      {
+                        "time": 0.9
+                      },
+                      {
+                        "time": 2.7667,
+                        "angle": -14.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -42.77,
+                        "y": 30.8
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": -38.47,
+                        "y": 63.15
+                      },
+                      {
+                        "time": 2.3667,
+                        "x": -47.12,
+                        "y": 85.55
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": -48.31,
+                        "y": 103.1
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.9,
+                        "x": 0.8,
+                        "y": 0.75
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p3": {
+                    "rotate": [
+                      {
+                        "time": 0.5333
+                      },
+                      {
+                        "time": 2.4,
+                        "angle": -14.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": -27.31,
+                        "y": -30.42
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": -25.68,
+                        "y": -13.16
+                      },
+                      {
+                        "time": 2.5,
+                        "x": -26,
+                        "y": 2.32
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": 0.28,
+                        "y": 0.263
+                      },
+                      {
+                        "time": 2.4,
+                        "x": 0.277,
+                        "y": 0.259
+                      }
+                    ]
+                  },
+                  "p4": {
+                    "rotate": [
+                      {
+                        "time": 1.2
+                      },
+                      {
+                        "time": 2.7667,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 10.07,
+                        "y": 108.75
+                      },
+                      {
+                        "time": 2.0333,
+                        "x": 13.04,
+                        "y": 132.06
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 10.37,
+                        "y": 155.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.7667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.6,
+                        "y": 0.6
+                      }
+                    ]
+                  },
+                  "p5": {
+                    "translate": [
+                      {
+                        "x": -38.74,
+                        "y": 7.17
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": -39.8,
+                        "y": 14.77
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": -35.95,
+                        "y": 30.17
+                      },
+                      {
+                        "time": 1.8,
+                        "x": -35.95,
+                        "y": -12.84
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": -38.74,
+                        "y": 7.17
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.572,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": 0.6,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": 0.4,
+                        "y": 0.4
+                      },
+                      {
+                        "time": 1.8,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.572,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "p6": {
+                    "translate": [
+                      {
+                        "x": -23.75,
+                        "y": 133.54
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": -23.75,
+                        "y": 147.66
+                      },
+                      {
+                        "time": 1.6,
+                        "x": -23.75,
+                        "y": 89.88
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": -23.75,
+                        "y": 133.54
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.4,
+                        "y": 0.4
+                      },
+                      {
+                        "time": 1.6,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.5,
+                        "y": 0.5
+                      }
+                    ]
+                  },
+                  "p7": {
+                    "translate": [
+                      {
+                        "time": 0.8667,
+                        "x": -13.88,
+                        "y": 11.31
+                      },
+                      {
+                        "time": 2.4667,
+                        "x": -13.88,
+                        "y": 27.76
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": -13.88,
+                        "y": 32.38
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.8667,
+                        "x": 0.2,
+                        "y": 0.2
+                      },
+                      {
+                        "time": 2.0667,
+                        "x": 0.4,
+                        "y": 0.4
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.3,
+                        "y": 0.3
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Blood",
+          "\r\nBlood.png\r\nsize: 26,39\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImgae/Toxic_00000\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 22, 35\r\n  orig: 23, 35\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Blood.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "20uz4RjuZu7WO+mNC9zjESS3h98",
+              "spine": "3.8.99",
+              "x": -236.13,
+              "y": -1124.76,
+              "width": 1080,
+              "height": 2340,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "p1",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p2",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p3",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p4",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p6",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p7",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p8",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              }
+            ],
+            "slots": [
+              {
+                "name": "Imgae/Toxic_00000",
+                "bone": "p1"
+              },
+              {
+                "name": "Imgae/Toxic_2",
+                "bone": "p4"
+              },
+              {
+                "name": "Imgae/Toxic_4",
+                "bone": "p6"
+              },
+              {
+                "name": "Imgae/Toxic_5",
+                "bone": "p7"
+              },
+              {
+                "name": "Imgae/Toxic_6",
+                "bone": "p8"
+              },
+              {
+                "name": "Imgae/Toxic_1",
+                "bone": "p3"
+              },
+              {
+                "name": "Imgae/Toxic_0",
+                "bone": "p2"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Imgae/Toxic_0": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 23,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_00000": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 23,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_1": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 23,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_2": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 23,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_4": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 23,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_5": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 23,
+                      "height": 35
+                    }
+                  },
+                  "Imgae/Toxic_6": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 23,
+                      "height": 35
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Blood_1": {
+                "slots": {
+                  "Imgae/Toxic_0": {
+                    "color": [
+                      {
+                        "time": 2.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_00000": {
+                    "color": [
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.8667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_1": {
+                    "color": [
+                      {
+                        "time": 0.5333,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.4,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.4333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_2": {
+                    "color": [
+                      {
+                        "time": 1.2,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "p1": {
+                    "translate": [
+                      {
+                        "x": 13.2,
+                        "y": -1.52
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": 13.2,
+                        "y": 17.23
+                      },
+                      {
+                        "time": 1.4667,
+                        "x": 13.2,
+                        "y": 42.06
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 13.2,
+                        "y": 48.69
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.58,
+                        "y": 0.544
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p2": {
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -57.57,
+                        "y": 60.41
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": -57.57,
+                        "y": 92.29
+                      },
+                      {
+                        "time": 2.3667,
+                        "x": -57.57,
+                        "y": 109.44
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": -57.57,
+                        "y": 122.48
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.9,
+                        "x": 0.8,
+                        "y": 0.75
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p3": {
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": -27.31,
+                        "y": -30.42
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": -25.68,
+                        "y": -13.16
+                      },
+                      {
+                        "time": 2.5,
+                        "x": -26,
+                        "y": 2.32
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 0.354,
+                        "y": 0.332
+                      },
+                      {
+                        "time": 2.4,
+                        "x": 0.277,
+                        "y": 0.259
+                      }
+                    ]
+                  },
+                  "p4": {
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 10.07,
+                        "y": 108.75
+                      },
+                      {
+                        "time": 2.0333,
+                        "x": 10.07,
+                        "y": 132.06
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 10.07,
+                        "y": 155.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.7667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.6,
+                        "y": 0.6
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "translate": [
+                      {
+                        "y": 223.71
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": -1,
+                        "y": -1
+                      }
+                    ]
+                  }
+                }
+              },
+              "Blood_2": {
+                "slots": {
+                  "Imgae/Toxic_0": {
+                    "color": [
+                      {
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.5333,
+                        "color": "ffffff00",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.2,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.2333,
+                        "color": "ffffffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_00000": {
+                    "color": [
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.8667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_2": {
+                    "color": [
+                      {
+                        "time": 1.2,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.5667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_5": {
+                    "color": [
+                      {
+                        "time": 1.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.1333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.7333,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_6": {
+                    "color": [
+                      {
+                        "time": 0.2,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.5333,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.6667,
+                        "color": "ffffffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": null
+                      },
+                      {
+                        "time": 1.6667,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "p1": {
+                    "translate": [
+                      {
+                        "x": 13.2,
+                        "y": -1.52
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": 13.2,
+                        "y": 17.23
+                      },
+                      {
+                        "time": 1.4667,
+                        "x": 13.2,
+                        "y": 42.06
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 13.2,
+                        "y": 48.69
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 0.477,
+                        "y": 0.447
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p2": {
+                    "translate": [
+                      {
+                        "x": -57.57,
+                        "y": 106.58
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": -57.57,
+                        "y": 109.44
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": -57.57,
+                        "y": 122.48
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": -57.57,
+                        "y": 60.41
+                      },
+                      {
+                        "time": 1.9,
+                        "x": -57.57,
+                        "y": 92.29
+                      },
+                      {
+                        "time": 2.5667,
+                        "x": -57.57,
+                        "y": 106.58
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.517,
+                        "y": 0.485
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 0.321,
+                        "y": 0.301
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.8,
+                        "x": 0.8,
+                        "y": 0.75
+                      },
+                      {
+                        "time": 2.5667,
+                        "x": 0.517,
+                        "y": 0.485
+                      }
+                    ]
+                  },
+                  "p4": {
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 10.07,
+                        "y": 108.75
+                      },
+                      {
+                        "time": 1.7667,
+                        "x": 10.07,
+                        "y": 132.06
+                      },
+                      {
+                        "time": 2.5667,
+                        "x": 10.07,
+                        "y": 155.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.5667,
+                        "x": 0.6,
+                        "y": 0.6
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "translate": [
+                      {
+                        "y": 223.71
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": -1,
+                        "y": -1
+                      }
+                    ]
+                  },
+                  "p7": {
+                    "translate": [
+                      {
+                        "time": 0.7333,
+                        "x": -10.08,
+                        "y": -5.73
+                      },
+                      {
+                        "time": 1.8333,
+                        "x": -10.08,
+                        "y": 90.96
+                      },
+                      {
+                        "time": 2.5667,
+                        "x": -10.08,
+                        "y": 122.25
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.7333,
+                        "x": 0.4,
+                        "y": 0.4
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.1333,
+                        "x": 0.3,
+                        "y": 0.3
+                      }
+                    ]
+                  },
+                  "p8": {
+                    "translate": [
+                      {
+                        "x": -29.98,
+                        "y": 57.11
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": -29.98,
+                        "y": 66.53
+                      },
+                      {
+                        "time": 1.6667,
+                        "x": -29.98,
+                        "y": 10.28
+                      },
+                      {
+                        "time": 2.5667,
+                        "x": -29.98,
+                        "y": 57.11
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.648,
+                        "y": 0.648
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 0.367,
+                        "y": 0.367
+                      },
+                      {
+                        "time": 1.6667,
+                        "x": 0.508,
+                        "y": 0.508
+                      },
+                      {
+                        "time": 2.5667,
+                        "x": 0.648,
+                        "y": 0.648
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Xunyun",
+          "\r\nXunyun.png\r\nsize: 377,268\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Line_00000\r\n  rotate: true\r\n  xy: 2, 73\r\n  size: 84, 34\r\n  orig: 105, 41\r\n  offset: 18, 1\r\n  index: -1\r\nImage/Line_00001\r\n  rotate: true\r\n  xy: 38, 73\r\n  size: 84, 31\r\n  orig: 105, 41\r\n  offset: 18, 1\r\n  index: -1\r\nImage/Line_00002\r\n  rotate: true\r\n  xy: 71, 69\r\n  size: 88, 28\r\n  orig: 105, 41\r\n  offset: 16, 1\r\n  index: -1\r\nImage/Line_00003\r\n  rotate: false\r\n  xy: 281, 214\r\n  size: 90, 25\r\n  orig: 105, 41\r\n  offset: 15, 1\r\n  index: -1\r\nImage/Line_00004\r\n  rotate: false\r\n  xy: 283, 241\r\n  size: 92, 25\r\n  orig: 105, 41\r\n  offset: 13, 1\r\n  index: -1\r\nImage/Line_00005\r\n  rotate: false\r\n  xy: 188, 241\r\n  size: 93, 25\r\n  orig: 105, 41\r\n  offset: 11, 1\r\n  index: -1\r\nImage/Line_00006\r\n  rotate: false\r\n  xy: 188, 214\r\n  size: 91, 25\r\n  orig: 105, 41\r\n  offset: 10, 1\r\n  index: -1\r\nImage/Line_00007\r\n  rotate: false\r\n  xy: 187, 186\r\n  size: 87, 26\r\n  orig: 105, 41\r\n  offset: 10, 1\r\n  index: -1\r\nImage/Line_00008\r\n  rotate: false\r\n  xy: 178, 84\r\n  size: 81, 28\r\n  orig: 105, 41\r\n  offset: 8, 0\r\n  index: -1\r\nImage/Line_00009\r\n  rotate: false\r\n  xy: 259, 21\r\n  size: 76, 29\r\n  orig: 105, 41\r\n  offset: 8, 0\r\n  index: -1\r\nImage/Line_00010\r\n  rotate: true\r\n  xy: 227, 6\r\n  size: 76, 30\r\n  orig: 105, 41\r\n  offset: 8, 0\r\n  index: -1\r\nImage/Line_00011\r\n  rotate: false\r\n  xy: 261, 52\r\n  size: 77, 31\r\n  orig: 105, 41\r\n  offset: 7, 0\r\n  index: -1\r\nImage/Line_00012\r\n  rotate: false\r\n  xy: 256, 119\r\n  size: 80, 32\r\n  orig: 105, 41\r\n  offset: 5, 0\r\n  index: -1\r\nImage/Line_00013\r\n  rotate: false\r\n  xy: 261, 85\r\n  size: 80, 32\r\n  orig: 105, 41\r\n  offset: 5, 1\r\n  index: -1\r\nImage/Line_00014\r\n  rotate: true\r\n  xy: 343, 71\r\n  size: 80, 32\r\n  orig: 105, 41\r\n  offset: 5, 2\r\n  index: -1\r\nImage/Line_00015\r\n  rotate: false\r\n  xy: 269, 153\r\n  size: 83, 31\r\n  orig: 105, 41\r\n  offset: 3, 3\r\n  index: -1\r\nImage/Line_00016\r\n  rotate: false\r\n  xy: 183, 154\r\n  size: 84, 30\r\n  orig: 105, 41\r\n  offset: 3, 5\r\n  index: -1\r\nImage/Line_00017\r\n  rotate: true\r\n  xy: 125, 10\r\n  size: 84, 27\r\n  orig: 105, 41\r\n  offset: 3, 8\r\n  index: -1\r\nImage/Line_00018\r\n  rotate: false\r\n  xy: 276, 186\r\n  size: 87, 26\r\n  orig: 105, 41\r\n  offset: 1, 10\r\n  index: -1\r\nImage/Line_00019\r\n  rotate: false\r\n  xy: 92, 179\r\n  size: 89, 26\r\n  orig: 105, 41\r\n  offset: 0, 10\r\n  index: -1\r\nImage/Line_00020\r\n  rotate: false\r\n  xy: 95, 207\r\n  size: 90, 28\r\n  orig: 105, 41\r\n  offset: 0, 9\r\n  index: -1\r\nImage/Line_00021\r\n  rotate: false\r\n  xy: 95, 237\r\n  size: 91, 29\r\n  orig: 105, 41\r\n  offset: 1, 8\r\n  index: -1\r\nImage/Line_00022\r\n  rotate: false\r\n  xy: 2, 233\r\n  size: 91, 33\r\n  orig: 105, 41\r\n  offset: 3, 5\r\n  index: -1\r\nImage/Line_00023\r\n  rotate: false\r\n  xy: 2, 197\r\n  size: 88, 34\r\n  orig: 105, 41\r\n  offset: 7, 4\r\n  index: -1\r\nImage/Line_00024\r\n  rotate: false\r\n  xy: 2, 159\r\n  size: 83, 36\r\n  orig: 105, 41\r\n  offset: 12, 3\r\n  index: -1\r\nImage/Line_00025\r\n  rotate: true\r\n  xy: 139, 98\r\n  size: 79, 37\r\n  orig: 105, 41\r\n  offset: 18, 2\r\n  index: -1\r\nImage/Line_00026\r\n  rotate: false\r\n  xy: 154, 3\r\n  size: 71, 38\r\n  orig: 105, 41\r\n  offset: 26, 2\r\n  index: -1\r\nImage/Line_00027\r\n  rotate: true\r\n  xy: 85, 2\r\n  size: 65, 38\r\n  orig: 105, 41\r\n  offset: 32, 2\r\n  index: -1\r\nImage/Line_00028\r\n  rotate: true\r\n  xy: 44, 2\r\n  size: 65, 39\r\n  orig: 105, 41\r\n  offset: 32, 2\r\n  index: -1\r\nImage/Line_00029\r\n  rotate: true\r\n  xy: 2, 2\r\n  size: 69, 40\r\n  orig: 105, 41\r\n  offset: 31, 1\r\n  index: -1\r\nImage/Line_00030\r\n  rotate: false\r\n  xy: 154, 43\r\n  size: 71, 39\r\n  orig: 105, 41\r\n  offset: 29, 1\r\n  index: -1\r\nImage/Line_00031\r\n  rotate: false\r\n  xy: 178, 114\r\n  size: 76, 38\r\n  orig: 105, 41\r\n  offset: 24, 1\r\n  index: -1\r\nImage/Line_00032\r\n  rotate: true\r\n  xy: 101, 96\r\n  size: 81, 36\r\n  orig: 105, 41\r\n  offset: 21, 1\r\n  index: -1\r\nImage/SStar_00000\r\n  rotate: false\r\n  xy: 340, 38\r\n  size: 32, 31\r\n  orig: 32, 31\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Xunyun.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "tKT5D068sHxo733nUKxCyw0zzCk",
+              "spine": "3.8.99",
+              "x": -540,
+              "y": -1170,
+              "width": 1080,
+              "height": 2340,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Line",
+                "parent": "Zong"
+              },
+              {
+                "name": "Star",
+                "parent": "Zong"
+              },
+              {
+                "name": "S1",
+                "parent": "Star"
+              },
+              {
+                "name": "S2",
+                "parent": "Star"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/Line_00000",
+                "bone": "Line"
+              },
+              {
+                "name": "Image/SStar_00000",
+                "bone": "S1",
+                "attachment": "Image/SStar_00000"
+              },
+              {
+                "name": "Image/SStar_0",
+                "bone": "S2",
+                "attachment": "Image/SStar_00000"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Line_00000": {
+                    "Image/Line_00000": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00001": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00002": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00003": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00004": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00005": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00006": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00007": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00008": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00009": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00010": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00011": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00012": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00013": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00014": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00015": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00016": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00017": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00018": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00019": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00020": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00021": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00022": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00023": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00024": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00025": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00026": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00027": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00028": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00029": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00030": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00031": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    },
+                    "Image/Line_00032": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 105,
+                      "height": 41
+                    }
+                  },
+                  "Image/SStar_0": {
+                    "Image/SStar_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 31
+                    }
+                  },
+                  "Image/SStar_00000": {
+                    "Image/SStar_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 31
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Xunyun": {
+                "slots": {
+                  "Image/Line_00000": {
+                    "color": [
+                      {
+                        "color": "ffe629ff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Line_00000"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Line_00001"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Line_00002"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Line_00003"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Line_00004"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Line_00005"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Line_00006"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Line_00007"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Line_00008"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Line_00009"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Line_00010"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Line_00011"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Line_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Line_00013"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Line_00014"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Line_00015"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Line_00016"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Line_00017"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Line_00018"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Line_00019"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Line_00020"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Line_00021"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Line_00022"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Line_00023"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Line_00024"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Line_00025"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Line_00026"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": "Image/Line_00027"
+                      },
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Line_00028"
+                      },
+                      {
+                        "time": 0.9667,
+                        "name": "Image/Line_00029"
+                      },
+                      {
+                        "time": 1,
+                        "name": "Image/Line_00030"
+                      },
+                      {
+                        "time": 1.0333,
+                        "name": "Image/Line_00031"
+                      },
+                      {
+                        "time": 1.0667,
+                        "name": "Image/Line_00000"
+                      },
+                      {
+                        "time": 1.1,
+                        "name": "Image/Line_00001"
+                      },
+                      {
+                        "time": 1.1333,
+                        "name": "Image/Line_00002"
+                      },
+                      {
+                        "time": 1.1667,
+                        "name": "Image/Line_00003"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": "Image/Line_00004"
+                      },
+                      {
+                        "time": 1.2333,
+                        "name": "Image/Line_00005"
+                      },
+                      {
+                        "time": 1.2667,
+                        "name": "Image/Line_00006"
+                      },
+                      {
+                        "time": 1.3,
+                        "name": "Image/Line_00007"
+                      },
+                      {
+                        "time": 1.3333,
+                        "name": "Image/Line_00008"
+                      },
+                      {
+                        "time": 1.3667,
+                        "name": "Image/Line_00009"
+                      },
+                      {
+                        "time": 1.4,
+                        "name": "Image/Line_00010"
+                      },
+                      {
+                        "time": 1.4333,
+                        "name": "Image/Line_00011"
+                      },
+                      {
+                        "time": 1.4667,
+                        "name": "Image/Line_00012"
+                      },
+                      {
+                        "time": 1.5,
+                        "name": "Image/Line_00013"
+                      },
+                      {
+                        "time": 1.5333,
+                        "name": "Image/Line_00014"
+                      },
+                      {
+                        "time": 1.5667,
+                        "name": "Image/Line_00015"
+                      },
+                      {
+                        "time": 1.6,
+                        "name": "Image/Line_00016"
+                      },
+                      {
+                        "time": 1.6333,
+                        "name": "Image/Line_00017"
+                      },
+                      {
+                        "time": 1.6667,
+                        "name": "Image/Line_00018"
+                      },
+                      {
+                        "time": 1.7,
+                        "name": "Image/Line_00019"
+                      },
+                      {
+                        "time": 1.7333,
+                        "name": "Image/Line_00020"
+                      },
+                      {
+                        "time": 1.7667,
+                        "name": "Image/Line_00021"
+                      },
+                      {
+                        "time": 1.8,
+                        "name": "Image/Line_00022"
+                      },
+                      {
+                        "time": 1.8333,
+                        "name": "Image/Line_00023"
+                      },
+                      {
+                        "time": 1.8667,
+                        "name": "Image/Line_00024"
+                      },
+                      {
+                        "time": 1.9,
+                        "name": "Image/Line_00025"
+                      },
+                      {
+                        "time": 1.9333,
+                        "name": "Image/Line_00026"
+                      },
+                      {
+                        "time": 1.9667,
+                        "name": "Image/Line_00027"
+                      },
+                      {
+                        "time": 2,
+                        "name": "Image/Line_00028"
+                      },
+                      {
+                        "time": 2.0333,
+                        "name": "Image/Line_00029"
+                      },
+                      {
+                        "time": 2.0667,
+                        "name": "Image/Line_00030"
+                      },
+                      {
+                        "time": 2.1,
+                        "name": "Image/Line_00031"
+                      },
+                      {
+                        "time": 2.1333,
+                        "name": "Image/Line_00000"
+                      },
+                      {
+                        "time": 2.1667,
+                        "name": "Image/Line_00001"
+                      },
+                      {
+                        "time": 2.2,
+                        "name": "Image/Line_00002"
+                      },
+                      {
+                        "time": 2.2333,
+                        "name": "Image/Line_00003"
+                      },
+                      {
+                        "time": 2.2667,
+                        "name": "Image/Line_00004"
+                      },
+                      {
+                        "time": 2.3,
+                        "name": "Image/Line_00005"
+                      },
+                      {
+                        "time": 2.3333,
+                        "name": "Image/Line_00006"
+                      },
+                      {
+                        "time": 2.3667,
+                        "name": "Image/Line_00007"
+                      },
+                      {
+                        "time": 2.4,
+                        "name": "Image/Line_00008"
+                      },
+                      {
+                        "time": 2.4333,
+                        "name": "Image/Line_00009"
+                      },
+                      {
+                        "time": 2.4667,
+                        "name": "Image/Line_00010"
+                      },
+                      {
+                        "time": 2.5,
+                        "name": "Image/Line_00011"
+                      },
+                      {
+                        "time": 2.5333,
+                        "name": "Image/Line_00012"
+                      },
+                      {
+                        "time": 2.5667,
+                        "name": "Image/Line_00013"
+                      },
+                      {
+                        "time": 2.6,
+                        "name": "Image/Line_00014"
+                      },
+                      {
+                        "time": 2.6333,
+                        "name": "Image/Line_00015"
+                      },
+                      {
+                        "time": 2.6667,
+                        "name": "Image/Line_00016"
+                      },
+                      {
+                        "time": 2.7,
+                        "name": "Image/Line_00017"
+                      },
+                      {
+                        "time": 2.7333,
+                        "name": "Image/Line_00018"
+                      },
+                      {
+                        "time": 2.7667,
+                        "name": "Image/Line_00019"
+                      },
+                      {
+                        "time": 2.8,
+                        "name": "Image/Line_00020"
+                      },
+                      {
+                        "time": 2.8333,
+                        "name": "Image/Line_00021"
+                      },
+                      {
+                        "time": 2.8667,
+                        "name": "Image/Line_00022"
+                      },
+                      {
+                        "time": 2.9,
+                        "name": "Image/Line_00023"
+                      },
+                      {
+                        "time": 2.9333,
+                        "name": "Image/Line_00024"
+                      },
+                      {
+                        "time": 2.9667,
+                        "name": "Image/Line_00025"
+                      },
+                      {
+                        "time": 3,
+                        "name": "Image/Line_00026"
+                      },
+                      {
+                        "time": 3.0333,
+                        "name": "Image/Line_00027"
+                      },
+                      {
+                        "time": 3.0667,
+                        "name": "Image/Line_00028"
+                      },
+                      {
+                        "time": 3.1,
+                        "name": "Image/Line_00029"
+                      },
+                      {
+                        "time": 3.1333,
+                        "name": "Image/Line_00030"
+                      },
+                      {
+                        "time": 3.1667,
+                        "name": "Image/Line_00031"
+                      },
+                      {
+                        "time": 3.2,
+                        "name": "Image/Line_00032"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "S1": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.6,
+                        "angle": -22.8
+                      },
+                      {
+                        "time": 1.4333,
+                        "angle": -38.4
+                      },
+                      {
+                        "time": 2.1,
+                        "angle": -7.2
+                      },
+                      {
+                        "time": 3.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 53.75
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 32.42,
+                        "y": -12.2
+                      },
+                      {
+                        "time": 0.7,
+                        "x": -9.06,
+                        "y": -16.31
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": -29.03,
+                        "y": -8.51
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": -42.09,
+                        "y": 2.72
+                      },
+                      {
+                        "time": 1.3667,
+                        "x": -33.31,
+                        "y": 13.46
+                      },
+                      {
+                        "time": 1.6333,
+                        "x": -20.76,
+                        "y": 16.49
+                      },
+                      {
+                        "time": 2.0333,
+                        "x": 4.3,
+                        "y": 21.4
+                      },
+                      {
+                        "time": 2.5,
+                        "x": 32.48,
+                        "y": 18.6
+                      },
+                      {
+                        "time": 2.8333,
+                        "x": 44.41,
+                        "y": 11.21
+                      },
+                      {
+                        "time": 3.2,
+                        "x": 53.75
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 0.8,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.0667,
+                        "x": 0.65,
+                        "y": 0.65
+                      },
+                      {
+                        "time": 2.8333,
+                        "x": 0.7,
+                        "y": 0.7
+                      }
+                    ],
+                    "shear": [
+                      {},
+                      {
+                        "time": 0.9,
+                        "y": 13.2
+                      },
+                      {
+                        "time": 1.7667,
+                        "y": 8.4,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 2.2333,
+                        "y": 8.4
+                      },
+                      {
+                        "time": 2.7333,
+                        "x": 19.2,
+                        "y": 3.55
+                      },
+                      {
+                        "time": 3.2
+                      }
+                    ]
+                  },
+                  "S2": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.6,
+                        "angle": -22.8
+                      },
+                      {
+                        "time": 1.4333,
+                        "angle": -38.4
+                      },
+                      {
+                        "time": 2.1,
+                        "angle": -7.2
+                      },
+                      {
+                        "time": 3.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -23.91
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -9.37,
+                        "y": -6.27
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 11.54,
+                        "y": -7.59
+                      },
+                      {
+                        "time": 1.3,
+                        "x": 18.71,
+                        "y": -6.19
+                      },
+                      {
+                        "time": 1.6,
+                        "x": 19.33,
+                        "y": 3.29
+                      },
+                      {
+                        "time": 1.9333,
+                        "x": 10.98,
+                        "y": 6.85
+                      },
+                      {
+                        "time": 2.3333,
+                        "x": -4.35,
+                        "y": 6.17
+                      },
+                      {
+                        "time": 2.6333,
+                        "x": -12.08,
+                        "y": 6.05
+                      },
+                      {
+                        "time": 3.2,
+                        "x": -23.91
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.35,
+                        "y": 0.35
+                      }
+                    ],
+                    "shear": [
+                      {},
+                      {
+                        "time": 0.9,
+                        "y": 13.2
+                      },
+                      {
+                        "time": 1.7667,
+                        "y": 8.4,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 2.2333,
+                        "y": 8.4
+                      },
+                      {
+                        "time": 2.7333,
+                        "x": 19.2,
+                        "y": 3.55
+                      },
+                      {
+                        "time": 3.2
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Reborn",
+          "\r\nReborn.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Glow_00000\r\n  rotate: false\r\n  xy: 2, 286\r\n  size: 80, 80\r\n  orig: 80, 80\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Ring_00000\r\n  rotate: false\r\n  xy: 106, 358\r\n  size: 122, 43\r\n  orig: 122, 43\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Star_00000\r\n  rotate: false\r\n  xy: 70, 368\r\n  size: 34, 33\r\n  orig: 34, 33\r\n  offset: 0, 0\r\n  index: -1\r\nImage/WINd/Wind_00010\r\n  rotate: false\r\n  xy: 2, 384\r\n  size: 66, 17\r\n  orig: 166, 182\r\n  offset: 7, 0\r\n  index: -1\r\nImage/WINd/Wind_00012\r\n  rotate: false\r\n  xy: 230, 345\r\n  size: 113, 56\r\n  orig: 166, 182\r\n  offset: 23, 2\r\n  index: -1\r\nImage/WINd/Wind_00014\r\n  rotate: false\r\n  xy: 84, 267\r\n  size: 116, 89\r\n  orig: 166, 182\r\n  offset: 34, 4\r\n  index: -1\r\nImage/WINd/Wind_00015\r\n  rotate: false\r\n  xy: 2, 180\r\n  size: 152, 85\r\n  orig: 166, 182\r\n  offset: 2, 5\r\n  index: -1\r\nImage/WINd/Wind_00017\r\n  rotate: false\r\n  xy: 322, 241\r\n  size: 158, 83\r\n  orig: 166, 182\r\n  offset: 0, 7\r\n  index: -1\r\nImage/WINd/Wind_00018\r\n  rotate: false\r\n  xy: 315, 136\r\n  size: 152, 103\r\n  orig: 166, 182\r\n  offset: 6, 8\r\n  index: -1\r\nImage/WINd/Wind_00020\r\n  rotate: false\r\n  xy: 137, 22\r\n  size: 158, 123\r\n  orig: 166, 182\r\n  offset: 8, 18\r\n  index: -1\r\nImage/WINd/Wind_00022\r\n  rotate: false\r\n  xy: 156, 147\r\n  size: 157, 102\r\n  orig: 166, 182\r\n  offset: 9, 34\r\n  index: -1\r\nImage/WINd/Wind_00023\r\n  rotate: false\r\n  xy: 297, 2\r\n  size: 142, 132\r\n  orig: 166, 182\r\n  offset: 23, 37\r\n  index: -1\r\nImage/WINd/Wind_00024\r\n  rotate: false\r\n  xy: 297, 2\r\n  size: 142, 132\r\n  orig: 166, 182\r\n  offset: 23, 37\r\n  index: -1\r\nImage/WINd/Wind_00025\r\n  rotate: true\r\n  xy: 2, 53\r\n  size: 125, 133\r\n  orig: 166, 182\r\n  offset: 34, 43\r\n  index: -1\r\nImage/WINd/Wind_00027\r\n  rotate: true\r\n  xy: 202, 251\r\n  size: 92, 118\r\n  orig: 166, 182\r\n  offset: 53, 62\r\n  index: -1\r\nImage/WINd/Wind_00028\r\n  rotate: true\r\n  xy: 345, 326\r\n  size: 75, 89\r\n  orig: 166, 182\r\n  offset: 64, 93\r\n  index: -1\r\n",
+          [
+            "Reborn.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "JkVA6v1a8kYMA4U00KdEywWbTtA",
+              "spine": "3.8.99",
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Glow",
+                "parent": "Zong",
+                "y": 50.07
+              },
+              {
+                "name": "Ring",
+                "parent": "Zong"
+              },
+              {
+                "name": "Wind",
+                "parent": "Zong"
+              },
+              {
+                "name": "StarZong",
+                "parent": "Zong"
+              },
+              {
+                "name": "S1",
+                "parent": "StarZong"
+              },
+              {
+                "name": "S2",
+                "parent": "StarZong"
+              },
+              {
+                "name": "S3",
+                "parent": "StarZong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/Glow_00000",
+                "bone": "Glow",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/Ring_00000",
+                "bone": "Ring"
+              },
+              {
+                "name": "Image/WINd/Wind_00010",
+                "bone": "Wind"
+              },
+              {
+                "name": "Image/Star_00000",
+                "bone": "S1"
+              },
+              {
+                "name": "Image/Star_0",
+                "bone": "S2"
+              },
+              {
+                "name": "Image/Star_1",
+                "bone": "S3"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Glow_00000": {
+                    "Image/Glow_00000": {
+                      "y": -50.07,
+                      "width": 100,
+                      "height": 100
+                    }
+                  },
+                  "Image/Ring_00000": {
+                    "Image/Ring_00000": {
+                      "width": 152,
+                      "height": 54
+                    }
+                  },
+                  "Image/Star_0": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 42,
+                      "height": 41
+                    }
+                  },
+                  "Image/Star_00000": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 42,
+                      "height": 41
+                    }
+                  },
+                  "Image/Star_1": {
+                    "Image/Star_00000": {
+                      "y": 0.5,
+                      "width": 42,
+                      "height": 41
+                    }
+                  },
+                  "Image/WINd/Wind_00010": {
+                    "Image/WINd/Wind_00010": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00012": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00014": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00015": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00017": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00018": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00020": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00022": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00023": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00024": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00025": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00027": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    },
+                    "Image/WINd/Wind_00028": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 207,
+                      "height": 227
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Reborn": {
+                "slots": {
+                  "Image/Glow_00000": {
+                    "color": [
+                      {
+                        "color": "ffc53eff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.1667,
+                        "color": "ffc53eff"
+                      },
+                      {
+                        "time": 0.4667,
+                        "color": "ffc53d00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Glow_00000"
+                      }
+                    ]
+                  },
+                  "Image/Ring_00000": {
+                    "color": [
+                      {
+                        "time": 0.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.3,
+                        "color": "ffed34a3"
+                      },
+                      {
+                        "time": 0.5333,
+                        "color": "efb90c00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.2,
+                        "name": "Image/Ring_00000"
+                      }
+                    ]
+                  },
+                  "Image/Star_0": {
+                    "color": [
+                      {
+                        "time": 0.4333,
+                        "color": "fff68eff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.1667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_00000": {
+                    "color": [
+                      {
+                        "time": 0.4333,
+                        "color": "f8ff8eff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.1333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Star_1": {
+                    "attachment": [
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Star_00000"
+                      },
+                      {
+                        "time": 1.1333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/WINd/Wind_00010": {
+                    "attachment": [
+                      {
+                        "time": 0.3,
+                        "name": "Image/WINd/Wind_00010"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/WINd/Wind_00012"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/WINd/Wind_00014"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/WINd/Wind_00015"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/WINd/Wind_00017"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/WINd/Wind_00018"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/WINd/Wind_00020"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/WINd/Wind_00022"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/WINd/Wind_00024"
+                      },
+                      {
+                        "time": 0.9,
+                        "name": "Image/WINd/Wind_00025"
+                      },
+                      {
+                        "time": 0.9667,
+                        "name": "Image/WINd/Wind_00027"
+                      },
+                      {
+                        "time": 1.0333,
+                        "name": "Image/WINd/Wind_00028"
+                      },
+                      {
+                        "time": 1.1333,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Glow": {
+                    "translate": [
+                      {
+                        "y": 1203.87
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.959
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 2.038,
+                        "y": 3.735
+                      },
+                      {
+                        "time": 0.1,
+                        "x": 1.523,
+                        "y": 6.091
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 0.931,
+                        "y": 12.688
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 0.149,
+                        "y": 12.688
+                      }
+                    ]
+                  },
+                  "Ring": {
+                    "translate": [
+                      {
+                        "time": 0.2,
+                        "y": -4.7
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 1.5,
+                        "y": 1.5
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 1.7,
+                        "y": 1.7
+                      }
+                    ]
+                  },
+                  "Wind": {
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": 5.73,
+                        "y": 85.9
+                      }
+                    ]
+                  },
+                  "S1": {
+                    "rotate": [
+                      {
+                        "time": 0.3667
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": -33.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3667,
+                        "x": 69.43,
+                        "y": 17.8
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 85.51,
+                        "y": 44.72
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": 104.14,
+                        "y": 72.12
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 106.77,
+                        "y": 76.02
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3667,
+                        "x": 0.727,
+                        "y": 0.727
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.797,
+                        "y": 0.797
+                      },
+                      {
+                        "time": 0.7,
+                        "x": 0.495,
+                        "y": 0.495
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 0.544,
+                        "y": 0.544
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 0.013,
+                        "y": 0.013
+                      }
+                    ]
+                  },
+                  "S2": {
+                    "rotate": [
+                      {
+                        "time": 0.4333
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": -25.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.4333,
+                        "x": -59.44,
+                        "y": 35.11,
+                        "curve": 0.273,
+                        "c3": 0.619,
+                        "c4": 0.41
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": -63.69,
+                        "y": 67.67,
+                        "curve": 0.333,
+                        "c2": 0.33,
+                        "c3": 0.741,
+                        "c4": 0.93
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": -70.52,
+                        "y": 97.71,
+                        "curve": 0.347,
+                        "c2": 0.66,
+                        "c3": 0.681
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": -69.76,
+                        "y": 100
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.4333,
+                        "x": 0.412,
+                        "y": 0.412
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 0.586,
+                        "y": 0.586
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 0.443,
+                        "y": 0.443
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": 0.37,
+                        "y": 0.37
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 0.013,
+                        "y": 0.013
+                      }
+                    ]
+                  },
+                  "S3": {
+                    "rotate": [
+                      {
+                        "time": 0.3667
+                      },
+                      {
+                        "time": 1.0667,
+                        "angle": -8.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3667,
+                        "x": -17.45,
+                        "y": 2.35,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.1,
+                        "x": -13.9,
+                        "y": 26.38
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3667,
+                        "x": 0.419,
+                        "y": 0.419
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.489,
+                        "y": 0.489
+                      },
+                      {
+                        "time": 0.7,
+                        "x": 0.187,
+                        "y": 0.187
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 0.235,
+                        "y": 0.235
+                      },
+                      {
+                        "time": 1.1,
+                        "x": -0.295,
+                        "y": -0.295
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Ice",
+          "\r\nIce.png\r\nsize: 36,40\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImgae/Toxic_00000\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 32, 36\r\n  orig: 32, 36\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Ice.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "LvwOnizOVIrcnYc1ja9Dk/U1BX4",
+              "spine": "3.8.99",
+              "x": -236.13,
+              "y": -1124.76,
+              "width": 1080,
+              "height": 2340,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "p1",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p2",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p3",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p4",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p6",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p7",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              },
+              {
+                "name": "p8",
+                "parent": "Zong",
+                "x": 15.77,
+                "y": 44.02
+              }
+            ],
+            "slots": [
+              {
+                "name": "Imgae/Toxic_00000",
+                "bone": "p1"
+              },
+              {
+                "name": "Imgae/Toxic_2",
+                "bone": "p4"
+              },
+              {
+                "name": "Imgae/Toxic_4",
+                "bone": "p6"
+              },
+              {
+                "name": "Imgae/Toxic_5",
+                "bone": "p7"
+              },
+              {
+                "name": "Imgae/Toxic_6",
+                "bone": "p8"
+              },
+              {
+                "name": "Imgae/Toxic_1",
+                "bone": "p3"
+              },
+              {
+                "name": "Imgae/Toxic_0",
+                "bone": "p2"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Imgae/Toxic_0": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 36
+                    }
+                  },
+                  "Imgae/Toxic_00000": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 36
+                    }
+                  },
+                  "Imgae/Toxic_1": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 36
+                    }
+                  },
+                  "Imgae/Toxic_2": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 36
+                    }
+                  },
+                  "Imgae/Toxic_4": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 36
+                    }
+                  },
+                  "Imgae/Toxic_5": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 36
+                    }
+                  },
+                  "Imgae/Toxic_6": {
+                    "Imgae/Toxic_00000": {
+                      "y": 0.5,
+                      "width": 32,
+                      "height": 36
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "Blood_1": {
+                "slots": {
+                  "Imgae/Toxic_0": {
+                    "color": [
+                      {
+                        "time": 2.3667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 3.1333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_00000": {
+                    "color": [
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.8667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_1": {
+                    "color": [
+                      {
+                        "time": 0.5333,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.4,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.4333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_2": {
+                    "color": [
+                      {
+                        "time": 1.2,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "p1": {
+                    "translate": [
+                      {
+                        "x": 11.72,
+                        "y": 12.21
+                      },
+                      {
+                        "time": 0.7,
+                        "x": 14.31,
+                        "y": 30.95
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": 9.49,
+                        "y": 55.79
+                      },
+                      {
+                        "time": 2.2,
+                        "x": 10.97,
+                        "y": 62.42
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.58,
+                        "y": 0.544
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p2": {
+                    "rotate": [
+                      {
+                        "time": 0.9
+                      },
+                      {
+                        "time": 3.0333,
+                        "angle": -28.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -71.37,
+                        "y": 76.28
+                      },
+                      {
+                        "time": 1.6333,
+                        "x": -76.89,
+                        "y": 108.16
+                      },
+                      {
+                        "time": 2.5333,
+                        "x": -85.82,
+                        "y": 125.31
+                      },
+                      {
+                        "time": 3.1333,
+                        "x": -88.62,
+                        "y": 138.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.5333,
+                        "x": 0.717,
+                        "y": 0.673
+                      },
+                      {
+                        "time": 3.1333,
+                        "x": 0.306,
+                        "y": 0.287
+                      }
+                    ]
+                  },
+                  "p3": {
+                    "rotate": [
+                      {
+                        "time": 0.5333
+                      },
+                      {
+                        "time": 2.5,
+                        "angle": -27.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": -48.33,
+                        "y": -6.16
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": -44.05,
+                        "y": 11.09
+                      },
+                      {
+                        "time": 2.5,
+                        "x": -49.37,
+                        "y": 26.58
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 0.354,
+                        "y": 0.332
+                      },
+                      {
+                        "time": 2.4,
+                        "x": 0.277,
+                        "y": 0.259
+                      }
+                    ]
+                  },
+                  "p4": {
+                    "rotate": [
+                      {
+                        "time": 1.2
+                      },
+                      {
+                        "time": 2.7667,
+                        "angle": 40.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 10.07,
+                        "y": 108.75
+                      },
+                      {
+                        "time": 2.0333,
+                        "x": 11.64,
+                        "y": 132.06
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 9.29,
+                        "y": 155.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.7667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.6,
+                        "y": 0.6
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "translate": [
+                      {
+                        "y": 223.71
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "y": -1
+                      }
+                    ]
+                  }
+                }
+              },
+              "Blood_2": {
+                "slots": {
+                  "Imgae/Toxic_0": {
+                    "color": [
+                      {
+                        "time": 2.3667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 3.1333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.9,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_00000": {
+                    "color": [
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.8667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_1": {
+                    "color": [
+                      {
+                        "time": 0.5333,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.4,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.4333,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5333,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_2": {
+                    "color": [
+                      {
+                        "time": 1.2,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.9333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 2.7667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 1.2,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_5": {
+                    "color": [
+                      {
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.7,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": null
+                      },
+                      {
+                        "time": 2.2667,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  },
+                  "Imgae/Toxic_6": {
+                    "color": [
+                      {
+                        "color": "ffffffa0"
+                      },
+                      {
+                        "time": 0.3667,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.4,
+                        "color": "ffffffa0"
+                      },
+                      {
+                        "time": 1.9,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 3.1333,
+                        "color": "ffffffa0"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Imgae/Toxic_00000"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": null
+                      },
+                      {
+                        "time": 1.4,
+                        "name": "Imgae/Toxic_00000"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "p1": {
+                    "translate": [
+                      {
+                        "x": 11.72,
+                        "y": 12.21
+                      },
+                      {
+                        "time": 0.7,
+                        "x": 14.31,
+                        "y": 30.95
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": 9.49,
+                        "y": 55.79
+                      },
+                      {
+                        "time": 2.2,
+                        "x": 10.97,
+                        "y": 62.42
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 0.58,
+                        "y": 0.544
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 0.321,
+                        "y": 0.301
+                      }
+                    ]
+                  },
+                  "p2": {
+                    "rotate": [
+                      {
+                        "time": 0.9
+                      },
+                      {
+                        "time": 3.0333,
+                        "angle": -28.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9,
+                        "x": -71.37,
+                        "y": 76.28
+                      },
+                      {
+                        "time": 1.6333,
+                        "x": -76.89,
+                        "y": 108.16
+                      },
+                      {
+                        "time": 2.5333,
+                        "x": -85.82,
+                        "y": 125.31
+                      },
+                      {
+                        "time": 3.1333,
+                        "x": -88.62,
+                        "y": 138.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.5333,
+                        "x": 0.717,
+                        "y": 0.673
+                      },
+                      {
+                        "time": 3.1333,
+                        "x": 0.306,
+                        "y": 0.287
+                      }
+                    ]
+                  },
+                  "p3": {
+                    "rotate": [
+                      {
+                        "time": 0.5333
+                      },
+                      {
+                        "time": 2.5,
+                        "angle": -27.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": -48.33,
+                        "y": -6.16
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": -44.05,
+                        "y": 11.09
+                      },
+                      {
+                        "time": 2.5,
+                        "x": -49.37,
+                        "y": 26.58
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.5333,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 1.0333,
+                        "x": 0.354,
+                        "y": 0.332
+                      },
+                      {
+                        "time": 2.4,
+                        "x": 0.277,
+                        "y": 0.259
+                      }
+                    ]
+                  },
+                  "p4": {
+                    "rotate": [
+                      {
+                        "time": 1.2
+                      },
+                      {
+                        "time": 2.7667,
+                        "angle": 40.8
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.2,
+                        "x": 10.07,
+                        "y": 108.75
+                      },
+                      {
+                        "time": 2.0333,
+                        "x": 11.64,
+                        "y": 132.06
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 9.29,
+                        "y": 155.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.2,
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      {
+                        "time": 1.7667,
+                        "x": 0.7,
+                        "y": 0.7
+                      },
+                      {
+                        "time": 2.7667,
+                        "x": 0.6,
+                        "y": 0.6
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "translate": [
+                      {
+                        "y": 223.71
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "y": -1
+                      }
+                    ]
+                  },
+                  "p8": {
+                    "rotate": [
+                      {
+                        "angle": -8.4
+                      },
+                      {
+                        "time": 0.3667,
+                        "angle": -12.2
+                      },
+                      {
+                        "time": 1.4
+                      },
+                      {
+                        "time": 3.1333,
+                        "angle": -8.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -25.13,
+                        "y": 140.99
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": -31.51,
+                        "y": 162.25
+                      },
+                      {
+                        "time": 1.4,
+                        "x": -25.13,
+                        "y": 54.56
+                      },
+                      {
+                        "time": 3.1333,
+                        "x": -25.13,
+                        "y": 140.99
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.8,
+                        "y": 0.8
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": 0.4,
+                        "y": 0.4
+                      },
+                      {
+                        "time": 1.4,
+                        "x": 0.72,
+                        "y": 0.74
+                      },
+                      {
+                        "time": 3.1333,
+                        "x": 0.8,
+                        "y": 0.8
+                      }
+                    ]
+                  },
+                  "p7": {
+                    "rotate": [
+                      {
+                        "angle": -19.2
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": -32.75
+                      },
+                      {
+                        "time": 2.2667
+                      },
+                      {
+                        "time": 3.1333,
+                        "angle": -19.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "y": -11.98
+                      },
+                      {
+                        "time": 0.6333,
+                        "y": 13.35
+                      },
+                      {
+                        "time": 2.2667,
+                        "y": -57.89
+                      },
+                      {
+                        "time": 3.1333,
+                        "y": -11.98
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.6,
+                        "y": 0.6
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": 0.3,
+                        "y": 0.3
+                      },
+                      {
+                        "time": 2.2667,
+                        "x": 0.6,
+                        "y": 0.6
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        5
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "basket_edit",
+          {
+            "animator": "1.0.0",
+            "defaultState": "Idle",
+            "mainStateMachine": {
+              "layerScale": 0.6000000000000001,
+              "layerPos": [
+                132.96058763891634,
+                -2.355171770997835
+              ],
+              "anyStatePos": [
+                -1080,
+                600
+              ],
+              "subStates": [
+                "Idle",
+                "Run",
+                "Atk",
+                "Death",
+                "Vic"
+              ],
+              "subStateMachines": []
+            },
+            "subStateMachines": [],
+            "anyState": {
+              "transitions": []
+            },
+            "states": [
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Idle",
+                "motion": "Idle",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  600,
+                  0
+                ],
+                "transitions": [
+                  {
+                    "toState": "Run",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Run",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Run",
+                "motion": "Run",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -780,
+                  420
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Atk",
+                "motion": "Atk",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -1050,
+                  0
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": []
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Death",
+                "motion": "Death",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  330,
+                  -480
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Vic",
+                "motion": "Vic",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  330,
+                  420
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": true,
+                    "conditions": []
+                  }
+                ]
+              }
+            ],
+            "parameters": [
+              {
+                "param": "Atk",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Death",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Idle",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Run",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Vic",
+                "type": 4,
+                "init": 0
+              }
+            ]
+          }
+        ]
+      ],
+      0,
+      0,
+      [],
+      [],
+      []
+    ],
+    [
+      [
+        {
+          "name": "battle_bar_energybg",
+          "rect": [
+            0,
+            0,
+            164,
+            22
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            164,
+            22
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_ico_amp",
+          "rect": [
+            0,
+            0,
+            42,
+            39
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            42,
+            39
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bar_hpbg",
+          "rect": [
+            0,
+            0,
+            164,
+            28
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            164,
+            28
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bar_hp1p",
+          "rect": [
+            0,
+            0,
+            154,
+            20
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            154,
+            20
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_ico_ice",
+          "rect": [
+            0,
+            0,
+            38,
+            42
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            38,
+            42
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        10
+      ]
+    ]
+  ]
+]
