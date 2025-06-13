@@ -2101,7 +2101,7 @@ window.__require = function e(t, n, r) {
         this.roleData = _roleData;
         this.currentBg.spriteFrame = this.rareBgList[_itemData.rarity];
         this.countLabel.getComponent("LabelUpdater").setString("X" + _itemData.count);
-        this.countLabel.active = _itemData.type != EnumType.BAG_ITEM_TYPE.MERGE;
+        _itemData.type != EnumType.BAG_ITEM_TYPE.MERGE || _ownerType != EnumType.ITEM_OWNER_TYPE.MERGE && _ownerType != EnumType.ITEM_OWNER_TYPE.MERGE_SLOT && _ownerType != EnumType.ITEM_OWNER_TYPE.EQUIP ? this.countLabel.active = true : this.countLabel.active = false;
         this.countLabel.setScale(1);
         this.setMask(false);
         this.lockIcon.active = false;
@@ -7853,8 +7853,8 @@ window.__require = function e(t, n, r) {
         EQUIPMENT_TYPE: {
           WEAPON: 0,
           BACKPACK: 1,
-          NECKLACE: 2,
-          RING: 3
+          RING: 2,
+          NECKLACE: 3
         },
         EQUIPMENT_SLOT_POS: {
           NONE: -1,
@@ -7887,7 +7887,8 @@ window.__require = function e(t, n, r) {
           MERGE: 1,
           MERGE_SLOT: 2,
           TASK_REWARD: 3,
-          OPEN_BOX_RESULT: 4
+          OPEN_BOX_RESULT: 4,
+          EQUIP: 5
         },
         EQUIPMENT_ITEM_OWNER_TYPE: {
           NONE: 0,
@@ -8129,7 +8130,7 @@ window.__require = function e(t, n, r) {
           var currentEquipmentItemCom = this.currentEquipmentItem.getComponent("EquipmentItem");
           var _conditionList = Global.equipmentManager.getUpgradeCondition(currentEquipmentItemCom.equipmentData);
           if (true == this.materialEquipmentItem.active) {
-            if (false == this.materialEquipmentItem_2.active) {
+            if (false == this.materialEquipmentItem_2.active && _conditionList.length > 1) {
               equipmentData.selected = true;
               this.materialEquipmentItem_2.active = true;
               this.materialEquipmentItem_2.getComponent("EquipmentItem").setData(equipmentData, this.roleData, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.MERGE_SLOT, EnumType.EQUIPMENT_ITEM_SHOW_TYPE.EQUIPED_FLAG);
@@ -8357,7 +8358,7 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1011",
-          skills: "0,1214,1215,1202,0,0,1153,0,0,1178"
+          skills: "0,1214,1215,1202,0,0,1237,0,0,1178"
         }, {
           id: "1002",
           name: "S\u65a7\u5934S-\u7d2b",
@@ -8370,7 +8371,7 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1003",
-          skills: "1229,1022,1215,1202,0,0,1230,0,0,1100"
+          skills: "1229,1238,1215,1202,0,0,1230,0,0,1239"
         }, {
           id: "1003",
           name: "S\u5237\u5b50S-\u7d2b",
@@ -8395,8 +8396,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,1218,1215,1202,0,0,1109,0,0,1013"
+          ultimate_type: "1021",
+          skills: "0,1218,1215,1202,0,0,1240,0,0,1231"
         }, {
           id: "1005",
           name: "S\u51b0\u68d2S-\u7d2b",
@@ -8408,8 +8409,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1100&energy_max",
-          ultimate_type: "1001",
-          skills: "0,1217,1215,1203,0,0,1032,0,0,1166"
+          ultimate_type: "1022",
+          skills: "0,1217,1215,1203,0,0,1241,0,0,1166"
         }, {
           id: "1006",
           name: "S\u53cd\u4f24S-\u7d2b",
@@ -8447,8 +8448,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1100&energy_max",
-          ultimate_type: "1001",
-          skills: "0,1184,1215,1202,0,0,1006,0,0,1008"
+          ultimate_type: "1015",
+          skills: "0,1184,1215,1202,0,0,1242,0,0,1242"
         }, {
           id: "1009",
           name: "S\u5927\u62dbS-\u7d2b",
@@ -8461,7 +8462,7 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "800&energy_max",
           ultimate_type: "1010",
-          skills: "1180,1086,1215,1202,0,0,1180,0,0,1092"
+          skills: "1180,1244,1215,1202,0,0,1180,0,0,1245"
         }, {
           id: "1010",
           name: "S\u51b2\u950bS-\u7d2b",
@@ -8474,11 +8475,11 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1006",
-          skills: "0,1038,1215,1202,0,0,1041,0,0,1186"
+          skills: "0,1246,1215,1202,0,0,1247,0,0,1186"
         }, {
           id: "1101",
           name: "S\u6062\u590d\u80cc\u5305-\u7d2b",
-          skinName: "",
+          skinName: "Lanzi03",
           img: "equip_1101",
           slot: "1",
           rarity: "3",
@@ -8487,11 +8488,11 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1204,1080,1205,0,0,1224,0,0,1075"
+          skills: "0,1204,1248,1205,0,0,1224,0,0,1249"
         }, {
           id: "1102",
           name: "S\u590d\u6d3b\u80cc\u5305-\u7d2b",
-          skinName: "",
+          skinName: "Lanzi05",
           img: "equip_1102",
           slot: "1",
           rarity: "3",
@@ -8504,7 +8505,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1103",
           name: "S\u7d27\u6025\u80cc\u5305-\u7d2b",
-          skinName: "",
+          skinName: "Lanzi04",
           img: "equip_1103",
           slot: "1",
           rarity: "3",
@@ -8513,7 +8514,7 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1204,1045,1205,0,0,1049,0,0,1048"
+          skills: "0,1204,1250,1205,0,0,1251,0,0,1252"
         }, {
           id: "1201",
           name: "S\u91cd\u4f24\u6212\u6307-\u7d2b",
@@ -8523,10 +8524,10 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "1200&basic_hp,10&armor",
+          base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1201,1134,1202,0,0,1193,0,0,1195"
+          skills: "0,1201,1253,1202,0,0,1193,0,0,1195"
         }, {
           id: "1202",
           name: "S\u51b0\u51bb\u6212\u6307-\u7d2b",
@@ -8536,10 +8537,10 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "1200&basic_hp,10&armor",
+          base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1201,1111,1202,0,0,1194,0,0,1096"
+          skills: "0,1201,1254,1202,0,0,1194,0,0,1256"
         }, {
           id: "1203",
           name: "S\u4e2d\u6bd2\u6212\u6307-\u7d2b",
@@ -8549,7 +8550,7 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "1200&basic_hp,10&armor",
+          base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,1201,1225,1202,0,0,1170,0,0,1171"
@@ -8562,7 +8563,7 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "30&strength,10&armor",
+          base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,1206,1213,1207,0,0,1213,0,0,1211"
@@ -8575,10 +8576,10 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "30&strength,10&armor",
+          base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1206,1060,1207,0,0,1060,0,0,1212"
+          skills: "0,1206,1257,1207,0,0,1258,0,0,1212"
         }, {
           id: "1303",
           name: "S\u63a7\u5236\u9970\u54c1-\u7d2b",
@@ -8588,10 +8589,10 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "30&strength,10&armor",
+          base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1206,1061,1207,0,0,1190,0,0,1191"
+          skills: "0,1206,1259,1207,0,0,1190,0,0,1191"
         }, {
           id: "2001",
           name: "\u7eb8\u56e2-\u767d",
@@ -8604,7 +8605,7 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1002",
-          skills: "1183,0,1200,1001,0,0,1003,0,0,1153"
+          skills: "1183,0,1200,1260,0,0,1261,0,0,1237"
         }, {
           id: "2002",
           name: "\u7eb8\u56e2-\u7eff",
@@ -8617,7 +8618,7 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1002",
-          skills: "1183,0,1200,1001,0,0,1003,0,0,1153"
+          skills: "1183,0,1200,1260,0,0,1261,0,0,1237"
         }, {
           id: "2003",
           name: "\u7eb8\u56e2-\u84dd",
@@ -8630,7 +8631,7 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1002",
-          skills: "1183,0,1200,1001,0,0,1003,0,0,1153"
+          skills: "1183,0,1200,1260,0,0,1261,0,0,1237"
         }, {
           id: "2004",
           name: "\u7eb8\u56e2-\u7d2b",
@@ -8643,7 +8644,7 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1002",
-          skills: "1183,0,1200,1001,0,0,1003,0,0,1153"
+          skills: "1183,0,1200,1260,0,0,1261,0,0,1237"
         }, {
           id: "2005",
           name: "\u65a7\u5934-\u767d",
@@ -8655,8 +8656,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "24&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1018,0,0,1095,0,0,1020"
+          ultimate_type: "1014",
+          skills: "0,0,1200,1262,0,0,1263,0,0,1264"
         }, {
           id: "2006",
           name: "\u65a7\u5934-\u7eff",
@@ -8668,8 +8669,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "36&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1018,0,0,1095,0,0,1020"
+          ultimate_type: "1014",
+          skills: "0,0,1200,1262,0,0,1263,0,0,1264"
         }, {
           id: "2007",
           name: "\u65a7\u5934-\u84dd",
@@ -8681,8 +8682,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "48&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1018,0,0,1095,0,0,1020"
+          ultimate_type: "1014",
+          skills: "0,0,1200,1262,0,0,1263,0,0,1264"
         }, {
           id: "2008",
           name: "\u65a7\u5934-\u7d2b",
@@ -8694,8 +8695,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1018,0,0,1095,0,0,1020"
+          ultimate_type: "1014",
+          skills: "0,0,1200,1262,0,0,1263,0,0,1264"
         }, {
           id: "2009",
           name: "\u5237\u5b50-\u767d",
@@ -8708,7 +8709,7 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1008",
-          skills: "0,0,1200,1013,0,0,1134,0,0,1015"
+          skills: "0,0,1200,1265,0,0,1253,0,0,1266"
         }, {
           id: "2010",
           name: "\u5237\u5b50-\u7eff",
@@ -8721,7 +8722,7 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1008",
-          skills: "0,0,1200,1013,0,0,1134,0,0,1015"
+          skills: "0,0,1200,1265,0,0,1253,0,0,1266"
         }, {
           id: "2011",
           name: "\u5237\u5b50-\u84dd",
@@ -8734,7 +8735,7 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1008",
-          skills: "0,0,1200,1013,0,0,1134,0,0,1015"
+          skills: "0,0,1200,1265,0,0,1253,0,0,1266"
         }, {
           id: "2012",
           name: "\u5237\u5b50-\u7d2b",
@@ -8747,7 +8748,7 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1008",
-          skills: "0,0,1200,1013,0,0,1134,0,0,1015"
+          skills: "0,0,1200,1265,0,0,1253,0,0,1266"
         }, {
           id: "2013",
           name: "\u53cd\u51fb-\u767d",
@@ -8759,8 +8760,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "24&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1218,0,0,1220,0,0,1003"
+          ultimate_type: "1016",
+          skills: "0,0,1200,1218,0,0,1220,0,0,1261"
         }, {
           id: "2014",
           name: "\u53cd\u51fb-\u7eff",
@@ -8772,8 +8773,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "36&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1218,0,0,1220,0,0,1003"
+          ultimate_type: "1016",
+          skills: "0,0,1200,1218,0,0,1220,0,0,1261"
         }, {
           id: "2015",
           name: "\u53cd\u51fb-\u84dd",
@@ -8785,8 +8786,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "48&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1218,0,0,1220,0,0,1003"
+          ultimate_type: "1016",
+          skills: "0,0,1200,1218,0,0,1220,0,0,1261"
         }, {
           id: "2016",
           name: "\u53cd\u51fb-\u7d2b",
@@ -8798,8 +8799,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1218,0,0,1220,0,0,1003"
+          ultimate_type: "1016",
+          skills: "0,0,1200,1218,0,0,1220,0,0,1261"
         }, {
           id: "2017",
           name: "\u51b0\u68d2-\u767d",
@@ -8811,8 +8812,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "24&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1031,0,0,1111,0,0,1221"
+          ultimate_type: "1013",
+          skills: "0,0,1200,1267,0,0,1254,0,0,1221"
         }, {
           id: "2018",
           name: "\u51b0\u68d2-\u7eff",
@@ -8824,8 +8825,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "36&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1031,0,0,1111,0,0,1221"
+          ultimate_type: "1013",
+          skills: "0,0,1200,1267,0,0,1254,0,0,1221"
         }, {
           id: "2019",
           name: "\u51b0\u68d2-\u84dd",
@@ -8837,8 +8838,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "48&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1031,0,0,1111,0,0,1221"
+          ultimate_type: "1013",
+          skills: "0,0,1200,1267,0,0,1254,0,0,1221"
         }, {
           id: "2020",
           name: "\u51b0\u68d2-\u7d2b",
@@ -8850,8 +8851,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1031,0,0,1111,0,0,1221"
+          ultimate_type: "1013",
+          skills: "0,0,1200,1267,0,0,1254,0,0,1221"
         }, {
           id: "2021",
           name: "\u53cd\u4f24-\u767d",
@@ -8863,8 +8864,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "24&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1119,0,0,1222,0,0,1223"
+          ultimate_type: "1017",
+          skills: "0,0,1200,1268,0,0,1222,0,0,1223"
         }, {
           id: "2022",
           name: "\u53cd\u4f24-\u7eff",
@@ -8876,8 +8877,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "36&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1119,0,0,1222,0,0,1223"
+          ultimate_type: "1017",
+          skills: "0,0,1200,1268,0,0,1222,0,0,1223"
         }, {
           id: "2023",
           name: "\u53cd\u4f24-\u84dd",
@@ -8889,8 +8890,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "48&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1119,0,0,1222,0,0,1223"
+          ultimate_type: "1017",
+          skills: "0,0,1200,1268,0,0,1222,0,0,1223"
         }, {
           id: "2024",
           name: "\u53cd\u4f24-\u7d2b",
@@ -8902,8 +8903,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1119,0,0,1222,0,0,1223"
+          ultimate_type: "1017",
+          skills: "0,0,1200,1268,0,0,1222,0,0,1223"
         }, {
           id: "2025",
           name: "\u624b\u67c4-\u767d",
@@ -8915,8 +8916,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "24&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1024,0,0,1027,0,0,1129"
+          ultimate_type: "1018",
+          skills: "0,0,1200,1269,0,0,1270,0,0,1271"
         }, {
           id: "2026",
           name: "\u624b\u67c4-\u7eff",
@@ -8928,8 +8929,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "36&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1024,0,0,1027,0,0,1129"
+          ultimate_type: "1018",
+          skills: "0,0,1200,1269,0,0,1270,0,0,1271"
         }, {
           id: "2027",
           name: "\u624b\u67c4-\u84dd",
@@ -8941,8 +8942,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "48&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1024,0,0,1027,0,0,1129"
+          ultimate_type: "1018",
+          skills: "0,0,1200,1269,0,0,1270,0,0,1271"
         }, {
           id: "2028",
           name: "\u624b\u67c4-\u7d2b",
@@ -8954,8 +8955,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1024,0,0,1027,0,0,1129"
+          ultimate_type: "1018",
+          skills: "0,0,1200,1269,0,0,1270,0,0,1271"
         }, {
           id: "2029",
           name: "\u996e\u6599-\u767d",
@@ -8967,8 +8968,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "24&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1012,0,0,1134,0,0,1221"
+          ultimate_type: "1019",
+          skills: "0,0,1200,1272,0,0,1253,0,0,1221"
         }, {
           id: "2030",
           name: "\u996e\u6599-\u7eff",
@@ -8980,8 +8981,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "36&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1012,0,0,1134,0,0,1221"
+          ultimate_type: "1019",
+          skills: "0,0,1200,1272,0,0,1253,0,0,1221"
         }, {
           id: "2031",
           name: "\u996e\u6599-\u84dd",
@@ -8993,8 +8994,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "48&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1012,0,0,1134,0,0,1221"
+          ultimate_type: "1019",
+          skills: "0,0,1200,1272,0,0,1253,0,0,1221"
         }, {
           id: "2032",
           name: "\u996e\u6599-\u7d2b",
@@ -9006,8 +9007,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1012,0,0,1134,0,0,1221"
+          ultimate_type: "1019",
+          skills: "0,0,1200,1272,0,0,1253,0,0,1221"
         }, {
           id: "2033",
           name: "\u5927\u62db-\u767d",
@@ -9020,7 +9021,7 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1300&energy_max",
           ultimate_type: "1005",
-          skills: "1185,0,1200,1181,0,0,1030,0,0,1059"
+          skills: "1185,0,1200,1181,0,0,1273,0,0,1274"
         }, {
           id: "2034",
           name: "\u5927\u62db-\u7eff",
@@ -9033,7 +9034,7 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1300&energy_max",
           ultimate_type: "1005",
-          skills: "1185,0,1200,1181,0,0,1030,0,0,1059"
+          skills: "1185,0,1200,1181,0,0,1273,0,0,1274"
         }, {
           id: "2035",
           name: "\u5927\u62db-\u84dd",
@@ -9046,7 +9047,7 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1300&energy_max",
           ultimate_type: "1005",
-          skills: "1185,0,1200,1181,0,0,1030,0,0,1059"
+          skills: "1185,0,1200,1181,0,0,1273,0,0,1274"
         }, {
           id: "2036",
           name: "\u5927\u62db-\u7d2b",
@@ -9059,7 +9060,7 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1300&energy_max",
           ultimate_type: "1005",
-          skills: "1185,0,1200,1181,0,0,1030,0,0,1059"
+          skills: "1185,0,1200,1181,0,0,1273,0,0,1274"
         }, {
           id: "2037",
           name: "\u51b2\u950b-\u767d",
@@ -9071,8 +9072,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "24&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1038,0,0,1039,0,0,1041"
+          ultimate_type: "1020",
+          skills: "0,0,1200,1246,0,0,1275,0,0,1247"
         }, {
           id: "2038",
           name: "\u51b2\u950b-\u7eff",
@@ -9084,8 +9085,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "36&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1038,0,0,1039,0,0,1041"
+          ultimate_type: "1020",
+          skills: "0,0,1200,1246,0,0,1275,0,0,1247"
         }, {
           id: "2039",
           name: "\u51b2\u950b-\u84dd",
@@ -9097,8 +9098,8 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "48&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1038,0,0,1039,0,0,1041"
+          ultimate_type: "1020",
+          skills: "0,0,1200,1246,0,0,1275,0,0,1247"
         }, {
           id: "2040",
           name: "\u51b2\u950b-\u7d2b",
@@ -9110,12 +9111,12 @@ window.__require = function e(t, n, r) {
           breakthrough: "0",
           base_property: "60&strength",
           constant_property: "1000&energy_max",
-          ultimate_type: "1001",
-          skills: "0,0,1200,1038,0,0,1039,0,0,1041"
+          ultimate_type: "1020",
+          skills: "0,0,1200,1246,0,0,1275,0,0,1247"
         }, {
           id: "2101",
           name: "\u95ea\u907f\u80cc\u5305-\u767d",
-          skinName: "",
+          skinName: "Lanzi02",
           img: "equip_2101",
           slot: "1",
           rarity: "0",
@@ -9124,11 +9125,11 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1123,0,0,1123,0,0,1128"
+          skills: "0,0,1204,1276,0,0,1276,0,0,1277"
         }, {
           id: "2102",
           name: "\u95ea\u907f\u80cc\u5305-\u7eff",
-          skinName: "",
+          skinName: "Lanzi02",
           img: "equip_2101",
           slot: "1",
           rarity: "1",
@@ -9137,11 +9138,11 @@ window.__require = function e(t, n, r) {
           base_property: "1440&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1123,0,0,1123,0,0,1128"
+          skills: "0,0,1204,1276,0,0,1276,0,0,1277"
         }, {
           id: "2103",
           name: "\u95ea\u907f\u80cc\u5305-\u84dd",
-          skinName: "",
+          skinName: "Lanzi02",
           img: "equip_2101",
           slot: "1",
           rarity: "2",
@@ -9150,11 +9151,11 @@ window.__require = function e(t, n, r) {
           base_property: "1920&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1123,0,0,1123,0,0,1128"
+          skills: "0,0,1204,1276,0,0,1276,0,0,1277"
         }, {
           id: "2104",
           name: "\u95ea\u907f\u80cc\u5305-\u7d2b",
-          skinName: "",
+          skinName: "Lanzi02",
           img: "equip_2101",
           slot: "1",
           rarity: "3",
@@ -9163,7 +9164,7 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1123,0,0,1123,0,0,1128"
+          skills: "0,0,1204,1276,0,0,1276,0,0,1277"
         }, {
           id: "2105",
           name: "\u6025\u6551\u80cc\u5305-\u767d",
@@ -9176,7 +9177,7 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1110,0,0,1110,0,0,1174"
+          skills: "0,0,1204,1278,0,0,1279,0,0,1174"
         }, {
           id: "2106",
           name: "\u6025\u6551\u80cc\u5305-\u7eff",
@@ -9189,7 +9190,7 @@ window.__require = function e(t, n, r) {
           base_property: "1440&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1110,0,0,1110,0,0,1174"
+          skills: "0,0,1204,1278,0,0,1279,0,0,1174"
         }, {
           id: "2107",
           name: "\u6025\u6551\u80cc\u5305-\u84dd",
@@ -9202,7 +9203,7 @@ window.__require = function e(t, n, r) {
           base_property: "1920&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1110,0,0,1110,0,0,1174"
+          skills: "0,0,1204,1278,0,0,1279,0,0,1174"
         }, {
           id: "2108",
           name: "\u6025\u6551\u80cc\u5305-\u7d2b",
@@ -9215,11 +9216,11 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1110,0,0,1110,0,0,1174"
+          skills: "0,0,1204,1278,0,0,1279,0,0,1174"
         }, {
           id: "2109",
           name: "\u51b0\u51bb\u80cc\u5305-\u767d",
-          skinName: "",
+          skinName: "Lanzi01",
           img: "equip_2109",
           slot: "1",
           rarity: "0",
@@ -9228,11 +9229,11 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1111,0,0,1111,0,0,1108"
+          skills: "0,0,1204,1254,0,0,1255,0,0,1280"
         }, {
           id: "2110",
           name: "\u51b0\u51bb\u80cc\u5305-\u7eff",
-          skinName: "",
+          skinName: "Lanzi01",
           img: "equip_2109",
           slot: "1",
           rarity: "1",
@@ -9241,11 +9242,11 @@ window.__require = function e(t, n, r) {
           base_property: "1440&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1111,0,0,1111,0,0,1108"
+          skills: "0,0,1204,1254,0,0,1255,0,0,1280"
         }, {
           id: "2111",
           name: "\u51b0\u51bb\u80cc\u5305-\u84dd",
-          skinName: "",
+          skinName: "Lanzi01",
           img: "equip_2109",
           slot: "1",
           rarity: "2",
@@ -9254,11 +9255,11 @@ window.__require = function e(t, n, r) {
           base_property: "1920&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1111,0,0,1111,0,0,1108"
+          skills: "0,0,1204,1254,0,0,1255,0,0,1280"
         }, {
           id: "2112",
           name: "\u51b0\u51bb\u80cc\u5305-\u7d2b",
-          skinName: "",
+          skinName: "Lanzi01",
           img: "equip_2109",
           slot: "1",
           rarity: "3",
@@ -9267,7 +9268,7 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1111,0,0,1111,0,0,1108"
+          skills: "0,0,1204,1254,0,0,1255,0,0,1280"
         }, {
           id: "2201",
           name: "\u751f\u547d\u6212\u6307-\u767d",
@@ -9277,7 +9278,7 @@ window.__require = function e(t, n, r) {
           rarity: "0",
           level: "1",
           breakthrough: "0",
-          base_property: "600&basic_hp,4&armor",
+          base_property: "12&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,0,1201,1175,0,0,1176,0,0,1177"
@@ -9290,7 +9291,7 @@ window.__require = function e(t, n, r) {
           rarity: "1",
           level: "1",
           breakthrough: "0",
-          base_property: "720&basic_hp,6&armor",
+          base_property: "18&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,0,1201,1175,0,0,1176,0,0,1177"
@@ -9303,7 +9304,7 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           level: "1",
           breakthrough: "0",
-          base_property: "960&basic_hp,8&armor",
+          base_property: "24&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,0,1201,1175,0,0,1176,0,0,1177"
@@ -9316,7 +9317,7 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "1200&basic_hp,10&armor",
+          base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,0,1201,1175,0,0,1176,0,0,1177"
@@ -9329,10 +9330,10 @@ window.__require = function e(t, n, r) {
           rarity: "0",
           level: "1",
           breakthrough: "0",
-          base_property: "600&basic_hp,4&armor",
+          base_property: "12&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1095,0,0,1163,0,0,1210"
+          skills: "0,0,1201,1263,0,0,1281,0,0,1210"
         }, {
           id: "2206",
           name: "\u66b4\u51fb\u6212\u6307-\u7eff",
@@ -9342,10 +9343,10 @@ window.__require = function e(t, n, r) {
           rarity: "1",
           level: "1",
           breakthrough: "0",
-          base_property: "720&basic_hp,6&armor",
+          base_property: "18&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1095,0,0,1163,0,0,1210"
+          skills: "0,0,1201,1263,0,0,1281,0,0,1210"
         }, {
           id: "2207",
           name: "\u66b4\u51fb\u6212\u6307-\u84dd",
@@ -9355,10 +9356,10 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           level: "1",
           breakthrough: "0",
-          base_property: "960&basic_hp,8&armor",
+          base_property: "24&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1095,0,0,1163,0,0,1210"
+          skills: "0,0,1201,1263,0,0,1281,0,0,1210"
         }, {
           id: "2208",
           name: "\u66b4\u51fb\u6212\u6307-\u7d2b",
@@ -9368,10 +9369,10 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "1200&basic_hp,10&armor",
+          base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1095,0,0,1163,0,0,1210"
+          skills: "0,0,1201,1263,0,0,1281,0,0,1210"
         }, {
           id: "2209",
           name: "\u80fd\u91cf\u6212\u6307-\u767d",
@@ -9381,10 +9382,10 @@ window.__require = function e(t, n, r) {
           rarity: "0",
           level: "1",
           breakthrough: "0",
-          base_property: "600&basic_hp,4&armor",
+          base_property: "12&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1086,0,0,1088,0,0,1227"
+          skills: "0,0,1201,1244,0,0,1282,0,0,1227"
         }, {
           id: "2210",
           name: "\u80fd\u91cf\u6212\u6307-\u7eff",
@@ -9394,10 +9395,10 @@ window.__require = function e(t, n, r) {
           rarity: "1",
           level: "1",
           breakthrough: "0",
-          base_property: "720&basic_hp,6&armor",
+          base_property: "18&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1086,0,0,1088,0,0,1227"
+          skills: "0,0,1201,1244,0,0,1282,0,0,1227"
         }, {
           id: "2211",
           name: "\u80fd\u91cf\u6212\u6307-\u84dd",
@@ -9407,10 +9408,10 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           level: "1",
           breakthrough: "0",
-          base_property: "960&basic_hp,8&armor",
+          base_property: "24&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1086,0,0,1088,0,0,1227"
+          skills: "0,0,1201,1244,0,0,1282,0,0,1227"
         }, {
           id: "2212",
           name: "\u80fd\u91cf\u6212\u6307-\u7d2b",
@@ -9420,10 +9421,10 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "1200&basic_hp,10&armor",
+          base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1086,0,0,1088,0,0,1227"
+          skills: "0,0,1201,1244,0,0,1282,0,0,1227"
         }, {
           id: "2301",
           name: "\u9501\u5b50\u5f39\u9970\u54c1-\u767d",
@@ -9433,10 +9434,10 @@ window.__require = function e(t, n, r) {
           rarity: "0",
           level: "1",
           breakthrough: "0",
-          base_property: "12&strength,10&armor",
+          base_property: "600&basic_hp,4&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1123,0,0,1189,0,0,1228"
+          skills: "0,0,1206,1276,0,0,1189,0,0,1228"
         }, {
           id: "2302",
           name: "\u9501\u5b50\u5f39\u9970\u54c1-\u7eff",
@@ -9446,10 +9447,10 @@ window.__require = function e(t, n, r) {
           rarity: "1",
           level: "1",
           breakthrough: "0",
-          base_property: "18&strength,10&armor",
+          base_property: "720&basic_hp,6&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1123,0,0,1189,0,0,1228"
+          skills: "0,0,1206,1276,0,0,1189,0,0,1228"
         }, {
           id: "2303",
           name: "\u9501\u5b50\u5f39\u9970\u54c1-\u84dd",
@@ -9459,10 +9460,10 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           level: "1",
           breakthrough: "0",
-          base_property: "24&strength,10&armor",
+          base_property: "960&basic_hp,8&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1123,0,0,1189,0,0,1228"
+          skills: "0,0,1206,1276,0,0,1189,0,0,1228"
         }, {
           id: "2304",
           name: "\u9501\u5b50\u5f39\u9970\u54c1-\u7d2b",
@@ -9472,10 +9473,10 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "30&strength,10&armor",
+          base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1123,0,0,1189,0,0,1228"
+          skills: "0,0,1206,1276,0,0,1189,0,0,1228"
         }, {
           id: "2305",
           name: "BOSS\u9970\u54c1-\u767d",
@@ -9485,7 +9486,7 @@ window.__require = function e(t, n, r) {
           rarity: "0",
           level: "1",
           breakthrough: "0",
-          base_property: "12&strength,10&armor",
+          base_property: "600&basic_hp,4&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,0,1206,1208,0,0,1209,0,0,1192"
@@ -9498,7 +9499,7 @@ window.__require = function e(t, n, r) {
           rarity: "1",
           level: "1",
           breakthrough: "0",
-          base_property: "18&strength,10&armor",
+          base_property: "720&basic_hp,6&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,0,1206,1208,0,0,1209,0,0,1192"
@@ -9511,7 +9512,7 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           level: "1",
           breakthrough: "0",
-          base_property: "24&strength,10&armor",
+          base_property: "960&basic_hp,8&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,0,1206,1208,0,0,1209,0,0,1192"
@@ -9524,7 +9525,7 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "30&strength,10&armor",
+          base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
           skills: "0,0,1206,1208,0,0,1209,0,0,1192"
@@ -9537,10 +9538,10 @@ window.__require = function e(t, n, r) {
           rarity: "0",
           level: "1",
           breakthrough: "0",
-          base_property: "12&strength,10&armor",
+          base_property: "600&basic_hp,4&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1026,0,0,1165,0,0,1227"
+          skills: "0,0,1206,1283,0,0,1284,0,0,1227"
         }, {
           id: "2310",
           name: "\u80fd\u91cf\u9970\u54c1-\u7eff",
@@ -9550,10 +9551,10 @@ window.__require = function e(t, n, r) {
           rarity: "1",
           level: "1",
           breakthrough: "0",
-          base_property: "18&strength,10&armor",
+          base_property: "720&basic_hp,6&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1026,0,0,1165,0,0,1227"
+          skills: "0,0,1206,1283,0,0,1284,0,0,1227"
         }, {
           id: "2311",
           name: "\u80fd\u91cf\u9970\u54c1-\u84dd",
@@ -9563,10 +9564,10 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           level: "1",
           breakthrough: "0",
-          base_property: "24&strength,10&armor",
+          base_property: "960&basic_hp,8&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1026,0,0,1165,0,0,1227"
+          skills: "0,0,1206,1283,0,0,1284,0,0,1227"
         }, {
           id: "2312",
           name: "\u80fd\u91cf\u9970\u54c1-\u7d2b",
@@ -9576,10 +9577,10 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           level: "1",
           breakthrough: "0",
-          base_property: "30&strength,10&armor",
+          base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1026,0,0,1165,0,0,1227"
+          skills: "0,0,1206,1283,0,0,1284,0,0,1227"
         } ]
       }
     });
@@ -10120,10 +10121,12 @@ window.__require = function e(t, n, r) {
         var _this = this;
         if (this.ownerType == EnumType.EQUIPMENT_ITEM_OWNER_TYPE.OPEN_BOX_RESULT) {
           this.container.setScale(0, 0);
-          this.flash.node.active = true;
-          this.flash.clearTrack(0);
+          this.flash.clearTracks();
+          this.flash.setToSetupPose();
+          this.flash.updateWorldTransform();
           var aniName = this.equipmentData.rarity >= EnumType.RARE_TYPE_EQUIPMENT.EPIC ? "Purple" : "Blue";
           this.flash.setAnimation(0, aniName, false);
+          this.flash.node.active = true;
           this.flash.setEventListener(function(trackEntry, event) {
             "Start" === event.data.name && cc.tween(_this.container).to(.2, {
               scale: 1
@@ -10993,7 +10996,7 @@ window.__require = function e(t, n, r) {
         var bagItem;
         bagItem = this.bagItemPool.length > 0 ? this.bagItemPool.pop() : cc.instantiate(this.bagItemPrefab);
         this.bagItemList.push(bagItem);
-        bagItem.getComponent("BagItem").setData(_itemData, this.roleData);
+        bagItem.getComponent("BagItem").setData(_itemData, this.roleData, EnumType.ITEM_OWNER_TYPE.EQUIP);
         this.equipmentContainer.addChild(bagItem);
         bagItem.x = startX + 210 * Math.floor(_index % 5);
         bagItem.y = startY + -1 * Math.floor(_index / 5) * 210;
@@ -16099,7 +16102,6 @@ window.__require = function e(t, n, r) {
         cc.tween(this.uiContainer).to(.2, {
           opacity: 255
         }).start();
-        this.checkBox.isChecked = false;
         var keyCount = Global.shopManager.getKeyCount(this.boxType);
         if (keyCount > 0) {
           this.boxGet10KeyNode.active = true;
@@ -16184,6 +16186,7 @@ window.__require = function e(t, n, r) {
         }
       },
       onClickClose: function onClickClose() {
+        this.clearItems();
         Global.gui.remove(gameConfig.UIID.OpenBoxResult);
       }
     });
@@ -18790,7 +18793,6 @@ window.__require = function e(t, n, r) {
         this.minCurrentEnergy = 0;
         this.overdraw = 0;
         this.timeoutIds = [];
-        this.currentEvents = {};
         this.rebornCount = 1;
         this.rebornCountMax = 1;
         this.rebornRate = .5;
@@ -19401,7 +19403,7 @@ window.__require = function e(t, n, r) {
             this.updatePropertyFromEvent(_event);
             this.updateEmergencyCallback && this.updateEmergencyCallback(true);
           } else {
-            delete this.currentEvents[_event.eventId];
+            _event.triggerCount = 0;
             this.removeAdditionalProperty(_event.eventId);
             this.updateEmergencyCallback && this.updateEmergencyCallback(false);
           }
@@ -20267,7 +20269,7 @@ window.__require = function e(t, n, r) {
         var fightTimer = this.getTimer();
         this._fightIT = setInterval(function() {
           if (this._stunTime || 0 == magLen) this.idle(); else {
-            var speed = .3 * magLen;
+            var speed = .2 * magLen;
             speed = speed > 3 ? 3 : speed;
             this.setExtraMulti(speed);
             if (fightTimer > 50) {
@@ -20437,14 +20439,7 @@ window.__require = function e(t, n, r) {
             debuff.updateData(key, value);
           }
         }
-        if (args.hasOwnProperty("attack_speed")) {
-          this.attackSpeedNode.active = 0 != args.attack_speed;
-          if (args.attack_speed != this._lastAttackSpeed) {
-            this._lastAttackSpeed = args.attack_speed;
-            clearInterval(this._fightIT);
-            this.startTimer();
-          }
-        }
+        args.hasOwnProperty("attack_speed") && (this.attackSpeedNode.active = 0 != args.attack_speed);
         args.hasOwnProperty("amplified_damage") && (this.amplifiedDamageNode.active = 0 != args.amplified_damage);
       },
       cleanDebuff: function cleanDebuff(isCleanAll) {
@@ -23165,7 +23160,7 @@ window.__require = function e(t, n, r) {
           duration: "0",
           value_list: "1&4.17&basic_hp",
           property_affected_list: "0|hp_regeneration",
-          skill_type: "1|3|1&50&basic_hp|100|0",
+          skill_type: "1|3|1&50&basic_hp|100|1",
           skill_owner: "emergency",
           is_dynamic_value: "dynamic",
           is_dynamic_subValue: "",
@@ -26884,7 +26879,7 @@ window.__require = function e(t, n, r) {
           property_affected_list: "0|reflect_damage",
           skill_type: "0",
           skill_owner: "",
-          is_dynamic_value: "",
+          is_dynamic_value: "dynamic",
           is_dynamic_subValue: "",
           is_dynamic_condition: "",
           style: "1001|1,1002|1,1003|1,1004|1,1005|1,1006|1,1007|1,1008|1,1009|1,1010|1,",
@@ -28260,25 +28255,27 @@ window.__require = function e(t, n, r) {
         this.isDynamicValue = _skillConfig.is_dynamic_value;
         this.isDynamicSubValue = _skillConfig.is_dynamic_subValue;
         this.isDynamicCondition = _skillConfig.is_dynamic_condition;
-        var propertyArr = _propertyAffected.split("|");
-        this.propertyType = parseInt(propertyArr[0]);
-        if (this.propertyType == EnumType.PROPERTY_TYPE.BULLET_DAMAGE) {
-          this.bulletDamageType = propertyArr[1];
-          this.property = propertyArr[2];
-        } else this.property = propertyArr[1];
-        this.valueArr = _value.split("&");
-        this.valueType = parseInt(this.valueArr[0]);
-        this.dependOnEnemy = 4 == this.valueArr.length;
-        if (this.valueArr.length >= 3) if (this.valueArr[2].indexOf("-") >= 0) {
-          var arr = this.valueArr[2].split("-");
-          this.baseValue = arr[0];
-          this.baseValueDamageType = arr[1];
-        } else this.baseValue = this.valueArr[2]; else this.baseValue = null;
-        if (this.valueArr[1].indexOf("|") >= 0) {
-          var baseSubValueArr = this.valueArr[1].split("|");
-          this.baseSubValueCount = parseInt(baseSubValueArr[0]);
-          this.baseSubValue = baseSubValueArr[1];
-        } else this.valueType == EnumType.VALUE_TYPE.NUMBER && (this.value = Number(this.valueArr[1]));
+        if ("" != _propertyAffected) {
+          var propertyArr = _propertyAffected.split("|");
+          this.propertyType = parseInt(propertyArr[0]);
+          if (this.propertyType == EnumType.PROPERTY_TYPE.BULLET_DAMAGE) {
+            this.bulletDamageType = propertyArr[1];
+            this.property = propertyArr[2];
+          } else this.property = propertyArr[1];
+          this.valueArr = _value.split("&");
+          this.valueType = parseInt(this.valueArr[0]);
+          this.dependOnEnemy = 4 == this.valueArr.length;
+          if (this.valueArr.length >= 3) if (this.valueArr[2].indexOf("-") >= 0) {
+            var arr = this.valueArr[2].split("-");
+            this.baseValue = arr[0];
+            this.baseValueDamageType = arr[1];
+          } else this.baseValue = this.valueArr[2]; else this.baseValue = null;
+          if (this.valueArr[1].indexOf("|") >= 0) {
+            var baseSubValueArr = this.valueArr[1].split("|");
+            this.baseSubValueCount = parseInt(baseSubValueArr[0]);
+            this.baseSubValue = baseSubValueArr[1];
+          } else this.valueType == EnumType.VALUE_TYPE.NUMBER && (this.value = Number(this.valueArr[1]));
+        }
         var durationArr = _skillConfig.duration.split("|");
         this.durationType = parseInt(durationArr[0]);
         this.durationValue = durationArr.length > 1 ? parseInt(durationArr[1]) : null;
@@ -28474,7 +28471,6 @@ window.__require = function e(t, n, r) {
         }
         this.handleStyle(skillConfig);
         var skillTypeArr = null;
-        if ("" == skillConfig.propertyAffectedList) return;
         if (null == _ownerSkillSet && true == _roleData.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.GET_SKILL)) for (var i = 0; i < _roleData.eventsDict[EnumType.EVENT_TRIGGER_TYPE.GET_SKILL].length; i++) {
           var event = _roleData.eventsDict[EnumType.EVENT_TRIGGER_TYPE.GET_SKILL][i];
           _roleData.eventListener(event, parseInt(skillConfig.rarity));
@@ -28497,7 +28493,7 @@ window.__require = function e(t, n, r) {
           skillSet.values.push(skillData);
           skillSet.combineResult = skillData.combineResult;
           skillSet.combineArr = skillData.combineArr;
-          if (skillType == EnumType.CONDITION_TYPE.GET) skillData.propertyType == EnumType.PROPERTY_TYPE.ENHANCEMENT_EFFECT ? _roleData.updateEnchancementEffect(skillData) : _roleData.updateProperty(skillData); else {
+          if ("" != skillConfig.propertyAffectedList) if (skillType == EnumType.CONDITION_TYPE.GET) skillData.propertyType == EnumType.PROPERTY_TYPE.ENHANCEMENT_EFFECT ? _roleData.updateEnchancementEffect(skillData) : _roleData.updateProperty(skillData); else {
             var hasSkill = false;
             if (skillData.condition && true == _roleData.eventsDict.hasOwnProperty(skillData.condition)) for (var index in _roleData.eventsDict[skillData.condition]) {
               var item = _roleData.eventsDict[skillData.condition][index];
