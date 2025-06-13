@@ -2636,17 +2636,17 @@
           "valueList": ""
         },
         {
-          "id": "task_claim_all",
+          "id": "btn_claim_all",
           "content": "全部领取",
           "valueList": ""
         },
         {
-          "id": "task_claim",
+          "id": "btn_claim",
           "content": "领取",
           "valueList": ""
         },
         {
-          "id": "task_claimed",
+          "id": "claimed",
           "content": "已领取",
           "valueList": ""
         },
@@ -2741,11 +2741,6 @@
           "valueList": ""
         },
         {
-          "id": "mail_claim",
-          "content": "领取",
-          "valueList": ""
-        },
-        {
           "id": "mail_time_type_1",
           "content": "刚刚",
           "valueList": ""
@@ -2761,8 +2756,63 @@
           "valueList": ""
         },
         {
-          "id": "mail_claimed",
-          "content": "已领取",
+          "id": "mail_info_title_sub",
+          "content": "奖励",
+          "valueList": ""
+        },
+        {
+          "id": "vip_daily_reward",
+          "content": "每日奖励",
+          "valueList": ""
+        },
+        {
+          "id": "vip_ad_free",
+          "content": "免广告特权",
+          "valueList": ""
+        },
+        {
+          "id": "vip_privilege",
+          "content": "特权",
+          "valueList": ""
+        },
+        {
+          "id": "vip_permanent_ad_free",
+          "content": "永久免广告",
+          "valueList": ""
+        },
+        {
+          "id": "vip_purchase_reward",
+          "content": "购买奖励",
+          "valueList": ""
+        },
+        {
+          "id": "vip_battle_speed_2",
+          "content": "战斗2倍加速",
+          "valueList": ""
+        },
+        {
+          "id": "vip_raid_speed",
+          "content": "扫荡更高倍速",
+          "valueList": ""
+        },
+        {
+          "id": "vip_raid_reward",
+          "content": "扫荡更多奖励",
+          "valueList": ""
+        },
+        {
+          "id": "vip_month_card",
+          "content": "每月特权卡",
+          "valueList": ""
+        },
+        {
+          "id": "vip_life_time_card",
+          "content": "永久特权卡",
+          "valueList": ""
+        },
+        {
+          "id": "vip_more_coin",
+          "content": "金币获取+10%",
           "valueList": ""
         }
       ]

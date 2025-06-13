@@ -1,0 +1,676 @@
+[
+  1,
+  [
+    "54RyZGZAZAkYTnPPo6LlT0",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "0da5S1rAFCsKi5aot1tJlI"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "node",
+        "_materials"
+      ],
+      -2,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      6
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_1018",
+          "\nUltra_1018.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/Weapon_13\n  rotate: true\n  xy: 2, 59\n  size: 62, 73\n  orig: 88, 104\n  offset: 13, 15\n  index: -1\nImage/Xb/XB_00000\n  rotate: true\n  xy: 2, 2\n  size: 55, 59\n  orig: 113, 118\n  offset: 30, 34\n  index: -1\nImage/Xb/XB_00001\n  rotate: true\n  xy: 2, 123\n  size: 82, 86\n  orig: 113, 118\n  offset: 16, 15\n  index: -1\nImage/Xb/XB_00002\n  rotate: false\n  xy: 2, 207\n  size: 102, 102\n  orig: 113, 118\n  offset: 6, 10\n  index: -1\nImage/Xb/XB_00003\n  rotate: false\n  xy: 2, 311\n  size: 111, 118\n  orig: 113, 118\n  offset: 1, 0\n  index: -1\n",
+          [
+            "Ultra_1018.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "IR66SN4nsjWviOzMFJIYAiuesH4",
+              "spine": "3.8.99",
+              "x": -180.2,
+              "y": -93.65,
+              "width": 1051.23,
+              "height": 644.27,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "BBB",
+                "parent": "Zong"
+              },
+              {
+                "name": "1",
+                "parent": "BBB",
+                "x": 90
+              },
+              {
+                "name": "2",
+                "parent": "BBB",
+                "x": -90
+              },
+              {
+                "name": "3",
+                "parent": "Zong",
+                "x": 90
+              },
+              {
+                "name": "FX",
+                "parent": "Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/Weapon_13",
+                "bone": "1",
+                "attachment": "Image/Weapon_13"
+              },
+              {
+                "name": "Image/Weapon_15",
+                "bone": "3",
+                "attachment": "Image/Weapon_13"
+              },
+              {
+                "name": "Image/Weapon_14",
+                "bone": "2",
+                "attachment": "Image/Weapon_13"
+              },
+              {
+                "name": "Image/Xb/XB_00000",
+                "bone": "FX"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Weapon_13": {
+                    "Image/Weapon_13": {
+                      "width": 88,
+                      "height": 104
+                    }
+                  },
+                  "Image/Weapon_14": {
+                    "Image/Weapon_13": {
+                      "width": 88,
+                      "height": 104
+                    }
+                  },
+                  "Image/Weapon_15": {
+                    "Image/Weapon_13": {
+                      "width": 88,
+                      "height": 104
+                    }
+                  },
+                  "Image/Xb/XB_00000": {
+                    "Image/Xb/XB_00000": {
+                      "x": 0.5,
+                      "width": 113,
+                      "height": 118
+                    },
+                    "Image/Xb/XB_00001": {
+                      "x": 0.5,
+                      "width": 113,
+                      "height": 118
+                    },
+                    "Image/Xb/XB_00002": {
+                      "x": 0.5,
+                      "width": 113,
+                      "height": 118
+                    },
+                    "Image/Xb/XB_00003": {
+                      "x": 0.5,
+                      "width": 113,
+                      "height": 118
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/Weapon_13": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Weapon_13"
+                      },
+                      {
+                        "time": 1.8,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Weapon_14": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Weapon_13"
+                      },
+                      {
+                        "time": 1.8,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Weapon_15": {
+                    "color": [
+                      {
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.1333,
+                        "color": "ffffffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.5,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Xb/XB_00000": {
+                    "color": [
+                      {
+                        "time": 0.4667,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.5,
+                        "color": "ffe55dff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Xb/XB_00000"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Xb/XB_00001"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Xb/XB_00002"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Xb/XB_00003"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "1": {
+                    "rotate": [
+                      {
+                        "time": 0.5333
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": 90
+                      },
+                      {
+                        "time": 0.8,
+                        "angle": 180
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -90
+                      },
+                      {
+                        "time": 1.0667
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": 90
+                      },
+                      {
+                        "time": 1.3333,
+                        "angle": 180
+                      },
+                      {
+                        "time": 1.4667,
+                        "angle": -90
+                      },
+                      {
+                        "time": 1.6
+                      },
+                      {
+                        "time": 1.7333,
+                        "angle": 90
+                      },
+                      {
+                        "time": 1.8667,
+                        "angle": 180
+                      },
+                      {
+                        "time": 2,
+                        "angle": -90
+                      },
+                      {
+                        "time": 2.1333
+                      }
+                    ]
+                  },
+                  "2": {
+                    "rotate": [
+                      {
+                        "time": 0.5333
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": 90
+                      },
+                      {
+                        "time": 0.8,
+                        "angle": 180
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -90
+                      },
+                      {
+                        "time": 1.0667
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": 90
+                      },
+                      {
+                        "time": 1.3333,
+                        "angle": 180
+                      },
+                      {
+                        "time": 1.4667,
+                        "angle": -90
+                      },
+                      {
+                        "time": 1.6
+                      },
+                      {
+                        "time": 1.7333,
+                        "angle": 90
+                      },
+                      {
+                        "time": 1.8667,
+                        "angle": 180
+                      },
+                      {
+                        "time": 2,
+                        "angle": -90
+                      },
+                      {
+                        "time": 2.1333
+                      }
+                    ]
+                  },
+                  "3": {
+                    "translate": [
+                      {
+                        "x": 158.51,
+                        "y": 90.25
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.1,
+                        "x": 1.08,
+                        "y": 1.06
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 0.92,
+                        "y": 0.88
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 1.08,
+                        "y": 1.06
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": 0.92,
+                        "y": 0.88
+                      },
+                      {
+                        "time": 0.4,
+                        "x": 1.08,
+                        "y": 1.06
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 0.64,
+                        "y": 0.639
+                      }
+                    ]
+                  },
+                  "Zong": {
+                    "translate": [
+                      {
+                        "x": -101.13,
+                        "y": 29.43
+                      }
+                    ]
+                  },
+                  "BBB": {
+                    "rotate": [
+                      {
+                        "time": 0.7333
+                      },
+                      {
+                        "time": 0.9667,
+                        "angle": 90
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": 180
+                      },
+                      {
+                        "time": 1.3,
+                        "angle": -90
+                      },
+                      {
+                        "time": 1.4667
+                      },
+                      {
+                        "time": 1.6333,
+                        "angle": 90
+                      },
+                      {
+                        "time": 1.8,
+                        "angle": 180
+                      },
+                      {
+                        "time": 1.9667,
+                        "angle": -90
+                      },
+                      {
+                        "time": 2.1333
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.5333,
+                        "x": 247.6,
+                        "y": 91.4,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.7,
+                        "x": 247.6,
+                        "y": 91.4,
+                        "curve": 0.007,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.8667,
+                        "x": 1137.43,
+                        "y": 84.29
+                      }
+                    ]
+                  },
+                  "FX": {
+                    "translate": [
+                      {
+                        "time": 0.4667,
+                        "x": 249.17,
+                        "y": 87.35
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.4667
+                      },
+                      {
+                        "time": 0.5,
+                        "x": 1.377,
+                        "y": 1.377
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 1.518,
+                        "y": 1.518
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 1.2,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_1018"
+        ],
+        [
+          2,
+          "ultimate_1018",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            1051.23,
+            644.27
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra_01",
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

@@ -649,7 +649,7 @@
         [
           12,
           "Shop",
-          "\r\nShop.png\r\nsize: 1830,1528\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nDoor\r\n  rotate: true\r\n  xy: 1009, 608\r\n  size: 918, 751\r\n  orig: 918, 751\r\n  offset: 0, 0\r\n  index: -1\r\nPENGZI\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 1048, 184\r\n  orig: 1048, 184\r\n  offset: 0, 0\r\n  index: -1\r\nShop\r\n  rotate: false\r\n  xy: 2, 188\r\n  size: 1005, 1338\r\n  orig: 1005, 1357\r\n  offset: 0, 19\r\n  index: -1\r\nbanzi\r\n  rotate: false\r\n  xy: 1009, 450\r\n  size: 819, 156\r\n  orig: 819, 156\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nShop.png\nsize: 1830,1528\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nDoor\n  rotate: true\n  xy: 1009, 608\n  size: 918, 751\n  orig: 918, 751\n  offset: 0, 0\n  index: -1\nPENGZI\n  rotate: false\n  xy: 2, 2\n  size: 1048, 184\n  orig: 1048, 184\n  offset: 0, 0\n  index: -1\nShop\n  rotate: false\n  xy: 2, 188\n  size: 1005, 1338\n  orig: 1005, 1357\n  offset: 0, 19\n  index: -1\nbanzi\n  rotate: false\n  xy: 1009, 450\n  size: 819, 156\n  orig: 819, 156\n  offset: 0, 0\n  index: -1\n",
           [
             "Shop.png"
           ],

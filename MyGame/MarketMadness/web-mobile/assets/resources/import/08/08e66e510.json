@@ -210,7 +210,7 @@
         [
           5,
           "Ultra_3004",
-          "\r\nUltra_3004.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/BX1\r\n  rotate: false\r\n  xy: 2, 162\r\n  size: 202, 290\r\n  orig: 202, 290\r\n  offset: 0, 0\r\n  index: -1\r\nImage/BXN\r\n  rotate: false\r\n  xy: 206, 162\r\n  size: 202, 290\r\n  orig: 202, 290\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Dppr\r\n  rotate: true\r\n  xy: 2, 2\r\n  size: 158, 290\r\n  orig: 158, 290\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nUltra_3004.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/BX1\n  rotate: false\n  xy: 2, 162\n  size: 202, 290\n  orig: 202, 290\n  offset: 0, 0\n  index: -1\nImage/BXN\n  rotate: false\n  xy: 206, 162\n  size: 202, 290\n  orig: 202, 290\n  offset: 0, 0\n  index: -1\nImage/Dppr\n  rotate: true\n  xy: 2, 2\n  size: 158, 290\n  orig: 158, 290\n  offset: 0, 0\n  index: -1\n",
           [
             "Ultra_3004.png"
           ],

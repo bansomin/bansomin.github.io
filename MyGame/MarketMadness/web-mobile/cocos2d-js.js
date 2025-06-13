@@ -31647,14 +31647,14 @@
       }
     }
     function deserializeCCObject(data, objectData) {
-      var mask = data[4][objectData[OBJ_DATA_MASK]];
-      var clazz = mask[MASK_CLASS];
-      var ctor = clazz[CLASS_TYPE];
+      var mask = data[4][objectData[0]];
+      var clazz = mask[0];
+      var ctor = clazz[0];
       var obj = new ctor();
-      var keys = clazz[CLASS_KEYS];
-      var classTypeOffset = clazz[CLASS_PROP_TYPE_OFFSET];
+      var keys = clazz[1];
+      var classTypeOffset = clazz[2];
       var maskTypeOffset = mask[mask.length - 1];
-      var i = MASK_CLASS + 1;
+      var i = 1;
       for (;i < maskTypeOffset; ++i) {
         var _key = keys[mask[i]];
         obj[_key] = objectData[i];
@@ -31692,15 +31692,15 @@
       owner[key] = deserializeCCObject(data, value);
     }
     function parseCustomClass(data, owner, key, value) {
-      var ctor = data[3][value[CUSTOM_OBJ_DATA_CLASS]];
-      owner[key] = deserializeCustomCCObject(data, ctor, value[CUSTOM_OBJ_DATA_CONTENT]);
+      var ctor = data[3][value[0]];
+      owner[key] = deserializeCustomCCObject(data, ctor, value[1]);
     }
     function parseValueTypeCreated(data, owner, key, value) {
-      BuiltinValueTypeSetters[value[VALUETYPE_SETTER]](owner[key], value);
+      BuiltinValueTypeSetters[value[0]](owner[key], value);
     }
     function parseValueType(data, owner, key, value) {
-      var val = new BuiltinValueTypes[value[VALUETYPE_SETTER]]();
-      BuiltinValueTypeSetters[value[VALUETYPE_SETTER]](val, value);
+      var val = new BuiltinValueTypes[value[0]]();
+      BuiltinValueTypeSetters[value[0]](val, value);
       owner[key] = val;
     }
     function parseTRS(data, owner, key, value) {
@@ -31708,9 +31708,9 @@
       typedArray.set(value);
     }
     function parseDict(data, owner, key, value) {
-      var dict = value[DICT_JSON_LAYOUT];
+      var dict = value[0];
       owner[key] = dict;
-      for (var i = DICT_JSON_LAYOUT + 1; i < value.length; i += 3) {
+      for (var i = 1; i < value.length; i += 3) {
         var _key3 = value[i];
         var _type2 = value[i + 1];
         var subValue = value[i + 2];
@@ -31719,7 +31719,7 @@
       }
     }
     function parseArray(data, owner, key, value) {
-      var array = value[ARRAY_ITEM_VALUES];
+      var array = value[0];
       owner[key] = array;
       for (var i = 0; i < array.length; ++i) {
         var subValue = array[i];
@@ -31747,7 +31747,7 @@
     function parseInstances(data) {
       var instances = data[5];
       var instanceTypes = data[6];
-      var instanceTypesLen = instanceTypes === EMPTY_PLACEHOLDER ? 0 : instanceTypes.length;
+      var instanceTypesLen = 0 === instanceTypes ? 0 : instanceTypes.length;
       var rootIndex = instances[instances.length - 1];
       var normalObjectCount = instances.length - instanceTypesLen;
       if ("number" !== typeof rootIndex) rootIndex = 0; else {
@@ -31799,8 +31799,8 @@
         var klassLayout = classes[i];
         if ("string" !== typeof klassLayout) {
           true;
-          if ("function" === typeof klassLayout[CLASS_TYPE]) throw new Error("Can not deserialize the same JSON data again.");
-          var _type5 = klassLayout[CLASS_TYPE];
+          if ("function" === typeof klassLayout[0]) throw new Error("Can not deserialize the same JSON data again.");
+          var _type5 = klassLayout[0];
           doLookupClass(classFinder, _type5, klassLayout, CLASS_TYPE, silent, customFinder);
         } else doLookupClass(classFinder, klassLayout, classes, i, silent, customFinder);
       }
@@ -31811,7 +31811,7 @@
         var classes = data[3];
         for (var i = 0; i < masks.length; ++i) {
           var mask = masks[i];
-          mask[MASK_CLASS] = classes[mask[MASK_CLASS]];
+          mask[0] = classes[mask[0]];
         }
       }
     }
@@ -31847,7 +31847,7 @@
         preprocessed = version.preprocessed;
         version = version.version;
       }
-      if (version < SUPPORT_MIN_FORMAT_VERSION) throw new Error(cc.debug.getError(5304, version));
+      if (version < 1) throw new Error(cc.debug.getError(5304, version));
       options._version = version;
       options.result = details;
       data[0] = options;
@@ -31870,7 +31870,7 @@
       this.version = version;
     };
     function unpackJSONs(data, classFinder) {
-      if (data[0] < SUPPORT_MIN_FORMAT_VERSION) throw new Error(cc.debug.getError(5304, data[0]));
+      if (data[0] < 1) throw new Error(cc.debug.getError(5304, data[0]));
       lookupClasses(data, true, classFinder);
       cacheMasks(data);
       var version = new FileInfo(data[0]);
@@ -31883,7 +31883,7 @@
       return sections;
     }
     function packCustomObjData(type, data, hasNativeDep) {
-      return [ SUPPORT_MIN_FORMAT_VERSION, EMPTY_PLACEHOLDER, EMPTY_PLACEHOLDER, [ type ], EMPTY_PLACEHOLDER, hasNativeDep ? [ data, -1 ] : [ data ], [ 0 ], EMPTY_PLACEHOLDER, [], [], [] ];
+      return [ 1, EMPTY_PLACEHOLDER, EMPTY_PLACEHOLDER, [ type ], EMPTY_PLACEHOLDER, hasNativeDep ? [ data, -1 ] : [ data ], [ 0 ], EMPTY_PLACEHOLDER, [], [], [] ];
     }
     function hasNativeDep(data) {
       var instances = data[5];

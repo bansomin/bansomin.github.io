@@ -1,0 +1,781 @@
+[
+  1,
+  [
+    "7aGHazTadD+7jZV0uxjJEj",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "389NRLXPtDiaomBh76SE4Y"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "node",
+        "_materials"
+      ],
+      -2,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      6
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_1015",
+          "\nUltra_1015.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/Pen/FENNda_00000\n  rotate: false\n  xy: 358, 7\n  size: 40, 50\n  orig: 422, 127\n  offset: 43, 29\n  index: -1\nImage/Pen/FENNda_00001\n  rotate: false\n  xy: 2, 2\n  size: 354, 27\n  orig: 422, 127\n  offset: 52, 36\n  index: -1\nImage/Pen/FENNda_00002\n  rotate: false\n  xy: 2, 386\n  size: 410, 113\n  orig: 422, 127\n  offset: 1, 13\n  index: -1\nImage/Pen/FENNda_00003\n  rotate: false\n  xy: 2, 204\n  size: 370, 85\n  orig: 422, 127\n  offset: 41, 6\n  index: -1\nImage/Pen/FENNda_00004\n  rotate: false\n  xy: 2, 116\n  size: 355, 86\n  orig: 422, 127\n  offset: 57, 5\n  index: -1\nImage/Pen/FENNda_00005\n  rotate: false\n  xy: 2, 291\n  size: 343, 93\n  orig: 422, 127\n  offset: 76, 1\n  index: -1\nImage/Pen/FENNda_00006\n  rotate: true\n  xy: 374, 143\n  size: 241, 94\n  orig: 422, 127\n  offset: 181, 1\n  index: -1\nImage/Pen/FENNda_00007\n  rotate: false\n  xy: 187, 59\n  size: 196, 55\n  orig: 422, 127\n  offset: 225, 32\n  index: -1\nImage/Weapon_16\n  rotate: true\n  xy: 2, 31\n  size: 83, 183\n  orig: 83, 183\n  offset: 0, 0\n  index: -1\n",
+          [
+            "Ultra_1015.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "ylvfrOePHxVhQBZuLNOH8UjFaaY",
+              "spine": "3.8.99",
+              "x": -41.15,
+              "y": -1.32,
+              "width": 83,
+              "height": 183,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Fenda",
+                "parent": "Zong",
+                "length": 31.07,
+                "rotation": 89.4,
+                "x": 0.09,
+                "y": 36.11
+              },
+              {
+                "name": "Zong3",
+                "parent": "Fenda",
+                "length": 48.07,
+                "rotation": 0.99,
+                "x": 31.07
+              },
+              {
+                "name": "Zong4",
+                "parent": "Zong3",
+                "length": 25.51,
+                "rotation": -0.39,
+                "x": 55.59,
+                "y": -0.38
+              },
+              {
+                "name": "Water",
+                "parent": "Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/Weapon_16",
+                "bone": "Zong4",
+                "attachment": "Image/Weapon_16"
+              },
+              {
+                "name": "Image/Pen/FENNda_00000",
+                "bone": "Water"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Pen/FENNda_00000": {
+                    "Image/Pen/FENNda_00000": {
+                      "y": 0.5,
+                      "width": 422,
+                      "height": 127
+                    },
+                    "Image/Pen/FENNda_00001": {
+                      "y": 0.5,
+                      "width": 422,
+                      "height": 127
+                    },
+                    "Image/Pen/FENNda_00002": {
+                      "y": 0.5,
+                      "width": 422,
+                      "height": 127
+                    },
+                    "Image/Pen/FENNda_00003": {
+                      "y": 0.5,
+                      "width": 422,
+                      "height": 127
+                    },
+                    "Image/Pen/FENNda_00004": {
+                      "y": 0.5,
+                      "width": 422,
+                      "height": 127
+                    },
+                    "Image/Pen/FENNda_00005": {
+                      "y": 0.5,
+                      "width": 422,
+                      "height": 127
+                    },
+                    "Image/Pen/FENNda_00006": {
+                      "y": 0.5,
+                      "width": 422,
+                      "height": 127
+                    },
+                    "Image/Pen/FENNda_00007": {
+                      "y": 0.5,
+                      "width": 422,
+                      "height": 127
+                    }
+                  },
+                  "Image/Weapon_16": {
+                    "Image/Weapon_16": {
+                      "type": "mesh",
+                      "hull": 8,
+                      "width": 83,
+                      "height": 183,
+                      "uvs": [
+                        1,
+                        0.32587,
+                        1,
+                        0.6064,
+                        1,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0.58605,
+                        0,
+                        0.33313,
+                        0,
+                        0,
+                        1,
+                        0
+                      ],
+                      "triangles": [
+                        5,
+                        6,
+                        0,
+                        6,
+                        7,
+                        0,
+                        4,
+                        0,
+                        1,
+                        4,
+                        5,
+                        0,
+                        3,
+                        4,
+                        1,
+                        3,
+                        1,
+                        2
+                      ],
+                      "vertices": [
+                        3,
+                        2,
+                        86.37,
+                        -40.86,
+                        0.00285,
+                        3,
+                        54.59,
+                        -41.81,
+                        0.26044,
+                        4,
+                        -0.72,
+                        -41.44,
+                        0.73671,
+                        3,
+                        2,
+                        35.03,
+                        -41.4,
+                        0.25947,
+                        3,
+                        3.25,
+                        -41.46,
+                        0.73909,
+                        4,
+                        -52.06,
+                        -41.44,
+                        0.00144,
+                        1,
+                        2,
+                        -36.99,
+                        -42.16,
+                        1,
+                        1,
+                        2,
+                        -37.86,
+                        40.84,
+                        1,
+                        3,
+                        2,
+                        37.88,
+                        41.64,
+                        0.20129,
+                        3,
+                        7.54,
+                        41.51,
+                        0.79804,
+                        4,
+                        -48.33,
+                        41.56,
+                        0.00066,
+                        3,
+                        2,
+                        84.17,
+                        42.12,
+                        0.0083,
+                        3,
+                        53.82,
+                        41.2,
+                        0.77217,
+                        4,
+                        -2.05,
+                        41.56,
+                        0.21953,
+                        2,
+                        3,
+                        114.78,
+                        40.78,
+                        0.01923,
+                        4,
+                        58.91,
+                        41.56,
+                        0.98077,
+                        1,
+                        4,
+                        58.91,
+                        -41.44,
+                        1
+                      ],
+                      "edges": [
+                        4,
+                        6,
+                        12,
+                        14,
+                        6,
+                        8,
+                        8,
+                        10,
+                        10,
+                        12,
+                        0,
+                        14,
+                        0,
+                        2,
+                        2,
+                        4
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/Pen/FENNda_00000": {
+                    "attachment": [
+                      {
+                        "time": 1.1667,
+                        "name": "Image/Pen/FENNda_00000"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": "Image/Pen/FENNda_00001"
+                      },
+                      {
+                        "time": 1.2333,
+                        "name": "Image/Pen/FENNda_00002"
+                      },
+                      {
+                        "time": 1.2667,
+                        "name": "Image/Pen/FENNda_00003"
+                      },
+                      {
+                        "time": 1.3,
+                        "name": "Image/Pen/FENNda_00004"
+                      },
+                      {
+                        "time": 1.3333,
+                        "name": "Image/Pen/FENNda_00005"
+                      },
+                      {
+                        "time": 1.3667,
+                        "name": "Image/Pen/FENNda_00006"
+                      },
+                      {
+                        "time": 1.4,
+                        "name": "Image/Pen/FENNda_00007"
+                      },
+                      {
+                        "time": 1.4333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Weapon_16": {
+                    "color": [
+                      {
+                        "color": "ffffff2e"
+                      },
+                      {
+                        "time": 0.1,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.4,
+                        "color": "ffffff00"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong": {
+                    "translate": [
+                      {
+                        "x": -101.13,
+                        "y": 29.43
+                      }
+                    ]
+                  },
+                  "Fenda": {
+                    "rotate": [
+                      {
+                        "angle": -108
+                      },
+                      {
+                        "time": 0.2,
+                        "angle": -102
+                      },
+                      {
+                        "time": 0.4333,
+                        "angle": -99.6
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": -104.4
+                      },
+                      {
+                        "time": 0.8667,
+                        "angle": -102
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": -106.8,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.1667,
+                        "angle": -106.8
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": -41.23
+                      },
+                      {
+                        "time": 1.3333,
+                        "angle": -19.63
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 3.21,
+                        "y": 218.03
+                      },
+                      {
+                        "time": 0.2,
+                        "x": -8.12,
+                        "y": 220.56
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 9.21,
+                        "y": 216.69
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -13.23,
+                        "y": 225.06
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 14.31,
+                        "y": 215.13
+                      },
+                      {
+                        "time": 0.7,
+                        "x": -11.14,
+                        "y": 224.64
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 20.31,
+                        "y": 218.36
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": -11.33,
+                        "y": 226.16
+                      },
+                      {
+                        "time": 1,
+                        "x": 15,
+                        "y": 221.24
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": -6.63,
+                        "y": 222.3
+                      },
+                      {
+                        "time": 1.1,
+                        "x": 7.83,
+                        "y": 219.06
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": -4.46,
+                        "y": 221.81
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": -9.57,
+                        "y": 223.41
+                      },
+                      {
+                        "time": 1.2,
+                        "x": -45.58,
+                        "y": 235.72
+                      },
+                      {
+                        "time": 1.2333,
+                        "x": -158.68,
+                        "y": 282.17
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": -193.02,
+                        "y": 270.73
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.6667
+                      },
+                      {
+                        "time": 1.1333,
+                        "y": 0.729
+                      },
+                      {
+                        "time": 1.1667,
+                        "y": 0.52
+                      },
+                      {
+                        "time": 1.2,
+                        "y": 0.691
+                      }
+                    ]
+                  },
+                  "Zong3": {
+                    "rotate": [
+                      {
+                        "time": 1.1667
+                      },
+                      {
+                        "time": 1.2,
+                        "angle": -19.47
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.1667
+                      },
+                      {
+                        "time": 1.2,
+                        "x": 9.65,
+                        "y": 0.17
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.4
+                      },
+                      {
+                        "time": 0.6,
+                        "y": 1.173
+                      },
+                      {
+                        "time": 0.7,
+                        "y": 1.082
+                      },
+                      {
+                        "time": 0.8333,
+                        "y": 1.193
+                      },
+                      {
+                        "time": 0.9333,
+                        "y": 1.115
+                      },
+                      {
+                        "time": 1,
+                        "y": 1.176
+                      },
+                      {
+                        "time": 1.1333,
+                        "y": 1.751
+                      },
+                      {
+                        "time": 1.1667,
+                        "y": 1.051
+                      }
+                    ]
+                  },
+                  "Water": {
+                    "rotate": [
+                      {
+                        "time": 1.1667,
+                        "angle": -13.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 1.1667,
+                        "x": 415.37,
+                        "y": 172.7
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 1.1667,
+                        "x": 2,
+                        "y": 2
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 1.2,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_1015"
+        ],
+        [
+          2,
+          "ultimate_1015",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            83,
+            183
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra_01",
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,1093 @@
+[
+  1,
+  [
+    "c2yJWU1VRA77F1isVtRwXQ",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "9fDnKYrRpFOKD83p8fK/Oq"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "node",
+        "_materials"
+      ],
+      -2,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      6
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_1019",
+          "\nUltra_1019.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/Water/Water_00009\n  rotate: false\n  xy: 2, 122\n  size: 113, 109\n  orig: 118, 120\n  offset: 3, 0\n  index: -1\nImage/Water/Water_00010\n  rotate: false\n  xy: 352, 233\n  size: 116, 113\n  orig: 118, 120\n  offset: 2, 1\n  index: -1\nImage/Water/Water_00011\n  rotate: false\n  xy: 352, 233\n  size: 116, 113\n  orig: 118, 120\n  offset: 2, 1\n  index: -1\nImage/Water/Water_00012\n  rotate: true\n  xy: 235, 234\n  size: 116, 115\n  orig: 118, 120\n  offset: 0, 1\n  index: -1\nImage/Water/Water_00013\n  rotate: true\n  xy: 119, 232\n  size: 115, 113\n  orig: 118, 120\n  offset: 0, 3\n  index: -1\nImage/Water/Water_00014\n  rotate: false\n  xy: 2, 233\n  size: 115, 114\n  orig: 118, 120\n  offset: 0, 3\n  index: -1\nImage/Water/Water_00015\n  rotate: false\n  xy: 235, 352\n  size: 116, 116\n  orig: 118, 120\n  offset: 0, 2\n  index: -1\nImage/Water/Water_00016\n  rotate: false\n  xy: 235, 352\n  size: 116, 116\n  orig: 118, 120\n  offset: 0, 2\n  index: -1\nImage/Water/Water_00017\n  rotate: false\n  xy: 2, 350\n  size: 115, 118\n  orig: 118, 120\n  offset: 0, 0\n  index: -1\nImage/Water/Water_00018\n  rotate: false\n  xy: 119, 349\n  size: 114, 119\n  orig: 118, 120\n  offset: 1, 0\n  index: -1\nImage/Water/Water_00019\n  rotate: false\n  xy: 353, 348\n  size: 112, 120\n  orig: 118, 120\n  offset: 3, 0\n  index: -1\nImage/Water/Water_00020\n  rotate: true\n  xy: 234, 123\n  size: 108, 118\n  orig: 118, 120\n  offset: 7, 1\n  index: -1\nImage/Water/Water_00021\n  rotate: true\n  xy: 234, 123\n  size: 108, 118\n  orig: 118, 120\n  offset: 7, 1\n  index: -1\nImage/Water/Water_00022\n  rotate: true\n  xy: 117, 139\n  size: 91, 114\n  orig: 118, 120\n  offset: 8, 2\n  index: -1\nImage/Water/Water_00023\n  rotate: false\n  xy: 354, 139\n  size: 81, 92\n  orig: 118, 120\n  offset: 10, 23\n  index: -1\nImage/Water/Water_00024\n  rotate: false\n  xy: 117, 131\n  size: 4, 6\n  orig: 118, 120\n  offset: 10, 23\n  index: -1\nImage/Weapon_15\n  rotate: false\n  xy: 437, 175\n  size: 29, 56\n  orig: 46, 92\n  offset: 8, 18\n  index: -1\n",
+          [
+            "Ultra_1019.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "s3GEVQpJkpUHDgkQBBys/hqksgE",
+              "spine": "3.8.99",
+              "x": -15.29,
+              "y": 51.3,
+              "width": 77,
+              "height": 154,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Cans",
+                "parent": "Zong",
+                "x": 22.71,
+                "y": 128.3
+              },
+              {
+                "name": "Water",
+                "parent": "Cans"
+              },
+              {
+                "name": "Water2",
+                "parent": "Cans"
+              },
+              {
+                "name": "Water3",
+                "parent": "Cans"
+              },
+              {
+                "name": "Water4",
+                "parent": "Cans"
+              },
+              {
+                "name": "Water5",
+                "parent": "Cans"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/Weapon_15",
+                "bone": "Cans",
+                "attachment": "Image/Weapon_15"
+              },
+              {
+                "name": "Image/Water/Water_00009",
+                "bone": "Water"
+              },
+              {
+                "name": "Image/Water/Water_12",
+                "bone": "Water5"
+              },
+              {
+                "name": "Image/Water/Water_9",
+                "bone": "Water2"
+              },
+              {
+                "name": "Image/Water/Water_10",
+                "bone": "Water3"
+              },
+              {
+                "name": "Image/Water/Water_11",
+                "bone": "Water4"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Water/Water_00009": {
+                    "Image/Water/Water_00009": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00010": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00011": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00012": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00013": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00014": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00015": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00016": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00017": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00018": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00019": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00020": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00021": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00022": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00023": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00024": {
+                      "width": 196,
+                      "height": 200
+                    }
+                  },
+                  "Image/Water/Water_9": {
+                    "Image/Water/Water_00009": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00010": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00011": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00012": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00013": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00014": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00015": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00016": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00017": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00018": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00019": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00020": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00021": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00022": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00023": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00024": {
+                      "width": 196,
+                      "height": 200
+                    }
+                  },
+                  "Image/Water/Water_10": {
+                    "Image/Water/Water_00009": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00010": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00011": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00012": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00013": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00014": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00015": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00016": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00017": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00018": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00019": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00020": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00021": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00022": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00023": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00024": {
+                      "width": 196,
+                      "height": 200
+                    }
+                  },
+                  "Image/Water/Water_11": {
+                    "Image/Water/Water_00009": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00010": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00011": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00012": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00013": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00014": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00015": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00016": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00017": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00018": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00019": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00020": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00021": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00022": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00023": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00024": {
+                      "width": 196,
+                      "height": 200
+                    }
+                  },
+                  "Image/Water/Water_12": {
+                    "Image/Water/Water_00009": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00010": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00011": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00012": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00013": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00014": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00015": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00016": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00017": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00018": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00019": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00020": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00021": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00022": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00023": {
+                      "width": 196,
+                      "height": 200
+                    },
+                    "Image/Water/Water_00024": {
+                      "width": 196,
+                      "height": 200
+                    }
+                  },
+                  "Image/Weapon_15": {
+                    "Image/Weapon_15": {
+                      "x": 0.5,
+                      "width": 77,
+                      "height": 154
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Image/Water/Water_00009": {
+                    "attachment": [
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Water/Water_00009"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/Water/Water_00010"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Water/Water_00012"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/Water/Water_00014"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Water/Water_00016"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/Water/Water_00018"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Water/Water_00019"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Water/Water_00020"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Water/Water_00022"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Water/Water_00024"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Water/Water_9": {
+                    "attachment": [
+                      {
+                        "time": 0.4333,
+                        "name": "Image/Water/Water_00009"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/Water/Water_00010"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/Water/Water_00012"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/Water/Water_00014"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/Water/Water_00016"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/Water/Water_00018"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Water/Water_00019"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Water/Water_00020"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Water/Water_00022"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Water/Water_00024"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Water/Water_10": {
+                    "attachment": [
+                      {
+                        "time": 0.6333,
+                        "name": "Image/Water/Water_00009"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/Water/Water_00010"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": "Image/Water/Water_00012"
+                      },
+                      {
+                        "time": 0.7333,
+                        "name": "Image/Water/Water_00014"
+                      },
+                      {
+                        "time": 0.7667,
+                        "name": "Image/Water/Water_00016"
+                      },
+                      {
+                        "time": 0.8,
+                        "name": "Image/Water/Water_00018"
+                      },
+                      {
+                        "time": 0.8333,
+                        "name": "Image/Water/Water_00019"
+                      },
+                      {
+                        "time": 0.8667,
+                        "name": "Image/Water/Water_00020"
+                      },
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Water/Water_00022"
+                      },
+                      {
+                        "time": 1,
+                        "name": "Image/Water/Water_00024"
+                      },
+                      {
+                        "time": 1.0667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Water/Water_11": {
+                    "attachment": [
+                      {
+                        "time": 0.9333,
+                        "name": "Image/Water/Water_00009"
+                      },
+                      {
+                        "time": 0.9667,
+                        "name": "Image/Water/Water_00010"
+                      },
+                      {
+                        "time": 1,
+                        "name": "Image/Water/Water_00012"
+                      },
+                      {
+                        "time": 1.0333,
+                        "name": "Image/Water/Water_00014"
+                      },
+                      {
+                        "time": 1.0667,
+                        "name": "Image/Water/Water_00016"
+                      },
+                      {
+                        "time": 1.1,
+                        "name": "Image/Water/Water_00018"
+                      },
+                      {
+                        "time": 1.1333,
+                        "name": "Image/Water/Water_00019"
+                      },
+                      {
+                        "time": 1.1667,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Water/Water_12": {
+                    "color": [
+                      {
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.1667,
+                        "color": "ffffffff"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Image/Water/Water_00009"
+                      },
+                      {
+                        "time": 0.0333,
+                        "name": "Image/Water/Water_00010"
+                      },
+                      {
+                        "time": 0.0667,
+                        "name": "Image/Water/Water_00012"
+                      },
+                      {
+                        "time": 0.1,
+                        "name": "Image/Water/Water_00014"
+                      },
+                      {
+                        "time": 0.1333,
+                        "name": "Image/Water/Water_00016"
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/Water/Water_00018"
+                      },
+                      {
+                        "time": 0.2,
+                        "name": "Image/Water/Water_00019"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/Water/Water_00020"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/Water/Water_00022"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/Water/Water_00024"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Weapon_15": {
+                    "attachment": [
+                      {
+                        "time": 1.2333,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong": {
+                    "translate": [
+                      {
+                        "x": -101.13,
+                        "y": 29.43
+                      }
+                    ]
+                  },
+                  "Cans": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.3,
+                        "angle": 90
+                      },
+                      {
+                        "time": 0.6,
+                        "angle": 180
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -90
+                      },
+                      {
+                        "time": 1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 96.17,
+                        "y": -76.11
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 209.23,
+                        "y": 225.73
+                      },
+                      {
+                        "time": 0.6,
+                        "x": 379.06,
+                        "y": 410.7
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 564.33,
+                        "y": 247.21
+                      },
+                      {
+                        "time": 1.2,
+                        "x": 703.6,
+                        "y": -77.54
+                      }
+                    ]
+                  },
+                  "Water": {
+                    "translate": [
+                      {
+                        "time": 0.2333,
+                        "x": -6.73,
+                        "y": 14.02
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2333,
+                        "x": 0.77,
+                        "y": 0.902,
+                        "curve": 0.064,
+                        "c2": 0.34,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 0.847,
+                        "y": 0.992
+                      }
+                    ]
+                  },
+                  "Water2": {
+                    "rotate": [
+                      {
+                        "time": 0.4333,
+                        "angle": -45.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.4333,
+                        "x": -6.73,
+                        "y": 14.02
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.4333,
+                        "x": 0.77,
+                        "y": 0.902,
+                        "curve": 0.109,
+                        "c2": 0.41,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.7333,
+                        "x": 1.028,
+                        "y": 1.099
+                      }
+                    ]
+                  },
+                  "Water3": {
+                    "rotate": [
+                      {
+                        "time": 0.6333,
+                        "angle": -93.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.6333,
+                        "x": 2.42,
+                        "y": 7.84
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.6333,
+                        "x": 0.77,
+                        "y": 1.061,
+                        "curve": 0.119,
+                        "c2": 0.3,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.9667,
+                        "x": 1.135,
+                        "y": 1.563
+                      }
+                    ]
+                  },
+                  "Water4": {
+                    "rotate": [
+                      {
+                        "time": 0.9333,
+                        "angle": -93.6
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.9333,
+                        "x": 2.42,
+                        "y": 7.84
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9333,
+                        "x": 0.77,
+                        "y": 1.061
+                      }
+                    ]
+                  },
+                  "Water5": {
+                    "translate": [
+                      {
+                        "x": -6.73,
+                        "y": 14.02
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 0.77,
+                        "y": 0.902,
+                        "curve": 0.064,
+                        "c2": 0.34,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.847,
+                        "y": 0.992
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 1.2,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_1019"
+        ],
+        [
+          2,
+          "ultimate_1019",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            77,
+            154
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra_01",
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

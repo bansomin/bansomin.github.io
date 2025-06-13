@@ -790,7 +790,7 @@
         [
           13,
           "Card_Front",
-          "\r\nCard_Front.png\r\nsize: 192,384\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Cir_00000\r\n  rotate: false\r\n  xy: 96, 22\r\n  size: 72, 72\r\n  orig: 72, 72\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Line_00000\r\n  rotate: false\r\n  xy: 2, 96\r\n  size: 173, 95\r\n  orig: 184, 99\r\n  offset: 0, 2\r\n  index: -1\r\nImage/Star_00000\r\n  rotate: false\r\n  xy: 2, 193\r\n  size: 188, 189\r\n  orig: 190, 190\r\n  offset: 1, 0\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          "\nCard_Front.png\nsize: 192,384\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/Cir_00000\n  rotate: false\n  xy: 96, 22\n  size: 72, 72\n  orig: 72, 72\n  offset: 0, 0\n  index: -1\nImage/Line_00000\n  rotate: false\n  xy: 2, 96\n  size: 173, 95\n  orig: 184, 99\n  offset: 0, 2\n  index: -1\nImage/Star_00000\n  rotate: false\n  xy: 2, 193\n  size: 188, 189\n  orig: 190, 190\n  offset: 1, 0\n  index: -1\nImage/glow1\n  rotate: false\n  xy: 2, 2\n  size: 92, 92\n  orig: 98, 98\n  offset: 3, 3\n  index: -1\n",
           [
             "Card_Front.png"
           ],

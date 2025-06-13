@@ -1579,18 +1579,8 @@ window.__require = function e(t, n, r) {
         void 0 === callback && (callback = null);
         this.music.onComplete = callback;
       };
-      AudioManager.prototype.playMusic = function(url, callback, bundleName) {
-        if (this.music.switch) {
-          this.music.loop = false;
-          this.music.load(url, callback, bundleName).then();
-        }
-      };
-      AudioManager.prototype.playMusicLoop = function(url, bundleName) {
-        if (this.music.switch) {
-          this.music.loop = true;
-          this.music.load(url, null, bundleName).then();
-        }
-      };
+      AudioManager.prototype.playMusic = function(url, callback, bundleName) {};
+      AudioManager.prototype.playMusicLoop = function(url, bundleName) {};
       AudioManager.prototype.stopMusic = function() {
         this.music.switch && this.music.isPlaying && this.music.stop();
       };
@@ -2119,7 +2109,8 @@ window.__require = function e(t, n, r) {
         _showType & EnumType.ITEM_SHOW_TYPE.SELECTED_FLAG && this.showSelect(this.itemData.selected);
         this.probLabel.active = _showType & EnumType.ITEM_SHOW_TYPE.PROB_FLAG;
         _showType & EnumType.ITEM_SHOW_TYPE.PROB_FLAG && this.probLabel.getComponent("LabelUpdater").setString(_prob);
-        this.countLabel.setScale(_showType & EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2 ? 2 : 1);
+        this.countLabel.setScale(1);
+        _showType & EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_1 ? this.countLabel.setScale(2) : _showType & EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2 && this.countLabel.setScale(1.2);
         var self = this;
         var pathIcon = "icons/itemIcons/item_" + this.itemData.itemId;
         Global.res.load(pathIcon, cc.SpriteFrame, function(error, res) {
@@ -2323,8 +2314,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/player",
           ultimate_id: "1001",
           prologueMessages: "",
-          victoryMessages: "",
           defeatMessages: "",
+          victoryMessages: "",
           magazine: "1001,1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2358,8 +2349,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy01",
           ultimate_id: "3001",
           prologueMessages: "2001",
-          victoryMessages: "2003",
           defeatMessages: "2002",
+          victoryMessages: "2003",
           magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
@@ -2393,8 +2384,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy02",
           ultimate_id: "3002",
           prologueMessages: "2004",
-          victoryMessages: "2005",
-          defeatMessages: "2006",
+          defeatMessages: "2005",
+          victoryMessages: "2006",
           magazine: "1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
@@ -2428,8 +2419,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy03",
           ultimate_id: "3003",
           prologueMessages: "2007|2008",
-          victoryMessages: "2009",
-          defeatMessages: "2010",
+          defeatMessages: "2009",
+          victoryMessages: "2010",
           magazine: "1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
@@ -2463,8 +2454,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy04",
           ultimate_id: "3004",
           prologueMessages: "2011|2012",
-          victoryMessages: "2013",
-          defeatMessages: "2014",
+          defeatMessages: "2013",
+          victoryMessages: "2014",
           magazine: "1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
@@ -2498,8 +2489,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy05",
           ultimate_id: "3005",
           prologueMessages: "2015",
-          victoryMessages: "2016",
-          defeatMessages: "2017",
+          defeatMessages: "2016",
+          victoryMessages: "2017",
           magazine: "1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
@@ -2533,8 +2524,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy06",
           ultimate_id: "3006",
           prologueMessages: "2018",
-          victoryMessages: "2019",
-          defeatMessages: "2020",
+          defeatMessages: "2019",
+          victoryMessages: "2020",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
@@ -2568,8 +2559,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy07",
           ultimate_id: "3007",
           prologueMessages: "2021",
-          victoryMessages: "2022",
-          defeatMessages: "2023",
+          defeatMessages: "2022",
+          victoryMessages: "2023",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
@@ -2603,8 +2594,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy08",
           ultimate_id: "3007",
           prologueMessages: "2001",
-          victoryMessages: "2003",
-          defeatMessages: "2002",
+          defeatMessages: "2003",
+          victoryMessages: "2002",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2638,8 +2629,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy09",
           ultimate_id: "3009",
           prologueMessages: "2001",
-          victoryMessages: "2003",
-          defeatMessages: "2002",
+          defeatMessages: "2003",
+          victoryMessages: "2002",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2673,8 +2664,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/boss01",
           ultimate_id: "2001",
           prologueMessages: "2024",
-          victoryMessages: "2025",
-          defeatMessages: "2026",
+          defeatMessages: "2025",
+          victoryMessages: "2026",
           magazine: "",
           strength: "60",
           energy_recovery: "160",
@@ -2695,7 +2686,7 @@ window.__require = function e(t, n, r) {
           reflect_damage_count: "0",
           income: "30",
           discount: "0",
-          skills: "1093|6",
+          skills: "1093|5",
           random_skill_count: "0",
           stamina_max: "",
           stamina_recovery: "",
@@ -2708,8 +2699,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy10",
           ultimate_id: "3006",
           prologueMessages: "2001",
-          victoryMessages: "2003",
-          defeatMessages: "2002",
+          defeatMessages: "2003",
+          victoryMessages: "2002",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2743,8 +2734,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy11",
           ultimate_id: "3011",
           prologueMessages: "2001",
-          victoryMessages: "2003",
-          defeatMessages: "2002",
+          defeatMessages: "2003",
+          victoryMessages: "2002",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2778,8 +2769,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy12",
           ultimate_id: "3002",
           prologueMessages: "2001",
-          victoryMessages: "2003",
-          defeatMessages: "2002",
+          defeatMessages: "2003",
+          victoryMessages: "2002",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2813,8 +2804,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy13",
           ultimate_id: "3013",
           prologueMessages: "2001",
-          victoryMessages: "2003",
-          defeatMessages: "2002",
+          defeatMessages: "2003",
+          victoryMessages: "2002",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2848,8 +2839,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy01",
           ultimate_id: "3001",
           prologueMessages: "2001",
-          victoryMessages: "2003",
-          defeatMessages: "2002",
+          defeatMessages: "2003",
+          victoryMessages: "2002",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2883,8 +2874,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy02",
           ultimate_id: "3002",
           prologueMessages: "2004",
-          victoryMessages: "2005",
-          defeatMessages: "2006",
+          defeatMessages: "2005",
+          victoryMessages: "2006",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2918,8 +2909,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy03",
           ultimate_id: "3003",
           prologueMessages: "2007|2008",
-          victoryMessages: "2009",
-          defeatMessages: "2010",
+          defeatMessages: "2009",
+          victoryMessages: "2010",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2953,8 +2944,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy04",
           ultimate_id: "3004",
           prologueMessages: "2011|2012",
-          victoryMessages: "2013",
-          defeatMessages: "2014",
+          defeatMessages: "2013",
+          victoryMessages: "2014",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -2988,8 +2979,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy05",
           ultimate_id: "3005",
           prologueMessages: "2015",
-          victoryMessages: "2016",
-          defeatMessages: "2017",
+          defeatMessages: "2016",
+          victoryMessages: "2017",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3023,8 +3014,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/boss02",
           ultimate_id: "2002",
           prologueMessages: "2028",
-          victoryMessages: "2029",
-          defeatMessages: "2030",
+          defeatMessages: "2029",
+          victoryMessages: "2030",
           magazine: "1001",
           strength: "150",
           energy_recovery: "160",
@@ -3058,8 +3049,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy06",
           ultimate_id: "3006",
           prologueMessages: "2018",
-          victoryMessages: "2019",
-          defeatMessages: "2020",
+          defeatMessages: "2019",
+          victoryMessages: "2020",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3093,8 +3084,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy07",
           ultimate_id: "3007",
           prologueMessages: "2021",
-          victoryMessages: "2022",
-          defeatMessages: "2023",
+          defeatMessages: "2022",
+          victoryMessages: "2023",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3128,8 +3119,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy08",
           ultimate_id: "3007",
           prologueMessages: "2034",
-          victoryMessages: "2035",
-          defeatMessages: "2036",
+          defeatMessages: "2035",
+          victoryMessages: "2036",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3163,8 +3154,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy09",
           ultimate_id: "3009",
           prologueMessages: "2037|2038",
-          victoryMessages: "2039",
-          defeatMessages: "2040",
+          defeatMessages: "2039",
+          victoryMessages: "2040",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3198,8 +3189,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy10",
           ultimate_id: "3006",
           prologueMessages: "2041",
-          victoryMessages: "2042",
-          defeatMessages: "2043",
+          defeatMessages: "2042",
+          victoryMessages: "2043",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3233,8 +3224,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy11",
           ultimate_id: "3011",
           prologueMessages: "2044",
-          victoryMessages: "2045",
-          defeatMessages: "2046",
+          defeatMessages: "2045",
+          victoryMessages: "2046",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3268,8 +3259,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy12",
           ultimate_id: "3002",
           prologueMessages: "2047",
-          victoryMessages: "2048",
-          defeatMessages: "2049",
+          defeatMessages: "2048",
+          victoryMessages: "2049",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3303,8 +3294,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy13",
           ultimate_id: "3013",
           prologueMessages: "2050",
-          victoryMessages: "2051",
-          defeatMessages: "2052",
+          defeatMessages: "2051",
+          victoryMessages: "2052",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3338,8 +3329,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/enemy01",
           ultimate_id: "3001",
           prologueMessages: "2001",
-          victoryMessages: "2003",
-          defeatMessages: "2002",
+          defeatMessages: "2003",
+          victoryMessages: "2002",
           magazine: "1001,1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
@@ -3373,8 +3364,8 @@ window.__require = function e(t, n, r) {
           path: "prefabs/role/boss03",
           ultimate_id: "2003",
           prologueMessages: "2031",
-          victoryMessages: "2032",
-          defeatMessages: "2033",
+          defeatMessages: "2032",
+          victoryMessages: "2033",
           magazine: "1001,1001,1001,1001,1001",
           strength: "150",
           energy_recovery: "160",
@@ -3480,7 +3471,7 @@ window.__require = function e(t, n, r) {
     var BattleConfig = cc.Class({
       extends: cc.Component,
       statics: {
-        HEART_BEAT: 200,
+        HEART_BEAT: 100,
         HEART_BEAT_ONE_SECOND: 1e3,
         HEART_BEAT_ONE_MINUTE: 6e4,
         HP_REGENERATION_INTERVAL: 5,
@@ -3591,11 +3582,11 @@ window.__require = function e(t, n, r) {
       },
       onClickPCardBtn: function onClickPCardBtn() {
         Global.audio.playEffect("audio/click");
-        Global.gui.toast("\u529f\u80fd\u5f00\u53d1\u4e2d...");
+        Global.gui.open(gameConfig.UIID.VIP);
       },
       onClickRaidBtn: function onClickRaidBtn() {
         Global.audio.playEffect("audio/click");
-        Global.gui.toast("\u529f\u80fd\u5f00\u53d1\u4e2d...");
+        Global.gui.open(gameConfig.UIID.PassiveHarvestingPanel);
       },
       onClickMaxBtn: function onClickMaxBtn() {
         Global.audio.playEffect("audio/click");
@@ -3687,6 +3678,7 @@ window.__require = function e(t, n, r) {
         cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.ScrollBackground, {
           scrollFlag: false
         });
+        Global.gui.remove(gameConfig.UIID.TopUI);
       },
       jumpTo: function jumpTo(chapter, level, resetFlag) {
         void 0 === resetFlag && (resetFlag = false);
@@ -3844,9 +3836,14 @@ window.__require = function e(t, n, r) {
           totalAmount = 3;
           ultimateAniName = "Ultra_3";
         }
-        var ultimatePath = gameConfig.PRELOADCONFIG["ultimate_" + curUltimateType].path;
         var ultimatePreb;
-        Global.res.hasRes(ultimatePath) ? ultimatePreb = Global.res.getRes(ultimatePath) : Global.res.getRes("prefabs/effects/ultimate_1001");
+        var ultimatePath = "prefabs/effects/ultimate_1001";
+        try {
+          ultimatePath = gameConfig.PRELOADCONFIG["ultimate_" + curUltimateType].path;
+        } catch (error) {
+          console.warn("\u89d2\u8272" + fromRoleView._roleData.data.id + "\u4f7f\u7528\u901a\u7528\u5927\u62db");
+        }
+        ultimatePreb = Global.res.getRes(ultimatePath);
         var ultimateNode = cc.instantiate(ultimatePreb);
         var fworldPos = fromRoleView.node.convertToWorldSpaceAR(cc.v2(0, 0));
         var fnodePos = this.effectRootNode.convertToNodeSpaceAR(fworldPos);
@@ -3874,8 +3871,13 @@ window.__require = function e(t, n, r) {
             if (this._gameOver) return;
             damage = fromRoleView._roleData.hitByUltimateAbility(fromRoleView._roleData.ultimateAbility);
             var ultimateBoomPreb;
-            var boomPath = gameConfig.PRELOADCONFIG["ultimate_boom_" + curUltimateType].path;
-            ultimateBoomPreb = Global.res.hasRes(boomPath) ? Global.res.getRes(boomPath) : Global.res.getRes("prefabs/effects/ultimate_boom_1001");
+            var boomPath = "prefabs/effects/ultimate_boom_1001";
+            try {
+              boomPath = gameConfig.PRELOADCONFIG["ultimate_boom_" + curUltimateType].path;
+            } catch (error) {
+              console.warn("\u89d2\u8272" + fromRoleView._roleData.data.id + "\u4f7f\u7528\u901a\u7528\u5927\u62db\u7206\u70b9");
+            }
+            ultimateBoomPreb = Global.res.getRes(boomPath);
             var _tworldPos2;
             if (ultimateBoomPreb) {
               var ultimateBoomNode = cc.instantiate(ultimateBoomPreb);
@@ -4840,7 +4842,7 @@ window.__require = function e(t, n, r) {
           name: "\u53c9\u5b50",
           bullet_type: "2",
           damage_type: "1",
-          value: "200",
+          value: "150",
           crit: "1",
           dodge: "1",
           iconIndex: "1",
@@ -4895,7 +4897,7 @@ window.__require = function e(t, n, r) {
           name: "\u53c9\u5b50P",
           bullet_type: "2",
           damage_type: "1",
-          value: "200",
+          value: "150",
           crit: "1",
           dodge: "1",
           iconIndex: "1",
@@ -7877,7 +7879,8 @@ window.__require = function e(t, n, r) {
           NONE: 0,
           SELECTED_FLAG: 1,
           PROB_FLAG: 2,
-          COUNT_FONT_SCALE_2: 4
+          COUNT_FONT_SCALE_1: 4,
+          COUNT_FONT_SCALE_2: 8
         },
         ITEM_OWNER_TYPE: {
           NONE: 0,
@@ -11741,6 +11744,36 @@ window.__require = function e(t, n, r) {
         type: "prefab",
         path: "prefabs/effects/ultimate_1014"
       },
+      ultimate_1015: {
+        key: "ultimate_1015",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_1015"
+      },
+      ultimate_1016: {
+        key: "ultimate_1016",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_1016"
+      },
+      ultimate_1017: {
+        key: "ultimate_1017",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_1017"
+      },
+      ultimate_1018: {
+        key: "ultimate_1018",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_1018"
+      },
+      ultimate_1019: {
+        key: "ultimate_1019",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_1019"
+      },
+      ultimate_1020: {
+        key: "ultimate_1020",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_1020"
+      },
       ultimate_2001: {
         key: "ultimate_2001",
         type: "prefab",
@@ -11890,6 +11923,31 @@ window.__require = function e(t, n, r) {
         key: "ultimate_boom_1014",
         type: "prefab",
         path: "prefabs/effects/ultimate_boom_1014"
+      },
+      ultimate_boom_1015: {
+        key: "ultimate_boom_1015",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_boom_1015"
+      },
+      ultimate_boom_1016: {
+        key: "ultimate_boom_1016",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_boom_1016"
+      },
+      ultimate_boom_1017: {
+        key: "ultimate_boom_1017",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_boom_1017"
+      },
+      ultimate_boom_1019: {
+        key: "ultimate_boom_1019",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_boom_1019"
+      },
+      ultimate_boom_1020: {
+        key: "ultimate_boom_1020",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_boom_1020"
       },
       ultimate_boom_2001: {
         key: "ultimate_boom_2001",
@@ -12079,7 +12137,8 @@ window.__require = function e(t, n, r) {
       SHOP_BOXES_DATA: "shop_boxes_data",
       TASK_DATA: "task_data",
       NEW_WEEK_TIMER: "new_week_timer",
-      MAIL_DATA: "mail_data"
+      MAIL_DATA: "mail_data",
+      VIP_DATA: "vip_data"
     };
     var CONTROLS = {
       BATTLE_CT: [ CONTROL_TYPE.SETTINGS, CONTROL_TYPE.LEVELPROGRESS, CONTROL_TYPE.MONEY, CONTROL_TYPE.ENEMY_DETAIL, CONTROL_TYPE.DETAIL_INFO, CONTROL_TYPE.DETAIL_MAG, CONTROL_TYPE.DETAIL_BACKPACK, CONTROL_TYPE.TIME ],
@@ -12234,7 +12293,9 @@ window.__require = function e(t, n, r) {
       OpenBoxResult: 41,
       TaskPanel: 42,
       MailPanel: 43,
-      MailInfo: 44
+      MailInfo: 44,
+      TopUI: 45,
+      VIP: 46
     });
     var UIConfigData = (_UIConfigData = {}, _UIConfigData[UIID.ScrollBackgroundPanel] = {
       layer: _LayerManager.LayerType.Game,
@@ -12267,27 +12328,27 @@ window.__require = function e(t, n, r) {
       prefab: "prefabs/gui/homepage/otherPagePanel",
       destroy: false
     }, _UIConfigData[UIID.HomePagePanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/homepage/homePagePanel",
       destroy: false
     }, _UIConfigData[UIID.BossComing] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/bossComing",
       destroy: false
     }, _UIConfigData[UIID.RoguePanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/rogue/roguePanel",
       destroy: false
     }, _UIConfigData[UIID.EventsPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/events/eventsPanel",
       destroy: false
     }, _UIConfigData[UIID.MarketPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/market/marketPanel",
       destroy: false
     }, _UIConfigData[UIID.RevivePanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/revivePanel",
       destroy: false
     }, _UIConfigData[UIID.ResultPanel] = {
@@ -12295,15 +12356,15 @@ window.__require = function e(t, n, r) {
       prefab: "prefabs/gui/resultPanel",
       destroy: false
     }, _UIConfigData[UIID.BackpackPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/backpack/backpackPanel",
       destroy: false
     }, _UIConfigData[UIID.DebugPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/debugPanel",
       destroy: false
     }, _UIConfigData[UIID.SigninPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.GameUI,
       prefab: "prefabs/gui/signin/signinPanel",
       destroy: false
     }, _UIConfigData[UIID.SettingsPanel] = {
@@ -12363,40 +12424,48 @@ window.__require = function e(t, n, r) {
       prefab: "prefabs/gui/skillMerge",
       destroy: false
     }, _UIConfigData[UIID.StaminaPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/staminaPanel",
       destroy: false
     }, _UIConfigData[UIID.PassiveHarvestingPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/passiveHarvestingPanel",
       destroy: false
     }, _UIConfigData[UIID.ShopProbsPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/shop/shopProbs",
       destroy: false
     }, _UIConfigData[UIID.ShopSelectEquipment] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/shop/selectEquipment",
       destroy: false
     }, _UIConfigData[UIID.OpenBox] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/shop/openBox",
       destroy: false
     }, _UIConfigData[UIID.OpenBoxResult] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/shop/openBoxResult",
       destroy: false
     }, _UIConfigData[UIID.TaskPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/task/task",
       destroy: false
     }, _UIConfigData[UIID.MailPanel] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/mail/mail",
       destroy: false
     }, _UIConfigData[UIID.MailInfo] = {
-      layer: _LayerManager.LayerType.PopUp,
+      layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/mail/mailInfo",
+      destroy: false
+    }, _UIConfigData[UIID.TopUI] = {
+      layer: _LayerManager.LayerType.MiddleUI,
+      prefab: "prefabs/component/topUI",
+      destroy: false
+    }, _UIConfigData[UIID.VIP] = {
+      layer: _LayerManager.LayerType.BottomUI,
+      prefab: "prefabs/gui/vip",
       destroy: false
     }, _UIConfigData);
     module.exports = {
@@ -12473,6 +12542,7 @@ window.__require = function e(t, n, r) {
     var ShopManager = require("ShopManager");
     var TaskManager = require("TaskManager");
     var MailManager = require("MailManager");
+    var VipManager = require("VipManager");
     var Global = function Global() {
       this.config = null;
       this.storage = null;
@@ -12505,6 +12575,7 @@ window.__require = function e(t, n, r) {
       this.shopManager = new ShopManager();
       this.taskManager = new TaskManager();
       this.mailManager = new MailManager();
+      this.vipManager = new VipManager();
     };
     window.Global = new Global();
     cc._RF.pop();
@@ -12527,7 +12598,8 @@ window.__require = function e(t, n, r) {
     SkillManager: "SkillManager",
     TalentManager: "TalentManager",
     TaskManager: "TaskManager",
-    Utils: "Utils"
+    Utils: "Utils",
+    VipManager: "VipManager"
   } ],
   GuiView: [ function(require, module, exports) {
     "use strict";
@@ -12709,9 +12781,6 @@ window.__require = function e(t, n, r) {
     cc.Class({
       extends: cc.Component,
       properties: {
-        staminaLabel: cc.Label,
-        coinLabel: cc.Label,
-        diamondLabel: cc.Label,
         _curUIID: null,
         toggleList: [ cc.Toggle ]
       },
@@ -12719,17 +12788,7 @@ window.__require = function e(t, n, r) {
         Global.audio.playMusicLoop("audio/music");
         cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.ChangeScrollBackground);
         this.onClickTogglesBtn(null, 2);
-        this.updateHomePageUICallback();
-        Global.roleData.updateHomePageUICallback = this.updateHomePageUICallback.bind(this);
         Global.mailManager.init();
-      },
-      onClickStamina: function onClickStamina() {
-        Global.gui.open(gameConfig.UIID.StaminaPanel);
-      },
-      updateHomePageUICallback: function updateHomePageUICallback() {
-        this.staminaLabel.string = Global.roleData.currentStamina + "/" + Global.roleData.data.stamina_max;
-        this.coinLabel.string = Global.roleData.coin;
-        this.diamondLabel.string = Global.roleData.diamond;
       },
       updateToggleState: function updateToggleState(_index, _dontShowUI) {
         for (var i = 0; i < this.toggleList.length; i++) {
@@ -12772,6 +12831,7 @@ window.__require = function e(t, n, r) {
          default:
           this._curUIID = gameConfig.UIID.BattlePagePanel;
         }
+        Global.gui.open(gameConfig.UIID.TopUI);
         this._curUIID && true != _dontShowUI && Global.gui.open(this._curUIID, uiArgs, uicallBack);
       },
       onClickTogglesBtn: function onClickTogglesBtn(evn, data) {
@@ -13357,7 +13417,9 @@ window.__require = function e(t, n, r) {
     var LayerType;
     (function(LayerType) {
       LayerType["Game"] = "LayerGame";
-      LayerType["PopUp"] = "LayerPopUp";
+      LayerType["GameUI"] = "GameUI";
+      LayerType["BottomUI"] = "BottomUI";
+      LayerType["MiddleUI"] = "MiddleUI";
       LayerType["UI"] = "LayerUI";
       LayerType["Notify"] = "LayerNotify";
       LayerType["Effect"] = "LayerEffect";
@@ -13370,12 +13432,16 @@ window.__require = function e(t, n, r) {
         this.configs = {};
         this.root = root;
         this.game = new LayerUI_1.LayerUI(LayerType.Game);
-        this.popup = new LayerUI_1.LayerUI(LayerType.PopUp);
+        this.gameUI = new LayerUI_1.LayerUI(LayerType.GameUI);
+        this.bottomUI = new LayerUI_1.LayerUI(LayerType.BottomUI);
+        this.middleUI = new LayerUI_1.LayerUI(LayerType.MiddleUI);
         this.ui = new LayerUI_1.LayerUI(LayerType.UI);
         this.notify = new LayerNotify_1.LayerNotify(LayerType.Notify);
         this.effect = this.create_node(LayerType.Effect);
         root.addChild(this.game);
-        root.addChild(this.popup);
+        root.addChild(this.gameUI);
+        root.addChild(this.bottomUI);
+        root.addChild(this.middleUI);
         root.addChild(this.ui);
         root.addChild(this.notify);
         root.addChild(this.effect);
@@ -13437,8 +13503,16 @@ window.__require = function e(t, n, r) {
           this.ui.add(config, uiArgs, callbacks);
           break;
 
-         case LayerType.PopUp:
-          this.popup.add(config, uiArgs, callbacks);
+         case LayerType.GameUI:
+          this.gameUI.add(config, uiArgs, callbacks);
+          break;
+
+         case LayerType.BottomUI:
+          this.bottomUI.add(config, uiArgs, callbacks);
+          break;
+
+         case LayerType.MiddleUI:
+          this.middleUI.add(config, uiArgs, callbacks);
           break;
 
          case LayerType.Dialog:
@@ -13512,8 +13586,16 @@ window.__require = function e(t, n, r) {
           result = this.ui.has(config.prefab);
           break;
 
-         case LayerType.PopUp:
-          result = this.popup.has(config.prefab);
+         case LayerType.GameUI:
+          result = this.gameUI.has(config.prefab);
+          break;
+
+         case LayerType.BottomUI:
+          result = this.bottomUI.has(config.prefab);
+          break;
+
+         case LayerType.MiddleUI:
+          result = this.middleUI.has(config.prefab);
           break;
 
          case LayerType.Dialog:
@@ -13541,8 +13623,16 @@ window.__require = function e(t, n, r) {
           result = this.ui.get(config.prefab);
           break;
 
-         case LayerType.PopUp:
-          result = this.popup.get(config.prefab);
+         case LayerType.GameUI:
+          result = this.gameUI.get(config.prefab);
+          break;
+
+         case LayerType.BottomUI:
+          result = this.bottomUI.get(config.prefab);
+          break;
+
+         case LayerType.MiddleUI:
+          result = this.middleUI.get(config.prefab);
           break;
 
          case LayerType.Dialog:
@@ -13569,8 +13659,16 @@ window.__require = function e(t, n, r) {
           this.ui.remove(config.prefab, isDestroy);
           break;
 
-         case LayerType.PopUp:
-          this.popup.remove(config.prefab, isDestroy);
+         case LayerType.GameUI:
+          this.gameUI.remove(config.prefab, isDestroy);
+          break;
+
+         case LayerType.BottomUI:
+          this.bottomUI.remove(config.prefab, isDestroy);
+          break;
+
+         case LayerType.MiddleUI:
+          this.middleUI.remove(config.prefab, isDestroy);
           break;
 
          case LayerType.Dialog:
@@ -13594,8 +13692,16 @@ window.__require = function e(t, n, r) {
               this.ui.removeCache(comp.vp.config.prefab);
               break;
 
-             case LayerType.PopUp:
-              this.popup.removeCache(comp.vp.config.prefab);
+             case LayerType.GameUI:
+              this.gameUI.removeCache(comp.vp.config.prefab);
+              break;
+
+             case LayerType.BottomUI:
+              this.bottomUI.removeCache(comp.vp.config.prefab);
+              break;
+
+             case LayerType.MiddleUI:
+              this.middleUI.removeCache(comp.vp.config.prefab);
               break;
 
              case LayerType.Dialog:
@@ -13614,7 +13720,9 @@ window.__require = function e(t, n, r) {
       LayerManager.prototype.clear = function(isDestroy) {
         void 0 === isDestroy && (isDestroy = false);
         this.ui.clear(isDestroy);
-        this.popup.clear(isDestroy);
+        this.gameUI.clear(isDestroy);
+        this.bottomUI.clear(isDestroy);
+        this.middleUI.clear(isDestroy);
         this.dialog.clear(isDestroy);
         this.system.clear(isDestroy);
       };
@@ -14558,12 +14666,24 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "00a7dfTvyJEn5xw0kNikUia", "MailInfo");
     "use strict";
     var gameConfig = require("GameConfig");
+    var ItemData = require("ItemData");
+    var EquipmentData = require("EquipmentData");
+    var EnumType = require("EnumType");
     cc.Class({
       extends: cc.Component,
       properties: {
         content: cc.Node,
         titleLabel: cc.Node,
-        descLabel: cc.Node
+        descLabel: cc.Node,
+        equipmentItemPrefab: cc.Prefab,
+        equipmentItemPool: [ cc.Node ],
+        equipmentItemList: [ cc.Node ],
+        bagItemPrefab: cc.Prefab,
+        bagItemPool: [ cc.Node ],
+        bagItemList: [ cc.Node ],
+        container: cc.Node,
+        rewardNode: cc.Node,
+        claimBtn: cc.Button
       },
       start: function start() {},
       onAdded: function onAdded(_args) {
@@ -14581,19 +14701,104 @@ window.__require = function e(t, n, r) {
         }).start();
         this.updateUI();
       },
-      updateUI: function updateUI() {},
+      clearItems: function clearItems() {
+        while (this.equipmentItemList.length > 0) {
+          var item = this.equipmentItemList.pop();
+          this.container.removeChild(item, false);
+          this.equipmentItemPool.push(item);
+        }
+        while (this.bagItemList.length > 0) {
+          var _item = this.bagItemList.pop();
+          this.container.removeChild(_item, false);
+          this.bagItemPool.push(_item);
+        }
+      },
+      generateEquipmentItem: function generateEquipmentItem(_equipmentData) {
+        var equipmentItem;
+        equipmentItem = this.equipmentItemPool.length > 0 ? this.equipmentItemPool.pop() : cc.instantiate(this.equipmentItemPrefab);
+        this.equipmentItemList.push(equipmentItem);
+        equipmentItem.setScale(.8);
+        equipmentItem.getComponent("EquipmentItem").setData(_equipmentData);
+        this.container.addChild(equipmentItem);
+        return equipmentItem;
+      },
+      generateBagItem: function generateBagItem(_itemData) {
+        var bagItem;
+        bagItem = this.bagItemPool.length > 0 ? this.bagItemPool.pop() : cc.instantiate(this.bagItemPrefab);
+        this.bagItemList.push(bagItem);
+        bagItem.setScale(.8);
+        bagItem.getComponent("BagItem").setData(_itemData);
+        this.container.addChild(bagItem);
+        return bagItem;
+      },
+      updateUI: function updateUI() {
+        this.titleLabel.getComponent("LabelUpdater").setString(this.config["title_" + Global.languageManager.currentLang]);
+        this.descLabel.getComponent("LabelUpdater").setString(this.config["content_" + Global.languageManager.currentLang]);
+        this.clearItems();
+        this.container.active = null != this.config.rewards;
+        this.rewardNode.active = null != this.config.rewards;
+        if (null != this.config.rewards) for (var i = 0; i < this.config.rewards.length; i++) {
+          var reward = this.config.rewards[i];
+          if ("item" == reward.type) {
+            var itemConfig = Global.bagManager.getItemConfig(reward.id);
+            var itemData = new ItemData();
+            itemData.setData(null, itemConfig);
+            itemData.count = reward.count;
+            this.generateBagItem(itemData);
+          } else {
+            var equipmentConfig = Global.equipmentManager.getEquipmentConfig(reward.id);
+            var equipmentData = new EquipmentData();
+            equipmentData.setData(null, equipmentConfig);
+            this.generateEquipmentItem(equipmentData);
+          }
+        }
+        this.claimBtn.interactable = true != Global.mailManager.mailData[this.config.id].claimed;
+      },
+      convertItems: function convertItems(_items) {
+        var result = [];
+        for (var i = 0; i < _items.length; i++) {
+          var item = _items[i];
+          if ("item" == item.type) {
+            var itemConfig = Global.bagManager.getItemConfig(item.id);
+            var itemData = new ItemData();
+            itemData.setData(null, itemConfig);
+            itemData.count = item.count;
+            result.push(itemData);
+          } else {
+            var equipmentConfig = Global.equipmentManager.getEquipmentConfig(item.id);
+            var equipmentData = new EquipmentData();
+            equipmentData.setData(null, equipmentConfig);
+            result.push(equipmentData);
+          }
+        }
+        return result;
+      },
+      onClickClaim: function onClickClaim() {
+        var items = Global.mailManager.claimMail(this.config);
+        var args = {};
+        args.items = this.convertItems(items);
+        args.rewardType = EnumType.REWARD_TYPE.ITEM;
+        Global.gui.open(gameConfig.UIID.RewardsPanel, args);
+        this.updateUI();
+        var mailNode = Global.gui.get(gameConfig.UIID.MailPanel);
+        mailNode && mailNode.getComponent("MailPanel").updateUI();
+        this.onClickClose();
+      },
       onClickClose: function onClickClose() {
         cc.tween(this.node).stop();
         cc.tween(this.node).to(.2, {
           opacity: 0
         }).call(function() {
-          Global.gui.remove(gameConfig.UIID.MailPanel);
+          Global.gui.remove(gameConfig.UIID.MailInfo);
         }).start();
       }
     });
     cc._RF.pop();
   }, {
-    GameConfig: "GameConfig"
+    EnumType: "EnumType",
+    EquipmentData: "EquipmentData",
+    GameConfig: "GameConfig",
+    ItemData: "ItemData"
   } ],
   MailItem: [ function(require, module, exports) {
     "use strict";
@@ -14626,6 +14831,10 @@ window.__require = function e(t, n, r) {
         var args = {};
         args.config = this.config;
         Global.gui.open(gameConfig.UIID.MailInfo, args);
+        Global.mailManager.readMail(this.config.id);
+        this.updateUI(this.config);
+        var mailNode = Global.gui.get(gameConfig.UIID.MailPanel);
+        mailNode && mailNode.getComponent("MailPanel").updateUI();
       },
       clearItems: function clearItems() {
         while (this.equipmentItemList.length > 0) {
@@ -14643,6 +14852,7 @@ window.__require = function e(t, n, r) {
         var equipmentItem;
         equipmentItem = this.equipmentItemPool.length > 0 ? this.equipmentItemPool.pop() : cc.instantiate(this.equipmentItemPrefab);
         this.equipmentItemList.push(equipmentItem);
+        equipmentItem.setScale(.45);
         equipmentItem.getComponent("EquipmentItem").setData(_equipmentData);
         this.container.addChild(equipmentItem);
         return equipmentItem;
@@ -14651,15 +14861,13 @@ window.__require = function e(t, n, r) {
         var bagItem;
         bagItem = this.bagItemPool.length > 0 ? this.bagItemPool.pop() : cc.instantiate(this.bagItemPrefab);
         this.bagItemList.push(bagItem);
-        bagItem.getComponent("BagItem").setData(_itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        bagItem.setScale(.45);
+        bagItem.getComponent("BagItem").setData(_itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_1);
         this.container.addChild(bagItem);
         return bagItem;
       },
-      setContent: function setContent(_config) {
-        this.config = _config;
-        this.titleLabel.getComponent("LabelUpdater").setString(_config["title_" + Global.languageManager.currentLang]);
-        this.timeLabel.getComponent("LabelUpdater").setString(Global.mailManager.formatTimePassed(_config.time));
-        this.readedIcon.active = false == Global.mailManager.mailData[_config.id].readed;
+      updateUI: function updateUI(_config) {
+        this.readedIcon.active = true != Global.mailManager.mailData[_config.id].readed;
         if (null == _config.rewards) {
           this.claimedNode.active = true == Global.mailManager.mailData[_config.id].readed;
           this.claimedLabelNode.active = false;
@@ -14667,14 +14875,20 @@ window.__require = function e(t, n, r) {
           this.claimedNode.active = true == Global.mailManager.mailData[_config.id].claimed;
           this.claimedLabelNode.active = true;
         }
+      },
+      setContent: function setContent(_config) {
+        this.config = _config;
+        this.titleLabel.getComponent("LabelUpdater").setString(_config["title_" + Global.languageManager.currentLang]);
+        this.timeLabel.getComponent("LabelUpdater").setString(Global.mailManager.formatTimePassed("" != _config.time ? _config.time : Global.mailManager.mailData[_config.id].time));
+        this.updateUI(_config);
         this.clearItems();
         this.container.active = null != this.config.rewards;
-        if (null != this.config.rewards) for (var i = 0; i < this.config.rewards; i++) {
+        if (null != this.config.rewards) for (var i = 0; i < this.config.rewards.length; i++) {
           var reward = this.config.rewards[i];
           if ("item" == reward.type) {
             var itemConfig = Global.bagManager.getItemConfig(reward.id);
             var itemData = new ItemData();
-            itemData.setData(itemConfig, null);
+            itemData.setData(null, itemConfig);
             itemData.count = reward.count;
             this.generateBagItem(itemData);
           } else {
@@ -14719,31 +14933,47 @@ window.__require = function e(t, n, r) {
           _this.handleData(data.json);
         });
       },
+      formatDateFromTimestamp: function formatDateFromTimestamp(timestamp) {
+        var date = new Date(timestamp);
+        var year = date.getFullYear();
+        var month = String(date.getMonth() + 1).padStart(2, "0");
+        var day = String(date.getDate()).padStart(2, "0");
+        var hours = String(date.getHours()).padStart(2, "0");
+        var minutes = String(date.getMinutes()).padStart(2, "0");
+        var seconds = String(date.getSeconds()).padStart(2, "0");
+        return year + "-" + month + "-" + day + "T" + hours + ":" + minutes + ":" + seconds;
+      },
       handleData: function handleData(_json) {
         this.mailConfig = {};
         this.mailData = Global.storage.getJson(gameConfig.COMMON_KEYS.MAIL_DATA);
         null == this.mailData && (this.mailData = {});
         for (var i = 0; i < _json.length; i++) {
-          var _config = _json[i];
-          var mailTime = _config.time;
+          var config = _json[i];
+          var mailTime = void 0;
+          if ("" == config.time) if (this.mailData.hasOwnProperty(config.id)) mailTime = this.mailData[config.id].time; else {
+            this.mailData[config.id] = {};
+            var formatted = this.formatDateFromTimestamp(Global.networkTimer);
+            this.mailData[config.id].time = formatted;
+            mailTime = formatted;
+          } else mailTime = config.time;
           var timeStr = this.formatTimePassed(mailTime);
           if (null == timeStr) continue;
-          if (this.mailData[_config.id] && true == this.mailData[_config.id].deleted) continue;
-          if ("" != _config.rewards) {
-            var rewardsArr = _config.rewards.split(",");
-            _config.rewards = [];
+          if (this.mailData[config.id] && true == this.mailData[config.id].deleted) continue;
+          if ("" != config.rewards) {
+            var rewardsArr = config.rewards.split(",");
+            config.rewards = [];
             for (var j = 0; j < rewardsArr.length; j++) {
               var rewardStr = rewardsArr[j];
               var rewardArr = rewardStr.split("|");
               var reward = {};
               reward.type = rewardArr[0];
-              reward.id = rewardArr[1];
+              reward.id = parseInt(rewardArr[1]);
               reward.count = parseInt(rewardArr[2]);
-              _config.rewards.push(reward);
+              config.rewards.push(reward);
             }
-          } else _config.rewards = null;
-          this.mailConfig[_config.id] = _config;
-          null == this.mailData[_config.id] && (this.mailData[_config.id] = {});
+          } else config.rewards = null;
+          this.mailConfig[config.id] = config;
+          null == this.mailData[config.id] && (this.mailData[config.id] = {});
         }
         this.saveData();
       },
@@ -14755,19 +14985,20 @@ window.__require = function e(t, n, r) {
         this.saveData();
       },
       deleteAll: function deleteAll() {
-        for (var _id2 in this.mailConfig) {
-          var _config2 = this.mailConfig[_id2];
-          if (true != this.mailData[_id2].claimed || true != this.mailData[_id2].readed) continue;
-          this.mailData[_id2].deleted = true;
+        for (var id in this.mailConfig) {
+          var config = this.mailConfig[id];
+          if (!(true == this.mailData[id].claimed && true == this.mailData[id].readed || null == config.rewards && true == this.mailData[id].readed)) continue;
+          this.mailData[id].deleted = true;
+          delete this.mailConfig[id];
         }
         this.saveData();
       },
-      claimMail: function claimMail(_id) {
-        if (true == this.mailData[_id].claimed) return null;
-        this.mailData[_id].claimed = true;
-        this.mailData[_id].readed = true;
-        if (null == config.rewards) return null;
-        var rewards = this.mailConfig[id].rewards;
+      claimMail: function claimMail(_config) {
+        if (true == this.mailData[_config.id].claimed) return null;
+        this.mailData[_config.id].claimed = true;
+        this.mailData[_config.id].readed = true;
+        if (null == _config.rewards) return null;
+        var rewards = _config.rewards;
         for (var i = 0; i < rewards.length; i++) {
           var rewardItem = rewards[i];
           if ("item" == rewardItem.type) switch (rewardItem.id) {
@@ -14788,16 +15019,14 @@ window.__require = function e(t, n, r) {
           } else Global.equipmentManager.addEquipment(rewardItem.id, Global.roleData);
         }
         this.saveData();
-        return this.mailConfig[id].rewards;
+        return _config.rewards;
       },
       claimAll: function claimAll() {
         var result = [];
-        for (var _id3 in this.mailConfig) {
-          var _config3 = this.mailConfig[_id3];
-          if (true == this.mailData[_id3].claimed) continue;
-          this.mailData[_id3].claimed = true;
-          this.mailData[_id3].readed = true;
-          null != _config3.rewards && result.push(this.claimMail(_id3));
+        for (var id in this.mailConfig) {
+          var config = this.mailConfig[id];
+          if (true == this.mailData[id].claimed) continue;
+          null != config.rewards && (result = result.concat(this.claimMail(config)));
         }
         return result;
       },
@@ -14824,6 +15053,9 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "5e9d4WhSOZEB6qEymMZwBrd", "MailPanel");
     "use strict";
     var gameConfig = require("GameConfig");
+    var EnumType = require("EnumType");
+    var ItemData = require("ItemData");
+    var EquipmentData = require("EquipmentData");
     cc.Class({
       extends: cc.Component,
       properties: {
@@ -14863,11 +15095,53 @@ window.__require = function e(t, n, r) {
         this.container.addChild(mailItem);
         return mailItem;
       },
-      updateUI: function updateUI() {
-        for (var id in Global.mailManager.mailConfig) {
-          var config = Global.mailManager.mailConfig[id];
-          this.generateMailItem(config);
+      onClickDeleteAll: function onClickDeleteAll() {
+        Global.mailManager.deleteAll();
+        this.updateUI();
+      },
+      convertItems: function convertItems(_items) {
+        var result = [];
+        for (var i = 0; i < _items.length; i++) {
+          var item = _items[i];
+          if ("item" == item.type) {
+            var itemConfig = Global.bagManager.getItemConfig(item.id);
+            var itemData = new ItemData();
+            itemData.setData(null, itemConfig);
+            itemData.count = item.count;
+            result.push(itemData);
+          } else {
+            var equipmentConfig = Global.equipmentManager.getEquipmentConfig(item.id);
+            var equipmentData = new EquipmentData();
+            equipmentData.setData(null, equipmentConfig);
+            result.push(equipmentData);
+          }
         }
+        return result;
+      },
+      onClickClaimAll: function onClickClaimAll() {
+        var items = Global.mailManager.claimAll();
+        var args = {};
+        args.items = this.convertItems(items);
+        args.rewardType = EnumType.REWARD_TYPE.ITEM;
+        Global.gui.open(gameConfig.UIID.RewardsPanel, args);
+        this.updateUI();
+      },
+      updateUI: function updateUI() {
+        var _this = this;
+        this.clearItems();
+        var sortedKeys = Object.keys(Global.mailManager.mailConfig).sort(function(idA, idB) {
+          var mailA = Global.mailManager.mailData[idA];
+          var mailB = Global.mailManager.mailData[idB];
+          var configA = Global.mailManager.mailConfig[idA];
+          var configB = Global.mailManager.mailConfig[idB];
+          if (mailA.readed !== mailB.readed) return mailA.readed ? 1 : -1;
+          if (mailA.claimed !== mailB.claimed) return true != mailA.claimed ? -1 : 1;
+          if (configA.rewards !== configB.rewards) return null != configA.rewards ? -1 : 1;
+        });
+        sortedKeys.forEach(function(id) {
+          var config = Global.mailManager.mailConfig[id];
+          null != config && _this.generateMailItem(config);
+        });
       },
       onClickClose: function onClickClose() {
         cc.tween(this.node).stop();
@@ -14880,7 +15154,10 @@ window.__require = function e(t, n, r) {
     });
     cc._RF.pop();
   }, {
-    GameConfig: "GameConfig"
+    EnumType: "EnumType",
+    EquipmentData: "EquipmentData",
+    GameConfig: "GameConfig",
+    ItemData: "ItemData"
   } ],
   MainScene: [ function(require, module, exports) {
     "use strict";
@@ -14956,7 +15233,7 @@ window.__require = function e(t, n, r) {
              case 3:
               config = _context.sent;
               if (!config) {
-                _context.next = 45;
+                _context.next = 46;
                 break;
               }
               persistRootNode = new cc.Node("PersistRootNode");
@@ -14967,6 +15244,7 @@ window.__require = function e(t, n, r) {
               Global.passiveHarvestManager.init();
               Global.shopManager.init();
               Global.taskManager.init();
+              Global.vipManager.init();
               equipmentData = Global.storage.getJson(gameConfig.COMMON_KEYS.EQUIPMENT_DATA);
               bagItemData = Global.storage.getJson(gameConfig.COMMON_KEYS.BAG_ITEM_DATA);
               talentData = Global.storage.getJson(gameConfig.COMMON_KEYS.TALENT_DATA);
@@ -14992,6 +15270,7 @@ window.__require = function e(t, n, r) {
                   Global.shopManager.storageData.blueBox.freeCount = 0;
                   Global.shopManager.saveData();
                   Global.taskManager.resetDailyReward();
+                  Global.vipManager.resetDailyRewards();
                 }
               } else {
                 newDayTimer = Global.networkTimer;
@@ -15000,35 +15279,35 @@ window.__require = function e(t, n, r) {
               isNewWeek = Global.utils.isNewWeek();
               isNewWeek && Global.taskManager.resetWeeklyReward();
               if (!(null != equipmentData)) {
-                _context.next = 33;
+                _context.next = 34;
                 break;
               }
               i = 0;
 
-             case 25:
+             case 26:
               if (!(i < equipmentData.length)) {
-                _context.next = 33;
+                _context.next = 34;
                 break;
               }
               equipment = equipmentData[i];
               if (!(!equipment || Object.keys(equipment).length <= 0)) {
-                _context.next = 29;
+                _context.next = 30;
                 break;
               }
-              return _context.abrupt("continue", 30);
+              return _context.abrupt("continue", 31);
 
-             case 29:
+             case 30:
               if (equipment.equipmentSlotPos == EnumType.EQUIPMENT_SLOT_POS.NONE) Global.equipmentManager.addEquipment(equipment.equipmentId, Global.roleData, equipment.equipmentRarity, equipment.equipmentLevel, false, true); else {
                 _equipmentData = Global.equipmentManager.addEquipment(equipment.equipmentId, Global.roleData, equipment.equipmentRarity, equipment.equipmentLevel, true, true);
                 Global.equipmentManager.setEquipment(_equipmentData, null, equipment.equipmentSlotPos, Global.roleData, true);
               }
 
-             case 30:
+             case 31:
               i++;
-              _context.next = 25;
+              _context.next = 26;
               break;
 
-             case 33:
+             case 34:
               if (null != bagItemData) for (_i = 0; _i < bagItemData.length; _i++) {
                 bagItem = bagItemData[_i];
                 Global.bagManager.addItem(bagItem.bagItemId, bagItem.bagItemCount, Global.roleData, true);
@@ -15051,7 +15330,7 @@ window.__require = function e(t, n, r) {
               _this.init();
               Global.res.release(configPath, cc.JsonAsset);
 
-             case 45:
+             case 46:
              case "end":
               return _context.stop();
             }
@@ -17005,6 +17284,30 @@ window.__require = function e(t, n, r) {
       type: gameConfig.PRELOADCONFIG.ultimate_1014.type
     });
     data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_1015.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_1015.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_1016.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_1016.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_1017.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_1017.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_1018.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_1018.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_1019.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_1019.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_1020.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_1020.type
+    });
+    data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_2001.path,
       type: gameConfig.PRELOADCONFIG.ultimate_2001.type
     });
@@ -17123,6 +17426,26 @@ window.__require = function e(t, n, r) {
     data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_boom_1014.path,
       type: gameConfig.PRELOADCONFIG.ultimate_boom_1014.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_boom_1015.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_boom_1015.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_boom_1016.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_boom_1016.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_boom_1017.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_boom_1017.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_boom_1019.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_boom_1019.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_boom_1020.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_boom_1020.type
     });
     data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_boom_2001.path,
@@ -17453,6 +17776,8 @@ window.__require = function e(t, n, r) {
     "use strict";
     var gameConfig = require("GameConfig");
     var ANIMATION_NAMES = [ "Victory", "failed" ];
+    var EnumType = require("EnumType");
+    var ItemData = require("ItemData");
     cc.Class({
       extends: cc.Component,
       properties: {
@@ -17480,13 +17805,22 @@ window.__require = function e(t, n, r) {
           type: cc.Node,
           default: null
         },
+        rewardRootNode: {
+          type: cc.Node,
+          default: null
+        },
+        rewardItemPreb: {
+          type: cc.Prefab,
+          default: null
+        },
         claimNode: {
           type: cc.Node,
           default: null
         },
         _args: null,
         _curIndex: 0,
-        _belongsToCT: null
+        _belongsToCT: null,
+        _rewardItems: []
       },
       onAdded: function onAdded(args) {
         this._args = args;
@@ -17513,7 +17847,27 @@ window.__require = function e(t, n, r) {
         this.initUI();
       },
       initUI: function initUI() {
+        this._rewardItems = [];
+        this.rewardRootNode.removeAllChildren();
         var chapterData = Global.chapterManager.getChapterDataByLevel(Global.chapterManager.curChapter);
+        if (chapterData) {
+          var rewardConfigs = chapterData.rewardConfig.split("_");
+          var victoryRewards = rewardConfigs[0].split(",");
+          var defeatRewards = rewardConfigs[1].split(",");
+          var resultRewards = this._args.gameResult == gameConfig.GAME_RESULT_TYPE.VICTORY ? victoryRewards : defeatRewards;
+          for (var index = 0; index < resultRewards.length; index++) {
+            var rewardConfig = resultRewards[index].split("|");
+            var itemConfig = Global.bagManager.getItemConfig(rewardConfig[0]);
+            var itemData = new ItemData();
+            itemData.setData(null, itemConfig);
+            itemData.count = rewardConfig[1];
+            this._rewardItems.push(itemData);
+            var rewardItem = cc.instantiate(this.rewardItemPreb);
+            rewardItem.getComponent("BagItem").setData(itemData);
+            this.rewardRootNode.addChild(rewardItem);
+          }
+          console.log("_rewardItems:", this._rewardItems);
+        }
         var spine = this.spineList[this._args.gameResult];
         spine.setAnimation(0, ANIMATION_NAMES[this._args.gameResult], false);
         spine.node.active = this.titleNodeList[this._args.gameResult].active = true;
@@ -17523,33 +17877,53 @@ window.__require = function e(t, n, r) {
         animaList.push(this.journeyNode);
         animaList.push(this.rewardsNode);
         animaList.push(this.claimNode);
-        var _loop = function _loop(index) {
-          var node = animaList[index];
+        var _loop = function _loop(_index) {
+          var node = animaList[_index];
           node.active = false;
           node.setScale(2, 2);
-          var delay = .1 * index;
+          var delay = .1 * _index;
           cc.tween(node).delay(delay).call(function() {
             node.active = true;
           }).to(.2, {
             scale: 1
           }).start();
         };
-        for (var index = 0; index < animaList.length; index++) _loop(index);
+        for (var _index = 0; _index < animaList.length; _index++) _loop(_index);
       },
       onClickToggleBtn: function onClickToggleBtn(event, data) {
         this._curIndex = data;
       },
       onClickOkBtn: function onClickOkBtn() {
-        Global.gui.toast("ResultView\u529f\u80fd\u5f00\u53d1\u4e2d...");
-        this.closeUI();
-      },
-      closeUI: function closeUI() {
-        Global.gui.remove(gameConfig.UIID.ResultPanel);
+        var _this = this;
+        var items = this._rewardItems.reverse();
+        var args = {
+          items: items,
+          rewardType: EnumType.REWARD_TYPE.ITEM
+        };
+        var uicallBack = {
+          onAdded: function onAdded(node, params) {
+            Global.utils.logMessage("RewardsPanel onAdded");
+            for (var index = 0; index < _this._rewardItems.length; index++) {
+              var itemData = _this._rewardItems[index];
+              itemData.itemId == Global.bagManager.STAMINA_ITEM_ID ? Global.roleData.updateStamina(parseInt(itemData.count)) : itemData.itemId == Global.bagManager.COIN_ITEM_ID && Global.roleData.updateCoin(parseInt(itemData.count));
+            }
+          },
+          onRemoved: function onRemoved(node, params) {
+            Global.utils.logMessage("RewardsPanel onRemoved");
+            Global.gui.remove(gameConfig.UIID.ResultPanel);
+          },
+          onLoadFailure: function onLoadFailure() {
+            Global.utils.logMessage("RewardsPanel onLoadFailure");
+          }
+        };
+        Global.gui.open(gameConfig.UIID.RewardsPanel, args, uicallBack);
       }
     });
     cc._RF.pop();
   }, {
-    GameConfig: "GameConfig"
+    EnumType: "EnumType",
+    GameConfig: "GameConfig",
+    ItemData: "ItemData"
   } ],
   ReviveView: [ function(require, module, exports) {
     "use strict";
@@ -17747,6 +18121,7 @@ window.__require = function e(t, n, r) {
           } else {
             this.layoutComp.type = cc.Layout.Type.GRID;
             this.layoutComp.left = 25;
+            this.layoutComp.node.width = 1100;
           }
           this._interval = setInterval(function() {
             var material = this._args.items.pop();
@@ -18495,25 +18870,26 @@ window.__require = function e(t, n, r) {
           this.staminaRecoveryTimer = Global.networkTimer;
           var storageData = this.getAdditionalData();
           Global.storage.set(gameConfig.COMMON_KEYS.ROLE_ADDITIONAL_DATA, storageData);
-          this.updateHomePageUICallback && this.updateHomePageUICallback();
+          this.updateTopUICallback && this.updateTopUICallback();
         } else {
           this.staminaRecoveryTimer = 0;
           var _storageData = this.getAdditionalData();
           Global.storage.set(gameConfig.COMMON_KEYS.ROLE_ADDITIONAL_DATA, _storageData);
-          this.updateHomePageUICallback && this.updateHomePageUICallback();
+          this.updateTopUICallback && this.updateTopUICallback();
         }
       },
       updateCoin: function updateCoin(_coin) {
+        _coin > 0 && true == Global.vipManager.vipData.hasPermanent && (_coin += _coin * Global.vipManager.PERMANENT_COIN_RATE);
         this.coin += _coin;
         var storageData = this.getAdditionalData();
         Global.storage.set(gameConfig.COMMON_KEYS.ROLE_ADDITIONAL_DATA, storageData);
-        this.updateHomePageUICallback && this.updateHomePageUICallback();
+        this.updateTopUICallback && this.updateTopUICallback();
       },
       updateDiamond: function updateDiamond(_diamond) {
         this.diamond += _diamond;
         var storageData = this.getAdditionalData();
         Global.storage.set(gameConfig.COMMON_KEYS.ROLE_ADDITIONAL_DATA, storageData);
-        this.updateHomePageUICallback && this.updateHomePageUICallback();
+        this.updateTopUICallback && this.updateTopUICallback();
       },
       getAdditionalData: function getAdditionalData() {
         var data = {};
@@ -18944,12 +19320,12 @@ window.__require = function e(t, n, r) {
           value = damage.value + _ultimateAbilityData.fromData.data.ultimate_ability_damage * damage.value * .01;
           _ultimateAbilityData.damageType & EnumType.BULLET_DAMAGE_TYPE.CRIT && (value += value * _ultimateAbilityData.fromData.data.critical_damage * .01);
           value -= _ultimateAbilityData.targetData.data.armor;
-          var _amplifiedValue;
+          var amplifiedValue;
           if (_ultimateAbilityData.targetData.data.amplified_damage > 0) {
-            _amplifiedValue = Math.floor(value * _ultimateAbilityData.targetData.data.amplified_damage * .01);
-            _amplifiedValue = _amplifiedValue < 1 ? 1 : _amplifiedValue;
-          } else _amplifiedValue = 0;
-          value += _amplifiedValue;
+            amplifiedValue = Math.floor(value * _ultimateAbilityData.targetData.data.amplified_damage * .01);
+            amplifiedValue = amplifiedValue < 1 ? 1 : amplifiedValue;
+          } else amplifiedValue = 0;
+          value += amplifiedValue;
           value = _ultimateAbilityData.targetData.overdraw > 0 && _ultimateAbilityData.targetData.currentMoney < 0 ? Math.floor(value + .3 * value) : value;
           value = value <= 0 ? 1 : value;
           value += this.getFinallyDamageRate(value, _ultimateAbilityData.fromData, _ultimateAbilityData.targetData);
@@ -19239,12 +19615,12 @@ window.__require = function e(t, n, r) {
             valueObj.isCrit = isCrit;
             valueObj.isCrit && (value += value * _bulletData.fromData.data.critical_damage * .01);
             value -= _bulletData.targetData.data.armor;
-            var _amplifiedValue2 = void 0;
+            var amplifiedValue = void 0;
             if (_bulletData.targetData.data.amplified_damage > 0) {
-              _amplifiedValue2 = Math.floor(value * _bulletData.targetData.data.amplified_damage * .01);
-              _amplifiedValue2 = _amplifiedValue2 < 1 ? 1 : _amplifiedValue2;
-            } else _amplifiedValue2 = 0;
-            value += _amplifiedValue2;
+              amplifiedValue = Math.floor(value * _bulletData.targetData.data.amplified_damage * .01);
+              amplifiedValue = amplifiedValue < 1 ? 1 : amplifiedValue;
+            } else amplifiedValue = 0;
+            value += amplifiedValue;
             value = _bulletData.targetData.overdraw > 0 && _bulletData.targetData.currentMoney < 0 ? Math.floor(value + .3 * value) : value;
             value = value <= 0 ? 1 : value;
             var finalEnhancedValue = this.getFinallyDamageRate(value, _bulletData.fromData, _bulletData.targetData);
@@ -19409,6 +19785,7 @@ window.__require = function e(t, n, r) {
           var hp = this.data.hp_regeneration;
           var value = hp > 0 ? hp + this.data.healing_boost : hp;
           if (value < 0) {
+            var amplifiedValue;
             if (this.data.amplified_damage > 0) {
               amplifiedValue = Math.floor(this.data.hp_regeneration * this.data.amplified_damage * .01);
               amplifiedValue = 0 == amplifiedValue ? -1 : amplifiedValue;
@@ -19416,6 +19793,13 @@ window.__require = function e(t, n, r) {
             }
             value += this.getFinallyDamageRate(value, this.currentEnemy, this);
             this.reduceHpCallback && this.reduceHpCallback(value);
+            if (this.data.hp_regeneration < 0 && true == this.currentEnemy.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.BLOOD)) for (var i = 0; i < this.currentEnemy.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BLOOD].length; i++) {
+              var event = this.currentEnemy.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BLOOD][i];
+              this.currentEnemy.eventListener(event, value);
+            }
+          } else if (this.data.hp_regeneration > 0 && true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.HP_REGENERATION)) for (var _i24 = 0; _i24 < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.HP_REGENERATION].length; _i24++) {
+            var _event11 = this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.HP_REGENERATION][_i24];
+            this.eventListener(_event11, this.data.hp_regeneration);
           }
           this.currentHp += value;
           this.currentHp = this.currentHp >= this.data.basic_hp ? this.data.basic_hp : this.currentHp;
@@ -19428,20 +19812,15 @@ window.__require = function e(t, n, r) {
             this.currentEnergy = this.data.energy_max;
             this.fireUltimateAbility(true);
           }
-          if (true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.HP_REDUCTION)) for (var i = 0; i < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.HP_REDUCTION].length; i++) {
-            var event = this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.HP_REDUCTION][i];
-            this.eventListener(event);
-          }
+        }
+        if (Date.now() - this.timer >= BattleConfig.HEART_BEAT) {
+          this.timer = Date.now();
           this.getCurrentProperties();
           this.filterAdditionalProperties();
           this.updateUICallback && this.updateUICallback();
-          if (this.data.hp_regeneration < 0 && true == this.currentEnemy.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.BLOOD) && value1Second < 0) for (var _i24 = 0; _i24 < this.currentEnemy.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BLOOD].length; _i24++) {
-            var _event11 = this.currentEnemy.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BLOOD][_i24];
-            this.currentEnemy.eventListener(_event11, value1Second);
-          }
-          if (this.data.hp_regeneration > 0 && true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.HP_REGENERATION)) for (var _i25 = 0; _i25 < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.HP_REGENERATION].length; _i25++) {
-            var _event12 = this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.HP_REGENERATION][_i25];
-            this.eventListener(_event12, this.data.hp_regeneration);
+          if (true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.HP_REDUCTION)) for (var _i25 = 0; _i25 < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.HP_REDUCTION].length; _i25++) {
+            var _event12 = this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.HP_REDUCTION][_i25];
+            this.eventListener(_event12);
           }
         }
       }
@@ -19900,6 +20279,8 @@ window.__require = function e(t, n, r) {
             }
             this._parent.onAttackComplete(this);
           }
+          clearInterval(this._fightIT);
+          this.startTimer();
         }.bind(this), fightTimer);
       },
       getTimer: function getTimer() {
@@ -22257,7 +22638,7 @@ window.__require = function e(t, n, r) {
           rarity: "1",
           importance: "1",
           duration: "0",
-          value_list: "1&100&1002",
+          value_list: "1&50&1002",
           property_affected_list: "2|1|1002",
           skill_type: "0",
           skill_owner: "",
@@ -26520,7 +26901,7 @@ window.__require = function e(t, n, r) {
           rarity: "6",
           importance: "",
           duration: "0",
-          value_list: "2&150&strength",
+          value_list: "1&150&strength",
           property_affected_list: "0|hp_regeneration",
           skill_type: "0",
           skill_owner: "",
@@ -30624,7 +31005,7 @@ window.__require = function e(t, n, r) {
           var itemData = new ItemData();
           itemData.setData(null, itemConfig);
           itemData.count = config.reward.count;
-          this.weeklyRewardList[i].getComponent("BagItem").setData(itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+          this.weeklyRewardList[i].getComponent("BagItem").setData(itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_1);
           1 == Global.taskManager.taskData.weeklyRewardIndexList[i] ? this.weeklyRewardList[i].getComponent("BagItem").showSelect(true) : this.weeklyRewardList[i].getComponent("BagItem").setMask(Global.taskManager.taskData.weeklyProgress < config.target);
           this.weeklyRewardList[i].getComponent("BagItem").setTaskRewardInfo(i, "weekly");
         }
@@ -30641,7 +31022,7 @@ window.__require = function e(t, n, r) {
           var _itemData = new ItemData();
           _itemData.setData(null, _itemConfig);
           _itemData.count = _config2.reward.count;
-          this.dailyRewardList[_i].getComponent("BagItem").setData(_itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+          this.dailyRewardList[_i].getComponent("BagItem").setData(_itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_1);
           1 == Global.taskManager.taskData.dailyRewardIndexList[_i] ? this.dailyRewardList[_i].getComponent("BagItem").showSelect(true) : this.dailyRewardList[_i].getComponent("BagItem").setMask(Global.taskManager.taskData.dailyProgress < _config2.target);
           this.dailyRewardList[_i].getComponent("BagItem").setTaskRewardInfo(_i, "daily");
         }
@@ -31030,6 +31411,37 @@ window.__require = function e(t, n, r) {
     });
     cc._RF.pop();
   }, {} ],
+  TopUI: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "3e2538g529MGpd/3kvLWr2I", "TopUI");
+    "use strict";
+    var gameConfig = require("GameConfig");
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        staminaLabel: cc.Node,
+        coinLabel: cc.Node,
+        diamondLabel: cc.Node
+      },
+      start: function start() {
+        Global.roleData.updateTopUICallback = this.updateTopUICallback.bind(this);
+      },
+      onEnable: function onEnable() {
+        this.updateTopUICallback();
+      },
+      onClickStamina: function onClickStamina() {
+        Global.gui.open(gameConfig.UIID.StaminaPanel);
+      },
+      updateTopUICallback: function updateTopUICallback() {
+        this.staminaLabel.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(Global.roleData.currentStamina) + "/" + Global.utils.formatNumberWithUnit(Global.roleData.data.stamina_max));
+        this.coinLabel.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(Global.roleData.coin));
+        this.diamondLabel.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(Global.roleData.diamond));
+      }
+    });
+    cc._RF.pop();
+  }, {
+    GameConfig: "GameConfig"
+  } ],
   UltimateAbilityConfig: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "f770fejMVtPOrczOYOYnfsZ", "UltimateAbilityConfig");
@@ -31040,7 +31452,7 @@ window.__require = function e(t, n, r) {
         data: [ {
           id: "1001",
           name: "\u8d2d\u7269\u8f66",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31050,7 +31462,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1002",
           name: "\u989d\u5916\u7eb8\u56e2",
-          value: "300|3",
+          value: "300|20",
           coefficient: "2|strength",
           damage_type: "1",
           crit: "1",
@@ -31070,7 +31482,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1004",
           name: "\u69b4\u83b2",
-          value: "600|15",
+          value: "600|40",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31080,7 +31492,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1005",
           name: "\u6fc0\u5149",
-          value: "1500|37",
+          value: "1500|100",
           coefficient: "5|strength",
           damage_type: "1",
           crit: "1",
@@ -31090,7 +31502,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1006",
           name: "\u725b\u5486\u54ee",
-          value: "900|23",
+          value: "900|60",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31100,7 +31512,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1007",
           name: "NS",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31110,7 +31522,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1008",
           name: "\u5927\u4fbf",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31120,7 +31532,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1009",
           name: "\u6cb9\u6f06\u6876",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31130,7 +31542,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1010",
           name: "\u6253\u6c14\u9524",
-          value: "600|15",
+          value: "600|40",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31140,7 +31552,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1011",
           name: "\u7eb8\u98de\u673a",
-          value: "300|3",
+          value: "300|20",
           coefficient: "10|strength",
           damage_type: "1",
           crit: "1",
@@ -31160,7 +31572,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1013",
           name: "\u51b0\u8d2d\u7269\u8f66",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31170,7 +31582,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1014",
           name: "\u51b0\u53c9\u5b50",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31180,7 +31592,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1015",
           name: "\u6447\u6c7d\u6c34",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31190,7 +31602,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1016",
           name: "\u7eb8\u76fe",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31200,7 +31612,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1017",
           name: "\u786c\u7eb8\u677f",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31210,7 +31622,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1018",
           name: "\u6838\u6843",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31220,7 +31632,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1019",
           name: "\u7f50\u88c5\u6c7d\u6c34",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31230,7 +31642,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1020",
           name: "\u5c0f\u51b2\u950b",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31240,7 +31652,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1021",
           name: "\u5927\u53cd\u51fb",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31250,7 +31662,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "1022",
           name: "\u5927\u53cd\u4f24",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31260,7 +31672,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "2001",
           name: "\u5c0f\u91d1\u9c7c",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31270,7 +31682,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "2002",
           name: "\u732a\u6ce5",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31280,7 +31692,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "2003",
           name: "\u949e\u7968\u96e8",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31290,7 +31702,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3001",
           name: "\u8611\u83c7",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31300,7 +31712,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3002",
           name: "\u6c49\u5821",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31310,7 +31722,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3003",
           name: "\u6cb9\u6f06\u5237",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31320,7 +31732,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3004",
           name: "\u51b0\u7bb1",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31330,7 +31742,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3005",
           name: "\u523a",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31340,7 +31752,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3006",
           name: "PS5",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31350,7 +31762,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3007",
           name: "\u996e\u6599",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31360,7 +31772,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3009",
           name: "\u7eff\u6cb9\u6f06\u5237",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31370,7 +31782,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3011",
           name: "\u7eff\u51b0\u7bb1",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31380,7 +31792,7 @@ window.__require = function e(t, n, r) {
         }, {
           id: "3013",
           name: "\u8c4c\u8c46\u4eba",
-          value: "1200|30",
+          value: "1200|80",
           coefficient: "4|strength",
           damage_type: "1",
           crit: "1",
@@ -31964,6 +32376,395 @@ window.__require = function e(t, n, r) {
     EnumType: "EnumType",
     GameConfig: "GameConfig"
   } ],
+  VipManager: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "cfe1bnZa6lMmpB6EkekJuVe", "VipManager");
+    "use strict";
+    var gameConfig = require("GameConfig");
+    var VipManager = cc.Class({
+      extends: cc.Component,
+      properties: {},
+      start: function start() {},
+      ctor: function ctor() {
+        this.FREE_DAILY_DIAMOND_COUNT = 20;
+        this.AD_FREE_DIAMOND_COUNT = 900;
+        this.AD_FREE_DAILY_DIAMOND_COUNT = 50;
+        this.AD_FREE_COST = "$6.99";
+        this.MONTHLY_DIAMOND_COUNT = 600;
+        this.MONTHLY_DAILY_DIAMOND_COUNT = 200;
+        this.MONTHLY_DAILY_STAMINA_COUNT = 50;
+        this.MONTHLY_COST = "$4.99";
+        this.PERMANENT_DIAMOND_COUNT = 3600;
+        this.PERMANENT_DAILY_DIAMOND_COUNT = 200;
+        this.PERMANENT_DAILY_STAMINA_COUNT = 50;
+        this.PERMANENT_COST = "$29.99";
+        this.PERMANENT_COIN_RATE = .1;
+      },
+      init: function init() {
+        this.vipData = Global.storage.getJson(gameConfig.COMMON_KEYS.VIP_DATA);
+        if (null == this.vipData) {
+          this.vipData = {};
+          this.vipData.getFreeDailyReward = false;
+          this.vipData.hasAdFree = false;
+          this.vipData.getAdFreeDailyReward = false;
+          this.vipData.hasMonthly = false;
+          this.vipData.getMonthlyDailyReward = false;
+          this.vipData.hasPermanent = false;
+          this.vipData.getPermanentDailyReward = false;
+        }
+        this.saveData();
+      },
+      getFreeDailyReward: function getFreeDailyReward() {
+        Global.roleData.updateDiamond(this.FREE_DAILY_DIAMOND_COUNT);
+        this.vipData.getFreeDailyReward = true;
+        this.saveData();
+      },
+      getAdFree: function getAdFree() {
+        Global.roleData.updateDiamond(this.AD_FREE_DIAMOND_COUNT);
+        this.vipData.hasAdFree = true;
+        this.saveData();
+      },
+      getAdFreeDailyReward: function getAdFreeDailyReward() {
+        Global.roleData.updateDiamond(this.AD_FREE_DAILY_DIAMOND_COUNT);
+        this.vipData.getAdFreeDailyReward = true;
+        this.saveData();
+      },
+      getMonthly: function getMonthly() {
+        Global.roleData.updateDiamond(this.MONTHLY_DIAMOND_COUNT);
+        this.vipData.hasMonthly = true;
+        this.saveData();
+      },
+      getMonthlyDailyReward: function getMonthlyDailyReward() {
+        Global.roleData.updateDiamond(this.MONTHLY_DAILY_DIAMOND_COUNT);
+        this.vipData.getMonthlyDailyReward = true;
+        this.saveData();
+      },
+      getPermanent: function getPermanent() {
+        Global.roleData.updateDiamond(this.PERMANENT_DIAMOND_COUNT);
+        this.vipData.hasPermanent = true;
+        this.saveData();
+      },
+      getPermanentDailyReward: function getPermanentDailyReward() {
+        Global.roleData.updateDiamond(this.PERMANENT_DAILY_DIAMOND_COUNT);
+        this.vipData.getPermanentDailyReward = true;
+        this.saveData();
+      },
+      resetDailyRewards: function resetDailyRewards() {
+        this.vipData.getFreeDailyReward = false;
+        this.vipData.getAdFreeDailyReward = false;
+        this.vipData.getMonthlyDailyReward = false;
+        this.vipData.getPermanentDailyReward = false;
+        this.saveData();
+      },
+      saveData: function saveData() {
+        Global.storage.set(gameConfig.COMMON_KEYS.VIP_DATA, this.vipData);
+      }
+    });
+    module.exports = VipManager;
+    cc._RF.pop();
+  }, {
+    GameConfig: "GameConfig"
+  } ],
+  VipUI: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "8a80a8hW2ZEDYHXeZDlPbiz", "VipUI");
+    "use strict";
+    var gameConfig = require("GameConfig");
+    var ItemData = require("ItemData");
+    var EnumType = require("EnumType");
+    var BattleConfig = require("BattleConfig");
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        scrollView: cc.ScrollView,
+        freeDailyRewardItem: cc.Node,
+        freeTimeNode: cc.Node,
+        freeTimeLabel: cc.Node,
+        freeRedDot: cc.Node,
+        freeClaimBtn: cc.Button,
+        adFreeRewardItem: cc.Node,
+        adFreeDailyRewardItem: cc.Node,
+        adFreeRedDot: cc.Node,
+        adFreeClaimBtn: cc.Button,
+        adFreeClaimBtnLabel: cc.Node,
+        monthlyRewardItem: cc.Node,
+        freeMonthlyRewardItem: cc.Node,
+        freeMonthlyRewardItem_2: cc.Node,
+        monthlyFreeRedDot: cc.Node,
+        monthlyFreeClaimBtn: cc.Button,
+        monthlyFreeClaimBtnLabel: cc.Node,
+        permanentRewardItem: cc.Node,
+        freePermanentRewardItem: cc.Node,
+        freePermanentRewardItem_2: cc.Node,
+        permanentFreeRedDot: cc.Node,
+        permanentFreeClaimBtn: cc.Button,
+        permanentFreeClaimBtnLabel: cc.Node,
+        claimAllBtn: cc.Button,
+        claimAllRedDot: cc.Node
+      },
+      onLoad: function onLoad() {
+        this.timer = Date.now();
+      },
+      start: function start() {},
+      onAdded: function onAdded(_args) {
+        this.updateUI();
+      },
+      updateUI: function updateUI() {
+        var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+        var diamondItemData = new ItemData();
+        diamondItemData.setData(null, diamondItemCoinfig);
+        diamondItemData.count = Global.vipManager.FREE_DAILY_DIAMOND_COUNT;
+        this.freeDailyRewardItem.getComponent("BagItem").setData(diamondItemData, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.freeDailyRewardItem.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.getFreeDailyReward);
+        this.freeTimeNode.active = true == Global.vipManager.vipData.getFreeDailyReward;
+        true == Global.vipManager.vipData.getFreeDailyReward && this.freeTimeLabel.getComponent("LabelUpdater").setString(this.getTimeUntilMidnight());
+        this.freeRedDot.active = true != Global.vipManager.vipData.getFreeDailyReward;
+        this.freeClaimBtn.interactable = true != Global.vipManager.vipData.getFreeDailyReward;
+        var diamondItemDataAdFree = new ItemData();
+        diamondItemDataAdFree.setData(null, diamondItemCoinfig);
+        diamondItemDataAdFree.count = Global.vipManager.AD_FREE_DIAMOND_COUNT;
+        var diamondItemDataAdFree_2 = new ItemData();
+        diamondItemDataAdFree_2.setData(null, diamondItemCoinfig);
+        diamondItemDataAdFree_2.count = Global.vipManager.AD_FREE_DAILY_DIAMOND_COUNT;
+        this.adFreeRewardItem.getComponent("BagItem").setData(diamondItemDataAdFree, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.adFreeRewardItem.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.hasAdFree);
+        this.adFreeDailyRewardItem.getComponent("BagItem").setData(diamondItemDataAdFree_2, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.adFreeDailyRewardItem.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.getAdFreeDailyReward);
+        if (true != Global.vipManager.vipData.hasAdFree) {
+          this.adFreeClaimBtn.interactable = true;
+          this.adFreeRedDot.active = false;
+          this.adFreeClaimBtnLabel.getComponent("LabelUpdater").setString(Global.vipManager.AD_FREE_COST);
+        } else {
+          this.adFreeClaimBtn.interactable = true != Global.vipManager.vipData.getAdFreeDailyReward;
+          this.adFreeRedDot.active = true != Global.vipManager.vipData.getAdFreeDailyReward;
+          this.adFreeClaimBtnLabel.getComponent("LabelUpdater").setContent("btn_claim");
+        }
+        var staminaItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.STAMINA_ITEM_ID);
+        var diamondItemDataMonthly = new ItemData();
+        diamondItemDataMonthly.setData(null, diamondItemCoinfig);
+        diamondItemDataMonthly.count = Global.vipManager.MONTHLY_DIAMOND_COUNT;
+        var diamondItemDataMonthly_2 = new ItemData();
+        diamondItemDataMonthly_2.setData(null, diamondItemCoinfig);
+        diamondItemDataMonthly_2.count = Global.vipManager.MONTHLY_DAILY_DIAMOND_COUNT;
+        var staminaItemDataMonthly = new ItemData();
+        staminaItemDataMonthly.setData(null, staminaItemCoinfig);
+        staminaItemDataMonthly.count = Global.vipManager.MONTHLY_DAILY_STAMINA_COUNT;
+        this.monthlyRewardItem.getComponent("BagItem").setData(diamondItemDataMonthly, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.monthlyRewardItem.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.hasMonthly);
+        this.freeMonthlyRewardItem.getComponent("BagItem").setData(diamondItemDataMonthly_2, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.freeMonthlyRewardItem.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.getMonthlyDailyReward);
+        this.freeMonthlyRewardItem_2.getComponent("BagItem").setData(staminaItemDataMonthly, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.freeMonthlyRewardItem_2.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.getMonthlyDailyReward);
+        if (true != Global.vipManager.vipData.hasMonthly) {
+          this.monthlyFreeClaimBtn.interactable = true;
+          this.monthlyFreeRedDot.active = false;
+          this.monthlyFreeClaimBtnLabel.getComponent("LabelUpdater").setString(Global.vipManager.MONTHLY_COST);
+        } else {
+          this.monthlyFreeClaimBtn.interactable = true != Global.vipManager.vipData.getMonthlyDailyReward;
+          this.monthlyFreeRedDot.active = true != Global.vipManager.vipData.getMonthlyDailyReward;
+          this.monthlyFreeClaimBtnLabel.getComponent("LabelUpdater").setContent("btn_claim");
+        }
+        var diamondItemDataPermanent = new ItemData();
+        diamondItemDataPermanent.setData(null, diamondItemCoinfig);
+        diamondItemDataPermanent.count = Global.vipManager.PERMANENT_DIAMOND_COUNT;
+        var diamondItemDataPermanent_2 = new ItemData();
+        diamondItemDataPermanent_2.setData(null, diamondItemCoinfig);
+        diamondItemDataPermanent_2.count = Global.vipManager.PERMANENT_DAILY_DIAMOND_COUNT;
+        var staminaItemDataPermanent = new ItemData();
+        staminaItemDataPermanent.setData(null, staminaItemCoinfig);
+        staminaItemDataPermanent.count = Global.vipManager.PERMANENT_DAILY_STAMINA_COUNT;
+        this.permanentRewardItem.getComponent("BagItem").setData(diamondItemDataPermanent, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.permanentRewardItem.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.hasPermanent);
+        this.freePermanentRewardItem.getComponent("BagItem").setData(diamondItemDataPermanent_2, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.freePermanentRewardItem.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.getPermanentDailyReward);
+        this.freePermanentRewardItem_2.getComponent("BagItem").setData(staminaItemDataPermanent, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
+        this.freePermanentRewardItem_2.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.getPermanentDailyReward);
+        if (true != Global.vipManager.vipData.hasPermanent) {
+          this.permanentFreeClaimBtn.interactable = true;
+          this.permanentFreeRedDot.active = false;
+          this.permanentFreeClaimBtnLabel.getComponent("LabelUpdater").setString(Global.vipManager.PERMANENT_COST);
+        } else {
+          this.permanentFreeClaimBtn.interactable = true != Global.vipManager.vipData.getPermanentDailyReward;
+          this.permanentFreeRedDot.active = true != Global.vipManager.vipData.getPermanentDailyReward;
+          this.permanentFreeClaimBtnLabel.getComponent("LabelUpdater").setContent("btn_claim");
+        }
+        var hasReward = true != Global.vipManager.vipData.getFreeDailyReward || true == Global.vipManager.vipData.hasAdFree && true != Global.vipManager.vipData.getAdFreeDailyReward || true == Global.vipManager.vipData.hasMonthly && true != Global.vipManager.vipData.getMonthlyDailyReward || true == Global.vipManager.vipData.hasPermanent && true != Global.vipManager.vipData.getPermanentDailyReward;
+        this.claimAllBtn.interactable = hasReward;
+        this.claimAllRedDot.active = hasReward;
+      },
+      getTimeUntilMidnight: function getTimeUntilMidnight() {
+        var now = Global.networkTimer;
+        var midnight = new Date(now);
+        midnight.setHours(24, 0, 0, 0);
+        var diffMs = midnight - now;
+        var seconds = Math.floor(diffMs / 1e3);
+        var hours = String(Math.floor(seconds / 3600)).padStart(2, "0");
+        var mins = String(Math.floor(seconds % 3600 / 60)).padStart(2, "0");
+        var secs = String(seconds % 60).padStart(2, "0");
+        return hours + ":" + mins + ":" + secs;
+      },
+      onClickGetFreeDailyReward: function onClickGetFreeDailyReward() {
+        Global.vipManager.getFreeDailyReward();
+        this.updateUI();
+        var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+        var diamondItemData = new ItemData();
+        diamondItemData.setData(null, diamondItemCoinfig);
+        diamondItemData.count = Global.vipManager.FREE_DAILY_DIAMOND_COUNT;
+        var args = {};
+        args.items = [ diamondItemData ];
+        args.rewardType = EnumType.REWARD_TYPE.ITEM;
+        Global.gui.open(gameConfig.UIID.RewardsPanel, args);
+      },
+      onClickAdFree: function onClickAdFree() {
+        if (true != Global.vipManager.vipData.hasAdFree) {
+          Global.vipManager.getAdFree();
+          this.updateUI();
+          var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+          var diamondItemDataAdFree = new ItemData();
+          diamondItemDataAdFree.setData(null, diamondItemCoinfig);
+          diamondItemDataAdFree.count = Global.vipManager.AD_FREE_DIAMOND_COUNT;
+          var args = {};
+          args.items = [ diamondItemDataAdFree ];
+          args.rewardType = EnumType.REWARD_TYPE.ITEM;
+          Global.gui.open(gameConfig.UIID.RewardsPanel, args);
+        } else {
+          Global.vipManager.getAdFreeDailyReward();
+          this.updateUI();
+          var _diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+          var diamondItemDataAdFree_2 = new ItemData();
+          diamondItemDataAdFree_2.setData(null, _diamondItemCoinfig);
+          diamondItemDataAdFree_2.count = Global.vipManager.AD_FREE_DAILY_DIAMOND_COUNT;
+          var _args2 = {};
+          _args2.items = [ diamondItemDataAdFree_2 ];
+          _args2.rewardType = EnumType.REWARD_TYPE.ITEM;
+          Global.gui.open(gameConfig.UIID.RewardsPanel, _args2);
+        }
+      },
+      onClickMonthly: function onClickMonthly() {
+        if (true != Global.vipManager.vipData.hasMonthly) {
+          Global.vipManager.getMonthly();
+          this.updateUI();
+          var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+          var diamondItemDataMonthly = new ItemData();
+          diamondItemDataMonthly.setData(null, diamondItemCoinfig);
+          diamondItemDataMonthly.count = Global.vipManager.MONTHLY_DIAMOND_COUNT;
+          var args = {};
+          args.items = [ diamondItemDataMonthly ];
+          args.rewardType = EnumType.REWARD_TYPE.ITEM;
+          Global.gui.open(gameConfig.UIID.RewardsPanel, args);
+        } else {
+          Global.vipManager.getMonthlyDailyReward();
+          this.updateUI();
+          var _diamondItemCoinfig2 = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+          var staminaItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.STAMINA_ITEM_ID);
+          var diamondItemDataMonthly_2 = new ItemData();
+          diamondItemDataMonthly_2.setData(null, _diamondItemCoinfig2);
+          diamondItemDataMonthly_2.count = Global.vipManager.MONTHLY_DAILY_DIAMOND_COUNT;
+          var staminaItemDataMonthly = new ItemData();
+          staminaItemDataMonthly.setData(null, staminaItemCoinfig);
+          staminaItemDataMonthly.count = Global.vipManager.MONTHLY_DAILY_STAMINA_COUNT;
+          var _args3 = {};
+          _args3.items = [ diamondItemDataMonthly_2, staminaItemDataMonthly ];
+          _args3.rewardType = EnumType.REWARD_TYPE.ITEM;
+          Global.gui.open(gameConfig.UIID.RewardsPanel, _args3);
+        }
+      },
+      onClickPermanent: function onClickPermanent() {
+        if (true != Global.vipManager.vipData.hasPermanent) {
+          Global.vipManager.getPermanent();
+          this.updateUI();
+          var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+          var diamondItemDataPermanent = new ItemData();
+          diamondItemDataPermanent.setData(null, diamondItemCoinfig);
+          diamondItemDataPermanent.count = Global.vipManager.PERMANENT_DIAMOND_COUNT;
+          var args = {};
+          args.items = [ diamondItemDataPermanent ];
+          args.rewardType = EnumType.REWARD_TYPE.ITEM;
+          Global.gui.open(gameConfig.UIID.RewardsPanel, args);
+        } else {
+          Global.vipManager.getPermanentDailyReward();
+          this.updateUI();
+          var _diamondItemCoinfig3 = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+          var staminaItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.STAMINA_ITEM_ID);
+          var diamondItemDataPermanent_2 = new ItemData();
+          diamondItemDataPermanent_2.setData(null, _diamondItemCoinfig3);
+          diamondItemDataPermanent_2.count = Global.vipManager.PERMANENT_DAILY_DIAMOND_COUNT;
+          var staminaItemDataPermanent = new ItemData();
+          staminaItemDataPermanent.setData(null, staminaItemCoinfig);
+          staminaItemDataPermanent.count = Global.vipManager.PERMANENT_DAILY_STAMINA_COUNT;
+          var _args4 = {};
+          _args4.items = [ diamondItemDataPermanent_2, staminaItemDataPermanent ];
+          _args4.rewardType = EnumType.REWARD_TYPE.ITEM;
+          Global.gui.open(gameConfig.UIID.RewardsPanel, _args4);
+        }
+      },
+      onClickClaimAll: function onClickClaimAll() {
+        var hasReward = true != Global.vipManager.vipData.getFreeDailyReward || true == Global.vipManager.vipData.hasAdFree && true != Global.vipManager.vipData.getAdFreeDailyReward || true == Global.vipManager.vipData.hasMonthly && true != Global.vipManager.vipData.getMonthlyDailyReward || true == Global.vipManager.vipData.hasPermanent && true != Global.vipManager.vipData.getPermanentDailyReward;
+        var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+        var staminaItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.STAMINA_ITEM_ID);
+        var result = [];
+        if (true != Global.vipManager.vipData.getFreeDailyReward) {
+          Global.vipManager.getFreeDailyReward();
+          var diamondItemData = new ItemData();
+          diamondItemData.setData(null, diamondItemCoinfig);
+          diamondItemData.count = Global.vipManager.FREE_DAILY_DIAMOND_COUNT;
+          result.push(diamondItemData);
+        }
+        if (true == Global.vipManager.vipData.hasAdFree && true != Global.vipManager.vipData.getAdFreeDailyReward) {
+          Global.vipManager.getAdFreeDailyReward();
+          var diamondItemDataAdFree_2 = new ItemData();
+          diamondItemDataAdFree_2.setData(null, diamondItemCoinfig);
+          diamondItemDataAdFree_2.count = Global.vipManager.AD_FREE_DAILY_DIAMOND_COUNT;
+          result.push(diamondItemDataAdFree_2);
+        }
+        if (true == Global.vipManager.vipData.hasMonthly && true != Global.vipManager.vipData.getMonthlyDailyReward) {
+          Global.vipManager.getMonthlyDailyReward();
+          var diamondItemDataMonthly_2 = new ItemData();
+          diamondItemDataMonthly_2.setData(null, diamondItemCoinfig);
+          diamondItemDataMonthly_2.count = Global.vipManager.MONTHLY_DAILY_DIAMOND_COUNT;
+          result.push(diamondItemDataMonthly_2);
+          var staminaItemDataMonthly = new ItemData();
+          staminaItemDataMonthly.setData(null, staminaItemCoinfig);
+          staminaItemDataMonthly.count = Global.vipManager.MONTHLY_DAILY_STAMINA_COUNT;
+          result.push(staminaItemDataMonthly);
+        }
+        if (true == Global.vipManager.vipData.hasPermanent && true != Global.vipManager.vipData.getPermanentDailyReward) {
+          Global.vipManager.getPermanentDailyReward();
+          var diamondItemDataPermanent_2 = new ItemData();
+          diamondItemDataPermanent_2.setData(null, diamondItemCoinfig);
+          diamondItemDataPermanent_2.count = Global.vipManager.PERMANENT_DAILY_DIAMOND_COUNT;
+          result.push(diamondItemDataPermanent_2);
+          var staminaItemDataPermanent = new ItemData();
+          staminaItemDataPermanent.setData(null, staminaItemCoinfig);
+          staminaItemDataPermanent.count = Global.vipManager.PERMANENT_DAILY_STAMINA_COUNT;
+          result.push(staminaItemDataPermanent);
+        }
+        var args = {};
+        args.items = result;
+        args.rewardType = EnumType.REWARD_TYPE.ITEM;
+        Global.gui.open(gameConfig.UIID.RewardsPanel, args);
+        this.updateUI();
+      },
+      onEnable: function onEnable() {
+        this.scrollView.scrollToTop();
+      },
+      onClickClose: function onClickClose() {
+        Global.gui.remove(gameConfig.UIID.VIP);
+      },
+      update: function update(dt) {
+        if (Date.now() - this.timer >= BattleConfig.HEART_BEAT_ONE_SECOND) {
+          this.timer = Date.now();
+          true == Global.vipManager.vipData.getFreeDailyReward && this.freeTimeLabel.getComponent("LabelUpdater").setString(this.getTimeUntilMidnight());
+        }
+      }
+    });
+    cc._RF.pop();
+  }, {
+    BattleConfig: "BattleConfig",
+    EnumType: "EnumType",
+    GameConfig: "GameConfig",
+    ItemData: "ItemData"
+  } ],
   Wait: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "61a53WtVkJGmL081AbD9bOS", "Wait");
@@ -32508,4 +33309,4 @@ window.__require = function e(t, n, r) {
     exports.default = NewClass;
     cc._RF.pop();
   }, {} ]
-}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "ToggleEffect", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);
+}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);

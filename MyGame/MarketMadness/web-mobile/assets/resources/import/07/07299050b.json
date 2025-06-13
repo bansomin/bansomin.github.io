@@ -973,7 +973,7 @@
         [
           16,
           "Enemy01",
-          "\r\nEnemy01.png\r\nsize: 243,264\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBody\r\n  rotate: true\r\n  xy: 144, 175\r\n  size: 87, 91\r\n  orig: 87, 91\r\n  offset: 0, 0\r\n  index: -1\r\nEar\r\n  rotate: false\r\n  xy: 92, 69\r\n  size: 39, 77\r\n  orig: 39, 81\r\n  offset: 0, 4\r\n  index: -1\r\nHat\r\n  rotate: true\r\n  xy: 2, 14\r\n  size: 132, 88\r\n  orig: 132, 88\r\n  offset: 0, 0\r\n  index: -1\r\nHead\r\n  rotate: false\r\n  xy: 2, 148\r\n  size: 140, 114\r\n  orig: 170, 144\r\n  offset: 0, 30\r\n  index: -1\r\nL_Eye\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 17, 10\r\n  orig: 17, 10\r\n  offset: 0, 0\r\n  index: -1\r\nL_Leg\r\n  rotate: true\r\n  xy: 133, 69\r\n  size: 35, 34\r\n  orig: 35, 34\r\n  offset: 0, 0\r\n  index: -1\r\nL_hand\r\n  rotate: true\r\n  xy: 169, 44\r\n  size: 60, 72\r\n  orig: 60, 72\r\n  offset: 0, 0\r\n  index: -1\r\nMouse\r\n  rotate: false\r\n  xy: 144, 106\r\n  size: 79, 67\r\n  orig: 96, 109\r\n  offset: 0, 5\r\n  index: -1\r\nR_Eye\r\n  rotate: false\r\n  xy: 205, 12\r\n  size: 27, 30\r\n  orig: 36, 62\r\n  offset: 2, 6\r\n  index: -1\r\nR_Leg\r\n  rotate: true\r\n  xy: 169, 7\r\n  size: 35, 34\r\n  orig: 35, 34\r\n  offset: 0, 0\r\n  index: -1\r\nR_hand\r\n  rotate: true\r\n  xy: 92, 4\r\n  size: 63, 75\r\n  orig: 63, 75\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nEnemy01.png\nsize: 243,264\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nBody\n  rotate: true\n  xy: 144, 175\n  size: 87, 91\n  orig: 87, 91\n  offset: 0, 0\n  index: -1\nEar\n  rotate: false\n  xy: 92, 69\n  size: 39, 77\n  orig: 39, 81\n  offset: 0, 4\n  index: -1\nHat\n  rotate: true\n  xy: 2, 14\n  size: 132, 88\n  orig: 132, 88\n  offset: 0, 0\n  index: -1\nHead\n  rotate: false\n  xy: 2, 148\n  size: 140, 114\n  orig: 170, 144\n  offset: 0, 30\n  index: -1\nL_Eye\n  rotate: false\n  xy: 2, 2\n  size: 17, 10\n  orig: 17, 10\n  offset: 0, 0\n  index: -1\nL_Leg\n  rotate: true\n  xy: 133, 69\n  size: 35, 34\n  orig: 35, 34\n  offset: 0, 0\n  index: -1\nL_hand\n  rotate: true\n  xy: 169, 44\n  size: 60, 72\n  orig: 60, 72\n  offset: 0, 0\n  index: -1\nMouse\n  rotate: false\n  xy: 144, 106\n  size: 79, 67\n  orig: 96, 109\n  offset: 0, 5\n  index: -1\nR_Eye\n  rotate: false\n  xy: 205, 12\n  size: 27, 30\n  orig: 36, 62\n  offset: 2, 6\n  index: -1\nR_Leg\n  rotate: true\n  xy: 169, 7\n  size: 35, 34\n  orig: 35, 34\n  offset: 0, 0\n  index: -1\nR_hand\n  rotate: true\n  xy: 92, 4\n  size: 63, 75\n  orig: 63, 75\n  offset: 0, 0\n  index: -1\n",
           [
             "Enemy01.png"
           ],
@@ -2711,7 +2711,7 @@
         [
           16,
           "Enemy01_Lanzi",
-          "\r\nEnemy01_Lanzi.png\r\nsize: 115,140\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nMushroom\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 111, 136\r\n  orig: 111, 136\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nEnemy01_Lanzi.png\nsize: 115,140\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nMushroom\n  rotate: false\n  xy: 2, 2\n  size: 111, 136\n  orig: 111, 136\n  offset: 0, 0\n  index: -1\n",
           [
             "Enemy01_Lanzi.png"
           ],

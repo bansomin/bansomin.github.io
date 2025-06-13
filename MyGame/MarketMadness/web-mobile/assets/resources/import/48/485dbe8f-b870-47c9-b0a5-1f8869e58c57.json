@@ -973,16 +973,16 @@
         {
           "id": "skill_1017_desc",
           "content": "获得<color=#00b411>2</color>&lt;img src='txt_ico_1002' width=36 height=36/&gt;\n(造成<color=#00b411>{0}</color>伤害)",
-          "valueList": "200|strength"
+          "valueList": "150|strength"
         },
         {
           "id": "skill_1018_desc",
           "content": "获得&lt;img src='txt_ico_1002' width=36 height=36/&gt;\n(造成<color=#00b411>{0}</color>伤害)",
-          "valueList": "200|strength"
+          "valueList": "150|strength"
         },
         {
           "id": "skill_1019_desc",
-          "content": "&lt;img src='txt_ico_1002' width=36 height=36/&gt;造成伤害<color=#00b411>+100%</color>",
+          "content": "&lt;img src='txt_ico_1002' width=36 height=36/&gt;造成伤害<color=#00b411>+50%</color>",
           "valueList": ""
         },
         {
@@ -1438,7 +1438,7 @@
         {
           "id": "skill_1110_desc",
           "content": "被任何子弹击中时<color=#00b411>+15%</color>几率回复<color=#00b411>{0}</color>生命",
-          "valueList": "16.67|strength"
+          "valueList": "1.67|strength"
         },
         {
           "id": "skill_1111_desc",
@@ -1673,7 +1673,7 @@
         {
           "id": "skill_1158_desc",
           "content": "获得&lt;img src='txt_ico_1002' width=36 height=36/&gt;(造成<color=#00b411>{0}</color>伤害)",
-          "valueList": "200|strength"
+          "valueList": "150|strength"
         },
         {
           "id": "skill_1159_desc",

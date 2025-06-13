@@ -133,7 +133,7 @@
         [
           0,
           "Ultra_3005_Blast",
-          "\r\nUltra_3005_Blast.png\r\nsize: 256,256\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/dg1\r\n  rotate: false\r\n  xy: 96, 95\r\n  size: 66, 67\r\n  orig: 66, 67\r\n  offset: 0, 0\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 2, 70\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          "\nUltra_3005_Blast.png\nsize: 256,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/dg1\n  rotate: false\n  xy: 96, 95\n  size: 66, 67\n  orig: 66, 67\n  offset: 0, 0\n  index: -1\nImage/glow1\n  rotate: false\n  xy: 2, 70\n  size: 92, 92\n  orig: 98, 98\n  offset: 3, 3\n  index: -1\n",
           [
             "Ultra_3005_Blast.png"
           ],

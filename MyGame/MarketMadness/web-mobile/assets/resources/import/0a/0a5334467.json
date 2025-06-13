@@ -973,7 +973,7 @@
         [
           16,
           "Enemy02_Lanzi",
-          "\r\nEnemy02_Lanzi.png\r\nsize: 140,129\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nHamberger\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 136, 125\r\n  orig: 136, 125\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nEnemy02_Lanzi.png\nsize: 140,129\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nHamberger\n  rotate: false\n  xy: 2, 2\n  size: 136, 125\n  orig: 136, 125\n  offset: 0, 0\n  index: -1\n",
           [
             "Enemy02_Lanzi.png"
           ],
@@ -1202,7 +1202,7 @@
         [
           16,
           "Enemy02",
-          "\r\nEnemy02.png\r\nsize: 261,190\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBody\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 153, 186\r\n  orig: 153, 186\r\n  offset: 0, 0\r\n  index: -1\r\nEye\r\n  rotate: false\r\n  xy: 157, 54\r\n  size: 58, 58\r\n  orig: 58, 58\r\n  offset: 0, 0\r\n  index: -1\r\nEye_Ball\r\n  rotate: false\r\n  xy: 219, 14\r\n  size: 14, 14\r\n  orig: 14, 14\r\n  offset: 0, 0\r\n  index: -1\r\nL_Arm\r\n  rotate: false\r\n  xy: 157, 114\r\n  size: 102, 74\r\n  orig: 102, 74\r\n  offset: 0, 0\r\n  index: -1\r\nL_Leg\r\n  rotate: false\r\n  xy: 217, 72\r\n  size: 31, 40\r\n  orig: 31, 40\r\n  offset: 0, 0\r\n  index: -1\r\nR_Arm\r\n  rotate: true\r\n  xy: 157, 13\r\n  size: 39, 60\r\n  orig: 39, 60\r\n  offset: 0, 0\r\n  index: -1\r\nR_Leg\r\n  rotate: false\r\n  xy: 219, 30\r\n  size: 31, 40\r\n  orig: 31, 40\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nEnemy02.png\nsize: 261,190\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nBody\n  rotate: false\n  xy: 2, 2\n  size: 153, 186\n  orig: 153, 186\n  offset: 0, 0\n  index: -1\nEye\n  rotate: false\n  xy: 157, 54\n  size: 58, 58\n  orig: 58, 58\n  offset: 0, 0\n  index: -1\nEye_Ball\n  rotate: false\n  xy: 219, 14\n  size: 14, 14\n  orig: 14, 14\n  offset: 0, 0\n  index: -1\nL_Arm\n  rotate: false\n  xy: 157, 114\n  size: 102, 74\n  orig: 102, 74\n  offset: 0, 0\n  index: -1\nL_Leg\n  rotate: false\n  xy: 217, 72\n  size: 31, 40\n  orig: 31, 40\n  offset: 0, 0\n  index: -1\nR_Arm\n  rotate: true\n  xy: 157, 13\n  size: 39, 60\n  orig: 39, 60\n  offset: 0, 0\n  index: -1\nR_Leg\n  rotate: false\n  xy: 219, 30\n  size: 31, 40\n  orig: 31, 40\n  offset: 0, 0\n  index: -1\n",
           [
             "Enemy02.png"
           ],

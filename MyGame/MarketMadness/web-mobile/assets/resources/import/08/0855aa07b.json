@@ -4765,7 +4765,7 @@
         [
           70,
           "Get_Money",
-          "\r\nGet_Money.png\r\nsize: 256,43\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImgae/Cash01\r\n  rotate: false\r\n  xy: 168, 13\r\n  size: 56, 28\r\n  orig: 56, 28\r\n  offset: 0, 0\r\n  index: -1\r\nImgae/Cash02\r\n  rotate: false\r\n  xy: 85, 3\r\n  size: 81, 38\r\n  orig: 81, 38\r\n  offset: 0, 0\r\n  index: -1\r\nImgae/Cash03\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 81, 39\r\n  orig: 81, 39\r\n  offset: 0, 0\r\n  index: -1\r\nImgae/Point\r\n  rotate: false\r\n  xy: 226, 13\r\n  size: 28, 28\r\n  orig: 28, 28\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nGet_Money.png\nsize: 256,43\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImgae/Cash01\n  rotate: false\n  xy: 168, 13\n  size: 56, 28\n  orig: 56, 28\n  offset: 0, 0\n  index: -1\nImgae/Cash02\n  rotate: false\n  xy: 85, 3\n  size: 81, 38\n  orig: 81, 38\n  offset: 0, 0\n  index: -1\nImgae/Cash03\n  rotate: false\n  xy: 2, 2\n  size: 81, 39\n  orig: 81, 39\n  offset: 0, 0\n  index: -1\nImgae/Point\n  rotate: false\n  xy: 226, 13\n  size: 28, 28\n  orig: 28, 28\n  offset: 0, 0\n  index: -1\n",
           [
             "Get_Money.png"
           ],

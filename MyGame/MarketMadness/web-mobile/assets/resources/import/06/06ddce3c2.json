@@ -245,11 +245,12 @@
         "_N$spacingX",
         "_N$spacingY",
         "_enabled",
+        "_N$paddingLeft",
         "_N$paddingTop",
         "node",
         "_layoutSize"
       ],
-      -3,
+      -4,
       1,
       5
     ],
@@ -681,8 +682,8 @@
       6,
       0,
       1,
-      6,
       7,
+      8,
       3
     ],
     [
@@ -918,8 +919,8 @@
       0,
       1,
       2,
-      6,
       7,
+      8,
       5
     ],
     [
@@ -931,6 +932,15 @@
       6,
       7,
       5
+    ],
+    [
+      0,
+      0,
+      1,
+      4,
+      7,
+      3,
+      3
     ],
     [
       1,
@@ -1013,8 +1023,8 @@
       0,
       1,
       2,
-      6,
       7,
+      8,
       4
     ],
     [
@@ -1093,12 +1103,11 @@
     [
       0,
       0,
-      1,
       4,
       7,
       3,
       5,
-      3
+      2
     ],
     [
       0,
@@ -1107,24 +1116,8 @@
       4,
       7,
       3,
-      3
-    ],
-    [
-      0,
-      0,
-      4,
-      7,
-      3,
-      2
-    ],
-    [
-      0,
-      0,
-      4,
-      7,
-      3,
       8,
-      2
+      3
     ],
     [
       0,
@@ -1210,7 +1203,6 @@
     [
       1,
       0,
-      1,
       6,
       8,
       3,
@@ -1219,7 +1211,7 @@
       5,
       10,
       7,
-      3
+      2
     ],
     [
       1,
@@ -1433,8 +1425,8 @@
       0,
       1,
       3,
-      6,
       7,
+      8,
       4
     ],
     [
@@ -1442,11 +1434,12 @@
       0,
       1,
       5,
+      6,
       2,
       3,
-      6,
       7,
-      6
+      8,
+      7
     ],
     [
       3,
@@ -1623,7 +1616,7 @@
         [
           15,
           "Back_Glow",
-          "\r\nBack_Glow.png\r\nsize: 482,453\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nLiz\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 25, 25\r\n  orig: 25, 25\r\n  offset: 0, 0\r\n  index: -1\r\nRing\r\n  rotate: false\r\n  xy: 2, 29\r\n  size: 478, 422\r\n  orig: 504, 495\r\n  offset: 0, 40\r\n  index: -1\r\n",
+          "\nBack_Glow.png\nsize: 482,453\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nLiz\n  rotate: false\n  xy: 2, 2\n  size: 25, 25\n  orig: 25, 25\n  offset: 0, 0\n  index: -1\nRing\n  rotate: false\n  xy: 2, 29\n  size: 478, 422\n  orig: 504, 495\n  offset: 0, 40\n  index: -1\n",
           [
             "Back_Glow.png"
           ],
@@ -2720,7 +2713,7 @@
         [
           15,
           "Rewards_Sg",
-          "\r\nRewards_Sg.png\r\nsize: 456,269\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nSg/Sg_00000\r\n  rotate: true\r\n  xy: 57, 19\r\n  size: 28, 50\r\n  orig: 86, 90\r\n  offset: 0, 1\r\n  index: -1\r\nSg/Sg_00001\r\n  rotate: false\r\n  xy: 396, 181\r\n  size: 53, 86\r\n  orig: 86, 90\r\n  offset: 0, 0\r\n  index: -1\r\nSg/Sg_00002\r\n  rotate: false\r\n  xy: 308, 3\r\n  size: 76, 90\r\n  orig: 86, 90\r\n  offset: 0, 0\r\n  index: -1\r\nSg/Sg_00003\r\n  rotate: false\r\n  xy: 222, 4\r\n  size: 84, 89\r\n  orig: 86, 90\r\n  offset: 2, 1\r\n  index: -1\r\nSg/Sg_00004\r\n  rotate: false\r\n  xy: 386, 4\r\n  size: 68, 89\r\n  orig: 86, 90\r\n  offset: 18, 1\r\n  index: -1\r\nSg/Sg_00005\r\n  rotate: false\r\n  xy: 396, 98\r\n  size: 49, 81\r\n  orig: 86, 90\r\n  offset: 37, 9\r\n  index: -1\r\nSg/Sg_00006\r\n  rotate: true\r\n  xy: 2, 16\r\n  size: 31, 53\r\n  orig: 86, 90\r\n  offset: 55, 37\r\n  index: -1\r\nSg/Sg_00007\r\n  rotate: true\r\n  xy: 57, 2\r\n  size: 15, 26\r\n  orig: 86, 90\r\n  offset: 71, 64\r\n  index: -1\r\nSquare2_00001\r\n  rotate: false\r\n  xy: 2, 49\r\n  size: 218, 218\r\n  orig: 218, 218\r\n  offset: 0, 0\r\n  index: -1\r\nSquare_00000\r\n  rotate: false\r\n  xy: 222, 95\r\n  size: 172, 172\r\n  orig: 172, 172\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nRewards_Sg.png\nsize: 456,269\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nSg/Sg_00000\n  rotate: true\n  xy: 57, 19\n  size: 28, 50\n  orig: 86, 90\n  offset: 0, 1\n  index: -1\nSg/Sg_00001\n  rotate: false\n  xy: 396, 181\n  size: 53, 86\n  orig: 86, 90\n  offset: 0, 0\n  index: -1\nSg/Sg_00002\n  rotate: false\n  xy: 308, 3\n  size: 76, 90\n  orig: 86, 90\n  offset: 0, 0\n  index: -1\nSg/Sg_00003\n  rotate: false\n  xy: 222, 4\n  size: 84, 89\n  orig: 86, 90\n  offset: 2, 1\n  index: -1\nSg/Sg_00004\n  rotate: false\n  xy: 386, 4\n  size: 68, 89\n  orig: 86, 90\n  offset: 18, 1\n  index: -1\nSg/Sg_00005\n  rotate: false\n  xy: 396, 98\n  size: 49, 81\n  orig: 86, 90\n  offset: 37, 9\n  index: -1\nSg/Sg_00006\n  rotate: true\n  xy: 2, 16\n  size: 31, 53\n  orig: 86, 90\n  offset: 55, 37\n  index: -1\nSg/Sg_00007\n  rotate: true\n  xy: 57, 2\n  size: 15, 26\n  orig: 86, 90\n  offset: 71, 64\n  index: -1\nSquare2_00001\n  rotate: false\n  xy: 2, 49\n  size: 218, 218\n  orig: 218, 218\n  offset: 0, 0\n  index: -1\nSquare_00000\n  rotate: false\n  xy: 222, 95\n  size: 172, 172\n  orig: 172, 172\n  offset: 0, 0\n  index: -1\n",
           [
             "Rewards_Sg.png"
           ],
@@ -2964,7 +2957,7 @@
     [
       [
         [
-          44,
+          45,
           "rewardsPanel"
         ],
         [
@@ -2982,7 +2975,7 @@
           ],
           [
             [
-              66,
+              65,
               45,
               -180,
               -180,
@@ -2993,7 +2986,7 @@
               -2
             ],
             [
-              69,
+              68,
               -3,
               [
                 115
@@ -3001,7 +2994,7 @@
               114
             ],
             [
-              70,
+              69,
               -30,
               -29,
               -28,
@@ -3033,12 +3026,12 @@
               117
             ],
             [
-              71,
+              70,
               -31
             ]
           ],
           [
-            72,
+            71,
             -1
           ],
           [
@@ -3082,11 +3075,11 @@
           ],
           [
             [
-              35,
+              36,
               -42,
               [
                 [
-                  73,
+                  72,
                   "01bbaRyGidIPr1YdqgXBp/W",
                   "onClickTestBtn",
                   "1000",
@@ -3095,7 +3088,7 @@
               ]
             ],
             [
-              75,
+              74,
               -61,
               -60,
               -59,
@@ -3148,9 +3141,8 @@
           ]
         ],
         [
-          45,
+          46,
           "content",
-          false,
           1,
           [
             -78,
@@ -3172,7 +3164,7 @@
           ]
         ],
         [
-          46,
+          28,
           "skillNode",
           false,
           1,
@@ -3200,7 +3192,7 @@
           ],
           [
             [
-              76,
+              75,
               -93,
               -92
             ],
@@ -3357,7 +3349,7 @@
           ]
         ],
         [
-          28,
+          29,
           "UltimateProgBar",
           false,
           2,
@@ -4105,8 +4097,8 @@
               -182,
               [
                 5,
-                150.36,
-                70.56
+                156.36,
+                76.56
               ]
             ],
             [
@@ -4122,8 +4114,8 @@
               -185,
               [
                 5,
-                150.36,
-                70.56
+                156.36,
+                76.56
               ]
             ]
           ],
@@ -4134,8 +4126,8 @@
           ],
           [
             5,
-            150.36,
-            70.56
+            156.36,
+            76.56
           ],
           [
             0,
@@ -4151,9 +4143,8 @@
           ]
         ],
         [
-          57,
+          56,
           "scrollView",
-          false,
           3,
           [
             -190,
@@ -4170,7 +4161,7 @@
                 -188
               ],
               [
-                79,
+                78,
                 false,
                 1,
                 0,
@@ -4277,8 +4268,9 @@
           ]
         ],
         [
-          47,
+          28,
           "clerkNode",
+          false,
           1,
           [
             -198,
@@ -4353,7 +4345,7 @@
           ]
         ],
         [
-          28,
+          29,
           "HPprogBar",
           false,
           2,
@@ -4412,7 +4404,7 @@
           ],
           [
             [
-              38,
+              39,
               -216,
               -215
             ],
@@ -4448,7 +4440,7 @@
           ],
           [
             [
-              38,
+              39,
               -221,
               -220
             ],
@@ -4827,7 +4819,7 @@
           ]
         ],
         [
-          58,
+          57,
           "scrollBar",
           false,
           0,
@@ -4839,7 +4831,7 @@
             [
               -254,
               [
-                67,
+                66,
                 0,
                 37,
                 350.07654921020657,
@@ -4890,7 +4882,7 @@
           ]
         ],
         [
-          29,
+          30,
           "debuff_as",
           false,
           [
@@ -4938,7 +4930,7 @@
           ]
         ],
         [
-          29,
+          30,
           "debuff_ad",
           false,
           [
@@ -4996,7 +4988,7 @@
           ],
           [
             [
-              36,
+              37,
               1,
               1,
               30,
@@ -5042,7 +5034,7 @@
           ],
           [
             [
-              77,
+              76,
               1,
               2,
               30,
@@ -5131,8 +5123,9 @@
           ]
         ],
         [
-          48,
+          47,
           "coinNode",
+          false,
           3,
           [
             -271,
@@ -5205,7 +5198,7 @@
           ]
         ],
         [
-          63,
+          62,
           "richText",
           5,
           [
@@ -5284,7 +5277,7 @@
           ],
           [
             [
-              36,
+              37,
               1,
               1,
               10,
@@ -5473,7 +5466,7 @@
           ]
         ],
         [
-          49,
+          48,
           "background",
           220,
           1,
@@ -5489,7 +5482,7 @@
               1
             ],
             [
-              68,
+              67,
               45,
               40,
               36,
@@ -5542,12 +5535,12 @@
           ],
           [
             5,
-            150.36,
-            70.56
+            156.36,
+            76.56
           ]
         ],
         [
-          82,
+          81,
           false,
           0.75,
           0.23,
@@ -5555,7 +5548,7 @@
           21
         ],
         [
-          64,
+          63,
           "content",
           [
             -291
@@ -5567,7 +5560,7 @@
           ],
           [
             5,
-            190,
+            1100,
             200
           ],
           [
@@ -5577,7 +5570,7 @@
           ]
         ],
         [
-          50,
+          49,
           "view",
           21,
           [
@@ -5585,7 +5578,7 @@
           ],
           [
             [
-              83,
+              82,
               0,
               -292,
               [
@@ -5638,7 +5631,7 @@
           ]
         ],
         [
-          30,
+          31,
           "label",
           6,
           [
@@ -5794,13 +5787,13 @@
           ]
         ],
         [
-          59,
+          58,
           "basketSpine",
           [
             [
               -302,
               [
-                87,
+                86,
                 -303,
                 44
               ]
@@ -5820,14 +5813,14 @@
           ]
         ],
         [
-          30,
+          31,
           "roleSpine",
           2,
           [
             [
               -304,
               [
-                88,
+                87,
                 false,
                 -305,
                 46
@@ -5898,7 +5891,7 @@
           ]
         ],
         [
-          32,
+          33,
           "rebornSpine",
           2,
           [
@@ -5972,7 +5965,7 @@
           ]
         ],
         [
-          51,
+          50,
           "stunSpine",
           false,
           2,
@@ -6044,7 +6037,7 @@
           ]
         ],
         [
-          52,
+          51,
           "dialogueRootNode",
           2,
           [
@@ -6089,7 +6082,7 @@
           ]
         ],
         [
-          60,
+          59,
           "numLab",
           26,
           [
@@ -6132,7 +6125,7 @@
           ]
         ],
         [
-          61,
+          60,
           "numLab",
           false,
           25,
@@ -6211,7 +6204,7 @@
           ]
         ],
         [
-          62,
+          61,
           "numLab",
           false,
           8,
@@ -6247,7 +6240,7 @@
           ]
         ],
         [
-          31,
+          32,
           "numLab",
           36,
           [
@@ -6295,7 +6288,7 @@
           ]
         ],
         [
-          31,
+          32,
           "numLab",
           37,
           [
@@ -6349,7 +6342,7 @@
           1,
           [
             [
-              84,
+              83,
               "default",
               "Rewards_Sg",
               0,
@@ -6407,7 +6400,7 @@
           ]
         ],
         [
-          53,
+          52,
           "Rewards_Liz",
           3,
           [
@@ -6471,7 +6464,7 @@
           ]
         ],
         [
-          65,
+          64,
           "bar",
           0,
           35,
@@ -6507,7 +6500,7 @@
           ]
         ],
         [
-          80,
+          79,
           1,
           0,
           81,
@@ -6516,23 +6509,24 @@
           ]
         ],
         [
-          92,
+          91,
           1,
           35,
           51,
           82
         ],
         [
-          78,
+          77,
           1,
-          1,
+          3,
+          25,
           10,
           20,
           30,
           52,
           [
             5,
-            190,
+            1100,
             200
           ]
         ],
@@ -6562,7 +6556,7 @@
           ]
         ],
         [
-          89,
+          88,
           "Label",
           false,
           1,
@@ -6627,7 +6621,7 @@
           ]
         ],
         [
-          33,
+          34,
           "skill_icon",
           4,
           [
@@ -6657,14 +6651,14 @@
           ]
         ],
         [
-          81,
+          80,
           89,
           [
             27
           ]
         ],
         [
-          33,
+          34,
           "Advanced",
           4,
           [
@@ -6777,14 +6771,14 @@
           ]
         ],
         [
-          41,
+          42,
           "RICHTEXT_CHILD",
           1024,
           false,
           43,
           [
             [
-              39,
+              40,
               "ABCABCABCABCABCABCA",
               48,
               48,
@@ -6826,14 +6820,14 @@
           ]
         ],
         [
-          41,
+          42,
           "RICHTEXT_CHILD",
           1024,
           false,
           43,
           [
             [
-              39,
+              40,
               "BCABCABC",
               48,
               48,
@@ -6875,7 +6869,7 @@
           ]
         ],
         [
-          93,
+          92,
           false,
           "ABCABCABCABCABCABCABCABCABC",
           1,
@@ -6898,7 +6892,7 @@
           ]
         ],
         [
-          54,
+          53,
           "basket",
           2,
           [
@@ -6943,7 +6937,7 @@
           ]
         ],
         [
-          85,
+          84,
           "default",
           0,
           "Reborn",
@@ -6953,12 +6947,12 @@
           ]
         ],
         [
-          94,
+          93,
           64,
           103
         ],
         [
-          55,
+          54,
           "areaRootNode",
           109,
           2,
@@ -6986,7 +6980,7 @@
           ]
         ],
         [
-          56,
+          55,
           "valueRootNode",
           2,
           [
@@ -7013,7 +7007,7 @@
           ]
         ],
         [
-          34,
+          35,
           "Bar",
           25,
           [
@@ -7031,7 +7025,7 @@
           ]
         ],
         [
-          37,
+          38,
           3,
           2,
           0.1,
@@ -7041,7 +7035,7 @@
           ]
         ],
         [
-          90,
+          89,
           36,
           false,
           2,
@@ -7053,7 +7047,7 @@
           ]
         ],
         [
-          40,
+          41,
           "9999",
           32,
           35,
@@ -7067,14 +7061,14 @@
           ]
         ],
         [
-          42,
+          43,
           2,
           0.1,
           25,
           108
         ],
         [
-          95,
+          94,
           1,
           25,
           111,
@@ -7082,7 +7076,7 @@
           26
         ],
         [
-          34,
+          35,
           "Bar",
           8,
           [
@@ -7100,7 +7094,7 @@
           ]
         ],
         [
-          37,
+          38,
           3,
           2,
           0.2,
@@ -7110,7 +7104,7 @@
           ]
         ],
         [
-          91,
+          90,
           28,
           35,
           false,
@@ -7123,7 +7117,7 @@
           ]
         ],
         [
-          40,
+          41,
           "9999",
           28,
           35,
@@ -7175,7 +7169,7 @@
           ]
         ],
         [
-          43,
+          44,
           "attack_speed",
           36,
           118
@@ -7219,20 +7213,20 @@
           ]
         ],
         [
-          43,
+          44,
           "amplified_damage",
           37,
           121
         ],
         [
-          42,
+          43,
           2,
           0.2,
           8,
           114
         ],
         [
-          96,
+          95,
           1,
           8,
           123,
@@ -8079,7 +8073,7 @@
           ]
         ],
         [
-          32,
+          33,
           "starSpine",
           1,
           [
@@ -8092,7 +8086,7 @@
           ]
         ],
         [
-          86,
+          85,
           "default",
           0,
           false,
@@ -8108,11 +8102,11 @@
           1,
           [
             [
-              35,
+              36,
               -368,
               [
                 [
-                  74,
+                  73,
                   "50b8d9XPSZG+qWBNCnghNRv",
                   "onCloseUI",
                   1
@@ -9810,7 +9804,7 @@
         [
           15,
           "Advanced",
-          "\r\nAdvanced.png\r\nsize: 560,530\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBao/Shizi\r\n  rotate: false\r\n  xy: 2, 337\r\n  size: 349, 191\r\n  orig: 358, 205\r\n  offset: 1, 2\r\n  index: 4\r\nBao/Shizi\r\n  rotate: true\r\n  xy: 353, 186\r\n  size: 342, 205\r\n  orig: 358, 205\r\n  offset: 6, 0\r\n  index: 5\r\nBao/Shizi\r\n  rotate: false\r\n  xy: 2, 165\r\n  size: 325, 170\r\n  orig: 358, 205\r\n  offset: 20, 5\r\n  index: 3\r\nBao/Shizi\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 260, 161\r\n  orig: 358, 205\r\n  offset: 46, 11\r\n  index: 2\r\nCirCle\r\n  rotate: false\r\n  xy: 329, 86\r\n  size: 98, 98\r\n  orig: 98, 98\r\n  offset: 0, 0\r\n  index: 1\r\nDDLiz\r\n  rotate: true\r\n  xy: 264, 103\r\n  size: 60, 41\r\n  orig: 60, 41\r\n  offset: 0, 0\r\n  index: -1\r\nStar\r\n  rotate: true\r\n  xy: 429, 16\r\n  size: 74, 75\r\n  orig: 74, 75\r\n  offset: 0, 0\r\n  index: -1\r\nglow\r\n  rotate: false\r\n  xy: 429, 92\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\nguangshu\r\n  rotate: true\r\n  xy: 264, 47\r\n  size: 37, 104\r\n  orig: 39, 105\r\n  offset: 1, 0\r\n  index: -1\r\n",
+          "\nAdvanced.png\nsize: 560,530\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nBao/Shizi\n  rotate: false\n  xy: 2, 337\n  size: 349, 191\n  orig: 358, 205\n  offset: 1, 2\n  index: 4\nBao/Shizi\n  rotate: true\n  xy: 353, 186\n  size: 342, 205\n  orig: 358, 205\n  offset: 6, 0\n  index: 5\nBao/Shizi\n  rotate: false\n  xy: 2, 165\n  size: 325, 170\n  orig: 358, 205\n  offset: 20, 5\n  index: 3\nBao/Shizi\n  rotate: false\n  xy: 2, 2\n  size: 260, 161\n  orig: 358, 205\n  offset: 46, 11\n  index: 2\nCirCle\n  rotate: false\n  xy: 329, 86\n  size: 98, 98\n  orig: 98, 98\n  offset: 0, 0\n  index: 1\nDDLiz\n  rotate: true\n  xy: 264, 103\n  size: 60, 41\n  orig: 60, 41\n  offset: 0, 0\n  index: -1\nStar\n  rotate: true\n  xy: 429, 16\n  size: 74, 75\n  orig: 74, 75\n  offset: 0, 0\n  index: -1\nglow\n  rotate: false\n  xy: 429, 92\n  size: 92, 92\n  orig: 98, 98\n  offset: 3, 3\n  index: -1\nguangshu\n  rotate: true\n  xy: 264, 47\n  size: 37, 104\n  orig: 39, 105\n  offset: 1, 0\n  index: -1\n",
           [
             "Advanced.png"
           ],
@@ -16521,7 +16515,7 @@
         [
           15,
           "Rewards_Liz",
-          "\r\nRewards_Liz.png\r\nsize: 16,16\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nLz1\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 12, 12\r\n  orig: 12, 12\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nRewards_Liz.png\nsize: 16,16\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nLz1\n  rotate: false\n  xy: 2, 2\n  size: 12, 12\n  orig: 12, 12\n  offset: 0, 0\n  index: -1\n",
           [
             "Rewards_Liz.png"
           ],
@@ -17685,7 +17679,7 @@
     [
       [
         [
-          97,
+          96,
           "rewardsPanel",
           0.3333333333333333,
           [
@@ -17860,7 +17854,7 @@
         [
           15,
           "Rewards_Star",
-          "\r\nRewards_Star.png\r\nsize: 63,64\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nStar\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 59, 60\r\n  orig: 59, 60\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          "\nRewards_Star.png\nsize: 63,64\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nStar\n  rotate: false\n  xy: 2, 2\n  size: 59, 60\n  orig: 59, 60\n  offset: 0, 0\n  index: -1\n",
           [
             "Rewards_Star.png"
           ],

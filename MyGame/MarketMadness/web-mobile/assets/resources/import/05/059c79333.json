@@ -280,7 +280,7 @@
         [
           7,
           "First_Box",
-          "\r\nFirst_Box.png\r\nsize: 294,140\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/1\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 131, 34\r\n  orig: 131, 34\r\n  offset: 0, 0\r\n  index: -1\r\nImage/2\r\n  rotate: true\r\n  xy: 252, 9\r\n  size: 129, 40\r\n  orig: 129, 40\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Box\r\n  rotate: false\r\n  xy: 2, 38\r\n  size: 154, 100\r\n  orig: 154, 100\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Star\r\n  rotate: false\r\n  xy: 202, 20\r\n  size: 25, 24\r\n  orig: 27, 24\r\n  offset: 1, 0\r\n  index: -1\r\nImage/glow\r\n  rotate: false\r\n  xy: 158, 6\r\n  size: 42, 38\r\n  orig: 48, 53\r\n  offset: 2, 0\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 158, 46\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
+          "\nFirst_Box.png\nsize: 294,140\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/1\n  rotate: false\n  xy: 2, 2\n  size: 131, 34\n  orig: 131, 34\n  offset: 0, 0\n  index: -1\nImage/2\n  rotate: true\n  xy: 252, 9\n  size: 129, 40\n  orig: 129, 40\n  offset: 0, 0\n  index: -1\nImage/Box\n  rotate: false\n  xy: 2, 38\n  size: 154, 100\n  orig: 154, 100\n  offset: 0, 0\n  index: -1\nImage/Star\n  rotate: false\n  xy: 202, 20\n  size: 25, 24\n  orig: 27, 24\n  offset: 1, 0\n  index: -1\nImage/glow\n  rotate: false\n  xy: 158, 6\n  size: 42, 38\n  orig: 48, 53\n  offset: 2, 0\n  index: -1\nImage/glow1\n  rotate: false\n  xy: 158, 46\n  size: 92, 92\n  orig: 98, 98\n  offset: 3, 3\n  index: -1\n",
           [
             "First_Box.png"
           ],
