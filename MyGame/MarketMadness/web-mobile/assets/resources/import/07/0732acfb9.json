@@ -219,9 +219,9 @@
         "_preCacheMode",
         "_animationName",
         "defaultAnimation",
+        "premultipliedAlpha",
         "loop",
         "_playTimes",
-        "premultipliedAlpha",
         "timeScale",
         "node",
         "_materials",
@@ -944,12 +944,13 @@
       0,
       3,
       1,
+      5,
       4,
       2,
-      5,
+      6,
       8,
       9,
-      7
+      8
     ],
     [
       13,
@@ -1394,7 +1395,7 @@
       5,
       0,
       1,
-      6,
+      4,
       7,
       2,
       8,
@@ -1414,9 +1415,9 @@
       5,
       0,
       1,
-      4,
-      2,
       5,
+      2,
+      6,
       8,
       9,
       6
@@ -7753,8 +7754,8 @@
           ],
           [
             5,
-            88,
-            132
+            259,
+            391
           ]
         ],
         [
@@ -7762,6 +7763,7 @@
           "default",
           "Approve_Sg",
           0,
+          false,
           false,
           "Approve_Sg",
           1,
@@ -7931,8 +7933,8 @@
           ],
           [
             5,
-            88,
-            132
+            259,
+            391
           ]
         ],
         [
@@ -7940,6 +7942,7 @@
           "default",
           "Approve_Sg",
           0,
+          false,
           false,
           "Approve_Sg",
           1,
@@ -8109,8 +8112,8 @@
           ],
           [
             5,
-            88,
-            132
+            259,
+            391
           ]
         ],
         [
@@ -8118,6 +8121,7 @@
           "default",
           "Approve_Sg",
           0,
+          false,
           false,
           "Approve_Sg",
           1,
@@ -10518,7 +10522,7 @@
         [
           34,
           "Approve_Sg",
-          "\nApprove_Sg.png\nsize: 409,260\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/Sg/Sssssg\n  rotate: false\n  xy: 2, 132\n  size: 88, 126\n  orig: 88, 132\n  offset: 0, 1\n  index: 4\nImage/Sg/Sssssg\n  rotate: false\n  xy: 2, 4\n  size: 88, 126\n  orig: 88, 132\n  offset: 0, 6\n  index: 5\nImage/Sg/Sssssg\n  rotate: false\n  xy: 92, 149\n  size: 88, 109\n  orig: 88, 132\n  offset: 0, 0\n  index: 3\nImage/Sg/Sssssg\n  rotate: false\n  xy: 92, 38\n  size: 88, 109\n  orig: 88, 132\n  offset: 0, 23\n  index: 6\nImage/Sg/Sssssg\n  rotate: false\n  xy: 182, 167\n  size: 88, 91\n  orig: 88, 132\n  offset: 0, 41\n  index: 7\nImage/Sg/Sssssg\n  rotate: false\n  xy: 182, 75\n  size: 88, 90\n  orig: 88, 132\n  offset: 0, 0\n  index: 2\nImage/Sg/Sssssg\n  rotate: false\n  xy: 272, 184\n  size: 88, 74\n  orig: 88, 132\n  offset: 0, 58\n  index: 8\nImage/Sg/Sssssg\n  rotate: false\n  xy: 272, 111\n  size: 88, 71\n  orig: 88, 132\n  offset: 0, 0\n  index: 1\nImage/Sg/Sssssg\n  rotate: true\n  xy: 362, 171\n  size: 87, 45\n  orig: 88, 132\n  offset: 1, 87\n  index: 10\nImage/Sg/Sssssg\n  rotate: false\n  xy: 182, 14\n  size: 88, 59\n  orig: 88, 132\n  offset: 0, 73\n  index: 9\nImage/Sg/Sssssg\n  rotate: false\n  xy: 92, 2\n  size: 86, 34\n  orig: 88, 132\n  offset: 2, 98\n  index: 11\nImage/Sg/Sssssg\n  rotate: false\n  xy: 272, 6\n  size: 76, 26\n  orig: 88, 132\n  offset: 12, 106\n  index: 12\nImage/Sg/Sssssg\n  rotate: true\n  xy: 362, 100\n  size: 69, 23\n  orig: 88, 132\n  offset: 19, 109\n  index: 13\nImage/Sg/Sssssg\n  rotate: true\n  xy: 350, 11\n  size: 87, 54\n  orig: 88, 132\n  offset: 0, 0\n  index: 0\nImage/Star\n  rotate: false\n  xy: 272, 34\n  size: 74, 75\n  orig: 74, 75\n  offset: 0, 0\n  index: -1\n",
+          "\nApprove_Sg.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/Sg/Sssssg_00000\n  rotate: true\n  xy: 182, 391\n  size: 87, 54\n  orig: 88, 132\n  offset: 0, 0\n  index: -1\nImage/Sg/Sssssg_00001\n  rotate: false\n  xy: 92, 146\n  size: 88, 71\n  orig: 88, 132\n  offset: 0, 0\n  index: -1\nImage/Sg/Sssssg_00002\n  rotate: false\n  xy: 92, 295\n  size: 88, 90\n  orig: 88, 132\n  offset: 0, 0\n  index: -1\nImage/Sg/Sssssg_00003\n  rotate: false\n  xy: 2, 113\n  size: 88, 109\n  orig: 88, 132\n  offset: 0, 0\n  index: -1\nImage/Sg/Sssssg_00004\n  rotate: false\n  xy: 2, 352\n  size: 88, 126\n  orig: 88, 132\n  offset: 0, 1\n  index: -1\nImage/Sg/Sssssg_00005\n  rotate: false\n  xy: 2, 224\n  size: 88, 126\n  orig: 88, 132\n  offset: 0, 6\n  index: -1\nImage/Sg/Sssssg_00006\n  rotate: false\n  xy: 2, 2\n  size: 88, 109\n  orig: 88, 132\n  offset: 0, 23\n  index: -1\nImage/Sg/Sssssg_00007\n  rotate: false\n  xy: 92, 387\n  size: 88, 91\n  orig: 88, 132\n  offset: 0, 41\n  index: -1\nImage/Sg/Sssssg_00008\n  rotate: false\n  xy: 92, 219\n  size: 88, 74\n  orig: 88, 132\n  offset: 0, 58\n  index: -1\nImage/Sg/Sssssg_00009\n  rotate: false\n  xy: 92, 8\n  size: 88, 59\n  orig: 88, 132\n  offset: 0, 73\n  index: -1\nImage/Sg/Sssssg_00010\n  rotate: true\n  xy: 182, 302\n  size: 87, 45\n  orig: 88, 132\n  offset: 1, 87\n  index: -1\nImage/Sg/Sssssg_00011\n  rotate: true\n  xy: 182, 214\n  size: 86, 34\n  orig: 88, 132\n  offset: 2, 98\n  index: -1\nImage/Sg/Sssssg_00012\n  rotate: true\n  xy: 182, 136\n  size: 76, 26\n  orig: 88, 132\n  offset: 12, 106\n  index: -1\nImage/Sg/Sssssg_00013\n  rotate: true\n  xy: 182, 65\n  size: 69, 23\n  orig: 88, 132\n  offset: 19, 109\n  index: -1\nImage/Star\n  rotate: false\n  xy: 92, 69\n  size: 74, 75\n  orig: 74, 75\n  offset: 0, 0\n  index: -1\n",
           [
             "Approve_Sg.png"
           ],
@@ -10526,10 +10530,10 @@
             "skeleton": {
               "hash": "bQkaVJBFDZUOW+Ru10ZoiqausC8",
               "spine": "3.8.99",
-              "x": -44,
-              "y": -66,
-              "width": 88,
-              "height": 132,
+              "x": -129,
+              "y": -195,
+              "width": 259,
+              "height": 391,
               "images": "",
               "audio": ""
             },

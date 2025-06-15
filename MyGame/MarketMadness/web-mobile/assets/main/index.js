@@ -18456,21 +18456,23 @@ window.__require = function e(t, n, r) {
         var _this = this;
         for (var i = 0; i < this.itemList.length; i++) {
           var item = this.itemList[i];
-          item == _item ? cc.tween(item).delay(.2).call(function() {
-            Global.gui.get(gameConfig.UIID.BattlePanel).getComponent("BattleView").showRogueItemEffect(_skillId, _worldPos, function() {
-              var skillData = Global.skillManager.getSkillConfig(_skillId);
-              if (skillData && "" != skillData.ability_up) {
-                var ability_ups = skillData.ability_up.split("|");
-                if (0 == ability_ups[0]) {
-                  var msg = Global.languageManager.i18nData["ability_up_" + ability_ups[1]];
-                  msg && msg.content && cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.AbilityUp, {
-                    roleId: _this._roleData.roleId,
-                    msg: msg.content
-                  });
+          item == _item ? function() {
+            var actions = [ cc.delayTime(.2) ];
+            var roleView = _this._roleData.node.getComponent("RoleView");
+            var hasCombineSkill = roleView && roleView._combineArr;
+            hasCombineSkill ? actions.push(cc.callFunc(function() {
+              Global.gui.get(gameConfig.UIID.BattlePanel).getComponent("BattleView").showRogueItemEffect(_skillId, _worldPos, function() {
+                var skillData = Global.skillManager.getSkillConfig(_skillId);
+                if (skillData && "" != skillData.ability_up) {
+                  var ability_ups = skillData.ability_up.split("|");
+                  if (0 == ability_ups[0]) {
+                    var msg = Global.languageManager.i18nData["ability_up_" + ability_ups[1]];
+                    msg && msg.content && cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.AbilityUp, {
+                      roleId: _this._roleData.roleId,
+                      msg: msg.content
+                    });
+                  }
                 }
-              }
-              var roleView = _this._roleData.node.getComponent("RoleView");
-              if (roleView && roleView._combineArr) {
                 var uiArgs = {
                   combineArr: roleView._combineArr
                 };
@@ -18478,16 +18480,32 @@ window.__require = function e(t, n, r) {
                   onRemoved: function onRemoved(node, params) {
                     console.log("UIID.SkillMerge onRemoved");
                     roleView._combineArr = null;
+                    _this.onCloseUI();
                   }
                 };
                 Global.gui.open(gameConfig.UIID.SkillMerge, uiArgs, uicallBack);
-              }
-            });
-          }).to(.2, {
-            opacity: 0
-          }).call(function() {
-            _this.onCloseUI();
-          }).start() : cc.tween(item).to(.2, {
+              });
+            })) : actions.push(cc.callFunc(function() {
+              Global.gui.get(gameConfig.UIID.BattlePanel).getComponent("BattleView").showRogueItemEffect(_skillId, _worldPos, function() {
+                var skillData = Global.skillManager.getSkillConfig(_skillId);
+                if (skillData && "" != skillData.ability_up) {
+                  var ability_ups = skillData.ability_up.split("|");
+                  if (0 == ability_ups[0]) {
+                    var msg = Global.languageManager.i18nData["ability_up_" + ability_ups[1]];
+                    msg && msg.content && cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.AbilityUp, {
+                      roleId: _this._roleData.roleId,
+                      msg: msg.content
+                    });
+                  }
+                }
+              });
+            }));
+            actions.push(cc.fadeTo(.2, 0));
+            hasCombineSkill || actions.push(cc.callFunc(function() {
+              _this.onCloseUI();
+            }));
+            item.runAction(cc.sequence(actions));
+          }() : cc.tween(item).to(.2, {
             opacity: 0
           }).start();
         }
