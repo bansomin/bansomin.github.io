@@ -11512,7 +11512,8 @@ window.__require = function e(t, n, r) {
               }
             }
             var roleView = _this5._roleData.node.getComponent("RoleView");
-            if (roleView && roleView._combineArr) {
+            var hasCombineSkill = roleView && roleView._combineArr && roleView._isMergeAnimation;
+            if (hasCombineSkill) {
               var uiArgs = {
                 combineArr: roleView._combineArr
               };
@@ -11520,6 +11521,7 @@ window.__require = function e(t, n, r) {
                 onRemoved: function onRemoved(node, params) {
                   console.log("UIID.SkillMerge onRemoved");
                   roleView._combineArr = null;
+                  roleView._isMergeAnimation = false;
                 }
               };
               Global.gui.open(gameConfig.UIID.SkillMerge, uiArgs, uicallBack);
@@ -12785,13 +12787,18 @@ window.__require = function e(t, n, r) {
       extends: cc.Component,
       properties: {
         _curUIID: null,
-        toggleList: [ cc.Toggle ]
+        toggleList: [ cc.Toggle ],
+        shopRedDot: cc.Node
       },
       onEnable: function onEnable() {
         Global.audio.playMusicLoop("audio/music");
         cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.ChangeScrollBackground);
         this.onClickTogglesBtn(null, 2);
         Global.mailManager.init();
+        this.updateShopRedDot();
+      },
+      updateShopRedDot: function updateShopRedDot() {
+        this.shopRedDot.active = Global.shopManager.hasEquipmentRedDot() || Global.shopManager.hasPaymentRedDot();
       },
       updateToggleState: function updateToggleState(_index, _dontShowUI) {
         for (var i = 0; i < this.toggleList.length; i++) {
@@ -15602,7 +15609,8 @@ window.__require = function e(t, n, r) {
             }
           }
           var roleView = _this2._roleData.node.getComponent("RoleView");
-          if (roleView && roleView._combineArr) {
+          var hasCombineSkill = roleView && roleView._combineArr && roleView._isMergeAnimation;
+          if (hasCombineSkill) {
             var uiArgs = {
               combineArr: roleView._combineArr
             };
@@ -15610,6 +15618,7 @@ window.__require = function e(t, n, r) {
               onRemoved: function onRemoved(node, params) {
                 console.log("UIID.SkillMerge onRemoved");
                 roleView._combineArr = null;
+                roleView._isMergeAnimation = false;
               }
             };
             Global.gui.open(gameConfig.UIID.SkillMerge, uiArgs, uicallBack);
@@ -18457,22 +18466,25 @@ window.__require = function e(t, n, r) {
         for (var i = 0; i < this.itemList.length; i++) {
           var item = this.itemList[i];
           item == _item ? function() {
+            var abilityUps = function() {
+              var skillData = Global.skillManager.getSkillConfig(_skillId);
+              if (skillData && "" != skillData.ability_up) {
+                var ability_ups = skillData.ability_up.split("|");
+                if (0 == ability_ups[0]) {
+                  var msg = Global.languageManager.i18nData["ability_up_" + ability_ups[1]];
+                  msg && msg.content && cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.AbilityUp, {
+                    roleId: this._roleData.roleId,
+                    msg: msg.content
+                  });
+                }
+              }
+            }.bind(_this);
             var actions = [ cc.delayTime(.2) ];
             var roleView = _this._roleData.node.getComponent("RoleView");
-            var hasCombineSkill = roleView && roleView._combineArr;
+            var hasCombineSkill = roleView && roleView._combineArr && roleView._isMergeAnimation;
             hasCombineSkill ? actions.push(cc.callFunc(function() {
               Global.gui.get(gameConfig.UIID.BattlePanel).getComponent("BattleView").showRogueItemEffect(_skillId, _worldPos, function() {
-                var skillData = Global.skillManager.getSkillConfig(_skillId);
-                if (skillData && "" != skillData.ability_up) {
-                  var ability_ups = skillData.ability_up.split("|");
-                  if (0 == ability_ups[0]) {
-                    var msg = Global.languageManager.i18nData["ability_up_" + ability_ups[1]];
-                    msg && msg.content && cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.AbilityUp, {
-                      roleId: _this._roleData.roleId,
-                      msg: msg.content
-                    });
-                  }
-                }
+                abilityUps();
                 var uiArgs = {
                   combineArr: roleView._combineArr
                 };
@@ -18480,25 +18492,14 @@ window.__require = function e(t, n, r) {
                   onRemoved: function onRemoved(node, params) {
                     console.log("UIID.SkillMerge onRemoved");
                     roleView._combineArr = null;
+                    roleView._isMergeAnimation = false;
                     _this.onCloseUI();
                   }
                 };
                 Global.gui.open(gameConfig.UIID.SkillMerge, uiArgs, uicallBack);
               });
             })) : actions.push(cc.callFunc(function() {
-              Global.gui.get(gameConfig.UIID.BattlePanel).getComponent("BattleView").showRogueItemEffect(_skillId, _worldPos, function() {
-                var skillData = Global.skillManager.getSkillConfig(_skillId);
-                if (skillData && "" != skillData.ability_up) {
-                  var ability_ups = skillData.ability_up.split("|");
-                  if (0 == ability_ups[0]) {
-                    var msg = Global.languageManager.i18nData["ability_up_" + ability_ups[1]];
-                    msg && msg.content && cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.AbilityUp, {
-                      roleId: _this._roleData.roleId,
-                      msg: msg.content
-                    });
-                  }
-                }
-              });
+              Global.gui.get(gameConfig.UIID.BattlePanel).getComponent("BattleView").showRogueItemEffect(_skillId, _worldPos, abilityUps);
             }));
             actions.push(cc.fadeTo(.2, 0));
             hasCombineSkill || actions.push(cc.callFunc(function() {
@@ -20123,7 +20124,8 @@ window.__require = function e(t, n, r) {
         _fightIT: null,
         _lastAttackSpeed: 0,
         _abilityUpList: [],
-        _combineArr: null
+        _combineArr: null,
+        _isMergeAnimation: true
       },
       onEnable: function onEnable() {
         cc.director.GlobalEvent.on(gameConfig.GAME_EVENT.AbilityUp, this.AbilityUp, this);
@@ -20415,8 +20417,9 @@ window.__require = function e(t, n, r) {
           }
         }
       },
-      combineSkillCallback: function combineSkillCallback(combineArr) {
+      combineSkillCallback: function combineSkillCallback(combineArr, isMergeAnimation) {
         this._combineArr = combineArr;
+        this._isMergeAnimation = isMergeAnimation;
       },
       getHurtFromReflectCallback: function getHurtFromReflectCallback(value) {
         this._parent.playValueAnimation({
@@ -21165,6 +21168,27 @@ window.__require = function e(t, n, r) {
         Global.taskManager.updateProgress(EnumType.TASK_TYPE.OPEN_BOX, 1);
         return result;
       },
+      hasEquipmentRedDot: function hasEquipmentRedDot() {
+        if (this.storageData.anySCount >= this.ANY_S_MAX_COUNT) return true;
+        if (this.getKeyCount(this.RED) > 0) return true;
+        if (this.getKeyCount(this.ORANGE) > 0) return true;
+        if (this.getKeyCount(this.PURPLE) > 0) return true;
+        if (this.getKeyCount(this.BLUE) > 0) return true;
+        if (this.storageData.purpleBox.adCount < this.PURPLE_AD_MAX_COUNT) return true;
+        if (this.storageData.blueBox.adCount < this.BLUE_AD_MAX_COUNT) return true;
+        if (this.storageData.blueBox.freeCount < this.BLUE_FREE_MAX_COUNT) return true;
+        return false;
+      },
+      hasPaymentRedDot: function hasPaymentRedDot() {
+        return 0 == this.getCoinAdCount();
+      },
+      getCoinAdCount: function getCoinAdCount() {
+        var coinAdCount = Global.storage.getJson(gameConfig.COMMON_KEYS.SHOP_COIN_AD_COUNT);
+        if (null == coinAdCount) {
+          coinAdCount = 0;
+          Global.storage.set(gameConfig.COMMON_KEYS.SHOP_COIN_AD_COUNT, coinAdCount);
+        }
+      },
       start: function start() {}
     });
     module.exports = ShopManager;
@@ -21201,6 +21225,9 @@ window.__require = function e(t, n, r) {
         coinCountLabelList: [ cc.Node ],
         coinPriceLabelList: [ cc.Node ],
         coinAdIcon: cc.Node,
+        paymentTitle_1: cc.Node,
+        paymentTitle_2: cc.Node,
+        paymentNodeList: [ cc.Node ],
         equipmentItemPrefab: cc.Prefab,
         equipmentItemPool: [ cc.Node ],
         equipmentItemList: [ cc.Node ],
@@ -21243,10 +21270,20 @@ window.__require = function e(t, n, r) {
         blueBoxAdCountLabel: cc.Node,
         blueBoxAdBtn: cc.Node,
         blueBoxFreeBtn: cc.Node,
-        blueBtnLayout: cc.Node
+        blueBtnLayout: cc.Node,
+        title_1: cc.Node,
+        node_1: cc.Node,
+        node_2: cc.Node,
+        node_3: cc.Node,
+        equipmentItemFlash: sp.Skeleton,
+        anySRedDot: cc.Node,
+        purpleBoxRedDot: cc.Node,
+        equipmentRedDot: cc.Node,
+        paymentRedDot: cc.Node
       },
       start: function start() {},
       onAdded: function onAdded(_args) {
+        var _this = this;
         this.roleData = _args.roleData;
         this.showBuyCoin = _args.showBuyCoin;
         for (var i = 0; i < this.diamondCountLabelList.length; i++) {
@@ -21261,10 +21298,20 @@ window.__require = function e(t, n, r) {
         this.coinPriceLabelList[1].getComponent("LabelUpdater").setString(Global.shopManager.COIN_DIAMOND_LIST[1]);
         this.redColor = new cc.color(255, 0, 0);
         this.whiteColor = new cc.color(255, 255, 255);
+        this.lastIndex = -1;
+        this.timer = Date.now();
+        this.EIGHT_SECONDS = 8e3;
+        this.equipmentItemFlash.node.active = false;
+        this.equipmentItemFlash.setCompleteListener(function(trackEntry) {
+          _this.equipmentItemFlash.node.active = false;
+        });
         this.updateUI();
       },
       onClickSelectEquipment: function onClickSelectEquipment() {
-        if (Global.shopManager.storageData.anySCount < Global.shopManager.ANY_S_MAX_COUNT) return;
+        if (Global.shopManager.storageData.anySCount < Global.shopManager.ANY_S_MAX_COUNT) {
+          Global.gui.toast(Global.languageManager.t("shop_select_equipment_tip_2"));
+          return;
+        }
         var args = {};
         args.equipmentList = Global.shopManager.getBox(Global.shopManager.RED).allItems[0];
         Global.gui.open(gameConfig.UIID.ShopSelectEquipment, args);
@@ -21276,6 +21323,9 @@ window.__require = function e(t, n, r) {
         this.equipmentItemList.push(equipmentItem);
         equipmentItem.getComponent("EquipmentItem").setData(_equipmentData, Global.roleData);
         this.equipmentContainer.addChild(equipmentItem);
+        equipmentItem.opacity = 0;
+        equipmentItem.rotation = 5;
+        return equipmentItem;
       },
       clearItems: function clearItems() {
         while (this.equipmentItemList.length > 0) {
@@ -21308,11 +21358,7 @@ window.__require = function e(t, n, r) {
           Global.storage.set(gameConfig.COMMON_KEYS.SHOP_DIAMOND_FIRST, this.diamondFirst);
         }
         for (var i = 0; i < this.diamondFirstNodeList.length; i++) this.diamondFirstNodeList[i].active = 0 == this.diamondFirst[i];
-        this.coinAdCount = Global.storage.getJson(gameConfig.COMMON_KEYS.SHOP_COIN_AD_COUNT);
-        if (null == this.coinAdCount) {
-          this.coinAdCount = 0;
-          Global.storage.set(gameConfig.COMMON_KEYS.SHOP_COIN_AD_COUNT, this.coinAdCount);
-        }
+        this.coinAdCount = Global.shopManager.getCoinAdCount();
         this.coinAdIcon.active = 0 == this.coinAdCount;
         this.anySLabel.getComponent("LabelUpdater").setString(Global.shopManager.storageData.anySCount + "/" + Global.shopManager.ANY_S_MAX_COUNT);
         this.progressBar.width = 739 * Global.shopManager.storageData.anySCount / Global.shopManager.ANY_S_MAX_COUNT;
@@ -21322,10 +21368,15 @@ window.__require = function e(t, n, r) {
           this.anySItemData.setData(null, itemConfig);
           this.anySItem.getComponent("BagItem").setData(this.anySItemData);
         }
+        this.anySRedDot.active = Global.shopManager.storageData.anySCount >= Global.shopManager.ANY_S_MAX_COUNT;
         this.updateRedBoxUI();
         this.updateOrangeBoxUI();
         this.updatePurpleBoxUI();
         this.updateBlueBoxUI();
+        this.equipmentRedDot.active = Global.shopManager.hasEquipmentRedDot();
+        this.paymentRedDot.active = Global.shopManager.hasPaymentRedDot();
+        var homePageNode = Global.gui.get(gameConfig.UIID.HomePagePanel);
+        homePageNode && homePageNode.getComponent("HomePageView").updateShopRedDot();
       },
       updateBlueBoxUI: function updateBlueBoxUI() {
         this.blueBoxDescLabel.getComponent("RichTextUpdater").setContent("shop_blue_desc_2", [ Global.shopManager.UNCOMMON_MAX_COUNT - Global.shopManager.storageData.blueBox.uncommonCount ]);
@@ -21359,6 +21410,7 @@ window.__require = function e(t, n, r) {
           this.purpleBoxGet1KeyLabel.getComponent("LabelUpdater").setColor(this.redColor);
           this.purpleBoxGet1KeyMaxLabel.getComponent("LabelUpdater").setString("/1");
         }
+        this.purpleBoxRedDot.active = keyCount > 0;
         this.purpleBoxAdCountLabel.getComponent("LabelUpdater").setString(Global.shopManager.PURPLE_AD_MAX_COUNT - Global.shopManager.storageData.purpleBox.adCount);
         this.purpleBoxAdBtn.active = Global.shopManager.storageData.purpleBox.adCount < Global.shopManager.PURPLE_AD_MAX_COUNT;
       },
@@ -21382,6 +21434,17 @@ window.__require = function e(t, n, r) {
           this.orangeBoxGet10DiamondLabel.getComponent("LabelUpdater").setString(Global.shopManager.ORANGE_BOX_DIAMOND_10);
         }
       },
+      getRandomIndexExcludingLast: function getRandomIndexExcludingLast(arr) {
+        var _this2 = this;
+        var availableIndices = arr.map(function(_, index) {
+          return index;
+        }).filter(function(index) {
+          return index !== _this2.lastIndex;
+        });
+        var randomIndex = Math.floor(Math.random() * availableIndices.length);
+        this.lastIndex = availableIndices[randomIndex];
+        return this.lastIndex;
+      },
       updateRedBoxUI: function updateRedBoxUI() {
         this.clearItems();
         var redBoxData = Global.shopManager.getBox(Global.shopManager.RED);
@@ -21391,7 +21454,11 @@ window.__require = function e(t, n, r) {
           var equipmentConfig = Global.equipmentManager.getEquipmentConfig(id);
           var equipmentData = new EquipmentData();
           equipmentData.setData(null, equipmentConfig);
-          this.generateEquipmentItem(equipmentData);
+          var equipmentItem = this.generateEquipmentItem(equipmentData);
+          cc.tween(equipmentItem).delay(.1 * i + .2).to(.2, {
+            opacity: 255,
+            rotation: 0
+          }).start();
         }
         this.updateCountdown();
         this.countdownInterval = setInterval(this.updateCountdown.bind(this), 1e3);
@@ -21446,7 +21513,10 @@ window.__require = function e(t, n, r) {
           openCount = keyCount > 10 ? 10 : keyCount;
           Global.bagManager.removeItem(Global.shopManager.keyType[Global.shopManager.BLUE], null, openCount, Global.roleData);
         } else {
-          if (!(Global.roleData.diamond >= Global.shopManager.BLUE_BOX_DIAMOND_1)) return;
+          if (!(Global.roleData.diamond >= Global.shopManager.BLUE_BOX_DIAMOND_1)) {
+            Global.gui.toast(Global.languageManager.t("not_enough_diamond"));
+            return;
+          }
           Global.roleData.updateDiamond(-1 * Global.shopManager.BLUE_BOX_DIAMOND_1);
           openCount = 1;
         }
@@ -21455,7 +21525,10 @@ window.__require = function e(t, n, r) {
         this.handleResult(result, Global.shopManager.BLUE, _passAni);
       },
       onClickGet1BlueBox_ad: function onClickGet1BlueBox_ad() {
-        if (Global.shopManager.storageData.blueBox.adCount >= Global.shopManager.BLUE_AD_MAX_COUNT) return;
+        if (Global.shopManager.storageData.blueBox.adCount >= Global.shopManager.BLUE_AD_MAX_COUNT) {
+          Global.gui.toast(Global.languageManager.t("not_enough_ad_count"));
+          return;
+        }
         Global.shopManager.storageData.blueBox.adCount++;
         var result = this.openBlueBox();
         var args = {};
@@ -21464,7 +21537,10 @@ window.__require = function e(t, n, r) {
         Global.gui.open(gameConfig.UIID.OpenBox, args);
       },
       onClickGet1BlueBox_free: function onClickGet1BlueBox_free() {
-        if (Global.shopManager.storageData.blueBox.freeCount >= Global.shopManager.BLUE_FREE_MAX_COUNT) return;
+        if (Global.shopManager.storageData.blueBox.freeCount >= Global.shopManager.BLUE_FREE_MAX_COUNT) {
+          Global.gui.toast(Global.languageManager.t("not_enough_free_count"));
+          return;
+        }
         Global.shopManager.storageData.blueBox.freeCount++;
         var result = this.openBlueBox();
         var args = {};
@@ -21473,7 +21549,10 @@ window.__require = function e(t, n, r) {
         Global.gui.open(gameConfig.UIID.OpenBox, args);
       },
       onClickGet1PurpleBox_ad: function onClickGet1PurpleBox_ad() {
-        if (Global.shopManager.storageData.purpleBox.adCount >= Global.shopManager.PURPLE_AD_MAX_COUNT) return;
+        if (Global.shopManager.storageData.purpleBox.adCount >= Global.shopManager.PURPLE_AD_MAX_COUNT) {
+          Global.gui.toast(Global.languageManager.t("not_enough_ad_count"));
+          return;
+        }
         Global.shopManager.storageData.purpleBox.adCount++;
         var result = this.openPurpleBox();
         var args = {};
@@ -21484,14 +21563,12 @@ window.__require = function e(t, n, r) {
       onClickGet10PurpleBox: function onClickGet10PurpleBox(_event, _passAni) {
         var openCount = 0;
         var keyCount = Global.shopManager.getKeyCount(Global.shopManager.PURPLE);
-        if (keyCount > 0) {
-          openCount = keyCount > 10 ? 10 : keyCount;
-          Global.bagManager.removeItem(Global.shopManager.keyType[Global.shopManager.PURPLE], null, openCount, Global.roleData);
-        } else {
-          if (!(Global.roleData.diamond >= Global.shopManager.PURPLE_BOX_DIAMOND_1)) return;
-          Global.roleData.updateDiamond(-1 * Global.shopManager.PURPLE_BOX_DIAMOND_1);
-          openCount = 1;
+        if (!(keyCount > 0)) {
+          Global.gui.toast(Global.languageManager.t("not_enough_key_count"));
+          return;
         }
+        openCount = keyCount > 10 ? 10 : keyCount;
+        Global.bagManager.removeItem(Global.shopManager.keyType[Global.shopManager.PURPLE], null, openCount, Global.roleData);
         var result = [];
         for (var i = 0; i < openCount; i++) result.push(this.openPurpleBox());
         this.handleResult(result, Global.shopManager.PURPLE, _passAni);
@@ -21527,7 +21604,10 @@ window.__require = function e(t, n, r) {
       onClickGet1OrangeBox: function onClickGet1OrangeBox() {
         var keyCount = Global.shopManager.getKeyCount(Global.shopManager.ORANGE);
         if (keyCount > 0) Global.bagManager.removeItem(Global.shopManager.keyType[Global.shopManager.ORANGE], null, 1, Global.roleData); else {
-          if (!(Global.roleData.diamond >= Global.shopManager.ORANGE_BOX_DIAMOND_1)) return;
+          if (!(Global.roleData.diamond >= Global.shopManager.ORANGE_BOX_DIAMOND_1)) {
+            Global.gui.toast(Global.languageManager.t("not_enough_diamond"));
+            return;
+          }
           Global.roleData.updateDiamond(-1 * Global.shopManager.ORANGE_BOX_DIAMOND_1);
         }
         var result = this.openOrangeBox();
@@ -21543,7 +21623,10 @@ window.__require = function e(t, n, r) {
           openCount = keyCount > 10 ? 10 : keyCount;
           Global.bagManager.removeItem(Global.shopManager.keyType[Global.shopManager.ORANGE], null, openCount, Global.roleData);
         } else {
-          if (!(Global.roleData.diamond >= Global.shopManager.ORANGE_BOX_DIAMOND_10)) return;
+          if (!(Global.roleData.diamond >= Global.shopManager.ORANGE_BOX_DIAMOND_10)) {
+            Global.gui.toast(Global.languageManager.t("not_enough_diamond"));
+            return;
+          }
           Global.roleData.updateDiamond(-1 * Global.shopManager.ORANGE_BOX_DIAMOND_10);
           openCount = 10;
         }
@@ -21579,7 +21662,10 @@ window.__require = function e(t, n, r) {
       onClickGet1RedBox: function onClickGet1RedBox() {
         var keyCount = Global.shopManager.getKeyCount(Global.shopManager.RED);
         if (keyCount > 0) Global.bagManager.removeItem(Global.shopManager.keyType[Global.shopManager.RED], null, 1, Global.roleData); else {
-          if (!(Global.roleData.diamond >= Global.shopManager.RED_BOX_DIAMOND_1)) return;
+          if (!(Global.roleData.diamond >= Global.shopManager.RED_BOX_DIAMOND_1)) {
+            Global.gui.toast(Global.languageManager.t("not_enough_diamond"));
+            return;
+          }
           Global.roleData.updateDiamond(-1 * Global.shopManager.RED_BOX_DIAMOND_1);
         }
         var result = this.openRedBox();
@@ -21614,7 +21700,10 @@ window.__require = function e(t, n, r) {
           openCount = keyCount > 10 ? 10 : keyCount;
           Global.bagManager.removeItem(Global.shopManager.keyType[Global.shopManager.RED], null, openCount, Global.roleData);
         } else {
-          if (!(Global.roleData.diamond >= Global.shopManager.RED_BOX_DIAMOND_10)) return;
+          if (!(Global.roleData.diamond >= Global.shopManager.RED_BOX_DIAMOND_10)) {
+            Global.gui.toast(Global.languageManager.t("not_enough_diamond"));
+            return;
+          }
           Global.roleData.updateDiamond(-1 * Global.shopManager.RED_BOX_DIAMOND_10);
           openCount = 10;
         }
@@ -21634,7 +21723,10 @@ window.__require = function e(t, n, r) {
       onClickCoinCard: function onClickCoinCard(_event, _index) {
         switch (_index) {
          case "ad":
-          if (1 == this.coinAdCount) return;
+          if (1 == this.coinAdCount) {
+            Global.gui.toast(Global.languageManager.t("not_enough_ad_count"));
+            return;
+          }
           this.coinAdCount = 1;
           Global.storage.set(gameConfig.COMMON_KEYS.SHOP_COIN_AD_COUNT, this.coinAdCount);
           var coin = Global.shopManager.getCurrentCoinCount(0);
@@ -21647,7 +21739,10 @@ window.__require = function e(t, n, r) {
          case "1":
           var currentChapterCoin = Global.shopManager.getCurrentCoinCount(parseInt(_index) + 1);
           var needDiamond = Global.shopManager.COIN_DIAMOND_LIST[_index];
-          if (Global.roleData.diamond < needDiamond) return;
+          if (Global.roleData.diamond < needDiamond) {
+            Global.gui.toast(Global.languageManager.t("not_enough_diamond"));
+            return;
+          }
           Global.roleData.updateDiamond(-1 * needDiamond);
           Global.roleData.updateCoin(currentChapterCoin);
           Global.taskManager.updateProgress(EnumType.TASK_TYPE.BUY_COIN, 1);
@@ -21658,30 +21753,95 @@ window.__require = function e(t, n, r) {
         args.allItems = Global.shopManager.getBox(_index).allItems;
         Global.gui.open(gameConfig.UIID.ShopProbsPanel, args);
       },
+      showEquipmentAni: function showEquipmentAni() {
+        this.title_1.opacity = 0;
+        this.node_1.opacity = 0;
+        this.node_1.rotation = 5;
+        this.node_2.opacity = 0;
+        this.node_2.rotation = 5;
+        this.node_3.opacity = 0;
+        this.node_3.rotation = 5;
+        cc.tween(this.title_1).to(.2, {
+          opacity: 255
+        }).start();
+        cc.tween(this.node_1).delay(.1).to(.2, {
+          opacity: 255,
+          rotation: 0
+        }).start();
+        cc.tween(this.node_2).delay(.2).to(.2, {
+          opacity: 255,
+          rotation: 0
+        }).start();
+        cc.tween(this.node_3).delay(.3).to(.2, {
+          opacity: 255,
+          rotation: 0
+        }).start();
+      },
+      resetPaymentNode: function resetPaymentNode() {
+        for (var i = 0; i < this.paymentNodeList.length; i++) {
+          var paymentNode = this.paymentNodeList[i];
+          paymentNode.setScale(0, 0);
+        }
+      },
+      showPaymentAni: function showPaymentAni() {
+        this.paymentTitle_1.opacity = 0;
+        this.paymentTitle_2.opacity = 0;
+        cc.tween(this.paymentTitle_1).to(.2, {
+          opacity: 255
+        }).start();
+        for (var j = 0; j < this.paymentNodeList.length; j++) {
+          var paymentNode = this.paymentNodeList[j];
+          cc.tween(paymentNode).delay(.1 * j + .1).to(.2, {
+            scale: 1
+          }, {
+            easing: "backOut"
+          }).start();
+        }
+        cc.tween(this.paymentTitle_2).delay(.5).to(.2, {
+          opacity: 255
+        }).start();
+      },
       onEnable: function onEnable() {
+        this.resetPaymentNode();
         if (true == this.showBuyCoin) {
           this.equipmentNode.active = false;
           this.diamondNode.active = true;
           this.toggleBtn_equipment.isChecked = false;
           this.toggleBtn_diamond.isChecked = true;
-          this.equipmnetScrollView.scrollToTop();
           this.diamondScrollView.scrollToBottom();
+          this.showPaymentAni();
         } else {
           this.equipmentNode.active = true;
           this.diamondNode.active = false;
           this.toggleBtn_equipment.isChecked = true;
           this.toggleBtn_diamond.isChecked = false;
           this.equipmnetScrollView.scrollToTop();
-          this.diamondScrollView.scrollToTop();
+          this.showEquipmentAni();
         }
       },
       onClickEquipment: function onClickEquipment() {
         this.equipmentNode.active = true;
         this.diamondNode.active = false;
+        this.equipmnetScrollView.scrollToTop();
+        this.showEquipmentAni();
+        this.updateUI();
+        this.resetPaymentNode();
       },
       onClickDiamond: function onClickDiamond() {
         this.equipmentNode.active = false;
         this.diamondNode.active = true;
+        this.diamondScrollView.scrollToTop();
+        this.showPaymentAni();
+      },
+      update: function update(dt) {
+        if (Date.now() - this.timer >= this.EIGHT_SECONDS) {
+          this.timer = Date.now();
+          var index = this.getRandomIndexExcludingLast(this.equipmentItemList);
+          var currentNode = this.equipmentItemList[index];
+          this.equipmentItemFlash.node.active = true;
+          this.equipmentItemFlash.node.setPosition(currentNode.x, currentNode.y);
+          this.equipmentItemFlash.setAnimation(0, "Limited_Sg", false);
+        }
       }
     });
     cc._RF.pop();
@@ -21907,7 +22067,10 @@ window.__require = function e(t, n, r) {
         this.currentSelect = _equipmentItem;
       },
       onClickChange: function onClickChange() {
-        if (null == this.currentSelect) return;
+        if (null == this.currentSelect) {
+          Global.gui.toast(Global.languageManager.t("shop_select_equipment_tip"));
+          return;
+        }
         var equipmentData = this.currentSelect.getComponent("EquipmentItem").equipmentData;
         Global.equipmentManager.addEquipment2Bag(equipmentData, Global.roleData);
         Global.shopManager.storageData.anySCount = 0;
@@ -21927,7 +22090,7 @@ window.__require = function e(t, n, r) {
         equipmentItem = this.equipmentItemPool.length > 0 ? this.equipmentItemPool.pop() : cc.instantiate(this.equipmentItemPrefab);
         equipmentItem.setScale(.66);
         this.equipmentItemList.push(equipmentItem);
-        equipmentItem.getComponent("EquipmentItem").setData(_equipmentData);
+        equipmentItem.getComponent("EquipmentItem").setData(_equipmentData, null, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.SELECT_EQUIPMENT);
         this.container.addChild(equipmentItem);
         equipmentItem.x = startX + 150 * Math.floor(_index % 5);
         equipmentItem.y = startY + -1 * Math.floor(_index / 5) * 170;
@@ -28477,7 +28640,7 @@ window.__require = function e(t, n, r) {
         if (null == skillConfig) return;
         if (1 == skillConfig.onlyOne) {
           var _skillSet2 = this.getSkill(_id, _roleData);
-          if (null != _skillSet2) return;
+          if (null != _skillSet2) return "noMergeAnimation";
         }
         if ("" != skillConfig["delete"]) {
           var _skillSet3 = this.getSkill(skillConfig["delete"], _roleData);
@@ -28563,8 +28726,8 @@ window.__require = function e(t, n, r) {
             var _skillId = _skillSet.combineArr[j];
             this.removeSkill(_roleData, _skillId);
           }
-          this.addSkill(_skillSet.combineResult, _roleData);
-          _roleData.combineSkillCallback && _roleData.combineSkillCallback(_skillSet.combineArr.concat(_skillSet.combineResult));
+          var isMergeAnimation = "noMergeAnimation" != this.addSkill(_skillSet.combineResult, _roleData);
+          _roleData.combineSkillCallback && _roleData.combineSkillCallback(_skillSet.combineArr.concat(_skillSet.combineResult), isMergeAnimation);
         }
       },
       getBulletConfig: function getBulletConfig(_id) {
@@ -32312,25 +32475,8 @@ window.__require = function e(t, n, r) {
           symbol = "+";
           color = new cc.color(55, 255, 52, 255);
         } else if (damage.damageType == EnumType.BULLET_DAMAGE_TYPE.ATTACK_SPEED) ; else if ("HurtFromReflect" == damage.damageType) {
-          var _args$roleData;
           value = damage.value;
           color = new cc.color(255, 235, 59, 255);
-          if (null != args && null != (_args$roleData = args.roleData) && _args$roleData.data.reflect_damage_count) {
-            var reflectCount = args.roleData.data.reflect_damage_count || 0;
-            value = Math.floor(value / (reflectCount + 1));
-            rootNode.removeAllChildren();
-            var _loop = function _loop(count) {
-              var tempNode = cc.instantiate(_this.tempNode);
-              tempNode.color = color;
-              tempNode.setPosition(15 * count, -15 * count);
-              tempNode.getComponent(cc.Label).string = symbol + value;
-              rootNode.addChild(tempNode);
-              setTimeout(function() {
-                tempNode.active = true;
-              }, 200);
-            };
-            for (var count = 1; count < reflectCount + 1; count++) _loop(count);
-          }
         } else {
           if ("Ultimate" == damage.damageType) {
             if (0 != damage.isCrit) {
@@ -32348,7 +32494,7 @@ window.__require = function e(t, n, r) {
         var finalMsg = symbol + value;
         if ("Ultimate" == damage.damageType) {
           rootNode.removeAllChildren();
-          var _loop2 = function _loop2(i) {
+          var _loop = function _loop(i) {
             var str = finalMsg[i];
             var tempNode = cc.instantiate(_this.tempNode);
             if (tempNode) {
@@ -32367,7 +32513,7 @@ window.__require = function e(t, n, r) {
               }).start();
             }
           };
-          for (var i = 0; i < finalMsg.length; i++) _loop2(i);
+          for (var i = 0; i < finalMsg.length; i++) _loop(i);
         } else this.valueLab.string = finalMsg;
         node.opacity = 255;
         node.color = color;

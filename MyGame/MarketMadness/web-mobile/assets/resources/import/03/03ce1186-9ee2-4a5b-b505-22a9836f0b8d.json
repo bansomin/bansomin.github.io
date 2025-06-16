@@ -447,7 +447,7 @@
         },
         {
           "id": "equipment_skill_1153",
-          "content": "纸团命中时，有10%几率增加疲劳(受力量影响)，持续3秒",
+          "content": "纸团造成伤害时,+9%几率增加1疲劳(持续3秒)",
           "valueList": ""
         },
         {
@@ -2813,6 +2813,36 @@
         {
           "id": "vip_more_coin",
           "content": "金币获取+10%",
+          "valueList": ""
+        },
+        {
+          "id": "shop_select_equipment_tip",
+          "content": "请选择要兑换的装备",
+          "valueList": ""
+        },
+        {
+          "id": "shop_select_equipment_tip_2",
+          "content": "您还没有达到兑换要求",
+          "valueList": ""
+        },
+        {
+          "id": "not_enough_diamond",
+          "content": "钻石不足",
+          "valueList": ""
+        },
+        {
+          "id": "not_enough_ad_count",
+          "content": "今日广告次数已用尽，请明天再来",
+          "valueList": ""
+        },
+        {
+          "id": "not_enough_free_count",
+          "content": "今日免费次数已用尽，请明天再来",
+          "valueList": ""
+        },
+        {
+          "id": "not_enough_key_count",
+          "content": "钥匙数量不足",
           "valueList": ""
         }
       ]
