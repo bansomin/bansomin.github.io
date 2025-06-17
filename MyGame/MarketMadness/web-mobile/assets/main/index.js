@@ -19420,11 +19420,11 @@ window.__require = function e(t, n, r) {
          case EnumType.EVENT_TRIGGER_TYPE.HP_REDUCTION:
           if (this.currentHp < this.getExtraEffect(_event.skillOwner, EnumType.ENHANCEMENT_EFFECT_TYPE.LIMIT, edge)) {
             this.updatePropertyFromEvent(_event);
-            this.updateEmergencyCallback && this.updateEmergencyCallback(true);
+            "emergency" == _event.skillConfig.skill_owner && this.updateEmergencyCallback && this.updateEmergencyCallback(true);
           } else {
-            _event.triggerCount = 0;
+            _event.currentTriggerCount = 0;
             this.removeAdditionalProperty(_event.eventId);
-            this.updateEmergencyCallback && this.updateEmergencyCallback(false);
+            "emergency" == _event.skillConfig.skill_owner && this.updateEmergencyCallback && this.updateEmergencyCallback(false);
           }
           break;
 
@@ -30175,7 +30175,7 @@ window.__require = function e(t, n, r) {
         this.updateUI(true);
         this.schedule(function() {
           _this.showEffect();
-        }, 5);
+        }, 8);
       },
       showEffect: function showEffect() {
         var resultList = [];
