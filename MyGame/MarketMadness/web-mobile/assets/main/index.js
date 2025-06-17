@@ -11512,7 +11512,7 @@ window.__require = function e(t, n, r) {
               }
             }
             var roleView = _this5._roleData.node.getComponent("RoleView");
-            var hasCombineSkill = roleView && roleView._combineArr && roleView._isMergeAnimation;
+            var hasCombineSkill = roleView && roleView._combineArr;
             if (hasCombineSkill) {
               var uiArgs = {
                 combineArr: roleView._combineArr
@@ -15609,7 +15609,7 @@ window.__require = function e(t, n, r) {
             }
           }
           var roleView = _this2._roleData.node.getComponent("RoleView");
-          var hasCombineSkill = roleView && roleView._combineArr && roleView._isMergeAnimation;
+          var hasCombineSkill = roleView && roleView._combineArr;
           if (hasCombineSkill) {
             var uiArgs = {
               combineArr: roleView._combineArr
@@ -18481,7 +18481,7 @@ window.__require = function e(t, n, r) {
             }.bind(_this);
             var actions = [ cc.delayTime(.2) ];
             var roleView = _this._roleData.node.getComponent("RoleView");
-            var hasCombineSkill = roleView && roleView._combineArr && roleView._isMergeAnimation;
+            var hasCombineSkill = roleView && roleView._combineArr;
             hasCombineSkill ? actions.push(cc.callFunc(function() {
               Global.gui.get(gameConfig.UIID.BattlePanel).getComponent("BattleView").showRogueItemEffect(_skillId, _worldPos, function() {
                 abilityUps();
@@ -28640,7 +28640,7 @@ window.__require = function e(t, n, r) {
         if (null == skillConfig) return;
         if (1 == skillConfig.onlyOne) {
           var _skillSet2 = this.getSkill(_id, _roleData);
-          if (null != _skillSet2) return "noMergeAnimation";
+          if (null != _skillSet2) return;
         }
         if ("" != skillConfig["delete"]) {
           var _skillSet3 = this.getSkill(skillConfig["delete"], _roleData);
