@@ -2844,6 +2844,11 @@
           "id": "not_enough_key_count",
           "content": "钥匙数量不足",
           "valueList": ""
+        },
+        {
+          "id": "task_reset_in",
+          "content": "任务将在{0}后刷新",
+          "valueList": ""
         }
       ]
     ]

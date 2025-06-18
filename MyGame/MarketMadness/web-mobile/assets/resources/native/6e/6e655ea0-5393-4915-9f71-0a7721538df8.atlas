@@ -1,0 +1,83 @@
+
+Enemy01.png
+size: 243,264
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 144, 175
+  size: 87, 91
+  orig: 87, 91
+  offset: 0, 0
+  index: -1
+Ear
+  rotate: false
+  xy: 92, 69
+  size: 39, 77
+  orig: 39, 81
+  offset: 0, 4
+  index: -1
+Hat
+  rotate: true
+  xy: 2, 14
+  size: 132, 88
+  orig: 132, 88
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 148
+  size: 140, 114
+  orig: 170, 144
+  offset: 0, 30
+  index: -1
+L_Eye
+  rotate: false
+  xy: 2, 2
+  size: 17, 10
+  orig: 17, 10
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: true
+  xy: 133, 69
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+L_hand
+  rotate: true
+  xy: 169, 44
+  size: 60, 72
+  orig: 60, 72
+  offset: 0, 0
+  index: -1
+Mouse
+  rotate: false
+  xy: 144, 106
+  size: 79, 67
+  orig: 96, 109
+  offset: 0, 5
+  index: -1
+R_Eye
+  rotate: false
+  xy: 205, 12
+  size: 27, 30
+  orig: 36, 62
+  offset: 2, 6
+  index: -1
+R_Leg
+  rotate: true
+  xy: 169, 7
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+R_hand
+  rotate: true
+  xy: 92, 4
+  size: 63, 75
+  orig: 63, 75
+  offset: 0, 0
+  index: -1

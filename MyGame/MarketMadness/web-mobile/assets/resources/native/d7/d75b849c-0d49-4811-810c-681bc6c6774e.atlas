@@ -1,0 +1,55 @@
+
+FLash.png
+size: 512,323
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Flash/Flash_00000
+  rotate: true
+  xy: 269, 20
+  size: 123, 174
+  orig: 138, 218
+  offset: 8, 18
+  index: -1
+Image/Flash/Flash_00001
+  rotate: false
+  xy: 2, 112
+  size: 131, 209
+  orig: 138, 218
+  offset: 7, 0
+  index: -1
+Image/Flash/Flash_00002
+  rotate: false
+  xy: 135, 116
+  size: 132, 205
+  orig: 138, 218
+  offset: 6, 11
+  index: -1
+Image/Flash/Flash_00003
+  rotate: false
+  xy: 269, 145
+  size: 134, 176
+  orig: 138, 218
+  offset: 4, 42
+  index: -1
+Image/Flash/Flash_00004
+  rotate: false
+  xy: 2, 2
+  size: 135, 108
+  orig: 138, 218
+  offset: 1, 19
+  index: -1
+Image/Flash/Flash_00005
+  rotate: true
+  xy: 405, 183
+  size: 138, 105
+  orig: 138, 218
+  offset: 0, 25
+  index: -1
+Image/glow_00000
+  rotate: false
+  xy: 139, 68
+  size: 72, 46
+  orig: 78, 51
+  offset: 3, 3
+  index: -1

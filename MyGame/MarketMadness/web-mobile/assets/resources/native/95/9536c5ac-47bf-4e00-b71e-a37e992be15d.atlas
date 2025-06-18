@@ -1,0 +1,55 @@
+
+Jinji.png
+size: 508,461
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/jinji_00000
+  rotate: true
+  xy: 184, 2
+  size: 139, 158
+  orig: 154, 190
+  offset: 15, 4
+  index: -1
+Image/jinji_00001
+  rotate: true
+  xy: 2, 131
+  size: 143, 180
+  orig: 154, 190
+  offset: 10, 0
+  index: -1
+Image/jinji_00002
+  rotate: false
+  xy: 158, 278
+  size: 145, 181
+  orig: 154, 190
+  offset: 9, 2
+  index: -1
+Image/jinji_00003
+  rotate: false
+  xy: 305, 276
+  size: 143, 183
+  orig: 154, 190
+  offset: 8, 4
+  index: -1
+Image/jinji_00004
+  rotate: true
+  xy: 184, 143
+  size: 131, 184
+  orig: 154, 190
+  offset: 9, 6
+  index: -1
+Image/jinji_00005
+  rotate: false
+  xy: 370, 108
+  size: 136, 166
+  orig: 154, 190
+  offset: 3, 17
+  index: -1
+Image/jinji_00006
+  rotate: false
+  xy: 2, 276
+  size: 154, 183
+  orig: 154, 190
+  offset: 0, 0
+  index: -1

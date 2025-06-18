@@ -1,0 +1,670 @@
+[
+  1,
+  [
+    "7fYuN6Z4ZF1rSiBYwzHS1B"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Enemy05",
+      "\nEnemy05.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nWind/1\n  rotate: true\n  xy: 311, 18\n  size: 48, 24\n  orig: 125, 44\n  offset: 4, 20\n  index: -1\nWind/10\n  rotate: false\n  xy: 313, 277\n  size: 6, 10\n  orig: 125, 44\n  offset: 118, 7\n  index: -1\nWind/2\n  rotate: true\n  xy: 279, 173\n  size: 102, 29\n  orig: 125, 44\n  offset: 0, 14\n  index: -1\nWind/3\n  rotate: true\n  xy: 279, 397\n  size: 110, 35\n  orig: 125, 44\n  offset: 0, 7\n  index: -1\nWind/4\n  rotate: false\n  xy: 2, 17\n  size: 122, 38\n  orig: 125, 44\n  offset: 1, 2\n  index: -1\nWind/5\n  rotate: false\n  xy: 126, 20\n  size: 121, 35\n  orig: 125, 44\n  offset: 3, 1\n  index: -1\nWind/6\n  rotate: true\n  xy: 279, 277\n  size: 118, 32\n  orig: 125, 44\n  offset: 6, 3\n  index: -1\nWind/7\n  rotate: true\n  xy: 279, 81\n  size: 90, 28\n  orig: 125, 44\n  offset: 35, 1\n  index: -1\nWind/8\n  rotate: true\n  xy: 279, 2\n  size: 77, 30\n  orig: 125, 44\n  offset: 46, 0\n  index: -1\nWind/9\n  rotate: false\n  xy: 311, 4\n  size: 27, 12\n  orig: 125, 44\n  offset: 97, 2\n  index: -1\nZ1\n  rotate: false\n  xy: 2, 283\n  size: 275, 224\n  orig: 275, 224\n  offset: 0, 0\n  index: -1\nc1\n  rotate: false\n  xy: 311, 68\n  size: 35, 51\n  orig: 35, 51\n  offset: 0, 0\n  index: -1\nc2\n  rotate: false\n  xy: 310, 182\n  size: 44, 45\n  orig: 44, 45\n  offset: 0, 0\n  index: -1\nc3\n  rotate: false\n  xy: 309, 121\n  size: 45, 50\n  orig: 45, 50\n  offset: 0, 0\n  index: -1\nc4\n  rotate: false\n  xy: 310, 229\n  size: 45, 46\n  orig: 45, 46\n  offset: 0, 0\n  index: -1\nz\n  rotate: false\n  xy: 2, 57\n  size: 275, 224\n  orig: 275, 224\n  offset: 0, 0\n  index: -1\n",
+      [
+        "Enemy05.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "g6RltdieHh8mT6ufnDv2hShJHmw",
+          "spine": "3.8.99",
+          "x": -106.06,
+          "y": -73.11,
+          "width": 229.5,
+          "height": 213.5,
+          "images": "./images/",
+          "audio": "E:/BIGBIG/键盘侠/敌人总/敌人5_乌龟/images"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Zong",
+            "parent": "root",
+            "scaleX": -0.5,
+            "scaleY": 0.5
+          },
+          {
+            "name": "Zong2",
+            "parent": "Zong",
+            "length": 156.77,
+            "rotation": 84.81,
+            "x": -2.85,
+            "y": -74.64
+          },
+          {
+            "name": "Zong3",
+            "parent": "Zong2",
+            "length": 41.21,
+            "rotation": -41.27,
+            "x": 200.52,
+            "y": -110.03
+          },
+          {
+            "name": "Zong4",
+            "parent": "Zong2",
+            "length": 56.48,
+            "rotation": -32.28,
+            "x": 160.01,
+            "y": 63.3
+          },
+          {
+            "name": "Zong5",
+            "parent": "Zong2",
+            "length": 50.81,
+            "rotation": 53.77,
+            "x": 183.28,
+            "y": 178.68
+          },
+          {
+            "name": "Zong6",
+            "parent": "Zong2",
+            "length": 56.77,
+            "rotation": 5.19,
+            "x": 270.72,
+            "y": 33.61
+          },
+          {
+            "name": "Wind",
+            "parent": "Zong"
+          }
+        ],
+        "slots": [
+          {
+            "name": "z",
+            "bone": "Zong2",
+            "attachment": "z"
+          },
+          {
+            "name": "c4",
+            "bone": "Zong5",
+            "attachment": "c4"
+          },
+          {
+            "name": "c3",
+            "bone": "Zong4",
+            "attachment": "c3"
+          },
+          {
+            "name": "c2",
+            "bone": "Zong3",
+            "attachment": "c2"
+          },
+          {
+            "name": "c1",
+            "bone": "Zong6",
+            "attachment": "c1"
+          },
+          {
+            "name": "Z1",
+            "bone": "Zong2"
+          },
+          {
+            "name": "Wind/1",
+            "bone": "Wind"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Wind/1": {
+                "Wind/1": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/2": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/3": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/4": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/5": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/6": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/7": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/8": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/9": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                },
+                "Wind/10": {
+                  "x": -1,
+                  "rotation": 180,
+                  "width": 209,
+                  "height": 74
+                }
+              },
+              "Z1": {
+                "Z1": {
+                  "x": 113.99,
+                  "y": 24.97,
+                  "rotation": -81.8,
+                  "width": 459,
+                  "height": 374
+                }
+              },
+              "c1": {
+                "c1": {
+                  "x": 40.26,
+                  "y": -2.44,
+                  "rotation": -90,
+                  "width": 59,
+                  "height": 85
+                }
+              },
+              "c2": {
+                "c2": {
+                  "x": 30.78,
+                  "y": -2.79,
+                  "rotation": -43.53,
+                  "width": 74,
+                  "height": 75
+                }
+              },
+              "c3": {
+                "c3": {
+                  "x": 37.07,
+                  "y": 0.66,
+                  "rotation": -52.52,
+                  "width": 75,
+                  "height": 83
+                }
+              },
+              "c4": {
+                "c4": {
+                  "x": 28.76,
+                  "y": 2.43,
+                  "rotation": -138.58,
+                  "width": 75,
+                  "height": 77
+                }
+              },
+              "z": {
+                "z": {
+                  "x": 113.62,
+                  "y": 24.92,
+                  "rotation": -84.81,
+                  "width": 459,
+                  "height": 374
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Atk": {
+            "slots": {
+              "Wind/1": {
+                "attachment": [
+                  {
+                    "name": "Wind/1"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Wind/2"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Wind/3"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Wind/4"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Wind/5"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Wind/6"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Wind/7"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Wind/8"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Wind/9"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "Wind/10"
+                  }
+                ]
+              },
+              "Z1": {
+                "attachment": [
+                  {
+                    "time": 0.0667,
+                    "name": "Z1"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": null
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Z1"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": null
+                  }
+                ]
+              },
+              "z": {
+                "attachment": [
+                  {
+                    "time": 0.0667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "z"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": null
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "z"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "Zong3": {
+                "scale": [
+                  {
+                    "x": 1.265
+                  }
+                ]
+              },
+              "Zong4": {
+                "scale": [
+                  {
+                    "x": 1.113
+                  }
+                ]
+              },
+              "Zong": {
+                "scale": [
+                  {
+                    "x": -1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.0667,
+                    "x": -1
+                  },
+                  {
+                    "time": 0.1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.1333
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": -1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.2333,
+                    "x": -1
+                  },
+                  {
+                    "time": 0.2667
+                  }
+                ]
+              },
+              "Wind": {
+                "scale": [
+                  {
+                    "x": -3.5,
+                    "y": 3.5
+                  }
+                ]
+              }
+            }
+          },
+          "Death": {
+            "bones": {
+              "Zong2": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.2,
+                    "angle": -118.58
+                  },
+                  {
+                    "time": 0.3667,
+                    "angle": -169.38
+                  }
+                ],
+                "translate": [
+                  {
+                    "curve": 0.159,
+                    "c2": 0.49,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.2,
+                    "x": 30.87,
+                    "y": 339.57,
+                    "curve": 0.509,
+                    "c2": 0.07,
+                    "c3": 0.923,
+                    "c4": 0.9
+                  },
+                  {
+                    "time": 0.4667
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.4333
+                  },
+                  {
+                    "time": 0.4667,
+                    "x": 0.909,
+                    "y": 1.141
+                  },
+                  {
+                    "time": 0.5333,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.8333
+                  }
+                ]
+              }
+            }
+          },
+          "Idle": {
+            "bones": {
+              "Zong2": {
+                "scale": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3,
+                    "x": 0.97,
+                    "y": 1.061,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6333,
+                    "x": 1.036,
+                    "y": 0.973,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.9667,
+                    "x": 0.97,
+                    "y": 1.061,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.3
+                  }
+                ]
+              },
+              "Zong5": {
+                "scale": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3333,
+                    "x": 1.539,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6667,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.9667,
+                    "x": 1.539,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.3
+                  }
+                ]
+              },
+              "Zong6": {
+                "scale": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3,
+                    "x": 1.334,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5667,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1,
+                    "x": 1.413,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.3
+                  }
+                ]
+              },
+              "Zong3": {
+                "scale": [
+                  {
+                    "x": 1.265,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3667,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6333,
+                    "x": 1.265,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.9,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.3,
+                    "x": 1.265
+                  }
+                ]
+              },
+              "Zong4": {
+                "scale": [
+                  {
+                    "x": 1.113,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1667,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.4,
+                    "x": 1.256,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.8,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.1333,
+                    "x": 1.225,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.3,
+                    "x": 1.113
+                  }
+                ]
+              },
+              "Zong": {
+                "translate": [
+                  {
+                    "y": 73.78
+                  }
+                ]
+              }
+            }
+          },
+          "Run": {
+            "bones": {
+              "Zong": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.1333,
+                    "angle": -90
+                  },
+                  {
+                    "time": 0.2667,
+                    "angle": 180
+                  },
+                  {
+                    "time": 0.4,
+                    "angle": 90
+                  },
+                  {
+                    "time": 0.5667
+                  }
+                ],
+                "translate": [
+                  {
+                    "y": 28.88
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

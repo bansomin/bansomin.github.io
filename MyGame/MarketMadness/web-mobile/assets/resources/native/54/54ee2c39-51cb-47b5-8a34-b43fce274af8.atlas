@@ -1,0 +1,62 @@
+
+Enemy13.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body_3
+  rotate: false
+  xy: 2, 100
+  size: 342, 400
+  orig: 342, 400
+  offset: 0, 0
+  index: -1
+L_Arm_3
+  rotate: false
+  xy: 346, 246
+  size: 119, 128
+  orig: 119, 128
+  offset: 0, 0
+  index: -1
+L_Eye_3
+  rotate: true
+  xy: 2, 18
+  size: 80, 86
+  orig: 80, 86
+  offset: 0, 0
+  index: -1
+L_Leg_3
+  rotate: true
+  xy: 90, 29
+  size: 69, 95
+  orig: 69, 95
+  offset: 0, 0
+  index: -1
+Noise_3
+  rotate: true
+  xy: 346, 107
+  size: 138, 81
+  orig: 138, 81
+  offset: 0, 0
+  index: -1
+R_Arm_3
+  rotate: false
+  xy: 346, 375
+  size: 122, 124
+  orig: 122, 124
+  offset: 0, 0
+  index: -1
+R_Eye_3
+  rotate: false
+  xy: 346, 18
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+R_Leg_3
+  rotate: false
+  xy: 187, 3
+  size: 69, 95
+  orig: 69, 95
+  offset: 0, 0
+  index: -1

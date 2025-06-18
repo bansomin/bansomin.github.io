@@ -1,0 +1,160 @@
+
+Boss01.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 142
+  size: 245, 167
+  orig: 245, 167
+  offset: 0, 0
+  index: -1
+Bubble_00000
+  rotate: false
+  xy: 200, 112
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+Cir
+  rotate: true
+  xy: 402, 13
+  size: 67, 66
+  orig: 67, 66
+  offset: 0, 0
+  index: -1
+Di_00000
+  rotate: false
+  xy: 396, 233
+  size: 67, 68
+  orig: 67, 68
+  offset: 0, 0
+  index: -1
+Down
+  rotate: true
+  xy: 396, 143
+  size: 89, 70
+  orig: 89, 70
+  offset: 0, 0
+  index: -1
+Fish
+  rotate: true
+  xy: 2, 12
+  size: 128, 129
+  orig: 128, 129
+  offset: 0, 0
+  index: -1
+Flash_00000
+  rotate: true
+  xy: 465, 296
+  size: 67, 6
+  orig: 67, 6
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 311
+  size: 231, 199
+  orig: 255, 221
+  offset: 12, 11
+  index: -1
+Head_Di
+  rotate: true
+  xy: 249, 142
+  size: 225, 145
+  orig: 249, 159
+  offset: 12, 7
+  index: -1
+L_Arm
+  rotate: 270
+  xy: 132, 19
+  size: 69, 149
+  orig: 69, 149
+  offset: 0, 0
+  index: -1
+Lanzi
+  rotate: true
+  xy: 235, 435
+  size: 75, 160
+  orig: 75, 160
+  offset: 0, 0
+  index: -1
+Open/Open_00006
+  rotate: false
+  xy: 396, 365
+  size: 67, 68
+  orig: 67, 68
+  offset: 0, 0
+  index: -1
+Open/Open_00007
+  rotate: false
+  xy: 397, 443
+  size: 67, 67
+  orig: 67, 68
+  offset: 0, 0
+  index: -1
+Open/Open_00008
+  rotate: false
+  xy: 283, 3
+  size: 67, 66
+  orig: 67, 68
+  offset: 0, 0
+  index: -1
+Open/Open_00009
+  rotate: false
+  xy: 235, 371
+  size: 67, 62
+  orig: 67, 68
+  offset: 0, 2
+  index: -1
+Open/Open_00010
+  rotate: false
+  xy: 304, 376
+  size: 67, 57
+  orig: 67, 68
+  offset: 0, 4
+  index: -1
+Open/Open_00011
+  rotate: false
+  xy: 131, 90
+  size: 67, 50
+  orig: 67, 68
+  offset: 0, 8
+  index: -1
+Open/Open_00012
+  rotate: false
+  xy: 235, 328
+  size: 8, 41
+  orig: 67, 68
+  offset: 0, 12
+  index: -1
+Quan_00000
+  rotate: false
+  xy: 230, 113
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: 270
+  xy: 260, 71
+  size: 69, 149
+  orig: 69, 149
+  offset: 0, 0
+  index: -1
+Shaow_00003
+  rotate: false
+  xy: 396, 310
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+gai
+  rotate: false
+  xy: 2, 107
+  size: 18, 33
+  orig: 18, 33
+  offset: 0, 0
+  index: -1

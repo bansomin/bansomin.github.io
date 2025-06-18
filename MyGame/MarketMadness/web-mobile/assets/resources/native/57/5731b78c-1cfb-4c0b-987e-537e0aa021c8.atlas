@@ -1,0 +1,97 @@
+
+Enemy09.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 95
+  size: 154, 393
+  orig: 154, 393
+  offset: 0, 0
+  index: -1
+Box
+  rotate: false
+  xy: 158, 246
+  size: 164, 242
+  orig: 164, 242
+  offset: 0, 0
+  index: -1
+D_Eye
+  rotate: true
+  xy: 158, 44
+  size: 53, 92
+  orig: 53, 92
+  offset: 0, 0
+  index: -1
+Eye
+  rotate: true
+  xy: 2, 40
+  size: 53, 92
+  orig: 53, 92
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: true
+  xy: 306, 83
+  size: 78, 90
+  orig: 78, 90
+  offset: 0, 0
+  index: -1
+L_Chujiao
+  rotate: false
+  xy: 252, 31
+  size: 105, 50
+  orig: 105, 50
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: true
+  xy: 96, 52
+  size: 41, 59
+  orig: 41, 59
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: true
+  xy: 398, 83
+  size: 78, 90
+  orig: 78, 90
+  offset: 0, 0
+  index: -1
+R_Chujiao
+  rotate: false
+  xy: 158, 99
+  size: 116, 55
+  orig: 116, 55
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: true
+  xy: 359, 40
+  size: 41, 59
+  orig: 41, 59
+  offset: 0, 0
+  index: -1
+Ring
+  rotate: false
+  xy: 158, 156
+  size: 146, 88
+  orig: 146, 88
+  offset: 0, 0
+  index: -1
+Water
+  rotate: true
+  xy: 324, 313
+  size: 175, 131
+  orig: 175, 131
+  offset: 0, 0
+  index: -1
+Weapin
+  rotate: true
+  xy: 324, 163
+  size: 148, 142
+  orig: 148, 142
+  offset: 0, 0
+  index: -1

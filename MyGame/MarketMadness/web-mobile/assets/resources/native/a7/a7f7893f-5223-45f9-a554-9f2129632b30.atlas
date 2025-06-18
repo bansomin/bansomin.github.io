@@ -1,0 +1,90 @@
+
+Enemy10.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 242
+  size: 237, 268
+  orig: 237, 268
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: 270
+  xy: 322, 3
+  size: 99, 117
+  orig: 99, 117
+  offset: 0, 0
+  index: -1
+L_F_1
+  rotate: false
+  xy: 418, 452
+  size: 39, 58
+  orig: 39, 58
+  offset: 0, 0
+  index: -1
+L_F_2
+  rotate: false
+  xy: 418, 303
+  size: 51, 46
+  orig: 51, 46
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: false
+  xy: 390, 236
+  size: 55, 65
+  orig: 55, 65
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: false
+  xy: 390, 236
+  size: 55, 65
+  orig: 55, 65
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: true
+  xy: 241, 87
+  size: 214, 147
+  orig: 214, 147
+  offset: 0, 0
+  index: -1
+PS5
+  rotate: true
+  xy: 2, 7
+  size: 233, 237
+  orig: 233, 237
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 390, 104
+  size: 99, 109
+  orig: 99, 117
+  offset: 0, 8
+  index: -1
+R_F_1
+  rotate: true
+  xy: 418, 400
+  size: 39, 58
+  orig: 39, 60
+  offset: 0, 0
+  index: -1
+R_F_2
+  rotate: false
+  xy: 418, 351
+  size: 49, 47
+  orig: 49, 48
+  offset: 0, 0
+  index: -1
+daizi
+  rotate: true
+  xy: 240, 303
+  size: 207, 176
+  orig: 207, 176
+  offset: 0, 0
+  index: -1

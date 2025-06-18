@@ -1,0 +1,179 @@
+[
+  1,
+  [
+    "0e5pNdatBP8pi7oC7JyK9d"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Jinji",
+      "\nJinji.png\nsize: 508,461\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/jinji_00000\n  rotate: true\n  xy: 184, 2\n  size: 139, 158\n  orig: 154, 190\n  offset: 15, 4\n  index: -1\nImage/jinji_00001\n  rotate: true\n  xy: 2, 131\n  size: 143, 180\n  orig: 154, 190\n  offset: 10, 0\n  index: -1\nImage/jinji_00002\n  rotate: false\n  xy: 158, 278\n  size: 145, 181\n  orig: 154, 190\n  offset: 9, 2\n  index: -1\nImage/jinji_00003\n  rotate: false\n  xy: 305, 276\n  size: 143, 183\n  orig: 154, 190\n  offset: 8, 4\n  index: -1\nImage/jinji_00004\n  rotate: true\n  xy: 184, 143\n  size: 131, 184\n  orig: 154, 190\n  offset: 9, 6\n  index: -1\nImage/jinji_00005\n  rotate: false\n  xy: 370, 108\n  size: 136, 166\n  orig: 154, 190\n  offset: 3, 17\n  index: -1\nImage/jinji_00006\n  rotate: false\n  xy: 2, 276\n  size: 154, 183\n  orig: 154, 190\n  offset: 0, 0\n  index: -1\n",
+      [
+        "Jinji.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "yEphkOYgVTDsbMyaECUTHQSwemo",
+          "spine": "3.8.99",
+          "x": -111.15,
+          "y": -6.95,
+          "width": 230.54,
+          "height": 304.04,
+          "images": "",
+          "audio": ""
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Zong",
+            "parent": "root",
+            "rotation": -0.03,
+            "x": 4.12,
+            "y": 154.24,
+            "scaleX": 1.2,
+            "scaleY": 1.2
+          }
+        ],
+        "slots": [
+          {
+            "name": "Image/jinji_00000",
+            "bone": "Zong",
+            "attachment": "Image/jinji_00006"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Image/jinji_00000": {
+                "Image/jinji_00000": {
+                  "width": 192,
+                  "height": 238
+                },
+                "Image/jinji_00001": {
+                  "width": 192,
+                  "height": 238
+                },
+                "Image/jinji_00002": {
+                  "width": 192,
+                  "height": 238
+                },
+                "Image/jinji_00003": {
+                  "width": 192,
+                  "height": 238
+                },
+                "Image/jinji_00004": {
+                  "width": 192,
+                  "height": 238
+                },
+                "Image/jinji_00005": {
+                  "width": 192,
+                  "height": 238
+                },
+                "Image/jinji_00006": {
+                  "width": 192,
+                  "height": 238
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Jinji": {
+            "slots": {
+              "Image/jinji_00000": {
+                "attachment": [
+                  {
+                    "name": "Image/jinji_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Image/jinji_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/jinji_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/jinji_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/jinji_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/jinji_00005"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Image/jinji_00006"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "Zong": {
+                "translate": [
+                  {
+                    "x": -6.34,
+                    "y": -5.27
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 1.2,
+                    "y": 1.2
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

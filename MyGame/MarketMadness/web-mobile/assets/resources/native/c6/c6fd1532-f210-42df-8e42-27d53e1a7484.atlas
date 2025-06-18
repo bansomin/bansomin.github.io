@@ -1,0 +1,272 @@
+
+Boss03.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 288
+  size: 190, 222
+  orig: 190, 222
+  offset: 0, 0
+  index: -1
+Body_2
+  rotate: false
+  xy: 194, 288
+  size: 190, 222
+  orig: 190, 222
+  offset: 0, 0
+  index: -1
+Body_3
+  rotate: true
+  xy: 2, 96
+  size: 190, 222
+  orig: 190, 222
+  offset: 0, 0
+  index: -1
+D_Eye
+  rotate: false
+  xy: 386, 322
+  size: 99, 66
+  orig: 99, 66
+  offset: 0, 0
+  index: -1
+Gun
+  rotate: true
+  xy: 386, 390
+  size: 120, 99
+  orig: 120, 99
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: false
+  xy: 386, 271
+  size: 83, 50
+  orig: 83, 50
+  offset: 0, 0
+  index: -1
+L_Arm_2
+  rotate: true
+  xy: 226, 151
+  size: 66, 71
+  orig: 66, 71
+  offset: 0, 0
+  index: -1
+L_Arm_3
+  rotate: false
+  xy: 364, 198
+  size: 66, 71
+  orig: 66, 71
+  offset: 0, 0
+  index: -1
+L_Eye_3
+  rotate: true
+  xy: 401, 91
+  size: 45, 48
+  orig: 45, 48
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: true
+  xy: 226, 82
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+L_Leg_2
+  rotate: true
+  xy: 87, 56
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+L_Leg_3
+  rotate: true
+  xy: 451, 78
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+Noise
+  rotate: true
+  xy: 299, 141
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1
+Noise_2
+  rotate: true
+  xy: 299, 141
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1
+Noise_3
+  rotate: true
+  xy: 299, 141
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1
+P/11
+  rotate: false
+  xy: 487, 335
+  size: 7, 21
+  orig: 64, 128
+  offset: 29, 53
+  index: -1
+P/22
+  rotate: true
+  xy: 325, 274
+  size: 12, 41
+  orig: 64, 128
+  offset: 27, 43
+  index: -1
+P/33
+  rotate: true
+  xy: 197, 61
+  size: 19, 71
+  orig: 64, 128
+  offset: 23, 27
+  index: -1
+P/44
+  rotate: true
+  xy: 2, 72
+  size: 22, 83
+  orig: 64, 128
+  offset: 22, 22
+  index: -1
+P/55
+  rotate: false
+  xy: 461, 118
+  size: 25, 95
+  orig: 64, 128
+  offset: 19, 17
+  index: -1
+P/66
+  rotate: false
+  xy: 432, 138
+  size: 27, 96
+  orig: 64, 128
+  offset: 18, 17
+  index: -1
+P/77
+  rotate: false
+  xy: 346, 118
+  size: 27, 96
+  orig: 64, 128
+  offset: 18, 17
+  index: -1
+P/88
+  rotate: false
+  xy: 375, 101
+  size: 24, 97
+  orig: 64, 128
+  offset: 17, 17
+  index: -1
+R_Arm
+  rotate: 270
+  xy: 426, 215
+  size: 68, 69
+  orig: 68, 69
+  offset: 0, 0
+  index: -1
+R_Arm_2
+  rotate: true
+  xy: 226, 219
+  size: 68, 69
+  orig: 68, 69
+  offset: 0, 0
+  index: -1
+R_Arm_3
+  rotate: true
+  xy: 293, 219
+  size: 68, 69
+  orig: 68, 69
+  offset: 0, 0
+  index: -1
+R_Eye_3
+  rotate: false
+  xy: 260, 123
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: true
+  xy: 281, 82
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+R_Leg_2
+  rotate: true
+  xy: 142, 56
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+R_Leg_3
+  rotate: 270
+  xy: 336, 65
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+Xm/XM_00000
+  rotate: true
+  xy: 487, 358
+  size: 34, 22
+  orig: 38, 22
+  offset: 2, 0
+  index: -1
+Xm/XM_00001
+  rotate: false
+  xy: 391, 67
+  size: 37, 22
+  orig: 38, 22
+  offset: 0, 0
+  index: -1
+Xm/XM_00002
+  rotate: true
+  xy: 487, 434
+  size: 38, 20
+  orig: 38, 22
+  offset: 0, 1
+  index: -1
+Xm/XM_00003
+  rotate: false
+  xy: 270, 58
+  size: 36, 22
+  orig: 38, 22
+  offset: 1, 0
+  index: -1
+Xm/XM_00004
+  rotate: true
+  xy: 487, 474
+  size: 36, 22
+  orig: 38, 22
+  offset: 1, 0
+  index: -1
+Xm/XM_00005
+  rotate: true
+  xy: 487, 394
+  size: 38, 20
+  orig: 38, 22
+  offset: 0, 1
+  index: -1
+Xm/XM_00006
+  rotate: false
+  xy: 471, 298
+  size: 38, 22
+  orig: 38, 22
+  offset: 0, 0
+  index: -1
+Xm/XM_00007
+  rotate: true
+  xy: 487, 262
+  size: 34, 22
+  orig: 38, 22
+  offset: 2, 0
+  index: -1

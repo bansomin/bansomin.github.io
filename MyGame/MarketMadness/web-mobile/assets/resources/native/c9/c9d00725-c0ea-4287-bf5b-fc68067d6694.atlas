@@ -1,0 +1,48 @@
+
+S_Flash.png
+size: 463,158
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/S_Flash_00000
+  rotate: false
+  xy: 362, 2
+  size: 88, 68
+  orig: 128, 112
+  offset: 24, 9
+  index: -1
+Image/S_Flash_00001
+  rotate: false
+  xy: 359, 72
+  size: 102, 84
+  orig: 128, 112
+  offset: 20, 0
+  index: -1
+Image/S_Flash_00002
+  rotate: false
+  xy: 247, 77
+  size: 110, 79
+  orig: 128, 112
+  offset: 18, 9
+  index: -1
+Image/S_Flash_00003
+  rotate: false
+  xy: 247, 6
+  size: 113, 64
+  orig: 128, 112
+  offset: 4, 36
+  index: -1
+Image/S_Flash_00004
+  rotate: false
+  xy: 126, 61
+  size: 119, 95
+  orig: 128, 112
+  offset: 1, 15
+  index: -1
+Image/S_Flash_00005
+  rotate: false
+  xy: 2, 61
+  size: 122, 95
+  orig: 128, 112
+  offset: 0, 17
+  index: -1

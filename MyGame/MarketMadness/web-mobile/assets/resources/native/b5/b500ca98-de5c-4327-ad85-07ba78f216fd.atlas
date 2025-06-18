@@ -1,0 +1,139 @@
+
+Boss02.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 130
+  size: 348, 377
+  orig: 348, 377
+  offset: 0, 0
+  index: -1
+Bt/Bt_00000
+  rotate: false
+  xy: 123, 7
+  size: 42, 42
+  orig: 56, 49
+  offset: 0, 5
+  index: -1
+Bt/Bt_00001
+  rotate: false
+  xy: 167, 14
+  size: 33, 35
+  orig: 56, 49
+  offset: 16, 14
+  index: -1
+Bt/Bt_00002
+  rotate: true
+  xy: 44, 4
+  size: 23, 41
+  orig: 56, 49
+  offset: 23, 8
+  index: -1
+Bt/Bt_00003
+  rotate: true
+  xy: 2, 3
+  size: 24, 40
+  orig: 56, 49
+  offset: 28, 4
+  index: -1
+Bt/Bt_00004
+  rotate: false
+  xy: 2, 178
+  size: 28, 42
+  orig: 56, 49
+  offset: 28, 0
+  index: -1
+D_Eye
+  rotate: true
+  xy: 123, 51
+  size: 77, 51
+  orig: 77, 51
+  offset: 0, 0
+  index: -1
+Ear
+  rotate: true
+  xy: 447, 166
+  size: 60, 35
+  orig: 60, 35
+  offset: 0, 0
+  index: -1
+Hat
+  rotate: true
+  xy: 345, 111
+  size: 115, 100
+  orig: 115, 100
+  offset: 0, 0
+  index: -1
+L_Ear
+  rotate: 180
+  xy: 2, 29
+  size: 120, 144
+  orig: 120, 144
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: true
+  xy: 440, 39
+  size: 70, 46
+  orig: 70, 46
+  offset: 0, 0
+  index: -1
+L_Leg2
+  rotate: true
+  xy: 442, 367
+  size: 70, 46
+  orig: 70, 46
+  offset: 0, 0
+  index: -1
+Noise
+  rotate: false
+  xy: 352, 228
+  size: 99, 115
+  orig: 99, 115
+  offset: 0, 0
+  index: -1
+P
+  rotate: true
+  xy: 453, 305
+  size: 60, 35
+  orig: 60, 35
+  offset: 0, 0
+  index: -1
+Parper_1
+  rotate: false
+  xy: 432, 439
+  size: 50, 68
+  orig: 50, 68
+  offset: 0, 0
+  index: -1
+Parper_2
+  rotate: false
+  xy: 352, 400
+  size: 78, 107
+  orig: 78, 107
+  offset: 0, 0
+  index: -1
+R_Ear
+  rotate: true
+  xy: 195, 35
+  size: 112, 149
+  orig: 112, 149
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: false
+  xy: 352, 348
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: false
+  xy: 345, 31
+  size: 92, 78
+  orig: 92, 78
+  offset: 0, 0
+  index: -1

@@ -33,27 +33,53 @@ window.__require = function e(t, n, r) {
     cc.Class({
       extends: cc.Component,
       properties: {
-        label: cc.Label,
+        label: cc.Node,
         baseDuration: 1,
         stepInterval: .02,
-        speedFactor: .002
+        speedFactor: .001
       },
-      onLoad: function onLoad() {
+      ctor: function ctor() {
         this.currentValue = 0;
-        this.targetValue = 0;
+        this.targetValue = null;
         this.isAnimating = false;
+      },
+      parseValueAndUnit: function parseValueAndUnit(formattedStr) {
+        if ("number" === typeof formattedStr) return {
+          value: formattedStr,
+          unit: ""
+        };
+        var match = formattedStr.replace(/,/g, "").match(/^([\d.]+)([KMBT\u4e07\u4ebf]?)$/);
+        if (!match) return {
+          value: NaN,
+          unit: ""
+        };
+        return {
+          value: parseFloat(match[1]),
+          unit: match[2] || ""
+        };
+      },
+      initString: function initString(targetValue) {
+        var _this$parseValueAndUn = this.parseValueAndUnit(targetValue), targetNumber = _this$parseValueAndUn.value, unit = _this$parseValueAndUn.unit;
+        this.label.getComponent("LabelUpdater").setString(targetValue);
+        this.targetValue = targetNumber;
+        this.currentUnit = unit;
+        this.currentValue = this.targetValue;
       },
       animateNumberChange: function animateNumberChange(targetValue) {
         var _this = this;
-        if (this.targetValue === targetValue) return;
-        if ("" == this.label.string) {
-          this.label.string = targetValue;
-          this.targetValue = targetValue;
+        var _this$parseValueAndUn2 = this.parseValueAndUnit(targetValue), targetNumber = _this$parseValueAndUn2.value, unit = _this$parseValueAndUn2.unit;
+        if (this.targetValue === targetNumber) return;
+        var labelCom = this.label.getComponent("LabelUpdater");
+        if ("" === labelCom.getString()) {
+          labelCom.setString(targetValue);
+          this.targetValue = targetNumber;
+          this.currentUnit = unit;
           this.currentValue = this.targetValue;
           return;
         }
         this.isAnimating && this.unschedule(this.updateNumberStep);
-        this.targetValue = targetValue;
+        this.currentUnit = unit;
+        this.targetValue = targetNumber;
         this.isAnimating = true;
         var diff = Math.abs(this.targetValue - this.currentValue);
         var duration = Math.max(this.baseDuration - diff * this.speedFactor, .2);
@@ -65,10 +91,11 @@ window.__require = function e(t, n, r) {
           if (stepCount < steps) {
             stepCount++;
             _this.currentValue += increment;
-            _this.label.string = Math.floor(_this.currentValue).toString();
+            console.log("this.currentValue: " + _this.currentValue);
+            _this.label.getComponent("LabelUpdater").setString(("" != _this.currentUnit ? _this.currentValue.toFixed(2) : Math.floor(_this.currentValue).toString()) + _this.currentUnit);
           } else {
             _this.currentValue = _this.targetValue;
-            _this.label.string = _this.targetValue.toString();
+            _this.label.getComponent("LabelUpdater").setString(("" != _this.currentUnit ? _this.targetValue.toFixed(2) : _this.targetValue.toString()) + _this.currentUnit);
             _this.unschedule(_this.updateNumberStep);
             _this.isAnimating = false;
           }
@@ -2100,7 +2127,7 @@ window.__require = function e(t, n, r) {
         this.itemData = _itemData;
         this.roleData = _roleData;
         this.currentBg.spriteFrame = this.rareBgList[_itemData.rarity];
-        this.countLabel.getComponent("LabelUpdater").setString("X" + _itemData.count);
+        this.countLabel.getComponent("LabelUpdater").setString("X" + Global.utils.formatNumberWithUnit(_itemData.count));
         _itemData.type != EnumType.BAG_ITEM_TYPE.MERGE || _ownerType != EnumType.ITEM_OWNER_TYPE.MERGE && _ownerType != EnumType.ITEM_OWNER_TYPE.MERGE_SLOT && _ownerType != EnumType.ITEM_OWNER_TYPE.EQUIP ? this.countLabel.active = true : this.countLabel.active = false;
         this.countLabel.setScale(1);
         this.setMask(false);
@@ -2250,7 +2277,7 @@ window.__require = function e(t, n, r) {
           default: null
         },
         numLab: {
-          type: cc.Label,
+          type: cc.Node,
           default: null
         },
         ishowBaseHp: {
@@ -2311,7 +2338,7 @@ window.__require = function e(t, n, r) {
       statics: {
         data: [ {
           id: "1000",
-          path: "prefabs/role/player",
+          path: "Player",
           ultimate_id: "1001",
           prologueMessages: "",
           defeatMessages: "",
@@ -2346,7 +2373,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: "100"
         }, {
           id: "1001",
-          path: "prefabs/role/enemy01",
+          path: "Enemy01",
           ultimate_id: "3001",
           prologueMessages: "2001",
           defeatMessages: "2002",
@@ -2381,7 +2408,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1002",
-          path: "prefabs/role/enemy02",
+          path: "Enemy02",
           ultimate_id: "3002",
           prologueMessages: "2004",
           defeatMessages: "2005",
@@ -2416,7 +2443,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1003",
-          path: "prefabs/role/enemy03",
+          path: "Enemy03",
           ultimate_id: "3003",
           prologueMessages: "2007|2008",
           defeatMessages: "2009",
@@ -2451,7 +2478,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1004",
-          path: "prefabs/role/enemy04",
+          path: "Enemy04",
           ultimate_id: "3004",
           prologueMessages: "2011|2012",
           defeatMessages: "2013",
@@ -2486,7 +2513,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1005",
-          path: "prefabs/role/enemy05",
+          path: "Enemy05",
           ultimate_id: "3005",
           prologueMessages: "2015",
           defeatMessages: "2016",
@@ -2521,7 +2548,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1006",
-          path: "prefabs/role/enemy06",
+          path: "Enemy06",
           ultimate_id: "3006",
           prologueMessages: "2018",
           defeatMessages: "2019",
@@ -2556,7 +2583,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1007",
-          path: "prefabs/role/enemy07",
+          path: "Enemy07",
           ultimate_id: "3007",
           prologueMessages: "2021",
           defeatMessages: "2022",
@@ -2591,7 +2618,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1008",
-          path: "prefabs/role/enemy08",
+          path: "Enemy08",
           ultimate_id: "3007",
           prologueMessages: "2001",
           defeatMessages: "2003",
@@ -2626,7 +2653,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1009",
-          path: "prefabs/role/enemy09",
+          path: "Enemy09",
           ultimate_id: "3009",
           prologueMessages: "2001",
           defeatMessages: "2003",
@@ -2661,7 +2688,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1010",
-          path: "prefabs/role/boss01",
+          path: "Boss01",
           ultimate_id: "2001",
           prologueMessages: "2024",
           defeatMessages: "2025",
@@ -2696,7 +2723,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1011",
-          path: "prefabs/role/enemy10",
+          path: "Enemy10",
           ultimate_id: "3006",
           prologueMessages: "2001",
           defeatMessages: "2003",
@@ -2731,7 +2758,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1012",
-          path: "prefabs/role/enemy11",
+          path: "Enemy11",
           ultimate_id: "3011",
           prologueMessages: "2001",
           defeatMessages: "2003",
@@ -2766,7 +2793,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1013",
-          path: "prefabs/role/enemy12",
+          path: "Enemy12",
           ultimate_id: "3002",
           prologueMessages: "2001",
           defeatMessages: "2003",
@@ -2801,7 +2828,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1014",
-          path: "prefabs/role/enemy13",
+          path: "Enemy13",
           ultimate_id: "3013",
           prologueMessages: "2001",
           defeatMessages: "2003",
@@ -2836,7 +2863,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1015",
-          path: "prefabs/role/enemy01",
+          path: "Enemy01",
           ultimate_id: "3001",
           prologueMessages: "2001",
           defeatMessages: "2003",
@@ -2871,7 +2898,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1016",
-          path: "prefabs/role/enemy02",
+          path: "Enemy02",
           ultimate_id: "3002",
           prologueMessages: "2004",
           defeatMessages: "2005",
@@ -2906,7 +2933,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1017",
-          path: "prefabs/role/enemy03",
+          path: "Enemy03",
           ultimate_id: "3003",
           prologueMessages: "2007|2008",
           defeatMessages: "2009",
@@ -2941,7 +2968,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1018",
-          path: "prefabs/role/enemy04",
+          path: "Enemy04",
           ultimate_id: "3004",
           prologueMessages: "2011|2012",
           defeatMessages: "2013",
@@ -2976,7 +3003,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1019",
-          path: "prefabs/role/enemy05",
+          path: "Enemy05",
           ultimate_id: "3005",
           prologueMessages: "2015",
           defeatMessages: "2016",
@@ -3011,7 +3038,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1020",
-          path: "prefabs/role/boss02",
+          path: "Boss02",
           ultimate_id: "2002",
           prologueMessages: "2028",
           defeatMessages: "2029",
@@ -3046,7 +3073,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1021",
-          path: "prefabs/role/enemy06",
+          path: "Enemy06",
           ultimate_id: "3006",
           prologueMessages: "2018",
           defeatMessages: "2019",
@@ -3081,7 +3108,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1022",
-          path: "prefabs/role/enemy07",
+          path: "Enemy07",
           ultimate_id: "3007",
           prologueMessages: "2021",
           defeatMessages: "2022",
@@ -3116,7 +3143,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1023",
-          path: "prefabs/role/enemy08",
+          path: "Enemy08",
           ultimate_id: "3007",
           prologueMessages: "2034",
           defeatMessages: "2035",
@@ -3151,7 +3178,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1024",
-          path: "prefabs/role/enemy09",
+          path: "Enemy09",
           ultimate_id: "3009",
           prologueMessages: "2037|2038",
           defeatMessages: "2039",
@@ -3186,7 +3213,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1025",
-          path: "prefabs/role/enemy10",
+          path: "Enemy10",
           ultimate_id: "3006",
           prologueMessages: "2041",
           defeatMessages: "2042",
@@ -3221,7 +3248,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1026",
-          path: "prefabs/role/enemy11",
+          path: "Enemy11",
           ultimate_id: "3011",
           prologueMessages: "2044",
           defeatMessages: "2045",
@@ -3256,7 +3283,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1027",
-          path: "prefabs/role/enemy12",
+          path: "Enemy12",
           ultimate_id: "3002",
           prologueMessages: "2047",
           defeatMessages: "2048",
@@ -3291,7 +3318,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1028",
-          path: "prefabs/role/enemy13",
+          path: "Enemy13",
           ultimate_id: "3013",
           prologueMessages: "2050",
           defeatMessages: "2051",
@@ -3326,7 +3353,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1029",
-          path: "prefabs/role/enemy01",
+          path: "Enemy01",
           ultimate_id: "3001",
           prologueMessages: "2001",
           defeatMessages: "2003",
@@ -3361,7 +3388,7 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1030",
-          path: "prefabs/role/boss03",
+          path: "Boss03",
           ultimate_id: "2003",
           prologueMessages: "2031",
           defeatMessages: "2032",
@@ -3530,7 +3557,11 @@ window.__require = function e(t, n, r) {
           type: cc.Node,
           default: null
         },
-        _roleView: null
+        _roleView: null,
+        mailRedDot: cc.Node
+      },
+      updateMailRedDot: function updateMailRedDot() {
+        this.mailRedDot.active = Global.mailManager.hasNewMail();
       },
       onAdded: function onAdded(args) {
         Global.utils.logMessage("BattleView onAdded:", args);
@@ -3544,9 +3575,8 @@ window.__require = function e(t, n, r) {
           });
         } else {
           this.roleRootNode.removeAllChildren();
-          var rolePreb = Global.res.getRes(Global.roleData.basicConfig.path);
+          var rolePreb = Global.res.getRes(gameConfig.PRELOADCONFIG.rolePreb.path);
           var role = cc.instantiate(rolePreb);
-          this.roleRootNode.addChild(role);
           var roleView = this._roleView = role.getComponent("RoleView");
           roleView.updateData(this, Global.roleData);
           roleView.hideBar();
@@ -3556,9 +3586,11 @@ window.__require = function e(t, n, r) {
               scrollFlag: true
             });
           }, 500);
+          this.roleRootNode.addChild(role);
         }
         this.chapterTitleNode.getComponent("RichTextUpdater").setContent("chapter_title_" + Global.chapterManager.curChapter);
         this.bestLevelNode.getComponent("RichTextUpdater").setContent("homepage_bestLevel", 0);
+        this.updateMailRedDot();
       },
       onClickSettingsBtn: function onClickSettingsBtn() {
         Global.audio.playEffect("audio/click");
@@ -3678,6 +3710,7 @@ window.__require = function e(t, n, r) {
         cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.ScrollBackground, {
           scrollFlag: false
         });
+        cc.director.GlobalEvent.on(gameConfig.GAME_EVENT.GotoHomePage, this.gotoHomePage, this);
         Global.gui.remove(gameConfig.UIID.TopUI);
       },
       jumpTo: function jumpTo(chapter, level, resetFlag) {
@@ -3688,16 +3721,20 @@ window.__require = function e(t, n, r) {
           chapter: chapter,
           level: level
         });
-        var roleData, autoRoleData;
+        var roleData, roleNode, autoRoleData, autoRoleNode;
         if (this._roleView) roleData = this._roleView._roleData; else {
           roleData = Global.roleData;
-          this._roleView = this.createRole(this.roleRootNode, roleData.roleId);
+          roleNode = this.createRole();
+          Global.utils.logMessage("\u521b\u5efa\u65b0\u89d2\u8272 " + roleData.roleId);
+          this._roleView = roleNode.getComponent("RoleView");
           this._roleView.direction = gameConfig.DIRECTION_ENUM.RIGHT;
         }
         true;
         var levelData = Global.levelManager.getLevelDataByLevel(level);
         autoRoleData = Global.roleManager.generateRoleData(levelData.roleId);
-        this._autoRoleView = this.createRole(this.autoRoleRootNode, autoRoleData.roleId);
+        autoRoleNode = this.createRole();
+        Global.utils.logMessage("\u521b\u5efa\u65b0\u89d2\u8272 " + autoRoleData.roleId);
+        this._autoRoleView = autoRoleNode.getComponent("RoleView");
         this._autoRoleView.direction = gameConfig.DIRECTION_ENUM.LEFT;
         var visibleSize = cc.view.getVisibleSize();
         var speed = 5;
@@ -3714,6 +3751,11 @@ window.__require = function e(t, n, r) {
         autoRoleData.getCurrentProperties();
         this._roleView.updateData(this, roleData);
         this._autoRoleView.updateData(this, autoRoleData);
+        setTimeout(function() {
+          this._roleView.idle();
+        }.bind(this));
+        this.roleRootNode.addChild(roleNode);
+        this.autoRoleRootNode.addChild(autoRoleNode);
         this.addGUI();
         this._roleView.hideBar();
         this._autoRoleView.hideBar();
@@ -3746,14 +3788,10 @@ window.__require = function e(t, n, r) {
       gameOverCallback: function gameOverCallback(_targetData) {
         this.stopFight(_targetData.roleId != this._roleView._roleData.roleId);
       },
-      createRole: function createRole(parent, roleId) {
-        Global.utils.logMessage("\u521b\u5efa\u65b0\u89d2\u8272 " + roleId);
-        var basicData = Global.basicAttributesManager.getConfigByID(roleId);
-        var rolePreb = Global.res.getRes(basicData.path);
-        var role = cc.instantiate(rolePreb);
-        parent.addChild(role);
-        var roleView = role.getComponent("RoleView");
-        return roleView;
+      createRole: function createRole() {
+        var rolePreb = Global.res.getRes(gameConfig.PRELOADCONFIG.rolePreb.path);
+        var roleNode = cc.instantiate(rolePreb);
+        return roleNode;
       },
       onAttackComplete: function onAttackComplete(fromRoleView) {
         if (this._gameOver) return;
@@ -4441,6 +4479,12 @@ window.__require = function e(t, n, r) {
         });
       },
       gotoHomePage: function gotoHomePage() {
+        this._roleView._roleData.fighting = false;
+        this._autoRoleView._roleData.fighting = false;
+        cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.BattleTime, {
+          cleanTime: true,
+          battleTimeFlag: false
+        });
         Global.gui.remove(gameConfig.UIID.BattlePanel);
         Global.gui.remove(gameConfig.UIID.GuiPanel);
         Global.gui.open(gameConfig.UIID.HomePagePanel);
@@ -4511,6 +4555,9 @@ window.__require = function e(t, n, r) {
           } else info += stateConfig.zh + ":" + (roleData.hasOwnProperty(key) ? roleData[key] : "Unknown") + "\n";
         }
         infoLab.string = info;
+      },
+      onDisable: function onDisable() {
+        cc.director.GlobalEvent.off(gameConfig.GAME_EVENT.gotoHomePage);
       },
       update: function update(dt) {
         this.updateRleInfo(this._roleView._roleData, this.roleInfoLab);
@@ -8241,7 +8288,7 @@ window.__require = function e(t, n, r) {
         var equipmentItem;
         equipmentItem = this.equipmentItemPool.length > 0 ? this.equipmentItemPool.pop() : cc.instantiate(this.equipmentItemPrefab);
         this.equipmentItemList.push(equipmentItem);
-        equipmentItem.getComponent("EquipmentItem").setData(_equipmentData, this.roleData, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.MERGE, EnumType.EQUIPMENT_ITEM_SHOW_TYPE.SELECTED_FLAG);
+        equipmentItem.getComponent("EquipmentItem").setData(_equipmentData, this.roleData, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.MERGE, EnumType.EQUIPMENT_ITEM_SHOW_TYPE.SELECTED_FLAG | EnumType.EQUIPMENT_ITEM_SHOW_TYPE.EQUIPED_FLAG);
         this.container.addChild(equipmentItem);
         equipmentItem.x = startX + 210 * Math.floor(_index % 5);
         equipmentItem.y = startY + -1 * Math.floor(_index / 5) * 210;
@@ -10015,8 +10062,8 @@ window.__require = function e(t, n, r) {
           this.materialsNode.active = true;
           var materials = Global.equipmentManager.getNextLevelMaterials(this.equipmentData);
           var materialsCount = parseInt(Global.bagManager.checkItemCount(materials.ids[0], this.roleData));
-          this.materialsCount.string = null == materialsCount ? "" : materialsCount;
-          this.materialsNeededCount.string = null == materialsCount ? "" : "/" + materials.counts[0];
+          this.materialsCount.getComponent("LabelUpdater").setString(null == materialsCount ? "" : materialsCount);
+          this.materialsNeededCount.getComponent("LabelUpdater").setString(null == materialsCount ? "" : "/" + materials.counts[0]);
           var nextLevel = Global.equipmentManager.getNextLevel(this.equipmentData.level);
           this.levelUp2MaxBtn.interactable = this.breakthroughBtn.interactable = this.levelUpBtn.interactable = null != nextLevel && null != materialsCount && materialsCount >= parseInt(materials.counts[0]);
           if ("string" === typeof nextLevel && nextLevel.indexOf("+") >= 0) {
@@ -10837,18 +10884,19 @@ window.__require = function e(t, n, r) {
         roleNode: cc.Node,
         sortByRarityBtn: cc.Node,
         sortByLevelBtn: cc.Node,
-        sortByTypeBtn: cc.Node
+        sortByTypeBtn: cc.Node,
+        roleContainer: cc.Node
       },
       onAdded: function onAdded(_args) {
         this.roleData = _args.roleData;
         this.currentSortType = EnumType.SORT_TYPE.RARITY;
         this.updateEquipments(true, true);
         this.initSlots();
-        this.sortByRarityBtn.active = false;
-        this.sortByLevelBtn.acitve = true;
+        this.sortByRarityBtn.active = true;
+        this.sortByLevelBtn.acitve = false;
         this.sortByTypeBtn.active = false;
         var roleView = this.roleNode.getComponent("RoleView");
-        roleView.updateData(this, this.roleData);
+        roleView.updateData(this.roleContainer, this.roleData);
         roleView.hideBar();
         this.roleData.lastPower = this.roleData.getPower();
       },
@@ -10915,21 +10963,21 @@ window.__require = function e(t, n, r) {
         }
       },
       sortByRarity: function sortByRarity() {
-        this.currentSortType = EnumType.SORT_TYPE.RARITY;
+        this.currentSortType = EnumType.SORT_TYPE.LEVEL;
         this.updateEquipments(false, true);
         this.sortByRarityBtn.active = false;
         this.sortByLevelBtn.active = true;
         this.sortByTypeBtn.active = false;
       },
       sortByLevel: function sortByLevel() {
-        this.currentSortType = EnumType.SORT_TYPE.LEVEL;
+        this.currentSortType = EnumType.SORT_TYPE.TYPE;
         this.updateEquipments(false, true);
         this.sortByRarityBtn.active = false;
         this.sortByLevelBtn.active = false;
         this.sortByTypeBtn.active = true;
       },
       sortByType: function sortByType() {
-        this.currentSortType = EnumType.SORT_TYPE.TYPE;
+        this.currentSortType = EnumType.SORT_TYPE.RARITY;
         this.updateEquipments(false, true);
         this.sortByRarityBtn.active = true;
         this.sortByLevelBtn.active = false;
@@ -11584,90 +11632,130 @@ window.__require = function e(t, n, r) {
       }
     };
     var PRELOADCONFIG = {
-      enemy01: {
-        key: "enemy01",
+      rolePreb: {
+        key: "rolePreb",
         type: "prefab",
-        path: "prefabs/role/enemy01"
+        path: "prefabs/role/rolePreb"
       },
-      enemy02: {
-        key: "enemy02",
-        type: "prefab",
-        path: "prefabs/role/enemy02"
+      Boss01: {
+        key: "Boss01",
+        type: "skeleton",
+        path: "rolefile/Boss01/Boss01"
       },
-      enemy03: {
-        key: "enemy03",
-        type: "prefab",
-        path: "prefabs/role/enemy03"
+      Boss02: {
+        key: "Boss02",
+        type: "skeleton",
+        path: "rolefile/Boss02/Boss02"
       },
-      enemy04: {
-        key: "enemy04",
-        type: "prefab",
-        path: "prefabs/role/enemy04"
+      Boss03: {
+        key: "Boss03",
+        type: "skeleton",
+        path: "rolefile/Boss03/Boss03"
       },
-      enemy05: {
-        key: "enemy05",
-        type: "prefab",
-        path: "prefabs/role/enemy05"
+      Enemy01: {
+        key: "Enemy01",
+        type: "skeleton",
+        path: "rolefile/Enemy01/Enemy01"
       },
-      enemy06: {
-        key: "enemy06",
-        type: "prefab",
-        path: "prefabs/role/enemy06"
+      Enemy01_Lanzi: {
+        key: "Enemy01_Lanzi",
+        type: "skeleton",
+        path: "rolefile/Enemy01_Lanzi/Enemy01_Lanzi"
       },
-      enemy07: {
-        key: "enemy07",
-        type: "prefab",
-        path: "prefabs/role/enemy07"
+      Enemy02: {
+        key: "Enemy02",
+        type: "skeleton",
+        path: "rolefile/Enemy02/Enemy02"
       },
-      enemy08: {
-        key: "enemy08",
-        type: "prefab",
-        path: "prefabs/role/enemy08"
+      Enemy02_Lanzi: {
+        key: "Enemy02_Lanzi",
+        type: "skeleton",
+        path: "rolefile/Enemy02_Lanzi/Enemy02_Lanzi"
       },
-      enemy09: {
-        key: "enemy09",
-        type: "prefab",
-        path: "prefabs/role/enemy09"
+      Enemy03: {
+        key: "Enemy03",
+        type: "skeleton",
+        path: "rolefile/Enemy03/Enemy03"
       },
-      enemy10: {
-        key: "enemy10",
-        type: "prefab",
-        path: "prefabs/role/enemy10"
+      Enemy04: {
+        key: "Enemy04",
+        type: "skeleton",
+        path: "rolefile/Enemy04/Enemy04"
       },
-      enemy11: {
-        key: "enemy11",
-        type: "prefab",
-        path: "prefabs/role/enemy11"
+      Enemy05: {
+        key: "Enemy05",
+        type: "skeleton",
+        path: "rolefile/Enemy05/Enemy05"
       },
-      enemy12: {
-        key: "enemy12",
-        type: "prefab",
-        path: "prefabs/role/enemy12"
+      Enemy06: {
+        key: "Enemy06",
+        type: "skeleton",
+        path: "rolefile/Enemy06/Enemy06"
       },
-      enemy13: {
-        key: "enemy13",
-        type: "prefab",
-        path: "prefabs/role/enemy13"
+      Enemy07: {
+        key: "Enemy07",
+        type: "skeleton",
+        path: "rolefile/Enemy07/Enemy07"
       },
-      player: {
-        key: "player",
-        type: "prefab",
-        path: "prefabs/role/player"
+      Enemy08: {
+        key: "Enemy08",
+        type: "skeleton",
+        path: "rolefile/Enemy08/Enemy08"
       },
-      boss01: {
-        key: "boss01",
-        type: "prefab",
-        path: "prefabs/role/boss01"
+      Enemy09: {
+        key: "Enemy09",
+        type: "skeleton",
+        path: "rolefile/Enemy09/Enemy09"
       },
-      boss02: {
-        key: "boss02",
-        type: "prefab",
-        path: "prefabs/role/boss02"
+      Enemy10: {
+        key: "Enemy10",
+        type: "skeleton",
+        path: "rolefile/Enemy10/Enemy10"
       },
-      boss03: {
-        key: "boss03",
-        type: "prefab",
-        path: "prefabs/role/boss03"
+      Enemy11: {
+        key: "Enemy11",
+        type: "skeleton",
+        path: "rolefile/Enemy11/Enemy11"
+      },
+      Enemy12: {
+        key: "Enemy12",
+        type: "skeleton",
+        path: "rolefile/Enemy12/Enemy12"
+      },
+      Enemy13: {
+        key: "Enemy13",
+        type: "skeleton",
+        path: "rolefile/Enemy13/Enemy13"
+      },
+      Player: {
+        key: "Player",
+        type: "skeleton",
+        path: "rolefile/Player/Player"
+      },
+      Player_Lanzi: {
+        key: "Player_Lanzi",
+        type: "skeleton",
+        path: "rolefile/Player/Lanzi01/Lanzi01"
+      },
+      Jinji_Big: {
+        key: "Jinji_Big",
+        type: "skeleton",
+        path: "rolefile/Jinji/Jinji"
+      },
+      Jinji_Small: {
+        key: "Jinji_Small",
+        type: "skeleton",
+        path: "rolefile/S_Jinji/S_Jinji"
+      },
+      Flash_Big: {
+        key: "Flash_Big",
+        type: "skeleton",
+        path: "rolefile/FLash/FLash"
+      },
+      Flash_Small: {
+        key: "Flash_Small",
+        type: "skeleton",
+        path: "rolefile/S_FLash/S_FLash"
       },
       car: {
         key: "car",
@@ -12055,7 +12143,8 @@ window.__require = function e(t, n, r) {
       ChangeScrollBackground: "ChangeScrollBackground",
       CreateValueLabel: "CreateValueLabel",
       AbilityUp: "AbilityUp",
-      BattleTime: "BattleTime"
+      BattleTime: "BattleTime",
+      GotoHomePage: "GotoHomePage"
     };
     var ANIMATION_TYPE = {
       ATK: "Atk",
@@ -12883,8 +12972,8 @@ window.__require = function e(t, n, r) {
         }
       },
       updateUI: function updateUI() {
-        this.numLab.node.active = this.ishowBaseHp;
-        this.numLab.string = "/" + this._roleData.data.basic_hp;
+        this.numLab.active = this.ishowBaseHp;
+        this.numLab.getComponent("LabelUpdater").setString("/" + this._roleData.data.basic_hp);
         this.aniLabel && this.aniLabel.getComponent("AniLabel").animateNumberChange(this._roleData.currentHp);
       },
       update: function update(dt) {
@@ -13097,6 +13186,9 @@ window.__require = function e(t, n, r) {
       setString: function setString(_content) {
         this.stringContent = _content;
         this.updateText();
+      },
+      getString: function getString() {
+        return this.stringContent;
       },
       setColor: function setColor(_color) {
         this.labelText.node.color = _color;
@@ -14877,13 +14969,14 @@ window.__require = function e(t, n, r) {
         return bagItem;
       },
       updateUI: function updateUI(_config) {
-        this.readedIcon.active = true != Global.mailManager.mailData[_config.id].readed;
         if (null == _config.rewards) {
           this.claimedNode.active = true == Global.mailManager.mailData[_config.id].readed;
           this.claimedLabelNode.active = false;
+          this.readedIcon.active = true != Global.mailManager.mailData[_config.id].readed;
         } else {
           this.claimedNode.active = true == Global.mailManager.mailData[_config.id].claimed;
           this.claimedLabelNode.active = true;
+          this.readedIcon.active = true != Global.mailManager.mailData[_config.id].claimed;
         }
       },
       setContent: function setContent(_config) {
@@ -15040,6 +15133,14 @@ window.__require = function e(t, n, r) {
         }
         return result;
       },
+      hasNewMail: function hasNewMail() {
+        for (var id in this.mailConfig) {
+          var config = this.mailConfig[id];
+          if (null != config.rewards && true != this.mailData[id].claimed) return true;
+          if (null == config.rewards && true != this.mailData[id].readed) return true;
+        }
+        return false;
+      },
       formatTimePassed: function formatTimePassed(targetTimeStr) {
         var targetTime = new Date(targetTimeStr);
         if (isNaN(targetTime.getTime())) {
@@ -15144,14 +15245,16 @@ window.__require = function e(t, n, r) {
           var mailB = Global.mailManager.mailData[idB];
           var configA = Global.mailManager.mailConfig[idA];
           var configB = Global.mailManager.mailConfig[idB];
-          if (mailA.readed !== mailB.readed) return mailA.readed ? 1 : -1;
-          if (mailA.claimed !== mailB.claimed) return true != mailA.claimed ? -1 : 1;
           if (configA.rewards !== configB.rewards) return null != configA.rewards ? -1 : 1;
+          if (mailA.claimed !== mailB.claimed) return true != mailA.claimed ? -1 : 1;
+          if (mailA.readed !== mailB.readed) return mailA.readed ? 1 : -1;
         });
         sortedKeys.forEach(function(id) {
           var config = Global.mailManager.mailConfig[id];
           null != config && _this.generateMailItem(config);
         });
+        var battlePageNode = Global.gui.get(gameConfig.UIID.BattlePagePanel);
+        battlePageNode && battlePageNode.getComponent("BattlePageView").updateMailRedDot();
       },
       onClickClose: function onClickClose() {
         cc.tween(this.node).stop();
@@ -15243,7 +15346,7 @@ window.__require = function e(t, n, r) {
              case 3:
               config = _context.sent;
               if (!config) {
-                _context.next = 46;
+                _context.next = 48;
                 break;
               }
               persistRootNode = new cc.Node("PersistRootNode");
@@ -15327,6 +15430,8 @@ window.__require = function e(t, n, r) {
                 Global.roleData.talentLevel = Global.roleData.talentIndexList.length;
                 Global.talentManager.updateTalent(Global.roleData);
               }
+              Global.roleData.updateStaticData();
+              Global.roleData.currentPower = Global.roleData.getPower();
               setTimeout(function() {
                 Global.passiveHarvestManager.start();
               }, 3e3);
@@ -15340,7 +15445,7 @@ window.__require = function e(t, n, r) {
               _this.init();
               Global.res.release(configPath, cc.JsonAsset);
 
-             case 46:
+             case 48:
              case "end":
               return _context.stop();
             }
@@ -16088,12 +16193,14 @@ window.__require = function e(t, n, r) {
         boxGet10KeyNode: cc.Node,
         boxGet10DiamondNode: cc.Node,
         boxGet10DiamondLabel: cc.Node,
-        boxGet10KeyLabel: cc.Node
+        boxGet10KeyLabel: cc.Node,
+        closeBtn: cc.Node
       },
       start: function start() {},
       onAdded: function onAdded(_args) {
         this.itemList = _args.itemList;
         this.boxType = _args.boxType;
+        this.closeBtn.active = false;
       },
       showItemList: function showItemList() {
         this.clearItems();
@@ -16108,8 +16215,11 @@ window.__require = function e(t, n, r) {
         this.uiContainer.active = false;
       },
       showUI: function showUI() {
-        cc.tween(this.uiContainer).to(.2, {
+        var _this = this;
+        cc.tween(this.uiContainer).delay(1).to(.2, {
           opacity: 255
+        }).call(function() {
+          _this.closeBtn.active = true;
         }).start();
         var keyCount = Global.shopManager.getKeyCount(this.boxType);
         if (keyCount > 0) {
@@ -16163,12 +16273,12 @@ window.__require = function e(t, n, r) {
         bagItem.y = startY + -1 * Math.floor(_index / 4) * 210;
       },
       onEnable: function onEnable() {
-        var _this = this;
+        var _this2 = this;
         this.reset();
         this.flash.clearTrack(0);
         this.flash.setAnimation(0, "Card_Front", false);
         this.flash.setEventListener(function(trackEntry, event) {
-          "Start" === event.data.name && _this.showItemList();
+          "Start" === event.data.name && _this2.showItemList();
         });
       },
       onClickAgain: function onClickAgain() {
@@ -16225,6 +16335,7 @@ window.__require = function e(t, n, r) {
         this.boxType = _args.boxType;
         this.currentIndex = 0;
         this.reset();
+        this.timer = 0;
       },
       reset: function reset() {
         this.itemName.opacity = 0;
@@ -16246,11 +16357,15 @@ window.__require = function e(t, n, r) {
           currentItem = this.equipmentItem;
         } else {
           this.bagItem.getComponent("BagItem").setData(_itemData, Global.roleData);
+          this.itemName.getComponent("LabelUpdater").setString(_itemData.itemConfig.name);
+          this.itemName.getComponent("LabelUpdater").setColor(Global.utils.getItemLabelColor(_itemData.rarity));
           currentItem = this.bagItem;
         }
         var boxAniName;
-        boxAniName = this.boxType == Global.shopManager.RED || this.boxType == Global.shopManager.ORANGE ? "OpenBox_3" : this.boxType == Global.shopManager.PURPLE ? "OpenBox_2" : "OpenBox_1";
+        boxAniName = this.boxType == Global.shopManager.RED || this.boxType == Global.shopManager.ORANGE ? "OpenBox_3" : this.boxType == Global.shopManager.PURPLE ? "OpenBox_1" : "OpenBox_2";
         this.box.clearTrack(0);
+        this.box.setToSetupPose();
+        this.box.updateWorldTransform();
         this.box.setAnimation(0, boxAniName, false);
         this.box.setEventListener(function(trackEntry, event) {
           if ("Start" === event.data.name) {
@@ -16272,6 +16387,8 @@ window.__require = function e(t, n, r) {
         });
       },
       onClickContinue: function onClickContinue() {
+        if (Date.now() - this.timer < 500) return;
+        this.timer = Date.now();
         this.currentIndex++;
         if (this.currentIndex < this.itemList.length) {
           this.reset();
@@ -16854,7 +16971,7 @@ window.__require = function e(t, n, r) {
         var rewards = Global.passiveHarvestManager.claim4HoursRewards();
         for (var i = 0; i < rewards.items.length; i++) {
           var _itemData2 = rewards.items[i];
-          Global.bagManager.addItem2Bag(_itemData2, Global.roleData);
+          Global.bagManager.addItem(_itemData2.itemId, _itemData2.count, Global.roleData);
         }
         var itemConfig, itemData;
         if (rewards.coin > 0) {
@@ -17122,23 +17239,44 @@ window.__require = function e(t, n, r) {
         label_1: cc.Node,
         arrow_1: cc.Node,
         arrow_2: cc.Node,
-        label_2: cc.Node
+        label_2: cc.Node,
+        label_2_sub: cc.Node
       },
       start: function start() {},
       onAdded: function onAdded(_args) {
         this.label_1.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(_args.power_1));
         this.arrow_1.active = true == _args.powerUp;
         this.arrow_2.active = true != _args.powerUp;
-        this.label_2.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(_args.power_2));
-        this.label_2.getComponent("LabelUpdater").setColor(true == _args.powerUp ? new cc.color(145, 255, 92) : new cc.color(255, 112, 126));
+        this.label_2.getComponent("AniLabel").isAnimating = true;
+        this.label_2.getComponent("AniLabel").initString(Global.utils.formatNumberWithUnit(_args.power_1));
+        this.label_2.getComponent("AniLabel").animateNumberChange(Global.utils.formatNumberWithUnit(_args.power_2));
+        this.label_2_sub.getComponent("LabelUpdater").setColor(true == _args.powerUp ? new cc.color(145, 255, 92) : new cc.color(255, 112, 126));
         this.node.y = 1e3;
         this.node.opacity = 255;
-        cc.tween(this.node).stop();
+        cc.Tween.stopAllByTarget(this.node);
         cc.tween(this.node).to(.5, {
           position: cc.v2(0, 200)
         }, {
           easing: "elasticOut"
-        }).delay(1).to(.2, {
+        }).delay(2).to(.2, {
+          opacity: 0
+        }).call(function() {
+          Global.gui.remove(gameConfig.UIID.PowerChange);
+        }).start();
+        console.log("showPowerChange");
+      },
+      updateShow: function updateShow(_args) {
+        cc.Tween.stopAllByTarget(this.node);
+        this.node.opacity = 255;
+        this.node.setPosition(0, 200);
+        this.label_1.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(_args.power_1));
+        this.arrow_1.active = true == _args.powerUp;
+        this.arrow_2.active = true != _args.powerUp;
+        this.label_2.getComponent("AniLabel").isAnimating = true;
+        this.label_2.getComponent("AniLabel").initString(Global.utils.formatNumberWithUnit(_args.power_1));
+        this.label_2.getComponent("AniLabel").animateNumberChange(Global.utils.formatNumberWithUnit(_args.power_2));
+        this.label_2_sub.getComponent("LabelUpdater").setColor(true == _args.powerUp ? new cc.color(145, 255, 92) : new cc.color(255, 112, 126));
+        cc.tween(this.node).delay(2).to(.2, {
           opacity: 0
         }).call(function() {
           Global.gui.remove(gameConfig.UIID.PowerChange);
@@ -17156,72 +17294,88 @@ window.__require = function e(t, n, r) {
     var gameConfig = require("GameConfig");
     var data = [];
     data.push({
-      url: gameConfig.PRELOADCONFIG.player.path,
-      type: gameConfig.PRELOADCONFIG.player.type
+      url: gameConfig.PRELOADCONFIG.rolePreb.path,
+      type: gameConfig.PRELOADCONFIG.rolePreb.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy01.path,
-      type: gameConfig.PRELOADCONFIG.enemy01.type
+      url: gameConfig.PRELOADCONFIG.Boss01.path,
+      type: gameConfig.PRELOADCONFIG.Boss01.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy02.path,
-      type: gameConfig.PRELOADCONFIG.enemy02.type
+      url: gameConfig.PRELOADCONFIG.Boss02.path,
+      type: gameConfig.PRELOADCONFIG.Boss02.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy03.path,
-      type: gameConfig.PRELOADCONFIG.enemy03.type
+      url: gameConfig.PRELOADCONFIG.Boss03.path,
+      type: gameConfig.PRELOADCONFIG.Boss03.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy04.path,
-      type: gameConfig.PRELOADCONFIG.enemy04.type
+      url: gameConfig.PRELOADCONFIG.Enemy01.path,
+      type: gameConfig.PRELOADCONFIG.Enemy01.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy05.path,
-      type: gameConfig.PRELOADCONFIG.enemy05.type
+      url: gameConfig.PRELOADCONFIG.Enemy01_Lanzi.path,
+      type: gameConfig.PRELOADCONFIG.Enemy01_Lanzi.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy06.path,
-      type: gameConfig.PRELOADCONFIG.enemy06.type
+      url: gameConfig.PRELOADCONFIG.Enemy02.path,
+      type: gameConfig.PRELOADCONFIG.Enemy02.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy07.path,
-      type: gameConfig.PRELOADCONFIG.enemy07.type
+      url: gameConfig.PRELOADCONFIG.Enemy02_Lanzi.path,
+      type: gameConfig.PRELOADCONFIG.Enemy02_Lanzi.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy08.path,
-      type: gameConfig.PRELOADCONFIG.enemy08.type
+      url: gameConfig.PRELOADCONFIG.Enemy03.path,
+      type: gameConfig.PRELOADCONFIG.Enemy03.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy09.path,
-      type: gameConfig.PRELOADCONFIG.enemy09.type
+      url: gameConfig.PRELOADCONFIG.Enemy04.path,
+      type: gameConfig.PRELOADCONFIG.Enemy04.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy10.path,
-      type: gameConfig.PRELOADCONFIG.enemy10.type
+      url: gameConfig.PRELOADCONFIG.Enemy05.path,
+      type: gameConfig.PRELOADCONFIG.Enemy05.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy11.path,
-      type: gameConfig.PRELOADCONFIG.enemy11.type
+      url: gameConfig.PRELOADCONFIG.Enemy06.path,
+      type: gameConfig.PRELOADCONFIG.Enemy06.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy12.path,
-      type: gameConfig.PRELOADCONFIG.enemy12.type
+      url: gameConfig.PRELOADCONFIG.Enemy07.path,
+      type: gameConfig.PRELOADCONFIG.Enemy07.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.enemy13.path,
-      type: gameConfig.PRELOADCONFIG.enemy13.type
+      url: gameConfig.PRELOADCONFIG.Enemy08.path,
+      type: gameConfig.PRELOADCONFIG.Enemy08.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.boss01.path,
-      type: gameConfig.PRELOADCONFIG.boss01.type
+      url: gameConfig.PRELOADCONFIG.Enemy09.path,
+      type: gameConfig.PRELOADCONFIG.Enemy09.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.boss02.path,
-      type: gameConfig.PRELOADCONFIG.boss02.type
+      url: gameConfig.PRELOADCONFIG.Enemy10.path,
+      type: gameConfig.PRELOADCONFIG.Enemy10.type
     });
     data.push({
-      url: gameConfig.PRELOADCONFIG.boss03.path,
-      type: gameConfig.PRELOADCONFIG.boss03.type
+      url: gameConfig.PRELOADCONFIG.Enemy11.path,
+      type: gameConfig.PRELOADCONFIG.Enemy11.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy12.path,
+      type: gameConfig.PRELOADCONFIG.Enemy12.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy13.path,
+      type: gameConfig.PRELOADCONFIG.Enemy13.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Player.path,
+      type: gameConfig.PRELOADCONFIG.Player.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Player_Lanzi.path,
+      type: gameConfig.PRELOADCONFIG.Player_Lanzi.type
     });
     data.push({
       url: gameConfig.PRELOADCONFIG.car.path,
@@ -17569,7 +17723,7 @@ window.__require = function e(t, n, r) {
               self._loadingControl.updateProgress(self._loadedCount, self._loadCount);
               self.loadRes();
             });
-          } else "spriteAtlas" == data.type ? Global.res.load(data.url, cc.SpriteAtlas, this.loadCompleteCallback.bind(this)) : Global.res.load(data.url, this.loadCompleteCallback.bind(this));
+          } else "spriteAtlas" == data.type ? Global.res.load(data.url, cc.SpriteAtlas, this.loadCompleteCallback.bind(this)) : "skeleton" == data.type ? Global.res.load(data.url, sp.SkeletonData, this.loadCompleteCallback.bind(this)) : Global.res.load(data.url, this.loadCompleteCallback.bind(this));
           this._curResUrl = data.url;
         }
       },
@@ -17970,17 +18124,6 @@ window.__require = function e(t, n, r) {
       onEnable: function onEnable() {
         this.playerNode.removeAllChildren();
         if (!this._args) return;
-        var basicData = Global.basicAttributesManager.getConfigByID(this._args.roleData.roleId);
-        var rolePreb = Global.res.getRes(basicData.path);
-        var role = cc.instantiate(rolePreb);
-        this.playerNode.addChild(role);
-        var roleView = role.getComponent("RoleView");
-        roleView.direction = gameConfig.DIRECTION_ENUM.LEFT;
-        roleView.updateData(this, this._args.roleData, null);
-        roleView.showBar();
-        roleView.updateAllUI();
-        var messages = basicData.victoryMessages;
-        messages && roleView.playDialogueAnimation(messages);
       },
       onClicReviveBtn: function onClicReviveBtn() {
         Global.utils.logMessage("\u73a9\u5bb6\u9009\u62e9\u590d\u6d3b");
@@ -18039,11 +18182,9 @@ window.__require = function e(t, n, r) {
         sgSpinePool: [ cc.Node ],
         layoutComp: cc.Layout,
         itemNode: cc.Node,
-        coinNode: cc.Node,
         skillNode: cc.Node,
         clerkNode: cc.Node,
         itemCoinContainer: cc.Node,
-        coinLabel: cc.Node,
         skillIcon: cc.Sprite,
         skillName: cc.Node,
         skillDesc: cc.Node,
@@ -18058,7 +18199,9 @@ window.__require = function e(t, n, r) {
         defLabel_3: cc.Node,
         hpLabel_1: cc.Node,
         hpLabel_2: cc.Node,
-        hpLabel_3: cc.Node
+        hpLabel_3: cc.Node,
+        roleNode: cc.Node,
+        roleContainer: cc.Node
       },
       onAdded: function onAdded(args) {
         Global.utils.logMessage("RewardsPanel onAdded:", args);
@@ -18156,14 +18299,6 @@ window.__require = function e(t, n, r) {
             } else clearInterval(this._interval);
           }.bind(this), 100);
           this.starSpine.setAnimation(0, this._args.items.length < 6 ? "Rewards_Star_Loop" : "Rewards_Star_Loop2", true);
-        } else if (this.rewardType == EnumType.REWARD_TYPE.COIN) {
-          this.itemCoinContainer.active = true;
-          this.coinNode.active = true;
-          this.coinNode.opacity = 0;
-          cc.tween(this.coinNode).to(.2, {
-            opacity: 255
-          }).start();
-          this.coinLabel.getComponent("LabelUpdater").setString("X " + this._args.coinValue);
         } else if (this.rewardType == EnumType.REWARD_TYPE.CLERK) {
           this.clerkNode.active = true;
           this.clerkNode.opacity = 0;
@@ -18182,6 +18317,9 @@ window.__require = function e(t, n, r) {
           this.hpLabel_1.getComponent("LabelUpdater").setString(this.roleData.getStaticData().basic_hp - parseInt(this._args.talentData.clerk.hp));
           this.hpLabel_2.getComponent("LabelUpdater").setString(this.roleData.getStaticData().basic_hp);
           this.hpLabel_3.getComponent("LabelUpdater").setString("+" + this._args.talentData.clerk.hp);
+          var roleView = this.roleNode.getComponent("RoleView");
+          roleView.updateData(this.roleContainer, this.roleData);
+          roleView.hideBar();
         }
       },
       getLastClerk: function getLastClerk() {
@@ -18205,6 +18343,7 @@ window.__require = function e(t, n, r) {
             this.roleData.currentPower = this.roleData.getPower();
           }
         }
+        this._args.closeCallback && this._args.closeCallback();
         this.reset();
         Global.gui.remove(gameConfig.UIID.RewardsPanel);
       },
@@ -18214,7 +18353,6 @@ window.__require = function e(t, n, r) {
         this.contentNode.height = this.contentNode.getChildByName("bg").height = DEFAULT_HEIGHT;
         this.clearItems();
         this.clerkNode.active = false;
-        this.coinNode.active = false;
         this.skillNode.active = false;
         this.itemNode.active = false;
         this.itemCoinContainer.active = false;
@@ -18952,7 +19090,6 @@ window.__require = function e(t, n, r) {
         this.raid_trash_coin = this.basicConfig.raid_trash_coin;
         this.raid_boss_coin = this.basicConfig.raid_boss_coin;
         this.resetAll();
-        this.currentPower = this.getPower();
       },
       getSkillEffect: function getSkillEffect() {
         var result = [];
@@ -19422,7 +19559,7 @@ window.__require = function e(t, n, r) {
             this.updatePropertyFromEvent(_event);
             "emergency" == _event.skillConfig.skill_owner && this.updateEmergencyCallback && this.updateEmergencyCallback(true);
           } else {
-            _event.currentTriggerCount = 0;
+            "emergency" == _event.skillConfig.skill_owner && (_event.currentTriggerCount = 0);
             this.removeAdditionalProperty(_event.eventId);
             "emergency" == _event.skillConfig.skill_owner && this.updateEmergencyCallback && this.updateEmergencyCallback(false);
           }
@@ -20026,6 +20163,11 @@ window.__require = function e(t, n, r) {
           default: null,
           tooltip: "\u51b2\u950b\u95ea\u7535\u7279\u6548\uff1a\u89e6\u53d1\u51b2\u950b\u65f6\u663e\u793a"
         },
+        chargeSmallSpine: {
+          type: cc.Node,
+          default: null,
+          tooltip: "\u51b2\u950b\u95ea\u7535\u7279\u6548\uff1a\u89e6\u53d1\u51b2\u950b\u65f6\u663e\u793a"
+        },
         boomRootNode: {
           type: cc.Node,
           default: null,
@@ -20129,6 +20271,7 @@ window.__require = function e(t, n, r) {
       },
       onEnable: function onEnable() {
         cc.director.GlobalEvent.on(gameConfig.GAME_EVENT.AbilityUp, this.AbilityUp, this);
+        cc.director.GlobalEvent.on(gameConfig.GAME_EVENT.GotoHomePage, this.gotoHomePage, this);
       },
       AbilityUp: function AbilityUp(data) {
         var _this = this;
@@ -20174,6 +20317,20 @@ window.__require = function e(t, n, r) {
         this._parent = parent;
         this._roleData = roleData;
         this._roleData.node = this;
+        var roleSpine = this.roleSpine;
+        var spPath = gameConfig.PRELOADCONFIG["" + roleData.basicConfig.path].path;
+        Global.res.load(spPath, sp.SkeletonData, function(error, asset) {
+          error ? console.warn("\u52a8\u6001\u52a0\u8f7dSpine\u6587\u4ef6\u5931\u8d25\uff1a", error) : roleSpine.skeletonData = asset;
+        });
+        try {
+          var basketSpine = this.basketSpine;
+          var spLanziPath = gameConfig.PRELOADCONFIG[roleData.basicConfig.path + "_Lanzi"].path;
+          Global.res.load(spLanziPath, sp.SkeletonData, function(error, asset) {
+            error ? console.warn("\u52a8\u6001\u52a0\u8f7dSpine\u6587\u4ef6\u5931\u8d25\uff1a", error) : basketSpine.skeletonData = asset;
+          });
+        } catch (error) {
+          console.log("\u672a\u767c\u73fe\u7c43\u5b50\uff1a", roleData.basicConfig.path);
+        }
         this._roleAnimator || (this._roleAnimator = this.roleSpine.getComponent(_RoleAnimatorSpine["default"]));
         this._basketAnimator || (this._basketAnimator = this.basketSpine.getComponent(_BasketAnimatorSpine["default"]));
         this.hpProgressBar.initData(this._roleData);
@@ -20254,7 +20411,7 @@ window.__require = function e(t, n, r) {
         this.battleSmokeSpine.active || (this.battleSmokeSpine.active = true);
       },
       hideBattleSmoke: function hideBattleSmoke() {
-        this.battleSmokeSpine.active && (this.battleSmokeSpine.active = false);
+        this.battleSmokeSpine.active && !this._isForcedCharge && (this.battleSmokeSpine.active = false);
       },
       cleanValueNode: function cleanValueNode() {
         this.valueRootNode.removeAllChildren();
@@ -20416,6 +20573,10 @@ window.__require = function e(t, n, r) {
             });
           }
         }
+        if ("1213" == skillId) {
+          this._isForcedCharge = true;
+          this.showBattleSmoke();
+        }
       },
       combineSkillCallback: function combineSkillCallback(combineArr, isMergeAnimation) {
         this._combineArr = combineArr;
@@ -20450,7 +20611,8 @@ window.__require = function e(t, n, r) {
       },
       updateChargeStateCallback: function updateChargeStateCallback(flag) {
         void 0 === flag && (flag = false);
-        flag && !this.chargeSpine.active ? this.chargeSpine.active = true : !flag && this.chargeSpine.active && (this.chargeSpine.active = false);
+        var skills = Global.skillManager.getSkillsByType(EnumType.ENHANCEMENT_EFFECT.CHARGE, this._roleData);
+        skills.length >= 5 ? flag && !this.chargeSpine.active ? this.chargeSpine.active = true : !flag && this.chargeSpine.active && (this.chargeSpine.active = false) : flag && !this.chargeSmallSpine.active ? this.chargeSmallSpine.active = true : !flag && this.chargeSmallSpine.active && (this.chargeSmallSpine.active = false);
       },
       updateDebuffCallback: function updateDebuffCallback(args) {
         for (var key in args) {
@@ -20469,7 +20631,8 @@ window.__require = function e(t, n, r) {
           var debuff = this.debuffList[index];
           debuff.clean();
         }
-        this.emergencySpine.active = this.battleSmokeSpine.active = this.chargeSpine.active = this.boomRootNode.active = this.attackSpeedNode.active = this.amplifiedDamageNode.active = this.stunNode.active = this.toxicSpine.active = false;
+        this._isForcedCharge = false;
+        this.emergencySpine.active = this.emergencySmallSpine.active = this.battleSmokeSpine.active = this.chargeSpine.active = this.chargeSmallSpine.active = this.boomRootNode.active = this.attackSpeedNode.active = this.amplifiedDamageNode.active = this.stunNode.active = this.toxicSpine.active = false;
         isCleanAll && (this.abilityUpSpine.node.active = false);
       },
       reduceHpCallback: function reduceHpCallback(_value) {
@@ -20492,8 +20655,13 @@ window.__require = function e(t, n, r) {
           this._moveCallBack && this._moveCallBack();
         }
       },
+      gotoHomePage: function gotoHomePage() {
+        clearInterval(this._fightIT);
+        this._fightIT = null;
+      },
       onDisable: function onDisable() {
         cc.director.GlobalEvent.off(gameConfig.GAME_EVENT.AbilityUp);
+        cc.director.GlobalEvent.off(gameConfig.GAME_EVENT.gotoHomePage);
       },
       onClickTest: function onClickTest() {
         this.showSkillEffectCallback(1050);
@@ -20758,10 +20926,8 @@ window.__require = function e(t, n, r) {
           okWord: "common_quit",
           cancelWord: "common_cancel",
           okFunc: function okFunc() {
-            var _Global$gui$get;
             _this.onCloseUI();
-            var battleView = null == (_Global$gui$get = Global.gui.get(gameConfig.UIID.BattlePanel)) ? void 0 : _Global$gui$get.getComponent("BattleView");
-            null == battleView ? void 0 : battleView.gotoHomePage();
+            cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.GotoHomePage);
           },
           cancelFunc: function cancelFunc() {},
           needCancel: true
@@ -21486,7 +21652,6 @@ window.__require = function e(t, n, r) {
         Global.shopManager.storageData.orangeBox.epicSCount++;
         Global.shopManager.storageData.orangeBox.epicCount++;
         Global.shopManager.storageData.anySCount++;
-        Global.shopManager.storageData.anySCount = Global.shopManager.storageData.anySCount > Global.shopManager.ANY_S_MAX_COUNT ? Global.shopManager.ANY_S_MAX_COUNT : Global.shopManager.storageData.anySCount;
         if (Global.shopManager.storageData.orangeBox.epicSCount >= Global.shopManager.EPIC_S_MAX_COUNT) {
           Global.shopManager.storageData.orangeBox.epicSCount = 0;
           Global.shopManager.storageData.orangeBox.epicCount = 0;
@@ -21497,7 +21662,7 @@ window.__require = function e(t, n, r) {
           result = Global.shopManager.openBox(Global.shopManager.ORANGE, Global.shopManager.ORANGE_EPIC_INDEX);
         }
         null == result && (result = Global.shopManager.openBox(Global.shopManager.ORANGE));
-        null != result.equipmentConfig ? Global.equipmentManager.addEquipment2Bag(result, Global.roleData) : Global.bagManager.addItem2Bag(result, Global.roleData);
+        null != result.equipmentConfig ? Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData) : Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
         if (result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && result.equipmentId < 2e3) {
           Global.shopManager.storageData.orangeBox.epicSCount = 0;
           Global.shopManager.storageData.orangeBox.epicCount = 0;
@@ -21581,7 +21746,7 @@ window.__require = function e(t, n, r) {
           result = Global.shopManager.openBox(Global.shopManager.BLUE, Global.shopManager.BLUE_UNCOMMON_INDEX);
         }
         null == result && (result = Global.shopManager.openBox(Global.shopManager.BLUE));
-        null != result.equipmentConfig ? Global.equipmentManager.addEquipment2Bag(result, Global.roleData) : Global.bagManager.addItem2Bag(result, Global.roleData);
+        null != result.equipmentConfig ? Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData) : Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
         result.rarity == EnumType.RARE_TYPE_EQUIPMENT.UNCOMMON && (Global.shopManager.storageData.blueBox.uncommonCount = 0);
         Global.shopManager.saveData();
         this.updateUI();
@@ -21595,7 +21760,7 @@ window.__require = function e(t, n, r) {
           result = Global.shopManager.openBox(Global.shopManager.PURPLE, Global.shopManager.PURPLE_EPIC_INDEX);
         }
         null == result && (result = Global.shopManager.openBox(Global.shopManager.PURPLE));
-        null != result.equipmentConfig ? Global.equipmentManager.addEquipment2Bag(result, Global.roleData) : Global.bagManager.addItem2Bag(result, Global.roleData);
+        null != result.equipmentConfig ? Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData) : Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
         result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && (Global.shopManager.storageData.purpleBox.epicCount = 0);
         Global.shopManager.saveData();
         this.updateUI();
@@ -21639,7 +21804,6 @@ window.__require = function e(t, n, r) {
         Global.shopManager.storageData.redBox.epicSCount++;
         Global.shopManager.storageData.redBox.epicCount++;
         Global.shopManager.storageData.anySCount++;
-        Global.shopManager.storageData.anySCount = Global.shopManager.storageData.anySCount > Global.shopManager.ANY_S_MAX_COUNT ? Global.shopManager.ANY_S_MAX_COUNT : Global.shopManager.storageData.anySCount;
         if (Global.shopManager.storageData.redBox.epicSCount >= Global.shopManager.EPIC_S_MAX_COUNT) {
           Global.shopManager.storageData.redBox.epicSCount = 0;
           Global.shopManager.storageData.redBox.epicCount = 0;
@@ -21650,7 +21814,7 @@ window.__require = function e(t, n, r) {
           result = Global.shopManager.openBox(Global.shopManager.RED, Global.shopManager.RED_EPIC_INDEX);
         }
         null == result && (result = Global.shopManager.openBox(Global.shopManager.RED));
-        null != result.equipmentConfig ? Global.equipmentManager.addEquipment2Bag(result, Global.roleData) : Global.bagManager.addItem2Bag(result, Global.roleData);
+        null != result.equipmentConfig ? Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData) : Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
         if (result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && result.equipmentId < 2e3) {
           Global.shopManager.storageData.redBox.epicSCount = 0;
           Global.shopManager.storageData.redBox.epicCount = 0;
@@ -21713,14 +21877,33 @@ window.__require = function e(t, n, r) {
       },
       onClickDiamondCard: function onClickDiamondCard(_event, _index) {
         var isFirst = this.diamondFirst[_index];
+        var itemConfig, itemData, args;
+        itemConfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
+        itemData = new ItemData();
+        itemData.setData(null, itemConfig);
+        args = {};
+        args.items = [ itemData ];
+        args.rewardType = EnumType.REWARD_TYPE.ITEM;
         if (0 == isFirst) {
           this.diamondFirst[_index] = 1;
           Global.storage.set(gameConfig.COMMON_KEYS.SHOP_DIAMOND_FIRST, this.diamondFirst);
           Global.roleData.updateDiamond(2 * Global.shopManager.DIAMOND_VALUE_LIST[_index]);
           this.diamondFirstNodeList[_index].active = 0 == this.diamondFirst[_index];
-        } else Global.roleData.updateDiamond(Global.shopManager.DIAMOND_VALUE_LIST[_index]);
+          itemData.count = 2 * Global.shopManager.DIAMOND_VALUE_LIST[_index];
+        } else {
+          Global.roleData.updateDiamond(Global.shopManager.DIAMOND_VALUE_LIST[_index]);
+          itemData.count = Global.shopManager.DIAMOND_VALUE_LIST[_index];
+        }
+        Global.gui.open(gameConfig.UIID.RewardsPanel, args);
       },
       onClickCoinCard: function onClickCoinCard(_event, _index) {
+        var itemConfig, itemData, args;
+        itemConfig = Global.bagManager.getItemConfig(Global.bagManager.COIN_ITEM_ID);
+        itemData = new ItemData();
+        itemData.setData(null, itemConfig);
+        args = {};
+        args.items = [ itemData ];
+        args.rewardType = EnumType.REWARD_TYPE.ITEM;
         switch (_index) {
          case "ad":
           if (1 == this.coinAdCount) {
@@ -21732,6 +21915,8 @@ window.__require = function e(t, n, r) {
           var coin = Global.shopManager.getCurrentCoinCount(0);
           Global.roleData.updateCoin(coin);
           this.coinAdIcon.active = 0 == this.coinAdCount;
+          itemData.count = coin;
+          Global.gui.open(gameConfig.UIID.RewardsPanel, args);
           Global.taskManager.updateProgress(EnumType.TASK_TYPE.BUY_COIN, 1);
           break;
 
@@ -21745,6 +21930,8 @@ window.__require = function e(t, n, r) {
           }
           Global.roleData.updateDiamond(-1 * needDiamond);
           Global.roleData.updateCoin(currentChapterCoin);
+          itemData.count = currentChapterCoin;
+          Global.gui.open(gameConfig.UIID.RewardsPanel, args);
           Global.taskManager.updateProgress(EnumType.TASK_TYPE.BUY_COIN, 1);
         }
       },
@@ -21839,7 +22026,7 @@ window.__require = function e(t, n, r) {
           var index = this.getRandomIndexExcludingLast(this.equipmentItemList);
           var currentNode = this.equipmentItemList[index];
           this.equipmentItemFlash.node.active = true;
-          this.equipmentItemFlash.node.setPosition(currentNode.x, currentNode.y);
+          this.equipmentItemFlash.node.setPosition(currentNode.x, currentNode.y + 45);
           this.equipmentItemFlash.setAnimation(0, "Limited_Sg", false);
         }
       }
@@ -22072,8 +22259,8 @@ window.__require = function e(t, n, r) {
           return;
         }
         var equipmentData = this.currentSelect.getComponent("EquipmentItem").equipmentData;
-        Global.equipmentManager.addEquipment2Bag(equipmentData, Global.roleData);
-        Global.shopManager.storageData.anySCount = 0;
+        Global.equipmentManager.addEquipment(equipmentData.equipmentId, Global.roleData);
+        Global.shopManager.storageData.anySCount -= Global.shopManager.ANY_S_MAX_COUNT;
         Global.shopManager.saveData();
         this.onClickClose();
         var args = {};
@@ -29386,6 +29573,7 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "6f1abyFa71D95wn5pLLTOEQ", "TalentCard");
     "use strict";
     var EnumType = require("EnumType");
+    var gameConfig = require("GameConfig");
     cc.Class({
       extends: cc.Component,
       properties: {
@@ -29399,7 +29587,8 @@ window.__require = function e(t, n, r) {
         coinLabel: cc.Node,
         coinNode: cc.Node,
         maxNode: cc.Node,
-        effect: sp.Skeleton
+        effect: sp.Skeleton,
+        clickEffect: sp.Skeleton
       },
       start: function start() {
         this.effect.node.active = false;
@@ -29449,18 +29638,37 @@ window.__require = function e(t, n, r) {
       },
       onClickLevelUp: function onClickLevelUp() {
         var _this2 = this;
+        if (true == this.talentParent.needWait) return;
         if (this.lv >= this.maxLv) return;
-        if (Global.roleData.coin < this.cost) return;
+        if (Global.roleData.coin < this.cost) {
+          Global.gui.toast(Global.languageManager.t("not_enough_coin"));
+          return;
+        }
+        this.clickEffect.node.active = true;
+        this.clickEffect.setAnimation(0, "Approve_Sg_2", false);
+        this.clickEffect.setCompleteListener(function() {
+          _this2.clickEffect.node.active = false;
+        });
         Global.roleData.updateCoin(-1 * this.cost);
         Global.talentManager.levelUp(this.typeIndex, this.talentParent.roleData, function(_talentData) {
-          _this2.talentParent.updateUI();
+          var power = Global.roleData.getPower();
+          if (power != Global.roleData.currentPower) {
+            var args = {};
+            args.power_1 = Global.roleData.currentPower;
+            args.power_2 = power;
+            args.powerUp = power >= Global.roleData.currentPower;
+            var powerChangeNode = Global.gui.get(gameConfig.UIID.PowerChange);
+            null != powerChangeNode ? powerChangeNode.getComponent("PowerChange").updateShow(args) : Global.gui.open(gameConfig.UIID.PowerChange, args);
+            Global.roleData.currentPower = Global.roleData.getPower();
+          }
           _this2.talentParent.afterLevelUp(_talentData);
         });
       }
     });
     cc._RF.pop();
   }, {
-    EnumType: "EnumType"
+    EnumType: "EnumType",
+    GameConfig: "GameConfig"
   } ],
   TalentConfig: [ function(require, module, exports) {
     "use strict";
@@ -30162,7 +30370,8 @@ window.__require = function e(t, n, r) {
         midLevelLabel: cc.Node,
         endLevelLabel: cc.Node,
         midRewardItem: cc.Node,
-        endRewardItem: cc.Node
+        endRewardItem: cc.Node,
+        roleContainer: cc.Node
       },
       onAdded: function onAdded(_args) {
         var _this = this;
@@ -30170,7 +30379,7 @@ window.__require = function e(t, n, r) {
         this.levelColor_1 = new cc.color(255, 255, 255);
         this.levelColor_2 = new cc.color(255, 232, 128);
         var roleView = this.roleNode.getComponent("RoleView");
-        roleView.updateData(this, this.roleData);
+        roleView.updateData(this.roleContainer, this.roleData);
         roleView.hideBar();
         this.updateUI(true);
         this.schedule(function() {
@@ -30185,17 +30394,48 @@ window.__require = function e(t, n, r) {
           false == cardCom.bg_max.active && resultList.push(cardCom);
         }
         var randomIndex = Math.round(Math.random(resultList.length - 1));
+        randomIndex = randomIndex >= resultList.length ? randomIndex - 1 : randomIndex;
         resultList[randomIndex].showEffect();
       },
       updateUI: function updateUI(_isInit) {
         this.updateTitle();
         this.updateProgress();
-        this.updateCards();
-        _isInit && this.setRewards();
+        this.updateCards(_isInit);
+        _isInit && this.setRewards(true);
         this.updateRewards();
         this.levelLabel.getComponent("LabelUpdater").setString(this.roleData.talentIndexList.length);
+        var roleCom = this.roleNode.getComponent("RoleView");
+        roleCom.updateData(this.roleContainer, Global.roleData);
+        roleCom.hideBar();
       },
-      updateCards: function updateCards() {
+      updateCards: function updateCards(_initAni, _newClerk) {
+        var _this2 = this;
+        if (true == _newClerk) for (var i = 0; i < this.cards.length; i++) {
+          var card = this.cards[i];
+          cc.tween(card).to(.2, {
+            scale: 0
+          }).call(function() {
+            _this2.handleUpdateCards();
+          }).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
+        } else if (true == _initAni) {
+          this.handleUpdateCards();
+          for (var j = 0; j < this.cards.length; j++) {
+            var card_1 = this.cards[j];
+            card_1.setScale(0, 0);
+            cc.tween(card_1).delay(.3).to(.2, {
+              scale: 1
+            }, {
+              easing: cc.easing.elasticOut
+            }).start();
+          }
+          this.handleUpdateCards();
+        } else this.handleUpdateCards();
+      },
+      handleUpdateCards: function handleUpdateCards() {
         var range = this.getStageRange();
         var startIndex = range[0];
         var hpCard = this.cards[0].getComponent("TalentCard");
@@ -30297,7 +30537,7 @@ window.__require = function e(t, n, r) {
         this.midRewardItem.getComponent("TalentRewardItem").updateData();
         this.endRewardItem.getComponent("TalentRewardItem").updateData();
       },
-      setRewards: function setRewards() {
+      handleSetRewards: function handleSetRewards() {
         var currentLevel = this.roleData.talentIndexList.length;
         var range = this.getStageRange();
         var internalCount = range[2];
@@ -30311,14 +30551,14 @@ window.__require = function e(t, n, r) {
             reward_1 = talentData;
             this.midLevelLabel.getComponent("LabelUpdater").setString(null != talentData.clerk ? Global.languageManager.t("talent_title_" + talentData.clerk.id) : i);
             this.midLevelLabel.getComponent("LabelUpdater").setColor(null != talentData.clerk ? this.levelColor_2 : this.levelColor_1);
-            this.midRewardItem.getComponent("TalentRewardItem").setData(reward_1, this.roleData);
+            this.midRewardItem.getComponent("TalentRewardItem").setData(reward_1, this.roleData, this);
             continue;
           }
           if (talentData && (null != talentData.clerk || null != talentData.skill || null != talentData.coin) && null != reward_1) {
             reward_2 = talentData;
             this.endLevelLabel.getComponent("LabelUpdater").setString(null != talentData.clerk ? Global.languageManager.t("talent_title_" + talentData.clerk.id) : i);
             this.endLevelLabel.getComponent("LabelUpdater").setColor(null != talentData.clerk ? this.levelColor_2 : this.levelColor_1);
-            this.endRewardItem.getComponent("TalentRewardItem").setData(reward_2, this.roleData);
+            this.endRewardItem.getComponent("TalentRewardItem").setData(reward_2, this.roleData, this);
             break;
           }
         } else {
@@ -30328,7 +30568,7 @@ window.__require = function e(t, n, r) {
               reward_2 = talentData;
               this.endLevelLabel.getComponent("LabelUpdater").setString(null != talentData.clerk ? Global.languageManager.t("talent_title_" + talentData.clerk.id) : _i2);
               this.endLevelLabel.getComponent("LabelUpdater").setColor(null != talentData.clerk ? this.levelColor_2 : this.levelColor_1);
-              this.endRewardItem.getComponent("TalentRewardItem").setData(reward_2, this.roleData);
+              this.endRewardItem.getComponent("TalentRewardItem").setData(reward_2, this.roleData, this);
               break;
             }
           }
@@ -30338,30 +30578,119 @@ window.__require = function e(t, n, r) {
               reward_1 = talentData;
               this.midLevelLabel.getComponent("LabelUpdater").setString(null != talentData.clerk ? Global.languageManager.t("talent_title_" + talentData.clerk.id) : j);
               this.midLevelLabel.getComponent("LabelUpdater").setColor(null != talentData.clerk ? this.levelColor_2 : this.levelColor_1);
-              this.midRewardItem.getComponent("TalentRewardItem").setData(reward_1, this.roleData);
+              this.midRewardItem.getComponent("TalentRewardItem").setData(reward_1, this.roleData, this);
               break;
             }
           }
         }
       },
-      afterLevelUp: function afterLevelUp(_talentData) {
-        var args = {};
-        args.roleData = this.roleData;
-        var show = false;
-        if (null != _talentData.coin) {
-          args.coinValue = _talentData.coin;
-          args.rewardType = EnumType.REWARD_TYPE.COIN;
-          show = true;
-        } else if (null != _talentData.skill) {
-          args.talentData = _talentData;
-          args.rewardType = EnumType.REWARD_TYPE.SKILL;
-          show = true;
-        } else if (null != _talentData.clerk) {
-          args.talentData = _talentData;
-          args.rewardType = EnumType.REWARD_TYPE.CLERK;
-          show = true;
+      setRewards: function setRewards(_initAni) {
+        var _this3 = this;
+        if (_initAni = true) {
+          this.handleSetRewards();
+          this.endLevelLabel.setScale(0, 0);
+          this.endRewardItem.setScale(0, 0);
+          this.midLevelLabel.setScale(0, 0);
+          this.midRewardItem.setScale(0, 0);
+          cc.tween(this.endLevelLabel).delay(.3).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
+          cc.tween(this.endRewardItem).delay(.3).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
+          cc.tween(this.midLevelLabel).delay(.3).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
+          cc.tween(this.midRewardItem).delay(.3).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
+        } else {
+          cc.tween(this.endLevelLabel).to(.2, {
+            scale: 0
+          }).call(function() {
+            _this3.handleSetRewards();
+          }).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
+          cc.tween(this.endRewardItem).to(.2, {
+            scale: 0
+          }).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
+          c.tween(this.midLevelLabel).to(.2, {
+            scale: 0
+          }).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
+          c.tween(this.midRewardItem).to(.2, {
+            scale: 0
+          }).to(.2, {
+            scale: 1
+          }, {
+            easing: cc.easing.elasticOut
+          }).start();
         }
-        show && Global.gui.open(gameConfig.UIID.RewardsPanel, args);
+      },
+      handleAfterLevelUp: function handleAfterLevelUp() {
+        var _this4 = this;
+        if (this.needShowResult) {
+          this.needShowResultArgs.closeCallback = function() {
+            _this4.needWait = false;
+            if (true == _this4.isNewClerk) {
+              _this4.updateCards(false, true);
+              _this4.updateTitle();
+            }
+          };
+          Global.gui.open(gameConfig.UIID.RewardsPanel, this.needShowResultArgs);
+        }
+      },
+      afterLevelUp: function afterLevelUp(_talentData) {
+        this.needShowResult = false;
+        this.needShowResultArgs = {};
+        this.needShowResultArgs.roleData = this.roleData;
+        this.needWait = false;
+        this.isNewClerk = false;
+        if (null != _talentData.coin) {
+          this.needShowResultArgs.coinValue = _talentData.coin;
+          var itemConfig, itemData;
+          itemConfig = Global.bagManager.getItemConfig(Global.bagManager.COIN_ITEM_ID);
+          itemData = new ItemData();
+          itemData.setData(null, itemConfig);
+          this.needShowResultArgs.items = [ itemData ];
+          this.needShowResultArgs.rewardType = EnumType.REWARD_TYPE.ITEM;
+          this.needShowResult = true;
+          this.needWait = true;
+        } else if (null != _talentData.skill) {
+          this.needShowResultArgs.talentData = _talentData;
+          this.needShowResultArgs.rewardType = EnumType.REWARD_TYPE.SKILL;
+          this.needShowResult = true;
+          this.needWait = true;
+        } else if (null != _talentData.clerk) {
+          this.needShowResultArgs.talentData = _talentData;
+          this.needShowResultArgs.rewardType = EnumType.REWARD_TYPE.CLERK;
+          this.needShowResult = true;
+          this.needWait = true;
+          this.isNewClerk = true;
+        }
+        if (false == this.isNewClerk) this.updateUI(); else {
+          this.updateProgress();
+          this.updateRewards();
+          this.levelLabel.getComponent("LabelUpdater").setString(this.roleData.talentIndexList.length);
+        }
       },
       onEnable: function onEnable() {
         this.cardSkeleton.setAnimation(0, "Talent", false);
@@ -30386,8 +30715,9 @@ window.__require = function e(t, n, r) {
         iconSpriteFrameList: [ cc.SpriteFrame ]
       },
       start: function start() {},
-      setData: function setData(_talentData, _roleData) {
+      setData: function setData(_talentData, _roleData, _talentParent) {
         var _this = this;
+        this.talentParent = _talentParent;
         this.talentData = _talentData;
         this.roleData = _roleData;
         if (null != _talentData.clerk) this.icon.spriteFrame = this.iconSpriteFrameList[1]; else if (null != _talentData.skill) {
@@ -30400,8 +30730,18 @@ window.__require = function e(t, n, r) {
         this.checkedBgNode.active = _roleData.talentIndexList.length >= _talentData.level;
       },
       updateData: function updateData() {
+        var _this2 = this;
         this.checkedNode.active = this.roleData.talentIndexList.length >= this.talentData.level;
         this.checkedBgNode.active = this.roleData.talentIndexList.length >= this.talentData.level;
+        this.roleData.talentIndexList.length == this.talentData.level && cc.tween(this.node).to(.2, {
+          scale: 1.5
+        }).to(.2, {
+          scale: 1
+        }, {
+          easing: cc.easing.backOut
+        }).call(function() {
+          _this2.talentParent.handleAfterLevelUp();
+        }).start();
       }
     });
     cc._RF.pop();
@@ -30944,7 +31284,10 @@ window.__require = function e(t, n, r) {
       onClickClaim: function onClickClaim() {
         Global.taskManager.finishTask(this.config.id);
         var taskNode = Global.gui.get(gameConfig.UIID.TaskPanel);
-        taskNode && taskNode.getComponent("TaskPanel").finishedTask(this.config.id);
+        if (taskNode) {
+          taskNode.getComponent("TaskPanel").showLeafEffect(10, this.node, cc.v2(-355, 0));
+          taskNode.getComponent("TaskPanel").finishedTask(this.config.id);
+        }
       }
     });
     cc._RF.pop();
@@ -31135,6 +31478,7 @@ window.__require = function e(t, n, r) {
     var gameConfig = require("GameConfig");
     var ItemData = require("ItemData");
     var EnumType = require("EnumType");
+    var BattleConfig = require("BattleConfig");
     cc.Class({
       extends: cc.Component,
       properties: {
@@ -31150,10 +31494,23 @@ window.__require = function e(t, n, r) {
         dailyRewardList: [ cc.Node ],
         dailyClaimAllBtn: cc.Button,
         dailyClaimed: cc.Node,
+        resetLabel: cc.Node,
         taskItemPrefab: cc.Prefab,
         taskItemList: [ cc.Node ],
         taskItemPool: [ cc.Node ],
-        taskItemContainer: cc.Node
+        taskItemContainer: cc.Node,
+        leafItemPrefab: cc.Prefab,
+        leafItemList: [ cc.Node ],
+        leafItemPool: [ cc.Node ],
+        flashItemPrefab: cc.Prefab,
+        flashItemList: [ cc.Node ],
+        flashItemPool: [ cc.Node ],
+        leafEffectContainer: cc.Node,
+        dailyTargetNode: cc.Node,
+        weeklyTargetNode: cc.Node
+      },
+      onLoad: function onLoad() {
+        this.timer = Date.now();
       },
       start: function start() {},
       onAdded: function onAdded(_args) {
@@ -31170,9 +31527,108 @@ window.__require = function e(t, n, r) {
         }).start();
         this.updateUI();
       },
-      updateUI: function updateUI() {
+      generateFlashItem: function generateFlashItem(_pos) {
         var _this = this;
-        this.weeklyProgressLabel.getComponent("LabelUpdater").setString(Global.taskManager.taskData.weeklyProgress);
+        var flashItem;
+        flashItem = this.flashItemPool.length > 0 ? this.flashItemPool.pop() : cc.instantiate(this.flashItemPrefab);
+        this.flashItemList.push(flashItem);
+        this.leafEffectContainer.addChild(flashItem);
+        flashItem.getComponent(sp.Skeleton).setAnimation(0, "ActivityLevel", false);
+        flashItem.setPosition(cc.v2(_pos.x, _pos.y));
+        flashItem.getComponent(sp.Skeleton).setCompleteListener(function(trackEntry) {
+          _this.removeFlashItem(flashItem);
+        });
+        return flashItem;
+      },
+      removeFlashItem: function removeFlashItem(_flash) {
+        var index = this.flashItemList.indexOf(_flash);
+        this.flashItemList.splice(index, 1);
+        this.flashItemPool.push(_flash);
+        this.leafEffectContainer.removeChild(_flash);
+      },
+      generateLeafItem: function generateLeafItem() {
+        var leafItem;
+        leafItem = this.leafItemPool.length > 0 ? this.leafItemPool.pop() : cc.instantiate(this.leafItemPrefab);
+        this.leafItemList.push(leafItem);
+        this.leafEffectContainer.addChild(leafItem);
+        return leafItem;
+      },
+      removeLeafItem: function removeLeafItem(_leaf) {
+        var index = this.leafItemList.indexOf(_leaf);
+        this.leafItemList.splice(index, 1);
+        this.leafItemPool.push(_leaf);
+        this.leafEffectContainer.removeChild(_leaf);
+      },
+      showLeafEffect: function showLeafEffect(_count, _fromTarget, _fromPos) {
+        var _this2 = this;
+        var worldPos = _fromTarget.convertToWorldSpaceAR(_fromPos);
+        var fromPos = this.leafEffectContainer.convertToNodeSpaceAR(worldPos);
+        var dailyWorldPos = this.dailyTargetNode.convertToWorldSpaceAR(cc.v2(-365, 15));
+        var dailyTargetPos = this.leafEffectContainer.convertToNodeSpaceAR(dailyWorldPos);
+        var weeklyWorldPos = this.weeklyTargetNode.convertToWorldSpaceAR(cc.v2(-365, 15));
+        var weeklyTargetPos = this.leafEffectContainer.convertToNodeSpaceAR(weeklyWorldPos);
+        var points = this.generateGridPoints(-150, -150, 300, 400, 2 * _count);
+        var _loop = function _loop(i) {
+          var leaf = _this2.generateLeafItem();
+          leaf.opacity = 0;
+          leaf.setScale(0);
+          leaf.setPosition(fromPos.x, fromPos.y);
+          var targetPos = points.pop();
+          cc.tween(leaf).to(.2, {
+            opacity: 255,
+            position: cc.v2(targetPos.x, targetPos.y),
+            scale: 1
+          }).call(function() {
+            cc.tween(leaf).delay(.1 * i).to(.3, {
+              position: cc.v2(dailyTargetPos.x, dailyTargetPos.y)
+            }).call(function() {
+              _this2.removeLeafItem(leaf);
+              _this2.generateFlashItem(cc.v2(dailyTargetPos.x, dailyTargetPos.y));
+            }).start();
+          }).start();
+        };
+        for (var i = 0; i < _count; i++) _loop(i);
+        var _loop2 = function _loop2(j) {
+          var leaf = _this2.generateLeafItem();
+          leaf.opacity = 0;
+          leaf.setScale(0);
+          leaf.setPosition(fromPos.x, fromPos.y);
+          var targetPos = points.pop();
+          cc.tween(leaf).to(.2, {
+            opacity: 255,
+            position: cc.v2(targetPos.x, targetPos.y),
+            scale: 1
+          }).call(function() {
+            cc.tween(leaf).delay(.1 * j).to(.3, {
+              position: cc.v2(weeklyTargetPos.x, weeklyTargetPos.y)
+            }).call(function() {
+              _this2.removeLeafItem(leaf);
+              _this2.generateFlashItem(cc.v2(weeklyTargetPos.x, weeklyTargetPos.y));
+            }).start();
+          }).start();
+        };
+        for (var j = 0; j < _count; j++) _loop2(j);
+      },
+      generateGridPoints: function generateGridPoints(x, y, width, height, count) {
+        var points = [];
+        var cols = Math.ceil(Math.sqrt(count));
+        var rows = Math.ceil(count / cols);
+        var cellWidth = width / cols;
+        var cellHeight = height / rows;
+        for (var i = 0; i < rows; i++) for (var j = 0; j < cols; j++) {
+          if (points.length >= count) break;
+          var px = x + j * cellWidth + Math.random() * cellWidth;
+          var py = y + i * cellHeight + Math.random() * cellHeight;
+          points.push({
+            x: px,
+            y: py
+          });
+        }
+        return points;
+      },
+      updateUI: function updateUI() {
+        var _this3 = this;
+        this.weeklyProgressLabel.getComponent("AniLabel").animateNumberChange(Global.taskManager.taskData.weeklyProgress);
         var weeklyProgressRate = Global.taskManager.taskData.weeklyProgress / Global.taskManager.WEEKLY_REWARD_MAX;
         weeklyProgressRate = weeklyProgressRate > 1 ? 1 : weeklyProgressRate;
         this.weeklyProgress.width = 472 * weeklyProgressRate;
@@ -31182,14 +31638,14 @@ window.__require = function e(t, n, r) {
           var itemData = new ItemData();
           itemData.setData(null, itemConfig);
           itemData.count = config.reward.count;
-          this.weeklyRewardList[i].getComponent("BagItem").setData(itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_1);
+          this.weeklyRewardList[i].getComponent("BagItem").setData(itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
           1 == Global.taskManager.taskData.weeklyRewardIndexList[i] ? this.weeklyRewardList[i].getComponent("BagItem").showSelect(true) : this.weeklyRewardList[i].getComponent("BagItem").setMask(Global.taskManager.taskData.weeklyProgress < config.target);
           this.weeklyRewardList[i].getComponent("BagItem").setTaskRewardInfo(i, "weekly");
         }
         this.weeklyClaimAllBtn.interactable = Global.taskManager.hasWeeklyRewards();
         this.weeklyClaimAllBtn.node.active = !Global.taskManager.isWeeklyClaimAll();
         this.weeklyClaimed.active = Global.taskManager.isWeeklyClaimAll();
-        this.dailyProgressLabel.getComponent("LabelUpdater").setString(Global.taskManager.taskData.dailyProgress);
+        this.dailyProgressLabel.getComponent("AniLabel").animateNumberChange(Global.taskManager.taskData.dailyProgress);
         var dailyProgressRate = Global.taskManager.taskData.dailyProgress / Global.taskManager.DAILY_REWARD_MAX;
         dailyProgressRate = dailyProgressRate > 1 ? 1 : dailyProgressRate;
         this.dailyProgress.width = 472 * dailyProgressRate;
@@ -31199,7 +31655,7 @@ window.__require = function e(t, n, r) {
           var _itemData = new ItemData();
           _itemData.setData(null, _itemConfig);
           _itemData.count = _config2.reward.count;
-          this.dailyRewardList[_i].getComponent("BagItem").setData(_itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_1);
+          this.dailyRewardList[_i].getComponent("BagItem").setData(_itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
           1 == Global.taskManager.taskData.dailyRewardIndexList[_i] ? this.dailyRewardList[_i].getComponent("BagItem").showSelect(true) : this.dailyRewardList[_i].getComponent("BagItem").setMask(Global.taskManager.taskData.dailyProgress < _config2.target);
           this.dailyRewardList[_i].getComponent("BagItem").setTaskRewardInfo(_i, "daily");
         }
@@ -31219,8 +31675,9 @@ window.__require = function e(t, n, r) {
         });
         sortedKeys.forEach(function(id) {
           var config = Global.taskManager.taskConfigDict[id];
-          null != config && _this.generateItem(config);
+          null != config && _this3.generateItem(config);
         });
+        this.resetLabel.getComponent("LabelUpdater").setContent("task_reset_in", [ Global.utils.getTimeUntilMidnight() ]);
       },
       clearItems: function clearItems() {
         while (this.taskItemList.length > 0) {
@@ -31298,10 +31755,17 @@ window.__require = function e(t, n, r) {
         }).call(function() {
           Global.gui.remove(gameConfig.UIID.TaskPanel);
         }).start();
+      },
+      update: function update(dt) {
+        if (Date.now() - this.timer >= BattleConfig.HEART_BEAT_ONE_SECOND) {
+          this.timer = Date.now();
+          this.resetLabel.getComponent("LabelUpdater").setContent("task_reset_in", [ Global.utils.getTimeUntilMidnight() ]);
+        }
       }
     });
     cc._RF.pop();
   }, {
+    BattleConfig: "BattleConfig",
     EnumType: "EnumType",
     GameConfig: "GameConfig",
     ItemData: "ItemData"
@@ -32191,7 +32655,12 @@ window.__require = function e(t, n, r) {
         num /= 1e3;
         unitIndex++;
       }
-      var formattedNum = num.toFixed(1);
+      var formattedNum;
+      try {
+        formattedNum = num.toFixed(1);
+      } catch (error) {
+        console.error("Error:", num);
+      }
       formattedNum = parseFloat(formattedNum) === parseInt(formattedNum) ? parseInt(formattedNum) : formattedNum;
       return formattedNum + units[unitIndex];
     };
@@ -32202,7 +32671,12 @@ window.__require = function e(t, n, r) {
         num /= 1e4;
         unitIndex++;
       }
-      var formattedNum = num.toFixed(1);
+      var formattedNum;
+      try {
+        formattedNum = num.toFixed(1);
+      } catch (error) {
+        console.error("Error:", num);
+      }
       formattedNum = parseFloat(formattedNum) === parseInt(formattedNum) ? parseInt(formattedNum) : formattedNum;
       return formattedNum + units[unitIndex];
     };
@@ -32304,6 +32778,17 @@ window.__require = function e(t, n, r) {
       if (monday.getTime() > parseInt(lastMonday)) return true;
       return false;
     };
+    utils.getTimeUntilMidnight = function() {
+      var now = Global.networkTimer;
+      var midnight = new Date(now);
+      midnight.setHours(24, 0, 0, 0);
+      var diffMs = midnight - now;
+      var seconds = Math.floor(diffMs / 1e3);
+      var hours = String(Math.floor(seconds / 3600)).padStart(2, "0");
+      var mins = String(Math.floor(seconds % 3600 / 60)).padStart(2, "0");
+      var secs = String(seconds % 60).padStart(2, "0");
+      return hours + ":" + mins + ":" + secs;
+    };
     utils.getNetworkTimer = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
       var apis, _i, _apis, api, response, data, milliseconds;
       return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -32394,6 +32879,18 @@ window.__require = function e(t, n, r) {
         this.labelColorList[EnumType.RARE_TYPE_EQUIPMENT.MYTHIC] = new cc.color(232, 32, 74, 255);
       }
       return this.labelColorList[_rarity];
+    };
+    utils.getItemLabelColor = function(_rarity) {
+      if (null == this.itemLabelColorList) {
+        this.itemLabelColorList = [];
+        this.itemLabelColorList[EnumType.RARE_ITEM.COMMON] = new cc.color(255, 255, 255, 255);
+        this.itemLabelColorList[EnumType.RARE_ITEM.UNCOMMON] = new cc.color(97, 197, 37, 255);
+        this.itemLabelColorList[EnumType.RARE_ITEM.RARE] = new cc.color(54, 125, 187, 255);
+        this.itemLabelColorList[EnumType.RARE_ITEM.EPIC] = new cc.color(137, 60, 214, 255);
+        this.itemLabelColorList[EnumType.RARE_ITEM.LEGENDARY] = new cc.color(229, 136, 29, 255);
+        this.itemLabelColorList[EnumType.RARE_ITEM.MYTHIC] = new cc.color(232, 32, 74, 255);
+      }
+      return this.itemLabelColorList[_rarity];
     };
     utils.formatTimeToSecondsAndMilliseconds = function(ms) {
       var seconds = Math.floor(ms / 1e3);
@@ -32677,7 +33174,7 @@ window.__require = function e(t, n, r) {
         this.freeDailyRewardItem.getComponent("BagItem").setData(diamondItemData, null, EnumType.ITEM_OWNER_TYPE.NONE, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
         this.freeDailyRewardItem.getComponent("BagItem").showSelect(true == Global.vipManager.vipData.getFreeDailyReward);
         this.freeTimeNode.active = true == Global.vipManager.vipData.getFreeDailyReward;
-        true == Global.vipManager.vipData.getFreeDailyReward && this.freeTimeLabel.getComponent("LabelUpdater").setString(this.getTimeUntilMidnight());
+        true == Global.vipManager.vipData.getFreeDailyReward && this.freeTimeLabel.getComponent("LabelUpdater").setString(Global.utils.getTimeUntilMidnight());
         this.freeRedDot.active = true != Global.vipManager.vipData.getFreeDailyReward;
         this.freeClaimBtn.interactable = true != Global.vipManager.vipData.getFreeDailyReward;
         var diamondItemDataAdFree = new ItemData();
@@ -32751,17 +33248,6 @@ window.__require = function e(t, n, r) {
         var hasReward = true != Global.vipManager.vipData.getFreeDailyReward || true == Global.vipManager.vipData.hasAdFree && true != Global.vipManager.vipData.getAdFreeDailyReward || true == Global.vipManager.vipData.hasMonthly && true != Global.vipManager.vipData.getMonthlyDailyReward || true == Global.vipManager.vipData.hasPermanent && true != Global.vipManager.vipData.getPermanentDailyReward;
         this.claimAllBtn.interactable = hasReward;
         this.claimAllRedDot.active = hasReward;
-      },
-      getTimeUntilMidnight: function getTimeUntilMidnight() {
-        var now = Global.networkTimer;
-        var midnight = new Date(now);
-        midnight.setHours(24, 0, 0, 0);
-        var diffMs = midnight - now;
-        var seconds = Math.floor(diffMs / 1e3);
-        var hours = String(Math.floor(seconds / 3600)).padStart(2, "0");
-        var mins = String(Math.floor(seconds % 3600 / 60)).padStart(2, "0");
-        var secs = String(seconds % 60).padStart(2, "0");
-        return hours + ":" + mins + ":" + secs;
       },
       onClickGetFreeDailyReward: function onClickGetFreeDailyReward() {
         Global.vipManager.getFreeDailyReward();
@@ -32914,7 +33400,7 @@ window.__require = function e(t, n, r) {
       update: function update(dt) {
         if (Date.now() - this.timer >= BattleConfig.HEART_BEAT_ONE_SECOND) {
           this.timer = Date.now();
-          true == Global.vipManager.vipData.getFreeDailyReward && this.freeTimeLabel.getComponent("LabelUpdater").setString(this.getTimeUntilMidnight());
+          true == Global.vipManager.vipData.getFreeDailyReward && this.freeTimeLabel.getComponent("LabelUpdater").setString(Global.utils.getTimeUntilMidnight());
         }
       }
     });

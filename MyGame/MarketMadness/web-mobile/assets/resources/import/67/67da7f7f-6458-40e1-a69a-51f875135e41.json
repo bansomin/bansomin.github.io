@@ -1,0 +1,238 @@
+[
+  1,
+  [
+    "84DKpkIqpGOLprAbWUYht/"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "FLash",
+      "\nFLash.png\nsize: 512,323\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nImage/Flash/Flash_00000\n  rotate: true\n  xy: 269, 20\n  size: 123, 174\n  orig: 138, 218\n  offset: 8, 18\n  index: -1\nImage/Flash/Flash_00001\n  rotate: false\n  xy: 2, 112\n  size: 131, 209\n  orig: 138, 218\n  offset: 7, 0\n  index: -1\nImage/Flash/Flash_00002\n  rotate: false\n  xy: 135, 116\n  size: 132, 205\n  orig: 138, 218\n  offset: 6, 11\n  index: -1\nImage/Flash/Flash_00003\n  rotate: false\n  xy: 269, 145\n  size: 134, 176\n  orig: 138, 218\n  offset: 4, 42\n  index: -1\nImage/Flash/Flash_00004\n  rotate: false\n  xy: 2, 2\n  size: 135, 108\n  orig: 138, 218\n  offset: 1, 19\n  index: -1\nImage/Flash/Flash_00005\n  rotate: true\n  xy: 405, 183\n  size: 138, 105\n  orig: 138, 218\n  offset: 0, 25\n  index: -1\nImage/glow_00000\n  rotate: false\n  xy: 139, 68\n  size: 72, 46\n  orig: 78, 51\n  offset: 3, 3\n  index: -1\n",
+      [
+        "FLash.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "xaAoNE/8CxjAjaowMtPSoqCZUbA",
+          "spine": "3.8.99",
+          "x": -84,
+          "y": -144.39,
+          "width": 168,
+          "height": 403.96,
+          "images": "",
+          "audio": "E:/BIGBIG/键盘侠/战斗表现"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Flash",
+            "parent": "root"
+          },
+          {
+            "name": "Glow",
+            "parent": "Flash",
+            "y": -130.43
+          }
+        ],
+        "slots": [
+          {
+            "name": "Image/Flash/Flash_00000",
+            "bone": "Flash"
+          },
+          {
+            "name": "Image/glow_00000",
+            "bone": "Glow",
+            "attachment": "Image/glow_00000",
+            "blend": "additive"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Image/Flash/Flash_00000": {
+                "Image/Flash/Flash_00000": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 173,
+                  "height": 273
+                },
+                "Image/Flash/Flash_00001": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 173,
+                  "height": 273
+                },
+                "Image/Flash/Flash_00002": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 173,
+                  "height": 273
+                },
+                "Image/Flash/Flash_00003": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 173,
+                  "height": 273
+                },
+                "Image/Flash/Flash_00004": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 173,
+                  "height": 273
+                },
+                "Image/Flash/Flash_00005": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 173,
+                  "height": 273
+                }
+              },
+              "Image/glow_00000": {
+                "Image/glow_00000": {
+                  "y": 18.03,
+                  "width": 98,
+                  "height": 64
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "FLash": {
+            "slots": {
+              "Image/Flash/Flash_00000": {
+                "attachment": [
+                  {
+                    "name": "Image/Flash/Flash_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Image/Flash/Flash_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/Flash/Flash_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/Flash/Flash_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/Flash/Flash_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/Flash/Flash_00005"
+                  }
+                ]
+              },
+              "Image/glow_00000": {
+                "color": [
+                  {
+                    "color": "ffe66300"
+                  },
+                  {
+                    "time": 0.0667,
+                    "color": "fff4c2ff"
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "ffe66300"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "Flash": {
+                "rotate": [
+                  {
+                    "angle": -7.2
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": 1.32,
+                    "y": 145.5
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 1.2,
+                    "y": 1.359
+                  }
+                ]
+              },
+              "Glow": {
+                "rotate": [
+                  {
+                    "angle": 7.2
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": 11.45,
+                    "y": 34.9
+                  }
+                ],
+                "scale": [
+                  {
+                    "y": 2.551
+                  },
+                  {
+                    "time": 0.0667,
+                    "x": 1.127,
+                    "y": 3.647
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]
