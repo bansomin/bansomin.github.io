@@ -2849,6 +2849,16 @@
           "id": "task_reset_in",
           "content": "任务将在{0}后刷新",
           "valueList": ""
+        },
+        {
+          "id": "not_enough_coin",
+          "content": "金币不足",
+          "valueList": ""
+        },
+        {
+          "id": "payment_tip_1",
+          "content": "购买成功",
+          "valueList": ""
         }
       ]
     ]

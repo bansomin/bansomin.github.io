@@ -3558,10 +3558,14 @@ window.__require = function e(t, n, r) {
           default: null
         },
         _roleView: null,
-        mailRedDot: cc.Node
+        mailRedDot: cc.Node,
+        vipRedDot: cc.Node
       },
       updateMailRedDot: function updateMailRedDot() {
         this.mailRedDot.active = Global.mailManager.hasNewMail();
+      },
+      updateVipRedDot: function updateVipRedDot() {
+        this.vipRedDot.active = Global.vipManager.hasNewReward();
       },
       onAdded: function onAdded(args) {
         Global.utils.logMessage("BattleView onAdded:", args);
@@ -3591,6 +3595,7 @@ window.__require = function e(t, n, r) {
         this.chapterTitleNode.getComponent("RichTextUpdater").setContent("chapter_title_" + Global.chapterManager.curChapter);
         this.bestLevelNode.getComponent("RichTextUpdater").setContent("homepage_bestLevel", 0);
         this.updateMailRedDot();
+        this.updateVipRedDot();
       },
       onClickSettingsBtn: function onClickSettingsBtn() {
         Global.audio.playEffect("audio/click");
@@ -12483,15 +12488,15 @@ window.__require = function e(t, n, r) {
       destroy: false
     }, _UIConfigData[UIID.EquipmentItemTip] = {
       layer: _LayerManager.LayerType.UI,
-      prefab: "prefabs/gui/equipmentItemTip",
+      prefab: "prefabs/gui/equipment/equipmentItemTip",
       destroy: false
     }, _UIConfigData[UIID.EquipmentDecompose] = {
       layer: _LayerManager.LayerType.UI,
-      prefab: "prefabs/gui/equipmentDecompose",
+      prefab: "prefabs/gui/equipment/equipmentDecompose",
       destroy: false
     }, _UIConfigData[UIID.EquipMerge] = {
       layer: _LayerManager.LayerType.UI,
-      prefab: "prefabs/gui/equipMerge",
+      prefab: "prefabs/gui/equipment/equipMerge",
       destroy: false
     }, _UIConfigData[UIID.PowerChange] = {
       layer: _LayerManager.LayerType.UI,
@@ -12507,7 +12512,7 @@ window.__require = function e(t, n, r) {
       destroy: false
     }, _UIConfigData[UIID.EquipmentMergeResult] = {
       layer: _LayerManager.LayerType.UI,
-      prefab: "prefabs/gui/equipmentMergeResult",
+      prefab: "prefabs/gui/equipment/equipmentMergeResult",
       destroy: false
     }, _UIConfigData[UIID.PromotionPanel] = {
       layer: _LayerManager.LayerType.UI,
@@ -15096,6 +15101,13 @@ window.__require = function e(t, n, r) {
         }
         this.saveData();
       },
+      hasMail2Delete: function hasMail2Delete() {
+        for (var id in this.mailConfig) {
+          var config = this.mailConfig[id];
+          if (true == this.mailData[id].claimed && true == this.mailData[id].readed || null == config.rewards && true == this.mailData[id].readed) return true;
+        }
+        return false;
+      },
       claimMail: function claimMail(_config) {
         if (true == this.mailData[_config.id].claimed) return null;
         this.mailData[_config.id].claimed = true;
@@ -15123,6 +15135,14 @@ window.__require = function e(t, n, r) {
         }
         this.saveData();
         return _config.rewards;
+      },
+      hasMail2Claim: function hasMail2Claim() {
+        for (var id in this.mailConfig) {
+          var config = this.mailConfig[id];
+          if (true == this.mailData[id].claimed) continue;
+          if (null != config.rewards) return true;
+        }
+        return false;
       },
       claimAll: function claimAll() {
         var result = [];
@@ -15174,7 +15194,9 @@ window.__require = function e(t, n, r) {
         mailItemPrefab: cc.Prefab,
         mailItemPool: [ cc.Node ],
         mailItemList: [ cc.Node ],
-        container: cc.Node
+        container: cc.Node,
+        claimAllBtn: cc.Button,
+        deleteAllBtn: cc.Button
       },
       start: function start() {},
       onAdded: function onAdded(_args) {
@@ -15255,6 +15277,8 @@ window.__require = function e(t, n, r) {
         });
         var battlePageNode = Global.gui.get(gameConfig.UIID.BattlePagePanel);
         battlePageNode && battlePageNode.getComponent("BattlePageView").updateMailRedDot();
+        this.claimAllBtn.interactable = Global.mailManager.hasMail2Claim();
+        this.deleteAllBtn.interactable = Global.mailManager.hasMail2Delete();
       },
       onClickClose: function onClickClose() {
         cc.tween(this.node).stop();
@@ -18147,6 +18171,16 @@ window.__require = function e(t, n, r) {
     "use strict";
     cc._RF.push(module, "50b8d9XPSZG+qWBNCnghNRv", "RewardsView");
     "use strict";
+    function _extends() {
+      _extends = Object.assign || function(target) {
+        for (var i = 1; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) Object.prototype.hasOwnProperty.call(source, key) && (target[key] = source[key]);
+        }
+        return target;
+      };
+      return _extends.apply(this, arguments);
+    }
     var gameConfig = require("GameConfig");
     var DEFAULT_HEIGHT = 310;
     var OFF_HEIGHT = 110;
@@ -18267,6 +18301,7 @@ window.__require = function e(t, n, r) {
           this.skillName.getComponent("LabelUpdater").setString(Global.languageManager.t("talent_name_" + this._args.talentData.skill.i18n));
           this.skillDesc.getComponent("RichTextUpdater").setContent("talent_des_" + this._args.talentData.skill.i18n);
         } else if (this.rewardType == EnumType.REWARD_TYPE.ITEM) {
+          this._args.items = this.mergeItems(this._args.items);
           this.itemCoinContainer.active = true;
           this.itemNode.active = true;
           var svContent = this.scrollView.content;
@@ -18321,6 +18356,12 @@ window.__require = function e(t, n, r) {
           roleView.updateData(this.roleContainer, this.roleData);
           roleView.hideBar();
         }
+      },
+      mergeItems: function mergeItems(items) {
+        return Object.values(items.reduce(function(acc, item) {
+          acc[item.itemId] ? acc[item.itemId].count += item.count : acc[item.itemId] = _extends({}, item);
+          return acc;
+        }, {}));
       },
       getLastClerk: function getLastClerk() {
         var startIndex = this._args.talentData.level - 1;
@@ -20841,6 +20882,94 @@ window.__require = function e(t, n, r) {
   }, {
     GameConfig: "GameConfig"
   } ],
+  ScrollBg: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "50f76z2ANlNX7odIOvQH/mS", "ScrollBg");
+    "use strict";
+    function _createForOfIteratorHelperLoose(o, allowArrayLike) {
+      var it;
+      if ("undefined" === typeof Symbol || null == o[Symbol.iterator]) {
+        if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && "number" === typeof o.length) {
+          it && (o = it);
+          var i = 0;
+          return function() {
+            if (i >= o.length) return {
+              done: true
+            };
+            return {
+              done: false,
+              value: o[i++]
+            };
+          };
+        }
+        throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+      }
+      it = o[Symbol.iterator]();
+      return it.next.bind(it);
+    }
+    function _unsupportedIterableToArray(o, minLen) {
+      if (!o) return;
+      if ("string" === typeof o) return _arrayLikeToArray(o, minLen);
+      var n = Object.prototype.toString.call(o).slice(8, -1);
+      "Object" === n && o.constructor && (n = o.constructor.name);
+      if ("Map" === n || "Set" === n) return Array.from(o);
+      if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+    }
+    function _arrayLikeToArray(arr, len) {
+      (null == len || len > arr.length) && (len = arr.length);
+      for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+      return arr2;
+    }
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        tileSprite: cc.Prefab,
+        scrollSpeed: 50,
+        tileWidth: 238,
+        tileHeight: 216,
+        xSpacing: 300,
+        ySpacing: 280,
+        diagonalAngle: 30
+      },
+      onLoad: function onLoad() {
+        this.tiles = [];
+        this.initStaggeredGrid();
+        var rad = this.diagonalAngle * Math.PI / 180;
+        this.xSpeed = this.scrollSpeed * Math.sin(rad);
+        this.ySpeed = this.scrollSpeed * Math.cos(rad);
+      },
+      initStaggeredGrid: function initStaggeredGrid() {
+        var screenSize = cc.view.getVisibleSize();
+        var coverWidth = 2 * screenSize.width;
+        var coverHeight = 2 * screenSize.height;
+        var cols = Math.ceil(coverWidth / this.xSpacing) + 2;
+        var rows = Math.ceil(coverHeight / this.ySpacing) + 2;
+        for (var row = 0; row < rows; row++) for (var col = 0; col < cols; col++) {
+          var shouldShow = row % 2 === 1 ? col % 2 === 1 : col % 2 === 0;
+          if (!shouldShow) continue;
+          var x = col * this.xSpacing - coverWidth / 2;
+          var y = row * this.ySpacing - coverHeight / 2;
+          var tileNode = cc.instantiate(this.tileSprite);
+          tileNode.setPosition(x, y);
+          this.node.addChild(tileNode);
+          this.tiles.push(tileNode);
+        }
+      },
+      update: function update(dt) {
+        var screenSize = cc.view.getVisibleSize();
+        for (var _iterator = _createForOfIteratorHelperLoose(this.tiles), _step; !(_step = _iterator()).done; ) {
+          var tile = _step.value;
+          tile.x += this.xSpeed * dt;
+          tile.y += this.ySpeed * dt;
+          if (tile.x > screenSize.width / 2 + this.xSpacing || tile.y > screenSize.height / 2 + this.ySpacing) {
+            tile.x = -screenSize.width / 2 - this.xSpacing;
+            tile.y = -screenSize.height / 2 - this.ySpacing;
+          }
+        }
+      }
+    });
+    cc._RF.pop();
+  }, {} ],
   SettingsView: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "b2aa8cimtZA6J8aNDTwym4e", "SettingsView");
@@ -21452,6 +21581,7 @@ window.__require = function e(t, n, r) {
         var _this = this;
         this.roleData = _args.roleData;
         this.showBuyCoin = _args.showBuyCoin;
+        this.showBuyDiamond = _args.showBuyDiamond;
         for (var i = 0; i < this.diamondCountLabelList.length; i++) {
           this.diamondCountLabelList[i].getComponent("LabelUpdater").setString("" + Global.utils.formatNumberWithUnit(Global.shopManager.DIAMOND_VALUE_LIST[i]));
           this.diamondPriceLabelList[i].getComponent("LabelUpdater").setString("$" + Global.utils.formatNumberWithUnit(Global.shopManager.DIAMOND_PRICE_LIST[i]));
@@ -21876,6 +22006,7 @@ window.__require = function e(t, n, r) {
         this.handleResult(result, Global.shopManager.RED, _passAni);
       },
       onClickDiamondCard: function onClickDiamondCard(_event, _index) {
+        Global.gui.toast(Global.languageManager.t("payment_tip_1"));
         var isFirst = this.diamondFirst[_index];
         var itemConfig, itemData, args;
         itemConfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
@@ -21897,6 +22028,7 @@ window.__require = function e(t, n, r) {
         Global.gui.open(gameConfig.UIID.RewardsPanel, args);
       },
       onClickCoinCard: function onClickCoinCard(_event, _index) {
+        Global.gui.toast(Global.languageManager.t("payment_tip_1"));
         var itemConfig, itemData, args;
         itemConfig = Global.bagManager.getItemConfig(Global.bagManager.COIN_ITEM_ID);
         itemData = new ItemData();
@@ -21988,6 +22120,14 @@ window.__require = function e(t, n, r) {
           opacity: 255
         }).start();
       },
+      showDiamond: function showDiamond() {
+        this.showBuyDiamond = true;
+        this.onEnable();
+      },
+      showCoin: function showCoin() {
+        this.showBuyCoin = true;
+        this.onEnable();
+      },
       onEnable: function onEnable() {
         this.resetPaymentNode();
         if (true == this.showBuyCoin) {
@@ -21996,6 +22136,13 @@ window.__require = function e(t, n, r) {
           this.toggleBtn_equipment.isChecked = false;
           this.toggleBtn_diamond.isChecked = true;
           this.diamondScrollView.scrollToBottom();
+          this.showPaymentAni();
+        } else if (true == this.showBuyDiamond) {
+          this.equipmentNode.active = false;
+          this.diamondNode.active = true;
+          this.toggleBtn_equipment.isChecked = false;
+          this.toggleBtn_diamond.isChecked = true;
+          this.diamondScrollView.scrollToTop();
           this.showPaymentAni();
         } else {
           this.equipmentNode.active = true;
@@ -32073,6 +32220,26 @@ window.__require = function e(t, n, r) {
       onClickStamina: function onClickStamina() {
         Global.gui.open(gameConfig.UIID.StaminaPanel);
       },
+      onClickDiamond: function onClickDiamond() {
+        var shopNode = Global.gui.get(gameConfig.UIID.ShopPagePanel);
+        if (shopNode) shopNode.getComponent("ShopPanel").showDiamond(); else {
+          Global.gui.open(gameConfig.UIID.ShopPagePanel, {
+            showBuyDiamond: true
+          });
+          var homePageNode = Global.gui.get(gameConfig.UIID.HomePagePanel);
+          homePageNode && homePageNode.getComponent("HomePageView").updateToggleState(0, true);
+        }
+      },
+      onClickCoin: function onClickCoin() {
+        var shopNode = Global.gui.get(gameConfig.UIID.ShopPagePanel);
+        if (shopNode) shopNode.getComponent("ShopPanel").showCoin(); else {
+          Global.gui.open(gameConfig.UIID.ShopPagePanel, {
+            showBuyCoin: true
+          });
+          var homePageNode = Global.gui.get(gameConfig.UIID.HomePagePanel);
+          homePageNode && homePageNode.getComponent("HomePageView").updateToggleState(0, true);
+        }
+      },
       updateTopUICallback: function updateTopUICallback() {
         this.staminaLabel.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(Global.roleData.currentStamina) + "/" + Global.utils.formatNumberWithUnit(Global.roleData.data.stamina_max));
         this.coinLabel.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(Global.roleData.coin));
@@ -32651,6 +32818,7 @@ window.__require = function e(t, n, r) {
     utils.formatNumberWithENUnit = function(num) {
       var units = [ "", "K", "M", "B", "T" ];
       var unitIndex = 0;
+      if (Math.abs(num) < 1e3) return num;
       while (Math.abs(num) >= 1e3 && unitIndex < units.length - 1) {
         num /= 1e3;
         unitIndex++;
@@ -32667,6 +32835,7 @@ window.__require = function e(t, n, r) {
     utils.formatNumberWithCNUnit = function(num) {
       var units = [ "", "\u4e07", "\u4ebf", "\u4e07\u4ebf" ];
       var unitIndex = 0;
+      if (Math.abs(num) < 1e4) return num;
       while (Math.abs(num) >= 1e4 && unitIndex < units.length - 1) {
         num /= 1e4;
         unitIndex++;
@@ -33071,6 +33240,9 @@ window.__require = function e(t, n, r) {
         }
         this.saveData();
       },
+      hasNewReward: function hasNewReward() {
+        return false == this.vipData.getFreeDailyReward;
+      },
       getFreeDailyReward: function getFreeDailyReward() {
         Global.roleData.updateDiamond(this.FREE_DAILY_DIAMOND_COUNT);
         this.vipData.getFreeDailyReward = true;
@@ -33248,6 +33420,8 @@ window.__require = function e(t, n, r) {
         var hasReward = true != Global.vipManager.vipData.getFreeDailyReward || true == Global.vipManager.vipData.hasAdFree && true != Global.vipManager.vipData.getAdFreeDailyReward || true == Global.vipManager.vipData.hasMonthly && true != Global.vipManager.vipData.getMonthlyDailyReward || true == Global.vipManager.vipData.hasPermanent && true != Global.vipManager.vipData.getPermanentDailyReward;
         this.claimAllBtn.interactable = hasReward;
         this.claimAllRedDot.active = hasReward;
+        var battlePageNode = Global.gui.get(gameConfig.UIID.BattlePagePanel);
+        battlePageNode && battlePageNode.getComponent("BattlePageView").updateMailRedDot();
       },
       onClickGetFreeDailyReward: function onClickGetFreeDailyReward() {
         Global.vipManager.getFreeDailyReward();
@@ -33264,6 +33438,7 @@ window.__require = function e(t, n, r) {
       onClickAdFree: function onClickAdFree() {
         if (true != Global.vipManager.vipData.hasAdFree) {
           Global.vipManager.getAdFree();
+          Global.gui.toast(Global.languageManager.t("payment_tip_1"));
           this.updateUI();
           var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
           var diamondItemDataAdFree = new ItemData();
@@ -33289,6 +33464,7 @@ window.__require = function e(t, n, r) {
       onClickMonthly: function onClickMonthly() {
         if (true != Global.vipManager.vipData.hasMonthly) {
           Global.vipManager.getMonthly();
+          Global.gui.toast(Global.languageManager.t("payment_tip_1"));
           this.updateUI();
           var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
           var diamondItemDataMonthly = new ItemData();
@@ -33318,6 +33494,7 @@ window.__require = function e(t, n, r) {
       onClickPermanent: function onClickPermanent() {
         if (true != Global.vipManager.vipData.hasPermanent) {
           Global.vipManager.getPermanent();
+          Global.gui.toast(Global.languageManager.t("payment_tip_1"));
           this.updateUI();
           var diamondItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.DIAMOND_ITEM_ID);
           var diamondItemDataPermanent = new ItemData();
@@ -33955,4 +34132,4 @@ window.__require = function e(t, n, r) {
     exports.default = NewClass;
     cc._RF.pop();
   }, {} ]
-}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);
+}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "ScrollBg", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);
