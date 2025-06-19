@@ -1776,6 +1776,11 @@
           "valueList": ""
         },
         {
+          "id": "equipmentMerge_autoMerge_btn",
+          "content": "一键合成",
+          "valueList": ""
+        },
+        {
           "id": "equipment_decompose_downgrade_tip",
           "content": "装备降品将返回所有材料并将装备等级重置为1级，品质重置为初始",
           "valueList": ""

@@ -8023,7 +8023,9 @@ window.__require = function e(t, n, r) {
         bagItemPool: [ cc.Node ],
         bagItemList: [ cc.Node ],
         container: cc.Node,
-        mergeBtn: cc.Button
+        mergeBtn: cc.Button,
+        autoMergeBtn: cc.Button,
+        autoMergeRedDot: cc.Node
       },
       start: function start() {},
       hideItems: function hideItems() {
@@ -8381,6 +8383,20 @@ window.__require = function e(t, n, r) {
           item.equipmentConfig ? this.generateEquipmentItem(item, i) : this.generateBagItem(item, i);
         }
         this.container.height = 210 * Math.ceil(this.itemList.length / 5) + 30;
+        this.autoMergeBtn.interactable = null != Global.equipmentManager.hasAutoCombine();
+        this.autoMergeRedDot.active = this.autoMergeBtn.interactable;
+      },
+      onClickAutoMerge: function onClickAutoMerge() {
+        var equipmentData = Global.equipmentManager.autoCombine(true);
+        this.updateEquipmentsAndMaterials();
+        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateEquipments();
+        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateSlotEquipment();
+        var args = {};
+        args.equipmentData = equipmentData;
+        args.roleData = this.roleData;
+        Global.gui.open(gameConfig.UIID.EquipmentMergeResult, args);
+        var homePageNode = Global.gui.get(gameConfig.UIID.HomePagePanel);
+        homePageNode && homePageNode.getComponent("HomePageView").updateEquipmentRedDot();
       },
       onClickClose: function onClickClose() {
         Global.gui.remove(gameConfig.UIID.EquipMerge);
@@ -10533,6 +10549,50 @@ window.__require = function e(t, n, r) {
         result = result.concat(materials);
         return result;
       },
+      getEquipmentListByRarity: function getEquipmentListByRarity(_rarity) {
+        return Global.roleData.bag[EnumType.BAG_TYPE.EQUIPMENT][_rarity];
+      },
+      combineEquipment: function combineEquipment(_rarity, _needCombine) {
+        var equipmentList = this.getEquipmentListByRarity(_rarity);
+        var index = 0;
+        while (index < equipmentList.length) {
+          var equipmentItem = equipmentList[index];
+          var materials = this.getUpgradeCondition(equipmentItem);
+          var materialItems = this.getMaterialsFromBag(materials, equipmentItem, _rarity);
+          if (materialItems.length >= materials.length) return true != _needCombine || this.upgrade(equipmentItem, materialItems, Global.roleData);
+          index++;
+        }
+        return null;
+      },
+      hasAutoCombine: function hasAutoCombine() {
+        return this.autoCombine(false);
+      },
+      autoCombine: function autoCombine(_needCombine) {
+        var result;
+        result = this.combineEquipment(EnumType.RARE_TYPE_EQUIPMENT.COMMON, _needCombine);
+        if (null != result) return result;
+        result = this.combineEquipment(EnumType.RARE_TYPE_EQUIPMENT.UNCOMMON, _needCombine);
+        if (null != result) return result;
+        result = this.combineEquipment(EnumType.RARE_TYPE_EQUIPMENT.RARE, _needCombine);
+        if (null != result) return result;
+        return null;
+      },
+      getMaterialsFromBag: function getMaterialsFromBag(_materials, _currentEquipmentItem, _rarity) {
+        var result = [];
+        var equipmentItemList = this.getEquipmentListByRarity(_rarity);
+        for (var j = 0; j < _materials.length; j++) {
+          var materialItem = _materials[j];
+          for (var i = 0; i < equipmentItemList.length; i++) {
+            var item = equipmentItemList[i];
+            var index = result.indexOf(item);
+            if (item != _currentEquipmentItem && item.equipmentId == materialItem.key && item.rarity == materialItem.rarity && index < 0) {
+              result.push(item);
+              break;
+            }
+          }
+        }
+        return result;
+      },
       getUpgradeCondition: function getUpgradeCondition(_equipment) {
         var result = [];
         null == _equipment && console.log("1");
@@ -10634,6 +10694,7 @@ window.__require = function e(t, n, r) {
         _roleData.updateStaticData();
         var storageData = _roleData.getEquipmentStorageData();
         Global.storage.set(gameConfig.COMMON_KEYS.EQUIPMENT_DATA, storageData);
+        return _equipment;
       },
       updateEquipmentProperty: function updateEquipmentProperty(_equipment) {
         var enhancementPointItem = this.enhancementPointsConfigDict[_equipment.level];
@@ -10890,7 +10951,8 @@ window.__require = function e(t, n, r) {
         sortByRarityBtn: cc.Node,
         sortByLevelBtn: cc.Node,
         sortByTypeBtn: cc.Node,
-        roleContainer: cc.Node
+        roleContainer: cc.Node,
+        mergeRedDot: cc.Node
       },
       onAdded: function onAdded(_args) {
         this.roleData = _args.roleData;
@@ -11063,6 +11125,7 @@ window.__require = function e(t, n, r) {
         }
         this.equipmentContainer.height = 210 * Math.ceil(this.itemList.length / 5) + 30;
         false != _updatePower && this.updateInfo(_dontShowAni);
+        this.mergeRedDot.active = null != Global.equipmentManager.hasAutoCombine();
       }
     });
     cc._RF.pop();
@@ -12882,7 +12945,8 @@ window.__require = function e(t, n, r) {
       properties: {
         _curUIID: null,
         toggleList: [ cc.Toggle ],
-        shopRedDot: cc.Node
+        shopRedDot: cc.Node,
+        equipmentRedDot: cc.Node
       },
       onEnable: function onEnable() {
         Global.audio.playMusicLoop("audio/music");
@@ -12890,9 +12954,13 @@ window.__require = function e(t, n, r) {
         this.onClickTogglesBtn(null, 2);
         Global.mailManager.init();
         this.updateShopRedDot();
+        this.updateEquipmentRedDot();
       },
       updateShopRedDot: function updateShopRedDot() {
         this.shopRedDot.active = Global.shopManager.hasEquipmentRedDot() || Global.shopManager.hasPaymentRedDot();
+      },
+      updateEquipmentRedDot: function updateEquipmentRedDot() {
+        this.equipmentRedDot.active = null != Global.equipmentManager.hasAutoCombine();
       },
       updateToggleState: function updateToggleState(_index, _dontShowUI) {
         for (var i = 0; i < this.toggleList.length; i++) {
@@ -21620,7 +21688,7 @@ window.__require = function e(t, n, r) {
         equipmentItem.getComponent("EquipmentItem").setData(_equipmentData, Global.roleData);
         this.equipmentContainer.addChild(equipmentItem);
         equipmentItem.opacity = 0;
-        equipmentItem.rotation = 5;
+        equipmentItem.angle = 5;
         return equipmentItem;
       },
       clearItems: function clearItems() {
@@ -21753,7 +21821,7 @@ window.__require = function e(t, n, r) {
           var equipmentItem = this.generateEquipmentItem(equipmentData);
           cc.tween(equipmentItem).delay(.1 * i + .2).to(.2, {
             opacity: 255,
-            rotation: 0
+            angle: 0
           }).start();
         }
         this.updateCountdown();
@@ -22075,25 +22143,25 @@ window.__require = function e(t, n, r) {
       showEquipmentAni: function showEquipmentAni() {
         this.title_1.opacity = 0;
         this.node_1.opacity = 0;
-        this.node_1.rotation = 5;
+        this.node_1.angle = 5;
         this.node_2.opacity = 0;
-        this.node_2.rotation = 5;
+        this.node_2.angle = 5;
         this.node_3.opacity = 0;
-        this.node_3.rotation = 5;
+        this.node_3.angle = 5;
         cc.tween(this.title_1).to(.2, {
           opacity: 255
         }).start();
         cc.tween(this.node_1).delay(.1).to(.2, {
           opacity: 255,
-          rotation: 0
+          angle: 0
         }).start();
         cc.tween(this.node_2).delay(.2).to(.2, {
           opacity: 255,
-          rotation: 0
+          angle: 0
         }).start();
         cc.tween(this.node_3).delay(.3).to(.2, {
           opacity: 255,
-          rotation: 0
+          angle: 0
         }).start();
       },
       resetPaymentNode: function resetPaymentNode() {
