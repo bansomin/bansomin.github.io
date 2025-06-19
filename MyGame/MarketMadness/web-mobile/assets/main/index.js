@@ -91,7 +91,6 @@ window.__require = function e(t, n, r) {
           if (stepCount < steps) {
             stepCount++;
             _this.currentValue += increment;
-            console.log("this.currentValue: " + _this.currentValue);
             _this.label.getComponent("LabelUpdater").setString(("" != _this.currentUnit ? _this.currentValue.toFixed(2) : Math.floor(_this.currentValue).toString()) + _this.currentUnit);
           } else {
             _this.currentValue = _this.targetValue;
@@ -10555,6 +10554,7 @@ window.__require = function e(t, n, r) {
       combineEquipment: function combineEquipment(_rarity, _needCombine) {
         var equipmentList = this.getEquipmentListByRarity(_rarity);
         var index = 0;
+        if (null == equipmentList) return null;
         while (index < equipmentList.length) {
           var equipmentItem = equipmentList[index];
           var materials = this.getUpgradeCondition(equipmentItem);
@@ -14739,6 +14739,32 @@ window.__require = function e(t, n, r) {
   }, {
     GameConfig: "GameConfig"
   } ],
+  LimitClick: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "d3bb4QR9wRKmIFiYuu2JhB0", "LimitClick");
+    "use strict";
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        _startTimer: 0,
+        _allowClick: true
+      },
+      onLoad: function onLoad() {
+        this.time = 300;
+      },
+      clickTime: function clickTime(time) {
+        void 0 != time && null != time && (this.time = time);
+        if (false === this._allowClick) return false;
+        this._startTimer = Date.now();
+        this._allowClick = false;
+        return true;
+      },
+      update: function update() {
+        Date.now() - this._startTimer >= this.time && (this._allowClick = true);
+      }
+    });
+    cc._RF.pop();
+  }, {} ],
   LoadingView: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "44f00YBDdFLZ4eGM5yNxNKA", "LoadingView");
@@ -20992,47 +21018,49 @@ window.__require = function e(t, n, r) {
       extends: cc.Component,
       properties: {
         tileSprite: cc.Prefab,
-        scrollSpeed: 50,
+        scrollSpeed: 100,
         tileWidth: 238,
         tileHeight: 216,
         xSpacing: 300,
-        ySpacing: 280,
+        ySpacing: 250,
         diagonalAngle: 30
       },
       onLoad: function onLoad() {
         this.tiles = [];
-        this.initStaggeredGrid();
-        var rad = this.diagonalAngle * Math.PI / 180;
-        this.xSpeed = this.scrollSpeed * Math.sin(rad);
-        this.ySpeed = this.scrollSpeed * Math.cos(rad);
+        this.startTime = Date.now();
+        this.initGrid();
       },
-      initStaggeredGrid: function initStaggeredGrid() {
+      initGrid: function initGrid() {
         var screenSize = cc.view.getVisibleSize();
-        var coverWidth = 2 * screenSize.width;
-        var coverHeight = 2 * screenSize.height;
-        var cols = Math.ceil(coverWidth / this.xSpacing) + 2;
-        var rows = Math.ceil(coverHeight / this.ySpacing) + 2;
-        for (var row = 0; row < rows; row++) for (var col = 0; col < cols; col++) {
-          var shouldShow = row % 2 === 1 ? col % 2 === 1 : col % 2 === 0;
-          if (!shouldShow) continue;
-          var x = col * this.xSpacing - coverWidth / 2;
-          var y = row * this.ySpacing - coverHeight / 2;
-          var tileNode = cc.instantiate(this.tileSprite);
-          tileNode.setPosition(x, y);
-          this.node.addChild(tileNode);
-          this.tiles.push(tileNode);
+        var gridWidth = Math.ceil(1.5 * screenSize.width / this.xSpacing) + 1;
+        var gridHeight = Math.ceil(1.5 * screenSize.height / this.ySpacing) + 1;
+        for (var row = 0; row < gridHeight; row++) for (var col = 0; col < gridWidth; col++) if (row % 2 === 1 ? col % 2 === 1 : col % 2 === 0) {
+          var tile = cc.instantiate(this.tileSprite);
+          tile.initialX = col * this.xSpacing - gridWidth * this.xSpacing / 2;
+          tile.initialY = row * this.ySpacing - gridHeight * this.ySpacing / 2;
+          this.node.addChild(tile);
+          this.tiles.push(tile);
         }
       },
-      update: function update(dt) {
+      update: function update() {
+        var elapsed = (Date.now() - this.startTime) / 1e3;
+        var rad = this.diagonalAngle * Math.PI / 180;
         var screenSize = cc.view.getVisibleSize();
+        var totalDeltaX = this.scrollSpeed * Math.sin(rad) * elapsed;
+        var totalDeltaY = this.scrollSpeed * Math.cos(rad) * elapsed;
+        var cycleHeight = 1.5 * (screenSize.height + this.ySpacing);
+        var cycleWidth = cycleHeight * Math.tan(rad);
+        var resetThresholdY = .8 * cycleHeight;
+        var resetThresholdX = .8 * cycleWidth;
         for (var _iterator = _createForOfIteratorHelperLoose(this.tiles), _step; !(_step = _iterator()).done; ) {
           var tile = _step.value;
-          tile.x += this.xSpeed * dt;
-          tile.y += this.ySpeed * dt;
-          if (tile.x > screenSize.width / 2 + this.xSpacing || tile.y > screenSize.height / 2 + this.ySpacing) {
-            tile.x = -screenSize.width / 2 - this.xSpacing;
-            tile.y = -screenSize.height / 2 - this.ySpacing;
+          var theoryX = tile.initialX + totalDeltaX;
+          var theoryY = tile.initialY + totalDeltaY;
+          if (theoryY > resetThresholdY) {
+            theoryY -= cycleHeight;
+            theoryX -= cycleWidth;
           }
+          tile.setPosition(theoryX, theoryY);
         }
       }
     });
@@ -29855,6 +29883,7 @@ window.__require = function e(t, n, r) {
         var _this2 = this;
         if (true == this.talentParent.needWait) return;
         if (this.lv >= this.maxLv) return;
+        if (false == this.talentParent.limitClick.clickTime()) return;
         if (Global.roleData.coin < this.cost) {
           Global.gui.toast(Global.languageManager.t("not_enough_coin"));
           return;
@@ -30573,6 +30602,7 @@ window.__require = function e(t, n, r) {
     "use strict";
     var gameConfig = require("GameConfig");
     var EnumType = require("EnumType");
+    var ItemData = require("ItemData");
     cc.Class({
       extends: cc.Component,
       properties: {
@@ -30587,6 +30617,9 @@ window.__require = function e(t, n, r) {
         midRewardItem: cc.Node,
         endRewardItem: cc.Node,
         roleContainer: cc.Node
+      },
+      onLoad: function onLoad() {
+        this.limitClick = this.node.getComponent("LimitClick");
       },
       onAdded: function onAdded(_args) {
         var _this = this;
@@ -30915,7 +30948,8 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     EnumType: "EnumType",
-    GameConfig: "GameConfig"
+    GameConfig: "GameConfig",
+    ItemData: "ItemData"
   } ],
   TalentRewardItem: [ function(require, module, exports) {
     "use strict";
@@ -34200,4 +34234,4 @@ window.__require = function e(t, n, r) {
     exports.default = NewClass;
     cc._RF.pop();
   }, {} ]
-}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "ScrollBg", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);
+}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "ScrollBg", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "LimitClick", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);
