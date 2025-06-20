@@ -3732,6 +3732,7 @@ window.__require = function e(t, n, r) {
           Global.utils.logMessage("\u521b\u5efa\u65b0\u89d2\u8272 " + roleData.roleId);
           this._roleView = roleNode.getComponent("RoleView");
           this._roleView.direction = gameConfig.DIRECTION_ENUM.RIGHT;
+          this.roleRootNode.addChild(roleNode);
         }
         true;
         var levelData = Global.levelManager.getLevelDataByLevel(level);
@@ -3758,7 +3759,6 @@ window.__require = function e(t, n, r) {
         setTimeout(function() {
           this._roleView.idle();
         }.bind(this));
-        this.roleRootNode.addChild(roleNode);
         this.autoRoleRootNode.addChild(autoRoleNode);
         this.addGUI();
         this._roleView.hideBar();
@@ -4188,6 +4188,8 @@ window.__require = function e(t, n, r) {
         result ? this._roleView._roleData.defeatEnemy() : this._autoRoleView._roleData.defeatEnemy();
         this._roleView.stopFight();
         this._autoRoleView.stopFight();
+        this._roleView.updateAllUI();
+        this._autoRoleView.updateAllUI();
         cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.BattleTime, {
           cleanTime: false,
           battleTimeFlag: false
@@ -8340,9 +8342,11 @@ window.__require = function e(t, n, r) {
         return resultList;
       },
       getSortPoints: function getSortPoints(_equipmentData, _currentItemData) {
-        var result = _currentItemData.equipmentConfig ? 100 : 0;
-        result += _currentItemData.slotPos == EnumType.EQUIPMENT_SLOT_POS.NONE ? 0 : 10;
+        var result = _currentItemData.equipmentConfig ? 1e3 : 0;
+        result += _currentItemData.slotPos == EnumType.EQUIPMENT_SLOT_POS.NONE ? 0 : 100;
+        result += 10 * (3 - _currentItemData.slot);
         result += _currentItemData.rarity;
+        result += _currentItemData.equipmentConfig ? _currentItemData.equipmentConfig.id / 1e4 : _currentItemData.itemConfig.id / 1e4;
         if (null != _equipmentData) {
           var conditionList = Global.equipmentManager.getUpgradeCondition(_equipmentData);
           for (var i = 0; i < conditionList.length; i++) {
@@ -10952,7 +10956,8 @@ window.__require = function e(t, n, r) {
         sortByLevelBtn: cc.Node,
         sortByTypeBtn: cc.Node,
         roleContainer: cc.Node,
-        mergeRedDot: cc.Node
+        mergeRedDot: cc.Node,
+        _roleView: null
       },
       onAdded: function onAdded(_args) {
         this.roleData = _args.roleData;
@@ -10962,12 +10967,24 @@ window.__require = function e(t, n, r) {
         this.sortByRarityBtn.active = true;
         this.sortByLevelBtn.acitve = false;
         this.sortByTypeBtn.active = false;
-        var roleView = this.roleNode.getComponent("RoleView");
-        roleView.updateData(this.roleContainer, this.roleData);
-        roleView.hideBar();
+        this.createRole();
         this.roleData.lastPower = this.roleData.getPower();
       },
       onBeforeRemove: function onBeforeRemove(args) {},
+      createRole: function createRole() {
+        if (this._roleView) this._roleView.idle(); else {
+          this.roleNode.removeAllChildren();
+          var rolePreb = Global.res.getRes(gameConfig.PRELOADCONFIG.rolePreb.path);
+          var role = cc.instantiate(rolePreb);
+          var roleView = this._roleView = role.getComponent("RoleView");
+          roleView.updateData(this.roleContainer, this.roleData);
+          roleView.hideBar();
+          setTimeout(function() {
+            roleView && roleView.idle();
+          }, 500);
+          this.roleNode.addChild(role);
+        }
+      },
       onClickMerge: function onClickMerge() {
         Global.gui.open(gameConfig.UIID.EquipMerge, {
           roleData: this.roleData
@@ -11071,25 +11088,25 @@ window.__require = function e(t, n, r) {
         switch (this.currentSortType) {
          case EnumType.SORT_TYPE.RARITY:
           result = list.sort(function(a, b) {
-            var pointA = null != a.equipmentConfig ? 1e3 + 10 * a.level + (3 - a.slot) : 3 - a.slot;
-            var pointB = null != b.equipmentConfig ? 1e3 + 10 * b.level + (3 - b.slot) : 3 - b.slot;
-            return 100 * b.rarity + pointB - (100 * a.rarity + pointA);
+            var pointA = null != a.equipmentConfig ? 1e4 + 10 * a.level + 100 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 100 * (3 - a.slot) + a.itemConfig.id / 1e3;
+            var pointB = null != b.equipmentConfig ? 1e4 + 10 * b.level + 100 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 100 * (3 - b.slot) + b.itemConfig.id / 1e3;
+            return 1e3 * b.rarity + pointB - (1e3 * a.rarity + pointA);
           });
           break;
 
          case EnumType.SORT_TYPE.LEVEL:
           result = list.sort(function(a, b) {
-            var pointA = null != a.equipmentConfig ? 1e3 + 100 * a.level + (3 - a.slot) : 3 - a.slot;
-            var pointB = null != b.equipmentConfig ? 1e3 + 100 * b.level + (3 - b.slot) : 3 - b.slot;
-            return 10 * b.rarity + pointB - (10 * a.rarity + pointA);
+            var pointA = null != a.equipmentConfig ? 1e4 + 1e3 * a.level + 10 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 10 * (3 - a.slot) + a.itemConfig.id / 1e3;
+            var pointB = null != b.equipmentConfig ? 1e4 + 1e3 * b.level + 10 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 10 * (3 - b.slot) + b.itemConfig.id / 1e3;
+            return 100 * b.rarity + pointB - (100 * a.rarity + pointA);
           });
           break;
 
          case EnumType.SORT_TYPE.TYPE:
           result = list.sort(function(a, b) {
-            var pointA = null != a.equipmentConfig ? 1e3 + a.level + 100 * (3 - a.slot) : 100 * (3 - a.slot);
-            var pointB = null != b.equipmentConfig ? 1e3 + b.level + 100 * (3 - b.slot) : 100 * (3 - b.slot);
-            return 10 * b.rarity + pointB - (10 * a.rarity + pointA);
+            var pointA = null != a.equipmentConfig ? 1e4 + 10 * a.level + 1e3 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 1e3 * (3 - a.slot) + a.itemConfig.id / 1e3;
+            var pointB = null != b.equipmentConfig ? 1e4 + 10 * b.level + 1e3 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 1e3 * (3 - b.slot) + b.itemConfig.id / 1e3;
+            return 100 * b.rarity + pointB - (100 * a.rarity + pointA);
           });
         }
         return result;
@@ -12963,6 +12980,8 @@ window.__require = function e(t, n, r) {
         this.equipmentRedDot.active = null != Global.equipmentManager.hasAutoCombine();
       },
       updateToggleState: function updateToggleState(_index, _dontShowUI) {
+        if (this.lastIndex == _index) return;
+        this.lastIndex = _index;
         for (var i = 0; i < this.toggleList.length; i++) {
           var toggle = this.toggleList[i];
           toggle.isChecked = i == _index;
@@ -16452,16 +16471,23 @@ window.__require = function e(t, n, r) {
         this.itemList = _args.itemList;
         this.boxType = _args.boxType;
         this.currentIndex = 0;
-        this.reset();
         this.timer = 0;
       },
       reset: function reset() {
+        cc.Tween.stopAllByTarget(this.equipmentItem);
+        cc.Tween.stopAllByTarget(this.bagItem);
+        cc.Tween.stopAllByTarget(this.itemName);
         this.itemName.opacity = 0;
         this.equipmentItem.opacity = 0;
         this.bagItem.opacity = 0;
         this.boxGlow.node.active = false;
+        this.box.clearTrack(0);
+        this.box.setToSetupPose();
+        this.box.updateWorldTransform();
+        this.box.setEventListener(null);
       },
       onEnable: function onEnable() {
+        this.reset();
         var currentItem = this.itemList[this.currentIndex];
         this.showAni(currentItem);
       },
@@ -16481,9 +16507,6 @@ window.__require = function e(t, n, r) {
         }
         var boxAniName;
         boxAniName = this.boxType == Global.shopManager.RED || this.boxType == Global.shopManager.ORANGE ? "OpenBox_3" : this.boxType == Global.shopManager.PURPLE ? "OpenBox_1" : "OpenBox_2";
-        this.box.clearTrack(0);
-        this.box.setToSetupPose();
-        this.box.updateWorldTransform();
         this.box.setAnimation(0, boxAniName, false);
         this.box.setEventListener(function(trackEntry, event) {
           if ("Start" === event.data.name) {
@@ -16506,10 +16529,10 @@ window.__require = function e(t, n, r) {
       },
       onClickContinue: function onClickContinue() {
         if (Date.now() - this.timer < 500) return;
+        this.reset();
         this.timer = Date.now();
         this.currentIndex++;
         if (this.currentIndex < this.itemList.length) {
-          this.reset();
           var currentItem = this.itemList[this.currentIndex];
           this.showAni(currentItem);
         } else {
@@ -16526,6 +16549,7 @@ window.__require = function e(t, n, r) {
         }
       },
       onClickSkip: function onClickSkip() {
+        this.reset();
         Global.gui.remove(gameConfig.UIID.OpenBox);
         var args = {};
         if (this.itemList.length > 1) {
@@ -30726,7 +30750,13 @@ window.__require = function e(t, n, r) {
         cc.tween(this.progressBar).to(.2, {
           width: 100 + addWidth
         }).start();
-        currentLevel % (2 * internalCount) == 1 && this.setRewards();
+        this.needRefreshProgress = currentLevel % (2 * internalCount) == 0;
+      },
+      refreshProgress: function refreshProgress() {
+        cc.tween(this.progressBar).to(.2, {
+          width: 100
+        }).start();
+        this.setRewards();
       },
       updateTitle: function updateTitle() {
         this.levelNameLabel.getComponent("LabelUpdater").setContent("talent_title_1000");
@@ -30786,7 +30816,7 @@ window.__require = function e(t, n, r) {
         this.endRewardItem.getComponent("TalentRewardItem").updateData();
       },
       handleSetRewards: function handleSetRewards() {
-        var currentLevel = this.roleData.talentIndexList.length;
+        var currentLevel = this.roleData.talentIndexList.length + 1;
         var range = this.getStageRange();
         var internalCount = range[2];
         var overHalf = currentLevel % (2 * internalCount) > internalCount;
@@ -30902,6 +30932,7 @@ window.__require = function e(t, n, r) {
               _this4.updateCards(false, true);
               _this4.updateTitle();
             }
+            _this4.needRefreshProgress && _this4.refreshProgress();
           };
           Global.gui.open(gameConfig.UIID.RewardsPanel, this.needShowResultArgs);
         }
@@ -33954,6 +33985,7 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "52b5fUrDCZC+Y8Q+hwQXDPr", "signinItem");
     "use strict";
     var gameConfig = require("GameConfig");
+    var EnumType = require("EnumType");
     var EquipmentData = require("EquipmentData");
     cc.Class({
       extends: cc.Component,
@@ -34059,7 +34091,10 @@ window.__require = function e(t, n, r) {
         var day = today.getDate();
         var yearResult = Global.signinManager.setSignin(month, day);
         var weekResult = Global.signinManager.setSigninWeekByDay(this._data.index, Date.now());
-        yearResult && weekResult && this.initUI(this._data);
+        if (yearResult && weekResult) {
+          this.initUI(this._data);
+          Global.taskManager.updateProgress(EnumType.TASK_TYPE.SIGNIN, 1);
+        }
         console.log(month + "\u6708" + day + "\u53f7\u7b7e\u5230 ");
         Global.gui.toast("\u7b7e\u5230\u6210\u529f\uff0c\u9886\u53d6\u5956\u52b1\u529f\u80fd\u5f00\u53d1\u4e2d...");
       },
@@ -34072,6 +34107,7 @@ window.__require = function e(t, n, r) {
     });
     cc._RF.pop();
   }, {
+    EnumType: "EnumType",
     EquipmentData: "EquipmentData",
     GameConfig: "GameConfig"
   } ],
