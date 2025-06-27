@@ -2052,6 +2052,62 @@ window.__require = function e(t, n, r) {
     EnumType: "EnumType",
     GameConfig: "GameConfig"
   } ],
+  BagItemTip: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "67df7lD52lGPatg30A72ZJa", "BagItemTip");
+    "use strict";
+    var EnumType = require("EnumType");
+    var gameConfig = require("GameConfig");
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        bgList: [ cc.SpriteFrame ],
+        bgSprite: cc.Sprite,
+        bagItem: cc.Node,
+        itemName: cc.Node,
+        itemCount: cc.Node,
+        itemDesc: cc.Node,
+        content: cc.Node
+      },
+      start: function start() {},
+      onAdded: function onAdded(_args) {
+        this.args = _args;
+        this.node.opacity = 0;
+        cc.tween(this.node).to(.2, {
+          opacity: 255
+        }).start();
+        this.updateUI(_args.itemData);
+      },
+      onEnable: function onEnable() {
+        var worldPos = this.args.fromTarget.parent.convertToWorldSpaceAR(this.args.itemPos);
+        var fromPos = this.content.parent.convertToNodeSpaceAR(worldPos);
+        var visibleSize = cc.view.getVisibleSize();
+        fromPos.x = fromPos.x - this.content.width / 2 < -1 * visibleSize.width / 2 ? -1 * visibleSize.width / 2 + this.content.width / 2 : fromPos.x;
+        fromPos.x = fromPos.x + this.content.width / 2 > visibleSize.width / 2 ? visibleSize.width / 2 - this.content.width / 2 : fromPos.x;
+        fromPos.y += this.args.fromTarget.height / 2 + this.content.height / 2 - 30;
+        this.content.setPosition(fromPos);
+      },
+      updateUI: function updateUI(_itemData) {
+        this.bgSprite.spriteFrame = this.bgList[_itemData.rarity];
+        this.bagItem.getComponent("BagItem").setData(_itemData, null, EnumType.ITEM_OWNER_TYPE.ITEM_TIP);
+        this.itemName.getComponent("LabelUpdater").setString(Global.languageManager.t("itemName_" + _itemData.itemId));
+        this.itemCount.getComponent("LabelUpdater").setString(Global.languageManager.t("item_tip_count") + _itemData.count);
+        this.itemDesc.getComponent("LabelUpdater").setString(Global.languageManager.t("itemDesc_" + _itemData.itemId));
+      },
+      onClickClose: function onClickClose() {
+        cc.tween(this.node).stop();
+        cc.tween(this.node).to(.2, {
+          opacity: 0
+        }).call(function() {
+          Global.gui.remove(gameConfig.UIID.ItemTip);
+        }).start();
+      }
+    });
+    cc._RF.pop();
+  }, {
+    EnumType: "EnumType",
+    GameConfig: "GameConfig"
+  } ],
   BagItem: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "96fd5OQcV1JhLh6jtzS+DiC", "BagItem");
@@ -2110,6 +2166,12 @@ window.__require = function e(t, n, r) {
         } else if (this.ownerType == EnumType.ITEM_OWNER_TYPE.TASK_REWARD) {
           var taskNode = Global.gui.get(gameConfig.UIID.TaskPanel);
           taskNode && taskNode.getComponent("TaskPanel").claimSingleItem(this.taskRewardIndex, this.taskRewardType);
+        } else {
+          var args = {};
+          args.fromTarget = this.node;
+          args.itemData = this.itemData;
+          args.itemPos = cc.v2(this.node.x, this.node.y);
+          Global.gui.open(gameConfig.UIID.ItemTip, args);
         }
       },
       setMask: function setMask(_mask) {
@@ -2131,7 +2193,7 @@ window.__require = function e(t, n, r) {
         this.roleData = _roleData;
         this.currentBg.spriteFrame = this.rareBgList[_itemData.rarity];
         this.countLabel.getComponent("LabelUpdater").setString("X" + Global.utils.formatNumberWithUnit(_itemData.count));
-        _itemData.type != EnumType.BAG_ITEM_TYPE.MERGE || _ownerType != EnumType.ITEM_OWNER_TYPE.MERGE && _ownerType != EnumType.ITEM_OWNER_TYPE.MERGE_SLOT && _ownerType != EnumType.ITEM_OWNER_TYPE.EQUIP ? this.countLabel.active = true : this.countLabel.active = false;
+        _itemData.type == EnumType.BAG_ITEM_TYPE.MERGE && (_ownerType == EnumType.ITEM_OWNER_TYPE.MERGE || _ownerType == EnumType.ITEM_OWNER_TYPE.MERGE_SLOT || _ownerType == EnumType.ITEM_OWNER_TYPE.EQUIP) || _ownerType == EnumType.ITEM_OWNER_TYPE.ITEM_TIP ? this.countLabel.active = false : this.countLabel.active = true;
         this.countLabel.setScale(1);
         this.setMask(false);
         this.lockIcon.active = false;
@@ -2303,7 +2365,7 @@ window.__require = function e(t, n, r) {
           position: cc.v2(0, 0)
         }, {
           easing: "elasticOut"
-        }).start();
+        }).call(function() {}).start();
         this.updateUI();
       },
       clearItems: function clearItems() {
@@ -3724,7 +3786,11 @@ window.__require = function e(t, n, r) {
       },
       onClickStartBtn: function onClickStartBtn() {
         Global.audio.playEffect("audio/click");
-        Global.roleData.currentStamina >= 5 ? Global.roleData.updateStamina(-5) : Global.gui.toast("\u4f53\u529b\u4e0d\u8db3...");
+        if (!(Global.roleData.currentStamina >= 5)) {
+          Global.gui.toast("\u4f53\u529b\u4e0d\u8db3...");
+          return;
+        }
+        Global.roleData.updateStamina(-5);
         this.closeUI();
       },
       onClickGiftBtn: function onClickGiftBtn(target, data) {
@@ -4312,7 +4378,7 @@ window.__require = function e(t, n, r) {
         return new Promise(function(resolve) {
           var animationConfig = gameConfig.PRELOADCONFIG["" + animation];
           if (!animationConfig) {
-            console.warn("Skill effect " + skillId + " not found");
+            console.warn("Skill effect " + animation + " not found");
             resolve();
             callback && callback();
             return;
@@ -4351,7 +4417,7 @@ window.__require = function e(t, n, r) {
               callback && callback();
             }
           } else {
-            console.warn("Skill effect " + skillId + " not found");
+            console.warn("Skill effect " + animation + " not found");
             resolve();
             callback && callback();
           }
@@ -8143,7 +8209,8 @@ window.__require = function e(t, n, r) {
           MERGE_SLOT: 2,
           TASK_REWARD: 3,
           OPEN_BOX_RESULT: 4,
-          EQUIP: 5
+          EQUIP: 5,
+          ITEM_TIP: 6
         },
         EQUIPMENT_ITEM_OWNER_TYPE: {
           NONE: 0,
@@ -12152,6 +12219,21 @@ window.__require = function e(t, n, r) {
         type: "skeleton",
         path: "rolefile/Boss03/Boss03"
       },
+      Boss04: {
+        key: "Boss04",
+        type: "skeleton",
+        path: "rolefile/Boss04/Boss04"
+      },
+      Boss05: {
+        key: "Boss05",
+        type: "skeleton",
+        path: "rolefile/Boss05/Boss05"
+      },
+      Boss06: {
+        key: "Boss06",
+        type: "skeleton",
+        path: "rolefile/Boss06/Boss06"
+      },
       Enemy01: {
         key: "Enemy01",
         type: "skeleton",
@@ -12426,6 +12508,21 @@ window.__require = function e(t, n, r) {
         type: "prefab",
         path: "prefabs/effects/ultimate_2003"
       },
+      ultimate_2004: {
+        key: "ultimate_2004",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_2004"
+      },
+      ultimate_2005: {
+        key: "ultimate_2005",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_2005"
+      },
+      ultimate_2006: {
+        key: "ultimate_2006",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_2006"
+      },
       ultimate_3001: {
         key: "ultimate_3001",
         type: "prefab",
@@ -12490,6 +12587,41 @@ window.__require = function e(t, n, r) {
         key: "ultimate_3013",
         type: "prefab",
         path: "prefabs/effects/ultimate_3013"
+      },
+      ultimate_3014: {
+        key: "ultimate_3014",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_3014"
+      },
+      ultimate_3015: {
+        key: "ultimate_3015",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_3015"
+      },
+      ultimate_3016: {
+        key: "ultimate_3016",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_3016"
+      },
+      ultimate_3017: {
+        key: "ultimate_3017",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_3017"
+      },
+      ultimate_3018: {
+        key: "ultimate_3018",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_3018"
+      },
+      ultimate_3019: {
+        key: "ultimate_3019",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_3019"
+      },
+      ultimate_3020: {
+        key: "ultimate_3020",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_3020"
       },
       ultimate_boom_1001: {
         key: "ultimate_boom_1001",
@@ -12600,6 +12732,21 @@ window.__require = function e(t, n, r) {
         key: "ultimate_boom_2003",
         type: "prefab",
         path: "prefabs/effects/ultimate_boom_2003"
+      },
+      ultimate_boom_2004: {
+        key: "ultimate_boom_2004",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_boom_2004"
+      },
+      ultimate_boom_2005: {
+        key: "ultimate_boom_2005",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_boom_2005"
+      },
+      ultimate_boom_2006: {
+        key: "ultimate_boom_2006",
+        type: "prefab",
+        path: "prefabs/effects/ultimate_boom_2006"
       },
       ultimate_boom_3001: {
         key: "ultimate_boom_3001",
@@ -12932,7 +13079,8 @@ window.__require = function e(t, n, r) {
       MailInfo: 44,
       TopUI: 45,
       VIP: 46,
-      BagPanel: 47
+      BagPanel: 47,
+      ItemTip: 48
     });
     var UIConfigData = (_UIConfigData = {}, _UIConfigData[UIID.ScrollBackgroundPanel] = {
       layer: _LayerManager.LayerType.Game,
@@ -13107,6 +13255,10 @@ window.__require = function e(t, n, r) {
     }, _UIConfigData[UIID.BagPanel] = {
       layer: _LayerManager.LayerType.UI,
       prefab: "prefabs/gui/bagPanel",
+      destroy: false
+    }, _UIConfigData[UIID.ItemTip] = {
+      layer: _LayerManager.LayerType.UI,
+      prefab: "prefabs/component/bagItemTip",
       destroy: false
     }, _UIConfigData);
     module.exports = {
@@ -16984,16 +17136,20 @@ window.__require = function e(t, n, r) {
       showAni: function showAni(_itemData) {
         var _this = this;
         var currentItem = null;
+        this.equipmentItem.active = false;
+        this.bagItem.active = false;
         if (null != _itemData.equipmentConfig) {
           this.equipmentItem.getComponent("EquipmentItem").setData(_itemData, Global.roleData);
           this.itemName.getComponent("LabelUpdater").setString(Global.languageManager.t("equipmentName_" + _itemData.equipmentConfig.id));
           this.itemName.getComponent("LabelUpdater").setColor(Global.utils.getEquipmentLabelColor(_itemData.rarity));
           currentItem = this.equipmentItem;
+          this.equipmentItem.active = true;
         } else {
           this.bagItem.getComponent("BagItem").setData(_itemData, Global.roleData);
           this.itemName.getComponent("LabelUpdater").setString(Global.languageManager.t("itemName_" + _itemData.itemConfig.id));
           this.itemName.getComponent("LabelUpdater").setColor(Global.utils.getItemLabelColor(_itemData.rarity));
           currentItem = this.bagItem;
+          this.bagItem.active = true;
         }
         var boxAniName;
         boxAniName = this.boxType == Global.shopManager.RED || this.boxType == Global.shopManager.ORANGE ? "OpenBox_3" : this.boxType == Global.shopManager.PURPLE ? "OpenBox_1" : "OpenBox_2";
@@ -17950,6 +18106,18 @@ window.__require = function e(t, n, r) {
       type: gameConfig.PRELOADCONFIG.Boss03.type
     });
     data.push({
+      url: gameConfig.PRELOADCONFIG.Boss04.path,
+      type: gameConfig.PRELOADCONFIG.Boss04.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Boss05.path,
+      type: gameConfig.PRELOADCONFIG.Boss05.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Boss06.path,
+      type: gameConfig.PRELOADCONFIG.Boss06.type
+    });
+    data.push({
       url: gameConfig.PRELOADCONFIG.Enemy01.path,
       type: gameConfig.PRELOADCONFIG.Enemy01.type
     });
@@ -18174,6 +18342,18 @@ window.__require = function e(t, n, r) {
       type: gameConfig.PRELOADCONFIG.ultimate_2003.type
     });
     data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_2004.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_2004.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_2005.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_2005.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_2006.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_2006.type
+    });
+    data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_3001.path,
       type: gameConfig.PRELOADCONFIG.ultimate_3001.type
     });
@@ -18224,6 +18404,34 @@ window.__require = function e(t, n, r) {
     data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_3013.path,
       type: gameConfig.PRELOADCONFIG.ultimate_3013.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_3014.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_3014.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_3015.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_3015.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_3016.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_3016.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_3017.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_3017.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_3018.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_3018.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_3019.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_3019.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_3020.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_3020.type
     });
     data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_boom_1001.path,
@@ -18312,6 +18520,18 @@ window.__require = function e(t, n, r) {
     data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_boom_2003.path,
       type: gameConfig.PRELOADCONFIG.ultimate_boom_2003.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_boom_2004.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_boom_2004.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_boom_2005.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_boom_2005.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimate_boom_2006.path,
+      type: gameConfig.PRELOADCONFIG.ultimate_boom_2006.type
     });
     data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_boom_3001.path,
@@ -24508,7 +24728,7 @@ window.__require = function e(t, n, r) {
           property_affected_list: "0|hp_regeneration",
           skill_type: "1|3|1&50&basic_hp|100|1",
           skill_owner: "emergency",
-          is_dynamic_value: "dynamic",
+          is_dynamic_value: "",
           is_dynamic_subValue: "",
           is_dynamic_condition: "dynamic",
           style: "1001|1,1002|1,1003|1,1004|1,1005|1,1006|1,1007|1,1008|1,1009|1,1010|1,",
@@ -24530,7 +24750,7 @@ window.__require = function e(t, n, r) {
           property_affected_list: "0|energy_recovery",
           skill_type: "1|3|1&50&basic_hp|100|1",
           skill_owner: "emergency",
-          is_dynamic_value: "dynamic",
+          is_dynamic_value: "",
           is_dynamic_subValue: "",
           is_dynamic_condition: "dynamic",
           style: "1001|3",
@@ -24552,7 +24772,7 @@ window.__require = function e(t, n, r) {
           property_affected_list: "0|armor",
           skill_type: "1|3|1&50&basic_hp|100|1",
           skill_owner: "emergency",
-          is_dynamic_value: "dynamic",
+          is_dynamic_value: "",
           is_dynamic_subValue: "",
           is_dynamic_condition: "dynamic",
           style: "1002|3",
@@ -24574,7 +24794,7 @@ window.__require = function e(t, n, r) {
           property_affected_list: "0|reflect_damage",
           skill_type: "1|3|1&50&basic_hp|100|1",
           skill_owner: "emergency",
-          is_dynamic_value: "dynamic",
+          is_dynamic_value: "",
           is_dynamic_subValue: "",
           is_dynamic_condition: "dynamic",
           style: "1002|3",
@@ -24869,7 +25089,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "1|wrj"
+          before_battle_effect: "1|Wrj"
         }, {
           id: "1061",
           name: "\u5de6\u5df4\u638c",
@@ -24891,7 +25111,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "1|punch"
+          before_battle_effect: "1|Punch"
         }, {
           id: "1062",
           name: "\u5f31\u5316",
@@ -25252,7 +25472,7 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           importance: "1",
           duration: "0",
-          value_list: "1&50&basic_hp",
+          value_list: "1&83.34&basic_hp",
           property_affected_list: "11|currentHp",
           skill_type: "1|5-0-6|0|100|1",
           skill_owner: "",
@@ -25397,7 +25617,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "1|2",
-          before_battle_effect: "0|spinach"
+          before_battle_effect: "0|Spinach"
         }, {
           id: "1085",
           name: "\u5feb\u9910",
@@ -27157,7 +27377,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "0|energyup"
+          before_battle_effect: "0|Energy_Up"
         }, {
           id: "1166",
           name: "\u51b0\u68d2\u4f24\u5bb3",
@@ -27751,7 +27971,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "0|rubyx"
+          before_battle_effect: "0|RubyX"
         }, {
           id: "1193",
           name: "\u91cd\u4f24\u589e\u4f24",
@@ -29775,7 +29995,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "0|energyup"
+          before_battle_effect: "0|Energy_Up"
         }, {
           id: "2001",
           name: "",
@@ -35138,11 +35358,8 @@ window.__require = function e(t, n, r) {
           default: null,
           tooltip: "\u5956\u54c1\u5217\u8868"
         },
-        rewardItemPrebList: {
-          type: [ cc.Prefab ],
-          default: [],
-          tooltip: "\u6839\u636e\u4e0d\u540c\u7684\u5956\u52b1\u5b9e\u4f8b\u5316\u4e0d\u540c\u7684\u9884\u5236\u4f53"
-        },
+        bagItem: cc.Node,
+        equipmentItem: cc.Node,
         maskNode: {
           type: cc.Node,
           default: null,
@@ -35153,6 +35370,7 @@ window.__require = function e(t, n, r) {
           default: null,
           tooltip: "\u5bf9\u94a9"
         },
+        signInBtn: cc.Node,
         _curState: null,
         _rewardItems: []
       },
@@ -35167,49 +35385,49 @@ window.__require = function e(t, n, r) {
         this.bgSprite.spriteFrame = this.bgSFList[isToday ? 0 : 1];
         this._curState == gameConfig.SIGNIN_STATE.IDLE ? this.dayNode.getComponent("RichTextUpdater").setContent("result_claim") : this.dayNode.getComponent("RichTextUpdater").setContent("signin_day" + data.index);
         this._rewardItems = [];
-        this.itemLayout.removeAllChildren();
+        this.bagItem.active = false;
+        this.equipmentItem.active = false;
         var rewardTypes = this._data.baseData.rewardType.split("|");
         var rewardIds = this._data.baseData.rewardId.split("|");
         var rewardAmounts = this._data.baseData.amount.split("|");
+        if (rewardTypes.length > 1) {
+          this.itemLayout.addComponent(cc.Layout);
+          this.itemLayout.type = cc.Layout.Type.HORIZONTAL;
+          this.itemLayout.resizeMode = cc.Layout.ResizeMode.CONTAINER;
+          this.itemLayout.spacingX = 50;
+          this.bagItem.active = true;
+          this.equipmentItem.active = true;
+        } else {
+          this.itemLayout.removeComponent(cc.Layout);
+          this.bagItem.setPosition(cc.v2(0, 0));
+          this.equipmentItem.setPosition(cc.v2(0, 0));
+        }
         for (var index = 0; index < rewardTypes.length; index++) {
           var rewardType = rewardTypes[index];
           var rewardId = rewardIds[index] || 0;
           var amount = rewardAmounts[index] || 1;
           var itemNode = null;
           if (rewardType == gameConfig.SIGNIN_REWARD_TYPE.ITEMS) {
-            itemNode = cc.instantiate(this.rewardItemPrebList[gameConfig.SIGNIN_REWARD_TYPE.ITEMS]);
-            this.itemLayout.addChild(itemNode);
-            var itemConfig = Global.utils.deepClone(Global.bagManager.getItemConfig(rewardId));
+            var itemConfig = Global.bagManager.getItemConfig(rewardId);
             var itemData = new ItemData();
             itemData.setData(null, itemConfig);
             itemData.count = amount;
             this._rewardItems.push(itemData);
-            var bagItem = itemNode.getComponent("BagItem");
-            if (bagItem) {
-              bagItem.setMask(false);
-              bagItem.setData(itemData);
-            }
+            this.bagItem.getComponent("BagItem").setData(itemData);
+            this.bagItem.active = true;
           } else if (rewardType == gameConfig.SIGNIN_REWARD_TYPE.EQUIP) {
-            itemNode = cc.instantiate(this.rewardItemPrebList[gameConfig.SIGNIN_REWARD_TYPE.EQUIP]);
-            this.itemLayout.addChild(itemNode);
-            var equipmentConfig = Global.utils.deepClone(Global.equipmentManager.getEquipmentConfig(rewardId));
+            var equipmentConfig = Global.equipmentManager.getEquipmentConfig(rewardId);
             var equipData = new EquipmentData();
             equipData.setData(null, equipmentConfig);
             equipData.count = amount;
             this._rewardItems.push(equipData);
-            var equipmentItem = itemNode.getComponent("EquipmentItem");
-            if (equipmentItem) {
-              equipmentItem.showLock(false);
-              equipmentItem.showSelect(false);
-              equipmentItem.setData(equipData);
-              equipmentItem.showEquiped(false);
-            }
+            this.equipmentItem.getComponent("EquipmentItem").setData(equipData);
+            this.equipmentItem.active = true;
           }
-          itemNode && itemNode.removeComponent(cc.BlockInputEvents);
         }
         this.claimedFlag.active = this._curState == gameConfig.SIGNIN_STATE.CHECKED;
         this.maskNode.active = isChecked || isExpired;
-        this.node.getComponent(cc.Button).interactable = isToday && !isChecked;
+        this.signInBtn.active = isToday && !isChecked;
       },
       onClickSigninBtn: function onClickSigninBtn() {
         var _this = this;
@@ -35420,4 +35638,4 @@ window.__require = function e(t, n, r) {
     exports.default = NewClass;
     cc._RF.pop();
   }, {} ]
-}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "BagPanel", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "LimitClick", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "ScrollBg", "SingleLine", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);
+}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "BagPanel", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "BagItemTip", "DetailBullet", "DetailControl", "LimitClick", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "ScrollBg", "SingleLine", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);

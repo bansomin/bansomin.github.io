@@ -1,0 +1,511 @@
+[
+  1,
+  [
+    "ffAZhEd3lAI73mKDNE4v9d",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "3bt0ktNaNICpbAyjoiinFt"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Ultra_2004",
+          "\r\nUltra_2004.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nOrio\r\n  rotate: false\r\n  xy: 261, 74\r\n  size: 146, 133\r\n  orig: 290, 264\r\n  offset: 72, 65\r\n  index: -1\r\nSmoke/SSMOKE_00029\r\n  rotate: true\r\n  xy: 261, 209\r\n  size: 258, 104\r\n  orig: 298, 119\r\n  offset: 40, 0\r\n  index: -1\r\nSmoke/SSMOKE_00030\r\n  rotate: false\r\n  xy: 2, 348\r\n  size: 233, 119\r\n  orig: 298, 119\r\n  offset: 29, 0\r\n  index: -1\r\nSmoke/SSMOKE_00031\r\n  rotate: false\r\n  xy: 2, 231\r\n  size: 237, 115\r\n  orig: 298, 119\r\n  offset: 25, 1\r\n  index: -1\r\nSmoke/SSMOKE_00032\r\n  rotate: false\r\n  xy: 2, 124\r\n  size: 257, 105\r\n  orig: 298, 119\r\n  offset: 7, 0\r\n  index: -1\r\nSmoke/SSMOKE_00033\r\n  rotate: true\r\n  xy: 367, 229\r\n  size: 238, 100\r\n  orig: 298, 119\r\n  offset: 6, 0\r\n  index: -1\r\nSmoke/SSMOKE_00034\r\n  rotate: false\r\n  xy: 2, 88\r\n  size: 234, 34\r\n  orig: 298, 119\r\n  offset: 0, 1\r\n  index: -1\r\nSmoke/SSMOKE_00035\r\n  rotate: true\r\n  xy: 409, 66\r\n  size: 161, 33\r\n  orig: 298, 119\r\n  offset: 0, 1\r\n  index: -1\r\n",
+          [
+            "Ultra_2004.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "4B3yNGoRC+RfbbpB1V0Cdko3KLE",
+              "spine": "3.8.99",
+              "x": -232.4,
+              "y": -3.03,
+              "width": 467.1,
+              "height": 441,
+              "images": "./images/",
+              "audio": "E:/BIGBIG/键盘侠/敌人总/Boss4/images"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root",
+                "scaleX": -0.9,
+                "scaleY": 0.9
+              },
+              {
+                "name": "BALL_Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Ball",
+                "parent": "BALL_Zong",
+                "x": -756.3,
+                "y": 81.84
+              },
+              {
+                "name": "Smoke",
+                "parent": "Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Orio",
+                "bone": "Ball"
+              },
+              {
+                "name": "Smoke/SSMOKE_00028",
+                "bone": "Smoke"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Orio": {
+                    "Orio": {
+                      "x": 0.5,
+                      "width": 363,
+                      "height": 330
+                    }
+                  },
+                  "Smoke/SSMOKE_00028": {
+                    "Smoke/SSMOKE_00029": {
+                      "y": 0.56,
+                      "rotation": 180,
+                      "width": 372,
+                      "height": 149
+                    },
+                    "Smoke/SSMOKE_00030": {
+                      "y": 0.56,
+                      "rotation": 180,
+                      "width": 372,
+                      "height": 149
+                    },
+                    "Smoke/SSMOKE_00031": {
+                      "y": 0.56,
+                      "rotation": 180,
+                      "width": 372,
+                      "height": 149
+                    },
+                    "Smoke/SSMOKE_00032": {
+                      "y": 0.56,
+                      "rotation": 180,
+                      "width": 372,
+                      "height": 149
+                    },
+                    "Smoke/SSMOKE_00033": {
+                      "y": 0.56,
+                      "rotation": 180,
+                      "width": 372,
+                      "height": 149
+                    },
+                    "Smoke/SSMOKE_00034": {
+                      "y": 0.56,
+                      "rotation": 180,
+                      "width": 372,
+                      "height": 149
+                    },
+                    "Smoke/SSMOKE_00035": {
+                      "y": 0.56,
+                      "rotation": 180,
+                      "width": 372,
+                      "height": 149
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Orio": {
+                    "color": [
+                      {
+                        "time": 1.3,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 1.4667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": "Orio"
+                      }
+                    ]
+                  },
+                  "Smoke/SSMOKE_00028": {
+                    "attachment": [
+                      {
+                        "time": 0.9667,
+                        "name": "Smoke/SSMOKE_00029"
+                      },
+                      {
+                        "time": 1.0333,
+                        "name": "Smoke/SSMOKE_00030"
+                      },
+                      {
+                        "time": 1.1,
+                        "name": "Smoke/SSMOKE_00031"
+                      },
+                      {
+                        "time": 1.1667,
+                        "name": "Smoke/SSMOKE_00032"
+                      },
+                      {
+                        "time": 1.2,
+                        "name": "Smoke/SSMOKE_00033"
+                      },
+                      {
+                        "time": 1.2333,
+                        "name": "Smoke/SSMOKE_00034"
+                      },
+                      {
+                        "time": 1.2667,
+                        "name": "Smoke/SSMOKE_00035"
+                      },
+                      {
+                        "time": 1.3,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong": {
+                    "translate": [
+                      {
+                        "time": 0.8,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1,
+                        "x": 29.17,
+                        "y": 3.98
+                      },
+                      {
+                        "time": 1.3
+                      }
+                    ]
+                  },
+                  "Ball": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.1,
+                        "angle": 90
+                      },
+                      {
+                        "time": 0.3,
+                        "angle": 180
+                      },
+                      {
+                        "time": 0.5,
+                        "angle": -90
+                      },
+                      {
+                        "time": 0.8333,
+                        "angle": -45.6
+                      },
+                      {
+                        "time": 1.0333,
+                        "angle": -102
+                      },
+                      {
+                        "time": 1.2333,
+                        "angle": -146.4
+                      },
+                      {
+                        "time": 1.4333,
+                        "angle": 170.4
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": 547.32,
+                        "curve": 0,
+                        "c2": 0.54,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 879.88,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1,
+                        "x": 879.88
+                      },
+                      {
+                        "time": 1.2,
+                        "x": 1453.53,
+                        "y": 85.19,
+                        "curve": 0,
+                        "c2": 0.48,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 1.3667,
+                        "x": 1778.01,
+                        "y": 369.11
+                      }
+                    ]
+                  },
+                  "Smoke": {
+                    "translate": [
+                      {
+                        "time": 0.9667,
+                        "x": 153.51,
+                        "y": 127.9
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": 125.03,
+                        "y": 126.12
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.9667,
+                        "x": 2.3,
+                        "y": -2.3
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 1.2,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          1,
+          "ultimate_2004"
+        ],
+        [
+          2,
+          "ultimate_2004",
+          [
+            [
+              -2,
+              [
+                3,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            467.1,
+            441
+          ]
+        ],
+        [
+          5,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  ]
+]

@@ -2,8 +2,8 @@
   1,
   [
     "7a/QZLET9IDreTiBfRn2PD",
-    "60+hxPp4BJg4nQH5VmnE4x",
-    "61yRb6MBZAB5mS2MaTOPCK"
+    "98whj2AzpKeIYZxCwMiTMB",
+    "d5thxayQZPnY1HaGLYbZNp"
   ],
   [
     "root",
@@ -132,11 +132,11 @@
       [
         [
           0,
-          "ultimate_boom_3009"
+          "ultimate_boom_3016"
         ],
         [
           1,
-          "ultimate_boom_3009",
+          "ultimate_boom_3016",
           [
             [
               -2,
@@ -155,8 +155,8 @@
           ],
           [
             5,
-            281,
-            272
+            243,
+            48
           ]
         ],
         [
@@ -209,15 +209,19 @@
       [
         [
           5,
-          "Ultra_3009_Blast",
-          "\r\nUltra_3009_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/b/O1_00000\r\n  rotate: true\r\n  xy: 195, 187\r\n  size: 143, 118\r\n  orig: 193, 172\r\n  offset: 13, 29\r\n  index: -1\r\nImage/b/O1_00001\r\n  rotate: true\r\n  xy: 190, 332\r\n  size: 166, 139\r\n  orig: 193, 172\r\n  offset: 10, 21\r\n  index: -1\r\nImage/b/O1_00002\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 174, 161\r\n  orig: 193, 172\r\n  offset: 8, 2\r\n  index: -1\r\nImage/b/O1_00003\r\n  rotate: false\r\n  xy: 2, 329\r\n  size: 186, 169\r\n  orig: 193, 172\r\n  offset: 4, 0\r\n  index: -1\r\nImage/b/O1_00004\r\n  rotate: false\r\n  xy: 2, 165\r\n  size: 191, 162\r\n  orig: 193, 172\r\n  offset: 2, 10\r\n  index: -1\r\nImage/b/O1_00005\r\n  rotate: true\r\n  xy: 178, 2\r\n  size: 161, 147\r\n  orig: 193, 172\r\n  offset: 0, 11\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 315, 283\r\n  size: 47, 47\r\n  orig: 49, 49\r\n  offset: 1, 1\r\n  index: -1\r\n",
+          "Ultra_3016_Blast",
+          "\r\nUltra_3016_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Lie_00000\r\n  rotate: false\r\n  xy: 2, 291\r\n  size: 243, 48\r\n  orig: 243, 48\r\n  offset: 0, 0\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 247, 247\r\n  size: 92, 92\r\n  orig: 98, 98\r\n  offset: 3, 3\r\n  index: -1\r\n",
           [
-            "Ultra_3009_Blast.png"
+            "Ultra_3016_Blast.png"
           ],
           {
             "skeleton": {
-              "hash": "nu8BZ4UtXwL33jv4T4+Q05T3CXk",
+              "hash": "2pn+nj6q5VnLSvhx2csML5ZZ56A",
               "spine": "3.8.99",
+              "x": -121,
+              "y": -24,
+              "width": 243,
+              "height": 48,
               "images": "",
               "audio": ""
             },
@@ -226,26 +230,55 @@
                 "name": "root"
               },
               {
-                "name": "zz",
+                "name": "Blast",
                 "parent": "root"
               },
               {
-                "name": "Z2",
-                "parent": "zz"
+                "name": "Blast2",
+                "parent": "Blast",
+                "length": 172.55,
+                "rotation": 2.1,
+                "x": -88.6,
+                "y": -1.73
               },
               {
-                "name": "B_Zong",
-                "parent": "Z2"
+                "name": "Lizizong",
+                "parent": "Blast"
+              },
+              {
+                "name": "Lizizong2",
+                "parent": "Lizizong",
+                "length": 137.91,
+                "rotation": 0.56,
+                "x": -100.69,
+                "y": 1.2
+              },
+              {
+                "name": "Lizizong3",
+                "parent": "Lizizong",
+                "length": 137.91,
+                "rotation": 0.56,
+                "x": -100.69,
+                "y": 1.2
               },
               {
                 "name": "Glow",
-                "parent": "Z2"
+                "parent": "Blast"
               }
             ],
             "slots": [
               {
-                "name": "Image/b/O1_00000",
-                "bone": "B_Zong"
+                "name": "Image/Lie_00000",
+                "bone": "Blast2",
+                "attachment": "Image/Lie_00000"
+              },
+              {
+                "name": "Image/Lie_0",
+                "bone": "Lizizong2"
+              },
+              {
+                "name": "Image/Lie_1",
+                "bone": "Lizizong3"
               },
               {
                 "name": "Image/glow1",
@@ -257,30 +290,31 @@
               {
                 "name": "default",
                 "attachments": {
-                  "Image/b/O1_00000": {
-                    "Image/b/O1_00000": {
-                      "width": 386,
-                      "height": 344
-                    },
-                    "Image/b/O1_00001": {
-                      "width": 386,
-                      "height": 344
-                    },
-                    "Image/b/O1_00002": {
-                      "width": 386,
-                      "height": 344
-                    },
-                    "Image/b/O1_00003": {
-                      "width": 386,
-                      "height": 344
-                    },
-                    "Image/b/O1_00004": {
-                      "width": 386,
-                      "height": 344
-                    },
-                    "Image/b/O1_00005": {
-                      "width": 386,
-                      "height": 344
+                  "Image/Lie_0": {
+                    "Image/Lie_00000": {
+                      "x": 101.17,
+                      "y": -2.2,
+                      "rotation": -0.56,
+                      "width": 243,
+                      "height": 48
+                    }
+                  },
+                  "Image/Lie_00000": {
+                    "Image/Lie_00000": {
+                      "x": 89.1,
+                      "y": -1.54,
+                      "rotation": -2.1,
+                      "width": 243,
+                      "height": 48
+                    }
+                  },
+                  "Image/Lie_1": {
+                    "Image/Lie_00000": {
+                      "x": 101.17,
+                      "y": -2.2,
+                      "rotation": -0.56,
+                      "width": 243,
+                      "height": 48
                     }
                   },
                   "Image/glow1": {
@@ -295,33 +329,23 @@
             "animations": {
               "Ultra": {
                 "slots": {
-                  "Image/b/O1_00000": {
-                    "attachment": [
+                  "Image/Lie_00000": {
+                    "color": [
                       {
-                        "name": "Image/b/O1_00000"
+                        "color": "ffffffff"
                       },
                       {
                         "time": 0.0333,
-                        "name": "Image/b/O1_00001"
+                        "color": "ffdd5cff"
                       },
                       {
-                        "time": 0.0667,
-                        "name": "Image/b/O1_00002"
-                      },
-                      {
-                        "time": 0.1,
-                        "name": "Image/b/O1_00003"
-                      },
-                      {
-                        "time": 0.1333,
-                        "name": "Image/b/O1_00004"
-                      },
+                        "time": 0.2667,
+                        "color": "f6a80800"
+                      }
+                    ],
+                    "attachment": [
                       {
                         "time": 0.1667,
-                        "name": "Image/b/O1_00005"
-                      },
-                      {
-                        "time": 0.2,
                         "name": null
                       }
                     ]
@@ -333,15 +357,15 @@
                       },
                       {
                         "time": 0.0333,
-                        "color": "ff934dff"
+                        "color": "fedd68c7"
                       },
                       {
-                        "time": 0.1,
-                        "color": "ff934d5b"
+                        "time": 0.0667,
+                        "color": "fedb6852"
                       },
                       {
-                        "time": 0.3333,
-                        "color": "ff934d00"
+                        "time": 0.1667,
+                        "color": "fed06800"
                       }
                     ],
                     "attachment": [
@@ -352,49 +376,95 @@
                   }
                 },
                 "bones": {
-                  "B_Zong": {
+                  "Blast2": {
                     "rotate": [
                       {
-                        "angle": 3.6
+                        "angle": 48.09
                       }
                     ],
                     "translate": [
                       {
-                        "x": 314.18,
-                        "y": -104.82
+                        "x": 716.23,
+                        "y": 70.31
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 686.55,
+                        "y": 14.36
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 667.94,
+                        "y": -7.97
                       }
                     ],
                     "scale": [
                       {
-                        "x": 0.8,
-                        "y": 0.8
+                        "x": 0.906,
+                        "y": 1.023
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 1.311,
+                        "y": 0.923
+                      },
+                      {
+                        "time": 0.0667,
+                        "x": 1.562,
+                        "y": 0.503
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 1.562,
+                        "y": 0.346
                       }
                     ]
                   },
                   "Glow": {
                     "translate": [
                       {
-                        "x": 311.22,
-                        "y": -88.95
+                        "x": 635.7,
+                        "y": 73.35
                       }
                     ],
                     "scale": [
                       {
-                        "x": 2.063,
-                        "y": 2.063
+                        "x": 2.958,
+                        "y": 1.911
                       },
                       {
                         "time": 0.0333,
-                        "x": 3.333,
-                        "y": 3.333
+                        "x": 3.561,
+                        "y": 3.441
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 3.827,
+                        "y": 3.318
                       }
                     ]
                   },
-                  "zz": {
+                  "Blast": {
+                    "rotate": [
+                      {
+                        "angle": 14.84
+                      }
+                    ],
                     "translate": [
                       {
-                        "x": -298.04,
-                        "y": 103.87
+                        "x": -879.4,
+                        "y": -327.6
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": -895.73,
+                        "y": -327.6
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.5,
+                        "y": 1.5
                       }
                     ]
                   }

@@ -1,0 +1,384 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "981bfa5iRO6JjYirNgOVXI",
+    "30tq/g3WFL/7hopzvzlUCi"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "_playTimes",
+        "node",
+        "_materials"
+      ],
+      -3,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      7
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "ultimate_3015"
+        ],
+        [
+          1,
+          "ultimate_3015",
+          [
+            [
+              -2,
+              [
+                2,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            1051.23,
+            644.27
+          ]
+        ],
+        [
+          4,
+          "default",
+          0,
+          false,
+          false,
+          "Ultra",
+          1,
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "Ultra_3015",
+          "\r\nUltra_3015.png\r\nsize: 128,128\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nNike\r\n  rotate: false\r\n  xy: 2, 41\r\n  size: 110, 71\r\n  orig: 123, 100\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Ultra_3015.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "EbohKJCe8CEBV74cG/T57Kp61SM",
+              "spine": "3.8.99",
+              "x": -196.67,
+              "y": -93.82,
+              "width": 1051.23,
+              "height": 644.27,
+              "images": "./images/",
+              "audio": "E:/BIGBIG/键盘侠/敌人总/敌人15_耐克鲨鱼/images"
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "TX_Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Nike",
+                "parent": "TX_Zong",
+                "x": 58.47,
+                "y": 45.23
+              },
+              {
+                "name": "TX_Blast",
+                "parent": "root"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Nike",
+                "bone": "Nike"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Nike": {
+                    "Nike": {
+                      "x": -3.89,
+                      "y": 18.24,
+                      "scaleX": -1,
+                      "width": 123,
+                      "height": 100
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Hit": {}
+            },
+            "animations": {
+              "Ultra": {
+                "slots": {
+                  "Nike": {
+                    "attachment": [
+                      {
+                        "name": "Nike"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Nike": {
+                    "rotate": [
+                      {},
+                      {
+                        "time": 0.3333,
+                        "angle": -90
+                      },
+                      {
+                        "time": 0.7,
+                        "angle": 180
+                      },
+                      {
+                        "time": 0.9667,
+                        "angle": 90
+                      },
+                      {
+                        "time": 1.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "x": -44.48,
+                        "y": 37.36,
+                        "curve": 0.04,
+                        "c2": 0.06,
+                        "c3": 0.498,
+                        "c4": 0.55
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 90.16,
+                        "y": 295.41,
+                        "curve": 0.377,
+                        "c2": 0.52,
+                        "c3": 0.783
+                      },
+                      {
+                        "time": 0.5667,
+                        "x": 250.39,
+                        "y": 451.87,
+                        "curve": 0.365,
+                        "c2": 0.1,
+                        "c3": 0.745,
+                        "c4": 0.52
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 425.88,
+                        "y": 318.03,
+                        "curve": 0.608,
+                        "c2": 0.34,
+                        "c4": 0.71
+                      },
+                      {
+                        "time": 1.2,
+                        "x": 579.95,
+                        "y": 37.36
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "curve": 0.035,
+                        "c2": 0.06,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.8333,
+                        "x": 2,
+                        "y": 2
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 1.2,
+                    "name": "Hit"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

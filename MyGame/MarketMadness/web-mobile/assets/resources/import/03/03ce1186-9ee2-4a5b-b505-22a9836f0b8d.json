@@ -2371,6 +2371,21 @@
           "valueList": ""
         },
         {
+          "id": "itemName_1017",
+          "content": "银剪刀",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1018",
+          "content": "金剪刀",
+          "valueList": ""
+        },
+        {
+          "id": "itemName_1019",
+          "content": "钻石剪刀",
+          "valueList": ""
+        },
+        {
           "id": "itemName_2001",
           "content": "体力",
           "valueList": ""
@@ -2873,6 +2888,121 @@
         {
           "id": "bag_panel_title",
           "content": "背包",
+          "valueList": ""
+        },
+        {
+          "id": "item_tip_count",
+          "content": "拥有: ",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1001",
+          "content": "用于装备升级",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1002",
+          "content": "用于装备进阶",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1003",
+          "content": "用于武器装备的合成，被视为一件史诗武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1004",
+          "content": "用于武器装备的合成，被视为一件传说武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1005",
+          "content": "用于武器装备的合成，被视为一件神话武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1006",
+          "content": "用于背包装备的合成，被视为一件史诗武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1007",
+          "content": "用于背包装备的合成，被视为一件传说武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1008",
+          "content": "用于背包装备的合成，被视为一件神话武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1009",
+          "content": "用于项链装备的合成，被视为一件史诗武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1010",
+          "content": "用于项链装备的合成，被视为一件传说武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1011",
+          "content": "用于项链装备的合成，被视为一件神话武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1012",
+          "content": "用于戒指装备的合成，被视为一件史诗武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1013",
+          "content": "用于戒指装备的合成，被视为一件传说武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1014",
+          "content": "用于戒指装备的合成，被视为一件神话武器",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1015",
+          "content": "用于兑换任意S级史诗装备",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1016",
+          "content": "工厂挑战的门票",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1017",
+          "content": "用于开启蓝色装备礼盒",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1018",
+          "content": "用于开启紫色装备礼盒",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_1019",
+          "content": "用于开启橙色装备礼盒",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_2001",
+          "content": "闯关需要消耗体力",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_2002",
+          "content": "稀有的宝石，用于抽取装备、子弹等",
+          "valueList": ""
+        },
+        {
+          "id": "itemDesc_2003",
+          "content": "金币，用于进行训练",
           "valueList": ""
         }
       ]

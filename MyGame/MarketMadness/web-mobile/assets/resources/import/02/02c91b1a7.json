@@ -213,18 +213,19 @@
           ],
           {
             "skeleton": {
-              "hash": "K1//mw7w1De6sS/0a9muFUTvouc",
+              "hash": "ntxpTrfNs7cKYRJUbN77aevusbI",
               "spine": "3.8.99",
-              "x": -10.85,
-              "y": -147.53,
-              "width": 138,
-              "height": 141,
+              "x": -178.31,
+              "y": -147.56,
+              "width": 1051.49,
+              "height": 697.36,
               "images": "",
               "audio": ""
             },
             "bones": [
               {
                 "name": "root",
+                "rotation": 0.02,
                 "x": 58.15,
                 "y": -77.53
               },
@@ -251,6 +252,10 @@
                 "rotation": -178.38,
                 "x": 44.33,
                 "y": -0.18
+              },
+              {
+                "name": "Fokr",
+                "parent": "Fork"
               }
             ],
             "slots": [
@@ -262,6 +267,11 @@
               {
                 "name": "Image/Ring/Fork_00000",
                 "bone": "Fork2",
+                "attachment": "Image/Ring/Fork_00003"
+              },
+              {
+                "name": "Image/Ring/Fork_00003",
+                "bone": "Fokr",
                 "attachment": "Image/Ring/Fork_00003"
               }
             ],
@@ -295,6 +305,13 @@
                       "x": 56.33,
                       "y": -0.95,
                       "rotation": -31.49,
+                      "width": 138,
+                      "height": 141
+                    }
+                  },
+                  "Image/Ring/Fork_00003": {
+                    "Image/Ring/Fork_00003": {
+                      "y": 0.5,
                       "width": 138,
                       "height": 141
                     }
@@ -366,6 +383,14 @@
                       },
                       {
                         "time": 1.8,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/Ring/Fork_00003": {
+                    "attachment": [
+                      {
+                        "time": 1.1,
                         "name": null
                       }
                     ]
@@ -542,6 +567,24 @@
                         "time": 1.8667,
                         "x": 985.81,
                         "y": 123.75
+                      }
+                    ],
+                    "scale": [
+                      {},
+                      {
+                        "time": 0.4333,
+                        "x": 1.4,
+                        "y": 1.4
+                      },
+                      {
+                        "time": 0.9,
+                        "x": 1.5,
+                        "y": 1.5
+                      },
+                      {
+                        "time": 1.1333,
+                        "x": 1.179,
+                        "y": 1.086
                       }
                     ]
                   },

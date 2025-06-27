@@ -1,0 +1,83 @@
+
+Boss04.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 210
+  size: 327, 297
+  orig: 327, 297
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: true
+  xy: 2, 90
+  size: 119, 228
+  orig: 119, 228
+  offset: 0, 0
+  index: -1
+L_Death_Eye
+  rotate: false
+  xy: 163, 37
+  size: 35, 51
+  orig: 35, 51
+  offset: 0, 0
+  index: -1
+L_Eye
+  rotate: false
+  xy: 330, 211
+  size: 82, 66
+  orig: 82, 66
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: 270
+  xy: 231, 21
+  size: 94, 204
+  orig: 94, 204
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: false
+  xy: 2, 13
+  size: 159, 75
+  orig: 159, 75
+  offset: 0, 0
+  index: -1
+Nose
+  rotate: true
+  xy: 448, 338
+  size: 87, 58
+  orig: 87, 58
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 330, 279
+  size: 116, 229
+  orig: 116, 229
+  offset: 0, 0
+  index: -1
+R_Death_Eye
+  rotate: false
+  xy: 439, 457
+  size: 62, 50
+  orig: 62, 50
+  offset: 0, 0
+  index: -1
+R_Eye
+  rotate: true
+  xy: 434, 210
+  size: 93, 67
+  orig: 93, 67
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: true
+  xy: 231, 116
+  size: 93, 204
+  orig: 93, 204
+  offset: 0, 0
+  index: -1
