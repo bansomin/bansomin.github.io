@@ -1,0 +1,178 @@
+[
+  1,
+  [
+    "c5qUywd4FDkJ2YydLc68ND"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Energy_Sg",
+      "\r\nEnergy_Sg.png\r\nsize: 474,37\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Sg/Sg_00000\r\n  rotate: false\r\n  xy: 39, 3\r\n  size: 28, 14\r\n  orig: 150, 16\r\n  offset: 1, 1\r\n  index: -1\r\nImage/Sg/Sg_00001\r\n  rotate: false\r\n  xy: 410, 20\r\n  size: 62, 15\r\n  orig: 150, 16\r\n  offset: 0, 1\r\n  index: -1\r\nImage/Sg/Sg_00002\r\n  rotate: false\r\n  xy: 232, 20\r\n  size: 97, 15\r\n  orig: 150, 16\r\n  offset: 1, 1\r\n  index: -1\r\nImage/Sg/Sg_00003\r\n  rotate: false\r\n  xy: 2, 19\r\n  size: 121, 16\r\n  orig: 150, 16\r\n  offset: 12, 0\r\n  index: -1\r\nImage/Sg/Sg_00004\r\n  rotate: false\r\n  xy: 125, 19\r\n  size: 105, 16\r\n  orig: 150, 16\r\n  offset: 44, 0\r\n  index: -1\r\nImage/Sg/Sg_00005\r\n  rotate: false\r\n  xy: 331, 19\r\n  size: 77, 16\r\n  orig: 150, 16\r\n  offset: 73, 0\r\n  index: -1\r\nImage/Sg/Sg_00006\r\n  rotate: false\r\n  xy: 232, 2\r\n  size: 52, 16\r\n  orig: 150, 16\r\n  offset: 98, 0\r\n  index: -1\r\nImage/Sg/Sg_00007\r\n  rotate: false\r\n  xy: 2, 3\r\n  size: 35, 14\r\n  orig: 150, 16\r\n  offset: 115, 1\r\n  index: -1\r\nImage/Sg/Sg_00008\r\n  rotate: false\r\n  xy: 69, 3\r\n  size: 28, 14\r\n  orig: 150, 16\r\n  offset: 122, 1\r\n  index: -1\r\n",
+      [
+        "Energy_Sg.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "941Lu13JTA1xYVYou950hM1YRTU",
+          "spine": "3.8.99",
+          "images": "",
+          "audio": ""
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Zong",
+            "parent": "root"
+          },
+          {
+            "name": "Sg",
+            "parent": "Zong"
+          }
+        ],
+        "slots": [
+          {
+            "name": "Image/Sg/Sg_00000",
+            "bone": "Sg",
+            "blend": "additive"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Image/Sg/Sg_00000": {
+                "Image/Sg/Sg_00000": {
+                  "width": 150,
+                  "height": 16
+                },
+                "Image/Sg/Sg_00001": {
+                  "width": 150,
+                  "height": 16
+                },
+                "Image/Sg/Sg_00002": {
+                  "width": 150,
+                  "height": 16
+                },
+                "Image/Sg/Sg_00003": {
+                  "width": 150,
+                  "height": 16
+                },
+                "Image/Sg/Sg_00004": {
+                  "width": 150,
+                  "height": 16
+                },
+                "Image/Sg/Sg_00005": {
+                  "width": 150,
+                  "height": 16
+                },
+                "Image/Sg/Sg_00006": {
+                  "width": 150,
+                  "height": 16
+                },
+                "Image/Sg/Sg_00007": {
+                  "width": 150,
+                  "height": 16
+                },
+                "Image/Sg/Sg_00008": {
+                  "width": 150,
+                  "height": 16
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Energy_Sg": {
+            "slots": {
+              "Image/Sg/Sg_00000": {
+                "attachment": [
+                  {
+                    "name": "Image/Sg/Sg_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Image/Sg/Sg_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/Sg/Sg_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/Sg/Sg_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/Sg/Sg_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/Sg/Sg_00005"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Image/Sg/Sg_00006"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Image/Sg/Sg_00007"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Image/Sg/Sg_00008"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

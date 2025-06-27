@@ -1,0 +1,13 @@
+
+Enemy14.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Gunzi
+  rotate: false
+  xy: 2, 56
+  size: 150, 96
+  orig: 150, 96
+  offset: 0, 0
+  index: -1

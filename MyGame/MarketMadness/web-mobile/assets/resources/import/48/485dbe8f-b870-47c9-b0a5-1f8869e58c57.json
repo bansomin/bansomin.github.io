@@ -891,6 +891,16 @@
           "valueList": ""
         },
         {
+          "id": "skill_1285_name",
+          "content": "1285",
+          "valueList": ""
+        },
+        {
+          "id": "skill_1286_name",
+          "content": "超载",
+          "valueList": ""
+        },
+        {
           "id": "skill_1001_desc",
           "content": "获得&lt;img src='txt_ico_1001' width=36 height=36/&gt;\n(造成&lt;img src='txt_ico_strength' width=36 height=36/&gt;力量的伤害)",
           "valueList": ""
@@ -1352,7 +1362,7 @@
         },
         {
           "id": "skill_1093_desc",
-          "content": "获得<color=#00b411>20%</color>&lt;img src='txt_ico_ul' width=36 height=36/&gt;大招伤害",
+          "content": "获得<color=#00b411>30%</color>&lt;img src='txt_ico_ul' width=36 height=36/&gt;大招伤害",
           "valueList": ""
         },
         {
@@ -1422,8 +1432,8 @@
         },
         {
           "id": "skill_1107_desc",
-          "content": "获得<color=#00b411>9%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率\n获得<color=#00b411>{1}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
-          "valueList": "90|armor,57|basic_hp"
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲\n获得<color=#00b411>9%</color>&lt;img src='txt_ico_crit' width=36 height=36/&gt;暴击率\n获得<color=#00b411>{1}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "90|armor,75|basic_hp"
         },
         {
           "id": "skill_1108_desc",
@@ -1438,7 +1448,7 @@
         {
           "id": "skill_1110_desc",
           "content": "被任何子弹击中时<color=#00b411>+15%</color>几率回复<color=#00b411>{0}</color>生命",
-          "valueList": "1.67|strength"
+          "valueList": "16.67|strength"
         },
         {
           "id": "skill_1111_desc",
@@ -1682,7 +1692,7 @@
         },
         {
           "id": "skill_1160_desc",
-          "content": "获得&lt;img src='txt_ico_1005' width=36 height=36/&gt;\n(击中时每秒造成<color=#00b411>{0}</color>中毒伤害)",
+          "content": "(击中时每秒造成<color=#00b411>{0}</color>中毒伤害)",
           "valueList": "23.34|strength"
         },
         {
@@ -1702,7 +1712,7 @@
         },
         {
           "id": "skill_1164_desc",
-          "content": "获得&lt;img src='txt_ico_1003' width=36 height=36/&gt;\n(击中时损毁<color=#f72c58>20</color>能量)",
+          "content": "(击中时损毁<color=#f72c58>20</color>能量)",
           "valueList": ""
         },
         {
@@ -1734,6 +1744,16 @@
           "id": "skill_1236_desc",
           "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_def' width=36 height=36/&gt;护甲\n获得<color=#00b411>{1}</color>&lt;img src='txt_ico_thorns' width=36 height=36/&gt;反伤",
           "valueList": "60|armor,33.34|strength"
+        },
+        {
+          "id": "skill_1285_desc",
+          "content": "获得<color=#00b411>{0}</color>&lt;img src='txt_ico_maxhp' width=36 height=36/&gt;最大生命值",
+          "valueList": "18.34|basic_hp"
+        },
+        {
+          "id": "skill_1286_desc",
+          "content": "战斗开始时,双方获得<color=#f72c58>150</color>能量上限",
+          "valueList": ""
         },
         {
           "id": "ability_up_0",

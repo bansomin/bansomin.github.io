@@ -1,0 +1,728 @@
+[
+  1,
+  [
+    "7a/QZLET9IDreTiBfRn2PD",
+    "b0rurDDyRGdKk0cAImXrQe",
+    "f14bXByeZH6YzamRDcK51H"
+  ],
+  [
+    "root",
+    "spine",
+    "node",
+    "data",
+    "_N$skeletonData"
+  ],
+  [
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_contentSize"
+      ],
+      2,
+      12,
+      4,
+      5
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "_preCacheMode",
+        "loop",
+        "premultipliedAlpha",
+        "_animationName",
+        "node",
+        "_materials"
+      ],
+      -2,
+      1,
+      3
+    ],
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      6
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "rubyx"
+        ],
+        [
+          1,
+          "rubyx",
+          [
+            [
+              -2,
+              [
+                2,
+                -4,
+                -3
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            5,
+            131,
+            129
+          ]
+        ],
+        [
+          4,
+          "default",
+          0,
+          false,
+          false,
+          "Spinach",
+          1,
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        [
+          5,
+          "RubyX",
+          "\r\nRubyX.png\r\nsize: 451,156\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/GLOW_00000\r\n  rotate: true\r\n  xy: 148, 32\r\n  size: 122, 118\r\n  orig: 131, 129\r\n  offset: 4, 6\r\n  index: -1\r\nImage/JSG/Sg_00000\r\n  rotate: true\r\n  xy: 421, 128\r\n  size: 18, 28\r\n  orig: 39, 47\r\n  offset: 0, 0\r\n  index: -1\r\nImage/JSG/Sg_00001\r\n  rotate: true\r\n  xy: 219, 8\r\n  size: 22, 34\r\n  orig: 39, 47\r\n  offset: 0, 0\r\n  index: -1\r\nImage/JSG/Sg_00002\r\n  rotate: false\r\n  xy: 398, 14\r\n  size: 27, 39\r\n  orig: 39, 47\r\n  offset: 0, 0\r\n  index: -1\r\nImage/JSG/Sg_00003\r\n  rotate: false\r\n  xy: 365, 10\r\n  size: 31, 43\r\n  orig: 39, 47\r\n  offset: 0, 0\r\n  index: -1\r\nImage/JSG/Sg_00004\r\n  rotate: false\r\n  xy: 351, 55\r\n  size: 35, 46\r\n  orig: 39, 47\r\n  offset: 0, 0\r\n  index: -1\r\nImage/JSG/Sg_00005\r\n  rotate: true\r\n  xy: 268, 15\r\n  size: 38, 47\r\n  orig: 39, 47\r\n  offset: 0, 0\r\n  index: -1\r\nImage/JSG/Sg_00006\r\n  rotate: true\r\n  xy: 317, 16\r\n  size: 37, 46\r\n  orig: 39, 47\r\n  offset: 1, 1\r\n  index: -1\r\nImage/JSG/Sg_00007\r\n  rotate: false\r\n  xy: 351, 103\r\n  size: 36, 43\r\n  orig: 39, 47\r\n  offset: 3, 4\r\n  index: -1\r\nImage/JSG/Sg_00008\r\n  rotate: false\r\n  xy: 388, 55\r\n  size: 33, 40\r\n  orig: 39, 47\r\n  offset: 6, 7\r\n  index: -1\r\nImage/JSG/Sg_00009\r\n  rotate: false\r\n  xy: 389, 97\r\n  size: 30, 37\r\n  orig: 39, 47\r\n  offset: 9, 10\r\n  index: -1\r\nImage/JSG/Sg_00010\r\n  rotate: true\r\n  xy: 148, 2\r\n  size: 28, 35\r\n  orig: 39, 47\r\n  offset: 11, 12\r\n  index: -1\r\nImage/JSG/Sg_00011\r\n  rotate: true\r\n  xy: 185, 5\r\n  size: 25, 32\r\n  orig: 39, 47\r\n  offset: 14, 15\r\n  index: -1\r\nImage/JSG/Sg_00012\r\n  rotate: false\r\n  xy: 421, 97\r\n  size: 23, 29\r\n  orig: 39, 47\r\n  offset: 16, 18\r\n  index: -1\r\nImage/JSG/Sg_00013\r\n  rotate: false\r\n  xy: 423, 55\r\n  size: 21, 27\r\n  orig: 39, 47\r\n  offset: 18, 20\r\n  index: -1\r\nImage/JSG/Sg_00014\r\n  rotate: false\r\n  xy: 427, 27\r\n  size: 20, 26\r\n  orig: 39, 47\r\n  offset: 19, 21\r\n  index: -1\r\nImage/equip_2305\r\n  rotate: false\r\n  xy: 2, 13\r\n  size: 144, 141\r\n  orig: 190, 196\r\n  offset: 25, 32\r\n  index: -1\r\nImage/processed-image\r\n  rotate: true\r\n  xy: 268, 55\r\n  size: 99, 81\r\n  orig: 128, 128\r\n  offset: 14, 24\r\n  index: -1\r\n",
+          [
+            "RubyX.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "eN7tScrbD5Gp/Ke5JFbvZOM86A0",
+              "spine": "3.8.99",
+              "x": -65,
+              "y": -64,
+              "width": 131,
+              "height": 129,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Ruby",
+                "parent": "Zong",
+                "scaleX": -1
+              },
+              {
+                "name": "Glow",
+                "parent": "Zong"
+              },
+              {
+                "name": "BG",
+                "parent": "Zong"
+              },
+              {
+                "name": "BG2",
+                "parent": "Zong"
+              },
+              {
+                "name": "JSG",
+                "parent": "Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/GLOW_00000",
+                "bone": "BG",
+                "attachment": "Image/GLOW_00000"
+              },
+              {
+                "name": "Image/GLOW_0",
+                "bone": "BG2",
+                "attachment": "Image/GLOW_00000",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/equip_2305",
+                "bone": "Ruby",
+                "attachment": "Image/equip_2305"
+              },
+              {
+                "name": "Image/processed-image",
+                "bone": "Glow",
+                "attachment": "Image/processed-image",
+                "blend": "additive"
+              },
+              {
+                "name": "Image/JSG/Sg_00000",
+                "bone": "JSG",
+                "blend": "additive"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/GLOW_0": {
+                    "Image/GLOW_00000": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 131,
+                      "height": 129
+                    }
+                  },
+                  "Image/GLOW_00000": {
+                    "Image/GLOW_00000": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 131,
+                      "height": 129
+                    }
+                  },
+                  "Image/JSG/Sg_00000": {
+                    "Image/JSG/Sg_00000": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00001": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00002": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00003": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00004": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00005": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00006": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00007": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00008": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00009": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00010": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00011": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00012": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00013": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    },
+                    "Image/JSG/Sg_00014": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "width": 39,
+                      "height": 47
+                    }
+                  },
+                  "Image/equip_2305": {
+                    "Image/equip_2305": {
+                      "scaleX": 0.5,
+                      "scaleY": 0.5,
+                      "width": 190,
+                      "height": 196
+                    }
+                  },
+                  "Image/processed-image": {
+                    "Image/processed-image": {
+                      "width": 128,
+                      "height": 128
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Start": {}
+            },
+            "animations": {
+              "RubyX": {
+                "slots": {
+                  "Image/GLOW_0": {
+                    "color": [
+                      {
+                        "color": "ffffff00",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.1,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "ffffff00"
+                      }
+                    ]
+                  },
+                  "Image/GLOW_00000": {
+                    "color": [
+                      {
+                        "color": "ffffff00",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.1,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.2,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.7667,
+                        "color": "ffffff00"
+                      }
+                    ]
+                  },
+                  "Image/JSG/Sg_00000": {
+                    "attachment": [
+                      {
+                        "time": 0.2,
+                        "name": "Image/JSG/Sg_00000"
+                      },
+                      {
+                        "time": 0.2333,
+                        "name": "Image/JSG/Sg_00001"
+                      },
+                      {
+                        "time": 0.2667,
+                        "name": "Image/JSG/Sg_00002"
+                      },
+                      {
+                        "time": 0.3,
+                        "name": "Image/JSG/Sg_00003"
+                      },
+                      {
+                        "time": 0.3333,
+                        "name": "Image/JSG/Sg_00004"
+                      },
+                      {
+                        "time": 0.3667,
+                        "name": "Image/JSG/Sg_00005"
+                      },
+                      {
+                        "time": 0.4,
+                        "name": "Image/JSG/Sg_00006"
+                      },
+                      {
+                        "time": 0.4333,
+                        "name": "Image/JSG/Sg_00007"
+                      },
+                      {
+                        "time": 0.4667,
+                        "name": "Image/JSG/Sg_00008"
+                      },
+                      {
+                        "time": 0.5,
+                        "name": "Image/JSG/Sg_00009"
+                      },
+                      {
+                        "time": 0.5333,
+                        "name": "Image/JSG/Sg_00010"
+                      },
+                      {
+                        "time": 0.5667,
+                        "name": "Image/JSG/Sg_00011"
+                      },
+                      {
+                        "time": 0.6,
+                        "name": "Image/JSG/Sg_00012"
+                      },
+                      {
+                        "time": 0.6333,
+                        "name": "Image/JSG/Sg_00013"
+                      },
+                      {
+                        "time": 0.6667,
+                        "name": "Image/JSG/Sg_00014"
+                      },
+                      {
+                        "time": 0.7,
+                        "name": null
+                      }
+                    ]
+                  },
+                  "Image/equip_2305": {
+                    "color": [
+                      {
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.8667,
+                        "color": "ffffff00"
+                      }
+                    ]
+                  },
+                  "Image/processed-image": {
+                    "color": [
+                      {
+                        "time": 0.2333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.4667,
+                        "color": "ffffff00"
+                      }
+                    ],
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Image/processed-image"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Ruby": {
+                    "translate": [
+                      {
+                        "x": 87.77,
+                        "y": 51.52,
+                        "curve": 0.151,
+                        "c2": 0.54,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.0143,
+                        "x": 89.41,
+                        "y": 84
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 89.41,
+                        "y": 87.38
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 89.41,
+                        "y": 83.16
+                      },
+                      {
+                        "time": 0.2667,
+                        "x": 89.41,
+                        "y": 84,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 89.41,
+                        "y": 84
+                      },
+                      {
+                        "time": 0.9333,
+                        "x": 85.84,
+                        "y": 85.59
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.0667
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 1.12,
+                        "y": 1.12
+                      },
+                      {
+                        "time": 0.2
+                      }
+                    ]
+                  },
+                  "Glow": {
+                    "rotate": [
+                      {
+                        "time": 0.1667,
+                        "angle": 7.2
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.1667,
+                        "x": 92.39,
+                        "y": 92.52
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.1667,
+                        "x": 1.292,
+                        "y": 1.172
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 1.604,
+                        "y": 1.454
+                      },
+                      {
+                        "time": 0.5333,
+                        "x": 1.749,
+                        "y": 1.586
+                      }
+                    ]
+                  },
+                  "BG": {
+                    "translate": [
+                      {
+                        "x": 88.47,
+                        "y": 87.22
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 3.209,
+                        "y": 2.348
+                      }
+                    ]
+                  },
+                  "BG2": {
+                    "translate": [
+                      {
+                        "x": 88.47,
+                        "y": 87.22
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.575,
+                        "y": 1.386
+                      }
+                    ]
+                  },
+                  "JSG": {
+                    "translate": [
+                      {
+                        "time": 0.1667,
+                        "x": 94.5,
+                        "y": 96.41
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.2,
+                        "x": -1
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 0.5,
+                    "name": "Start"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

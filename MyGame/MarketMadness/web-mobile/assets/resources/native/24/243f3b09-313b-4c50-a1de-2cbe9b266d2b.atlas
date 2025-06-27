@@ -1,0 +1,104 @@
+
+Enemy20.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 257
+  size: 263, 247
+  orig: 263, 247
+  offset: 0, 0
+  index: -1
+DeathEyes
+  rotate: false
+  xy: 169, 219
+  size: 71, 36
+  orig: 72, 37
+  offset: 1, 0
+  index: -1
+Eye
+  rotate: false
+  xy: 66, 227
+  size: 101, 28
+  orig: 101, 28
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: false
+  xy: 362, 298
+  size: 81, 102
+  orig: 81, 102
+  offset: 0, 0
+  index: -1
+L_Hand
+  rotate: true
+  xy: 267, 386
+  size: 118, 93
+  orig: 118, 93
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: false
+  xy: 242, 202
+  size: 45, 53
+  orig: 45, 53
+  offset: 0, 0
+  index: -1
+L_M_Arm
+  rotate: false
+  xy: 414, 223
+  size: 63, 58
+  orig: 63, 58
+  offset: 0, 0
+  index: -1
+Line
+  rotate: false
+  xy: 267, 257
+  size: 145, 31
+  orig: 145, 31
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: false
+  xy: 66, 211
+  size: 48, 14
+  orig: 48, 14
+  offset: 0, 0
+  index: -1
+Pidai
+  rotate: true
+  xy: 446, 283
+  size: 221, 58
+  orig: 221, 58
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 362, 402
+  size: 82, 102
+  orig: 82, 102
+  offset: 0, 0
+  index: -1
+R_Hand
+  rotate: true
+  xy: 267, 290
+  size: 94, 93
+  orig: 94, 93
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: false
+  xy: 289, 202
+  size: 45, 53
+  orig: 45, 53
+  offset: 0, 0
+  index: -1
+R_M_Arm
+  rotate: false
+  xy: 2, 197
+  size: 62, 58
+  orig: 62, 58
+  offset: 0, 0
+  index: -1

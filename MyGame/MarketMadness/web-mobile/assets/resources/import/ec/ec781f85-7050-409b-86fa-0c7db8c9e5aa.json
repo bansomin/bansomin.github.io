@@ -1,44 +1,17 @@
 [
   1,
   [
-    "ecpdLyjvZBwrvm+cedCcQy",
-    "cfTCBj1rdAnJXeqXCsnBT7",
-    "e8u+OAZY5Kd6GarLXFlzLa"
+    "e8u+OAZY5Kd6GarLXFlzLa",
+    "45xO78IQNA35EPXPVM/Ftg"
   ],
   [
-    "node",
-    "_spriteFrame",
-    "tileSprite",
+    "singleItemPrefab",
+    "singleLinePrefab",
     "root",
+    "node",
     "data"
   ],
   [
-    [
-      "cc.Node",
-      [
-        "_name",
-        "_components",
-        "_prefab",
-        "_children",
-        "_parent",
-        "_contentSize"
-      ],
-      2,
-      9,
-      4,
-      2,
-      1,
-      5
-    ],
-    [
-      "cc.PrefabInfo",
-      [
-        "fileId",
-        "root"
-      ],
-      2,
-      1
-    ],
     [
       "cc.Prefab",
       [
@@ -47,80 +20,61 @@
       2
     ],
     [
-      "cc.Sprite",
+      "cc.Node",
       [
-        "node",
-        "_materials",
-        "_spriteFrame"
+        "_name",
+        "_components",
+        "_prefab"
       ],
-      3,
-      1,
-      3,
-      6
+      2,
+      9,
+      4
     ],
     [
       "50f76z2ANlNX7odIOvQH/mS",
       [
-        "scrollSpeed",
-        "xSpacing",
-        "ySpacing",
         "node",
-        "tileSprite"
+        "singleItemPrefab",
+        "singleLinePrefab"
       ],
-      0,
+      3,
       1,
+      6,
       6
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "root"
+      ],
+      3,
+      1
     ]
   ],
   [
     [
-      2,
+      0,
       0,
       2
     ],
     [
+      1,
       0,
-      0,
-      3,
       1,
       2,
       2
     ],
     [
-      0,
-      0,
-      4,
-      1,
       2,
-      5,
-      2
-    ],
-    [
-      3,
       0,
       1,
       2,
       1
     ],
     [
-      1,
-      0,
-      1,
-      2
-    ],
-    [
-      1,
-      1,
-      1
-    ],
-    [
-      4,
-      0,
-      1,
-      2,
       3,
-      4,
-      4
+      0,
+      1
     ]
   ],
   [
@@ -132,81 +86,42 @@
       1,
       "scrollBg",
       [
-        -3
-      ],
-      [
         [
-          6,
-          200,
-          400,
-          350,
+          2,
           -2,
-          2
-        ]
-      ],
-      [
-        5,
-        -1
-      ]
-    ],
-    [
-      2,
-      "common_img_bgloop",
-      1,
-      [
-        [
-          3,
-          -4,
-          [
-            0
-          ],
+          0,
           1
         ]
       ],
       [
-        4,
-        "3dOIsfg8JDtKq0OJqV2Yuq",
-        1
-      ],
-      [
-        5,
-        238,
-        216
+        3,
+        -1
       ]
     ]
   ],
   0,
   [
     0,
+    2,
+    1,
+    0,
     3,
     1,
     0,
-    0,
-    1,
-    0,
-    -1,
-    2,
-    0,
-    0,
-    2,
-    0,
     4,
     1,
-    4
+    2
   ],
   [
-    0,
     0,
     0
   ],
   [
-    -1,
-    1,
-    2
+    0,
+    1
   ],
   [
     0,
-    1,
-    2
+    1
   ]
 ]

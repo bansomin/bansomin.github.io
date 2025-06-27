@@ -1,0 +1,62 @@
+
+Enemy15.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 253
+  size: 311, 230
+  orig: 311, 230
+  offset: 0, 0
+  index: -1
+Box
+  rotate: false
+  xy: 2, 56
+  size: 344, 195
+  orig: 344, 195
+  offset: 0, 0
+  index: -1
+Box_L
+  rotate: true
+  xy: 432, 52
+  size: 146, 49
+  orig: 146, 49
+  offset: 0, 0
+  index: -1
+Box_R
+  rotate: true
+  xy: 421, 200
+  size: 148, 49
+  orig: 148, 49
+  offset: 0, 0
+  index: -1
+DeathEye
+  rotate: true
+  xy: 428, 380
+  size: 102, 40
+  orig: 104, 47
+  offset: 1, 7
+  index: -1
+Leg1
+  rotate: false
+  xy: 310, 180
+  size: 109, 146
+  orig: 109, 146
+  offset: 0, 0
+  index: -1
+Leg2
+  rotate: false
+  xy: 314, 350
+  size: 113, 132
+  orig: 113, 132
+  offset: 0, 0
+  index: -1
+Leg_Back
+  rotate: 180
+  xy: 348, 53
+  size: 83, 125
+  orig: 83, 125
+  offset: 0, 0
+  index: -1

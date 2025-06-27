@@ -60,43 +60,47 @@ window.__require = function e(t, n, r) {
       },
       initString: function initString(targetValue) {
         var _this$parseValueAndUn = this.parseValueAndUnit(targetValue), targetNumber = _this$parseValueAndUn.value, unit = _this$parseValueAndUn.unit;
-        this.label.getComponent("LabelUpdater").setString(targetValue);
+        this.label.getComponent("LabelUpdater").setString(targetNumber + unit);
         this.targetValue = targetNumber;
         this.currentUnit = unit;
         this.currentValue = this.targetValue;
       },
-      animateNumberChange: function animateNumberChange(targetValue) {
+      animateNumberChange: function animateNumberChange(targetValue, _steps) {
         var _this = this;
         var _this$parseValueAndUn2 = this.parseValueAndUnit(targetValue), targetNumber = _this$parseValueAndUn2.value, unit = _this$parseValueAndUn2.unit;
         if (this.targetValue === targetNumber) return;
+        this.node.active = true;
         var labelCom = this.label.getComponent("LabelUpdater");
         if ("" === labelCom.getString()) {
-          labelCom.setString(targetValue);
+          labelCom.setString(targetNumber + unit);
           this.targetValue = targetNumber;
           this.currentUnit = unit;
           this.currentValue = this.targetValue;
           return;
         }
         this.isAnimating && this.unschedule(this.updateNumberStep);
-        this.currentUnit = unit;
+        this.currentUnit = "" != this.currentUnit ? this.currentUnit : unit;
         this.targetValue = targetNumber;
         this.isAnimating = true;
         var diff = Math.abs(this.targetValue - this.currentValue);
         var duration = Math.max(this.baseDuration - diff * this.speedFactor, .2);
-        0 == this.targetValue && (duration = .01);
-        var steps = Math.ceil(duration / this.stepInterval);
-        var increment = (this.targetValue - this.currentValue) / steps;
+        0 == this.targetValue && true != this.toZero && (duration = .01);
+        this.steps = null != _steps ? _steps : Math.ceil(duration / this.stepInterval);
+        var increment = (this.targetValue - this.currentValue) / this.steps;
         var stepCount = 0;
         this.updateNumberStep = function() {
-          if (stepCount < steps) {
+          if (stepCount < _this.steps) {
             stepCount++;
             _this.currentValue += increment;
-            _this.label.getComponent("LabelUpdater").setString(("" != _this.currentUnit ? _this.currentValue.toFixed(2) : Math.floor(_this.currentValue).toString()) + _this.currentUnit);
+            _this.currentValue = _this.currentValue < _this.targetValue ? _this.targetValue : _this.currentValue;
+            _this.label.getComponent("LabelUpdater").setString("" != _this.currentUnit ? _this.currentValue.toFixed(2) + _this.currentUnit : Math.floor(_this.currentValue).toString());
+            0 == _this.currentValue && true == _this.toZero && (_this.node.active = false);
           } else {
             _this.currentValue = _this.targetValue;
-            _this.label.getComponent("LabelUpdater").setString(("" != _this.currentUnit ? _this.targetValue.toFixed(2) : _this.targetValue.toString()) + _this.currentUnit);
+            _this.label.getComponent("LabelUpdater").setString("" != _this.currentUnit ? _this.targetValue.toFixed(2) + _this.currentUnit : _this.targetValue.toString());
             _this.unschedule(_this.updateNumberStep);
             _this.isAnimating = false;
+            0 == _this.currentValue && true == _this.toZero && (_this.node.active = false);
           }
         };
         this.schedule(this.updateNumberStep, this.stepInterval);
@@ -2263,6 +2267,96 @@ window.__require = function e(t, n, r) {
     ItemConfig: "ItemConfig",
     ItemData: "ItemData"
   } ],
+  BagPanel: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "f55ed3v/CpIeaWbyn4VUHQK", "BagPanel");
+    "use strict";
+    function _extends() {
+      _extends = Object.assign || function(target) {
+        for (var i = 1; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) Object.prototype.hasOwnProperty.call(source, key) && (target[key] = source[key]);
+        }
+        return target;
+      };
+      return _extends.apply(this, arguments);
+    }
+    var EnumType = require("EnumType");
+    var gameConfig = require("GameConfig");
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        itemPrefab: cc.Prefab,
+        itemList: [ cc.Node ],
+        itemPool: [ cc.Node ],
+        container: cc.Node,
+        content: cc.Node
+      },
+      start: function start() {},
+      onAdded: function onAdded(_args) {
+        this.node.opacity = 0;
+        this.content.y = 1e3;
+        cc.tween(this.node).to(.2, {
+          opacity: 255
+        }).start();
+        cc.tween(this.content).to(.5, {
+          position: cc.v2(0, 0)
+        }, {
+          easing: "elasticOut"
+        }).start();
+        this.updateUI();
+      },
+      clearItems: function clearItems() {
+        while (this.itemList.length > 0) {
+          var item = this.itemList.pop();
+          this.container.removeChild(item, false);
+          this.itemPool.push(item);
+        }
+      },
+      updateUI: function updateUI() {
+        this.clearItems();
+        var mergedItems = {};
+        for (var rarity in Global.roleData.bag[EnumType.BAG_TYPE.ITEM]) {
+          var rarityList = Global.roleData.bag[EnumType.BAG_TYPE.ITEM][rarity];
+          for (var i = 0; i < rarityList.length; i++) {
+            var itemData = rarityList[i];
+            var itemId = itemData.itemId;
+            mergedItems[itemId] ? mergedItems[itemId].count += itemData.count : mergedItems[itemId] = _extends({}, itemData);
+          }
+        }
+        var mergedItemList = Object.values(mergedItems);
+        for (var _i = 0; _i < mergedItemList.length; _i++) {
+          var _itemData2 = mergedItemList[_i];
+          this.generateItem(_itemData2, _i);
+        }
+        this.container.height = 175 * Math.ceil(mergedItemList.length / 5) + 30;
+      },
+      generateItem: function generateItem(_itemData, _index) {
+        var startX = -350;
+        var startY = -120;
+        var item;
+        item = this.itemPool.length > 0 ? this.itemPool.pop() : cc.instantiate(this.itemPrefab);
+        item.setScale(.75, .75);
+        this.itemList.push(item);
+        item.getComponent("BagItem").setData(_itemData);
+        this.container.addChild(item);
+        item.x = startX + 175 * Math.floor(_index % 5);
+        item.y = startY + -1 * Math.floor(_index / 5) * 175;
+      },
+      onClickClose: function onClickClose() {
+        cc.tween(this.node).stop();
+        cc.tween(this.node).to(.2, {
+          opacity: 0
+        }).call(function() {
+          Global.gui.remove(gameConfig.UIID.BagPanel);
+        }).start();
+      }
+    });
+    cc._RF.pop();
+  }, {
+    EnumType: "EnumType",
+    GameConfig: "GameConfig"
+  } ],
   BaseProgressBar: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "5280fSr8FhHb6p38hB507gE", "BaseProgressBar");
@@ -2342,7 +2436,7 @@ window.__require = function e(t, n, r) {
           prologueMessages: "",
           defeatMessages: "",
           victoryMessages: "",
-          magazine: "1001,1001,1001,1001,1001,1001",
+          magazine: "1001,1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2372,15 +2466,15 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: "100"
         }, {
           id: "1001",
-          path: "Enemy01",
-          ultimate_id: "3001",
-          prologueMessages: "2001",
-          defeatMessages: "2002",
-          victoryMessages: "2003",
+          path: "Enemy14",
+          ultimate_id: "3014",
+          prologueMessages: "2053",
+          defeatMessages: "2054",
+          victoryMessages: "2055",
           magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
-          basic_hp: "2400",
+          basic_hp: "3200",
           energy_max: "1000",
           critical_damage: "100",
           reflect_damage: "0",
@@ -2395,7 +2489,7 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
           skills: "",
           random_skill_count: "0",
@@ -2407,20 +2501,20 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1002",
-          path: "Enemy02",
-          ultimate_id: "3002",
-          prologueMessages: "2004",
-          defeatMessages: "2005",
-          victoryMessages: "2006",
-          magazine: "1001,1001,1001,1001",
+          path: "Enemy15",
+          ultimate_id: "3015",
+          prologueMessages: "2056",
+          defeatMessages: "2057",
+          victoryMessages: "2058",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
-          basic_hp: "2700",
+          basic_hp: "3300",
           energy_max: "1000",
           critical_damage: "100",
           reflect_damage: "0",
           hp_regeneration: "0",
-          armor: "0",
+          armor: "10",
           healing_boost: "0",
           attack_speed: "100",
           critical_rate: "0",
@@ -2430,10 +2524,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "",
-          random_skill_count: "1",
+          skills: "1001|1",
+          random_skill_count: "0",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2442,20 +2536,20 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1003",
-          path: "Enemy03",
-          ultimate_id: "3003",
-          prologueMessages: "2007|2008",
-          defeatMessages: "2009",
-          victoryMessages: "2010",
-          magazine: "1001,1001,1001,1001",
+          path: "Enemy16",
+          ultimate_id: "3016",
+          prologueMessages: "2059",
+          defeatMessages: "2060",
+          victoryMessages: "2061",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
-          basic_hp: "3260",
+          basic_hp: "3400",
           energy_max: "1000",
           critical_damage: "100",
           reflect_damage: "0",
           hp_regeneration: "0",
-          armor: "0",
+          armor: "15",
           healing_boost: "0",
           attack_speed: "100",
           critical_rate: "0",
@@ -2465,10 +2559,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "",
-          random_skill_count: "1",
+          skills: "1001|1",
+          random_skill_count: "0",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2477,20 +2571,20 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1004",
-          path: "Enemy04",
-          ultimate_id: "3004",
-          prologueMessages: "2011|2012",
-          defeatMessages: "2013",
-          victoryMessages: "2014",
-          magazine: "1001,1001,1001,1001",
+          path: "Enemy17",
+          ultimate_id: "3017",
+          prologueMessages: "2062",
+          defeatMessages: "2063",
+          victoryMessages: "2064",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
-          basic_hp: "3380",
+          basic_hp: "3500",
           energy_max: "1000",
           critical_damage: "100",
           reflect_damage: "0",
           hp_regeneration: "0",
-          armor: "0",
+          armor: "20",
           healing_boost: "0",
           attack_speed: "100",
           critical_rate: "0",
@@ -2500,10 +2594,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "",
-          random_skill_count: "2",
+          skills: "1001|1",
+          random_skill_count: "0",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2512,12 +2606,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1005",
-          path: "Enemy05",
-          ultimate_id: "3005",
-          prologueMessages: "2015",
-          defeatMessages: "2016",
-          victoryMessages: "2017",
-          magazine: "1001,1001,1001,1001",
+          path: "Enemy18",
+          ultimate_id: "3018",
+          prologueMessages: "2065",
+          defeatMessages: "2066",
+          victoryMessages: "2067",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
           basic_hp: "3600",
@@ -2535,10 +2629,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "",
-          random_skill_count: "3",
+          skills: "1001|1",
+          random_skill_count: "1",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2547,15 +2641,15 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1006",
-          path: "Enemy06",
-          ultimate_id: "3006",
-          prologueMessages: "2018",
-          defeatMessages: "2019",
-          victoryMessages: "2020",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy19",
+          ultimate_id: "3019",
+          prologueMessages: "2068",
+          defeatMessages: "2069",
+          victoryMessages: "2070",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
-          basic_hp: "3500",
+          basic_hp: "3600",
           energy_max: "1000",
           critical_damage: "100",
           reflect_damage: "0",
@@ -2570,10 +2664,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "",
-          random_skill_count: "3",
+          skills: "1001|2",
+          random_skill_count: "1",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2582,12 +2676,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1007",
-          path: "Enemy07",
-          ultimate_id: "3007",
-          prologueMessages: "2021",
-          defeatMessages: "2022",
-          victoryMessages: "2023",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy20",
+          ultimate_id: "3020",
+          prologueMessages: "2071",
+          defeatMessages: "2072",
+          victoryMessages: "2073",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "150",
           basic_hp: "3600",
@@ -2605,10 +2699,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "",
-          random_skill_count: "3",
+          skills: "1001|2",
+          random_skill_count: "1",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2617,14 +2711,14 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1008",
-          path: "Enemy08",
-          ultimate_id: "3007",
+          path: "Enemy01",
+          ultimate_id: "3001",
           prologueMessages: "2001",
-          defeatMessages: "2003",
-          victoryMessages: "2002",
-          magazine: "1001,1001,1001,1001,1001",
+          defeatMessages: "2002",
+          victoryMessages: "2003",
+          magazine: "1001,1001,1001",
           strength: "90",
-          energy_recovery: "160",
+          energy_recovery: "150",
           basic_hp: "3600",
           energy_max: "1000",
           critical_damage: "100",
@@ -2640,10 +2734,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1083|1",
-          random_skill_count: "4",
+          skills: "1001|2,1083|1",
+          random_skill_count: "1",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2652,14 +2746,14 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1009",
-          path: "Enemy09",
-          ultimate_id: "3009",
-          prologueMessages: "2001",
-          defeatMessages: "2003",
-          victoryMessages: "2002",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy02",
+          ultimate_id: "3002",
+          prologueMessages: "2004",
+          defeatMessages: "2005",
+          victoryMessages: "2006",
+          magazine: "1001,1001,1001",
           strength: "90",
-          energy_recovery: "160",
+          energy_recovery: "150",
           basic_hp: "3600",
           energy_max: "1000",
           critical_damage: "100",
@@ -2675,10 +2769,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1083|2",
-          random_skill_count: "5",
+          skills: "1001|2,1083|2",
+          random_skill_count: "2",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2687,15 +2781,15 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1010",
-          path: "Boss01",
-          ultimate_id: "2001",
-          prologueMessages: "2024",
-          defeatMessages: "2025",
-          victoryMessages: "2026",
+          path: "Boss04",
+          ultimate_id: "2004",
+          prologueMessages: "2074",
+          defeatMessages: "2075",
+          victoryMessages: "2076",
           magazine: "",
-          strength: "60",
+          strength: "90",
           energy_recovery: "160",
-          basic_hp: "11250",
+          basic_hp: "3600",
           energy_max: "1000",
           critical_damage: "100",
           reflect_damage: "0",
@@ -2710,10 +2804,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1093|5",
-          random_skill_count: "0",
+          skills: "1083|7,1093|5",
+          random_skill_count: "1",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2722,12 +2816,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1011",
-          path: "Enemy10",
-          ultimate_id: "3006",
-          prologueMessages: "2001",
-          defeatMessages: "2003",
-          victoryMessages: "2002",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy03",
+          ultimate_id: "3003",
+          prologueMessages: "2007|2008",
+          defeatMessages: "2009",
+          victoryMessages: "2010",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2745,10 +2839,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|1,1083|3,1064|1",
-          random_skill_count: "5",
+          skills: "1001|3,1083|3",
+          random_skill_count: "2",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2757,12 +2851,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1012",
-          path: "Enemy11",
-          ultimate_id: "3011",
-          prologueMessages: "2001",
-          defeatMessages: "2003",
-          victoryMessages: "2002",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy04",
+          ultimate_id: "3004",
+          prologueMessages: "2011|2012",
+          defeatMessages: "2013",
+          victoryMessages: "2014",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2780,10 +2874,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|1,1083|4,1064|1",
-          random_skill_count: "6",
+          skills: "1001|3,1083|4,1064|1",
+          random_skill_count: "2",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2792,12 +2886,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1013",
-          path: "Enemy12",
-          ultimate_id: "3002",
-          prologueMessages: "2001",
-          defeatMessages: "2003",
-          victoryMessages: "2002",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy05",
+          ultimate_id: "3005",
+          prologueMessages: "2015",
+          defeatMessages: "2016",
+          victoryMessages: "2017",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2815,10 +2909,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|2,1083|5,1064|1",
-          random_skill_count: "6",
+          skills: "1001|4,1083|5,1064|1",
+          random_skill_count: "3",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2827,12 +2921,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1014",
-          path: "Enemy13",
-          ultimate_id: "3013",
-          prologueMessages: "2001",
-          defeatMessages: "2003",
-          victoryMessages: "2002",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy06",
+          ultimate_id: "3006",
+          prologueMessages: "2018",
+          defeatMessages: "2019",
+          victoryMessages: "2020",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2850,10 +2944,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|2,1083|6,1064|2",
-          random_skill_count: "7",
+          skills: "1001|4,1083|6,1064|2",
+          random_skill_count: "3",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2862,12 +2956,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1015",
-          path: "Enemy01",
-          ultimate_id: "3001",
-          prologueMessages: "2001",
-          defeatMessages: "2003",
-          victoryMessages: "2002",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy07",
+          ultimate_id: "3007",
+          prologueMessages: "2021",
+          defeatMessages: "2022",
+          victoryMessages: "2023",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2885,10 +2979,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|3,1083|6,1064|3",
-          random_skill_count: "7",
+          skills: "1001|5,1083|6,1064|2",
+          random_skill_count: "4",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2897,12 +2991,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1016",
-          path: "Enemy02",
-          ultimate_id: "3002",
-          prologueMessages: "2004",
-          defeatMessages: "2005",
-          victoryMessages: "2006",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy08",
+          ultimate_id: "3007",
+          prologueMessages: "2034",
+          defeatMessages: "2035",
+          victoryMessages: "2036",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2920,10 +3014,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|3,1083|7,1064|4",
-          random_skill_count: "8",
+          skills: "1001|5,1083|7,1064|2",
+          random_skill_count: "4",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2932,12 +3026,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1017",
-          path: "Enemy03",
-          ultimate_id: "3003",
-          prologueMessages: "2007|2008",
-          defeatMessages: "2009",
-          victoryMessages: "2010",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy09",
+          ultimate_id: "3009",
+          prologueMessages: "2037|2038",
+          defeatMessages: "2039",
+          victoryMessages: "2040",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2955,10 +3049,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|3,1083|8,1064|4",
-          random_skill_count: "8",
+          skills: "1001|5,1083|8,1064|3",
+          random_skill_count: "4",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -2967,12 +3061,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1018",
-          path: "Enemy04",
-          ultimate_id: "3004",
-          prologueMessages: "2011|2012",
-          defeatMessages: "2013",
-          victoryMessages: "2014",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy10",
+          ultimate_id: "3006",
+          prologueMessages: "2041",
+          defeatMessages: "2042",
+          victoryMessages: "2043",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -2990,10 +3084,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|3,1083|9,1064|5",
-          random_skill_count: "9",
+          skills: "1001|5,1083|9,1064|4",
+          random_skill_count: "5",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3002,12 +3096,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1019",
-          path: "Enemy05",
-          ultimate_id: "3005",
-          prologueMessages: "2015",
-          defeatMessages: "2016",
-          victoryMessages: "2017",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy11",
+          ultimate_id: "3011",
+          prologueMessages: "2044",
+          defeatMessages: "2045",
+          victoryMessages: "2046",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3025,10 +3119,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|4,1083|10,1064|5",
-          random_skill_count: "10",
+          skills: "1001|6,1083|10,1064|4",
+          random_skill_count: "5",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3037,15 +3131,15 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1020",
-          path: "Boss02",
-          ultimate_id: "2002",
-          prologueMessages: "2028",
-          defeatMessages: "2029",
-          victoryMessages: "2030",
+          path: "Boss05",
+          ultimate_id: "2005",
+          prologueMessages: "2077",
+          defeatMessages: "2078",
+          victoryMessages: "2079",
           magazine: "1001",
-          strength: "150",
+          strength: "90",
           energy_recovery: "160",
-          basic_hp: "35000",
+          basic_hp: "3600",
           energy_max: "1000",
           critical_damage: "100",
           reflect_damage: "0",
@@ -3060,10 +3154,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1012|10,1086|5",
-          random_skill_count: "0",
+          skills: "1012|10,1083|27,1086|5",
+          random_skill_count: "1",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3072,12 +3166,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1021",
-          path: "Enemy06",
-          ultimate_id: "3006",
-          prologueMessages: "2018",
-          defeatMessages: "2019",
-          victoryMessages: "2020",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy12",
+          ultimate_id: "3002",
+          prologueMessages: "2047",
+          defeatMessages: "2048",
+          victoryMessages: "2049",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3095,10 +3189,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|5,1083|14,1064|6",
-          random_skill_count: "12",
+          skills: "1001|6,1083|14,1064|5",
+          random_skill_count: "8",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3107,12 +3201,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1022",
-          path: "Enemy07",
-          ultimate_id: "3007",
-          prologueMessages: "2021",
-          defeatMessages: "2022",
-          victoryMessages: "2023",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy13",
+          ultimate_id: "3013",
+          prologueMessages: "2050",
+          defeatMessages: "2051",
+          victoryMessages: "2052",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3130,10 +3224,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|5,1083|15,1064|6",
-          random_skill_count: "13",
+          skills: "1001|7,1083|15,1064|5",
+          random_skill_count: "9",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3142,12 +3236,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1023",
-          path: "Enemy08",
-          ultimate_id: "3007",
-          prologueMessages: "2034",
-          defeatMessages: "2035",
-          victoryMessages: "2036",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy14",
+          ultimate_id: "3014",
+          prologueMessages: "2053",
+          defeatMessages: "2054",
+          victoryMessages: "2055",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3165,10 +3259,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|6,1083|17,1064|6",
-          random_skill_count: "14",
+          skills: "1001|7,1083|17,1064|5",
+          random_skill_count: "10",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3177,12 +3271,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1024",
-          path: "Enemy09",
-          ultimate_id: "3009",
-          prologueMessages: "2037|2038",
-          defeatMessages: "2039",
-          victoryMessages: "2040",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy15",
+          ultimate_id: "3015",
+          prologueMessages: "2056",
+          defeatMessages: "2057",
+          victoryMessages: "2058",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3200,10 +3294,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|6,1083|18,1064|7",
-          random_skill_count: "15",
+          skills: "1001|8,1083|18,1064|6",
+          random_skill_count: "11",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3212,12 +3306,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1025",
-          path: "Enemy10",
-          ultimate_id: "3006",
-          prologueMessages: "2041",
-          defeatMessages: "2042",
-          victoryMessages: "2043",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy16",
+          ultimate_id: "3016",
+          prologueMessages: "2059",
+          defeatMessages: "2060",
+          victoryMessages: "2061",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3235,10 +3329,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|7,1083|21,1064|8",
-          random_skill_count: "16",
+          skills: "1001|9,1083|21,1064|6",
+          random_skill_count: "12",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3247,12 +3341,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1026",
-          path: "Enemy11",
-          ultimate_id: "3011",
-          prologueMessages: "2044",
-          defeatMessages: "2045",
-          victoryMessages: "2046",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy17",
+          ultimate_id: "3017",
+          prologueMessages: "2062",
+          defeatMessages: "2063",
+          victoryMessages: "2064",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3270,10 +3364,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|8,1083|22,1064|8",
-          random_skill_count: "17",
+          skills: "1001|9,1083|22,1064|7",
+          random_skill_count: "13",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3282,12 +3376,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1027",
-          path: "Enemy12",
-          ultimate_id: "3002",
-          prologueMessages: "2047",
-          defeatMessages: "2048",
-          victoryMessages: "2049",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy18",
+          ultimate_id: "3018",
+          prologueMessages: "2065",
+          defeatMessages: "2066",
+          victoryMessages: "2067",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3305,10 +3399,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|9,1083|25,1064|8",
-          random_skill_count: "18",
+          skills: "1001|10,1083|25,1064|7",
+          random_skill_count: "14",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3317,12 +3411,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1028",
-          path: "Enemy13",
-          ultimate_id: "3013",
-          prologueMessages: "2050",
-          defeatMessages: "2051",
-          victoryMessages: "2052",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy19",
+          ultimate_id: "3019",
+          prologueMessages: "2068",
+          defeatMessages: "2069",
+          victoryMessages: "2070",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3340,10 +3434,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|9,1083|28,1064|9",
-          random_skill_count: "19",
+          skills: "1001|10,1083|28,1064|8",
+          random_skill_count: "15",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3352,12 +3446,12 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1029",
-          path: "Enemy01",
-          ultimate_id: "3001",
-          prologueMessages: "2001",
-          defeatMessages: "2003",
-          victoryMessages: "2002",
-          magazine: "1001,1001,1001,1001,1001",
+          path: "Enemy20",
+          ultimate_id: "3020",
+          prologueMessages: "2071",
+          defeatMessages: "2072",
+          victoryMessages: "2073",
+          magazine: "1001,1001,1001",
           strength: "90",
           energy_recovery: "160",
           basic_hp: "3600",
@@ -3375,10 +3469,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|10,1083|30,1064|9",
-          random_skill_count: "20",
+          skills: "1001|11,1083|30,1064|8",
+          random_skill_count: "16",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3387,15 +3481,15 @@ window.__require = function e(t, n, r) {
           raid_boss_coin: ""
         }, {
           id: "1030",
-          path: "Boss03",
-          ultimate_id: "2003",
-          prologueMessages: "2031",
-          defeatMessages: "2032",
-          victoryMessages: "2033",
-          magazine: "1001,1001,1001,1001,1001",
-          strength: "150",
+          path: "Boss06",
+          ultimate_id: "2006",
+          prologueMessages: "2080",
+          defeatMessages: "2081",
+          victoryMessages: "2082",
+          magazine: "1001,1001,1001",
+          strength: "90",
           energy_recovery: "160",
-          basic_hp: "50000",
+          basic_hp: "3600",
           energy_max: "1000",
           critical_damage: "100",
           reflect_damage: "0",
@@ -3410,10 +3504,10 @@ window.__require = function e(t, n, r) {
           dodge: "0",
           ultimate_ability_damage: "0",
           reflect_damage_count: "0",
-          income: "30",
+          income: "20",
           discount: "0",
-          skills: "1001|5,1012|1,1095|10,1123|10",
-          random_skill_count: "0",
+          skills: "1001|12,1012|3,1083|47,1095|10,1123|10",
+          random_skill_count: "4",
           stamina_max: "",
           stamina_recovery: "",
           skill_reroll_count: "",
@@ -3626,15 +3720,11 @@ window.__require = function e(t, n, r) {
       },
       onClickMaxBtn: function onClickMaxBtn() {
         Global.audio.playEffect("audio/click");
-        Global.gui.toast("\u529f\u80fd\u5f00\u53d1\u4e2d...");
+        Global.gui.open(gameConfig.UIID.BagPanel);
       },
       onClickStartBtn: function onClickStartBtn() {
         Global.audio.playEffect("audio/click");
-        if (!(Global.roleData.currentStamina >= 5)) {
-          Global.gui.toast("\u4f53\u529b\u4e0d\u8db3...");
-          return;
-        }
-        Global.roleData.updateStamina(-5);
+        Global.roleData.currentStamina >= 5 ? Global.roleData.updateStamina(-5) : Global.gui.toast("\u4f53\u529b\u4e0d\u8db3...");
         this.closeUI();
       },
       onClickGiftBtn: function onClickGiftBtn(target, data) {
@@ -3956,33 +4046,62 @@ window.__require = function e(t, n, r) {
       },
       specialSkillCallback: function specialSkillCallback(fromRoleView, targetRoleView, type, value) {
         var fromLeft = fromRoleView._roleData.roleId == this._roleView._roleData.roleId;
+        var wrjAmount = 0;
         var specialPreb;
-        if ("damage" == type) specialPreb = Global.res.getRes(gameConfig.PRELOADCONFIG.car.path); else if ("stun" == type) {
+        if ("damage" == type) {
+          fromRoleView._roleData.ownSkills.hasOwnProperty("1060") && (wrjAmount = fromRoleView._roleData.ownSkills["1060"].length);
+          specialPreb = Global.res.getRes(gameConfig.PRELOADCONFIG.wrj.path);
+          if (specialPreb) {
+            var specialNode = cc.instantiate(specialPreb);
+            var fworldPos = fromRoleView.node.convertToWorldSpaceAR(cc.v2(0, 0));
+            var fnodePos = this.effectRootNode.convertToNodeSpaceAR(fworldPos);
+            specialNode.setPosition(fnodePos);
+            specialNode.setScale(fromLeft ? .5 : -.5, .5);
+            specialNode.zIndex = gameConfig.EFFECT_ZINDEX_TYPE.MID;
+            this.effectRootNode.addChild(specialNode);
+            var spineBase = specialNode.getComponent("SpineBase");
+            spineBase.animationCallBack = function() {
+              specialNode.removeFromParent();
+            };
+            spineBase.trackEventCallBack = function(trackEntry, event) {
+              if ("Start" == event.data.name) {
+                var boomNode = specialNode.getChildByName("boomNode");
+                if (boomNode) {
+                  var boomSpineBase = boomNode.getComponent("SpineBase");
+                  if (boomSpineBase) {
+                    boomNode.active = true;
+                    boomSpineBase.animationCallBack = function() {
+                      boomNode.active = false;
+                    };
+                    boomSpineBase.playAnimation("Wrj");
+                  }
+                }
+                "damage" == type && this.playValueAnimation({
+                  damageType: "specialSkill",
+                  value: value
+                }, targetRoleView.getValuePositon());
+                fromRoleView._roleData.specialSkilHit(type, value);
+              }
+            }.bind(this);
+            spineBase && spineBase.playAnimation(wrjAmount > 1 ? "Wrj2" : "Wrj1", false);
+          }
+        } else if ("stun" == type) {
           if (0 == value) return;
-          specialPreb = Global.res.getRes(gameConfig.PRELOADCONFIG.car.path);
-        }
-        if (specialPreb) {
-          var specialNode = cc.instantiate(specialPreb);
-          var fworldPos = fromRoleView.node.convertToWorldSpaceAR(cc.v2(0, 0));
-          var fnodePos = this.effectRootNode.convertToNodeSpaceAR(fworldPos);
-          specialNode.setPosition(fnodePos);
-          specialNode.setScale(fromLeft ? -.5 : .5, .5);
-          specialNode.zIndex = gameConfig.EFFECT_ZINDEX_TYPE.MID;
-          this.effectRootNode.addChild(specialNode);
-          var spineBase = specialNode.getComponent("SpineBase");
-          spineBase.animationCallBack = function() {
-            specialNode.removeFromParent();
-          };
-          spineBase.trackEventCallBack = function(trackEntry, event) {
-            if ("Shop" == event.data.name) {
-              "damage" == type && this.playValueAnimation({
-                damageType: "specialSkill",
-                value: value
-              }, targetRoleView.getValuePositon());
-              fromRoleView._roleData.specialSkilHit(type, value);
-            }
-          }.bind(this);
-          spineBase && spineBase.playAnimation("animation", false);
+          specialPreb = Global.res.getRes(gameConfig.PRELOADCONFIG.punch.path);
+          if (specialPreb) {
+            var _specialNode = cc.instantiate(specialPreb);
+            var _fworldPos = fromRoleView.node.convertToWorldSpaceAR(cc.v2(0, 0));
+            var _fnodePos = this.effectRootNode.convertToNodeSpaceAR(_fworldPos);
+            _specialNode.setPosition(_fnodePos);
+            _specialNode.setScale(fromLeft ? .5 : -.5, .5);
+            _specialNode.zIndex = gameConfig.EFFECT_ZINDEX_TYPE.MID;
+            this.effectRootNode.addChild(_specialNode);
+            var _spineBase = _specialNode.getComponent("SpineBase");
+            _spineBase.animationCallBack = function() {
+              _specialNode.removeFromParent();
+            };
+            _spineBase && _spineBase.playAnimation("Punch", false);
+          }
         }
       },
       showRogueItemEffect: function showRogueItemEffect(_skillId, _worldPos, callback) {
@@ -4139,9 +4258,34 @@ window.__require = function e(t, n, r) {
         var promise6 = function promise6() {
           return new Promise(function(resolve, reject) {
             console.warn("\u6218\u524d\u51c6\u5907\u7b2c\u4e00\u8f6e:\u5224\u65ad\u662f\u5426\u62e5\u6709\u76f8\u5173\u5361\u724c\u548c\u6297\u538b\u795e\u5668");
-            1;
-            console.warn("\u7b2c\u4e00\u8f6e\u65e0\u5361\u724c\u548c\u6297\u538b\u795e\u5668");
-            resolve();
+            var roleSkills = _this3._roleView._roleData.beforeBattleStart();
+            var autoRoleSkills = _this3._autoRoleView._roleData.beforeBattleStart();
+            var filterSkills = function filterSkills(skills) {
+              var tempArray = [];
+              skills.map(function(skillId) {
+                var skillConfig = Global.skillManager.getSkillConfig(skillId);
+                var before_battle_effect = skillConfig.before_battle_effect.split("|");
+                "0" == before_battle_effect[0] && -1 == tempArray.indexOf(before_battle_effect[1]) && tempArray.push(before_battle_effect[1]);
+              });
+              return tempArray;
+            };
+            var roleAnimations = filterSkills(roleSkills);
+            var autoRoleAnimations = filterSkills(autoRoleSkills);
+            -1 != roleAnimations.indexOf("energyup") && -1 != autoRoleAnimations.indexOf("energyup") && (autoRoleAnimations = autoRoleAnimations.filter(function(name) {
+              return "energyup" != name;
+            }));
+            var playSkillEffects = function playSkillEffects(animations, roleView) {
+              return Promise.all(animations.map(function(animation) {
+                return new Promise(function(resolve) {
+                  _this3.playSkillEffect(animation, roleView, resolve);
+                });
+              }));
+            };
+            Promise.all([ playSkillEffects(roleAnimations, _this3._roleView), playSkillEffects(autoRoleAnimations, _this3._autoRoleView) ]).then(function() {
+              roleSkills.length && _this3._roleView._roleData.triggerBeforeBattleStartEvent(roleSkills);
+              autoRoleSkills.length && _this3._autoRoleView._roleData.triggerBeforeBattleStartEvent(autoRoleSkills);
+              resolve();
+            });
           });
         };
         promiseQueue.push(promise6);
@@ -4163,6 +4307,56 @@ window.__require = function e(t, n, r) {
         promiseQueue.push(promise8);
         Global.utils.runPromiseQueue(promiseQueue);
       },
+      playSkillEffect: function playSkillEffect(animation, fromRoleView, callback) {
+        var _this4 = this;
+        return new Promise(function(resolve) {
+          var animationConfig = gameConfig.PRELOADCONFIG["" + animation];
+          if (!animationConfig) {
+            console.warn("Skill effect " + skillId + " not found");
+            resolve();
+            callback && callback();
+            return;
+          }
+          var animName = animationConfig.animation;
+          var effectPrefab = Global.res.getRes(animationConfig.path);
+          if (effectPrefab) {
+            var effectNode = cc.instantiate(effectPrefab);
+            var fworldPos = fromRoleView.node.convertToWorldSpaceAR(cc.v2(0, 0));
+            var fnodePos = _this4.effectRootNode.convertToNodeSpaceAR(fworldPos);
+            effectNode.setPosition(fnodePos);
+            effectNode.setScale(fromRoleView.node.scaleX, 1);
+            effectNode.zIndex = gameConfig.EFFECT_ZINDEX_TYPE.MID;
+            _this4.effectRootNode.addChild(effectNode);
+            var spineBase = effectNode.getComponent("SpineBase");
+            if (spineBase) {
+              spineBase.animationCallBack = function() {
+                effectNode.removeFromParent();
+              };
+              spineBase.trackEventCallBack = function(trackEntry, event) {
+                console.log("event.data.name:", event.data.name);
+                if ("Start" == event.data.name) {
+                  "Energy_Up" == animName && cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.EnergySaoGuang, {
+                    roleId: fromRoleView._roleData.roleId
+                  });
+                  "RubyX" == animName && cc.director.GlobalEvent.emit(gameConfig.GAME_EVENT.HpSaoGuang, {
+                    roleId: fromRoleView._roleData.roleId
+                  });
+                  resolve();
+                  callback && callback();
+                }
+              };
+              spineBase.playAnimation(animName, false);
+            } else {
+              resolve();
+              callback && callback();
+            }
+          } else {
+            console.warn("Skill effect " + skillId + " not found");
+            resolve();
+            callback && callback();
+          }
+        });
+      },
       keepFighting: function keepFighting() {
         this._roleView._roleData.reborn();
         this._autoRoleView._roleData.currentEnergy = 0;
@@ -4183,7 +4377,7 @@ window.__require = function e(t, n, r) {
         });
       },
       stopFight: function stopFight(result) {
-        var _this4 = this;
+        var _this5 = this;
         this._gameOver = true;
         result ? this._roleView._roleData.defeatEnemy() : this._autoRoleView._roleData.defeatEnemy();
         this._roleView.stopFight();
@@ -4202,12 +4396,12 @@ window.__require = function e(t, n, r) {
           return new Promise(function(resolve, reject) {
             var messages = "";
             Global.utils.logMessage("\u4e3b\u89d2\u8d62\u4e86,Boss\u597d\u50cf\u6709\u8bdd\u8981\u8bf4...");
-            var roleId = _this4._autoRoleView._roleData.roleId;
+            var roleId = _this5._autoRoleView._roleData.roleId;
             var basicData = Global.basicAttributesManager.getConfigByID(roleId);
             messages = basicData.defeatMessages;
             if ("" == messages) Global.utils.logMessage("Boss\u6b32\u8a00\u53c8\u6b62,\u76f4\u63a5\u560e\u4e86..."); else {
               Global.utils.logMessage("Boss\u7ec4\u7ec7\u8bdd\u8bf4\u4e2d...");
-              _this4._autoRoleView.playDialogueAnimation(messages);
+              _this5._autoRoleView.playDialogueAnimation(messages);
             }
             resolve();
           });
@@ -4217,14 +4411,14 @@ window.__require = function e(t, n, r) {
           return new Promise(function(resolve, reject) {
             Global.utils.logMessage("\u89e6\u53d1\u6b7b\u4ea1\u52a8\u753b\u548c\u66f4\u65b0\u663e\u793aUI");
             if (result) {
-              _this4._roleView.vic();
-              _this4._autoRoleView.death();
+              _this5._roleView.vic();
+              _this5._autoRoleView.death();
               Global.utils.logMessage("\u4e3b\u89d2\u8d62\u4e86\uff0c\u76f4\u63a5\u56de\u590d\u5230\u6ee1\u8840\u72b6\u6001");
-              _this4._roleView._roleData.resetState();
-              _this4.updateAllUI();
+              _this5._roleView._roleData.resetState();
+              _this5.updateAllUI();
             } else {
-              _this4._roleView.death();
-              _this4._autoRoleView.vic();
+              _this5._roleView.death();
+              _this5._autoRoleView.vic();
             }
             resolve();
           });
@@ -4246,17 +4440,17 @@ window.__require = function e(t, n, r) {
             var couponPreb = Global.res.getRes(gameConfig.PRELOADCONFIG.coupon.path);
             if (couponPreb) {
               var couponNode = cc.instantiate(couponPreb);
-              var fworldPos = _this4.autoRoleRootNode.convertToWorldSpaceAR(cc.v2(0, 0));
-              var fnodePos = _this4.effectRootNode.convertToNodeSpaceAR(fworldPos);
+              var fworldPos = _this5.autoRoleRootNode.convertToWorldSpaceAR(cc.v2(0, 0));
+              var fnodePos = _this5.effectRootNode.convertToNodeSpaceAR(fworldPos);
               couponNode.setPosition(fnodePos);
               couponNode.zIndex = gameConfig.EFFECT_ZINDEX_TYPE.MID;
-              _this4.effectRootNode.addChild(couponNode);
+              _this5.effectRootNode.addChild(couponNode);
               var spineBase = couponNode.getComponent("SpineBase");
               spineBase.animationCallBack = function() {
                 couponNode.removeFromParent();
               };
               spineBase.trackEventCallBack = function(trackEntry, event) {
-                var _this5 = this;
+                var _this6 = this;
                 if ("Clean" == event.data.name) ; else if ("Start" == event.data.name) {
                   var uiArgs = {
                     belongsToCT: gameConfig.CONTROLS.BATTLE_CT,
@@ -4265,13 +4459,13 @@ window.__require = function e(t, n, r) {
                   };
                   var uicallBack = {
                     onRemoved: function onRemoved(node, params) {
-                      _this5.updateAllUI();
+                      _this6.updateAllUI();
                       resolve();
                     }
                   };
                   Global.gui.open(gameConfig.UIID.RoguePanel, uiArgs, uicallBack);
                 }
-              }.bind(_this4);
+              }.bind(_this5);
               spineBase && spineBase.playAnimation("Coupon", false);
             }
           });
@@ -4279,7 +4473,7 @@ window.__require = function e(t, n, r) {
         result && levelData.isBoss && curLevel < maxLen - 1 && promiseQueue.push(promise4);
         var promise5 = function promise5() {
           return new Promise(function(resolve, reject) {
-            _this4._roleView._roleData.addMoney();
+            _this5._roleView._roleData.addMoney();
             if (curLevel == maxLen - 1) {
               Global.utils.logMessage("\u5f53\u524d\u5173\u662f\u672c\u7ae0\u8282\u7684\u6700\u540e\u4e00\u5173,\u76f4\u63a5\u5f39\u80dc\u5229\u7ed3\u7b97\u7a97\u53e3");
               var uiArgs = {
@@ -4297,17 +4491,17 @@ window.__require = function e(t, n, r) {
               var couponPreb = Global.res.getRes(gameConfig.PRELOADCONFIG.coupon.path);
               if (couponPreb) {
                 var couponNode = cc.instantiate(couponPreb);
-                var fworldPos = _this4.autoRoleRootNode.convertToWorldSpaceAR(cc.v2(0, 0));
-                var fnodePos = _this4.effectRootNode.convertToNodeSpaceAR(fworldPos);
+                var fworldPos = _this5.autoRoleRootNode.convertToWorldSpaceAR(cc.v2(0, 0));
+                var fnodePos = _this5.effectRootNode.convertToNodeSpaceAR(fworldPos);
                 couponNode.setPosition(fnodePos);
                 couponNode.zIndex = gameConfig.EFFECT_ZINDEX_TYPE.MID;
-                _this4.effectRootNode.addChild(couponNode);
+                _this5.effectRootNode.addChild(couponNode);
                 var spineBase = couponNode.getComponent("SpineBase");
                 spineBase.animationCallBack = function() {
                   couponNode.removeFromParent();
                 };
                 spineBase.trackEventCallBack = function(trackEntry, event) {
-                  var _this6 = this;
+                  var _this7 = this;
                   if ("Clean" == event.data.name) {
                     if (result) {
                       cc.tween(this._autoRoleView.node).to(.5, {
@@ -4323,13 +4517,13 @@ window.__require = function e(t, n, r) {
                     };
                     var uicallBack = {
                       onRemoved: function onRemoved(node, params) {
-                        _this6.updateAllUI();
+                        _this7.updateAllUI();
                         resolve();
                       }
                     };
                     Global.gui.open(gameConfig.UIID.RoguePanel, uiArgs, uicallBack);
                   }
-                }.bind(_this4);
+                }.bind(_this5);
                 spineBase && spineBase.playAnimation("Coupon", false);
               }
             }
@@ -4349,7 +4543,7 @@ window.__require = function e(t, n, r) {
                   smallPhoneNode.removeFromParent();
                 };
                 spineBase.trackEventCallBack = function(trackEntry, event) {
-                  var _this7 = this;
+                  var _this8 = this;
                   if ("Start" == event.data.name) {
                     var uiArgs = {
                       belongsToCT: gameConfig.CONTROLS.BATTLE_CT,
@@ -4360,24 +4554,24 @@ window.__require = function e(t, n, r) {
                         Global.utils.logMessage("EventsPanel onRemoved");
                         setTimeout(function() {
                           this.passTheLevel();
-                        }.bind(_this7), 3e3);
+                        }.bind(_this8), 3e3);
                       }
                     };
                     Global.gui.open(gameConfig.UIID.EventsPanel, uiArgs, uicallBack);
                   }
-                }.bind(_this4);
+                }.bind(_this5);
                 spineBase && spineBase.playAnimation("S_Phone", false);
               }
             } else if (levelData.process == gameConfig.BATTLE_EVENTS_ENUM.MARKET) {
               Global.utils.logMessage("\u672c\u5173\u5361\u4e3a\u5546\u57ce\u4e8b\u4ef6,\u64ad\u653e\u5546\u57ce\u52a8\u753b\uff0c\u7136\u540e\u5f39\u51fa\u5546\u57ce\u7a97\u53e3");
               var carPreb = Global.res.getRes(gameConfig.PRELOADCONFIG.car.path);
               if (carPreb) {
-                _this4._carNode && _this4._carNode.removeFromParent();
-                var carNode = _this4._carNode = cc.instantiate(carPreb);
-                _this4.carEffectRootNode.addChild(carNode);
-                var _spineBase = carNode.getComponent("SpineBase");
-                _spineBase.trackEventCallBack = function(trackEntry, event) {
-                  var _this8 = this;
+                _this5._carNode && _this5._carNode.removeFromParent();
+                var carNode = _this5._carNode = cc.instantiate(carPreb);
+                _this5.carEffectRootNode.addChild(carNode);
+                var _spineBase2 = carNode.getComponent("SpineBase");
+                _spineBase2.trackEventCallBack = function(trackEntry, event) {
+                  var _this9 = this;
                   if ("Shop" == event.data.name) {
                     var uiArgs = {
                       belongsToCT: gameConfig.CONTROLS.BATTLE_CT,
@@ -4389,19 +4583,19 @@ window.__require = function e(t, n, r) {
                         Global.utils.logMessage("MarketPanel onRemoved");
                         setTimeout(function() {
                           this.passTheLevel();
-                        }.bind(_this8), 3e3);
+                        }.bind(_this9), 3e3);
                       }
                     };
                     Global.gui.open(gameConfig.UIID.MarketPanel, uiArgs, uicallBack);
                   }
-                }.bind(_this4);
-                _spineBase && _spineBase.playAnimation("animation", false);
+                }.bind(_this5);
+                _spineBase2 && _spineBase2.playAnimation("animation", false);
               }
             } else {
               Global.utils.logMessage("\u672c\u5173\u5361\u65e0\u4e8b\u4ef6\uff0c\u8fd4\u56de\u5230\u6d41\u7a0b\u4e00");
               setTimeout(function() {
                 this.passTheLevel();
-              }.bind(_this4), 3e3);
+              }.bind(_this5), 3e3);
             }
           });
         };
@@ -4409,8 +4603,8 @@ window.__require = function e(t, n, r) {
         var promise7 = function promise7() {
           return new Promise(function(resolve, reject) {
             Global.utils.logMessage("\u4e3b\u89d2\u95ef\u5173\u5931\u8d25\uff0c\u5f39\u51fa\u590d\u6d3b\u7a97\u53e3");
-            var roleView = _this4._roleView;
-            var autoRoleView = _this4._autoRoleView;
+            var roleView = _this5._roleView;
+            var autoRoleView = _this5._autoRoleView;
             var uiArgs = {
               belongsToCT: gameConfig.CONTROLS.BATTLE_CT,
               roleData: {
@@ -4431,7 +4625,7 @@ window.__require = function e(t, n, r) {
                   roleView.rebornSpine.animationCallBack = function() {
                     Global.utils.logMessage("\u91cd\u7f6e\u73a9\u5bb6\u72b6\u6001\uff0c\u7ee7\u7eed\u6218\u6597");
                     this.keepFighting();
-                  }.bind(_this4);
+                  }.bind(_this5);
                   roleView.rebornSpine.playAnimation("Reborn", false);
                 } else {
                   Global.utils.logMessage("\u653e\u5f03\u590d\u6d3b\uff0c\u8df3\u8f6c\u7ed3\u7b97\u754c\u9762");
@@ -4442,7 +4636,7 @@ window.__require = function e(t, n, r) {
                   var defeatUicallBack = {
                     onRemoved: function onRemoved(node, params) {
                       Global.utils.logMessage("ResultPanel onRemoved");
-                      _this4.gotoHomePage();
+                      _this5.gotoHomePage();
                       resolve();
                     }
                   };
@@ -4465,7 +4659,7 @@ window.__require = function e(t, n, r) {
             var defeatUicallBack = {
               onRemoved: function onRemoved(node, params) {
                 Global.utils.logMessage("ResultPanel onRemoved");
-                _this4.gotoHomePage();
+                _this5.gotoHomePage();
                 resolve();
               }
             };
@@ -7785,7 +7979,8 @@ window.__require = function e(t, n, r) {
           BLOOD: 16,
           DEBUFF_COUNT: 17,
           REBORN: 18,
-          ULTIMATE_ABILITY_HIT: 19
+          ULTIMATE_ABILITY_HIT: 19,
+          BEFORE_BATTLE_START: 20
         },
         EVENT_TRIGGER_SUB_TYPE: {
           TIME: 0,
@@ -7863,7 +8058,14 @@ window.__require = function e(t, n, r) {
           TYPE_32: 3007,
           TYPE_33: 3009,
           TYPE_34: 3011,
-          TYPE_35: 3013
+          TYPE_35: 3013,
+          TYPE_36: 3014,
+          TYPE_37: 3015,
+          TYPE_38: 3016,
+          TYPE_39: 3017,
+          TYPE_40: 3018,
+          TYPE_41: 3019,
+          TYPE_42: 3020
         },
         VALUE_TYPE: {
           RATE: 1,
@@ -7887,15 +8089,15 @@ window.__require = function e(t, n, r) {
           BULLET: 3
         },
         MAGIC_RATE: {
-          RARE: 58,
-          EPIC: 36,
+          RARE: 70,
+          EPIC: 24,
           LEGENDARY: 6
         },
         SKILL_RATE: {
-          COMMON: 55,
-          RARE: 26,
-          EPIC: 13,
-          LEGENDARY: 6
+          COMMON: 57,
+          RARE: 28,
+          EPIC: 11,
+          LEGENDARY: 4
         },
         BOOST_CHANCE_COEFFICIENT: {
           COMMON: 2,
@@ -8026,7 +8228,9 @@ window.__require = function e(t, n, r) {
         container: cc.Node,
         mergeBtn: cc.Button,
         autoMergeBtn: cc.Button,
-        autoMergeRedDot: cc.Node
+        autoMergeRedDot: cc.Node,
+        materialsLine: cc.Node,
+        scrollView: cc.ScrollView
       },
       start: function start() {},
       hideItems: function hideItems() {
@@ -8058,6 +8262,9 @@ window.__require = function e(t, n, r) {
         }
         this.hideItems();
         this.updateEquipmentsAndMaterials(null);
+      },
+      onEnable: function onEnable() {
+        this.scrollView.scrollToTop();
       },
       onClickMerge: function onClickMerge() {
         var materials = [];
@@ -8091,8 +8298,12 @@ window.__require = function e(t, n, r) {
         equipmentData.selected = false;
         this.hideItems();
         this.updateEquipmentsAndMaterials();
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateEquipments();
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateSlotEquipment();
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments();
+          equipmentView.updateSlotsEquipment();
+        }
         var args = {};
         args.equipmentData = equipmentData;
         args.roleData = this.roleData;
@@ -8219,7 +8430,7 @@ window.__require = function e(t, n, r) {
         this.materialItemContainer.active = true;
         this.materialItemContainer_2.active = conditionList.length > 1;
         this.infoNode.active = true;
-        this.equipmentName.getComponent("LabelUpdater").setString(resultEquipmentItemData.equipmentConfig.name);
+        this.equipmentName.getComponent("LabelUpdater").setString(Global.languageManager.t("equipmentName_" + resultEquipmentItemData.equipmentConfig.id));
         var enhancementPointItem = Global.equipmentManager.enhancementPointsConfigDict[resultEquipmentItemData.level];
         var baseValue = parseInt(enhancementPointItem["rarity_" + equipmentData.rarity]);
         var nextValue = parseInt(enhancementPointItem["rarity_" + resultEquipmentItemData.rarity]);
@@ -8246,13 +8457,14 @@ window.__require = function e(t, n, r) {
         for (var _i = 0; _i < conditionList.length; _i++) {
           var conditionData = conditionList[_i];
           if (null != conditionData.key) {
-            var equipmentConfig = Global.equipmentManager.getEquipmentConfig(conditionData.key);
+            var equipmentConfig = Global.equipmentManager.getEquipmentConfig(conditionData.id);
             conditionStr += "<color=" + this.labelColorList[equipmentConfig.rarity] + ">" + Global.languageManager.t("equipmentName_" + equipmentConfig.id) + "</color>,";
           } else conditionStr += "<color=" + this.labelColorList[conditionData.rarity] + ">" + Global.languageManager.t("anything") + Global.languageManager.t("equipment_rarity_" + conditionData.rarity) + Global.languageManager.t("equipment_slot_" + conditionData.slot) + "</color>,";
         }
         conditionStr = conditionStr.substring(0, conditionStr.length - 1);
         this.materialsDesc.getComponent("RichTextUpdater").setContent("equipmentMerge_upgrade_materials_tip", [ conditionStr ]);
         this.materialsDesc.active = true;
+        this.scrollView.scrollToTop();
       },
       updateItemsStatus: function updateItemsStatus(_equipmentData) {
         if (null == _equipmentData) return;
@@ -8263,7 +8475,7 @@ window.__require = function e(t, n, r) {
           var result = false;
           for (var j = 0; j < conditionList.length; j++) {
             var condition = conditionList[j];
-            condition.rarity == equipmentItemCom.equipmentData.rarity && (null != condition.key ? condition.key == equipmentItemCom.equipmentData.equipmentId && (result = true) : condition.slot == equipmentItemCom.equipmentData.slot && (result = true));
+            condition.rarity == equipmentItemCom.equipmentData.rarity && (null != condition.key ? condition.key == equipmentItemCom.equipmentData.equipmentConfig.id_group && (result = true) : condition.slot == equipmentItemCom.equipmentData.slot && (result = true));
           }
           false == result && equipmentItemCom.showLock(true);
         }
@@ -8300,6 +8512,7 @@ window.__require = function e(t, n, r) {
         this.container.addChild(equipmentItem);
         equipmentItem.x = startX + 210 * Math.floor(_index % 5);
         equipmentItem.y = startY + -1 * Math.floor(_index / 5) * 210;
+        return equipmentItem;
       },
       generateBagItem: function generateBagItem(_itemData, _index) {
         var startX = -420;
@@ -8310,7 +8523,7 @@ window.__require = function e(t, n, r) {
         bagItem.getComponent("BagItem").setData(_itemData, this.roleData, EnumType.ITEM_OWNER_TYPE.MERGE, EnumType.ITEM_SHOW_TYPE.SELECTED_FLAG);
         this.container.addChild(bagItem);
         bagItem.x = startX + 210 * Math.floor(_index % 5);
-        bagItem.y = startY + -1 * Math.floor(_index / 5) * 210;
+        bagItem.y = this.materialsLine.y - bagItem.height / 2 - 40 + -1 * Math.floor(_index / 5) * 210;
       },
       getSortList: function getSortList(_equipmentData) {
         var _this = this;
@@ -8342,27 +8555,28 @@ window.__require = function e(t, n, r) {
         return resultList;
       },
       getSortPoints: function getSortPoints(_equipmentData, _currentItemData) {
-        var result = _currentItemData.equipmentConfig ? 1e3 : 0;
-        result += _currentItemData.slotPos == EnumType.EQUIPMENT_SLOT_POS.NONE ? 0 : 100;
-        result += 10 * (3 - _currentItemData.slot);
-        result += _currentItemData.rarity;
-        result += _currentItemData.equipmentConfig ? _currentItemData.equipmentConfig.id / 1e4 : _currentItemData.itemConfig.id / 1e4;
+        var result = null != _currentItemData.equipmentConfig ? 1e8 : 0;
+        result += _currentItemData.slotPos == EnumType.EQUIPMENT_SLOT_POS.NONE ? 0 : 1e6;
+        result += 1e5 * _currentItemData.rarity;
+        result += 1e4 * (3 - _currentItemData.slot);
+        result += null != _currentItemData.equipmentConfig ? 100 * _currentItemData.level : 100;
+        result += _currentItemData.equipmentConfig ? _currentItemData.equipmentConfig.id / 1e3 : _currentItemData.itemConfig.id / 1e3;
         if (null != _equipmentData) {
           var conditionList = Global.equipmentManager.getUpgradeCondition(_equipmentData);
           for (var i = 0; i < conditionList.length; i++) {
             var condition = conditionList[i];
             if (_currentItemData.equipmentConfig) {
               if (_currentItemData.rarity == condition.rarity) if (null != condition.key) {
-                if (condition.key == _currentItemData.equipmentId) {
-                  result += 1e3;
+                if (condition.key == _currentItemData.equipmentConfig.id_group) {
+                  result += 1e7;
                   break;
                 }
               } else if (condition.slot == _currentItemData.slot) {
-                result += 1e3;
+                result += 1e7;
                 break;
               }
             } else if (_currentItemData.rarity == condition.materialRarity && condition.slot == _currentItemData.slot) {
-              result += 1e3;
+              result += 1e7;
               break;
             }
           }
@@ -8381,19 +8595,39 @@ window.__require = function e(t, n, r) {
       updateEquipmentsAndMaterials: function updateEquipmentsAndMaterials(_equipmentData) {
         this.clearItems();
         this.itemList = this.getSortList(_equipmentData);
+        this.materialsLine.active = false;
+        var equipmentEndPos;
+        var equipmentEndIndex;
+        var equipmentEndRemainCount = 0;
         for (var i = 0; i < this.itemList.length; i++) {
           var item = this.itemList[i];
-          item.equipmentConfig ? this.generateEquipmentItem(item, i) : this.generateBagItem(item, i);
+          if (item.equipmentConfig) {
+            var equipmentItem = this.generateEquipmentItem(item, i);
+            equipmentEndPos = equipmentItem.y - equipmentItem.height / 2;
+            equipmentEndIndex = i;
+          } else {
+            if (false == this.materialsLine.active) {
+              this.materialsLine.active = true;
+              this.materialsLine.y = equipmentEndPos - 40;
+              equipmentEndRemainCount = i % 5 == 0 ? 0 : 5 - i % 5;
+            }
+            this.generateBagItem(item, i - (equipmentEndIndex + 1));
+          }
         }
-        this.container.height = 210 * Math.ceil(this.itemList.length / 5) + 30;
+        var lineHeight = false == this.materialsLine.active ? 0 : this.materialsLine.height;
+        this.container.height = 210 * Math.ceil((this.itemList.length + equipmentEndRemainCount) / 5) + 30 + lineHeight;
         this.autoMergeBtn.interactable = null != Global.equipmentManager.hasAutoCombine();
         this.autoMergeRedDot.active = this.autoMergeBtn.interactable;
       },
       onClickAutoMerge: function onClickAutoMerge() {
         var equipmentData = Global.equipmentManager.autoCombine(true);
         this.updateEquipmentsAndMaterials();
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateEquipments();
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateSlotEquipment();
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments();
+          equipmentView.updateSlotsEquipment();
+        }
         var args = {};
         args.equipmentData = equipmentData;
         args.roleData = this.roleData;
@@ -8429,7 +8663,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1011",
-          skills: "0,1214,1215,1202,0,0,1237,0,0,1178"
+          skills: "0,1214,1215,1202,0,0,1237,0,0,1178",
+          id_group: "1"
         }, {
           id: "1002",
           name: "S\u65a7\u5934S-\u7d2b",
@@ -8442,7 +8677,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1003",
-          skills: "1229,1238,1215,1202,0,0,1230,0,0,1239"
+          skills: "1229,1238,1215,1202,0,0,1230,0,0,1239",
+          id_group: "2"
         }, {
           id: "1003",
           name: "S\u5237\u5b50S-\u7d2b",
@@ -8455,7 +8691,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1009",
-          skills: "1216,1167,1215,1202,0,0,1168,0,0,1169"
+          skills: "1216,1167,1215,1202,0,0,1168,0,0,1169",
+          id_group: "3"
         }, {
           id: "1004",
           name: "S\u53cd\u51fbS-\u7d2b",
@@ -8468,7 +8705,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1021",
-          skills: "0,1218,1215,1202,0,0,1240,0,0,1231"
+          skills: "0,1218,1215,1202,0,0,1240,0,0,1231",
+          id_group: "4"
         }, {
           id: "1005",
           name: "S\u51b0\u68d2S-\u7d2b",
@@ -8481,7 +8719,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1100&energy_max",
           ultimate_type: "1022",
-          skills: "0,1217,1215,1203,0,0,1241,0,0,1166"
+          skills: "0,1217,1215,1203,0,0,1241,0,0,1166",
+          id_group: "5"
         }, {
           id: "1006",
           name: "S\u53cd\u4f24S-\u7d2b",
@@ -8494,7 +8733,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1200&energy_max",
           ultimate_type: "1004",
-          skills: "1179,1172,1215,1207,0,0,1173,0,0,1219"
+          skills: "1179,1172,1215,1207,0,0,1173,0,0,1219",
+          id_group: "6"
         }, {
           id: "1007",
           name: "S\u624b\u67c4S-\u7d2b",
@@ -8507,7 +8747,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1007",
-          skills: "0,1187,1215,1202,0,0,1188,0,0,1182"
+          skills: "0,1187,1215,1202,0,0,1188,0,0,1182",
+          id_group: "7"
         }, {
           id: "1008",
           name: "S\u996e\u6599S-\u7d2b",
@@ -8520,7 +8761,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1100&energy_max",
           ultimate_type: "1015",
-          skills: "0,1184,1215,1202,0,0,1242,0,0,1242"
+          skills: "0,1184,1215,1202,0,0,1242,0,0,1242",
+          id_group: "8"
         }, {
           id: "1009",
           name: "S\u5927\u62dbS-\u7d2b",
@@ -8533,7 +8775,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "800&energy_max",
           ultimate_type: "1010",
-          skills: "1180,1244,1215,1202,0,0,1180,0,0,1245"
+          skills: "1180,1244,1215,1202,0,0,1180,0,0,1245",
+          id_group: "9"
         }, {
           id: "1010",
           name: "S\u51b2\u950bS-\u7d2b",
@@ -8546,7 +8789,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1006",
-          skills: "0,1246,1215,1202,0,0,1247,0,0,1186"
+          skills: "0,1246,1215,1202,0,0,1247,0,0,1186",
+          id_group: "10"
         }, {
           id: "1101",
           name: "S\u6062\u590d\u80cc\u5305-\u7d2b",
@@ -8559,7 +8803,8 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1204,1248,1205,0,0,1224,0,0,1249"
+          skills: "0,1204,1248,1205,0,0,1224,0,0,1249",
+          id_group: "11"
         }, {
           id: "1102",
           name: "S\u590d\u6d3b\u80cc\u5305-\u7d2b",
@@ -8572,7 +8817,8 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1204,1196,1205,0,0,1198,0,0,1199"
+          skills: "0,1204,1196,1205,0,0,1198,0,0,1199",
+          id_group: "12"
         }, {
           id: "1103",
           name: "S\u7d27\u6025\u80cc\u5305-\u7d2b",
@@ -8585,7 +8831,8 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1204,1250,1205,0,0,1251,0,0,1252"
+          skills: "0,1204,1250,1205,0,0,1251,0,0,1252",
+          id_group: "13"
         }, {
           id: "1201",
           name: "S\u91cd\u4f24\u6212\u6307-\u7d2b",
@@ -8598,7 +8845,8 @@ window.__require = function e(t, n, r) {
           base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1201,1253,1202,0,0,1193,0,0,1195"
+          skills: "0,1201,1253,1202,0,0,1193,0,0,1195",
+          id_group: "14"
         }, {
           id: "1202",
           name: "S\u51b0\u51bb\u6212\u6307-\u7d2b",
@@ -8611,7 +8859,8 @@ window.__require = function e(t, n, r) {
           base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1201,1254,1202,0,0,1194,0,0,1256"
+          skills: "0,1201,1254,1202,0,0,1194,0,0,1256",
+          id_group: "15"
         }, {
           id: "1203",
           name: "S\u4e2d\u6bd2\u6212\u6307-\u7d2b",
@@ -8624,7 +8873,8 @@ window.__require = function e(t, n, r) {
           base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1201,1225,1202,0,0,1170,0,0,1171"
+          skills: "0,1201,1225,1202,0,0,1170,0,0,1171",
+          id_group: "16"
         }, {
           id: "1301",
           name: "S\u51cf\u4f24\u9970\u54c1-\u7d2b",
@@ -8637,7 +8887,8 @@ window.__require = function e(t, n, r) {
           base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1206,1213,1207,0,0,1213,0,0,1211"
+          skills: "0,1206,1213,1207,0,0,1213,0,0,1211",
+          id_group: "17"
         }, {
           id: "1302",
           name: "S\u589e\u4f24\u9970\u54c1-\u7d2b",
@@ -8650,7 +8901,8 @@ window.__require = function e(t, n, r) {
           base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1206,1257,1207,0,0,1258,0,0,1212"
+          skills: "0,1206,1257,1207,0,0,1258,0,0,1212",
+          id_group: "18"
         }, {
           id: "1303",
           name: "S\u63a7\u5236\u9970\u54c1-\u7d2b",
@@ -8663,7 +8915,8 @@ window.__require = function e(t, n, r) {
           base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,1206,1259,1207,0,0,1190,0,0,1191"
+          skills: "0,1206,1259,1207,0,0,1190,0,0,1191",
+          id_group: "19"
         }, {
           id: "2001",
           name: "\u7eb8\u56e2-\u767d",
@@ -8676,7 +8929,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1002",
-          skills: "1183,0,1200,1260,0,0,1261,0,0,1237"
+          skills: "1183,0,1200,1260,0,0,1261,0,0,1237",
+          id_group: "20"
         }, {
           id: "2002",
           name: "\u7eb8\u56e2-\u7eff",
@@ -8689,7 +8943,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1002",
-          skills: "1183,0,1200,1260,0,0,1261,0,0,1237"
+          skills: "1183,0,1200,1260,0,0,1261,0,0,1237",
+          id_group: "20"
         }, {
           id: "2003",
           name: "\u7eb8\u56e2-\u84dd",
@@ -8702,7 +8957,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1002",
-          skills: "1183,0,1200,1260,0,0,1261,0,0,1237"
+          skills: "1183,0,1200,1260,0,0,1261,0,0,1237",
+          id_group: "20"
         }, {
           id: "2004",
           name: "\u7eb8\u56e2-\u7d2b",
@@ -8715,7 +8971,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1002",
-          skills: "1183,0,1200,1260,0,0,1261,0,0,1237"
+          skills: "1183,0,1200,1260,0,0,1261,0,0,1237",
+          id_group: "20"
         }, {
           id: "2005",
           name: "\u65a7\u5934-\u767d",
@@ -8728,7 +8985,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1014",
-          skills: "0,0,1200,1262,0,0,1263,0,0,1264"
+          skills: "0,0,1200,1262,0,0,1263,0,0,1264",
+          id_group: "21"
         }, {
           id: "2006",
           name: "\u65a7\u5934-\u7eff",
@@ -8741,7 +8999,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1014",
-          skills: "0,0,1200,1262,0,0,1263,0,0,1264"
+          skills: "0,0,1200,1262,0,0,1263,0,0,1264",
+          id_group: "21"
         }, {
           id: "2007",
           name: "\u65a7\u5934-\u84dd",
@@ -8754,7 +9013,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1014",
-          skills: "0,0,1200,1262,0,0,1263,0,0,1264"
+          skills: "0,0,1200,1262,0,0,1263,0,0,1264",
+          id_group: "21"
         }, {
           id: "2008",
           name: "\u65a7\u5934-\u7d2b",
@@ -8767,7 +9027,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1014",
-          skills: "0,0,1200,1262,0,0,1263,0,0,1264"
+          skills: "0,0,1200,1262,0,0,1263,0,0,1264",
+          id_group: "21"
         }, {
           id: "2009",
           name: "\u5237\u5b50-\u767d",
@@ -8780,7 +9041,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1008",
-          skills: "0,0,1200,1265,0,0,1253,0,0,1266"
+          skills: "0,0,1200,1265,0,0,1253,0,0,1266",
+          id_group: "22"
         }, {
           id: "2010",
           name: "\u5237\u5b50-\u7eff",
@@ -8793,7 +9055,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1008",
-          skills: "0,0,1200,1265,0,0,1253,0,0,1266"
+          skills: "0,0,1200,1265,0,0,1253,0,0,1266",
+          id_group: "22"
         }, {
           id: "2011",
           name: "\u5237\u5b50-\u84dd",
@@ -8806,7 +9069,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1008",
-          skills: "0,0,1200,1265,0,0,1253,0,0,1266"
+          skills: "0,0,1200,1265,0,0,1253,0,0,1266",
+          id_group: "22"
         }, {
           id: "2012",
           name: "\u5237\u5b50-\u7d2b",
@@ -8819,7 +9083,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1008",
-          skills: "0,0,1200,1265,0,0,1253,0,0,1266"
+          skills: "0,0,1200,1265,0,0,1253,0,0,1266",
+          id_group: "22"
         }, {
           id: "2013",
           name: "\u53cd\u51fb-\u767d",
@@ -8832,7 +9097,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1016",
-          skills: "0,0,1200,1218,0,0,1220,0,0,1261"
+          skills: "0,0,1200,1218,0,0,1220,0,0,1261",
+          id_group: "23"
         }, {
           id: "2014",
           name: "\u53cd\u51fb-\u7eff",
@@ -8843,9 +9109,10 @@ window.__require = function e(t, n, r) {
           level: "1",
           breakthrough: "0",
           base_property: "36&strength",
-          constant_property: "1000&energy_max",
+          constant_property: "",
           ultimate_type: "1016",
-          skills: "0,0,1200,1218,0,0,1220,0,0,1261"
+          skills: "0,0,1200,1218,0,0,1220,0,0,1261",
+          id_group: "23"
         }, {
           id: "2015",
           name: "\u53cd\u51fb-\u84dd",
@@ -8858,7 +9125,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1016",
-          skills: "0,0,1200,1218,0,0,1220,0,0,1261"
+          skills: "0,0,1200,1218,0,0,1220,0,0,1261",
+          id_group: "23"
         }, {
           id: "2016",
           name: "\u53cd\u51fb-\u7d2b",
@@ -8871,7 +9139,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1016",
-          skills: "0,0,1200,1218,0,0,1220,0,0,1261"
+          skills: "0,0,1200,1218,0,0,1220,0,0,1261",
+          id_group: "23"
         }, {
           id: "2017",
           name: "\u51b0\u68d2-\u767d",
@@ -8884,7 +9153,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1013",
-          skills: "0,0,1200,1267,0,0,1254,0,0,1221"
+          skills: "0,0,1200,1267,0,0,1254,0,0,1221",
+          id_group: "24"
         }, {
           id: "2018",
           name: "\u51b0\u68d2-\u7eff",
@@ -8897,7 +9167,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1013",
-          skills: "0,0,1200,1267,0,0,1254,0,0,1221"
+          skills: "0,0,1200,1267,0,0,1254,0,0,1221",
+          id_group: "24"
         }, {
           id: "2019",
           name: "\u51b0\u68d2-\u84dd",
@@ -8910,7 +9181,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1013",
-          skills: "0,0,1200,1267,0,0,1254,0,0,1221"
+          skills: "0,0,1200,1267,0,0,1254,0,0,1221",
+          id_group: "24"
         }, {
           id: "2020",
           name: "\u51b0\u68d2-\u7d2b",
@@ -8923,7 +9195,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1013",
-          skills: "0,0,1200,1267,0,0,1254,0,0,1221"
+          skills: "0,0,1200,1267,0,0,1254,0,0,1221",
+          id_group: "24"
         }, {
           id: "2021",
           name: "\u53cd\u4f24-\u767d",
@@ -8936,7 +9209,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1017",
-          skills: "0,0,1200,1268,0,0,1222,0,0,1223"
+          skills: "0,0,1200,1268,0,0,1222,0,0,1223",
+          id_group: "25"
         }, {
           id: "2022",
           name: "\u53cd\u4f24-\u7eff",
@@ -8949,7 +9223,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1017",
-          skills: "0,0,1200,1268,0,0,1222,0,0,1223"
+          skills: "0,0,1200,1268,0,0,1222,0,0,1223",
+          id_group: "25"
         }, {
           id: "2023",
           name: "\u53cd\u4f24-\u84dd",
@@ -8962,7 +9237,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1017",
-          skills: "0,0,1200,1268,0,0,1222,0,0,1223"
+          skills: "0,0,1200,1268,0,0,1222,0,0,1223",
+          id_group: "25"
         }, {
           id: "2024",
           name: "\u53cd\u4f24-\u7d2b",
@@ -8975,7 +9251,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1017",
-          skills: "0,0,1200,1268,0,0,1222,0,0,1223"
+          skills: "0,0,1200,1268,0,0,1222,0,0,1223",
+          id_group: "25"
         }, {
           id: "2025",
           name: "\u624b\u67c4-\u767d",
@@ -8988,7 +9265,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1018",
-          skills: "0,0,1200,1269,0,0,1270,0,0,1271"
+          skills: "0,0,1200,1269,0,0,1270,0,0,1271",
+          id_group: "26"
         }, {
           id: "2026",
           name: "\u624b\u67c4-\u7eff",
@@ -9001,7 +9279,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1018",
-          skills: "0,0,1200,1269,0,0,1270,0,0,1271"
+          skills: "0,0,1200,1269,0,0,1270,0,0,1271",
+          id_group: "26"
         }, {
           id: "2027",
           name: "\u624b\u67c4-\u84dd",
@@ -9014,7 +9293,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1018",
-          skills: "0,0,1200,1269,0,0,1270,0,0,1271"
+          skills: "0,0,1200,1269,0,0,1270,0,0,1271",
+          id_group: "26"
         }, {
           id: "2028",
           name: "\u624b\u67c4-\u7d2b",
@@ -9027,7 +9307,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1018",
-          skills: "0,0,1200,1269,0,0,1270,0,0,1271"
+          skills: "0,0,1200,1269,0,0,1270,0,0,1271",
+          id_group: "26"
         }, {
           id: "2029",
           name: "\u996e\u6599-\u767d",
@@ -9040,7 +9321,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1019",
-          skills: "0,0,1200,1272,0,0,1253,0,0,1221"
+          skills: "0,0,1200,1272,0,0,1253,0,0,1221",
+          id_group: "27"
         }, {
           id: "2030",
           name: "\u996e\u6599-\u7eff",
@@ -9053,7 +9335,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1019",
-          skills: "0,0,1200,1272,0,0,1253,0,0,1221"
+          skills: "0,0,1200,1272,0,0,1253,0,0,1221",
+          id_group: "27"
         }, {
           id: "2031",
           name: "\u996e\u6599-\u84dd",
@@ -9066,7 +9349,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1019",
-          skills: "0,0,1200,1272,0,0,1253,0,0,1221"
+          skills: "0,0,1200,1272,0,0,1253,0,0,1221",
+          id_group: "27"
         }, {
           id: "2032",
           name: "\u996e\u6599-\u7d2b",
@@ -9079,7 +9363,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1019",
-          skills: "0,0,1200,1272,0,0,1253,0,0,1221"
+          skills: "0,0,1200,1272,0,0,1253,0,0,1221",
+          id_group: "27"
         }, {
           id: "2033",
           name: "\u5927\u62db-\u767d",
@@ -9092,7 +9377,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1300&energy_max",
           ultimate_type: "1005",
-          skills: "1185,0,1200,1181,0,0,1273,0,0,1274"
+          skills: "1185,0,1200,1181,0,0,1273,0,0,1274",
+          id_group: "28"
         }, {
           id: "2034",
           name: "\u5927\u62db-\u7eff",
@@ -9105,7 +9391,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1300&energy_max",
           ultimate_type: "1005",
-          skills: "1185,0,1200,1181,0,0,1273,0,0,1274"
+          skills: "1185,0,1200,1181,0,0,1273,0,0,1274",
+          id_group: "28"
         }, {
           id: "2035",
           name: "\u5927\u62db-\u84dd",
@@ -9118,7 +9405,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1300&energy_max",
           ultimate_type: "1005",
-          skills: "1185,0,1200,1181,0,0,1273,0,0,1274"
+          skills: "1185,0,1200,1181,0,0,1273,0,0,1274",
+          id_group: "28"
         }, {
           id: "2036",
           name: "\u5927\u62db-\u7d2b",
@@ -9131,7 +9419,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1300&energy_max",
           ultimate_type: "1005",
-          skills: "1185,0,1200,1181,0,0,1273,0,0,1274"
+          skills: "1185,0,1200,1181,0,0,1273,0,0,1274",
+          id_group: "28"
         }, {
           id: "2037",
           name: "\u51b2\u950b-\u767d",
@@ -9144,7 +9433,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1020",
-          skills: "0,0,1200,1246,0,0,1275,0,0,1247"
+          skills: "0,0,1200,1246,0,0,1275,0,0,1247",
+          id_group: "29"
         }, {
           id: "2038",
           name: "\u51b2\u950b-\u7eff",
@@ -9157,7 +9447,8 @@ window.__require = function e(t, n, r) {
           base_property: "36&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1020",
-          skills: "0,0,1200,1246,0,0,1275,0,0,1247"
+          skills: "0,0,1200,1246,0,0,1275,0,0,1247",
+          id_group: "29"
         }, {
           id: "2039",
           name: "\u51b2\u950b-\u84dd",
@@ -9170,7 +9461,8 @@ window.__require = function e(t, n, r) {
           base_property: "48&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1020",
-          skills: "0,0,1200,1246,0,0,1275,0,0,1247"
+          skills: "0,0,1200,1246,0,0,1275,0,0,1247",
+          id_group: "29"
         }, {
           id: "2040",
           name: "\u51b2\u950b-\u7d2b",
@@ -9183,7 +9475,8 @@ window.__require = function e(t, n, r) {
           base_property: "60&strength",
           constant_property: "1000&energy_max",
           ultimate_type: "1020",
-          skills: "0,0,1200,1246,0,0,1275,0,0,1247"
+          skills: "0,0,1200,1246,0,0,1275,0,0,1247",
+          id_group: "29"
         }, {
           id: "2101",
           name: "\u95ea\u907f\u80cc\u5305-\u767d",
@@ -9196,7 +9489,8 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1276,0,0,1276,0,0,1277"
+          skills: "0,0,1204,1276,0,0,1276,0,0,1277",
+          id_group: "30"
         }, {
           id: "2102",
           name: "\u95ea\u907f\u80cc\u5305-\u7eff",
@@ -9209,7 +9503,8 @@ window.__require = function e(t, n, r) {
           base_property: "1440&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1276,0,0,1276,0,0,1277"
+          skills: "0,0,1204,1276,0,0,1276,0,0,1277",
+          id_group: "30"
         }, {
           id: "2103",
           name: "\u95ea\u907f\u80cc\u5305-\u84dd",
@@ -9222,7 +9517,8 @@ window.__require = function e(t, n, r) {
           base_property: "1920&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1276,0,0,1276,0,0,1277"
+          skills: "0,0,1204,1276,0,0,1276,0,0,1277",
+          id_group: "30"
         }, {
           id: "2104",
           name: "\u95ea\u907f\u80cc\u5305-\u7d2b",
@@ -9235,7 +9531,8 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1276,0,0,1276,0,0,1277"
+          skills: "0,0,1204,1276,0,0,1276,0,0,1277",
+          id_group: "30"
         }, {
           id: "2105",
           name: "\u6025\u6551\u80cc\u5305-\u767d",
@@ -9248,7 +9545,8 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1278,0,0,1279,0,0,1174"
+          skills: "0,0,1204,1278,0,0,1279,0,0,1174",
+          id_group: "31"
         }, {
           id: "2106",
           name: "\u6025\u6551\u80cc\u5305-\u7eff",
@@ -9261,7 +9559,8 @@ window.__require = function e(t, n, r) {
           base_property: "1440&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1278,0,0,1279,0,0,1174"
+          skills: "0,0,1204,1278,0,0,1279,0,0,1174",
+          id_group: "31"
         }, {
           id: "2107",
           name: "\u6025\u6551\u80cc\u5305-\u84dd",
@@ -9274,7 +9573,8 @@ window.__require = function e(t, n, r) {
           base_property: "1920&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1278,0,0,1279,0,0,1174"
+          skills: "0,0,1204,1278,0,0,1279,0,0,1174",
+          id_group: "31"
         }, {
           id: "2108",
           name: "\u6025\u6551\u80cc\u5305-\u7d2b",
@@ -9287,7 +9587,8 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1278,0,0,1279,0,0,1174"
+          skills: "0,0,1204,1278,0,0,1279,0,0,1174",
+          id_group: "31"
         }, {
           id: "2109",
           name: "\u51b0\u51bb\u80cc\u5305-\u767d",
@@ -9300,7 +9601,8 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1254,0,0,1255,0,0,1280"
+          skills: "0,0,1204,1254,0,0,1255,0,0,1280",
+          id_group: "32"
         }, {
           id: "2110",
           name: "\u51b0\u51bb\u80cc\u5305-\u7eff",
@@ -9313,7 +9615,8 @@ window.__require = function e(t, n, r) {
           base_property: "1440&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1254,0,0,1255,0,0,1280"
+          skills: "0,0,1204,1254,0,0,1255,0,0,1280",
+          id_group: "32"
         }, {
           id: "2111",
           name: "\u51b0\u51bb\u80cc\u5305-\u84dd",
@@ -9326,7 +9629,8 @@ window.__require = function e(t, n, r) {
           base_property: "1920&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1254,0,0,1255,0,0,1280"
+          skills: "0,0,1204,1254,0,0,1255,0,0,1280",
+          id_group: "32"
         }, {
           id: "2112",
           name: "\u51b0\u51bb\u80cc\u5305-\u7d2b",
@@ -9339,7 +9643,8 @@ window.__require = function e(t, n, r) {
           base_property: "2400&basic_hp",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1204,1254,0,0,1255,0,0,1280"
+          skills: "0,0,1204,1254,0,0,1255,0,0,1280",
+          id_group: "32"
         }, {
           id: "2201",
           name: "\u751f\u547d\u6212\u6307-\u767d",
@@ -9352,7 +9657,8 @@ window.__require = function e(t, n, r) {
           base_property: "12&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1175,0,0,1176,0,0,1177"
+          skills: "0,0,1201,1175,0,0,1176,0,0,1177",
+          id_group: "33"
         }, {
           id: "2202",
           name: "\u751f\u547d\u6212\u6307-\u7eff",
@@ -9365,7 +9671,8 @@ window.__require = function e(t, n, r) {
           base_property: "18&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1175,0,0,1176,0,0,1177"
+          skills: "0,0,1201,1175,0,0,1176,0,0,1177",
+          id_group: "33"
         }, {
           id: "2203",
           name: "\u751f\u547d\u6212\u6307-\u84dd",
@@ -9378,7 +9685,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1175,0,0,1176,0,0,1177"
+          skills: "0,0,1201,1175,0,0,1176,0,0,1177",
+          id_group: "33"
         }, {
           id: "2204",
           name: "\u751f\u547d\u6212\u6307-\u7d2b",
@@ -9391,7 +9699,8 @@ window.__require = function e(t, n, r) {
           base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1175,0,0,1176,0,0,1177"
+          skills: "0,0,1201,1175,0,0,1176,0,0,1177",
+          id_group: "33"
         }, {
           id: "2205",
           name: "\u66b4\u51fb\u6212\u6307-\u767d",
@@ -9404,7 +9713,8 @@ window.__require = function e(t, n, r) {
           base_property: "12&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1263,0,0,1281,0,0,1210"
+          skills: "0,0,1201,1263,0,0,1281,0,0,1210",
+          id_group: "34"
         }, {
           id: "2206",
           name: "\u66b4\u51fb\u6212\u6307-\u7eff",
@@ -9417,7 +9727,8 @@ window.__require = function e(t, n, r) {
           base_property: "18&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1263,0,0,1281,0,0,1210"
+          skills: "0,0,1201,1263,0,0,1281,0,0,1210",
+          id_group: "34"
         }, {
           id: "2207",
           name: "\u66b4\u51fb\u6212\u6307-\u84dd",
@@ -9430,7 +9741,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1263,0,0,1281,0,0,1210"
+          skills: "0,0,1201,1263,0,0,1281,0,0,1210",
+          id_group: "34"
         }, {
           id: "2208",
           name: "\u66b4\u51fb\u6212\u6307-\u7d2b",
@@ -9443,7 +9755,8 @@ window.__require = function e(t, n, r) {
           base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1263,0,0,1281,0,0,1210"
+          skills: "0,0,1201,1263,0,0,1281,0,0,1210",
+          id_group: "34"
         }, {
           id: "2209",
           name: "\u80fd\u91cf\u6212\u6307-\u767d",
@@ -9456,7 +9769,8 @@ window.__require = function e(t, n, r) {
           base_property: "12&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1244,0,0,1282,0,0,1227"
+          skills: "0,0,1201,1244,0,0,1282,0,0,1227",
+          id_group: "35"
         }, {
           id: "2210",
           name: "\u80fd\u91cf\u6212\u6307-\u7eff",
@@ -9469,7 +9783,8 @@ window.__require = function e(t, n, r) {
           base_property: "18&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1244,0,0,1282,0,0,1227"
+          skills: "0,0,1201,1244,0,0,1282,0,0,1227",
+          id_group: "35"
         }, {
           id: "2211",
           name: "\u80fd\u91cf\u6212\u6307-\u84dd",
@@ -9482,7 +9797,8 @@ window.__require = function e(t, n, r) {
           base_property: "24&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1244,0,0,1282,0,0,1227"
+          skills: "0,0,1201,1244,0,0,1282,0,0,1227",
+          id_group: "35"
         }, {
           id: "2212",
           name: "\u80fd\u91cf\u6212\u6307-\u7d2b",
@@ -9495,7 +9811,8 @@ window.__require = function e(t, n, r) {
           base_property: "30&strength,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1201,1244,0,0,1282,0,0,1227"
+          skills: "0,0,1201,1244,0,0,1282,0,0,1227",
+          id_group: "35"
         }, {
           id: "2301",
           name: "\u9501\u5b50\u5f39\u9970\u54c1-\u767d",
@@ -9508,7 +9825,8 @@ window.__require = function e(t, n, r) {
           base_property: "600&basic_hp,4&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1276,0,0,1189,0,0,1228"
+          skills: "0,0,1206,1276,0,0,1189,0,0,1228",
+          id_group: "36"
         }, {
           id: "2302",
           name: "\u9501\u5b50\u5f39\u9970\u54c1-\u7eff",
@@ -9521,7 +9839,8 @@ window.__require = function e(t, n, r) {
           base_property: "720&basic_hp,6&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1276,0,0,1189,0,0,1228"
+          skills: "0,0,1206,1276,0,0,1189,0,0,1228",
+          id_group: "36"
         }, {
           id: "2303",
           name: "\u9501\u5b50\u5f39\u9970\u54c1-\u84dd",
@@ -9534,7 +9853,8 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp,8&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1276,0,0,1189,0,0,1228"
+          skills: "0,0,1206,1276,0,0,1189,0,0,1228",
+          id_group: "36"
         }, {
           id: "2304",
           name: "\u9501\u5b50\u5f39\u9970\u54c1-\u7d2b",
@@ -9547,7 +9867,8 @@ window.__require = function e(t, n, r) {
           base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1276,0,0,1189,0,0,1228"
+          skills: "0,0,1206,1276,0,0,1189,0,0,1228",
+          id_group: "36"
         }, {
           id: "2305",
           name: "BOSS\u9970\u54c1-\u767d",
@@ -9560,7 +9881,8 @@ window.__require = function e(t, n, r) {
           base_property: "600&basic_hp,4&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1208,0,0,1209,0,0,1192"
+          skills: "0,0,1206,1208,0,0,1209,0,0,1192",
+          id_group: "37"
         }, {
           id: "2306",
           name: "BOSS\u9970\u54c1-\u7eff",
@@ -9573,7 +9895,8 @@ window.__require = function e(t, n, r) {
           base_property: "720&basic_hp,6&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1208,0,0,1209,0,0,1192"
+          skills: "0,0,1206,1208,0,0,1209,0,0,1192",
+          id_group: "37"
         }, {
           id: "2307",
           name: "BOSS\u9970\u54c1-\u84dd",
@@ -9586,7 +9909,8 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp,8&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1208,0,0,1209,0,0,1192"
+          skills: "0,0,1206,1208,0,0,1209,0,0,1192",
+          id_group: "37"
         }, {
           id: "2308",
           name: "BOSS\u9970\u54c1-\u7d2b",
@@ -9599,7 +9923,8 @@ window.__require = function e(t, n, r) {
           base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1208,0,0,1209,0,0,1192"
+          skills: "0,0,1206,1208,0,0,1209,0,0,1192",
+          id_group: "37"
         }, {
           id: "2309",
           name: "\u80fd\u91cf\u9970\u54c1-\u767d",
@@ -9612,7 +9937,8 @@ window.__require = function e(t, n, r) {
           base_property: "600&basic_hp,4&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1283,0,0,1284,0,0,1227"
+          skills: "0,0,1206,1283,0,0,1284,0,0,1227",
+          id_group: "38"
         }, {
           id: "2310",
           name: "\u80fd\u91cf\u9970\u54c1-\u7eff",
@@ -9625,7 +9951,8 @@ window.__require = function e(t, n, r) {
           base_property: "720&basic_hp,6&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1283,0,0,1284,0,0,1227"
+          skills: "0,0,1206,1283,0,0,1284,0,0,1227",
+          id_group: "38"
         }, {
           id: "2311",
           name: "\u80fd\u91cf\u9970\u54c1-\u84dd",
@@ -9638,7 +9965,8 @@ window.__require = function e(t, n, r) {
           base_property: "960&basic_hp,8&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1283,0,0,1284,0,0,1227"
+          skills: "0,0,1206,1283,0,0,1284,0,0,1227",
+          id_group: "38"
         }, {
           id: "2312",
           name: "\u80fd\u91cf\u9970\u54c1-\u7d2b",
@@ -9651,7 +9979,8 @@ window.__require = function e(t, n, r) {
           base_property: "1200&basic_hp,10&armor",
           constant_property: "",
           ultimate_type: "",
-          skills: "0,0,1206,1283,0,0,1284,0,0,1227"
+          skills: "0,0,1206,1283,0,0,1284,0,0,1227",
+          id_group: "38"
         } ]
       }
     });
@@ -9784,8 +10113,12 @@ window.__require = function e(t, n, r) {
       },
       onClickLevelDown: function onClickLevelDown() {
         Global.equipmentManager.levelDown2Min(this.equipmentData, this.roleData);
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateEquipments(false);
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateSlotEquipment();
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments(false);
+          equipmentView.updateSlotsEquipment();
+        }
         var args = {};
         args.items = this.materials;
         args.rewardType = EnumType.REWARD_TYPE.ITEM;
@@ -9795,8 +10128,12 @@ window.__require = function e(t, n, r) {
       },
       onClickDowngrade: function onClickDowngrade() {
         Global.equipmentManager.downgrade(this.equipmentData, this.roleData);
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateEquipments(false);
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateSlotEquipment();
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments(false);
+          equipmentView.updateSlotsEquipment();
+        }
         var args = {};
         args.items = this.materials;
         args.roleData = this.roleData;
@@ -9938,13 +10275,13 @@ window.__require = function e(t, n, r) {
         levelUpBtn: cc.Button,
         levelUp2MaxBtn: cc.Button,
         breakthroughBtn: cc.Button,
-        levelDownBtn: cc.Button
+        levelDownBtn: cc.Button,
+        btnContainer: cc.Node
       },
       onLoad: function onLoad() {},
       start: function start() {},
       onAdded: function onAdded(_args) {
         this.equipmentData = _args.equipmentData;
-        this.roleData = _args.roleData;
         this.currentEquipmentItem = _args.currentEquipmentItem;
         if (!this.skillLabelColorList) {
           this.skillLabelColorList = [];
@@ -9955,7 +10292,16 @@ window.__require = function e(t, n, r) {
           this.skillLabelColorList[EnumType.RARE_TYPE.MYTHIC] = new cc.color(232, 32, 74, 255);
           this.unAvailableColor = new cc.color(157, 138, 106, 255);
         }
+        this.btnContainer.active = true == _args.showBtn;
         this.updateData();
+        this.node.setScale(0, 0);
+      },
+      onEnable: function onEnable() {
+        cc.tween(this.node).to(.3, {
+          scale: 1
+        }, {
+          easing: "backOut"
+        }).start();
       },
       getNextTen: function getNextTen(num) {
         return num % 10 === 0 ? num : num - num % 10 + 10;
@@ -9994,8 +10340,8 @@ window.__require = function e(t, n, r) {
       },
       updateData: function updateData() {
         this.clearItems();
-        this.equipmentItem.getComponent("EquipmentItem").setData(this.equipmentData, this.roleData);
-        this.nameLabel.getComponent("LabelUpdater").setString(this.equipmentData.equipmentConfig.name);
+        this.equipmentItem.getComponent("EquipmentItem").setData(this.equipmentData, Global.roleData);
+        this.nameLabel.getComponent("LabelUpdater").setString(Global.languageManager.t("equipmentName_" + this.equipmentData.equipmentConfig.id));
         this.nameLabel.getComponent("LabelUpdater").setColor(Global.utils.getEquipmentLabelColor(this.equipmentData.rarity));
         this.typeLabel.getComponent("LabelUpdater").setString(Global.languageManager.t("equipment_slot_" + this.equipmentData.slot) + "(");
         this.rarityLabel.getComponent("LabelUpdater").setString(Global.languageManager.t("equipment_rarity_" + this.equipmentData.rarity));
@@ -10052,7 +10398,7 @@ window.__require = function e(t, n, r) {
               for (var k = 0; k < valueList.length; k++) {
                 var _item = valueList[k];
                 _item = _item.split("|");
-                var value = Math.floor(this.roleData.getStaticData()[_item[1]] * Number(_item[0]) * .01);
+                var value = Math.floor(Global.roleData.getStaticData()[_item[1]] * Number(_item[0]) * .01);
                 result.push(value);
               }
               skillStr = Global.languageManager.t(skillLangKey, result, false);
@@ -10085,7 +10431,7 @@ window.__require = function e(t, n, r) {
         } else {
           this.materialsNode.active = true;
           var materials = Global.equipmentManager.getNextLevelMaterials(this.equipmentData);
-          var materialsCount = parseInt(Global.bagManager.checkItemCount(materials.ids[0], this.roleData));
+          var materialsCount = parseInt(Global.bagManager.checkItemCount(materials.ids[0], Global.roleData));
           this.materialsCount.getComponent("LabelUpdater").setString(null == materialsCount ? "" : materialsCount);
           this.materialsNeededCount.getComponent("LabelUpdater").setString(null == materialsCount ? "" : "/" + materials.counts[0]);
           var nextLevel = Global.equipmentManager.getNextLevel(this.equipmentData.level);
@@ -10105,42 +10451,66 @@ window.__require = function e(t, n, r) {
       onClickLevelDown: function onClickLevelDown() {
         Global.gui.open(gameConfig.UIID.EquipmentDecompose, {
           equipmentData: this.equipmentData,
-          roleData: this.roleData
+          roleData: Global.roleData
         });
       },
       onClickBreakThrough: function onClickBreakThrough() {
-        Global.equipmentManager.levelUp(this.equipmentData, this.roleData, true);
-        this.currentEquipmentItem.getComponent("EquipmentItem").levelLabel.getComponent("LabelUpdater").setString("Lv." + this.equipmentData.level);
+        Global.equipmentManager.levelUp(this.equipmentData, Global.roleData, true);
+        this.currentEquipmentItem.getComponent("EquipmentItem").levelLabel.getComponent("LabelUpdater").setString(Global.languageManager.t("level") + this.equipmentData.level);
         this.updateData();
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments();
+          equipmentView.updateSlotsEquipment();
+        }
       },
       onClickLevelUp2Max: function onClickLevelUp2Max() {
-        Global.equipmentManager.levelUp2Max(this.equipmentData, this.roleData);
-        this.currentEquipmentItem.getComponent("EquipmentItem").levelLabel.getComponent("LabelUpdater").setString("Lv." + this.equipmentData.level);
+        Global.equipmentManager.levelUp2Max(this.equipmentData, Global.roleData);
+        this.currentEquipmentItem.getComponent("EquipmentItem").levelLabel.getComponent("LabelUpdater").setString(Global.languageManager.t("level") + this.equipmentData.level);
         this.updateData();
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments();
+          equipmentView.updateSlotsEquipment();
+        }
       },
       onClickLevelUp: function onClickLevelUp() {
-        Global.equipmentManager.levelUp(this.equipmentData, this.roleData, false);
-        this.currentEquipmentItem.getComponent("EquipmentItem").levelLabel.getComponent("LabelUpdater").setString("Lv." + this.equipmentData.level);
+        Global.equipmentManager.levelUp(this.equipmentData, Global.roleData, false);
+        this.currentEquipmentItem.getComponent("EquipmentItem").levelLabel.getComponent("LabelUpdater").setString(Global.languageManager.t("level") + this.equipmentData.level);
         this.updateData();
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments();
+          equipmentView.updateSlotsEquipment();
+        }
       },
       onClickTakeOff: function onClickTakeOff() {
         this.currentEquipmentItem.active = false;
-        Global.equipmentManager.takeOff(this.equipmentData, this.roleData);
-        var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
-        equipmentView.updateEquipments();
+        Global.equipmentManager.takeOff(this.equipmentData, Global.roleData);
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments();
+        }
         this.onClickClose();
       },
       onClickEquip: function onClickEquip() {
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        var equipmentView;
+        null != equipmentNode && (equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView"));
+        if (null == equipmentView) return;
         Global.equipmentManager.setCurrentEquipment(this.equipmentData);
-        var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
         if (this.equipmentData.slot == EnumType.EQUIPMENT_TYPE.WEAPON || this.equipmentData.slot == EnumType.EQUIPMENT_TYPE.BACKPACK) {
           var currentEquipmentData = Global.equipmentManager.getCurrentEquipment();
           var currentSlot;
           currentSlot = this.equipmentData.slot == EnumType.EQUIPMENT_TYPE.WEAPON ? equipmentView.slots[0] : equipmentView.slots[3];
           var currentSlotComponent = currentSlot.getComponent("SlotPos");
-          Global.equipmentManager.setEquipment(currentEquipmentData, currentSlotComponent.equipmentItem.active ? currentSlotComponent.equipmentItem.getComponent("EquipmentItem").equipmentData : null, currentSlotComponent.index, this.roleData);
+          Global.equipmentManager.setEquipment(currentEquipmentData, currentSlotComponent.equipmentItem.active ? currentSlotComponent.equipmentItem.getComponent("EquipmentItem").equipmentData : null, currentSlotComponent.index, Global.roleData);
           equipmentView.updateEquipments();
-          currentSlotComponent.equipmentItem.getComponent("EquipmentItem").setData(currentEquipmentData, this.roleData, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.SLOT);
+          currentSlotComponent.equipmentItem.getComponent("EquipmentItem").setData(currentEquipmentData, Global.roleData, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.SLOT);
           currentSlotComponent.equipmentItem.active = true;
           Global.equipmentManager.setCurrentEquipment(null);
         } else equipmentView.updateSlot(this.equipmentData.slot);
@@ -10223,16 +10593,33 @@ window.__require = function e(t, n, r) {
           _equipMergeNode && _equipMergeNode.getComponent("EquipMerge").onClickEquipmentItem2Merge(this.node);
         } else if (this.ownerType == EnumType.EQUIPMENT_ITEM_OWNER_TYPE.EQUIP || this.ownerType == EnumType.EQUIPMENT_ITEM_OWNER_TYPE.SLOT) {
           var currentEquipmentData = Global.equipmentManager.getCurrentEquipment();
-          if (currentEquipmentData) return;
+          if (currentEquipmentData) {
+            if (this.ownerType == EnumType.EQUIPMENT_ITEM_OWNER_TYPE.EQUIP) Global.gui.toast(Global.languageManager.t("equipment_error_tip_1")); else if (currentEquipmentData.slot != this.equipmentData.slot) Global.gui.toast(Global.languageManager.t("equipment_error_tip_1")); else {
+              Global.equipmentManager.setEquipment(currentEquipmentData, this.equipmentData, this.equipmentData.slotPos, this.roleData);
+              var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+              if (equipmentNode) {
+                var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+                equipmentView.updateEquipments();
+                equipmentView.updateSlotsEquipment();
+                equipmentView.updateSlot(null);
+              }
+              Global.equipmentManager.setCurrentEquipment(null);
+            }
+            return;
+          }
           Global.gui.open(gameConfig.UIID.EquipmentItemTip, {
             equipmentData: this.equipmentData,
-            roleData: this.roleData,
-            currentEquipmentItem: this.node
+            currentEquipmentItem: this.node,
+            showBtn: true
           });
         } else if (this.ownerType == EnumType.EQUIPMENT_ITEM_OWNER_TYPE.SELECT_EQUIPMENT) {
           var selectNode = Global.gui.get(gameConfig.UIID.ShopSelectEquipment);
           selectNode && selectNode.getComponent("ShopSelectEquipment").onSelectEquipment(this.node);
-        }
+        } else Global.gui.open(gameConfig.UIID.EquipmentItemTip, {
+          equipmentData: this.equipmentData,
+          currentEquipmentItem: this.node,
+          showBtn: false
+        });
       },
       showLock: function showLock(_lock) {
         this.setMask(_lock);
@@ -10409,6 +10796,14 @@ window.__require = function e(t, n, r) {
           _roleData.equipmentList.splice(index, 1);
           _roleData.bag[EnumType.BAG_TYPE.EQUIPMENT].hasOwnProperty(_targetEquipmentData.rarity) ? _roleData.bag[EnumType.BAG_TYPE.EQUIPMENT][_targetEquipmentData.rarity].push(_targetEquipmentData) : _roleData.bag[EnumType.BAG_TYPE.EQUIPMENT][_targetEquipmentData.rarity] = [ _targetEquipmentData ];
           _targetEquipmentData.slotPos = EnumType.EQUIPMENT_SLOT_POS.NONE;
+        }
+        if (null != _targetEquipmentData) {
+          var targetLevel = _targetEquipmentData.level;
+          var fromLevel = _equipmentData.level;
+          var highLevel = targetLevel > fromLevel ? targetLevel : fromLevel;
+          var lowLevel = targetLevel > fromLevel ? fromLevel : targetLevel;
+          _targetEquipmentData.level = lowLevel;
+          _equipmentData.level = highLevel;
         }
         _equipmentData.slotPos = _slotPos;
         _roleData.equipmentList.push(_equipmentData);
@@ -10589,7 +10984,7 @@ window.__require = function e(t, n, r) {
           for (var i = 0; i < equipmentItemList.length; i++) {
             var item = equipmentItemList[i];
             var index = result.indexOf(item);
-            if (item != _currentEquipmentItem && item.equipmentId == materialItem.key && item.rarity == materialItem.rarity && index < 0) {
+            if (item != _currentEquipmentItem && item.equipmentConfig.id_group == materialItem.key && item.rarity == materialItem.rarity && index < 0) {
               result.push(item);
               break;
             }
@@ -10605,14 +11000,16 @@ window.__require = function e(t, n, r) {
          case EnumType.RARE_TYPE_EQUIPMENT.UNCOMMON:
          case EnumType.RARE_TYPE_EQUIPMENT.RARE:
           result.push({
-            key: _equipment.equipmentId,
+            key: _equipment.equipmentConfig.id_group,
             rarity: _equipment.rarity,
-            slot: null
+            slot: null,
+            id: _equipment.equipmentConfig.id
           });
           result.push({
-            key: _equipment.equipmentId,
+            key: _equipment.equipmentConfig.id_group,
             rarity: _equipment.rarity,
-            slot: null
+            slot: null,
+            id: _equipment.equipmentConfig.id
           });
           break;
 
@@ -10642,14 +11039,16 @@ window.__require = function e(t, n, r) {
 
          case EnumType.RARE_TYPE_EQUIPMENT.EPIC_2:
           result.push({
-            key: _equipment.equipmentId,
+            key: _equipment.equipmentConfig.id_group,
             rarity: [ _equipment.rarity ],
-            slot: null
+            slot: null,
+            id: _equipment.equipmentConfig.id
           });
           result.push({
-            key: _equipment.equipmentId,
+            key: _equipment.equipmentConfig.id_group,
             rarity: [ _equipment.rarity ],
-            slot: null
+            slot: null,
+            id: _equipment.equipmentConfig.id
           });
           break;
 
@@ -10664,17 +11063,19 @@ window.__require = function e(t, n, r) {
 
          case EnumType.RARE_TYPE_EQUIPMENT.LEGENDARY_1:
           result.push({
-            key: _equipment.equipmentId,
+            key: _equipment.equipmentConfig.id_group,
             rarity: EnumType.RARE_TYPE_EQUIPMENT.LEGENDARY,
-            slot: null
+            slot: null,
+            id: _equipment.equipmentConfig.id
           });
           break;
 
          case EnumType.RARE_TYPE_EQUIPMENT.LEGENDARY_2:
           result.push({
-            key: _equipment.equipmentId,
+            key: _equipment.equipmentConfig.id_group,
             rarity: _equipment.rarity,
-            slot: null
+            slot: null,
+            id: _equipment.equipmentConfig.id
           });
           result.push({
             key: null,
@@ -10884,7 +11285,7 @@ window.__require = function e(t, n, r) {
       initUI: function initUI() {
         this.equipmentItem.getComponent("EquipmentItem").setData(this.equipmentData, null, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.MERGE, EnumType.EQUIPMENT_ITEM_SHOW_TYPE.EQUIPED_FLAG | EnumType.EQUIPMENT_ITEM_SHOW_TYPE.SELECTED_FLAG);
         this.equipmentItem.active = true;
-        this.equipmentName.getComponent("LabelUpdater").setString(this.equipmentData.equipmentConfig.name);
+        this.equipmentName.getComponent("LabelUpdater").setString(Global.languageManager.t("equipmentName_" + this.equipmentData.equipmentConfig.id));
         this.equipmentName.getComponent("LabelUpdater").setColor(this.labelColorList[this.equipmentData.rarity]);
         this.lineIcon.spriteFrame = this.lineIconList[this.equipmentData.rarity];
         this.lightIcon.spriteFrame = this.lightIconList[this.equipmentData.rarity];
@@ -10951,13 +11352,14 @@ window.__require = function e(t, n, r) {
         str_label: cc.Node,
         armor_label: cc.Node,
         power_label: cc.Node,
-        roleNode: cc.Node,
         sortByRarityBtn: cc.Node,
         sortByLevelBtn: cc.Node,
         sortByTypeBtn: cc.Node,
         roleContainer: cc.Node,
         mergeRedDot: cc.Node,
-        _roleView: null
+        _roleView: null,
+        materialsLine: cc.Node,
+        scrollView: cc.ScrollView
       },
       onAdded: function onAdded(_args) {
         this.roleData = _args.roleData;
@@ -10970,19 +11372,23 @@ window.__require = function e(t, n, r) {
         this.createRole();
         this.roleData.lastPower = this.roleData.getPower();
       },
+      onEnable: function onEnable() {
+        this.scrollView.scrollToTop();
+      },
       onBeforeRemove: function onBeforeRemove(args) {},
       createRole: function createRole() {
         if (this._roleView) this._roleView.idle(); else {
-          this.roleNode.removeAllChildren();
           var rolePreb = Global.res.getRes(gameConfig.PRELOADCONFIG.rolePreb.path);
           var role = cc.instantiate(rolePreb);
           var roleView = this._roleView = role.getComponent("RoleView");
-          roleView.updateData(this.roleContainer, this.roleData);
+          roleView.updateData(null, this.roleData);
           roleView.hideBar();
           setTimeout(function() {
             roleView && roleView.idle();
           }, 500);
-          this.roleNode.addChild(role);
+          this.roleContainer.addChild(role);
+          role.y = -120;
+          role.setScale(1.5);
         }
       },
       onClickMerge: function onClickMerge() {
@@ -11003,13 +11409,6 @@ window.__require = function e(t, n, r) {
         for (var i = 0; i < this.roleData.equipmentList.length; i++) {
           var equipmentData = this.roleData.equipmentList[i];
           var slotComponent = this.slots[equipmentData.slotPos].getComponent("SlotPos").updateEquipmentItem(equipmentData);
-        }
-      },
-      updateSlotEquipment: function updateSlotEquipment() {
-        for (var i = 0; i < this.slots.length; i++) {
-          var slot = this.slots[i];
-          var slotComponent = slot.getComponent("SlotPos");
-          slotComponent.updateUI();
         }
       },
       updateSlot: function updateSlot(_slot) {
@@ -11088,25 +11487,25 @@ window.__require = function e(t, n, r) {
         switch (this.currentSortType) {
          case EnumType.SORT_TYPE.RARITY:
           result = list.sort(function(a, b) {
-            var pointA = null != a.equipmentConfig ? 1e4 + 10 * a.level + 100 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 100 * (3 - a.slot) + a.itemConfig.id / 1e3;
-            var pointB = null != b.equipmentConfig ? 1e4 + 10 * b.level + 100 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 100 * (3 - b.slot) + b.itemConfig.id / 1e3;
-            return 1e3 * b.rarity + pointB - (1e3 * a.rarity + pointA);
+            var pointA = null != a.equipmentConfig ? 1e5 + 10 * a.level + 1e3 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 1e3 * (3 - a.slot) + a.itemConfig.id / 1e3;
+            var pointB = null != b.equipmentConfig ? 1e5 + 10 * b.level + 1e3 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 1e3 * (3 - b.slot) + b.itemConfig.id / 1e3;
+            return 1e4 * b.rarity + pointB - (1e4 * a.rarity + pointA);
           });
           break;
 
          case EnumType.SORT_TYPE.LEVEL:
           result = list.sort(function(a, b) {
-            var pointA = null != a.equipmentConfig ? 1e4 + 1e3 * a.level + 10 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 10 * (3 - a.slot) + a.itemConfig.id / 1e3;
-            var pointB = null != b.equipmentConfig ? 1e4 + 1e3 * b.level + 10 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 10 * (3 - b.slot) + b.itemConfig.id / 1e3;
+            var pointA = null != a.equipmentConfig ? 1e5 + 1e3 * a.level + 10 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 10 * (3 - a.slot) + a.itemConfig.id / 1e3;
+            var pointB = null != b.equipmentConfig ? 1e5 + 1e3 * b.level + 10 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 10 * (3 - b.slot) + b.itemConfig.id / 1e3;
             return 100 * b.rarity + pointB - (100 * a.rarity + pointA);
           });
           break;
 
          case EnumType.SORT_TYPE.TYPE:
           result = list.sort(function(a, b) {
-            var pointA = null != a.equipmentConfig ? 1e4 + 10 * a.level + 1e3 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 1e3 * (3 - a.slot) + a.itemConfig.id / 1e3;
-            var pointB = null != b.equipmentConfig ? 1e4 + 10 * b.level + 1e3 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 1e3 * (3 - b.slot) + b.itemConfig.id / 1e3;
-            return 100 * b.rarity + pointB - (100 * a.rarity + pointA);
+            var pointA = null != a.equipmentConfig ? 1e5 + 10 * a.level + 1e4 * (3 - a.slot) + a.equipmentConfig.id / 1e3 : 1e4 * (3 - a.slot) + a.itemConfig.id / 1e3;
+            var pointB = null != b.equipmentConfig ? 1e5 + 10 * b.level + 1e4 * (3 - b.slot) + b.equipmentConfig.id / 1e3 : 1e4 * (3 - b.slot) + b.itemConfig.id / 1e3;
+            return 1e3 * b.rarity + pointB - (1e3 * a.rarity + pointA);
           });
         }
         return result;
@@ -11121,26 +11520,42 @@ window.__require = function e(t, n, r) {
         this.equipmentContainer.addChild(equipmentItem);
         equipmentItem.x = startX + 210 * Math.floor(_index % 5);
         equipmentItem.y = startY + -1 * Math.floor(_index / 5) * 210;
+        return equipmentItem;
       },
       generateBagItem: function generateBagItem(_itemData, _index) {
         var startX = -420;
-        var startY = -120;
         var bagItem;
         bagItem = this.bagItemPool.length > 0 ? this.bagItemPool.pop() : cc.instantiate(this.bagItemPrefab);
         this.bagItemList.push(bagItem);
         bagItem.getComponent("BagItem").setData(_itemData, this.roleData, EnumType.ITEM_OWNER_TYPE.EQUIP);
         this.equipmentContainer.addChild(bagItem);
         bagItem.x = startX + 210 * Math.floor(_index % 5);
-        bagItem.y = startY + -1 * Math.floor(_index / 5) * 210;
+        bagItem.y = this.materialsLine.y - bagItem.height / 2 - 40 + -1 * Math.floor(_index / 5) * 210;
       },
       updateEquipments: function updateEquipments(_updatePower, _dontShowAni) {
         this.clearItems();
         this.itemList = this.getSortList();
+        this.materialsLine.active = false;
+        var equipmentEndPos;
+        var equipmentEndIndex;
+        var equipmentEndRemainCount = 0;
         for (var i = 0; i < this.itemList.length; i++) {
           var item = this.itemList[i];
-          item.equipmentConfig ? this.generateEquipmentItem(item, i) : this.generateBagItem(item, i);
+          if (item.equipmentConfig) {
+            var equipmentItem = this.generateEquipmentItem(item, i);
+            equipmentEndPos = equipmentItem.y - equipmentItem.height / 2;
+            equipmentEndIndex = i;
+          } else {
+            if (false == this.materialsLine.active) {
+              this.materialsLine.active = true;
+              this.materialsLine.y = equipmentEndPos - 40;
+              equipmentEndRemainCount = i % 5 == 0 ? 0 : 5 - i % 5;
+            }
+            this.generateBagItem(item, i - (equipmentEndIndex + 1));
+          }
         }
-        this.equipmentContainer.height = 210 * Math.ceil(this.itemList.length / 5) + 30;
+        var lineHeight = false == this.materialsLine.active ? 0 : this.materialsLine.height;
+        this.equipmentContainer.height = 210 * Math.ceil((this.itemList.length + equipmentEndRemainCount) / 5) + 30 + lineHeight;
         false != _updatePower && this.updateInfo(_dontShowAni);
         this.mergeRedDot.active = null != Global.equipmentManager.hasAutoCombine();
       }
@@ -11812,6 +12227,41 @@ window.__require = function e(t, n, r) {
         type: "skeleton",
         path: "rolefile/Enemy13/Enemy13"
       },
+      Enemy14: {
+        key: "Enemy14",
+        type: "skeleton",
+        path: "rolefile/Enemy14/Enemy14"
+      },
+      Enemy15: {
+        key: "Enemy15",
+        type: "skeleton",
+        path: "rolefile/Enemy15/Enemy15"
+      },
+      Enemy16: {
+        key: "Enemy16",
+        type: "skeleton",
+        path: "rolefile/Enemy16/Enemy16"
+      },
+      Enemy17: {
+        key: "Enemy17",
+        type: "skeleton",
+        path: "rolefile/Enemy17/Enemy17"
+      },
+      Enemy18: {
+        key: "Enemy18",
+        type: "skeleton",
+        path: "rolefile/Enemy18/Enemy18"
+      },
+      Enemy19: {
+        key: "Enemy19",
+        type: "skeleton",
+        path: "rolefile/Enemy19/Enemy19"
+      },
+      Enemy20: {
+        key: "Enemy20",
+        type: "skeleton",
+        path: "rolefile/Enemy20/Enemy20"
+      },
       Player: {
         key: "Player",
         type: "skeleton",
@@ -11822,25 +12272,34 @@ window.__require = function e(t, n, r) {
         type: "skeleton",
         path: "rolefile/Player/Lanzi01/Lanzi01"
       },
-      Jinji_Big: {
-        key: "Jinji_Big",
-        type: "skeleton",
-        path: "rolefile/Jinji/Jinji"
+      wrj: {
+        key: "wrj",
+        type: "prefab",
+        path: "prefabs/effects/battle/wrj"
       },
-      Jinji_Small: {
-        key: "Jinji_Small",
-        type: "skeleton",
-        path: "rolefile/S_Jinji/S_Jinji"
+      punch: {
+        key: "punch",
+        animation: "Punch",
+        type: "prefab",
+        path: "prefabs/effects/battle/punch"
       },
-      Flash_Big: {
-        key: "Flash_Big",
-        type: "skeleton",
-        path: "rolefile/FLash/FLash"
+      spinach: {
+        key: "spinach",
+        animation: "Spinach",
+        type: "prefab",
+        path: "prefabs/effects/battle/spinach"
       },
-      Flash_Small: {
-        key: "Flash_Small",
-        type: "skeleton",
-        path: "rolefile/S_FLash/S_FLash"
+      energyup: {
+        key: "energyup",
+        animation: "Energy_Up",
+        type: "prefab",
+        path: "prefabs/effects/battle/energyup"
+      },
+      rubyx: {
+        key: "rubyx",
+        animation: "RubyX",
+        type: "prefab",
+        path: "prefabs/effects/battle/rubyx"
       },
       car: {
         key: "car",
@@ -12229,7 +12688,9 @@ window.__require = function e(t, n, r) {
       CreateValueLabel: "CreateValueLabel",
       AbilityUp: "AbilityUp",
       BattleTime: "BattleTime",
-      GotoHomePage: "GotoHomePage"
+      GotoHomePage: "GotoHomePage",
+      EnergySaoGuang: "EnergySaoGuang",
+      HpSaoGuang: "HpSaoGuang"
     };
     var ANIMATION_TYPE = {
       ATK: "Atk",
@@ -12293,12 +12754,8 @@ window.__require = function e(t, n, r) {
       OTHER_WEEK: 1
     };
     var SIGNIN_REWARD_TYPE = {
-      DIAMONDS: 0,
-      BRASS_SCISSORS: 1,
-      SILVER_SCISSORS: 2,
-      GOLD_SCISSORS: 3,
-      PURPLE_PIECES: 4,
-      PURPLE_EQUIP: 5
+      ITEMS: 0,
+      EQUIP: 1
     };
     var COMMON_KEYS = {
       LANGUAGE: "current_language",
@@ -12474,7 +12931,8 @@ window.__require = function e(t, n, r) {
       MailPanel: 43,
       MailInfo: 44,
       TopUI: 45,
-      VIP: 46
+      VIP: 46,
+      BagPanel: 47
     });
     var UIConfigData = (_UIConfigData = {}, _UIConfigData[UIID.ScrollBackgroundPanel] = {
       layer: _LayerManager.LayerType.Game,
@@ -12645,6 +13103,10 @@ window.__require = function e(t, n, r) {
     }, _UIConfigData[UIID.VIP] = {
       layer: _LayerManager.LayerType.BottomUI,
       prefab: "prefabs/gui/vip",
+      destroy: false
+    }, _UIConfigData[UIID.BagPanel] = {
+      layer: _LayerManager.LayerType.UI,
+      prefab: "prefabs/gui/bagPanel",
       destroy: false
     }, _UIConfigData);
     module.exports = {
@@ -13039,13 +13501,36 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "883d6Uj9ClJx7mKn6SaoXS8", "HpProgressBar");
     "use strict";
     var BaseProgressBar = require("BaseProgressBar");
+    var gameConfig = require("GameConfig");
+    var SpineBase = require("SpineBase");
     cc.Class({
       extends: BaseProgressBar,
       properties: {
+        hpSG: {
+          type: SpineBase,
+          default: null,
+          tooltip: "1192\u6280\u80fd\uff1a\u8840\u91cf\u6761\u626b\u5149\u7279\u6548"
+        },
         _roleData: null,
         whiteBgPool: [],
         whiteBgPrefab: cc.Prefab,
         aniLabel: cc.Node
+      },
+      onEnable: function onEnable() {
+        cc.director.GlobalEvent.on(gameConfig.GAME_EVENT.HpSaoGuang, this.HpSaoGuang, this);
+      },
+      HpSaoGuang: function HpSaoGuang(args) {
+        if (!this.hpSG) return;
+        if (args && args.roleId == this._roleData.roleId) {
+          this.hpSG.active = true;
+          var spineBase = this.hpSG.getComponent("SpineBase");
+          if (spineBase) {
+            spineBase.animationCallBack = function() {
+              this.hpSG.active = false;
+            }.bind(this);
+            spineBase.playAnimation("animation", false);
+          }
+        }
       },
       initData: function initData(roleData) {
         this._roleData = roleData;
@@ -13075,11 +13560,16 @@ window.__require = function e(t, n, r) {
           this.percent = this.currentValue / this._roleData.data.basic_hp;
           this.progressBar.progress = this.percent;
         }
+      },
+      onDisable: function onDisable() {
+        cc.director.GlobalEvent.off(gameConfig.GAME_EVENT.HpSaoGuang);
       }
     });
     cc._RF.pop();
   }, {
-    BaseProgressBar: "BaseProgressBar"
+    BaseProgressBar: "BaseProgressBar",
+    GameConfig: "GameConfig",
+    SpineBase: "SpineBase"
   } ],
   ItemConfig: [ function(require, module, exports) {
     "use strict";
@@ -16496,12 +16986,12 @@ window.__require = function e(t, n, r) {
         var currentItem = null;
         if (null != _itemData.equipmentConfig) {
           this.equipmentItem.getComponent("EquipmentItem").setData(_itemData, Global.roleData);
-          this.itemName.getComponent("LabelUpdater").setString(_itemData.equipmentConfig.name);
+          this.itemName.getComponent("LabelUpdater").setString(Global.languageManager.t("equipmentName_" + _itemData.equipmentConfig.id));
           this.itemName.getComponent("LabelUpdater").setColor(Global.utils.getEquipmentLabelColor(_itemData.rarity));
           currentItem = this.equipmentItem;
         } else {
           this.bagItem.getComponent("BagItem").setData(_itemData, Global.roleData);
-          this.itemName.getComponent("LabelUpdater").setString(_itemData.itemConfig.name);
+          this.itemName.getComponent("LabelUpdater").setString(Global.languageManager.t("itemName_" + _itemData.itemConfig.id));
           this.itemName.getComponent("LabelUpdater").setColor(Global.utils.getItemLabelColor(_itemData.rarity));
           currentItem = this.bagItem;
         }
@@ -17386,12 +17876,16 @@ window.__require = function e(t, n, r) {
       },
       start: function start() {},
       onAdded: function onAdded(_args) {
-        this.label_1.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(_args.power_1));
+        this.label_1.getComponent("AniLabel").isAnimating = true;
+        this.label_1.getComponent("AniLabel").initString(Global.utils.formatNumberWithUnit(_args.power_1));
+        this.label_1.getComponent("AniLabel").animateNumberChange(Global.utils.formatNumberWithUnit(_args.power_2));
         this.arrow_1.active = true == _args.powerUp;
         this.arrow_2.active = true != _args.powerUp;
         this.label_2.getComponent("AniLabel").isAnimating = true;
-        this.label_2.getComponent("AniLabel").initString(Global.utils.formatNumberWithUnit(_args.power_1));
-        this.label_2.getComponent("AniLabel").animateNumberChange(Global.utils.formatNumberWithUnit(_args.power_2));
+        this.label_2.getComponent("AniLabel").toZero = true;
+        var changeValue = Math.abs(_args.power_2 - _args.power_1);
+        this.label_2.getComponent("AniLabel").initString(Global.utils.formatNumberWithUnit(changeValue));
+        this.label_2.getComponent("AniLabel").animateNumberChange(0, this.label_1.getComponent("AniLabel").steps);
         this.label_2_sub.getComponent("LabelUpdater").setColor(true == _args.powerUp ? new cc.color(145, 255, 92) : new cc.color(255, 112, 126));
         this.node.y = 1e3;
         this.node.opacity = 255;
@@ -17411,12 +17905,16 @@ window.__require = function e(t, n, r) {
         cc.Tween.stopAllByTarget(this.node);
         this.node.opacity = 255;
         this.node.setPosition(0, 200);
-        this.label_1.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(_args.power_1));
+        this.label_1.getComponent("AniLabel").isAnimating = true;
+        this.label_1.getComponent("AniLabel").initString(Global.utils.formatNumberWithUnit(_args.power_1));
+        this.label_1.getComponent("AniLabel").animateNumberChange(Global.utils.formatNumberWithUnit(_args.power_2));
         this.arrow_1.active = true == _args.powerUp;
         this.arrow_2.active = true != _args.powerUp;
         this.label_2.getComponent("AniLabel").isAnimating = true;
-        this.label_2.getComponent("AniLabel").initString(Global.utils.formatNumberWithUnit(_args.power_1));
-        this.label_2.getComponent("AniLabel").animateNumberChange(Global.utils.formatNumberWithUnit(_args.power_2));
+        this.label_2.getComponent("AniLabel").toZero = true;
+        var changeValue = Math.abs(_args.power_2 - _args.power_1);
+        this.label_2.getComponent("AniLabel").initString(Global.utils.formatNumberWithUnit(changeValue));
+        this.label_2.getComponent("AniLabel").animateNumberChange(0);
         this.label_2_sub.getComponent("LabelUpdater").setColor(true == _args.powerUp ? new cc.color(145, 255, 92) : new cc.color(255, 112, 126));
         cc.tween(this.node).delay(2).to(.2, {
           opacity: 0
@@ -17512,12 +18010,60 @@ window.__require = function e(t, n, r) {
       type: gameConfig.PRELOADCONFIG.Enemy13.type
     });
     data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy14.path,
+      type: gameConfig.PRELOADCONFIG.Enemy14.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy15.path,
+      type: gameConfig.PRELOADCONFIG.Enemy15.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy16.path,
+      type: gameConfig.PRELOADCONFIG.Enemy16.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy17.path,
+      type: gameConfig.PRELOADCONFIG.Enemy17.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy18.path,
+      type: gameConfig.PRELOADCONFIG.Enemy18.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy19.path,
+      type: gameConfig.PRELOADCONFIG.Enemy19.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.Enemy20.path,
+      type: gameConfig.PRELOADCONFIG.Enemy20.type
+    });
+    data.push({
       url: gameConfig.PRELOADCONFIG.Player.path,
       type: gameConfig.PRELOADCONFIG.Player.type
     });
     data.push({
       url: gameConfig.PRELOADCONFIG.Player_Lanzi.path,
       type: gameConfig.PRELOADCONFIG.Player_Lanzi.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.wrj.path,
+      type: gameConfig.PRELOADCONFIG.wrj.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.punch.path,
+      type: gameConfig.PRELOADCONFIG.punch.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.spinach.path,
+      type: gameConfig.PRELOADCONFIG.spinach.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.energyup.path,
+      type: gameConfig.PRELOADCONFIG.energyup.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.rubyx.path,
+      type: gameConfig.PRELOADCONFIG.rubyx.type
     });
     data.push({
       url: gameConfig.PRELOADCONFIG.car.path,
@@ -18352,19 +18898,46 @@ window.__require = function e(t, n, r) {
         hpLabel_1: cc.Node,
         hpLabel_2: cc.Node,
         hpLabel_3: cc.Node,
-        roleNode: cc.Node,
-        roleContainer: cc.Node
+        _roleView: null,
+        roleContainer: cc.Node,
+        clerkContainer: cc.Node,
+        promotionEffect: sp.Skeleton,
+        clerkGlowEffect: cc.Node,
+        arrowNode: cc.Node,
+        lineNode: cc.Node,
+        atkNode: cc.Node,
+        defNode: cc.Node,
+        hpNode: cc.Node,
+        closeBtn: cc.Node,
+        clerkTitleNode: cc.Node
       },
       onAdded: function onAdded(args) {
         Global.utils.logMessage("RewardsPanel onAdded:", args);
         this.reset();
         this.rewardType = args.rewardType;
         this._args = args;
-        this.roleData = this._args.roleData;
+        this.roleData = Global.roleData;
+        this.createRole();
         var animator = this.getComponent(cc.Animation);
         animator.on("finished", this.initUI, this);
         animator.play("rewardsPanel", false);
+        this.closeBtn.active = false;
         return true;
+      },
+      createRole: function createRole() {
+        if (this._roleView) this._roleView.node.y = -200; else {
+          var rolePreb = Global.res.getRes(gameConfig.PRELOADCONFIG.rolePreb.path);
+          var role = cc.instantiate(rolePreb);
+          var roleView = this._roleView = role.getComponent("RoleView");
+          roleView.updateData(null, this.roleData);
+          roleView.hideBar();
+          setTimeout(function() {
+            roleView && roleView.idle();
+          }, 500);
+          this.roleContainer.addChild(role);
+          this._roleView.node.y = -200;
+          role.setScale(1.5);
+        }
       },
       clearItems: function clearItems() {
         while (this.equipmentItemList.length > 0) {
@@ -18409,6 +18982,11 @@ window.__require = function e(t, n, r) {
       },
       initUI: function initUI() {
         var _this = this;
+        var time = this.rewardType == EnumType.REWARD_TYPE.CLERK ? 2e3 : 1e3;
+        time = true == this._args.isPromotion ? 5e3 : time;
+        setTimeout(function() {
+          _this.closeBtn.active = true;
+        }, time);
         if (this.rewardType == EnumType.REWARD_TYPE.SKILL) {
           this.skillNode.active = true;
           this.skillFlash.setAnimation(0, "Advanced_1", false);
@@ -18454,26 +19032,78 @@ window.__require = function e(t, n, r) {
           this.starSpine.setAnimation(0, this._args.items.length < 6 ? "Rewards_Star_Loop" : "Rewards_Star_Loop2", true);
         } else if (this.rewardType == EnumType.REWARD_TYPE.CLERK) {
           this.clerkNode.active = true;
-          this.clerkNode.opacity = 0;
-          cc.tween(this.clerkNode).to(.2, {
+          this.promotionEffect.node.active = false;
+          this.clerkGlowEffect.active = false;
+          this._roleView.node.active = false;
+          this.clerkTitleNode.opacity = 0;
+          this.titleLabel_1.setScale(0, 0);
+          this.arrowNode.setScale(0, 0);
+          this.titleLabel_2.setScale(0, 0);
+          this.atkNode.opacity = 0;
+          this.defNode.opacity = 0;
+          this.hpNode.opacity = 0;
+          this.lineNode.opacity = 0;
+          if (true == this._args.isPromotion) {
+            this.promotionEffect.node.active = true;
+            this.promotionEffect.setCompleteListener(function() {
+              _this.showClerkContent();
+              _this.promotionEffect.node.active = false;
+            });
+            this.promotionEffect.setAnimation(0, "Approve", false);
+          } else this.showClerkContent();
+        }
+      },
+      showClerkContent: function showClerkContent() {
+        var _this2 = this;
+        var lastTalentData = this.getLastClerk();
+        null == lastTalentData ? this.titleLabel_1.getComponent("LabelUpdater").setContent("talent_title_1000") : this.titleLabel_1.getComponent("LabelUpdater").setContent("talent_title_" + lastTalentData.clerk.id);
+        this.titleLabel_2.getComponent("LabelUpdater").setContent("talent_title_" + this._args.talentData.clerk.id);
+        this.atkLabel_1.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(this.roleData.getStaticData().strength - parseInt(this._args.talentData.clerk.attack)));
+        this.atkLabel_2.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(this.roleData.getStaticData().strength));
+        this.atkLabel_3.getComponent("LabelUpdater").setString("+" + this._args.talentData.clerk.attack);
+        this.defLabel_1.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(this.roleData.getStaticData().armor - parseInt(this._args.talentData.clerk.armor)));
+        this.defLabel_2.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(this.roleData.getStaticData().armor));
+        this.defLabel_3.getComponent("LabelUpdater").setString("+" + this._args.talentData.clerk.armor);
+        this.hpLabel_1.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(this.roleData.getStaticData().basic_hp - parseInt(this._args.talentData.clerk.hp)));
+        this.hpLabel_2.getComponent("LabelUpdater").setString(Global.utils.formatNumberWithUnit(this.roleData.getStaticData().basic_hp));
+        this.hpLabel_3.getComponent("LabelUpdater").setString("+" + this._args.talentData.clerk.hp);
+        this._roleView.node.active = true;
+        this._roleView.node.y = -200;
+        cc.tween(this._roleView.node).delay(.5).to(.3, {
+          position: cc.v2(0, 0)
+        }).call(function() {
+          _this2.clerkGlowEffect.active = true;
+          cc.tween(_this2.clerkTitleNode).to(.2, {
             opacity: 255
           }).start();
-          var lastTalentData = this.getLastClerk();
-          null == lastTalentData ? this.titleLabel_1.getComponent("LabelUpdater").setContent("talent_title_1000") : this.titleLabel_1.getComponent("LabelUpdater").setContent("talent_title_" + lastTalentData.clerk.id);
-          this.titleLabel_2.getComponent("LabelUpdater").setContent("talent_title_" + this._args.talentData.clerk.id);
-          this.atkLabel_1.getComponent("LabelUpdater").setString(this.roleData.getStaticData().strength - parseInt(this._args.talentData.clerk.attack));
-          this.atkLabel_2.getComponent("LabelUpdater").setString(this.roleData.getStaticData().strength);
-          this.atkLabel_3.getComponent("LabelUpdater").setString("+" + this._args.talentData.clerk.attack);
-          this.defLabel_1.getComponent("LabelUpdater").setString(this.roleData.getStaticData().armor - parseInt(this._args.talentData.clerk.armor));
-          this.defLabel_2.getComponent("LabelUpdater").setString(this.roleData.getStaticData().armor);
-          this.defLabel_3.getComponent("LabelUpdater").setString("+" + this._args.talentData.clerk.armor);
-          this.hpLabel_1.getComponent("LabelUpdater").setString(this.roleData.getStaticData().basic_hp - parseInt(this._args.talentData.clerk.hp));
-          this.hpLabel_2.getComponent("LabelUpdater").setString(this.roleData.getStaticData().basic_hp);
-          this.hpLabel_3.getComponent("LabelUpdater").setString("+" + this._args.talentData.clerk.hp);
-          var roleView = this.roleNode.getComponent("RoleView");
-          roleView.updateData(this.roleContainer, this.roleData);
-          roleView.hideBar();
-        }
+          cc.tween(_this2.titleLabel_1).to(.2, {
+            scale: 1
+          }, {
+            easing: "elasticOut"
+          }).start();
+          cc.tween(_this2.arrowNode).delay(.2).to(.2, {
+            scale: 1
+          }, {
+            easing: "elasticOut"
+          }).start();
+          cc.tween(_this2.titleLabel_2).delay(.4).to(.2, {
+            scale: 1
+          }, {
+            easing: "elasticOut"
+          }).start();
+          cc.tween(_this2.lineNode).delay(.6).to(.2, {
+            opacity: 255
+          }).start();
+          cc.tween(_this2.atkNode).delay(.8).to(.2, {
+            opacity: 255
+          }).start();
+          cc.tween(_this2.defNode).delay(1).to(.2, {
+            opacity: 255
+          }).start();
+          cc.tween(_this2.hpNode).delay(1.2).to(.2, {
+            opacity: 255
+          }).start();
+        }).start();
       },
       mergeItems: function mergeItems(items) {
         return Object.values(items.reduce(function(acc, item) {
@@ -19109,7 +19739,7 @@ window.__require = function e(t, n, r) {
         this.minCurrentEnergy = 0;
         this.overdraw = 0;
         this.timeoutIds = [];
-        this.rebornCount = 1;
+        this.rebornCount = 999;
         this.rebornCountMax = 1;
         this.rebornRate = .5;
         this.ownSkills = {};
@@ -19151,7 +19781,7 @@ window.__require = function e(t, n, r) {
       reborn: function reborn() {
         if (this.rebornCount <= 0) return;
         this.getCurrentProperties();
-        this.currentHp = this.data.basic_hp * this.rebornRate;
+        this.currentHp = Math.floor(this.data.basic_hp * this.rebornRate);
         this.rebornCount--;
         if (true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.REBORN)) for (var i = 0; i < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.REBORN].length; i++) {
           var event = this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.REBORN][i];
@@ -19161,6 +19791,7 @@ window.__require = function e(t, n, r) {
       resetState: function resetState() {
         this.getCurrentProperties();
         this.currentHp = this.data.basic_hp;
+        this.currentEnergy = 0;
       },
       recoveryStamina: function recoveryStamina() {
         var recoveryInternal = 108e4;
@@ -19634,8 +20265,8 @@ window.__require = function e(t, n, r) {
         var damage = _ultimateAbilityData.getDamage();
         var value = damage.value;
         if (_ultimateAbilityData.damageType & EnumType.BULLET_DAMAGE_TYPE.HP) {
-          value = damage.value + _ultimateAbilityData.fromData.data.ultimate_ability_damage * damage.value * .01;
-          _ultimateAbilityData.damageType & EnumType.BULLET_DAMAGE_TYPE.CRIT && (value += value * _ultimateAbilityData.fromData.data.critical_damage * .01);
+          value = Math.floor(damage.value + _ultimateAbilityData.fromData.data.ultimate_ability_damage * damage.value * .01);
+          _ultimateAbilityData.damageType & EnumType.BULLET_DAMAGE_TYPE.CRIT && (value += Math.floor(value * _ultimateAbilityData.fromData.data.critical_damage * .01));
           value -= _ultimateAbilityData.targetData.data.armor;
           var amplifiedValue;
           if (_ultimateAbilityData.targetData.data.amplified_damage > 0) {
@@ -19799,6 +20430,16 @@ window.__require = function e(t, n, r) {
           }, _event.subConditionValue); else this.updatePropertyFromEvent(_event);
           break;
 
+         case EnumType.EVENT_TRIGGER_TYPE.BEFORE_BATTLE_START:
+          if (null != _event.subCondition) {
+            if (_event.subCondition == EnumType.EVENT_TRIGGER_SUB_TYPE.BOSS) {
+              var _curLevel2 = Global.levelManager.getCurrentLevel();
+              var _levelData2 = Global.levelManager.getLevelDataByLevel(_curLevel2);
+              _levelData2.isBoss && this.updatePropertyFromEvent(_event);
+            }
+          } else this.updatePropertyFromEvent(_event);
+          break;
+
          case EnumType.EVENT_TRIGGER_TYPE.FEND:
          case EnumType.EVENT_TRIGGER_TYPE.BULLET_ULTIMATE_ABILITY_DAMAGE:
           _event.initialValue += _arg;
@@ -19930,7 +20571,7 @@ window.__require = function e(t, n, r) {
             var isCrit = 0 != _bulletData.bulletConfig.crit && Global.utils.getRandomByProbability(critRate / 100);
             true == isCrit && _bulletData.setDamageType(EnumType.BULLET_DAMAGE_TYPE.CRIT);
             valueObj.isCrit = isCrit;
-            valueObj.isCrit && (value += value * _bulletData.fromData.data.critical_damage * .01);
+            valueObj.isCrit && (value += Math.floor(value * _bulletData.fromData.data.critical_damage * .01));
             value -= _bulletData.targetData.data.armor;
             var amplifiedValue = void 0;
             if (_bulletData.targetData.data.amplified_damage > 0) {
@@ -19949,6 +20590,7 @@ window.__require = function e(t, n, r) {
             _bulletData.targetData.reduceHpCallback && _bulletData.targetData.reduceHpCallback(value);
             if (_bulletData.targetData.data["reflect_damage"] > 0) {
               var relfectCount = this.getReflectCount(_bulletData.targetData);
+              var groupFlag = Global.networkTimer;
               for (var _i18 = 0; _i18 < relfectCount.length; _i18++) {
                 var reflect = relfectCount[_i18];
                 var damage = void 0;
@@ -19961,7 +20603,7 @@ window.__require = function e(t, n, r) {
                 relfectValue += relfectAmplifiedValue;
                 damage = Math.floor(relfectValue * reflect);
                 damage += this.getFinallyDamageRate(damage, _bulletData.targetData, _bulletData.fromData);
-                _bulletData.fromData.getHurtFromReflect(damage);
+                _bulletData.fromData.getHurtFromReflect(damage, groupFlag);
                 if (true == _bulletData.targetData.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.REFLECT_DAMAGE)) for (var _i19 = 0; _i19 < _bulletData.targetData.eventsDict[EnumType.EVENT_TRIGGER_TYPE.REFLECT_DAMAGE].length; _i19++) {
                   var _event6 = _bulletData.targetData.eventsDict[EnumType.EVENT_TRIGGER_TYPE.REFLECT_DAMAGE][_i19];
                   _bulletData.targetData.eventListener(_event6, damage);
@@ -20049,11 +20691,11 @@ window.__require = function e(t, n, r) {
         }
         return result;
       },
-      getHurtFromReflect: function getHurtFromReflect(_damage) {
+      getHurtFromReflect: function getHurtFromReflect(_damage, _groupFlag) {
         this.currentHp -= _damage;
         this.checkGameOver();
         this.reduceHpCallback && this.reduceHpCallback(_damage);
-        this.getHurtFromReflectCallback && this.getHurtFromReflectCallback(_damage);
+        this.getHurtFromReflectCallback && this.getHurtFromReflectCallback(_damage, _groupFlag);
       },
       defeatEnemy: function defeatEnemy() {
         if (true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.DEFEAT_ENEMY)) for (var i = 0; i < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.DEFEAT_ENEMY].length; i++) {
@@ -20076,15 +20718,33 @@ window.__require = function e(t, n, r) {
         _roleData.filterAdditionalProperties(true);
         _roleData.clearTimer();
       },
+      beforeBattleStart: function beforeBattleStart() {
+        var result = [];
+        if (true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.BEFORE_BATTLE_START)) for (var i = 0; i < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BEFORE_BATTLE_START].length; i++) {
+          var event = this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BEFORE_BATTLE_START][i];
+          result.push(event.skillId);
+        }
+        return result;
+      },
+      triggerBeforeBattleStartEvent: function triggerBeforeBattleStartEvent(_ids) {
+        if (true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.BEFORE_BATTLE_START)) for (var i = 0; i < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BEFORE_BATTLE_START].length; i++) {
+          var event = this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BEFORE_BATTLE_START][i];
+          if (_ids.indexOf(event.skillId) >= 0) {
+            event.currentTriggerCount = 0;
+            this.eventListener(event);
+          }
+        }
+      },
       battleStart: function battleStart() {
+        this.currentEnergy = this.minCurrentEnergy ? this.minCurrentEnergy : 0;
+        this.currentEnergy >= this.data.energy_max && (this.currentEnergy = this.data.energy_max);
+        this.fighting = true;
+        this.timer1Sec = 0;
         if (true == this.eventsDict.hasOwnProperty(EnumType.EVENT_TRIGGER_TYPE.BATTLE_START)) for (var i = 0; i < this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BATTLE_START].length; i++) {
           var event = this.eventsDict[EnumType.EVENT_TRIGGER_TYPE.BATTLE_START][i];
           event.currentTriggerCount = 0;
           this.eventListener(event);
         }
-        this.currentEnergy = this.minCurrentEnergy ? this.minCurrentEnergy : 0;
-        this.currentEnergy >= this.data.energy_max && (this.currentEnergy = this.data.energy_max);
-        this.fighting = true;
         this.initProgressBarCallback && this.initProgressBarCallback();
       },
       update: function update(dt) {
@@ -20123,15 +20783,15 @@ window.__require = function e(t, n, r) {
           this.checkGameOver();
           if (this.currentHp <= 0) return;
           0 != this.data.hp_regeneration && this.hpRegenerationCallback && this.hpRegenerationCallback(value);
-          var energy = this.data.energy_recovery;
+        }
+        if (Date.now() - this.timer >= BattleConfig.HEART_BEAT) {
+          this.timer = Date.now();
+          var energy = Math.floor(this.data.energy_recovery / 10);
           this.currentEnergy += energy;
           if (this.currentEnergy >= this.data.energy_max) {
             this.currentEnergy = this.data.energy_max;
             this.fireUltimateAbility(true);
           }
-        }
-        if (Date.now() - this.timer >= BattleConfig.HEART_BEAT) {
-          this.timer = Date.now();
           this.getCurrentProperties();
           this.filterAdditionalProperties();
           this.updateUICallback && this.updateUICallback();
@@ -20327,6 +20987,7 @@ window.__require = function e(t, n, r) {
           default: null,
           tooltip: "\u51b2\u950b\u95ea\u7535\u7279\u6548\uff1a\u89e6\u53d1\u51b2\u950b\u65f6\u663e\u793a"
         },
+        _isForcedCharge: false,
         boomRootNode: {
           type: cc.Node,
           default: null,
@@ -20570,7 +21231,7 @@ window.__require = function e(t, n, r) {
         this.battleSmokeSpine.active || (this.battleSmokeSpine.active = true);
       },
       hideBattleSmoke: function hideBattleSmoke() {
-        this.battleSmokeSpine.active && !this._isForcedCharge && (this.battleSmokeSpine.active = false);
+        this.battleSmokeSpine.active && (this.battleSmokeSpine.active = false);
       },
       cleanValueNode: function cleanValueNode() {
         this.valueRootNode.removeAllChildren();
@@ -20734,7 +21395,7 @@ window.__require = function e(t, n, r) {
         }
         if ("1213" == skillId) {
           this._isForcedCharge = true;
-          this.showBattleSmoke();
+          this.updateChargeStateCallback(this._isForcedCharge);
         }
       },
       combineSkillCallback: function combineSkillCallback(combineArr, isMergeAnimation) {
@@ -20770,6 +21431,7 @@ window.__require = function e(t, n, r) {
       },
       updateChargeStateCallback: function updateChargeStateCallback(flag) {
         void 0 === flag && (flag = false);
+        flag = flag || this._isForcedCharge;
         var skills = Global.skillManager.getSkillsByType(EnumType.ENHANCEMENT_EFFECT.CHARGE, this._roleData);
         skills.length >= 5 ? flag && !this.chargeSpine.active ? this.chargeSpine.active = true : !flag && this.chargeSpine.active && (this.chargeSpine.active = false) : flag && !this.chargeSmallSpine.active ? this.chargeSmallSpine.active = true : !flag && this.chargeSmallSpine.active && (this.chargeSmallSpine.active = false);
       },
@@ -21004,89 +21666,49 @@ window.__require = function e(t, n, r) {
     "use strict";
     cc._RF.push(module, "50f76z2ANlNX7odIOvQH/mS", "ScrollBg");
     "use strict";
-    function _createForOfIteratorHelperLoose(o, allowArrayLike) {
-      var it;
-      if ("undefined" === typeof Symbol || null == o[Symbol.iterator]) {
-        if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && "number" === typeof o.length) {
-          it && (o = it);
-          var i = 0;
-          return function() {
-            if (i >= o.length) return {
-              done: true
-            };
-            return {
-              done: false,
-              value: o[i++]
-            };
-          };
-        }
-        throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-      }
-      it = o[Symbol.iterator]();
-      return it.next.bind(it);
-    }
-    function _unsupportedIterableToArray(o, minLen) {
-      if (!o) return;
-      if ("string" === typeof o) return _arrayLikeToArray(o, minLen);
-      var n = Object.prototype.toString.call(o).slice(8, -1);
-      "Object" === n && o.constructor && (n = o.constructor.name);
-      if ("Map" === n || "Set" === n) return Array.from(o);
-      if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-    }
-    function _arrayLikeToArray(arr, len) {
-      (null == len || len > arr.length) && (len = arr.length);
-      for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-      return arr2;
-    }
     cc.Class({
       extends: cc.Component,
       properties: {
-        tileSprite: cc.Prefab,
-        scrollSpeed: 100,
-        tileWidth: 238,
-        tileHeight: 216,
-        xSpacing: 300,
-        ySpacing: 250,
-        diagonalAngle: 30
+        singleItemPrefab: cc.Prefab,
+        itemList: [ cc.Node ],
+        itemPool: [ cc.Node ],
+        singleLinePrefab: cc.Prefab,
+        linePool: [ cc.Node ]
       },
-      onLoad: function onLoad() {
-        this.tiles = [];
-        this.startTime = Date.now();
-        this.initGrid();
-      },
-      initGrid: function initGrid() {
-        var screenSize = cc.view.getVisibleSize();
-        var gridWidth = Math.ceil(1.5 * screenSize.width / this.xSpacing) + 1;
-        var gridHeight = Math.ceil(1.5 * screenSize.height / this.ySpacing) + 1;
-        for (var row = 0; row < gridHeight; row++) for (var col = 0; col < gridWidth; col++) if (row % 2 === 1 ? col % 2 === 1 : col % 2 === 0) {
-          var tile = cc.instantiate(this.tileSprite);
-          tile.initialX = col * this.xSpacing - gridWidth * this.xSpacing / 2;
-          tile.initialY = row * this.ySpacing - gridHeight * this.ySpacing / 2;
-          this.node.addChild(tile);
-          this.tiles.push(tile);
+      start: function start() {
+        this.screenSize = cc.view.getVisibleSize();
+        this.isNew = true;
+        for (var i = 0; i < 8; i++) {
+          var lineItem = this.createOneLine();
+          lineItem.x = -1 * this.screenSize.width / 2;
+          lineItem.y = this.screenSize.height / 2 - 260 * i;
+          lineItem.getComponent("SingleLine").moveTo(cc.v2(-1 * this.screenSize.width / 2, this.screenSize.height / 2 + 100));
         }
       },
-      update: function update() {
-        var elapsed = (Date.now() - this.startTime) / 1e3;
-        var rad = this.diagonalAngle * Math.PI / 180;
-        var screenSize = cc.view.getVisibleSize();
-        var totalDeltaX = this.scrollSpeed * Math.sin(rad) * elapsed;
-        var totalDeltaY = this.scrollSpeed * Math.cos(rad) * elapsed;
-        var cycleHeight = 1.5 * (screenSize.height + this.ySpacing);
-        var cycleWidth = cycleHeight * Math.tan(rad);
-        var resetThresholdY = .8 * cycleHeight;
-        var resetThresholdX = .8 * cycleWidth;
-        for (var _iterator = _createForOfIteratorHelperLoose(this.tiles), _step; !(_step = _iterator()).done; ) {
-          var tile = _step.value;
-          var theoryX = tile.initialX + totalDeltaX;
-          var theoryY = tile.initialY + totalDeltaY;
-          if (theoryY > resetThresholdY) {
-            theoryY -= cycleHeight;
-            theoryX -= cycleWidth;
-          }
-          tile.setPosition(theoryX, theoryY);
+      removeLine: function removeLine(_lineItem) {
+        this.node.removeChild(_lineItem, false);
+        this.linePool.push(_lineItem);
+      },
+      createOneLine: function createOneLine() {
+        var lineItem;
+        if (this.linePool.length > 0) lineItem = this.linePool.pop(); else {
+          lineItem = cc.instantiate(this.singleLinePrefab);
+          for (var i = 0; i < 20; i++) this.isNew ? i % 2 === 0 && this.generateItem(i, 20, lineItem) : i % 2 !== 0 && this.generateItem(i, 20, lineItem);
+          this.isNew = !this.isNew;
         }
-      }
+        this.node.addChild(lineItem);
+        return lineItem;
+      },
+      generateItem: function generateItem(_index, _maxCount, _parent) {
+        var startX = -1 * _maxCount * 238 / 2;
+        var singleItem;
+        singleItem = this.itemPool.length > 0 ? this.itemPool.pop() : cc.instantiate(this.singleItemPrefab);
+        this.itemList.push(singleItem);
+        _parent.addChild(singleItem);
+        singleItem.x = startX + 238 * _index;
+        singleItem.y = 0;
+      },
+      update: function update(dt) {}
     });
     cc._RF.pop();
   }, {} ],
@@ -21529,6 +22151,14 @@ window.__require = function e(t, n, r) {
           }
         }
       },
+      getAllS: function getAllS() {
+        var result = [];
+        for (var i = 0; i < EquipmentConfig.data.length; i++) {
+          var equipmentConfig = EquipmentConfig.data[i];
+          equipmentConfig.id < 2e3 && result.push(equipmentConfig);
+        }
+        return result;
+      },
       getBox: function getBox(_index) {
         if (_index == this.RED) {
           var weekNumber = this.calculateCurrentWeek();
@@ -21729,7 +22359,7 @@ window.__require = function e(t, n, r) {
           return;
         }
         var args = {};
-        args.equipmentList = Global.shopManager.getBox(Global.shopManager.RED).allItems[0];
+        args.equipmentList = Global.shopManager.getAllS();
         Global.gui.open(gameConfig.UIID.ShopSelectEquipment, args);
       },
       generateEquipmentItem: function generateEquipmentItem(_equipmentData) {
@@ -21912,11 +22542,13 @@ window.__require = function e(t, n, r) {
           result = Global.shopManager.openBox(Global.shopManager.ORANGE, Global.shopManager.ORANGE_EPIC_INDEX);
         }
         null == result && (result = Global.shopManager.openBox(Global.shopManager.ORANGE));
-        null != result.equipmentConfig ? Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData) : Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
-        if (result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && result.equipmentId < 2e3) {
-          Global.shopManager.storageData.orangeBox.epicSCount = 0;
-          Global.shopManager.storageData.orangeBox.epicCount = 0;
-        } else result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && (Global.shopManager.storageData.orangeBox.epicCount = 0);
+        if (null != result.equipmentConfig) {
+          Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData);
+          if (result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && result.equipmentId < 2e3) {
+            Global.shopManager.storageData.orangeBox.epicSCount = 0;
+            Global.shopManager.storageData.orangeBox.epicCount = 0;
+          } else result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && (Global.shopManager.storageData.orangeBox.epicCount = 0);
+        } else Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
         Global.shopManager.saveData();
         this.updateUI();
         return result;
@@ -21996,8 +22628,10 @@ window.__require = function e(t, n, r) {
           result = Global.shopManager.openBox(Global.shopManager.BLUE, Global.shopManager.BLUE_UNCOMMON_INDEX);
         }
         null == result && (result = Global.shopManager.openBox(Global.shopManager.BLUE));
-        null != result.equipmentConfig ? Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData) : Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
-        result.rarity == EnumType.RARE_TYPE_EQUIPMENT.UNCOMMON && (Global.shopManager.storageData.blueBox.uncommonCount = 0);
+        if (null != result.equipmentConfig) {
+          Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData);
+          result.rarity == EnumType.RARE_TYPE_EQUIPMENT.UNCOMMON && (Global.shopManager.storageData.blueBox.uncommonCount = 0);
+        } else Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
         Global.shopManager.saveData();
         this.updateUI();
         return result;
@@ -22010,8 +22644,10 @@ window.__require = function e(t, n, r) {
           result = Global.shopManager.openBox(Global.shopManager.PURPLE, Global.shopManager.PURPLE_EPIC_INDEX);
         }
         null == result && (result = Global.shopManager.openBox(Global.shopManager.PURPLE));
-        null != result.equipmentConfig ? Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData) : Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
-        result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && (Global.shopManager.storageData.purpleBox.epicCount = 0);
+        if (null != result.equipmentConfig) {
+          Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData);
+          result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && (Global.shopManager.storageData.purpleBox.epicCount = 0);
+        } else Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
         Global.shopManager.saveData();
         this.updateUI();
         return result;
@@ -22064,11 +22700,13 @@ window.__require = function e(t, n, r) {
           result = Global.shopManager.openBox(Global.shopManager.RED, Global.shopManager.RED_EPIC_INDEX);
         }
         null == result && (result = Global.shopManager.openBox(Global.shopManager.RED));
-        null != result.equipmentConfig ? Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData) : Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
-        if (result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && result.equipmentId < 2e3) {
-          Global.shopManager.storageData.redBox.epicSCount = 0;
-          Global.shopManager.storageData.redBox.epicCount = 0;
-        } else result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && (Global.shopManager.storageData.redBox.epicCount = 0);
+        if (null != result.equipmentConfig) {
+          Global.equipmentManager.addEquipment(result.equipmentId, Global.roleData);
+          if (result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && result.equipmentId < 2e3) {
+            Global.shopManager.storageData.redBox.epicSCount = 0;
+            Global.shopManager.storageData.redBox.epicCount = 0;
+          } else result.rarity == EnumType.RARE_TYPE_EQUIPMENT.EPIC && (Global.shopManager.storageData.redBox.epicCount = 0);
+        } else Global.bagManager.addItem(result.itemId, result.count, Global.roleData);
         Global.shopManager.saveData();
         this.updateUI();
         return result;
@@ -22568,22 +23206,22 @@ window.__require = function e(t, n, r) {
       id: "0",
       weekType: "0",
       rewardType: "0",
-      rewardId: "",
+      rewardId: "2002",
       amount: "50",
       comment: "50\u94bb"
     };
     data["1"] = {
       id: "1",
       weekType: "0",
-      rewardType: "3",
-      rewardId: "",
+      rewardType: "0",
+      rewardId: "1019",
       amount: "3",
-      comment: "\u91d1\u526a\u5200x3"
+      comment: "\u94bb\u77f3\u526a\u5200x3"
     };
     data["2"] = {
       id: "2",
       weekType: "0",
-      rewardType: "4",
+      rewardType: "0",
       rewardId: "1003",
       amount: "1",
       comment: "\u7d2b\u88c5\u6750\u6599x1"
@@ -22591,80 +23229,80 @@ window.__require = function e(t, n, r) {
     data["3"] = {
       id: "3",
       weekType: "0",
-      rewardType: "1",
-      rewardId: "",
+      rewardType: "0",
+      rewardId: "1017",
       amount: "5",
-      comment: "\u94dc\u526a\u5200x5"
+      comment: "\u94f6\u526a\u5200x5"
     };
     data["4"] = {
       id: "4",
       weekType: "0",
-      rewardType: "2",
-      rewardId: "",
+      rewardType: "0",
+      rewardId: "1018",
       amount: "10",
-      comment: "\u94f6\u526a\u5200x10"
+      comment: "\u91d1\u526a\u5200x10"
     };
     data["5"] = {
       id: "5",
       weekType: "0",
       rewardType: "0",
-      rewardId: "0",
+      rewardId: "2002",
       amount: "100",
       comment: "100\u94bb"
     };
     data["6"] = {
       id: "6",
       weekType: "0",
-      rewardType: "5|0",
-      rewardId: "2004|0",
+      rewardType: "1|0",
+      rewardId: "2004|2002",
       amount: "1|300",
-      comment: "\u7d2b\u88c5\u5907x1"
+      comment: "\u7d2b\u88c5\u5907x1+300\u94bb\u77f3"
     };
     data["7"] = {
       id: "7",
       weekType: "1",
-      rewardType: "2",
-      rewardId: "",
+      rewardType: "0",
+      rewardId: "1018",
       amount: "3",
-      comment: "\u94f6\u526a\u5200x3"
+      comment: "\u91d1\u526a\u5200x3"
     };
     data["8"] = {
       id: "8",
       weekType: "1",
       rewardType: "0",
-      rewardId: "",
+      rewardId: "2002",
       amount: "100",
       comment: "100\u94bb"
     };
     data["9"] = {
       id: "9",
       weekType: "1",
-      rewardType: "2",
-      rewardId: "",
+      rewardType: "0",
+      rewardId: "1018",
       amount: "3",
-      comment: "\u94f6\u526a\u5200x3"
+      comment: "\u91d1\u526a\u5200x3"
     };
     data["10"] = {
       id: "10",
       weekType: "1",
       rewardType: "0",
-      rewardId: "",
+      rewardId: "2002",
       amount: "100",
       comment: "100\u94bb"
     };
     data["11"] = {
       id: "11",
       weekType: "1",
-      rewardType: "2",
-      rewardId: "",
+      rewardType: "0",
+      rewardId: "1018",
       amount: "3",
-      comment: "\u94f6\u526a\u5200x3"
+      comment: "\u91d1\u526a\u5200x3"
     };
     data["12"] = {
       id: "12",
       weekType: "1",
       rewardType: "0",
-      rewardId: "",
+      rewardId: "2002",
       amount: "100",
       comment: "100\u94bb"
     };
@@ -22672,7 +23310,7 @@ window.__require = function e(t, n, r) {
       id: "13",
       weekType: "1",
       rewardType: "0",
-      rewardId: "",
+      rewardId: "2002",
       amount: "1000",
       comment: "1000\u94bb"
     };
@@ -22875,6 +23513,36 @@ window.__require = function e(t, n, r) {
     GameConfig: "GameConfig",
     SigninBaseData: "SigninBaseData"
   } ],
+  SingleLine: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "ab356ztsdVFTbQgrypnh3iV", "SingleLine");
+    "use strict";
+    cc.Class({
+      extends: cc.Component,
+      properties: {},
+      ctor: function ctor() {
+        this.screenSize = cc.view.getVisibleSize();
+        this.moveSpeed = 2;
+        this.startX = -1 * this.screenSize.width / 2;
+        this.startY = -1 * this.screenSize.height / 2 - 100;
+      },
+      moveTo: function moveTo(targetPos) {
+        this.startPos = this.node.getPosition();
+        this.targetPos = targetPos;
+        this.isMoving = true;
+      },
+      update: function update(dt) {
+        if (!this.isMoving) return;
+        this.node.y += this.moveSpeed;
+        if (this.node.y >= this.targetPos.y) {
+          this.node.x = this.startX;
+          this.node.y = this.startY;
+          this.moveTo(cc.v2(this.targetPos.x, this.targetPos.y));
+        }
+      }
+    });
+    cc._RF.pop();
+  }, {} ],
   SkillConfig: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "ee1edt+JuNFpLi1Vxc85TQq", "SkillConfig");
@@ -22902,12 +23570,13 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1002",
           name: "\u7eb8\u56e2X2",
           ownership: "0",
-          spawn_probability: "5",
+          spawn_probability: "3",
           rarity: "3",
           importance: "1",
           duration: "0",
@@ -22923,12 +23592,13 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1003",
           name: "\u786c\u5316\u77f3\u5934",
           ownership: "0",
-          spawn_probability: "13",
+          spawn_probability: "8",
           rarity: "2",
           importance: "1",
           duration: "0",
@@ -22944,7 +23614,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1004",
           name: "\u62bd\u7eb8",
@@ -22965,7 +23636,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1005",
           name: "\u808c\u8089\u8bb0\u5fc6",
@@ -22986,7 +23658,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1006",
           name: "\u52aa\u529b\u953b\u70bc",
@@ -23007,7 +23680,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|1"
+          ability_up: "1|1",
+          before_battle_effect: ""
         }, {
           id: "1007",
           name: "\u9a6c\u5f62\u6c34\u602a",
@@ -23028,7 +23702,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1008",
           name: "\u518d\u6765\u4e00\u7ec4",
@@ -23049,7 +23724,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1009",
           name: "\u9a6c",
@@ -23070,7 +23746,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|2"
+          ability_up: "0|2",
+          before_battle_effect: ""
         }, {
           id: "1010",
           name: "\u4e00\u5305\u808c\u8089",
@@ -23091,7 +23768,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1011",
           name: "\u86cb\u767d\u7c89",
@@ -23112,7 +23790,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1012",
           name: "\u80fd\u91cf\u996e\u6599",
@@ -23133,7 +23812,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1013",
           name: "\u5438\u8840",
@@ -23154,7 +23834,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1014",
           name: "\u4e00\u5305\u5438\u8840",
@@ -23175,7 +23856,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1015",
           name: "\u601d\u8003",
@@ -23196,7 +23878,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1016",
           name: "\u5438\u8840\u8759\u8760",
@@ -23217,7 +23900,8 @@ window.__require = function e(t, n, r) {
           effect: "1_5",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1017",
           name: "\u4e00\u5305\u65a7\u5934",
@@ -23238,7 +23922,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1018",
           name: "\u53c9\u5b50",
@@ -23259,7 +23944,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1019",
           name: "\u786c\u65a7",
@@ -23280,7 +23966,8 @@ window.__require = function e(t, n, r) {
           effect: "0_2",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1020",
           name: "\u6e9c\u51b0",
@@ -23301,7 +23988,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1021",
           name: "\u8fde\u73af\u9501",
@@ -23322,7 +24010,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1022",
           name: "\u6cd5\u68cd",
@@ -23343,7 +24032,8 @@ window.__require = function e(t, n, r) {
           effect: "0_2",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1023",
           name: "\u77f3\u5934+1",
@@ -23364,7 +24054,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1024",
           name: "\u624b\u67c4",
@@ -23385,7 +24076,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1025",
           name: "\u4e00\u5305\u8111\u5b50",
@@ -23406,7 +24098,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1026",
           name: "\u5b66\u4e60",
@@ -23427,7 +24120,8 @@ window.__require = function e(t, n, r) {
           effect: "0_3",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1027",
           name: "\u94c1\u5934",
@@ -23448,7 +24142,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1028",
           name: "\u7ecf\u6d4e\u5b66\u5bb6",
@@ -23469,7 +24164,8 @@ window.__require = function e(t, n, r) {
           effect: "2_3",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1029",
           name: "\u5934\u8111\u98ce\u66b4",
@@ -23490,7 +24186,8 @@ window.__require = function e(t, n, r) {
           effect: "0_3",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1030",
           name: "\u5927\u62db\u4f24\u5bb3",
@@ -23511,7 +24208,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|4"
+          ability_up: "0|4",
+          before_battle_effect: ""
         }, {
           id: "1031",
           name: "\u51b0",
@@ -23532,7 +24230,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1032",
           name: "\u51b0\u6676\u5316",
@@ -23553,11 +24252,12 @@ window.__require = function e(t, n, r) {
           effect: "3_6",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1033",
           name: "\u6ee1\u8db3",
-          ownership: "2",
+          ownership: "1",
           spawn_probability: "0",
           rarity: "4",
           importance: "1",
@@ -23574,7 +24274,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1034",
           name: "\u60f3\u5403",
@@ -23595,7 +24296,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1035",
           name: "\u5de7\u514b\u529b",
@@ -23616,7 +24318,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1036",
           name: "\u6218\u524d\u6cbb\u7597",
@@ -23637,7 +24340,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1037",
           name: "\u6218\u524d\u88c5\u7532",
@@ -23658,7 +24362,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1038",
           name: "\u6781\u901f\u5f00\u5c40",
@@ -23679,7 +24384,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1039",
           name: "\u6301\u4e45\u91cd\u590d",
@@ -23700,7 +24406,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1040",
           name: "\u996e\u8336\u5566",
@@ -23721,7 +24428,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1041",
           name: "\u51b2\u950b\u5f3a\u5316",
@@ -23742,7 +24450,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1042",
           name: "\u8d85\u957f\u5f85\u673a",
@@ -23763,7 +24472,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1043",
           name: "\u8d85\u7ea7\u836f\u4e38",
@@ -23784,7 +24494,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1044",
           name: "\u7d27\u6025\u6cbb\u7597",
@@ -23805,7 +24516,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1045",
           name: "\u7d27\u6025\u5145\u7535",
@@ -23826,7 +24538,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1046",
           name: "\u7d27\u6025\u53e0\u7532",
@@ -23847,7 +24560,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1047",
           name: "\u7d27\u6025\u53cd\u4f24",
@@ -23868,7 +24582,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1048",
           name: "\u8b66\u7b1b",
@@ -23889,7 +24604,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1049",
           name: "\u53e3\u7f69",
@@ -23910,7 +24626,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1050",
           name: "\u52a0\u6cb9",
@@ -23931,7 +24648,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|1"
+          ability_up: "1|1",
+          before_battle_effect: ""
         }, {
           id: "1051",
           name: "\u7ef4\u751f\u7d20C",
@@ -23940,7 +24658,7 @@ window.__require = function e(t, n, r) {
           rarity: "1",
           importance: "1",
           duration: "0",
-          value_list: "1&0.34&basic_hp",
+          value_list: "1&0.26&basic_hp",
           property_affected_list: "0|hp_regeneration",
           skill_type: "1|4|0|100|0",
           skill_owner: "",
@@ -23952,7 +24670,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|7"
+          ability_up: "1|7",
+          before_battle_effect: ""
         }, {
           id: "1052",
           name: "\u6253\u5750",
@@ -23961,7 +24680,7 @@ window.__require = function e(t, n, r) {
           rarity: "3",
           importance: "1",
           duration: "0",
-          value_list: "1&0.34&basic_hp",
+          value_list: "1&0.5&basic_hp",
           property_affected_list: "0|hp_regeneration",
           skill_type: "1|4|0|100|0",
           skill_owner: "",
@@ -23973,7 +24692,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|7"
+          ability_up: "1|7",
+          before_battle_effect: ""
         }, {
           id: "1053",
           name: "\u591a\u9910",
@@ -23994,7 +24714,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|2"
+          ability_up: "1|2",
+          before_battle_effect: ""
         }, {
           id: "1054",
           name: "\u6012\u6c14\u79ef\u6512",
@@ -24015,7 +24736,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|8"
+          ability_up: "1|8",
+          before_battle_effect: ""
         }, {
           id: "1055",
           name: "\u4efb\u52a1\uff1a\u53cd\u4f24",
@@ -24036,7 +24758,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|9"
+          ability_up: "1|9",
+          before_battle_effect: ""
         }, {
           id: "1056",
           name: "\u7ec8\u70b9\u7ebf",
@@ -24057,7 +24780,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|10"
+          ability_up: "1|10",
+          before_battle_effect: ""
         }, {
           id: "1057",
           name: "\u9c7f\u9c7c",
@@ -24078,7 +24802,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|11"
+          ability_up: "1|11",
+          before_battle_effect: ""
         }, {
           id: "1058",
           name: "\u85af\u7247",
@@ -24099,7 +24824,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|1"
+          ability_up: "0|1",
+          before_battle_effect: ""
         }, {
           id: "1059",
           name: "\u6218\u524d\u5145\u7535",
@@ -24120,7 +24846,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|12"
+          ability_up: "0|12",
+          before_battle_effect: ""
         }, {
           id: "1060",
           name: "\u53f3\u5df4\u638c",
@@ -24141,7 +24868,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: "1|wrj"
         }, {
           id: "1061",
           name: "\u5de6\u5df4\u638c",
@@ -24162,7 +24890,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: "1|punch"
         }, {
           id: "1062",
           name: "\u5f31\u5316",
@@ -24183,7 +24912,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1063",
           name: "\u53cc\u624b",
@@ -24204,7 +24934,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "1",
           delete: "",
-          ability_up: "0|18"
+          ability_up: "0|18",
+          before_battle_effect: ""
         }, {
           id: "1064",
           name: "\u653b\u51fb\u63d0\u5347",
@@ -24225,7 +24956,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|1"
+          ability_up: "0|1",
+          before_battle_effect: ""
         }, {
           id: "1065",
           name: "\u74f6\u88c5\u5371\u673a",
@@ -24246,7 +24978,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|1"
+          ability_up: "0|1",
+          before_battle_effect: ""
         }, {
           id: "1066",
           name: "\u756a\u8304",
@@ -24267,7 +25000,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|1"
+          ability_up: "0|1",
+          before_battle_effect: ""
         }, {
           id: "1067",
           name: "\u9f99\u5fc3",
@@ -24288,7 +25022,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|1"
+          ability_up: "0|1",
+          before_battle_effect: ""
         }, {
           id: "1068",
           name: "\u793c\u76d2",
@@ -24309,7 +25044,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|1"
+          ability_up: "0|1",
+          before_battle_effect: ""
         }, {
           id: "1069",
           name: "\u7f50\u5934",
@@ -24330,7 +25066,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|1"
+          ability_up: "0|1",
+          before_battle_effect: ""
         }, {
           id: "1070",
           name: "\u73bb\u7483\u5927\u70ae",
@@ -24351,7 +25088,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|1"
+          ability_up: "0|1",
+          before_battle_effect: ""
         }, {
           id: "1071",
           name: "\u8d2a\u5a6a",
@@ -24372,7 +25110,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|1"
+          ability_up: "1|1",
+          before_battle_effect: ""
         }, {
           id: "1072",
           name: "\u81ea\u6108",
@@ -24393,7 +25132,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1073",
           name: "\u6cbb\u7597\u6548\u679c\u63d0\u5347",
@@ -24414,7 +25154,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|13"
+          ability_up: "0|13",
+          before_battle_effect: ""
         }, {
           id: "1074",
           name: "\u610f\u9762",
@@ -24435,7 +25176,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1075",
           name: "\u786c\u6c49",
@@ -24456,7 +25198,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1076",
           name: "\u6ce2\u9738\u5976\u8336",
@@ -24477,7 +25220,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1077",
           name: "\u5de8\u9b54",
@@ -24498,7 +25242,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1078",
           name: "\u5bff\u53f8",
@@ -24507,7 +25252,7 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           importance: "1",
           duration: "0",
-          value_list: "1&83.34&basic_hp",
+          value_list: "1&50&basic_hp",
           property_affected_list: "11|currentHp",
           skill_type: "1|5-0-6|0|100|1",
           skill_owner: "",
@@ -24519,7 +25264,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1079",
           name: "\u751f\u6c23\u7684\u5de8\u9b54",
@@ -24540,7 +25286,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1080",
           name: "\u81ea\u6211\u6cbb\u7642",
@@ -24561,7 +25308,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1081",
           name: "\u6127\u759a",
@@ -24582,7 +25330,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1082",
           name: "\u6c89\u9ed8",
@@ -24603,13 +25352,14 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|2"
+          ability_up: "0|2",
+          before_battle_effect: ""
         }, {
           id: "1083",
           name: "\u4f53\u529b\u63d0\u5347",
           ownership: "0",
           spawn_probability: "41",
-          rarity: "0",
+          rarity: "1",
           importance: "1",
           duration: "0",
           value_list: "1&27.5&basic_hp",
@@ -24624,7 +25374,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|2"
+          ability_up: "0|2",
+          before_battle_effect: ""
         }, {
           id: "1084",
           name: "\u6709\u6c27\u8fd0\u52a8",
@@ -24635,7 +25386,7 @@ window.__require = function e(t, n, r) {
           duration: "0",
           value_list: "2&10|strength&basic_hp",
           property_affected_list: "0|basic_hp",
-          skill_type: "1|5|0|100|0",
+          skill_type: "1|20|0|100|0",
           skill_owner: "",
           is_dynamic_value: "",
           is_dynamic_subValue: "dynamic",
@@ -24645,7 +25396,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|2"
+          ability_up: "1|2",
+          before_battle_effect: "0|spinach"
         }, {
           id: "1085",
           name: "\u5feb\u9910",
@@ -24666,7 +25418,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|2"
+          ability_up: "0|2",
+          before_battle_effect: ""
         }, {
           id: "1086",
           name: "\u5496\u5561",
@@ -24687,7 +25440,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|14"
+          ability_up: "0|14",
+          before_battle_effect: ""
         }, {
           id: "1087",
           name: "\u77ff\u6cc9\u6c34",
@@ -24708,7 +25462,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|14"
+          ability_up: "0|14",
+          before_battle_effect: ""
         }, {
           id: "1088",
           name: "\u84c4\u80fd\u5927\u62db",
@@ -24716,9 +25471,9 @@ window.__require = function e(t, n, r) {
           spawn_probability: "20",
           rarity: "1",
           importance: "1",
-          duration: "0",
+          duration: "2|1",
           value_list: "2&190",
-          property_affected_list: "6|currentEnergy",
+          property_affected_list: "0|energy_recovery",
           skill_type: "1|6|0|100|0",
           skill_owner: "",
           is_dynamic_value: "",
@@ -24729,7 +25484,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1089",
           name: "\u866b\u821e",
@@ -24750,7 +25506,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1090",
           name: "\u8774\u8776\u9762\u5305",
@@ -24758,9 +25515,9 @@ window.__require = function e(t, n, r) {
           spawn_probability: "20",
           rarity: "1",
           importance: "1",
-          duration: "0",
+          duration: "2|1",
           value_list: "2&250",
-          property_affected_list: "6|currentEnergy",
+          property_affected_list: "0|energy_recovery",
           skill_type: "1|6|0|100|0",
           skill_owner: "",
           is_dynamic_value: "",
@@ -24771,7 +25528,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1091",
           name: "\u996d\u56e2",
@@ -24792,7 +25550,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1092",
           name: "\u52e4\u7ec3\u5e26\u6765\u529b\u91cf",
@@ -24813,7 +25572,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|4"
+          ability_up: "1|4",
+          before_battle_effect: ""
         }, {
           id: "1093",
           name: "\u5927\u62db\u4f24\u5bb3",
@@ -24834,7 +25594,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1094",
           name: "\u6076\u9b3c",
@@ -24855,7 +25616,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1095",
           name: "\u66b4\u51fb\u7387\u4e0a\u5347",
@@ -24876,7 +25638,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|8"
+          ability_up: "0|8",
+          before_battle_effect: ""
         }, {
           id: "1096",
           name: "\u66b4\u51fb\u4f24\u5bb3",
@@ -24897,7 +25660,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|15"
+          ability_up: "0|15",
+          before_battle_effect: ""
         }, {
           id: "1097",
           name: "\u6012",
@@ -24918,7 +25682,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|15"
+          ability_up: "0|15",
+          before_battle_effect: ""
         }, {
           id: "1098",
           name: "\u6b63\u4e49",
@@ -24939,7 +25704,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|8"
+          ability_up: "0|8",
+          before_battle_effect: ""
         }, {
           id: "1099",
           name: "\u5c0f\u9ec4\u9e2d",
@@ -24960,7 +25726,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|8"
+          ability_up: "0|8",
+          before_battle_effect: ""
         }, {
           id: "1100",
           name: "\u5c0f\u5200",
@@ -24981,7 +25748,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|8"
+          ability_up: "0|8",
+          before_battle_effect: ""
         }, {
           id: "1101",
           name: "\u6076\u9b54",
@@ -25002,7 +25770,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|15"
+          ability_up: "0|15",
+          before_battle_effect: ""
         }, {
           id: "1102",
           name: "\u82b1\u6930\u83dc\u6076\u9b54",
@@ -25023,7 +25792,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1103",
           name: "UPhone",
@@ -25044,7 +25814,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|8"
+          ability_up: "0|8",
+          before_battle_effect: ""
         }, {
           id: "1104",
           name: "\u53e0\u52a0\u66b4\u51fb",
@@ -25065,7 +25836,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|8"
+          ability_up: "1|8",
+          before_battle_effect: ""
         }, {
           id: "1105",
           name: "\u53e0\u52a0\u95ea\u907f",
@@ -25086,7 +25858,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|16"
+          ability_up: "1|16",
+          before_battle_effect: ""
         }, {
           id: "1106",
           name: "\u67af\u840e\u7a7f\u5fc3\u653b\u51fb",
@@ -25107,7 +25880,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1107",
           name: "\u5e73\u679c\u624b\u673a",
@@ -25128,7 +25902,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|17"
+          ability_up: "0|17",
+          before_battle_effect: ""
         }, {
           id: "1108",
           name: "\u55b7\u568f",
@@ -25149,7 +25924,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1109",
           name: "\u53cd\u64ca",
@@ -25170,7 +25946,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1110",
           name: "\u5c31\u8fd9",
@@ -25191,7 +25968,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1111",
           name: "\u51b0\u76fe\u53cd\u523a",
@@ -25212,7 +25990,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1112",
           name: "\u5e26\u523a\u62a4\u7532",
@@ -25233,7 +26012,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|17"
+          ability_up: "0|17",
+          before_battle_effect: ""
         }, {
           id: "1113",
           name: "\u656c\u793c",
@@ -25254,7 +26034,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|17"
+          ability_up: "0|17",
+          before_battle_effect: ""
         }, {
           id: "1114",
           name: "\u53e0\u7532",
@@ -25275,7 +26056,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|17"
+          ability_up: "0|17",
+          before_battle_effect: ""
         }, {
           id: "1115",
           name: "\u82f9\u679c",
@@ -25296,7 +26078,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|17"
+          ability_up: "0|17",
+          before_battle_effect: ""
         }, {
           id: "1116",
           name: "\u6bd2\u82f9\u679c",
@@ -25317,7 +26100,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|17"
+          ability_up: "0|17",
+          before_battle_effect: ""
         }, {
           id: "1117",
           name: "\u9f99\u867e",
@@ -25338,7 +26122,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|1"
+          ability_up: "1|1",
+          before_battle_effect: ""
         }, {
           id: "1118",
           name: "\u5c16\u523a",
@@ -25359,7 +26144,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|9"
+          ability_up: "0|9",
+          before_battle_effect: ""
         }, {
           id: "1119",
           name: "\u590d\u4ec7",
@@ -25380,7 +26166,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1120",
           name: "\u4ed9\u4eba\u638c",
@@ -25401,7 +26188,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|9"
+          ability_up: "0|9",
+          before_battle_effect: ""
         }, {
           id: "1121",
           name: "\u7d20\u98df\u6076\u9b3c",
@@ -25422,7 +26210,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1122",
           name: "\u5927\u849c",
@@ -25443,7 +26232,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1123",
           name: "\u95ea\u907f\u63d0\u5347",
@@ -25464,7 +26254,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|16"
+          ability_up: "0|16",
+          before_battle_effect: ""
         }, {
           id: "1124",
           name: "\u732b",
@@ -25485,7 +26276,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|16"
+          ability_up: "0|16",
+          before_battle_effect: ""
         }, {
           id: "1125",
           name: "\u52c7\u6562\u7684\u5fc3",
@@ -25506,7 +26298,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1126",
           name: "\u8776\u821e",
@@ -25527,7 +26320,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1127",
           name: "\u677e\u53e3\u6c14",
@@ -25548,7 +26342,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1128",
           name: "\u79c3\u5934",
@@ -25569,7 +26364,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|16"
+          ability_up: "0|16",
+          before_battle_effect: ""
         }, {
           id: "1129",
           name: "\u660e\u955c\u6b62\u6c34",
@@ -25590,7 +26386,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1130",
           name: "\u901f\u5ea6\u63d0\u5347",
@@ -25611,7 +26408,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|10"
+          ability_up: "0|10",
+          before_battle_effect: ""
         }, {
           id: "1131",
           name: "\u9b3c\u8138",
@@ -25632,7 +26430,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|10"
+          ability_up: "0|10",
+          before_battle_effect: ""
         }, {
           id: "1132",
           name: "\u56fe\u9488",
@@ -25653,7 +26452,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|9"
+          ability_up: "0|9",
+          before_battle_effect: ""
         }, {
           id: "1133",
           name: "\u9ad8\u8ddf\u978b",
@@ -25674,7 +26474,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|10"
+          ability_up: "0|10",
+          before_battle_effect: ""
         }, {
           id: "1134",
           name: "\u7ea2\u8fa3\u6912",
@@ -25695,7 +26496,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|10"
+          ability_up: "0|10",
+          before_battle_effect: ""
         }, {
           id: "1135",
           name: "\u4f1a\u8d70\u8def\u7684\u7ae0\u9c7c",
@@ -25716,7 +26518,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|10"
+          ability_up: "0|10",
+          before_battle_effect: ""
         }, {
           id: "1136",
           name: "\u8d85\u7ea7\u8fa3\u70ed\u72d7",
@@ -25737,7 +26540,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|10"
+          ability_up: "0|10",
+          before_battle_effect: ""
         }, {
           id: "1137",
           name: "\u706f\u795e",
@@ -25758,7 +26562,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|10"
+          ability_up: "0|10",
+          before_battle_effect: ""
         }, {
           id: "1138",
           name: "\u4fe1\u7528\u5361",
@@ -25779,7 +26584,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1139",
           name: "\u7ea2\u5305",
@@ -25800,7 +26606,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|11"
+          ability_up: "0|11",
+          before_battle_effect: ""
         }, {
           id: "1140",
           name: "\u4f01\u9e45\u5382\u80a1\u7968",
@@ -25821,7 +26628,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|11"
+          ability_up: "0|11",
+          before_battle_effect: ""
         }, {
           id: "1141",
           name: "\u517b\u732a\u573a\u80a1\u7968",
@@ -25842,7 +26650,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1142",
           name: "\u9500\u552e\u5956\u724c",
@@ -25863,7 +26672,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|11"
+          ability_up: "0|11",
+          before_battle_effect: ""
         }, {
           id: "1143",
           name: "\u6536\u5165\u63d0\u5347",
@@ -25884,7 +26694,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|11"
+          ability_up: "0|11",
+          before_battle_effect: ""
         }, {
           id: "1144",
           name: "\u5e78\u8fd0\u5c0f\u732b",
@@ -25905,7 +26716,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|11"
+          ability_up: "0|11",
+          before_battle_effect: ""
         }, {
           id: "1145",
           name: "\u699c\u4e00\u5927\u54e5",
@@ -25926,7 +26738,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1146",
           name: "\u94b1\uff01",
@@ -25947,7 +26760,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1147",
           name: "\u7d2b\u8272\u7684\u9c7c",
@@ -25968,7 +26782,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1148",
           name: "\u84dd\u8272\u7684\u9c7c",
@@ -25989,7 +26804,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1149",
           name: "\u91d1\u8272\u7684\u9c7c",
@@ -26010,7 +26826,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1151",
           name: "\u7b77\u5b50",
@@ -26031,7 +26848,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1152",
           name: "\u76c6\u683d",
@@ -26052,7 +26870,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1153",
           name: "\u6495\u88c2\u4f24\u53e3",
@@ -26073,7 +26892,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1154",
           name: "\u53f3\u624b",
@@ -26094,7 +26914,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1155",
           name: "\u5de6\u624b",
@@ -26115,7 +26936,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1156",
           name: "\u5496\u5561",
@@ -26136,7 +26958,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1157",
           name: "\u4efb\u52a1:\u53e0\u7532",
@@ -26157,7 +26980,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|17"
+          ability_up: "1|17",
+          before_battle_effect: ""
         }, {
           id: "1158",
           name: "\u65a7\u5934+1",
@@ -26178,7 +27002,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1159",
           name: "\u80fd\u91cf\u996e\u6599+1",
@@ -26199,7 +27024,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1160",
           name: "\u5927\u4fbf+1",
@@ -26220,7 +27046,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1161",
           name: "\u91cd\u4f24",
@@ -26241,7 +27068,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1162",
           name: "\u6cbb\u7597\u589e\u5f3a",
@@ -26262,7 +27090,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|13"
+          ability_up: "0|13",
+          before_battle_effect: ""
         }, {
           id: "1163",
           name: "\u51b2\u950b\u66b4\u51fb",
@@ -26283,7 +27112,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1164",
           name: "\u624b\u67c4",
@@ -26304,7 +27134,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1165",
           name: "\u80fd\u91cf\u51cf\u76ca",
@@ -26315,7 +27146,7 @@ window.__require = function e(t, n, r) {
           duration: "0",
           value_list: "2&200",
           property_affected_list: "26|energy_max",
-          skill_type: "1|5|0|100|0",
+          skill_type: "1|20|0|100|0",
           skill_owner: "",
           is_dynamic_value: "",
           is_dynamic_subValue: "",
@@ -26325,7 +27156,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: "0|energyup"
         }, {
           id: "1166",
           name: "\u51b0\u68d2\u4f24\u5bb3",
@@ -26346,7 +27178,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1167",
           name: "\u5f31\u5438\u8840",
@@ -26367,7 +27200,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1168",
           name: "\u5f3a\u5438\u8840",
@@ -26388,7 +27222,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1169",
           name: "\u5f3a\u5438\u8840",
@@ -26409,7 +27244,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1170",
           name: "\u7acb\u5373\u6bd2\u4f24",
@@ -26430,7 +27266,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1171",
           name: "\u7acb\u5373\u6bd2\u4f242",
@@ -26451,7 +27288,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1172",
           name: "\u591a\u53cd\u4f24\u5f31",
@@ -26472,7 +27310,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1173",
           name: "\u591a\u53cd\u4f24\u5f3a",
@@ -26493,7 +27332,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1174",
           name: "\u5355\u6b21\u56de\u8840",
@@ -26514,7 +27354,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1175",
           name: "6\u79d2\u56de\u884010",
@@ -26535,7 +27376,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1176",
           name: "6\u79d2\u56de\u88405",
@@ -26556,7 +27398,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "1175",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1177",
           name: "6\u79d2\u56de\u884010-2",
@@ -26577,7 +27420,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "1176",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1178",
           name: "\u989d\u5916\u7eb8\u98de\u673a",
@@ -26598,7 +27442,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1179",
           name: "\u5927\u62db\u56de\u8840",
@@ -26619,7 +27464,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1180",
           name: "\u5927\u62db\u7729\u6655",
@@ -26640,7 +27486,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1181",
           name: "\u51cf\u4e0a\u9650",
@@ -26661,7 +27508,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1182",
           name: "\u5927\u62db",
@@ -26682,7 +27530,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1183",
           name: "\u5927\u62db\u77f3\u5934",
@@ -26703,7 +27552,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1184",
           name: "\u5927\u62db\u653b\u901f",
@@ -26724,7 +27574,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1185",
           name: "\u5927\u62db\u4e0a\u9650",
@@ -26745,7 +27596,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1186",
           name: "\u51b2\u950b\u5927\u62db",
@@ -26766,7 +27618,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1187",
           name: "\u900f\u652f",
@@ -26787,7 +27640,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1188",
           name: "\u6982\u7387\u949e\u7968",
@@ -26808,7 +27662,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1189",
           name: "\u79fb\u9664\u5b50\u5f39",
@@ -26829,7 +27684,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "1",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1190",
           name: "\u5077\u5b50\u5f39",
@@ -26850,7 +27706,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "1",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1191",
           name: "\u5077\u590d\u5236",
@@ -26871,7 +27728,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1192",
           name: "boss\u751f\u547d\u4e0a\u9650",
@@ -26882,7 +27740,7 @@ window.__require = function e(t, n, r) {
           duration: "1",
           value_list: "1&1000&strength",
           property_affected_list: "0|basic_hp",
-          skill_type: "1|5-3|0|100|0",
+          skill_type: "1|20-3|0|100|0",
           skill_owner: "",
           is_dynamic_value: "dynamic",
           is_dynamic_subValue: "",
@@ -26892,7 +27750,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: "0|rubyx"
         }, {
           id: "1193",
           name: "\u91cd\u4f24\u589e\u4f24",
@@ -26913,7 +27772,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1194",
           name: "\u91cd\u4f24\u589e\u4f24",
@@ -26934,7 +27794,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1195",
           name: "\u91cd\u4f24\u66b4\u51fb",
@@ -26955,7 +27816,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1196",
           name: "\u989d\u5916\u590d\u6d3b",
@@ -26976,7 +27838,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1198",
           name: "\u5168\u8840\u590d\u6d3b",
@@ -26997,7 +27860,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1199",
           name: "\u590d\u6d3b\u589e\u4f24",
@@ -27018,7 +27882,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1200",
           name: "\u5168\u5c40\u529b\u91cf5",
@@ -27039,7 +27904,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1201",
           name: "\u5168\u5c40\u529b\u91cf10",
@@ -27060,7 +27926,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1202",
           name: "\u5168\u5c40\u529b\u91cf15",
@@ -27081,7 +27948,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1203",
           name: "\u5168\u5c40\u751f\u547d15",
@@ -27102,7 +27970,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1204",
           name: "\u5168\u5c40\u751f\u547d20",
@@ -27123,7 +27992,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1205",
           name: "\u5168\u5c40\u751f\u547d30",
@@ -27144,7 +28014,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1206",
           name: "\u5168\u5c40\u62a4\u753210",
@@ -27165,7 +28036,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1207",
           name: "\u5168\u5c40\u62a4\u753215",
@@ -27186,7 +28058,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1208",
           name: "BOSS10",
@@ -27207,7 +28080,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1209",
           name: "BOSS15",
@@ -27228,7 +28102,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1210",
           name: "\u5c0f\u602a25",
@@ -27249,7 +28124,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1211",
           name: "\u51cf\u514d25",
@@ -27270,7 +28146,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1212",
           name: "\u7ec8\u4f2425",
@@ -27291,7 +28168,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1213",
           name: "\u51b2\u950b\u51cf\u4f24",
@@ -27312,7 +28190,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1214",
           name: "\u77f3\u5934\u589e\u4f24",
@@ -27333,7 +28212,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1215",
           name: "\u80fd\u91cf100",
@@ -27354,7 +28234,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1216",
           name: "\u5927\u62db\u5237\u5b50",
@@ -27375,7 +28256,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1217",
           name: "2\u51b0\u5757",
@@ -27396,7 +28278,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1218",
           name: "\u53cd\u51fb10",
@@ -27417,7 +28300,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1219",
           name: "\u5438\u88405",
@@ -27438,7 +28322,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1220",
           name: "\u53cd\u51fb5",
@@ -27459,7 +28344,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1221",
           name: "\u7ec8\u4f245",
@@ -27480,7 +28366,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1222",
           name: "\u53cd\u4f24\u6982\u7387",
@@ -27501,7 +28388,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1223",
           name: "\u53cd\u4f2450",
@@ -27522,7 +28410,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1224",
           name: "\u5de8\u9b54",
@@ -27543,7 +28432,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1225",
           name: "\u51e0\u7387\u6cb9\u6f06",
@@ -27564,7 +28454,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1227",
           name: "200\u80fd\u91cf",
@@ -27585,7 +28476,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1228",
           name: "\u51cf\u514d15",
@@ -27606,7 +28498,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1229",
           name: "3\u5200\u5b50",
@@ -27627,7 +28520,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1230",
           name: "4\u5200\u5b50",
@@ -27648,7 +28542,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "1229",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1231",
           name: "\u5c31\u8fd92",
@@ -27669,7 +28564,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1232",
           name: "\u8d85\u957f\u51b2\u950b",
@@ -27690,7 +28586,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1233",
           name: "\u6cbb\u7597\u590d\u5408",
@@ -27711,7 +28608,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|13"
+          ability_up: "0|13",
+          before_battle_effect: ""
         }, {
           id: "1234",
           name: "\u82f9\u679c",
@@ -27732,7 +28630,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|8"
+          ability_up: "0|8",
+          before_battle_effect: ""
         }, {
           id: "1235",
           name: "\u82f9\u679c",
@@ -27753,7 +28652,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|15"
+          ability_up: "0|15",
+          before_battle_effect: ""
         }, {
           id: "1236",
           name: "\u82f9\u679c",
@@ -27774,7 +28674,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|17"
+          ability_up: "0|17",
+          before_battle_effect: ""
         }, {
           id: "1237",
           name: "1153",
@@ -27795,7 +28696,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1238",
           name: "1022",
@@ -27816,7 +28718,8 @@ window.__require = function e(t, n, r) {
           effect: "0_2",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1239",
           name: "1100",
@@ -27837,7 +28740,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|8"
+          ability_up: "0|8",
+          before_battle_effect: ""
         }, {
           id: "1240",
           name: "1109",
@@ -27858,7 +28762,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1241",
           name: "1032",
@@ -27879,7 +28784,8 @@ window.__require = function e(t, n, r) {
           effect: "3_6",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1242",
           name: "1006",
@@ -27900,7 +28806,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|1"
+          ability_up: "1|1",
+          before_battle_effect: ""
         }, {
           id: "1243",
           name: "1008",
@@ -27921,7 +28828,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1244",
           name: "1086",
@@ -27942,7 +28850,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|14"
+          ability_up: "0|14",
+          before_battle_effect: ""
         }, {
           id: "1245",
           name: "1092",
@@ -27963,7 +28872,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "1|4"
+          ability_up: "1|4",
+          before_battle_effect: ""
         }, {
           id: "1246",
           name: "1038",
@@ -27984,7 +28894,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1247",
           name: "1041",
@@ -28005,7 +28916,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1248",
           name: "1080",
@@ -28026,7 +28938,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1249",
           name: "1075",
@@ -28047,7 +28960,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|7"
+          ability_up: "0|7",
+          before_battle_effect: ""
         }, {
           id: "1250",
           name: "1045",
@@ -28068,7 +28982,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1251",
           name: "1049",
@@ -28089,7 +29004,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1252",
           name: "1048",
@@ -28110,7 +29026,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|6"
+          ability_up: "0|6",
+          before_battle_effect: ""
         }, {
           id: "1253",
           name: "1134",
@@ -28131,7 +29048,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|10"
+          ability_up: "0|10",
+          before_battle_effect: ""
         }, {
           id: "1254",
           name: "1111",
@@ -28152,7 +29070,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1255",
           name: "1111",
@@ -28173,7 +29092,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1256",
           name: "1096",
@@ -28194,7 +29114,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|15"
+          ability_up: "0|15",
+          before_battle_effect: ""
         }, {
           id: "1257",
           name: "1060",
@@ -28215,7 +29136,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1258",
           name: "1060",
@@ -28236,7 +29158,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1259",
           name: "1061",
@@ -28257,7 +29180,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1260",
           name: "1001",
@@ -28278,7 +29202,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1261",
           name: "1003",
@@ -28299,7 +29224,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1262",
           name: "1018",
@@ -28320,7 +29246,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1263",
           name: "1095",
@@ -28341,7 +29268,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|8"
+          ability_up: "0|8",
+          before_battle_effect: ""
         }, {
           id: "1264",
           name: "1020",
@@ -28362,7 +29290,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1265",
           name: "1013",
@@ -28383,7 +29312,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1266",
           name: "1016",
@@ -28404,7 +29334,8 @@ window.__require = function e(t, n, r) {
           effect: "1_5",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1267",
           name: "1031",
@@ -28425,7 +29356,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1268",
           name: "1119",
@@ -28446,7 +29378,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1269",
           name: "1024",
@@ -28467,7 +29400,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1270",
           name: "1027",
@@ -28488,7 +29422,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1271",
           name: "1129",
@@ -28509,7 +29444,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1272",
           name: "1012",
@@ -28530,7 +29466,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|0"
+          ability_up: "0|0",
+          before_battle_effect: ""
         }, {
           id: "1273",
           name: "1030",
@@ -28551,7 +29488,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|4"
+          ability_up: "0|4",
+          before_battle_effect: ""
         }, {
           id: "1274",
           name: "1059",
@@ -28572,7 +29510,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|12"
+          ability_up: "0|12",
+          before_battle_effect: ""
         }, {
           id: "1275",
           name: "1039",
@@ -28593,7 +29532,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1276",
           name: "1123",
@@ -28614,7 +29554,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|16"
+          ability_up: "0|16",
+          before_battle_effect: ""
         }, {
           id: "1277",
           name: "1128",
@@ -28635,7 +29576,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|16"
+          ability_up: "0|16",
+          before_battle_effect: ""
         }, {
           id: "1278",
           name: "1110",
@@ -28656,7 +29598,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1279",
           name: "1110",
@@ -28677,7 +29620,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1280",
           name: "1108",
@@ -28698,7 +29642,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1281",
           name: "1163",
@@ -28719,7 +29664,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: "0|5"
+          ability_up: "0|5",
+          before_battle_effect: ""
         }, {
           id: "1282",
           name: "1088",
@@ -28727,9 +29673,9 @@ window.__require = function e(t, n, r) {
           spawn_probability: "",
           rarity: "1",
           importance: "",
-          duration: "0",
+          duration: "2|1",
           value_list: "2&190",
-          property_affected_list: "6|currentEnergy",
+          property_affected_list: "0|energy_recovery",
           skill_type: "1|6|0|100|0",
           skill_owner: "",
           is_dynamic_value: "",
@@ -28740,7 +29686,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "1283",
           name: "1026",
@@ -28761,7 +29708,8 @@ window.__require = function e(t, n, r) {
           effect: "0_3",
           onlyOne: "",
           delete: "",
-          ability_up: "0|3"
+          ability_up: "0|3",
+          before_battle_effect: ""
         }, {
           id: "1284",
           name: "1165",
@@ -28782,7 +29730,52 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
+        }, {
+          id: "1285",
+          name: "1082",
+          ownership: "0",
+          spawn_probability: "0",
+          rarity: "0",
+          importance: "1",
+          duration: "0",
+          value_list: "1&18.34&basic_hp",
+          property_affected_list: "0|basic_hp",
+          skill_type: "0",
+          skill_owner: "",
+          is_dynamic_value: "",
+          is_dynamic_subValue: "",
+          is_dynamic_condition: "",
+          style: "1001|1,1002|1,1003|1,1004|1,1005|1,1006|1,1007|1,1008|1,1009|1,1010|1,",
+          combine: "",
+          effect: "",
+          onlyOne: "",
+          delete: "",
+          ability_up: "0|2",
+          before_battle_effect: ""
+        }, {
+          id: "1286",
+          name: "\u80fd\u91cf\u51cf\u76ca",
+          ownership: "1",
+          spawn_probability: "25",
+          rarity: "6",
+          importance: "0",
+          duration: "0",
+          value_list: "2&200",
+          property_affected_list: "26|energy_max",
+          skill_type: "1|20|0|100|0",
+          skill_owner: "",
+          is_dynamic_value: "",
+          is_dynamic_subValue: "",
+          is_dynamic_condition: "",
+          style: "",
+          combine: "",
+          effect: "",
+          onlyOne: "",
+          delete: "",
+          ability_up: "",
+          before_battle_effect: "0|energyup"
         }, {
           id: "2001",
           name: "",
@@ -28803,7 +29796,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         }, {
           id: "2002",
           name: "",
@@ -28824,7 +29818,8 @@ window.__require = function e(t, n, r) {
           effect: "",
           onlyOne: "",
           delete: "",
-          ability_up: ""
+          ability_up: "",
+          before_battle_effect: ""
         } ]
       }
     });
@@ -29062,9 +30057,9 @@ window.__require = function e(t, n, r) {
         var result = [];
         for (var id in _roleData.ownSkills) {
           var skillSetList = _roleData.ownSkills[id];
-          if (skillSetList.length > 0) {
-            var skillSet = skillSetList[0];
-            var skill = skillSet.values[0];
+          for (var index = 0; index < skillSetList.length; index++) {
+            var skillObj = skillSetList[index];
+            var skill = skillObj.values[0];
             skill.skillOwner == _type && result.push(skill);
           }
         }
@@ -29205,7 +30200,7 @@ window.__require = function e(t, n, r) {
         var tempMagicArr;
         while (_count > 0) {
           var random = 100 * Math.random();
-          tempMagicArr = random < 50 ? magicArr[EnumType.RARE_TYPE.EPIC] : magicArr[EnumType.RARE_TYPE.LEGENDARY];
+          tempMagicArr = random < 75 ? magicArr[EnumType.RARE_TYPE.EPIC] : magicArr[EnumType.RARE_TYPE.LEGENDARY];
           var magicItem = void 0;
           var style = this.getStyle(_roleData);
           if (this.checkBboostChance(_roleData) && null != style) {
@@ -29496,10 +30491,6 @@ window.__require = function e(t, n, r) {
         this.equipmentItem.active = false;
         this.setMask(false);
       },
-      updateUI: function updateUI() {
-        var equipmentItemCom = this.equipmentItem.getComponent("EquipmentItem");
-        equipmentItemCom.setData(equipmentItemCom.equipmentData, this.roleData, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.SLOT);
-      },
       updateEquipmentItem: function updateEquipmentItem(_equipmentData) {
         this.equipmentItem.getComponent("EquipmentItem").setData(_equipmentData, this.roleData, EnumType.EQUIPMENT_ITEM_OWNER_TYPE.SLOT);
         this.equipmentItem.active = true;
@@ -29508,9 +30499,13 @@ window.__require = function e(t, n, r) {
         var currentEquipmentData = Global.equipmentManager.getCurrentEquipment();
         if (!currentEquipmentData) return;
         Global.equipmentManager.setEquipment(currentEquipmentData, this.equipmentItem.active ? this.equipmentItem.getComponent("EquipmentItem").equipmentData : null, this.index, this.roleData);
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateEquipments();
-        this.updateEquipmentItem(currentEquipmentData);
-        Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView").updateSlot(null);
+        var equipmentNode = Global.gui.get(gameConfig.UIID.EquipPagePanel);
+        if (equipmentNode) {
+          var equipmentView = Global.gui.get(gameConfig.UIID.EquipPagePanel).getComponent("EquipmentView");
+          equipmentView.updateEquipments();
+          equipmentView.updateSlotsEquipment();
+          equipmentView.updateSlot(null);
+        }
         Global.equipmentManager.setCurrentEquipment(null);
       },
       setMask: function setMask(_mask) {
@@ -29634,6 +30629,7 @@ window.__require = function e(t, n, r) {
     "use strict";
     var gameConfig = require("GameConfig");
     var EnumType = require("EnumType");
+    var ItemData = require("ItemData");
     cc.Class({
       extends: cc.Component,
       properties: {
@@ -29650,6 +30646,10 @@ window.__require = function e(t, n, r) {
         Global.roleData.staminaRemainCount_ad--;
         Global.roleData.updateStamina(15);
         this.updateUI();
+        var args = {};
+        args.items = [ this.staminaItemData ];
+        args.rewardType = EnumType.REWARD_TYPE.ITEM;
+        Global.gui.open(gameConfig.UIID.RewardsPanel, args);
         var storageData = Global.roleData.getAdditionalData();
         Global.storage.set(gameConfig.COMMON_KEYS.ROLE_ADDITIONAL_DATA, storageData);
         Global.taskManager.updateProgress(EnumType.TASK_TYPE.BUY_STAMINA, 1);
@@ -29659,6 +30659,10 @@ window.__require = function e(t, n, r) {
         Global.roleData.staminaRemainCount_diamond--;
         Global.roleData.updateStamina(15);
         this.updateUI();
+        var args = {};
+        args.items = [ this.staminaItemData ];
+        args.rewardType = EnumType.REWARD_TYPE.ITEM;
+        Global.gui.open(gameConfig.UIID.RewardsPanel, args);
         var storageData = Global.roleData.getAdditionalData();
         Global.storage.set(gameConfig.COMMON_KEYS.ROLE_ADDITIONAL_DATA, storageData);
         Global.taskManager.updateProgress(EnumType.TASK_TYPE.BUY_STAMINA, 1);
@@ -29673,7 +30677,7 @@ window.__require = function e(t, n, r) {
       onAdded: function onAdded(_args) {
         this.diamondValues = [ 90, 120, 150, 180, 180 ];
         this.content.y = 1e3;
-        this.content.opacity = 255;
+        this.node.opacity = 0;
         cc.tween(this.node).to(.2, {
           opacity: 255
         }).start();
@@ -29683,6 +30687,12 @@ window.__require = function e(t, n, r) {
           easing: "elasticOut"
         }).start();
         this.updateUI();
+        if (null == this.staminaItemData) {
+          var staminaItemCoinfig = Global.bagManager.getItemConfig(Global.bagManager.STAMINA_ITEM_ID);
+          this.staminaItemData = new ItemData();
+          this.staminaItemData.setData(null, staminaItemCoinfig);
+          this.staminaItemData.count = 15;
+        }
       },
       onClickClose: function onClickClose() {
         cc.tween(this.node).stop();
@@ -29696,7 +30706,8 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     EnumType: "EnumType",
-    GameConfig: "GameConfig"
+    GameConfig: "GameConfig",
+    ItemData: "ItemData"
   } ],
   StorageManager: [ function(require, module, exports) {
     "use strict";
@@ -30633,14 +31644,14 @@ window.__require = function e(t, n, r) {
         levelLabel: cc.Node,
         cardSkeleton: sp.Skeleton,
         levelNameLabel: cc.Node,
-        roleNode: cc.Node,
         progressBar: cc.Node,
         cards: [ cc.Node ],
         midLevelLabel: cc.Node,
         endLevelLabel: cc.Node,
         midRewardItem: cc.Node,
         endRewardItem: cc.Node,
-        roleContainer: cc.Node
+        roleContainer: cc.Node,
+        _roleView: null
       },
       onLoad: function onLoad() {
         this.limitClick = this.node.getComponent("LimitClick");
@@ -30650,13 +31661,27 @@ window.__require = function e(t, n, r) {
         this.roleData = _args.roleData;
         this.levelColor_1 = new cc.color(255, 255, 255);
         this.levelColor_2 = new cc.color(255, 232, 128);
-        var roleView = this.roleNode.getComponent("RoleView");
-        roleView.updateData(this.roleContainer, this.roleData);
-        roleView.hideBar();
+        this.createRole();
         this.updateUI(true);
         this.schedule(function() {
           _this.showEffect();
         }, 8);
+      },
+      createRole: function createRole() {
+        if (this._roleView) this._roleView.idle(); else {
+          var rolePreb = Global.res.getRes(gameConfig.PRELOADCONFIG.rolePreb.path);
+          var role = cc.instantiate(rolePreb);
+          role.angle = 90;
+          role.x = 110;
+          role.y = 23;
+          var roleView = this._roleView = role.getComponent("RoleView");
+          roleView.updateData(null, this.roleData);
+          roleView.hideBar();
+          setTimeout(function() {
+            roleView && roleView.idle();
+          }, 500);
+          this.roleContainer.addChild(role);
+        }
       },
       showEffect: function showEffect() {
         var resultList = [];
@@ -30674,11 +31699,8 @@ window.__require = function e(t, n, r) {
         this.updateProgress();
         this.updateCards(_isInit);
         _isInit && this.setRewards(true);
-        this.updateRewards();
+        this.updateRewards(_isInit);
         this.levelLabel.getComponent("LabelUpdater").setString(this.roleData.talentIndexList.length);
-        var roleCom = this.roleNode.getComponent("RoleView");
-        roleCom.updateData(this.roleContainer, Global.roleData);
-        roleCom.hideBar();
       },
       updateCards: function updateCards(_initAni, _newClerk) {
         var _this2 = this;
@@ -30811,9 +31833,9 @@ window.__require = function e(t, n, r) {
         var internalCount = (endIndex - startIndex + 1) / 3;
         return [ startIndex, endIndex, internalCount ];
       },
-      updateRewards: function updateRewards() {
-        this.midRewardItem.getComponent("TalentRewardItem").updateData();
-        this.endRewardItem.getComponent("TalentRewardItem").updateData();
+      updateRewards: function updateRewards(_isInit) {
+        this.midRewardItem.getComponent("TalentRewardItem").updateData(_isInit);
+        this.endRewardItem.getComponent("TalentRewardItem").updateData(_isInit);
       },
       handleSetRewards: function handleSetRewards() {
         var currentLevel = this.roleData.talentIndexList.length + 1;
@@ -30944,15 +31966,16 @@ window.__require = function e(t, n, r) {
         this.needWait = false;
         this.isNewClerk = false;
         if (null != _talentData.coin) {
-          this.needShowResultArgs.coinValue = _talentData.coin;
           var itemConfig, itemData;
           itemConfig = Global.bagManager.getItemConfig(Global.bagManager.COIN_ITEM_ID);
           itemData = new ItemData();
           itemData.setData(null, itemConfig);
+          itemData.count = _talentData.coin;
           this.needShowResultArgs.items = [ itemData ];
           this.needShowResultArgs.rewardType = EnumType.REWARD_TYPE.ITEM;
           this.needShowResult = true;
           this.needWait = true;
+          Global.roleData.updateCoin(_talentData.coin);
         } else if (null != _talentData.skill) {
           this.needShowResultArgs.talentData = _talentData;
           this.needShowResultArgs.rewardType = EnumType.REWARD_TYPE.SKILL;
@@ -30961,15 +31984,18 @@ window.__require = function e(t, n, r) {
         } else if (null != _talentData.clerk) {
           this.needShowResultArgs.talentData = _talentData;
           this.needShowResultArgs.rewardType = EnumType.REWARD_TYPE.CLERK;
+          this.needShowResultArgs.isPromotion = "1" == _talentData.clerk.promotion;
           this.needShowResult = true;
           this.needWait = true;
           this.isNewClerk = true;
         }
-        if (false == this.isNewClerk) this.updateUI(); else {
-          this.updateProgress();
-          this.updateRewards();
-          this.levelLabel.getComponent("LabelUpdater").setString(this.roleData.talentIndexList.length);
+        this.updateProgress();
+        this.updateRewards();
+        if (false == this.isNewClerk) {
+          this.updateTitle();
+          this.updateCards();
         }
+        this.levelLabel.getComponent("LabelUpdater").setString(this.roleData.talentIndexList.length);
       },
       onEnable: function onEnable() {
         this.cardSkeleton.setAnimation(0, "Talent", false);
@@ -31009,7 +32035,7 @@ window.__require = function e(t, n, r) {
         this.checkedNode.active = _roleData.talentIndexList.length >= _talentData.level;
         this.checkedBgNode.active = _roleData.talentIndexList.length >= _talentData.level;
       },
-      updateData: function updateData() {
+      updateData: function updateData(_isInit) {
         var _this2 = this;
         this.checkedNode.active = this.roleData.talentIndexList.length >= this.talentData.level;
         this.checkedBgNode.active = this.roleData.talentIndexList.length >= this.talentData.level;
@@ -31020,7 +32046,7 @@ window.__require = function e(t, n, r) {
         }, {
           easing: cc.easing.backOut
         }).call(function() {
-          _this2.talentParent.handleAfterLevelUp();
+          true != _isInit && _this2.talentParent.handleAfterLevelUp();
         }).start();
       }
     });
@@ -31037,367 +32063,440 @@ window.__require = function e(t, n, r) {
           id: "1001",
           hp: "120",
           attack: "3",
-          armor: "1"
+          armor: "1",
+          promotion: ""
         }, {
           id: "1002",
           hp: "120",
           attack: "3",
-          armor: "1"
+          armor: "1",
+          promotion: ""
         }, {
           id: "1003",
           hp: "240",
           attack: "6",
-          armor: "2"
+          armor: "2",
+          promotion: "1"
         }, {
           id: "1004",
           hp: "240",
           attack: "6",
-          armor: "2"
+          armor: "2",
+          promotion: ""
         }, {
           id: "1005",
           hp: "480",
           attack: "12",
-          armor: "4"
+          armor: "4",
+          promotion: ""
         }, {
           id: "1006",
           hp: "720",
           attack: "18",
-          armor: "6"
+          armor: "6",
+          promotion: ""
         }, {
           id: "1007",
           hp: "1200",
           attack: "30",
-          armor: "10"
+          armor: "10",
+          promotion: ""
         }, {
           id: "1008",
           hp: "9600",
           attack: "240",
-          armor: "80"
+          armor: "80",
+          promotion: "1"
         }, {
           id: "1009",
           hp: "3600",
           attack: "90",
-          armor: "30"
+          armor: "30",
+          promotion: ""
         }, {
           id: "1010",
           hp: "4800",
           attack: "120",
-          armor: "40"
+          armor: "40",
+          promotion: ""
         }, {
           id: "1011",
           hp: "6000",
           attack: "150",
-          armor: "50"
+          armor: "50",
+          promotion: ""
         }, {
           id: "1012",
           hp: "7200",
           attack: "180",
-          armor: "60"
+          armor: "60",
+          promotion: ""
         }, {
           id: "1013",
           hp: "7200",
           attack: "180",
-          armor: "60"
+          armor: "60",
+          promotion: ""
         }, {
           id: "1014",
           hp: "7200",
           attack: "180",
-          armor: "60"
+          armor: "60",
+          promotion: ""
         }, {
           id: "1015",
           hp: "8400",
           attack: "210",
-          armor: "70"
+          armor: "70",
+          promotion: ""
         }, {
           id: "1016",
           hp: "10800",
           attack: "270",
-          armor: "90"
+          armor: "90",
+          promotion: ""
         }, {
           id: "1017",
-          hp: "75000",
-          attack: "1875",
-          armor: "625"
+          hp: "10800",
+          attack: "270",
+          armor: "90",
+          promotion: ""
         }, {
           id: "1018",
-          hp: "15000",
-          attack: "375",
-          armor: "125"
+          hp: "75000",
+          attack: "1875",
+          armor: "625",
+          promotion: "1"
         }, {
           id: "1019",
-          hp: "15600",
-          attack: "390",
-          armor: "130"
+          hp: "15000",
+          attack: "375",
+          armor: "125",
+          promotion: ""
         }, {
           id: "1020",
-          hp: "18000",
-          attack: "450",
-          armor: "150"
+          hp: "15600",
+          attack: "390",
+          armor: "130",
+          promotion: ""
         }, {
           id: "1021",
-          hp: "19200",
-          attack: "480",
-          armor: "160"
+          hp: "18000",
+          attack: "450",
+          armor: "150",
+          promotion: ""
         }, {
           id: "1022",
-          hp: "21600",
-          attack: "540",
-          armor: "180"
+          hp: "19200",
+          attack: "480",
+          armor: "160",
+          promotion: ""
         }, {
           id: "1023",
           hp: "21600",
           attack: "540",
-          armor: "180"
+          armor: "180",
+          promotion: ""
         }, {
           id: "1024",
-          hp: "27000",
-          attack: "675",
-          armor: "225"
+          hp: "21600",
+          attack: "540",
+          armor: "180",
+          promotion: ""
         }, {
           id: "1025",
-          hp: "24000",
-          attack: "600",
-          armor: "200"
+          hp: "27000",
+          attack: "675",
+          armor: "225",
+          promotion: ""
         }, {
           id: "1026",
-          hp: "26400",
-          attack: "660",
-          armor: "220"
+          hp: "24000",
+          attack: "600",
+          armor: "200",
+          promotion: ""
         }, {
           id: "1027",
-          hp: "28800",
-          attack: "720",
-          armor: "240"
+          hp: "26400",
+          attack: "660",
+          armor: "220",
+          promotion: ""
         }, {
           id: "1028",
-          hp: "31200",
-          attack: "780",
-          armor: "260"
+          hp: "28800",
+          attack: "720",
+          armor: "240",
+          promotion: ""
         }, {
           id: "1029",
-          hp: "33600",
-          attack: "840",
-          armor: "280"
+          hp: "31200",
+          attack: "780",
+          armor: "260",
+          promotion: ""
         }, {
           id: "1030",
-          hp: "45600",
-          attack: "1140",
-          armor: "380"
+          hp: "33600",
+          attack: "840",
+          armor: "280",
+          promotion: ""
         }, {
           id: "1031",
           hp: "45600",
           attack: "1140",
-          armor: "380"
+          armor: "380",
+          promotion: ""
         }, {
           id: "1032",
-          hp: "28800",
-          attack: "720",
-          armor: "240"
+          hp: "45600",
+          attack: "1140",
+          armor: "380",
+          promotion: ""
         }, {
           id: "1033",
           hp: "54000",
           attack: "1350",
-          armor: "450"
+          armor: "450",
+          promotion: "1"
         }, {
           id: "1034",
           hp: "61440",
           attack: "1536",
-          armor: "512"
+          armor: "512",
+          promotion: ""
         }, {
           id: "1035",
           hp: "61200",
           attack: "1530",
-          armor: "510"
+          armor: "510",
+          promotion: ""
         }, {
           id: "1036",
           hp: "64800",
           attack: "1620",
-          armor: "540"
+          armor: "540",
+          promotion: ""
         }, {
           id: "1037",
           hp: "69600",
           attack: "1740",
-          armor: "580"
+          armor: "580",
+          promotion: ""
         }, {
           id: "1038",
           hp: "75000",
           attack: "1875",
-          armor: "625"
+          armor: "625",
+          promotion: ""
         }, {
           id: "1039",
           hp: "79200",
           attack: "1980",
-          armor: "660"
+          armor: "660",
+          promotion: ""
         }, {
           id: "1040",
           hp: "84000",
           attack: "2100",
-          armor: "700"
+          armor: "700",
+          promotion: ""
         }, {
           id: "1041",
           hp: "90000",
           attack: "2250",
-          armor: "750"
+          armor: "750",
+          promotion: ""
         }, {
           id: "1042",
           hp: "96000",
           attack: "2400",
-          armor: "800"
+          armor: "800",
+          promotion: ""
         }, {
           id: "1043",
           hp: "102000",
           attack: "2550",
-          armor: "850"
+          armor: "850",
+          promotion: "1"
         }, {
           id: "1044",
           hp: "96000",
           attack: "2400",
-          armor: "800"
+          armor: "800",
+          promotion: ""
         }, {
           id: "1045",
           hp: "102000",
           attack: "2550",
-          armor: "850"
+          armor: "850",
+          promotion: ""
         }, {
           id: "1046",
           hp: "68400",
           attack: "1710",
-          armor: "570"
+          armor: "570",
+          promotion: ""
         }, {
           id: "1047",
           hp: "69600",
           attack: "1740",
-          armor: "580"
+          armor: "580",
+          promotion: ""
         }, {
           id: "1048",
           hp: "72000",
           attack: "1800",
-          armor: "600"
+          armor: "600",
+          promotion: ""
         }, {
           id: "1049",
           hp: "74400",
           attack: "1860",
-          armor: "620"
+          armor: "620",
+          promotion: ""
         }, {
           id: "1050",
           hp: "85500",
           attack: "2140",
-          armor: "715"
+          armor: "715",
+          promotion: ""
         }, {
           id: "1051",
           hp: "90000",
           attack: "2250",
-          armor: "750"
+          armor: "750",
+          promotion: ""
         }, {
           id: "1052",
           hp: "90000",
           attack: "2250",
-          armor: "750"
+          armor: "750",
+          promotion: ""
         }, {
           id: "1053",
           hp: "94500",
           attack: "2360",
-          armor: "780"
+          armor: "780",
+          promotion: ""
         }, {
           id: "1054",
           hp: "94500",
           attack: "2360",
-          armor: "780"
+          armor: "780",
+          promotion: ""
         }, {
           id: "1055",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1056",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1057",
           hp: "103500",
           attack: "2590",
-          armor: "860"
+          armor: "860",
+          promotion: ""
         }, {
           id: "1058",
           hp: "103500",
           attack: "2590",
-          armor: "860"
+          armor: "860",
+          promotion: "1"
         }, {
           id: "1059",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1060",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1061",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1062",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1063",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1064",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1065",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1066",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1067",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1068",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1069",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1070",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1071",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1072",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: ""
         }, {
           id: "1073",
           hp: "99000",
           attack: "2475",
-          armor: "825"
+          armor: "825",
+          promotion: "1"
         } ]
       }
     });
@@ -31919,7 +33018,7 @@ window.__require = function e(t, n, r) {
           itemData.setData(null, itemConfig);
           itemData.count = config.reward.count;
           this.weeklyRewardList[i].getComponent("BagItem").setData(itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
-          1 == Global.taskManager.taskData.weeklyRewardIndexList[i] ? this.weeklyRewardList[i].getComponent("BagItem").showSelect(true) : this.weeklyRewardList[i].getComponent("BagItem").setMask(Global.taskManager.taskData.weeklyProgress < config.target);
+          1 == Global.taskManager.taskData.weeklyRewardIndexList[i] && this.weeklyRewardList[i].getComponent("BagItem").showSelect(true);
           this.weeklyRewardList[i].getComponent("BagItem").setTaskRewardInfo(i, "weekly");
         }
         this.weeklyClaimAllBtn.interactable = Global.taskManager.hasWeeklyRewards();
@@ -31936,7 +33035,7 @@ window.__require = function e(t, n, r) {
           _itemData.setData(null, _itemConfig);
           _itemData.count = _config2.reward.count;
           this.dailyRewardList[_i].getComponent("BagItem").setData(_itemData, null, EnumType.ITEM_OWNER_TYPE.TASK_REWARD, EnumType.ITEM_SHOW_TYPE.COUNT_FONT_SCALE_2);
-          1 == Global.taskManager.taskData.dailyRewardIndexList[_i] ? this.dailyRewardList[_i].getComponent("BagItem").showSelect(true) : this.dailyRewardList[_i].getComponent("BagItem").setMask(Global.taskManager.taskData.dailyProgress < _config2.target);
+          1 == Global.taskManager.taskData.dailyRewardIndexList[_i] && this.dailyRewardList[_i].getComponent("BagItem").showSelect(true);
           this.dailyRewardList[_i].getComponent("BagItem").setTaskRewardInfo(_i, "daily");
         }
         this.dailyClaimAllBtn.interactable = Global.taskManager.hasDailyRewards();
@@ -32834,13 +33933,36 @@ window.__require = function e(t, n, r) {
     cc._RF.push(module, "86f4bwvJtpBbrzbvQdwbeTJ", "UltimateProgressBar");
     "use strict";
     var BaseProgressBar = require("BaseProgressBar");
+    var gameConfig = require("GameConfig");
+    var SpineBase = require("SpineBase");
     cc.Class({
       extends: BaseProgressBar,
       properties: {
         _roleData: null,
+        energySG: {
+          type: SpineBase,
+          default: null,
+          tooltip: "1165\u6280\u80fd\uff1a\u6218\u6597\u5f00\u59cb\u65f6\u83b7\u5f97\u80fd\u91cf\u4e0a\u9650\uff0c\u6b64\u65f6\u64ad\u653e\u80fd\u91cf\u6761\u626b\u5149\u7279\u6548"
+        },
         whiteBgPool: [],
         whiteBgPrefab: cc.Prefab,
         aniLabel: cc.Node
+      },
+      onEnable: function onEnable() {
+        cc.director.GlobalEvent.on(gameConfig.GAME_EVENT.EnergySaoGuang, this.EnergySaoGuang, this);
+      },
+      EnergySaoGuang: function EnergySaoGuang(args) {
+        if (!this.energySG) return;
+        if (args && args.roleId == this._roleData.roleId) {
+          this.energySG.active = true;
+          var spineBase = this.energySG.getComponent("SpineBase");
+          if (spineBase) {
+            spineBase.animationCallBack = function() {
+              this.energySG.active = false;
+            }.bind(this);
+            spineBase.playAnimation("Energy_Sg", false);
+          }
+        }
       },
       initData: function initData(roleData) {
         this._roleData = roleData;
@@ -32870,11 +33992,16 @@ window.__require = function e(t, n, r) {
           this.percent = this.currentValue / this._roleData.data.energy_max;
           this.progressBar.progress = this.percent;
         }
+      },
+      onDisable: function onDisable() {
+        cc.director.GlobalEvent.off(gameConfig.GAME_EVENT.EnergySaoGuang);
       }
     });
     cc._RF.pop();
   }, {
-    BaseProgressBar: "BaseProgressBar"
+    BaseProgressBar: "BaseProgressBar",
+    GameConfig: "GameConfig",
+    SpineBase: "SpineBase"
   } ],
   Utils: [ function(require, module, exports) {
     "use strict";
@@ -32958,7 +34085,7 @@ window.__require = function e(t, n, r) {
       }
       var formattedNum;
       try {
-        formattedNum = num.toFixed(1);
+        formattedNum = num.toFixed(2);
       } catch (error) {
         console.error("Error:", num);
       }
@@ -32975,7 +34102,7 @@ window.__require = function e(t, n, r) {
       }
       var formattedNum;
       try {
-        formattedNum = num.toFixed(1);
+        formattedNum = num.toFixed(2);
       } catch (error) {
         console.error("Error:", num);
       }
@@ -33554,7 +34681,7 @@ window.__require = function e(t, n, r) {
         this.claimAllBtn.interactable = hasReward;
         this.claimAllRedDot.active = hasReward;
         var battlePageNode = Global.gui.get(gameConfig.UIID.BattlePagePanel);
-        battlePageNode && battlePageNode.getComponent("BattlePageView").updateMailRedDot();
+        battlePageNode && battlePageNode.getComponent("BattlePageView").updateVipRedDot();
       },
       onClickGetFreeDailyReward: function onClickGetFreeDailyReward() {
         Global.vipManager.getFreeDailyReward();
@@ -33987,6 +35114,7 @@ window.__require = function e(t, n, r) {
     var gameConfig = require("GameConfig");
     var EnumType = require("EnumType");
     var EquipmentData = require("EquipmentData");
+    var ItemData = require("../../data/ItemData");
     cc.Class({
       extends: cc.Component,
       properties: {
@@ -34025,7 +35153,8 @@ window.__require = function e(t, n, r) {
           default: null,
           tooltip: "\u5bf9\u94a9"
         },
-        _curState: null
+        _curState: null,
+        _rewardItems: []
       },
       initUI: function initUI(data) {
         if (!data) return;
@@ -34037,6 +35166,7 @@ window.__require = function e(t, n, r) {
         this._curState = isChecked ? gameConfig.SIGNIN_STATE.CHECKED : isToday ? gameConfig.SIGNIN_STATE.IDLE : isExpired ? gameConfig.SIGNIN_STATE.EXPIRED : gameConfig.SIGNIN_STATE.COMEBACK;
         this.bgSprite.spriteFrame = this.bgSFList[isToday ? 0 : 1];
         this._curState == gameConfig.SIGNIN_STATE.IDLE ? this.dayNode.getComponent("RichTextUpdater").setContent("result_claim") : this.dayNode.getComponent("RichTextUpdater").setContent("signin_day" + data.index);
+        this._rewardItems = [];
         this.itemLayout.removeAllChildren();
         var rewardTypes = this._data.baseData.rewardType.split("|");
         var rewardIds = this._data.baseData.rewardId.split("|");
@@ -34046,45 +35176,43 @@ window.__require = function e(t, n, r) {
           var rewardId = rewardIds[index] || 0;
           var amount = rewardAmounts[index] || 1;
           var itemNode = null;
-          var itemData = null;
-          if (rewardType == gameConfig.SIGNIN_REWARD_TYPE.DIAMONDS) {
-            itemNode = cc.instantiate(this.rewardItemPrebList[gameConfig.SIGNIN_REWARD_TYPE.DIAMONDS]);
+          if (rewardType == gameConfig.SIGNIN_REWARD_TYPE.ITEMS) {
+            itemNode = cc.instantiate(this.rewardItemPrebList[gameConfig.SIGNIN_REWARD_TYPE.ITEMS]);
             this.itemLayout.addChild(itemNode);
-            itemNode.getComponent("reward0_diamond").initUI({
-              amount: amount
-            });
-          } else if (rewardType == gameConfig.SIGNIN_REWARD_TYPE.PURPLE_PIECES) {
-            itemNode = cc.instantiate(this.rewardItemPrebList[gameConfig.SIGNIN_REWARD_TYPE.PURPLE_PIECES]);
-            this.itemLayout.addChild(itemNode);
-            itemData = Global.utils.deepClone(Global.bagManager.getItemConfig(rewardId));
+            var itemConfig = Global.utils.deepClone(Global.bagManager.getItemConfig(rewardId));
+            var itemData = new ItemData();
+            itemData.setData(null, itemConfig);
             itemData.count = amount;
-            itemData.itemId = itemData.id;
+            this._rewardItems.push(itemData);
             var bagItem = itemNode.getComponent("BagItem");
             if (bagItem) {
               bagItem.setMask(false);
               bagItem.setData(itemData);
             }
-          } else if (rewardType == gameConfig.SIGNIN_REWARD_TYPE.PURPLE_EQUIP) {
-            itemNode = cc.instantiate(this.rewardItemPrebList[gameConfig.SIGNIN_REWARD_TYPE.PURPLE_EQUIP]);
+          } else if (rewardType == gameConfig.SIGNIN_REWARD_TYPE.EQUIP) {
+            itemNode = cc.instantiate(this.rewardItemPrebList[gameConfig.SIGNIN_REWARD_TYPE.EQUIP]);
             this.itemLayout.addChild(itemNode);
-            var baseConfig = Global.utils.deepClone(Global.equipmentManager.getEquipmentConfig(rewardId));
-            itemData = new EquipmentData();
-            itemData.setData(null, baseConfig);
-            itemData.count = amount;
+            var equipmentConfig = Global.utils.deepClone(Global.equipmentManager.getEquipmentConfig(rewardId));
+            var equipData = new EquipmentData();
+            equipData.setData(null, equipmentConfig);
+            equipData.count = amount;
+            this._rewardItems.push(equipData);
             var equipmentItem = itemNode.getComponent("EquipmentItem");
             if (equipmentItem) {
               equipmentItem.showLock(false);
               equipmentItem.showSelect(false);
-              equipmentItem.setData(itemData);
+              equipmentItem.setData(equipData);
               equipmentItem.showEquiped(false);
             }
           }
+          itemNode && itemNode.removeComponent(cc.BlockInputEvents);
         }
         this.claimedFlag.active = this._curState == gameConfig.SIGNIN_STATE.CHECKED;
         this.maskNode.active = isChecked || isExpired;
         this.node.getComponent(cc.Button).interactable = isToday && !isChecked;
       },
       onClickSigninBtn: function onClickSigninBtn() {
+        var _this = this;
         Global.audio.playEffect("audio/click");
         var today = new Date();
         var month = today.getMonth();
@@ -34094,9 +35222,30 @@ window.__require = function e(t, n, r) {
         if (yearResult && weekResult) {
           this.initUI(this._data);
           Global.taskManager.updateProgress(EnumType.TASK_TYPE.SIGNIN, 1);
+          var items = this._rewardItems.reverse();
+          var args = {
+            items: items,
+            rewardType: EnumType.REWARD_TYPE.ITEM
+          };
+          var uicallBack = {
+            onAdded: function onAdded(node, params) {
+              Global.utils.logMessage("RewardsPanel onAdded");
+              for (var index = 0; index < _this._rewardItems.length; index++) {
+                var itemData = _this._rewardItems[index];
+                itemData.itemId == Global.bagManager.STAMINA_ITEM_ID ? Global.roleData.updateStamina(parseInt(itemData.count)) : itemData.itemId == Global.bagManager.DIAMOND_ITEM_ID ? Global.roleData.updateDiamond(parseInt(itemData.count)) : itemData.itemId == Global.bagManager.COIN_ITEM_ID ? Global.roleData.updateCoin(parseInt(itemData.count)) : Global.equipmentManager.addEquipment2Bag(itemData, Global.roleData);
+              }
+            },
+            onRemoved: function onRemoved(node, params) {
+              Global.utils.logMessage("RewardsPanel onRemoved");
+              Global.gui.remove(gameConfig.UIID.ResultPanel);
+            },
+            onLoadFailure: function onLoadFailure() {
+              Global.utils.logMessage("RewardsPanel onLoadFailure");
+            }
+          };
+          Global.gui.open(gameConfig.UIID.RewardsPanel, args, uicallBack);
         }
         console.log(month + "\u6708" + day + "\u53f7\u7b7e\u5230 ");
-        Global.gui.toast("\u7b7e\u5230\u6210\u529f\uff0c\u9886\u53d6\u5956\u52b1\u529f\u80fd\u5f00\u53d1\u4e2d...");
       },
       getDataDetails: function getDataDetails() {
         return {
@@ -34107,6 +35256,7 @@ window.__require = function e(t, n, r) {
     });
     cc._RF.pop();
   }, {
+    "../../data/ItemData": "ItemData",
     EnumType: "EnumType",
     EquipmentData: "EquipmentData",
     GameConfig: "GameConfig"
@@ -34270,4 +35420,4 @@ window.__require = function e(t, n, r) {
     exports.default = NewClass;
     cc._RF.pop();
   }, {} ]
-}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "ScrollBg", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "LimitClick", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);
+}, {}, [ "Global", "AnimatorAnimation", "AnimatorCustomization", "AnimatorDragonBones", "AnimatorSpine", "AnimatorSpineSecondary", "AnimatorBase", "AnimatorCondition", "AnimatorController", "AnimatorParams", "AnimatorState", "AnimatorStateLogic", "AnimatorTransition", "BattleView", "BossComingView", "Bullet", "Debuff", "DetailPanelView", "DialogueItem", "GuiView", "Money", "Rarity", "RoleView", "ValueLabel", "BasketAnimatorSpine", "RoleAnimatorSpine", "RoleStateAtk", "RoleStateDeath", "SpineBase", "BaseProgressBar", "HpProgressBar", "LevelProgressBar", "UltimateProgressBar", "BasicAttributes", "BattleConfig", "BulletConfig", "ChapterBaseData", "DialogueBaseData_en", "DialogueBaseData_zh", "EnhancementPointsConfig", "EnumType", "EquipmentConfig", "EventsBaseData", "GameConfig", "ItemConfig", "LevelBaseData", "PassiveHarvestingConfig", "PreloadConfig", "ShopConfig", "SigninBaseData", "SkillConfig", "TalentConfig", "TalentTitleConfig", "TaskConfig", "TaskRewardConfig", "UltimateAbilityConfig", "BulletData", "EquipmentData", "ItemData", "RoleData", "SkillData", "UltimateAbilityData", "BagPanel", "LoadingView", "MoneyEffect", "PromotionView", "ResultView", "ReviveView", "RewardsView", "SkillMerge", "StaminaPanel", "BackpackView", "BpEquipItem", "BpStateItem", "BpStatesItem", "BpTitleItem", "BagItem", "ScrollBackground", "ScrollBackgroundView", "AniLabel", "DetailBullet", "DetailControl", "LimitClick", "ToggleEffect", "TopUI", "WhiteBgBar", "DebugView", "EquipMerge", "EquipmentDecompose", "EquipmentItem", "EquipmentItemTip", "EquipmentItemTipText", "EquipmentMergeResult", "EquipmentView", "PowerChange", "SlotPos", "ChoiceItem", "ChoiceResult", "EventsView", "MsgItem", "Option", "OptionItem", "PicItem", "CommonPrompt", "Defines", "DelegateComponent", "LayerManager", "LayerNotify", "LayerUI", "Notify", "Wait", "BattlePageView", "HomePageView", "MailInfo", "MailItem", "MailPanel", "MarketItem", "MarketView", "PassiveHarvestingPanel", "RogueItem", "RogueView", "ScrollBg", "SingleLine", "LanguageItem", "LanguagesView", "SettingsView", "OpenBox", "OpenBoxResult", "ShopPanel", "ShopProbItem", "ShopProbs", "ShopSelectEquipment", "reward0_diamond", "signinItem", "signinItemDesc", "signinView", "TalentCard", "TalentPanel", "TalentRewardItem", "TaskItem", "TaskPanel", "VipUI", "BagManager", "BasicAttributesManager", "ChapterManager", "DialogueManager", "EquipmentManager", "EventsManager", "GlobalEvent", "LevelManager", "MailManager", "PassiveHarvestingManager", "PoolManager", "PreloadManager", "ResManager", "RoleManager", "ShopManager", "SigninManager", "SkillManager", "TalentManager", "TaskManager", "VipManager", "AudioEffect", "AudioEffectPool", "AudioManager", "AudioMusic", "LabelUpdater", "LanguageManager", "RichTextUpdater", "StorageManager", "StorageSecurityCrypto", "StorageSecuritySimple", "Timer", "TimerManager", "Config", "MainScene", "SpineDemo", "AsyncQueue", "Utils", "gameControl", "skin" ]);
