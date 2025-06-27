@@ -3980,10 +3980,10 @@ window.__require = function e(t, n, r) {
             });
             var roleHeight = fromRoleView.areaRootNode.height;
             var cpX = 0;
-            var cpY = roleHeight + Global.utils.getRandomNumber(200, 500);
+            var cpY = roleHeight + Global.utils.getRandomNumber(80, 660);
             if (fromRoleView._roleData.roleId == targetRoleView._roleData.roleId) {
               cpX = fnodePos.x;
-              cpY = roleHeight + Global.utils.getRandomNumber(400, 600);
+              cpY = roleHeight + Global.utils.getRandomNumber(450, 700);
             }
             bullet.shoot({
               startPos: fnodePos,
@@ -12393,6 +12393,11 @@ window.__require = function e(t, n, r) {
         type: "prefab",
         path: "prefabs/effects/coupon"
       },
+      ultimatePreb: {
+        key: "ultimatePreb",
+        type: "prefab",
+        path: "prefabs/effects/battle/ultimatePreb"
+      },
       ultimate_1001: {
         key: "ultimate_1001",
         type: "prefab",
@@ -18248,6 +18253,10 @@ window.__require = function e(t, n, r) {
     data.push({
       url: gameConfig.PRELOADCONFIG.gift.path,
       type: gameConfig.PRELOADCONFIG.gift.type
+    });
+    data.push({
+      url: gameConfig.PRELOADCONFIG.ultimatePreb.path,
+      type: gameConfig.PRELOADCONFIG.ultimatePreb.type
     });
     data.push({
       url: gameConfig.PRELOADCONFIG.ultimate_1001.path,
@@ -25089,7 +25098,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "1|Wrj"
+          before_battle_effect: "1|wrj"
         }, {
           id: "1061",
           name: "\u5de6\u5df4\u638c",
@@ -25111,7 +25120,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "1|Punch"
+          before_battle_effect: "1|punch"
         }, {
           id: "1062",
           name: "\u5f31\u5316",
@@ -25472,7 +25481,7 @@ window.__require = function e(t, n, r) {
           rarity: "2",
           importance: "1",
           duration: "0",
-          value_list: "1&83.34&basic_hp",
+          value_list: "1&50&basic_hp",
           property_affected_list: "11|currentHp",
           skill_type: "1|5-0-6|0|100|1",
           skill_owner: "",
@@ -25617,7 +25626,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "1|2",
-          before_battle_effect: "0|Spinach"
+          before_battle_effect: "0|spinach"
         }, {
           id: "1085",
           name: "\u5feb\u9910",
@@ -27377,7 +27386,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "0|Energy_Up"
+          before_battle_effect: "0|energyup"
         }, {
           id: "1166",
           name: "\u51b0\u68d2\u4f24\u5bb3",
@@ -27971,7 +27980,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "0|RubyX"
+          before_battle_effect: "0|rubyx"
         }, {
           id: "1193",
           name: "\u91cd\u4f24\u589e\u4f24",
@@ -29995,7 +30004,7 @@ window.__require = function e(t, n, r) {
           onlyOne: "",
           delete: "",
           ability_up: "",
-          before_battle_effect: "0|Energy_Up"
+          before_battle_effect: "0|energyup"
         }, {
           id: "2001",
           name: "",
