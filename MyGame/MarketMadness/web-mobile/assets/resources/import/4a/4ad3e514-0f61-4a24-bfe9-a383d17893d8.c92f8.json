@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "26WGe0jvtAkKjauDaanqb+"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Enemy09",
+      "rect": [
+        3,
+        44,
+        489,
+        448
+      ],
+      "offset": [
+        -8.5,
+        -12
+      ],
+      "originalSize": [
+        512,
+        512
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

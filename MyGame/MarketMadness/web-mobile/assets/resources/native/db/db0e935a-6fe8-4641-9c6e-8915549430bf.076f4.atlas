@@ -1,0 +1,90 @@
+
+Enemy14.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Death_Eye
+  rotate: true
+  xy: 132, 335
+  size: 73, 37
+  orig: 75, 38
+  offset: 1, 1
+  index: -1
+Death_Mouth
+  rotate: false
+  xy: 100, 208
+  size: 75, 56
+  orig: 77, 57
+  offset: 1, 1
+  index: -1
+Eye
+  rotate: true
+  xy: 159, 128
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+Gunzi
+  rotate: true
+  xy: 2, 114
+  size: 150, 96
+  orig: 150, 96
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: 270
+  xy: 22, 3
+  size: 70, 107
+  orig: 70, 107
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: false
+  xy: 132, 410
+  size: 46, 90
+  orig: 46, 90
+  offset: 0, 0
+  index: -1
+MeiMao
+  rotate: false
+  xy: 132, 266
+  size: 55, 14
+  orig: 55, 14
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: true
+  xy: 2, 42
+  size: 70, 82
+  orig: 70, 82
+  offset: 0, 0
+  index: -1
+Nose
+  rotate: false
+  xy: 132, 302
+  size: 22, 31
+  orig: 22, 31
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 86, 84
+  size: 71, 107
+  orig: 71, 107
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: 180
+  xy: 124, 10
+  size: 46, 90
+  orig: 46, 90
+  offset: 0, 0
+  index: -1
+Tree
+  rotate: false
+  xy: 2, 266
+  size: 128, 234
+  orig: 128, 234
+  offset: 0, 0
+  index: -1

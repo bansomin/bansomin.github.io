@@ -1,0 +1,938 @@
+[
+  1,
+  [
+    "5aVRGe2UxEVqRkCPwz3NIF",
+    "61K09sIIBCiZ4leie8WtjD",
+    "34AqjF1ehFabaz51LmhHL1",
+    "e6g9Tl9OpC67jcHnDVZpaU",
+    "09ph0eXsBGIaIv8V3te8oL",
+    "49jt1NJkJOGrSs17otvmzH"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "role_edit",
+          {
+            "animator": "1.0.0",
+            "defaultState": "Idle",
+            "mainStateMachine": {
+              "layerScale": 0.5000000000000001,
+              "layerPos": [
+                62.963257874579,
+                145.4471293456457
+              ],
+              "anyStatePos": [
+                -1080,
+                600
+              ],
+              "subStates": [
+                "Idle",
+                "Run",
+                "Atk",
+                "Death",
+                "Vic",
+                "Atk_2",
+                "Ultra"
+              ],
+              "subStateMachines": []
+            },
+            "subStateMachines": [],
+            "anyState": {
+              "transitions": []
+            },
+            "states": [
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Idle",
+                "motion": "Idle",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  600,
+                  0
+                ],
+                "transitions": [
+                  {
+                    "toState": "Run",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Run",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk_2",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk_2",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Ultra",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Ultra",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Run",
+                "motion": "Run",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -780,
+                  420
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Atk",
+                "motion": "Atk",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -1050,
+                  0
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk_2",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk_2",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Ultra",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Ultra",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Death",
+                "motion": "Death",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  330,
+                  -480
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Vic",
+                "motion": "Vic",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  330,
+                  420
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": true,
+                    "conditions": []
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Atk_2",
+                "motion": "Atk_2",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -780,
+                  -480
+                ],
+                "transitions": [
+                  {
+                    "toState": "Atk",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Ultra",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Ultra",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Ultra",
+                "motion": "Ultra",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  -900,
+                  -1080
+                ],
+                "transitions": [
+                  {
+                    "toState": "Atk",
+                    "hasExitTime": true,
+                    "conditions": [
+                      {
+                        "param": "Atk",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk_2",
+                    "hasExitTime": true,
+                    "conditions": [
+                      {
+                        "param": "Atk_2",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": true,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "parameters": [
+              {
+                "param": "Atk",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Death",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Idle",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Run",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Vic",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Atk_2",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Ultra",
+                "type": 4,
+                "init": 0
+              }
+            ]
+          }
+        ]
+      ],
+      0,
+      0,
+      [],
+      [],
+      []
+    ],
+    [
+      [
+        {
+          "name": "battle_bar_energy",
+          "rect": [
+            0,
+            0,
+            154,
+            14
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            154,
+            14
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "basket_edit",
+          {
+            "animator": "1.0.0",
+            "defaultState": "Idle",
+            "mainStateMachine": {
+              "layerScale": 0.6000000000000001,
+              "layerPos": [
+                132.96058763891634,
+                -2.355171770997835
+              ],
+              "anyStatePos": [
+                -1080,
+                600
+              ],
+              "subStates": [
+                "Idle",
+                "Run",
+                "Atk",
+                "Death",
+                "Vic"
+              ],
+              "subStateMachines": []
+            },
+            "subStateMachines": [],
+            "anyState": {
+              "transitions": []
+            },
+            "states": [
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Idle",
+                "motion": "Idle",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  600,
+                  0
+                ],
+                "transitions": [
+                  {
+                    "toState": "Run",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Run",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Atk",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Atk",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Run",
+                "motion": "Run",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -780,
+                  420
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Atk",
+                "motion": "Atk",
+                "speed": 1,
+                "multiplier": "",
+                "loop": true,
+                "position": [
+                  -1050,
+                  0
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": []
+                  },
+                  {
+                    "toState": "Death",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Death",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  },
+                  {
+                    "toState": "Vic",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Vic",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Death",
+                "motion": "Death",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  330,
+                  -480
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": false,
+                    "conditions": [
+                      {
+                        "param": "Idle",
+                        "value": 0,
+                        "logic": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "upStateMachine": "BaseLayer",
+                "state": "Vic",
+                "motion": "Vic",
+                "speed": 1,
+                "multiplier": "",
+                "loop": false,
+                "position": [
+                  330,
+                  420
+                ],
+                "transitions": [
+                  {
+                    "toState": "Idle",
+                    "hasExitTime": true,
+                    "conditions": []
+                  }
+                ]
+              }
+            ],
+            "parameters": [
+              {
+                "param": "Atk",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Death",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Idle",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Run",
+                "type": 4,
+                "init": 0
+              },
+              {
+                "param": "Vic",
+                "type": 4,
+                "init": 0
+              }
+            ]
+          }
+        ]
+      ],
+      0,
+      0,
+      [],
+      [],
+      []
+    ],
+    [
+      [
+        {
+          "name": "battle_bar_energybg",
+          "rect": [
+            0,
+            0,
+            164,
+            22
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            164,
+            22
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_ico_amp",
+          "rect": [
+            0,
+            0,
+            42,
+            39
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            42,
+            39
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bar_hpbg",
+          "rect": [
+            0,
+            0,
+            164,
+            28
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            164,
+            28
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bar_hp1p",
+          "rect": [
+            0,
+            0,
+            154,
+            20
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            154,
+            20
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_ico_ice",
+          "rect": [
+            0,
+            0,
+            38,
+            42
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            38,
+            42
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        5
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,777 @@
+[
+  1,
+  [
+    "08WCkqT25DppgaXbaa9nuG",
+    "53+ENo1I9GMZMLuxpE2HXS",
+    "b7WNrlDAhIaaLtCbHs0UWj",
+    "42rrYSw0tNSYOMsVkHib7w",
+    "74frKNwYNFUI8SsYzxBbGC",
+    "12yAav+6tP16ree5/y3K+9",
+    "706PrUVC5Gd5wOndO/TQIZ",
+    "0e4jEKk9pI56W6HNMpZD4b",
+    "81XyP0prBAyYoUPWEp4e4S",
+    "baAjDsKxxDD7a8wnqZUq8t",
+    "058CVzHbVItL5YZp7DHJKT",
+    "35dQmfS3FLOrgI70WwVRrq",
+    "153ZDmvMREYYpWN2JUiUHJ",
+    "e8+E2vHVhBra3jpx8J9gmm",
+    "c1fKWI6lxPvpmGfsXF4MCk",
+    "bdyIcf8LBDT47ImXBtOGWR"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "equip_img_quality31",
+          "rect": [
+            0,
+            0,
+            78,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_ico_equipweapon",
+          "rect": [
+            0,
+            0,
+            24,
+            28
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            24,
+            28
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality2",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality4",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality0",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_ico_sequip",
+          "rect": [
+            0,
+            0,
+            39,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            39,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        5
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_quality41",
+          "rect": [
+            0,
+            0,
+            78,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality3",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_ico_equipbackpack",
+          "rect": [
+            0,
+            0,
+            26,
+            24
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            26,
+            24
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_ico_equipring",
+          "rect": [
+            0,
+            0,
+            20,
+            24
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            20,
+            24
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_quality42",
+          "rect": [
+            0,
+            0,
+            78,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        10
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Arrow_Up",
+          "\r\nArrow_Up.png\r\nsize: 67,69\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Arror\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 63, 65\r\n  orig: 63, 65\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Arrow_Up.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "591dCN23MpVm0uITKTxHVO5zKyA",
+              "spine": "3.8.99",
+              "x": -33.28,
+              "y": -0.31,
+              "width": 63,
+              "height": 65,
+              "images": "",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "A",
+                "parent": "Zong"
+              }
+            ],
+            "slots": [
+              {
+                "name": "Image/Arror",
+                "bone": "A",
+                "attachment": "Image/Arror"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Image/Arror": {
+                    "Image/Arror": {
+                      "x": -1.78,
+                      "y": 32.19,
+                      "width": 63,
+                      "height": 65
+                    }
+                  }
+                }
+              }
+            ],
+            "animations": {
+              "animation": {
+                "bones": {
+                  "A": {
+                    "translate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2667,
+                        "y": 26.86,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5667,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 1.2333
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "x": 1.139,
+                        "y": 0.879,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.2333,
+                        "x": 0.931,
+                        "y": 1.119,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.3667,
+                        "x": 1.179,
+                        "y": 1.072,
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.5667
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        11
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_quality32",
+          "rect": [
+            0,
+            0,
+            78,
+            36
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            36
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        12
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality1",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        13
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_ico_equipaccessory",
+          "rect": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            24,
+            24
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        14
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_bg_equipquality5",
+          "rect": [
+            0,
+            0,
+            50,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        15
+      ]
+    ]
+  ]
+]
