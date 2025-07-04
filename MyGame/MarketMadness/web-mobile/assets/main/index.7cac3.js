@@ -4225,6 +4225,7 @@ window.__require = function e(t, n, r) {
           valueNode.setPosition(nodePos);
           this.effectRootNode.addChild(valueNode);
           valueNode.getComponent("ValueLabel").show(damage, args);
+          return valueNode;
         }
       },
       onClickStartBtn: function onClickStartBtn() {
@@ -21652,7 +21653,8 @@ window.__require = function e(t, n, r) {
         _abilityUpList: [],
         _combineArr: null,
         _isMergeAnimation: true,
-        _gameOver: false
+        _gameOver: false,
+        _lastValueNode: null
       },
       onEnable: function onEnable() {
         cc.director.GlobalEvent.on(gameConfig.GAME_EVENT.AbilityUp, this.AbilityUp, this);
@@ -22008,13 +22010,25 @@ window.__require = function e(t, n, r) {
         this._combineArr = combineArr;
         this._isMergeAnimation = isMergeAnimation;
       },
-      getHurtFromReflectCallback: function getHurtFromReflectCallback(value) {
-        this._parent.playValueAnimation({
-          damageType: "HurtFromReflect",
-          value: value
-        }, this.getValuePositon(), {
-          roleData: this._roleData.currentEnemy
-        });
+      getHurtFromReflectCallback: function getHurtFromReflectCallback(value, groupFlag) {
+        if (null == this._lastValueNode || this._lastValueNode.groupFlag != groupFlag) {
+          var valueNode = this._parent.playValueAnimation({
+            damageType: "HurtFromReflect",
+            value: value
+          }, this.getValuePositon(), {
+            roleData: this._roleData.currentEnemy
+          });
+          if (valueNode) {
+            valueNode.groupFlag = groupFlag;
+            this._lastValueNode = valueNode;
+          }
+        } else if (this._lastValueNode && cc.isValid(this._lastValueNode)) {
+          var ValueLabel = this._lastValueNode.getComponent("ValueLabel");
+          ValueLabel && ValueLabel.multiHurtFromReflect({
+            damageType: "HurtFromReflect",
+            value: value
+          });
+        }
       },
       hpRegenerationCallback: function hpRegenerationCallback(_value) {
         var damageType = _value >= 0 ? "hp_regeneration" : EnumType.BULLET_DAMAGE_TYPE.BLEED;
@@ -35118,6 +35132,20 @@ window.__require = function e(t, n, r) {
           rootNode.removeAllChildren();
           Global.poolManager.put(gameConfig.POOLMANAGER_TYPE.valueLabel.key, node);
         }).start();
+      },
+      multiHurtFromReflect: function multiHurtFromReflect(damage, args) {
+        if ("HurtFromReflect" != damage.damageType) return;
+        var value = damage.value;
+        var color = new cc.color(255, 235, 59, 255);
+        var count = this.rootNode.childrenCount + 1;
+        var tempNode = cc.instantiate(this.tempNode);
+        tempNode.color = color;
+        tempNode.setPosition(15 * count, 15 * count);
+        tempNode.getComponent(cc.Label).string = value;
+        this.rootNode.addChild(tempNode);
+        this.scheduleOnce(function() {
+          tempNode.active = true;
+        }, .2);
       }
     });
     cc._RF.pop();
