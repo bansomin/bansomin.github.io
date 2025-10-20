@@ -4,11 +4,11 @@
     "7a/QZLET9IDreTiBfRn2PD",
     "ecpdLyjvZBwrvm+cedCcQy",
     "d0b8yR2vdPc5xvhAVPSM9c",
+    "efyErUKsRKo4hb7QaosMdB",
     "05v70I0dJLGIHeKHIXrCIU",
     "d9CHSS4ZZIy7MfVp+eqriG",
     "d4zCijU+xIjZtaWIQ0aEKz",
     "31fCSu/1xH4ZrEyFd0KFSA",
-    "efyErUKsRKo4hb7QaosMdB",
     "53E99dkYNHe6liVJW2DW0u",
     "9bab9grrJMfY2nelRf4MCq",
     "efKv0tk/BGOr/44EKCJCtw",
@@ -43,6 +43,7 @@
     "glowBackSpine",
     "labelText",
     "data",
+    "_spriteFrame",
     "_N$file"
   ],
   [
@@ -50,7 +51,6 @@
       "cc.Node",
       [
         "_name",
-        "_active",
         "_parent",
         "_components",
         "_prefab",
@@ -59,7 +59,7 @@
         "_children",
         "_color"
       ],
-      1,
+      2,
       1,
       2,
       4,
@@ -303,6 +303,16 @@
       2
     ],
     [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
       14,
       0,
       1,
@@ -334,27 +344,16 @@
       2,
       3,
       4,
-      5,
-      6,
-      3
-    ],
-    [
-      0,
-      0,
-      2,
-      3,
-      4,
-      5,
       2
     ],
     [
       0,
       0,
+      1,
       2,
       3,
+      7,
       4,
-      8,
-      5,
       2
     ],
     [
@@ -409,12 +408,12 @@
     [
       0,
       0,
+      1,
+      6,
       2,
-      7,
       3,
       4,
       5,
-      6,
       2
     ],
     [
@@ -423,17 +422,6 @@
       1,
       2,
       3,
-      4,
-      3
-    ],
-    [
-      0,
-      0,
-      2,
-      3,
-      4,
-      5,
-      6,
       2
     ],
     [
@@ -584,7 +572,7 @@
         1
       ],
       [
-        4
+        5
       ]
     ],
     [
@@ -605,11 +593,11 @@
           ],
           [
             [
-              17,
+              16,
               -4,
               [
                 [
-                  18,
+                  17,
                   "f7ce3WvKZdAI68Xbk7XuN5W",
                   "onClickBtn",
                   -3
@@ -618,7 +606,7 @@
               -2
             ],
             [
-              19,
+              18,
               -14,
               -13,
               -12,
@@ -638,7 +626,7 @@
             ]
           ],
           [
-            20,
+            19,
             -1,
             0
           ],
@@ -668,7 +656,7 @@
               ]
             ],
             [
-              21,
+              20,
               -23,
               -22
             ],
@@ -745,7 +733,7 @@
           ]
         ],
         [
-          4,
+          5,
           "name",
           3,
           [
@@ -777,7 +765,7 @@
           ]
         ],
         [
-          4,
+          5,
           "desc",
           3,
           [
@@ -809,9 +797,8 @@
           ]
         ],
         [
-          5,
+          2,
           "31Glow_Back",
-          false,
           1,
           [
             -39,
@@ -825,8 +812,8 @@
           ],
           [
             5,
-            1080,
-            2340
+            134,
+            198
           ],
           [
             0,
@@ -844,7 +831,6 @@
         [
           15,
           "smokeSpine",
-          false,
           1,
           [
             -41,
@@ -858,9 +844,8 @@
           ]
         ],
         [
-          5,
+          2,
           "31Glow",
-          false,
           1,
           [
             -43,
@@ -874,8 +859,8 @@
           ],
           [
             5,
-            1080,
-            2340
+            134,
+            198
           ],
           [
             0,
@@ -895,19 +880,19 @@
           "default",
           0,
           false,
-          "Purple",
+          "Orange",
           6,
           [
             0
           ]
         ],
         [
-          2,
+          3,
           6,
           9
         ],
         [
-          22,
+          21,
           "default",
           0,
           false,
@@ -919,7 +904,7 @@
           ]
         ],
         [
-          2,
+          3,
           7,
           11
         ],
@@ -943,7 +928,7 @@
           ]
         ],
         [
-          23,
+          22,
           2,
           false,
           13,
@@ -952,7 +937,7 @@
           ]
         ],
         [
-          16,
+          2,
           "icon",
           3,
           [
@@ -983,7 +968,7 @@
           ]
         ],
         [
-          24,
+          23,
           15,
           [
             3
@@ -1008,7 +993,7 @@
           ]
         ],
         [
-          25,
+          24,
           false,
           "",
           1,
@@ -1037,7 +1022,7 @@
           ]
         ],
         [
-          26,
+          25,
           false,
           "",
           1,
@@ -1047,7 +1032,7 @@
           19
         ],
         [
-          27,
+          26,
           3,
           [
             4,
@@ -1077,7 +1062,7 @@
           ]
         ],
         [
-          28,
+          27,
           30,
           38,
           false,
@@ -1093,14 +1078,14 @@
           "default",
           0,
           false,
-          "Purple",
+          "Orange",
           8,
           [
             7
           ]
         ],
         [
-          2,
+          3,
           8,
           24
         ]
@@ -1274,6 +1259,7 @@
         0,
         9,
         11,
+        14,
         18,
         18,
         20,
@@ -1296,11 +1282,12 @@
         -4,
         3,
         3,
-        5,
-        6,
-        5,
-        6,
         20,
+        5,
+        6,
+        5,
+        6,
+        21,
         3
       ],
       [
@@ -1308,20 +1295,21 @@
         0,
         1,
         1,
-        5,
         6,
+        7,
         1,
         0,
-        7,
+        3,
         8,
         9,
         10,
         11,
         12,
-        2,
         3,
         2,
-        3,
+        4,
+        2,
+        4,
         2,
         13
       ]
@@ -1329,7 +1317,7 @@
     [
       [
         [
-          3,
+          4,
           "31Glow_Back",
           "\r\n31Glow_Back.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Glow_00000\r\n  rotate: false\r\n  xy: 326, 262\r\n  size: 128, 192\r\n  orig: 134, 198\r\n  offset: 3, 3\r\n  index: -1\r\nImage/Line_00000\r\n  rotate: false\r\n  xy: 2, 186\r\n  size: 160, 268\r\n  orig: 160, 268\r\n  offset: 0, 0\r\n  index: -1\r\nImage/S_00000\r\n  rotate: false\r\n  xy: 164, 186\r\n  size: 160, 268\r\n  orig: 160, 268\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Square_00000\r\n  rotate: false\r\n  xy: 326, 223\r\n  size: 37, 37\r\n  orig: 37, 37\r\n  offset: 0, 0\r\n  index: -1\r\n",
           [
@@ -1339,10 +1327,10 @@
             "skeleton": {
               "hash": "kV5BlhY6IG8Dw/EsSG5n5cp/nIU",
               "spine": "3.8.99",
-              "x": -888.6,
-              "y": -1133.99,
-              "width": 1080,
-              "height": 2340,
+              "x": -67,
+              "y": -71.14,
+              "width": 134,
+              "height": 198,
               "images": "",
               "audio": ""
             },
@@ -3235,7 +3223,7 @@
     [
       [
         [
-          3,
+          4,
           "31Glow",
           "\r\n31Glow.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Bao/Bao_00000\r\n  rotate: false\r\n  xy: 2, 269\r\n  size: 128, 214\r\n  orig: 128, 214\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Bao/Bao_00001\r\n  rotate: false\r\n  xy: 2, 269\r\n  size: 128, 214\r\n  orig: 128, 214\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Bao/Bao_00002\r\n  rotate: false\r\n  xy: 2, 53\r\n  size: 128, 214\r\n  orig: 128, 214\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Bao/Bao_00003\r\n  rotate: false\r\n  xy: 132, 269\r\n  size: 128, 214\r\n  orig: 128, 214\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Bao/Bao_00004\r\n  rotate: false\r\n  xy: 132, 53\r\n  size: 128, 214\r\n  orig: 128, 214\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Bao/Bao_00005\r\n  rotate: false\r\n  xy: 262, 269\r\n  size: 116, 214\r\n  orig: 128, 214\r\n  offset: 6, 0\r\n  index: -1\r\nImage/Bao/Bao_00006\r\n  rotate: false\r\n  xy: 262, 59\r\n  size: 110, 208\r\n  orig: 128, 214\r\n  offset: 9, 3\r\n  index: -1\r\nImage/Bao/Bao_00007\r\n  rotate: false\r\n  xy: 374, 65\r\n  size: 104, 202\r\n  orig: 128, 214\r\n  offset: 12, 6\r\n  index: -1\r\nImage/Glow_00000\r\n  rotate: false\r\n  xy: 380, 329\r\n  size: 103, 154\r\n  orig: 107, 158\r\n  offset: 2, 2\r\n  index: -1\r\n",
           [
@@ -3245,10 +3233,10 @@
             "skeleton": {
               "hash": "qwfoYAAg/zj7RFHXjuekAQI+2Og",
               "spine": "3.8.99",
-              "x": -196.53,
-              "y": -1170,
-              "width": 1080,
-              "height": 2340,
+              "x": -67,
+              "y": -71.14,
+              "width": 134,
+              "height": 198,
               "images": "",
               "audio": ""
             },
@@ -3595,7 +3583,7 @@
     [
       [
         [
-          29,
+          28,
           "rogueItem",
           0.2833333333333333,
           [
@@ -3781,7 +3769,7 @@
     [
       [
         [
-          3,
+          4,
           "31Smoke",
           "\r\n31Smoke.png\r\nsize: 476,425\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nSmoke/Smoke_00000\r\n  rotate: false\r\n  xy: 365, 243\r\n  size: 109, 180\r\n  orig: 112, 253\r\n  offset: 2, 1\r\n  index: -1\r\nSmoke/Smoke_00001\r\n  rotate: false\r\n  xy: 111, 108\r\n  size: 109, 201\r\n  orig: 112, 253\r\n  offset: 3, 0\r\n  index: -1\r\nSmoke/Smoke_00002\r\n  rotate: true\r\n  xy: 222, 70\r\n  size: 107, 242\r\n  orig: 112, 253\r\n  offset: 3, 1\r\n  index: -1\r\nSmoke/Smoke_00003\r\n  rotate: false\r\n  xy: 2, 62\r\n  size: 107, 247\r\n  orig: 112, 253\r\n  offset: 2, 3\r\n  index: -1\r\nSmoke/Smoke_00004\r\n  rotate: true\r\n  xy: 2, 311\r\n  size: 112, 248\r\n  orig: 112, 253\r\n  offset: 0, 4\r\n  index: -1\r\nSmoke/Smoke_00005\r\n  rotate: false\r\n  xy: 252, 179\r\n  size: 111, 244\r\n  orig: 112, 253\r\n  offset: 0, 9\r\n  index: -1\r\nSmoke/Smoke_00006\r\n  rotate: false\r\n  xy: 111, 2\r\n  size: 104, 104\r\n  orig: 112, 253\r\n  offset: 0, 149\r\n  index: -1\r\nSmoke/Smoke_00007\r\n  rotate: true\r\n  xy: 2, 21\r\n  size: 39, 63\r\n  orig: 112, 253\r\n  offset: 34, 190\r\n  index: -1\r\nSmoke/Smoke_00008\r\n  rotate: false\r\n  xy: 67, 4\r\n  size: 34, 56\r\n  orig: 112, 253\r\n  offset: 39, 197\r\n  index: -1\r\n",
           [
