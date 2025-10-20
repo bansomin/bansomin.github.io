@@ -1,0 +1,83 @@
+
+SlotMachine.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/B1_00000
+  rotate: false
+  xy: 2, 628
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/B2_00000
+  rotate: false
+  xy: 164, 628
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/B3_00000
+  rotate: false
+  xy: 326, 628
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/G1_00000
+  rotate: false
+  xy: 488, 628
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/G2_00000
+  rotate: false
+  xy: 650, 628
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/G3_00000
+  rotate: false
+  xy: 812, 628
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/O1_00000
+  rotate: true
+  xy: 2, 466
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/O2_00000
+  rotate: true
+  xy: 348, 466
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/P1_00000
+  rotate: true
+  xy: 2, 304
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/P2_00000
+  rotate: true
+  xy: 348, 304
+  size: 160, 344
+  orig: 160, 358
+  offset: 0, 7
+  index: -1
+Image/W_00000
+  rotate: false
+  xy: 694, 358
+  size: 160, 268
+  orig: 160, 268
+  offset: 0, 0
+  index: -1

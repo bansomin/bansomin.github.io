@@ -1,0 +1,27 @@
+
+Ultra_3018.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Banana1
+  rotate: false
+  xy: 216, 233
+  size: 99, 82
+  orig: 99, 82
+  offset: 0, 0
+  index: -1
+Banana2
+  rotate: true
+  xy: 117, 223
+  size: 92, 97
+  orig: 92, 97
+  offset: 0, 0
+  index: -1
+Banana3
+  rotate: false
+  xy: 2, 232
+  size: 113, 83
+  orig: 113, 83
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,382 @@
+[
+  1,
+  [
+    "aaEj60gt1A+750fOCqRyzv"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Ultra_1022_Blast",
+      "\r\nUltra_1022_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Blast/Blast_00000\r\n  rotate: true\r\n  xy: 403, 370\r\n  size: 87, 49\r\n  orig: 188, 112\r\n  offset: 0, 7\r\n  index: -1\r\nImage/Blast/Blast_00001\r\n  rotate: false\r\n  xy: 175, 370\r\n  size: 144, 90\r\n  orig: 188, 112\r\n  offset: 5, 5\r\n  index: -1\r\nImage/Blast/Blast_00002\r\n  rotate: false\r\n  xy: 2, 35\r\n  size: 169, 96\r\n  orig: 188, 112\r\n  offset: 13, 5\r\n  index: -1\r\nImage/Blast/Blast_00003\r\n  rotate: false\r\n  xy: 2, 241\r\n  size: 168, 106\r\n  orig: 188, 112\r\n  offset: 20, 4\r\n  index: -1\r\nImage/Blast/Blast_00004\r\n  rotate: false\r\n  xy: 2, 133\r\n  size: 163, 106\r\n  orig: 188, 112\r\n  offset: 25, 2\r\n  index: -1\r\nImage/Blast/Blast_00005\r\n  rotate: false\r\n  xy: 2, 349\r\n  size: 171, 111\r\n  orig: 188, 112\r\n  offset: 17, 1\r\n  index: -1\r\nImage/Blast/Blast_00006\r\n  rotate: true\r\n  xy: 173, 36\r\n  size: 154, 102\r\n  orig: 188, 112\r\n  offset: 33, 1\r\n  index: -1\r\nImage/Blast/Blast_00007\r\n  rotate: true\r\n  xy: 172, 192\r\n  size: 155, 103\r\n  orig: 188, 112\r\n  offset: 33, 0\r\n  index: -1\r\nImage/Blast/Blast_00008\r\n  rotate: true\r\n  xy: 277, 244\r\n  size: 124, 104\r\n  orig: 188, 112\r\n  offset: 39, 0\r\n  index: -1\r\nImage/Blast/Blast_00009\r\n  rotate: false\r\n  xy: 277, 138\r\n  size: 103, 104\r\n  orig: 188, 112\r\n  offset: 40, 0\r\n  index: -1\r\nImage/Blast/Blast_00010\r\n  rotate: false\r\n  xy: 277, 56\r\n  size: 81, 80\r\n  orig: 188, 112\r\n  offset: 44, 0\r\n  index: -1\r\nImage/Blast/Blast_00011\r\n  rotate: true\r\n  xy: 321, 370\r\n  size: 81, 80\r\n  orig: 188, 112\r\n  offset: 46, 0\r\n  index: -1\r\nImage/Blast/Blast_00012\r\n  rotate: false\r\n  xy: 360, 55\r\n  size: 75, 81\r\n  orig: 188, 112\r\n  offset: 48, 0\r\n  index: -1\r\nImage/Blast/Blast_00013\r\n  rotate: false\r\n  xy: 382, 161\r\n  size: 74, 81\r\n  orig: 188, 112\r\n  offset: 50, 0\r\n  index: -1\r\nImage/Blast/Blast_00014\r\n  rotate: false\r\n  xy: 383, 302\r\n  size: 73, 66\r\n  orig: 188, 112\r\n  offset: 52, 15\r\n  index: -1\r\nImage/Blast/Blast_00015\r\n  rotate: true\r\n  xy: 437, 134\r\n  size: 25, 23\r\n  orig: 188, 112\r\n  offset: 76, 58\r\n  index: -1\r\nImage/Blast/Blast_00016\r\n  rotate: false\r\n  xy: 175, 366\r\n  size: 3, 2\r\n  orig: 188, 112\r\n  offset: 99, 78\r\n  index: -1\r\nImage/Blast/Blast_00017\r\n  rotate: false\r\n  xy: 175, 363\r\n  size: 1, 1\r\n  orig: 188, 112\r\n  offset: 101, 79\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 383, 245\r\n  size: 55, 55\r\n  orig: 59, 59\r\n  offset: 2, 2\r\n  index: -1\r\n",
+      [
+        "Ultra_1022_Blast.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "i7HgMe0mfekqhvhRlwprX36Zt0A",
+          "spine": "3.8.99",
+          "images": "",
+          "audio": ""
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Zong",
+            "parent": "root"
+          },
+          {
+            "name": "Blast_Zong",
+            "parent": "Zong"
+          },
+          {
+            "name": "Glow",
+            "parent": "Blast_Zong"
+          },
+          {
+            "name": "BBB",
+            "parent": "Blast_Zong"
+          }
+        ],
+        "slots": [
+          {
+            "name": "Image/glow1",
+            "bone": "Glow",
+            "blend": "additive"
+          },
+          {
+            "name": "Image/Blast/Blast_00000",
+            "bone": "BBB"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Image/Blast/Blast_00000": {
+                "Image/Blast/Blast_00000": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00001": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00002": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00003": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00004": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00005": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00006": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00007": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00008": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00009": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00010": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00011": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00012": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00013": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00014": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00015": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00016": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                },
+                "Image/Blast/Blast_00017": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 313,
+                  "height": 187
+                }
+              },
+              "Image/glow1": {
+                "Image/glow1": {
+                  "width": 98,
+                  "height": 98
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Ultra": {
+            "slots": {
+              "Image/Blast/Blast_00000": {
+                "attachment": [
+                  {
+                    "name": "Image/Blast/Blast_00001"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Image/Blast/Blast_00002"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/Blast/Blast_00003"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/Blast/Blast_00004"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/Blast/Blast_00005"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/Blast/Blast_00006"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Image/Blast/Blast_00007"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Image/Blast/Blast_00008"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Image/Blast/Blast_00009"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "Image/Blast/Blast_00010"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "Image/Blast/Blast_00011"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "Image/Blast/Blast_00012"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "Image/Blast/Blast_00013"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "Image/Blast/Blast_00014"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "Image/Blast/Blast_00015"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "Image/Blast/Blast_00016"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "Image/Blast/Blast_00017"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": null
+                  }
+                ]
+              },
+              "Image/glow1": {
+                "color": [
+                  {
+                    "time": 0.0333,
+                    "color": "68ccffff"
+                  },
+                  {
+                    "time": 0.1333,
+                    "color": "557ac875"
+                  },
+                  {
+                    "time": 0.4,
+                    "color": "0e2f7400"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "Image/glow1"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "BBB": {
+                "translate": [
+                  {
+                    "x": 830.23,
+                    "y": 152.28
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 2,
+                    "y": 2
+                  }
+                ]
+              },
+              "Blast_Zong": {
+                "translate": [
+                  {
+                    "time": 0.1,
+                    "x": 117.65
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.1,
+                    "x": 0.705
+                  }
+                ]
+              },
+              "Glow": {
+                "translate": [
+                  {
+                    "x": 679.33,
+                    "y": 79.52
+                  },
+                  {
+                    "time": 0.0333,
+                    "x": 679.33,
+                    "y": 96.62
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 4.658,
+                    "y": 4.88
+                  },
+                  {
+                    "time": 0.0333,
+                    "x": 6.959,
+                    "y": 6.562
+                  }
+                ]
+              },
+              "Zong": {
+                "translate": [
+                  {
+                    "x": -648.88
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

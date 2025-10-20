@@ -1,0 +1,69 @@
+
+Ultra_3013.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body_2
+  rotate: false
+  xy: 2, 118
+  size: 304, 355
+  orig: 304, 355
+  offset: 0, 0
+  index: -1
+D_Eye
+  rotate: false
+  xy: 2, 10
+  size: 158, 106
+  orig: 158, 106
+  offset: 0, 0
+  index: -1
+L_Arm_2
+  rotate: 180
+  xy: 230, 3
+  size: 106, 114
+  orig: 106, 114
+  offset: 0, 0
+  index: -1
+L_Eye_3
+  rotate: false
+  xy: 308, 193
+  size: 71, 77
+  orig: 71, 77
+  offset: 0, 0
+  index: -1
+L_Leg_2
+  rotate: false
+  xy: 308, 107
+  size: 62, 85
+  orig: 62, 85
+  offset: 0, 0
+  index: -1
+Noise_2
+  rotate: true
+  xy: 308, 351
+  size: 122, 72
+  orig: 122, 72
+  offset: 0, 0
+  index: -1
+R_Arm_2
+  rotate: true
+  xy: 162, 8
+  size: 108, 110
+  orig: 108, 110
+  offset: 0, 0
+  index: -1
+R_Eye_3
+  rotate: false
+  xy: 308, 272
+  size: 77, 77
+  orig: 77, 77
+  offset: 0, 0
+  index: -1
+R_Leg_2
+  rotate: false
+  xy: 338, 20
+  size: 62, 85
+  orig: 62, 85
+  offset: 0, 0
+  index: -1

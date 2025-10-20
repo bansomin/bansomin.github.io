@@ -1,0 +1,48 @@
+
+Ultra_1020.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/DG/Knife_00035
+  rotate: false
+  xy: 189, 125
+  size: 82, 68
+  orig: 112, 156
+  offset: 15, 88
+  index: -1
+Image/DG/Knife_00036
+  rotate: false
+  xy: 115, 186
+  size: 72, 120
+  orig: 112, 156
+  offset: 39, 26
+  index: -1
+Image/DG/Knife_00037
+  rotate: false
+  xy: 2, 192
+  size: 111, 114
+  orig: 112, 156
+  offset: 1, 0
+  index: -1
+Image/DG/Knife_00038
+  rotate: true
+  xy: 189, 195
+  size: 111, 77
+  orig: 112, 156
+  offset: 1, 0
+  index: -1
+Image/DG/Knife_00039
+  rotate: true
+  xy: 268, 195
+  size: 103, 38
+  orig: 112, 156
+  offset: 1, 0
+  index: -1
+Image/Weapon_19
+  rotate: true
+  xy: 2, 133
+  size: 51, 153
+  orig: 61, 181
+  offset: 5, 14
+  index: -1

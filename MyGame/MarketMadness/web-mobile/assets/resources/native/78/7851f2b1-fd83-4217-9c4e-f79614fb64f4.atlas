@@ -1,0 +1,139 @@
+
+Ultra_1022_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Blast/Blast_00000
+  rotate: true
+  xy: 403, 370
+  size: 87, 49
+  orig: 188, 112
+  offset: 0, 7
+  index: -1
+Image/Blast/Blast_00001
+  rotate: false
+  xy: 175, 370
+  size: 144, 90
+  orig: 188, 112
+  offset: 5, 5
+  index: -1
+Image/Blast/Blast_00002
+  rotate: false
+  xy: 2, 35
+  size: 169, 96
+  orig: 188, 112
+  offset: 13, 5
+  index: -1
+Image/Blast/Blast_00003
+  rotate: false
+  xy: 2, 241
+  size: 168, 106
+  orig: 188, 112
+  offset: 20, 4
+  index: -1
+Image/Blast/Blast_00004
+  rotate: false
+  xy: 2, 133
+  size: 163, 106
+  orig: 188, 112
+  offset: 25, 2
+  index: -1
+Image/Blast/Blast_00005
+  rotate: false
+  xy: 2, 349
+  size: 171, 111
+  orig: 188, 112
+  offset: 17, 1
+  index: -1
+Image/Blast/Blast_00006
+  rotate: true
+  xy: 173, 36
+  size: 154, 102
+  orig: 188, 112
+  offset: 33, 1
+  index: -1
+Image/Blast/Blast_00007
+  rotate: true
+  xy: 172, 192
+  size: 155, 103
+  orig: 188, 112
+  offset: 33, 0
+  index: -1
+Image/Blast/Blast_00008
+  rotate: true
+  xy: 277, 244
+  size: 124, 104
+  orig: 188, 112
+  offset: 39, 0
+  index: -1
+Image/Blast/Blast_00009
+  rotate: false
+  xy: 277, 138
+  size: 103, 104
+  orig: 188, 112
+  offset: 40, 0
+  index: -1
+Image/Blast/Blast_00010
+  rotate: false
+  xy: 277, 56
+  size: 81, 80
+  orig: 188, 112
+  offset: 44, 0
+  index: -1
+Image/Blast/Blast_00011
+  rotate: true
+  xy: 321, 370
+  size: 81, 80
+  orig: 188, 112
+  offset: 46, 0
+  index: -1
+Image/Blast/Blast_00012
+  rotate: false
+  xy: 360, 55
+  size: 75, 81
+  orig: 188, 112
+  offset: 48, 0
+  index: -1
+Image/Blast/Blast_00013
+  rotate: false
+  xy: 382, 161
+  size: 74, 81
+  orig: 188, 112
+  offset: 50, 0
+  index: -1
+Image/Blast/Blast_00014
+  rotate: false
+  xy: 383, 302
+  size: 73, 66
+  orig: 188, 112
+  offset: 52, 15
+  index: -1
+Image/Blast/Blast_00015
+  rotate: true
+  xy: 437, 134
+  size: 25, 23
+  orig: 188, 112
+  offset: 76, 58
+  index: -1
+Image/Blast/Blast_00016
+  rotate: false
+  xy: 175, 366
+  size: 3, 2
+  orig: 188, 112
+  offset: 99, 78
+  index: -1
+Image/Blast/Blast_00017
+  rotate: false
+  xy: 175, 363
+  size: 1, 1
+  orig: 188, 112
+  offset: 101, 79
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 383, 245
+  size: 55, 55
+  orig: 59, 59
+  offset: 2, 2
+  index: -1

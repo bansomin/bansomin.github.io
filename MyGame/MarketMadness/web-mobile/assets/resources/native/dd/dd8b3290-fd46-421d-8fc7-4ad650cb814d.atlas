@@ -1,0 +1,27 @@
+
+Lanzi02.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bag_01
+  rotate: false
+  xy: 2, 266
+  size: 246, 210
+  orig: 246, 210
+  offset: 0, 0
+  index: -1
+Bag_01_Line
+  rotate: true
+  xy: 2, 110
+  size: 154, 229
+  orig: 154, 229
+  offset: 0, 0
+  index: -1
+Bag_01_Zhuan
+  rotate: false
+  xy: 250, 252
+  size: 226, 224
+  orig: 226, 224
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+
+Enemy02.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 174
+  size: 153, 186
+  orig: 153, 186
+  offset: 0, 0
+  index: -1
+Eye1
+  rotate: false
+  xy: 2, 2
+  size: 84, 55
+  orig: 85, 55
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: false
+  xy: 2, 98
+  size: 102, 74
+  orig: 102, 74
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: false
+  xy: 88, 17
+  size: 31, 40
+  orig: 31, 40
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 106, 98
+  size: 39, 60
+  orig: 39, 60
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: false
+  xy: 121, 17
+  size: 31, 40
+  orig: 31, 40
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 2, 59
+  size: 126, 37
+  orig: 126, 37
+  offset: 0, 0
+  index: -1

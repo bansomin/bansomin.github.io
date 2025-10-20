@@ -1,0 +1,160 @@
+
+skeleton.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Balst/Blast_00036
+  rotate: false
+  xy: 275, 152
+  size: 69, 65
+  orig: 103, 80
+  offset: 13, 2
+  index: -1
+Image/Balst/Blast_00037
+  rotate: true
+  xy: 434, 343
+  size: 83, 65
+  orig: 103, 80
+  offset: 7, 5
+  index: -1
+Image/Balst/Blast_00038
+  rotate: false
+  xy: 303, 219
+  size: 97, 80
+  orig: 103, 80
+  offset: 0, 0
+  index: -1
+Image/Balst/Blast_00039
+  rotate: false
+  xy: 199, 219
+  size: 102, 80
+  orig: 103, 80
+  offset: 0, 0
+  index: -1
+Image/Balst/Blast_00040
+  rotate: false
+  xy: 199, 219
+  size: 102, 80
+  orig: 103, 80
+  offset: 0, 0
+  index: -1
+Image/Balst/Blast_00041
+  rotate: false
+  xy: 411, 165
+  size: 80, 51
+  orig: 103, 80
+  offset: 23, 9
+  index: -1
+Image/PB/PP_BLAST_00000
+  rotate: false
+  xy: 58, 156
+  size: 45, 52
+  orig: 108, 108
+  offset: 44, 37
+  index: -1
+Image/PB/PP_BLAST_00001
+  rotate: false
+  xy: 2, 151
+  size: 54, 61
+  orig: 108, 108
+  offset: 38, 33
+  index: -1
+Image/PB/PP_BLAST_00002
+  rotate: false
+  xy: 346, 148
+  size: 63, 68
+  orig: 108, 108
+  offset: 32, 29
+  index: -1
+Image/PB/PP_BLAST_00003
+  rotate: true
+  xy: 199, 147
+  size: 70, 74
+  orig: 108, 108
+  offset: 26, 26
+  index: -1
+Image/PB/PP_BLAST_00004
+  rotate: false
+  xy: 434, 428
+  size: 75, 81
+  orig: 108, 108
+  offset: 22, 22
+  index: -1
+Image/PB/PP_BLAST_00005
+  rotate: true
+  xy: 402, 218
+  size: 81, 86
+  orig: 108, 108
+  offset: 18, 19
+  index: -1
+Image/PB/PP_BLAST_00006
+  rotate: true
+  xy: 2, 214
+  size: 86, 91
+  orig: 108, 108
+  offset: 15, 15
+  index: -1
+Image/PB/PP_BLAST_00007
+  rotate: true
+  xy: 102, 210
+  size: 91, 95
+  orig: 108, 108
+  offset: 12, 12
+  index: -1
+Image/PB/PP_BLAST_00008
+  rotate: false
+  xy: 102, 303
+  size: 95, 99
+  orig: 108, 108
+  offset: 10, 9
+  index: -1
+Image/PB/PP_BLAST_00009
+  rotate: false
+  xy: 2, 302
+  size: 98, 100
+  orig: 108, 108
+  offset: 8, 8
+  index: -1
+Image/PB/PP_BLAST_00010
+  rotate: false
+  xy: 326, 301
+  size: 100, 102
+  orig: 108, 108
+  offset: 6, 6
+  index: -1
+Image/PB/PP_BLAST_00011
+  rotate: false
+  xy: 221, 301
+  size: 103, 102
+  orig: 108, 108
+  offset: 4, 6
+  index: -1
+Image/PB/PP_BLAST_00012
+  rotate: true
+  xy: 329, 405
+  size: 104, 103
+  orig: 108, 108
+  offset: 3, 5
+  index: -1
+Image/PB/PP_BLAST_00013
+  rotate: false
+  xy: 221, 405
+  size: 106, 104
+  orig: 108, 108
+  offset: 2, 3
+  index: -1
+Image/PB/PP_BLAST_00014
+  rotate: false
+  xy: 112, 404
+  size: 107, 105
+  orig: 108, 108
+  offset: 1, 1
+  index: -1
+Image/PB/PP_BLAST_00015
+  rotate: false
+  xy: 2, 404
+  size: 108, 105
+  orig: 108, 108
+  offset: 0, 0
+  index: -1

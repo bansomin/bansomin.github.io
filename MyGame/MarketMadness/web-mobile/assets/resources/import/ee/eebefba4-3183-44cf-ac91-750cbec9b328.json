@@ -1,0 +1,366 @@
+[
+  1,
+  [
+    "7bH5nzAI9K4b560oUXWgX/"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Ultra_3018",
+      "\r\nUltra_3018.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBanana1\r\n  rotate: false\r\n  xy: 216, 233\r\n  size: 99, 82\r\n  orig: 99, 82\r\n  offset: 0, 0\r\n  index: -1\r\nBanana2\r\n  rotate: true\r\n  xy: 117, 223\r\n  size: 92, 97\r\n  orig: 92, 97\r\n  offset: 0, 0\r\n  index: -1\r\nBanana3\r\n  rotate: false\r\n  xy: 2, 232\r\n  size: 113, 83\r\n  orig: 113, 83\r\n  offset: 0, 0\r\n  index: -1\r\n",
+      [
+        "Ultra_3018.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "6h0QQwkcOiro1klE4YM0t9urx24",
+          "spine": "3.8.99",
+          "x": -122.77,
+          "y": 172.43,
+          "width": 244.8,
+          "height": 84.8,
+          "images": "./images/",
+          "audio": "E:/BIGBIG/键盘侠/敌人总/敌人18_木桶芭娜娜/images"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Zong",
+            "parent": "root",
+            "scaleX": -0.8,
+            "scaleY": 0.8
+          },
+          {
+            "name": "Zong2",
+            "parent": "Zong",
+            "length": 41.76,
+            "rotation": 91.93,
+            "x": -4.37,
+            "y": 27.19
+          },
+          {
+            "name": "Zong3",
+            "parent": "Zong2",
+            "length": 174.56,
+            "rotation": -0.08,
+            "x": 45.05,
+            "y": -0.11
+          },
+          {
+            "name": "Zong12",
+            "parent": "Zong3",
+            "length": 58.45,
+            "rotation": -63.81,
+            "x": 157.97,
+            "y": -81.19
+          },
+          {
+            "name": "Zong13",
+            "parent": "Zong3",
+            "length": 53.54,
+            "rotation": 42.14,
+            "x": 165.49,
+            "y": 6.38
+          },
+          {
+            "name": "Zong14",
+            "parent": "Zong3",
+            "length": 55.88,
+            "rotation": 50.46,
+            "x": 170.78,
+            "y": 66.55
+          }
+        ],
+        "slots": [
+          {
+            "name": "Banana1",
+            "bone": "Zong14",
+            "attachment": "Banana1"
+          },
+          {
+            "name": "Banana2",
+            "bone": "Zong13",
+            "attachment": "Banana2"
+          },
+          {
+            "name": "Banana3",
+            "bone": "Zong12",
+            "attachment": "Banana3"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Banana1": {
+                "Banana1": {
+                  "x": 38.79,
+                  "y": -8.92,
+                  "rotation": -142.31,
+                  "width": 99,
+                  "height": 82
+                }
+              },
+              "Banana2": {
+                "Banana2": {
+                  "x": 31.91,
+                  "y": -18.24,
+                  "rotation": -133.99,
+                  "width": 92,
+                  "height": 97
+                }
+              },
+              "Banana3": {
+                "Banana3": {
+                  "x": 34.99,
+                  "y": 8.92,
+                  "rotation": -28.03,
+                  "width": 113,
+                  "height": 83
+                }
+              }
+            }
+          }
+        ],
+        "events": {
+          "Hit": {}
+        },
+        "animations": {
+          "Ultra": {
+            "bones": {
+              "Zong13": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "angle": -18
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": 7.2
+                  },
+                  {
+                    "time": 0.8667,
+                    "angle": 40.8
+                  },
+                  {
+                    "time": 1.0667,
+                    "angle": 9.6
+                  },
+                  {
+                    "time": 1.2,
+                    "angle": 6
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": -42.02,
+                    "y": 113.66
+                  },
+                  {
+                    "time": 0.2667,
+                    "x": 47.2,
+                    "y": 265.59
+                  },
+                  {
+                    "time": 0.5667,
+                    "x": -86.79,
+                    "y": 459.9
+                  },
+                  {
+                    "time": 0.8667,
+                    "x": 12.4,
+                    "y": 654.18
+                  },
+                  {
+                    "time": 1.0667,
+                    "x": -97.22,
+                    "y": 759.51
+                  },
+                  {
+                    "time": 1.2,
+                    "x": -99.59,
+                    "y": 795.08
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 1.7,
+                    "y": 1.7
+                  }
+                ]
+              },
+              "Zong12": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "angle": -18
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": 7.2
+                  },
+                  {
+                    "time": 0.8667,
+                    "angle": 40.8
+                  },
+                  {
+                    "time": 1.0667,
+                    "angle": 9.6
+                  },
+                  {
+                    "time": 1.2,
+                    "angle": 6
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": -1.42,
+                    "y": 98.84
+                  },
+                  {
+                    "time": 0.2,
+                    "x": 87.79,
+                    "y": 250.76
+                  },
+                  {
+                    "time": 0.6,
+                    "x": -46.19,
+                    "y": 445.07
+                  },
+                  {
+                    "time": 0.9,
+                    "x": 52.99,
+                    "y": 639.35
+                  },
+                  {
+                    "time": 1.2,
+                    "x": -59,
+                    "y": 780.25
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.74,
+                    "y": 0.76
+                  }
+                ]
+              },
+              "Zong14": {
+                "rotate": [
+                  {
+                    "angle": 14.8
+                  },
+                  {
+                    "time": 0.0333,
+                    "angle": 9.6
+                  },
+                  {
+                    "time": 0.1667
+                  },
+                  {
+                    "time": 0.4667,
+                    "angle": -18
+                  },
+                  {
+                    "time": 0.7667,
+                    "angle": 7.2
+                  },
+                  {
+                    "time": 1.0333,
+                    "angle": 40.8
+                  },
+                  {
+                    "time": 1.2,
+                    "angle": 14.8
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": -99.65,
+                    "y": 26
+                  },
+                  {
+                    "time": 0.2,
+                    "x": -50.32,
+                    "y": 96.05
+                  },
+                  {
+                    "time": 0.6,
+                    "x": -4.27,
+                    "y": 354.01
+                  },
+                  {
+                    "time": 0.9,
+                    "x": -70.07,
+                    "y": 592.68
+                  },
+                  {
+                    "time": 1.2,
+                    "x": -90.15,
+                    "y": 711.8
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.74,
+                    "y": 0.76
+                  }
+                ]
+              }
+            },
+            "events": [
+              {
+                "time": 1.2,
+                "name": "Hit"
+              }
+            ]
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

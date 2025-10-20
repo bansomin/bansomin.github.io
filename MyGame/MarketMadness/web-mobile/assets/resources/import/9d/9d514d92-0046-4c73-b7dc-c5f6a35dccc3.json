@@ -1,0 +1,2631 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "en_ui",
+      [
+        {
+          "id": "settings_title",
+          "content": "Settings",
+          "": ""
+        },
+        {
+          "id": "settings_language_title",
+          "content": "Language",
+          "": ""
+        },
+        {
+          "id": "settings_language",
+          "content": "Language",
+          "": ""
+        },
+        {
+          "id": "settings_language_zh",
+          "content": "中文简体",
+          "": ""
+        },
+        {
+          "id": "settings_language_en",
+          "content": "English",
+          "": ""
+        },
+        {
+          "id": "settings_language_switch_suc",
+          "content": "切换语言成功",
+          "": ""
+        },
+        {
+          "id": "settings_playerID",
+          "content": "UID {n}",
+          "": ""
+        },
+        {
+          "id": "settings_copy",
+          "content": "Copy",
+          "": ""
+        },
+        {
+          "id": "settings_music_title",
+          "content": "Music",
+          "": ""
+        },
+        {
+          "id": "settings_sound_title",
+          "content": "SFX",
+          "": ""
+        },
+        {
+          "id": "settings_on",
+          "content": "On",
+          "": ""
+        },
+        {
+          "id": "settings_off",
+          "content": "Off",
+          "": ""
+        },
+        {
+          "id": "settings_quitgame",
+          "content": "Exit Game",
+          "": ""
+        },
+        {
+          "id": "settings_continue",
+          "content": "Continue",
+          "": ""
+        },
+        {
+          "id": "chapter_title_0",
+          "content": "<outline color=black width=3>1.Wacky Lane </outline>",
+          "": ""
+        },
+        {
+          "id": "chapter_title_1",
+          "content": "<outline color=black width=3>2.Wacky Lane 2</outline>",
+          "": ""
+        },
+        {
+          "id": "chapter_title_2",
+          "content": "<outline color=black width=3>3.Wacky Lane 3</outline>",
+          "": ""
+        },
+        {
+          "id": "chapter_title_3",
+          "content": "<outline color=black width=3>4.Wacky Lane 4</outline>",
+          "": ""
+        },
+        {
+          "id": "chapter_title_4",
+          "content": "<outline color=black width=3>5.Wacky Lane 5</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_bestLevel",
+          "content": "<outline color=black width=3>最高关卡进度：{0}关</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_settings",
+          "content": "<outline color=black width=2>Settings</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_email",
+          "content": "<outline color=black width=2>Mail</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_signin",
+          "content": "<outline color=black width=2>Log In</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_tasks",
+          "content": "<outline color=black width=2>Tasks</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_privilegecard",
+          "content": "<outline color=black width=2>Privilege Card</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_raid",
+          "content": "<outline color=black width=2>Raid</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_max",
+          "content": "<outline color=black width=2>满了</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_start",
+          "content": "<outline color=black width=3>Start</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_shop",
+          "content": "<outline color=black width=3>Shop</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_equip",
+          "content": "<outline color=black width=3>Equipment</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_battle",
+          "content": "<outline color=black width=3>Adventure</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_talent",
+          "content": "<outline color=black width=3>Talents</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_levelrewards0",
+          "content": "<outline color=black width=2>1-10</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_levelrewards1",
+          "content": "<outline color=black width=2>1-20</outline>",
+          "": ""
+        },
+        {
+          "id": "homepage_levelrewards2",
+          "content": "<outline color=black width=2>1-30</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_day0",
+          "content": "<outline color=black width=3>Day 1</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_day1",
+          "content": "<outline color=black width=3>Day 2</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_day2",
+          "content": "<outline color=black width=3>Day 3</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_day3",
+          "content": "<outline color=black width=3>Day 4</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_day4",
+          "content": "<outline color=black width=3>Day 5</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_day5",
+          "content": "<outline color=black width=3>Day 6</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_day6",
+          "content": "<outline color=black width=3>Day 7</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_rewardType0",
+          "content": "<outline color=black width=3>{0}Gems</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_rewardType1",
+          "content": "<outline color=black width=3>铜剪刀x{0}</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_rewardType2",
+          "content": "<outline color=black width=3>银剪刀x{0}</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_rewardType3",
+          "content": "<outline color=black width=3>金剪刀x{0}</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_rewardType4",
+          "content": "<outline color=black width=3>紫装材料x{0}</outline>",
+          "": ""
+        },
+        {
+          "id": "signin_rewardType5",
+          "content": "<outline color=black width=3>紫装备x{0}</outline>",
+          "": ""
+        },
+        {
+          "id": "common_tips_title",
+          "content": "<outline color=black width=3>Tips</outline>",
+          "": ""
+        },
+        {
+          "id": "tips_quitbattle",
+          "content": "Exiting battle doesn't refund used Stamina./nExit anyway?",
+          "": ""
+        },
+        {
+          "id": "tips_quitgame",
+          "content": "Exit anyway?",
+          "": ""
+        },
+        {
+          "id": "common_quit",
+          "content": "<outline color=black width=3>Exit</outline>",
+          "": ""
+        },
+        {
+          "id": "common_confirm",
+          "content": "<outline color=black width=3>OK</outline>",
+          "": ""
+        },
+        {
+          "id": "common_cancel",
+          "content": "<outline color=black width=3>Cancel</outline>",
+          "": ""
+        },
+        {
+          "id": "rewards_title",
+          "content": "<outline color=black width=3>Rewards</outline>",
+          "": ""
+        },
+        {
+          "id": "rewards_tips",
+          "content": "<outline color=black width=3>Tap to close</outline>",
+          "": ""
+        },
+        {
+          "id": "promotion_title",
+          "content": "<outline color=black width=3>晋升</outline>",
+          "": ""
+        },
+        {
+          "id": "result_win",
+          "content": "<outline color=#540A0A width=8>Victory</outline>",
+          "": ""
+        },
+        {
+          "id": "result_failed",
+          "content": "<outline color=#252A51 width=8>Defeat</outline>",
+          "": ""
+        },
+        {
+          "id": "result_clear30levels",
+          "content": "通关 <size=92>30</size> 个关卡",
+          "": ""
+        },
+        {
+          "id": "result_journey",
+          "content": "Longest journey: {0} levels",
+          "": ""
+        },
+        {
+          "id": "result_claim",
+          "content": "<outline color=#540A0A width=3>claim</outline>",
+          "": ""
+        },
+        {
+          "id": "result_rewards",
+          "content": "Rewards",
+          "": ""
+        },
+        {
+          "id": "market_noreplenishTimes",
+          "content": "无可用刷新次数",
+          "": ""
+        },
+        {
+          "id": "skillType_0",
+          "content": "​Card",
+          "": ""
+        },
+        {
+          "id": "skillType_1",
+          "content": "props",
+          "": ""
+        },
+        {
+          "id": "skillType_2",
+          "content": "合成道具",
+          "": ""
+        },
+        {
+          "id": "skillType_3",
+          "content": "bullet",
+          "": ""
+        },
+        {
+          "id": "equipment_slot_0",
+          "content": "Weapon",
+          "": ""
+        },
+        {
+          "id": "equipment_slot_1",
+          "content": "Backpack",
+          "": ""
+        },
+        {
+          "id": "equipment_slot_2",
+          "content": "Ring",
+          "": ""
+        },
+        {
+          "id": "equipment_slot_3",
+          "content": "Accessory",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_0",
+          "content": "common",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_1",
+          "content": "Great",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_2",
+          "content": "rare",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_3",
+          "content": "epic",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_4",
+          "content": "epic+1",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_5",
+          "content": "epic+2",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_6",
+          "content": "legendary",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_7",
+          "content": "legendary+1",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_8",
+          "content": "legendary+2",
+          "": ""
+        },
+        {
+          "id": "equipment_rarity_9",
+          "content": "Mythic",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1022",
+          "content": "&lt;img src='txt_ico_1002' width=36 height=36/&gt; base DMG increase by 50%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1100",
+          "content": "Gain 6%&lt;img src='txt_ico_crit' width=36 height=36/&gt;Crit Chance\nYour &lt;img src='txt_ico_ul' width=36 height=36/&gt;Ult can crit",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1153",
+          "content": "+10%&lt;img src='txt_ico_1001' width=36 height=36/&gt;chance to apply 1&lt;img src='txt_ico_vul' width=36 height=36/&gt;Fatigue(lasts for 3 second)",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1165",
+          "content": "Startup Deal gain <color=#f72c58>200</color> Max Energy for both sides",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1166",
+          "content": "冰棒子弹命中时，额外造成目标当前生命1%的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1167",
+          "content": "敌方受到中毒伤害时，自身回复该伤害值50%的生命",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1168",
+          "content": "回复量+100%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1169",
+          "content": "同时永久提高该值的生命上限",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1170",
+          "content": "油漆刷每击中15次，立即结算1次中毒伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1171",
+          "content": "结算的伤害翻倍",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1172",
+          "content": "造成反伤时，多造成1次，但伤害减半",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1173",
+          "content": "第二次反伤的伤害不减半",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1174",
+          "content": "每场战斗生命首次＜40%时，立即回复800%力量的生命",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1175",
+          "content": "第6秒，回复已损失10%生命值",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1176",
+          "content": "针对上方技能，生命值回复量+5%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1177",
+          "content": "针对上方技能，生命值回复量+10%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1178",
+          "content": "每次获得纸团子弹时，额外获得1个纸飞镖（造成30%力量伤害）",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1179",
+          "content": "释放大招时，回复自身10%最大生命上限生命",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1180",
+          "content": "眩晕时长+0.1s",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1181",
+          "content": "大招命中时，永久减少自身20能量上限",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1182",
+          "content": "被大招命中时，立即释放大招",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1184",
+          "content": "释放大招时，+25%攻速",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1185",
+          "content": "释放大招后，临时增加500能量上限",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1186",
+          "content": "冲锋结束时，立即释放大招",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1187",
+          "content": "可以透支消费，但资产为负时将额外受到30%伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1188",
+          "content": "手柄命中时，有20%几率获得1钞票",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1189",
+          "content": "【唯一】战斗开始时，随机将敌方一颗子弹移除",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1190",
+          "content": "【唯一】战斗开始时，偷取敌方一颗随机子弹",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1191",
+          "content": "将偷取的子弹复制1个",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1192",
+          "content": "遭遇boss时，获得1000%力量的临时生命上限",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1193",
+          "content": "对Fatigue10层的敌人伤害+30%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1194",
+          "content": "对冰冻10层的敌人伤害+30%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1195",
+          "content": "对Fatigue10层的敌人暴击率+20%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1196",
+          "content": "增加一次免费复活机会",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1198",
+          "content": "复活时会以100%生命复活",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1199",
+          "content": "复活后，本场战斗最终伤害+10%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1200",
+          "content": "Global Str+5%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1201",
+          "content": "Global Str+10%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1202",
+          "content": "Global Str+15%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1203",
+          "content": "Global Max HP+15%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1204",
+          "content": "Global Max HP+20%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1205",
+          "content": "Global Max HP+30%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1206",
+          "content": "Global DEF+10%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1207",
+          "content": "Global DEF+15%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1208",
+          "content": "DMG to Boss +10%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1209",
+          "content": "DMG to Boss +15%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1210",
+          "content": "DMG to Trash Mobs +10%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1211",
+          "content": "DMG Reduction +25%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1212",
+          "content": "Final DMG +25%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1213",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【Rush】gain +25% Final DMG for the first 3 secs",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1214",
+          "content": "All paper bullet dels +10% more DMG",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1215",
+          "content": "Gain 100 Starting Energy",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1217",
+          "content": "Get 2 &lt;img src='txt_ico_1006' width=36 height=36/&gt;\n(Enemies lose <color=#00b411>1%</color>Attack Speed for <color=#00b411>3</color> second on hit)",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1218",
+          "content": "+15% chance to launch &lt;img src='txt_ico_1001' width=36 height=36/&gt; when you get hit by any bullet",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1219",
+          "content": "+5%  &lt;img src='txt_ico_1002' width=36 height=36/&gt; when deals Thorns DMG",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1220",
+          "content": "Chance +5%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1221",
+          "content": "Final DMG +5%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1222",
+          "content": "Trigger Chance +15%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1223",
+          "content": "Thorns DMG +50%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1224",
+          "content": "Heal equal <color=#00b411>100%</color> times your &lt;img src='txt_ico_strength' width=36 height=36/&gt;Str every second",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1225",
+          "content": "<color=#00b411>+30%</color> chance to launch &lt;img src='txt_ico_1005' width=36 height=36/&gt; when you get hit by &lt;img src='txt_ico_1006' width=36 height=36/&gt;",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1226",
+          "content": "Recover 5% lost HP 6 after battle starts",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1227",
+          "content": "Gain 300 Starting Energy",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1228",
+          "content": "DMG Reduction +15%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1230",
+          "content": "Ultimate fires one more table knife",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1231",
+          "content": "When the effect is triggered, heals HP equal to 30% of STR",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1237",
+          "content": "纸团命中时，+9%几率给对方增加1层Fatigue",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1238",
+          "content": "&lt;img src='txt_ico_1002' width=36 height=36/&gt;DMG +50%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1239",
+          "content": "Gain 6%&lt;img src='txt_ico_crit' width=36 height=36/&gt;Crit Chance\nYour &lt;img src='txt_ico_ul' width=36 height=36/&gt;Ult can crit",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1240",
+          "content": "+15% chance to launch &lt;img src='txt_ico_1001' width=36 height=36/&gt; when you get hit by any bullet",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1241",
+          "content": "&lt;img src='txt_ico_1006' width=36 height=36/&gt; Perks are +100%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1242",
+          "content": "每66次能量饮料命中，提升少量力量",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1243",
+          "content": "能量饮料击中目标时20%几率再发射1个能量饮料",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1244",
+          "content": "Energy regen per second +40",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1245",
+          "content": "Increases Ult. DMG after using Ult. by +3%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1246",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【Rush】gain 20% &lt;img src='txt_ico_atkspd' width=36 height=36/&gt; ATK SPD  for the first 3 secs",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1247",
+          "content": "&lt;img src='txt_ico_rush' width=36 height=36/&gt;【Rush】perks are 100% better",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1248",
+          "content": "每秒治疗自己100%力量的生命",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1249",
+          "content": "获得等同于最大生命值2%的回血",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1250",
+          "content": "【紧急】 当生命值低于50%时获得90能量回复",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1251",
+          "content": "所有【紧急】能力效果提升100%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1252",
+          "content": "紧急能力触发线提高至65%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1253",
+          "content": "攻击速度+25%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1254",
+          "content": "每次受到子弹的伤害时，5%几率发射冰棒子弹",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1255",
+          "content": "几率+5%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1256",
+          "content": "暴击伤害+66%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1257",
+          "content": "战斗开始时对敌人造成5%最大生命值的伤害（最高伤害为当前力量的30倍）",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1258",
+          "content": "伤害+5%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1259",
+          "content": "战斗开始时眩晕敌人0.5秒",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1260",
+          "content": "额外获得1个纸团",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1261",
+          "content": "纸团造成10%额外力量伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1262",
+          "content": "额外获得1个叉子",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1263",
+          "content": "Crit Chance+5%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1264",
+          "content": "叉子击中目标时33%几率发射1个冰棒",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1265",
+          "content": "额外获得1个油漆刷",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1266",
+          "content": "油漆刷造成的伤害+100%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1267",
+          "content": "额外获得1个冰棒",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1268",
+          "content": "造成反伤伤害时，10%几率发射1个叉子",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1269",
+          "content": "额外获得1个手柄",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1270",
+          "content": "手柄击中目标时33%几率发射1个叉子",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1271",
+          "content": "闪避时发射1个手柄",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1272",
+          "content": "额外获得1个能量饮料",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1273",
+          "content": "大招伤害+20%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1274",
+          "content": "初始能量+300",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1275",
+          "content": "【冲锋】多持续1秒",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1276",
+          "content": "闪避+5%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1277",
+          "content": "闪避+4%，你可以闪避大招了",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1278",
+          "content": "被任何子弹击中时15%几率回复少量生命",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1279",
+          "content": "几率+15%",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1280",
+          "content": "被大招击中时发射8个冰棒",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1281",
+          "content": "【冲锋】 在前3秒获得10%Crit Chance",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1282",
+          "content": "使用大招后获得190能量",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1283",
+          "content": "手柄损毁的能量额外-10",
+          "": ""
+        },
+        {
+          "id": "equipment_skill_1284",
+          "content": "战斗开始时，给双方临时增加200能量上限",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1001",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1002",
+          "content": "召唤报纸，对敌人造成{0}x力量伤害，并额外投掷6个纸团",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1003",
+          "content": "召唤3把餐刀（每把对敌人造成{0}叉子伤害）",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1004",
+          "content": "召唤榴莲，对敌人造成{0}x力量的伤害，并恢复自身10%生命",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1005",
+          "content": "发射激光，对敌人造成{0}x力量的伤害，同时临时增加自身500能量上限",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1006",
+          "content": "召唤牛头锤，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1007",
+          "content": "投掷游戏机，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1008",
+          "content": "投掷剧毒蘑菇，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1009",
+          "content": "投掷油漆桶，对敌人造成{0}x力量的伤害，并投掷1把油漆刷",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1010",
+          "content": "召唤打气锤对敌人造成{0}x力量的伤害，命中时，造成0.1s眩晕",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1011",
+          "content": "召唤纸飞机，对敌人造成{0}x力量伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1013",
+          "content": "召唤冰冻的购物车，对敌人造成{0}x力量伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1014",
+          "content": "投掷冰叉子，对敌人造成{0}x力量伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1015",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1016",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1017",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1018",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1019",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1020",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1021",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "equipment_ultimate_1022",
+          "content": "召唤购物车，对敌人造成{0}x力量的伤害",
+          "": ""
+        },
+        {
+          "id": "talent_title_1000",
+          "content": "Intern",
+          "": ""
+        },
+        {
+          "id": "talent_title_1001",
+          "content": "Intern2",
+          "": ""
+        },
+        {
+          "id": "talent_title_1002",
+          "content": "Intern3",
+          "": ""
+        },
+        {
+          "id": "talent_title_1003",
+          "content": "Junior1",
+          "": ""
+        },
+        {
+          "id": "talent_title_1004",
+          "content": "Junior2",
+          "": ""
+        },
+        {
+          "id": "talent_title_1005",
+          "content": "Junior3",
+          "": ""
+        },
+        {
+          "id": "talent_title_1006",
+          "content": "Junior4",
+          "": ""
+        },
+        {
+          "id": "talent_title_1007",
+          "content": "Junior5",
+          "": ""
+        },
+        {
+          "id": "talent_title_1008",
+          "content": "Senior1",
+          "": ""
+        },
+        {
+          "id": "talent_title_1009",
+          "content": "Senior2",
+          "": ""
+        },
+        {
+          "id": "talent_title_1010",
+          "content": "Senior3",
+          "": ""
+        },
+        {
+          "id": "talent_title_1011",
+          "content": "Senior4",
+          "": ""
+        },
+        {
+          "id": "talent_title_1012",
+          "content": "Senior5",
+          "": ""
+        },
+        {
+          "id": "talent_title_1013",
+          "content": "Senior6",
+          "": ""
+        },
+        {
+          "id": "talent_title_1014",
+          "content": "Senior7",
+          "": ""
+        },
+        {
+          "id": "talent_title_1015",
+          "content": "Senior8",
+          "": ""
+        },
+        {
+          "id": "talent_title_1016",
+          "content": "Senior9",
+          "": ""
+        },
+        {
+          "id": "talent_title_1017",
+          "content": "Senior10",
+          "": ""
+        },
+        {
+          "id": "talent_title_1018",
+          "content": "Supervisor1",
+          "": ""
+        },
+        {
+          "id": "talent_title_1019",
+          "content": "Supervisor2",
+          "": ""
+        },
+        {
+          "id": "talent_title_1020",
+          "content": "Supervisor3",
+          "": ""
+        },
+        {
+          "id": "talent_title_1021",
+          "content": "Supervisor4",
+          "": ""
+        },
+        {
+          "id": "talent_title_1022",
+          "content": "Supervisor5",
+          "": ""
+        },
+        {
+          "id": "talent_title_1023",
+          "content": "Supervisor6",
+          "": ""
+        },
+        {
+          "id": "talent_title_1024",
+          "content": "Supervisor7",
+          "": ""
+        },
+        {
+          "id": "talent_title_1025",
+          "content": "Supervisor8",
+          "": ""
+        },
+        {
+          "id": "talent_title_1026",
+          "content": "Supervisor9",
+          "": ""
+        },
+        {
+          "id": "talent_title_1027",
+          "content": "Supervisor10",
+          "": ""
+        },
+        {
+          "id": "talent_title_1028",
+          "content": "Supervisor11",
+          "": ""
+        },
+        {
+          "id": "talent_title_1029",
+          "content": "Supervisor12",
+          "": ""
+        },
+        {
+          "id": "talent_title_1030",
+          "content": "Supervisor13",
+          "": ""
+        },
+        {
+          "id": "talent_title_1031",
+          "content": "Supervisor14",
+          "": ""
+        },
+        {
+          "id": "talent_title_1032",
+          "content": "Supervisor15",
+          "": ""
+        },
+        {
+          "id": "talent_title_1033",
+          "content": "Manager1",
+          "": ""
+        },
+        {
+          "id": "talent_title_1034",
+          "content": "Manager2",
+          "": ""
+        },
+        {
+          "id": "talent_title_1035",
+          "content": "Manager3",
+          "": ""
+        },
+        {
+          "id": "talent_title_1036",
+          "content": "Manager4",
+          "": ""
+        },
+        {
+          "id": "talent_title_1037",
+          "content": "Manager5",
+          "": ""
+        },
+        {
+          "id": "talent_title_1038",
+          "content": "Manager6",
+          "": ""
+        },
+        {
+          "id": "talent_title_1039",
+          "content": "Manager7",
+          "": ""
+        },
+        {
+          "id": "talent_title_1040",
+          "content": "Manager8",
+          "": ""
+        },
+        {
+          "id": "talent_title_1041",
+          "content": "Manager9",
+          "": ""
+        },
+        {
+          "id": "talent_title_1042",
+          "content": "Manager10",
+          "": ""
+        },
+        {
+          "id": "talent_title_1043",
+          "content": "Director1",
+          "": ""
+        },
+        {
+          "id": "talent_title_1044",
+          "content": "Director2",
+          "": ""
+        },
+        {
+          "id": "talent_title_1045",
+          "content": "Director3",
+          "": ""
+        },
+        {
+          "id": "talent_title_1046",
+          "content": "Director4",
+          "": ""
+        },
+        {
+          "id": "talent_title_1047",
+          "content": "Director5",
+          "": ""
+        },
+        {
+          "id": "talent_title_1048",
+          "content": "Director6",
+          "": ""
+        },
+        {
+          "id": "talent_title_1049",
+          "content": "Director7",
+          "": ""
+        },
+        {
+          "id": "talent_title_1050",
+          "content": "Director8",
+          "": ""
+        },
+        {
+          "id": "talent_title_1051",
+          "content": "Director9",
+          "": ""
+        },
+        {
+          "id": "talent_title_1052",
+          "content": "Director10",
+          "": ""
+        },
+        {
+          "id": "talent_title_1053",
+          "content": "Director11",
+          "": ""
+        },
+        {
+          "id": "talent_title_1054",
+          "content": "Director12",
+          "": ""
+        },
+        {
+          "id": "talent_title_1055",
+          "content": "Director13",
+          "": ""
+        },
+        {
+          "id": "talent_title_1056",
+          "content": "Director14",
+          "": ""
+        },
+        {
+          "id": "talent_title_1057",
+          "content": "Director15",
+          "": ""
+        },
+        {
+          "id": "talent_title_1058",
+          "content": "VP1",
+          "": ""
+        },
+        {
+          "id": "talent_title_1059",
+          "content": "VP2",
+          "": ""
+        },
+        {
+          "id": "talent_title_1060",
+          "content": "VP3",
+          "": ""
+        },
+        {
+          "id": "talent_title_1061",
+          "content": "VP4",
+          "": ""
+        },
+        {
+          "id": "talent_title_1062",
+          "content": "VP5",
+          "": ""
+        },
+        {
+          "id": "talent_title_1063",
+          "content": "VP6",
+          "": ""
+        },
+        {
+          "id": "talent_title_1064",
+          "content": "VP7",
+          "": ""
+        },
+        {
+          "id": "talent_title_1065",
+          "content": "VP8",
+          "": ""
+        },
+        {
+          "id": "talent_title_1066",
+          "content": "VP9",
+          "": ""
+        },
+        {
+          "id": "talent_title_1067",
+          "content": "VP10",
+          "": ""
+        },
+        {
+          "id": "talent_title_1068",
+          "content": "VP11",
+          "": ""
+        },
+        {
+          "id": "talent_title_1069",
+          "content": "VP12",
+          "": ""
+        },
+        {
+          "id": "talent_title_1070",
+          "content": "VP13",
+          "": ""
+        },
+        {
+          "id": "talent_title_1071",
+          "content": "VP14",
+          "": ""
+        },
+        {
+          "id": "talent_title_1072",
+          "content": "VP15",
+          "": ""
+        },
+        {
+          "id": "talent_title_1073",
+          "content": "SVP",
+          "": ""
+        },
+        {
+          "id": "talent_name_4001",
+          "content": "Bullet Express",
+          "": ""
+        },
+        {
+          "id": "talent_name_4002",
+          "content": "Free Reroll",
+          "": ""
+        },
+        {
+          "id": "talent_name_4003",
+          "content": "积少成多",
+          "": ""
+        },
+        {
+          "id": "talent_name_4004",
+          "content": "Windfall",
+          "": ""
+        },
+        {
+          "id": "talent_name_4005",
+          "content": "Full of Energy",
+          "": ""
+        },
+        {
+          "id": "talent_name_4006",
+          "content": "Radiant",
+          "": ""
+        },
+        {
+          "id": "talent_name_4007",
+          "content": "Rake in the Money",
+          "": ""
+        },
+        {
+          "id": "talent_name_4008",
+          "content": "堆积如山",
+          "": ""
+        },
+        {
+          "id": "talent_des_4001",
+          "content": "At the start, the delivery box always contains bullets",
+          "": ""
+        },
+        {
+          "id": "talent_des_4002",
+          "content": "Free Skill Reroll Count +1",
+          "": ""
+        },
+        {
+          "id": "talent_des_4003",
+          "content": "Gold from Trash Mob Kills +25%",
+          "": ""
+        },
+        {
+          "id": "talent_des_4004",
+          "content": "Gold from Boss Kills +25%",
+          "": ""
+        },
+        {
+          "id": "talent_des_4005",
+          "content": "Max Stamina +2",
+          "": ""
+        },
+        {
+          "id": "talent_des_4006",
+          "content": "Stamina Recovery Speed +5%",
+          "": ""
+        },
+        {
+          "id": "talent_des_4007",
+          "content": "Adventure Income +5",
+          "": ""
+        },
+        {
+          "id": "talent_des_4008",
+          "content": "Adventure Shop Restock Count +1",
+          "": ""
+        },
+        {
+          "id": "equipment_view_bullet_btn",
+          "content": "bullet",
+          "": ""
+        },
+        {
+          "id": "equipment_view_pet_btn",
+          "content": "Pets",
+          "": ""
+        },
+        {
+          "id": "equipment_view_mount_btn",
+          "content": "Mount",
+          "": ""
+        },
+        {
+          "id": "equipment_view_treasure_btn",
+          "content": "Treasure",
+          "": ""
+        },
+        {
+          "id": "equipment_view_merge_btn",
+          "content": "Merge",
+          "": ""
+        },
+        {
+          "id": "equipment_view_sortByRarity_btn",
+          "content": "Quality​",
+          "": ""
+        },
+        {
+          "id": "equipment_view_sortByLevel_btn",
+          "content": "Level",
+          "": ""
+        },
+        {
+          "id": "equipment_view_sortByType_btn",
+          "content": "Type",
+          "": ""
+        },
+        {
+          "id": "equipment_view_myEquipment",
+          "content": "My Equipment",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_title",
+          "content": "EOUIP UPGRADE",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_basicProperties",
+          "content": "Base Stats",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_ultimate",
+          "content": "Ult",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_maxEnergy",
+          "content": "Max Energy",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_equip_btn",
+          "content": "Equipment",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_takeOff_btn",
+          "content": "Remove",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_levelUp_btn",
+          "content": "level Up",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_breakthrough_btn",
+          "content": "Advance",
+          "": ""
+        },
+        {
+          "id": "equipment_itemTip_quickLevelUp_btn",
+          "content": "Quick Level Up",
+          "": ""
+        },
+        {
+          "id": "property_strength",
+          "content": "strength",
+          "": ""
+        },
+        {
+          "id": "property_energy_recovery",
+          "content": "Energy Regen",
+          "": ""
+        },
+        {
+          "id": "property_basic_hp",
+          "content": "Max HP",
+          "": ""
+        },
+        {
+          "id": "property_energy_max",
+          "content": "Max Energy",
+          "": ""
+        },
+        {
+          "id": "property_critical_damage",
+          "content": "Crit DMG",
+          "": ""
+        },
+        {
+          "id": "property_reflect_damage",
+          "content": "Thorns DMG",
+          "": ""
+        },
+        {
+          "id": "property_hp_regeneration",
+          "content": "HP Regen",
+          "": ""
+        },
+        {
+          "id": "property_armor",
+          "content": "DEF",
+          "": ""
+        },
+        {
+          "id": "property_healing_boost",
+          "content": "Bonus Healing",
+          "": ""
+        },
+        {
+          "id": "property_attack_speed",
+          "content": "ATK SPD",
+          "": ""
+        },
+        {
+          "id": "property_critical_rate",
+          "content": "Crit Chance",
+          "": ""
+        },
+        {
+          "id": "property_ultimate_ability_critical_rate",
+          "content": "Ult Crit",
+          "": ""
+        },
+        {
+          "id": "property_ultimate_ability_dodge",
+          "content": "Ult Dodge",
+          "": ""
+        },
+        {
+          "id": "property_amplified_damage",
+          "content": "Fatigue",
+          "": ""
+        },
+        {
+          "id": "property_dodge",
+          "content": "Dodge",
+          "": ""
+        },
+        {
+          "id": "property_ultimate_ability_damage",
+          "content": "Ult.DMG",
+          "": ""
+        },
+        {
+          "id": "property_reflect_damage_count",
+          "content": "Thorns Count",
+          "": ""
+        },
+        {
+          "id": "property_income",
+          "content": "战斗收入",
+          "": ""
+        },
+        {
+          "id": "property_discount",
+          "content": "shop discount",
+          "": ""
+        },
+        {
+          "id": "level",
+          "content": "Level",
+          "": ""
+        },
+        {
+          "id": "level_max",
+          "content": "Max Level",
+          "": ""
+        },
+        {
+          "id": "equipment_item_equiped",
+          "content": "Equipped",
+          "": ""
+        },
+        {
+          "id": "equipmentMerge_upgrade_rarity_tip",
+          "content": "Upgrade Equipment Skill to: {0}",
+          "": ""
+        },
+        {
+          "id": "equipmentMerge_upgrade_materials_tip",
+          "content": "Materials required: {0}",
+          "": ""
+        },
+        {
+          "id": "equipmentMerge_merge_btn",
+          "content": "Merge",
+          "": ""
+        },
+        {
+          "id": "equipment_decompose_downgrade_tip",
+          "content": "Downgrade will return all materials, reset the equipment level to Level 1/nand revert its quality to the initial state",
+          "": ""
+        },
+        {
+          "id": "equipment_decompose_downlevel_tip",
+          "content": "Level Down will return all materials and reset the equipment level to Level 1",
+          "": ""
+        },
+        {
+          "id": "equipment_decompose_downgrade_title",
+          "content": "Equipment Downgrade",
+          "": ""
+        },
+        {
+          "id": "equipment_decompose_downlevel_title",
+          "content": "Equipment Level Down",
+          "": ""
+        },
+        {
+          "id": "equipment_decompose_downgrade_btn",
+          "content": "Downgrade",
+          "": ""
+        },
+        {
+          "id": "equipment_decompose_downlevel_btn",
+          "content": "Level Down",
+          "": ""
+        },
+        {
+          "id": "ok_btn",
+          "content": "OK",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1001",
+          "content": "S纸团S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1002",
+          "content": "S斧头S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1003",
+          "content": "S刷子S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1004",
+          "content": "S反击S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1005",
+          "content": "S冰棒S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1006",
+          "content": "S反伤S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1007",
+          "content": "S手柄S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1008",
+          "content": "S饮料S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1009",
+          "content": "S大招S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1010",
+          "content": "S冲锋S-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1101",
+          "content": "S恢复背包-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1102",
+          "content": "S复活背包-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1103",
+          "content": "S紧急背包-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1201",
+          "content": "S疲劳戒指-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1202",
+          "content": "S冰冻戒指-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1203",
+          "content": "S中毒戒指-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1301",
+          "content": "S减伤饰品-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1302",
+          "content": "S增伤饰品-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_1303",
+          "content": "S控制饰品-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2001",
+          "content": "纸团-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2002",
+          "content": "纸团-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2003",
+          "content": "纸团-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2004",
+          "content": "纸团-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2005",
+          "content": "斧头-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2006",
+          "content": "斧头-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2007",
+          "content": "斧头-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2008",
+          "content": "斧头-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2009",
+          "content": "刷子-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2010",
+          "content": "刷子-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2011",
+          "content": "刷子-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2012",
+          "content": "刷子-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2013",
+          "content": "反击-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2014",
+          "content": "反击-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2015",
+          "content": "反击-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2016",
+          "content": "反击-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2017",
+          "content": "冰棒-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2018",
+          "content": "冰棒-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2019",
+          "content": "冰棒-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2020",
+          "content": "冰棒-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2021",
+          "content": "反伤-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2022",
+          "content": "反伤-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2023",
+          "content": "反伤-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2024",
+          "content": "反伤-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2025",
+          "content": "手柄-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2026",
+          "content": "手柄-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2027",
+          "content": "手柄-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2028",
+          "content": "手柄-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2029",
+          "content": "饮料-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2030",
+          "content": "饮料-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2031",
+          "content": "饮料-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2032",
+          "content": "饮料-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2033",
+          "content": "大招-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2034",
+          "content": "大招-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2035",
+          "content": "大招-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2036",
+          "content": "大招-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2037",
+          "content": "冲锋-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2038",
+          "content": "冲锋-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2039",
+          "content": "冲锋-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2040",
+          "content": "冲锋-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2101",
+          "content": "闪避背包-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2102",
+          "content": "闪避背包-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2103",
+          "content": "闪避背包-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2104",
+          "content": "闪避背包-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2105",
+          "content": "急救背包-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2106",
+          "content": "急救背包-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2107",
+          "content": "急救背包-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2108",
+          "content": "急救背包-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2109",
+          "content": "冰冻背包-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2110",
+          "content": "冰冻背包-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2111",
+          "content": "冰冻背包-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2112",
+          "content": "冰冻背包-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2201",
+          "content": "生命戒指-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2202",
+          "content": "生命戒指-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2203",
+          "content": "生命戒指-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2204",
+          "content": "生命戒指-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2205",
+          "content": "暴击戒指-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2206",
+          "content": "暴击戒指-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2207",
+          "content": "暴击戒指-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2208",
+          "content": "暴击戒指-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2209",
+          "content": "能量戒指-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2210",
+          "content": "能量戒指-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2211",
+          "content": "能量戒指-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2212",
+          "content": "能量戒指-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2301",
+          "content": "锁子弹饰品-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2302",
+          "content": "锁子弹饰品-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2303",
+          "content": "锁子弹饰品-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2304",
+          "content": "锁子弹饰品-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2305",
+          "content": "BOSS饰品-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2306",
+          "content": "BOSS饰品-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2307",
+          "content": "BOSS饰品-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2308",
+          "content": "BOSS饰品-紫",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2309",
+          "content": "能量饰品-白",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2310",
+          "content": "能量饰品-绿",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2311",
+          "content": "能量饰品-蓝",
+          "": ""
+        },
+        {
+          "id": "equipmentName_2312",
+          "content": "能量饰品-紫",
+          "": ""
+        },
+        {
+          "id": "itemName_1001",
+          "content": "Nut",
+          "": ""
+        },
+        {
+          "id": "itemName_1002",
+          "content": "Screwdriver",
+          "": ""
+        },
+        {
+          "id": "itemName_1003",
+          "content": "升品材料-武器-紫",
+          "": ""
+        },
+        {
+          "id": "itemName_1004",
+          "content": "升品材料-武器-橙",
+          "": ""
+        },
+        {
+          "id": "itemName_1005",
+          "content": "升品材料-武器-红",
+          "": ""
+        },
+        {
+          "id": "itemName_1006",
+          "content": "升品材料-背包-紫",
+          "": ""
+        },
+        {
+          "id": "itemName_1007",
+          "content": "升品材料-背包-橙",
+          "": ""
+        },
+        {
+          "id": "itemName_1008",
+          "content": "升品材料-背包-红",
+          "": ""
+        },
+        {
+          "id": "itemName_1009",
+          "content": "升品材料-项链-紫",
+          "": ""
+        },
+        {
+          "id": "itemName_1010",
+          "content": "升品材料-项链-橙",
+          "": ""
+        },
+        {
+          "id": "itemName_1011",
+          "content": "升品材料-项链-红",
+          "": ""
+        },
+        {
+          "id": "itemName_1012",
+          "content": "升品材料-戒指-紫",
+          "": ""
+        },
+        {
+          "id": "itemName_1013",
+          "content": "升品材料-戒指-橙",
+          "": ""
+        },
+        {
+          "id": "itemName_1014",
+          "content": "升品材料-戒指-红",
+          "": ""
+        },
+        {
+          "id": "itemName_1015",
+          "content": "Selectable S-Epic Voucher",
+          "": ""
+        },
+        {
+          "id": "itemName_1016",
+          "content": "Elevator Card",
+          "": ""
+        },
+        {
+          "id": "itemName_2001",
+          "content": "Stamina",
+          "": ""
+        },
+        {
+          "id": "itemName_2002",
+          "content": "Gems",
+          "": ""
+        },
+        {
+          "id": "itemName_2003",
+          "content": "Gold",
+          "": ""
+        },
+        {
+          "id": "anything",
+          "content": "Anything",
+          "": ""
+        },
+        {
+          "id": "stamina_panel_title",
+          "content": "Get Stamina",
+          "": ""
+        },
+        {
+          "id": "stamina_panel_remain_count",
+          "content": "Chances Left Today:",
+          "": ""
+        },
+        {
+          "id": "passive_harvesting_title",
+          "content": "AFK Rewards",
+          "": ""
+        },
+        {
+          "id": "passive_harvesting_time",
+          "content": "Collection Time",
+          "": ""
+        },
+        {
+          "id": "passive_harvesting_ad_btn",
+          "content": "Claim",
+          "": ""
+        },
+        {
+          "id": "passive_harvesting_ad_tip",
+          "content": "4 hours' reward",
+          "": ""
+        },
+        {
+          "id": "passive_harvesting_time_value",
+          "content": "(已到达最大时间)",
+          "": ""
+        },
+        {
+          "id": "shop_title_exchange_equipment",
+          "content": "Equipment Exchange",
+          "": ""
+        },
+        {
+          "id": "shop_btn_equipment",
+          "content": "Equipment\nShop",
+          "": ""
+        },
+        {
+          "id": "shop_btn_topup",
+          "content": "Top Up",
+          "": ""
+        },
+        {
+          "id": "shop_180_draws",
+          "content": "每抽180次可获取任意S装备",
+          "": ""
+        },
+        {
+          "id": "shop_title_limited",
+          "content": "特典宝箱",
+          "": ""
+        },
+        {
+          "id": "shop_desc_limited",
+          "content": "<outline color=black width=3>再开启<color=#8dff5a>{0}</color>次可获得<color=#A020F0>紫色装备</color>,再开启<color=#8dff5a>{1}</color>次可获得<color=#A020F0>S装备</color></outline >",
+          "": ""
+        },
+        {
+          "id": "shop_title_treasure",
+          "content": "传说宝箱",
+          "": ""
+        },
+        {
+          "id": "shop_btn_get1",
+          "content": "Get 1",
+          "": ""
+        },
+        {
+          "id": "shop_btn_get10",
+          "content": "Get 10",
+          "": ""
+        },
+        {
+          "id": "shop_title_regular",
+          "content": "Regular Equipment",
+          "": ""
+        },
+        {
+          "id": "shop_blue_desc",
+          "content": "<outline color=black width=3>Including A and <color=#8dff5a>B,</color></outline>",
+          "": ""
+        },
+        {
+          "id": "shop_purple_desc",
+          "content": "<outline color=black width=3>包括<color=#8dff5a>优秀装备</color>,<color=#47d2ee>稀有装备</color>,<color=#d472fd>史诗装备</color></outline>",
+          "": ""
+        },
+        {
+          "id": "shop_blue_desc_2",
+          "content": "<outline color=black width=3>再开启<color=#8dff5a>{0}</color>次可获得<color=#8dff5a>优秀装备</color></outline>",
+          "": ""
+        },
+        {
+          "id": "shop_purple_desc_2",
+          "content": "<outline color=black width=3>再开启<color=#8dff5a>{0}</color>次可获得<color=#d472fd>史诗装备</color></outline>",
+          "": ""
+        },
+        {
+          "id": "btn_free",
+          "content": "Free",
+          "": ""
+        },
+        {
+          "id": "shop_title_gems",
+          "content": "Gems",
+          "": ""
+        },
+        {
+          "id": "shop_title_coins",
+          "content": "Coins",
+          "": ""
+        },
+        {
+          "id": "shop_first_desc",
+          "content": "1st Top-up Bonus +{0}",
+          "": ""
+        },
+        {
+          "id": "shop_gem_desc_1",
+          "content": "Some Gems",
+          "": ""
+        },
+        {
+          "id": "shop_gem_desc_2",
+          "content": "Pile of Gems",
+          "": ""
+        },
+        {
+          "id": "shop_gem_desc_3",
+          "content": "Heap of Gems",
+          "": ""
+        },
+        {
+          "id": "shop_gem_desc_4",
+          "content": "Bag of Gems",
+          "": ""
+        },
+        {
+          "id": "shop_gem_desc_5",
+          "content": "Sacks of Gems",
+          "": ""
+        },
+        {
+          "id": "shop_gem_desc_6",
+          "content": "Chest of Gems",
+          "": ""
+        },
+        {
+          "id": "shop_coin_desc_1",
+          "content": "Some Coins",
+          "": ""
+        },
+        {
+          "id": "shop_coin_desc_2",
+          "content": "Pile of Coins",
+          "": ""
+        },
+        {
+          "id": "shop_coin_desc_3",
+          "content": "Chest of Coins",
+          "": ""
+        },
+        {
+          "id": "day",
+          "content": "Day",
+          "": ""
+        },
+        {
+          "id": "hour",
+          "content": "Hour",
+          "": ""
+        },
+        {
+          "id": "minute",
+          "content": "Minute",
+          "": ""
+        },
+        {
+          "id": "second",
+          "content": "Second",
+          "": ""
+        },
+        {
+          "id": "shop_probs_title",
+          "content": "Rates",
+          "": ""
+        },
+        {
+          "id": "shop_prob_item_title_item",
+          "content": "props",
+          "": ""
+        },
+        {
+          "id": "shop_prob_item_rate",
+          "content": "Probability without guaranteed rate:",
+          "": ""
+        },
+        {
+          "id": "shop_select_equipment_title",
+          "content": "Equipment Exchange",
+          "": ""
+        },
+        {
+          "id": "shop_select_equipment_btn",
+          "content": "Exchange",
+          "": ""
+        },
+        {
+          "id": "btn_skip",
+          "content": "Skip",
+          "": ""
+        },
+        {
+          "id": "btn_continue",
+          "content": "Tap to Continue",
+          "": ""
+        },
+        {
+          "id": "btn_checkout_skip",
+          "content": "Skip Animation",
+          "": ""
+        },
+        {
+          "id": "btn_again",
+          "content": "Again",
+          "": ""
+        }
+      ]
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

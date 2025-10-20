@@ -1,0 +1,265 @@
+
+Ultra_1011.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/BAck/B_00000
+  rotate: true
+  xy: 198, 341
+  size: 132, 59
+  orig: 132, 61
+  offset: 0, 1
+  index: -1
+Image/BAck/B_00001
+  rotate: true
+  xy: 136, 341
+  size: 132, 60
+  orig: 132, 61
+  offset: 0, 1
+  index: -1
+Image/BAck/B_00002
+  rotate: true
+  xy: 136, 207
+  size: 132, 60
+  orig: 132, 61
+  offset: 0, 1
+  index: -1
+Image/BAck/B_00003
+  rotate: true
+  xy: 198, 207
+  size: 132, 59
+  orig: 132, 61
+  offset: 0, 2
+  index: -1
+Image/BAck/B_00004
+  rotate: true
+  xy: 198, 73
+  size: 132, 59
+  orig: 132, 61
+  offset: 0, 2
+  index: -1
+Image/BAck/B_00005
+  rotate: true
+  xy: 331, 207
+  size: 132, 56
+  orig: 132, 61
+  offset: 0, 5
+  index: -1
+Image/BAck/B_00006
+  rotate: true
+  xy: 331, 73
+  size: 132, 56
+  orig: 132, 61
+  offset: 0, 5
+  index: -1
+Image/BAck/B_00007
+  rotate: true
+  xy: 320, 341
+  size: 132, 58
+  orig: 132, 61
+  offset: 0, 3
+  index: -1
+Image/BAck/B_00008
+  rotate: false
+  xy: 136, 12
+  size: 132, 59
+  orig: 132, 61
+  offset: 0, 1
+  index: -1
+Image/BAck/B_00009
+  rotate: true
+  xy: 259, 341
+  size: 132, 59
+  orig: 132, 61
+  offset: 0, 1
+  index: -1
+Image/Front/F_00000
+  rotate: false
+  xy: 2, 279
+  size: 132, 62
+  orig: 132, 65
+  offset: 0, 2
+  index: -1
+Image/Front/F_00001
+  rotate: false
+  xy: 2, 215
+  size: 132, 62
+  orig: 132, 65
+  offset: 0, 2
+  index: -1
+Image/Front/F_00002
+  rotate: false
+  xy: 2, 343
+  size: 132, 63
+  orig: 132, 65
+  offset: 0, 1
+  index: -1
+Image/Front/F_00003
+  rotate: false
+  xy: 2, 408
+  size: 132, 65
+  orig: 132, 65
+  offset: 0, 0
+  index: -1
+Image/Front/F_00004
+  rotate: true
+  xy: 259, 207
+  size: 132, 59
+  orig: 132, 65
+  offset: 0, 0
+  index: -1
+Image/Front/F_00005
+  rotate: true
+  xy: 270, 73
+  size: 132, 59
+  orig: 132, 65
+  offset: 0, 0
+  index: -1
+Image/Front/F_00006
+  rotate: true
+  xy: 136, 73
+  size: 132, 60
+  orig: 132, 65
+  offset: 0, 0
+  index: -1
+Image/Front/F_00007
+  rotate: false
+  xy: 2, 24
+  size: 132, 61
+  orig: 132, 65
+  offset: 0, 0
+  index: -1
+Image/Front/F_00008
+  rotate: false
+  xy: 2, 151
+  size: 132, 62
+  orig: 132, 65
+  offset: 0, 0
+  index: -1
+Image/Front/F_00009
+  rotate: false
+  xy: 2, 87
+  size: 132, 62
+  orig: 132, 65
+  offset: 0, 1
+  index: -1
+Image/Paper1/P_00000
+  rotate: false
+  xy: 270, 12
+  size: 63, 20
+  orig: 63, 20
+  offset: 0, 0
+  index: -1
+Image/Paper1/P_00001
+  rotate: false
+  xy: 2, 2
+  size: 63, 20
+  orig: 63, 20
+  offset: 0, 0
+  index: -1
+Image/Paper1/P_00002
+  rotate: false
+  xy: 67, 2
+  size: 63, 20
+  orig: 63, 20
+  offset: 0, 0
+  index: -1
+Image/Paper1/P_00003
+  rotate: true
+  xy: 374, 8
+  size: 63, 20
+  orig: 63, 20
+  offset: 0, 0
+  index: -1
+Image/Paper1/P_00004
+  rotate: true
+  xy: 380, 410
+  size: 63, 20
+  orig: 63, 20
+  offset: 0, 0
+  index: -1
+Image/Paper1/P_00005
+  rotate: true
+  xy: 380, 345
+  size: 63, 20
+  orig: 63, 20
+  offset: 0, 0
+  index: -1
+Image/Paper2/Paper_00000
+  rotate: false
+  xy: 309, 50
+  size: 63, 21
+  orig: 63, 31
+  offset: 0, 0
+  index: -1
+Image/Paper2/Paper_00001
+  rotate: true
+  xy: 389, 232
+  size: 61, 20
+  orig: 63, 31
+  offset: 0, 1
+  index: -1
+Image/Paper2/Paper_00002
+  rotate: true
+  xy: 389, 175
+  size: 55, 21
+  orig: 63, 31
+  offset: 0, 0
+  index: -1
+Image/Paper2/Paper_00003
+  rotate: true
+  xy: 396, 68
+  size: 54, 19
+  orig: 63, 31
+  offset: 0, 4
+  index: -1
+Image/Paper2/Paper_00004
+  rotate: true
+  xy: 402, 419
+  size: 54, 17
+  orig: 63, 31
+  offset: 0, 4
+  index: -1
+Image/Paper2/Paper_00005
+  rotate: true
+  xy: 389, 295
+  size: 48, 26
+  orig: 63, 31
+  offset: 4, 5
+  index: -1
+Image/Paper2/Paper_00006
+  rotate: true
+  xy: 396, 17
+  size: 49, 21
+  orig: 63, 31
+  offset: 2, 6
+  index: -1
+Image/Paper2/Paper_00007
+  rotate: true
+  xy: 389, 124
+  size: 49, 22
+  orig: 63, 31
+  offset: 2, 6
+  index: -1
+Image/Trail2_00007
+  rotate: false
+  xy: 335, 32
+  size: 35, 16
+  orig: 35, 16
+  offset: 0, 0
+  index: -1
+Image/Trail_00007
+  rotate: false
+  xy: 335, 21
+  size: 22, 9
+  orig: 22, 9
+  offset: 0, 0
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 270, 34
+  size: 37, 37
+  orig: 39, 39
+  offset: 1, 1
+  index: -1

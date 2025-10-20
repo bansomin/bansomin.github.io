@@ -1,0 +1,153 @@
+
+Boss08.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 282, 751
+  size: 257, 251
+  orig: 257, 251
+  offset: 0, 0
+  index: -1
+D_Eye
+  rotate: false
+  xy: 849, 938
+  size: 137, 70
+  orig: 138, 70
+  offset: 0, 0
+  index: -1
+Eye
+  rotate: false
+  xy: 174, 681
+  size: 104, 54
+  orig: 104, 54
+  offset: 0, 0
+  index: -1
+G
+  rotate: 180
+  xy: 2, 242
+  size: 218, 120
+  orig: 218, 120
+  offset: 0, 0
+  index: -1
+Hat
+  rotate: false
+  xy: 535, 596
+  size: 223, 204
+  orig: 223, 204
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 737
+  size: 278, 271
+  orig: 278, 271
+  offset: 0, 0
+  index: -1
+Magic
+  rotate: true
+  xy: 535, 802
+  size: 206, 312
+  orig: 206, 312
+  offset: 0, 0
+  index: -1
+Pf
+  rotate: 270
+  xy: 663, 255
+  size: 146, 207
+  orig: 146, 207
+  offset: 0, 0
+  index: -1
+Scarf
+  rotate: 270
+  xy: 779, 696
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+Wind/Wind_00000
+  rotate: true
+  xy: 321, 308
+  size: 142, 170
+  orig: 156, 176
+  offset: 4, 4
+  index: -1
+Wind/Wind_00001
+  rotate: false
+  xy: 866, 375
+  size: 142, 171
+  orig: 156, 176
+  offset: 5, 4
+  index: -1
+Wind/Wind_00002
+  rotate: true
+  xy: 760, 548
+  size: 146, 172
+  orig: 156, 176
+  offset: 4, 3
+  index: -1
+Wind/Wind_00003
+  rotate: true
+  xy: 282, 599
+  size: 150, 171
+  orig: 156, 176
+  offset: 3, 3
+  index: -1
+Wind/Wind_00004
+  rotate: true
+  xy: 2, 585
+  size: 150, 170
+  orig: 156, 176
+  offset: 3, 2
+  index: -1
+Wind/Wind_00005
+  rotate: true
+  xy: 493, 306
+  size: 142, 168
+  orig: 156, 176
+  offset: 11, 2
+  index: -1
+Wind/Wind_00006
+  rotate: true
+  xy: 148, 308
+  size: 142, 171
+  orig: 156, 176
+  offset: 10, 3
+  index: -1
+Wind/Wind_00007
+  rotate: true
+  xy: 693, 403
+  size: 143, 171
+  orig: 156, 176
+  offset: 8, 3
+  index: -1
+Wind/Wind_00008
+  rotate: true
+  xy: 520, 450
+  size: 144, 171
+  orig: 156, 176
+  offset: 6, 3
+  index: -1
+Wind/Wind_00009
+  rotate: true
+  xy: 174, 452
+  size: 145, 171
+  orig: 156, 176
+  offset: 5, 3
+  index: -1
+Wind/Wind_00010
+  rotate: true
+  xy: 347, 452
+  size: 145, 171
+  orig: 156, 176
+  offset: 4, 3
+  index: -1
+Wind/Wind_00011
+  rotate: false
+  xy: 2, 413
+  size: 144, 170
+  orig: 156, 176
+  offset: 4, 4
+  index: -1

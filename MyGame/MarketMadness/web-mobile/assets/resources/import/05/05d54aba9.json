@@ -1,0 +1,219 @@
+[
+  1,
+  [
+    "13IMhOg8hJs41V9tsJDyGH",
+    "20sVdF2+1Jg6jQBkjp3ey2",
+    "c4Od3E0+FGPbABdPX4rPQi",
+    "44vVb0PIhK6bWX/ooRJ2f3",
+    "9b/aMnoqJKA6+wDuZv1slo"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "equip_img_line3",
+          "rect": [
+            0,
+            0,
+            704,
+            3
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            704,
+            3
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_line2",
+          "rect": [
+            0,
+            0,
+            704,
+            3
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            704,
+            3
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_line5",
+          "rect": [
+            0,
+            0,
+            704,
+            3
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            704,
+            3
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_line1",
+          "rect": [
+            0,
+            0,
+            704,
+            3
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            704,
+            3
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equip_img_line4",
+          "rect": [
+            0,
+            0,
+            704,
+            3
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            704,
+            3
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ]
+    ]
+  ]
+]

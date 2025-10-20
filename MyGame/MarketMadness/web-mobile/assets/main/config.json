@@ -1,0 +1,50 @@
+{
+    "paths": {},
+    "uuids": [
+        "2dL3kvpAxJu6GJ7RdqJG5J",
+        "7a/QZLET9IDreTiBfRn2PD",
+        "85kxTcyVJI/ISnu6d04fhz",
+        "affgMGUylN7Le5DK5PA1JS",
+        "c2POTv4kRFz6iRcg7aMTxq",
+        "c5btXSL1JFVreRGaLKzG8U",
+        "ddhA03wjxIpolr44kBJIFs",
+        "ecpdLyjvZBwrvm+cedCcQy",
+        "f2WTyMLE9EEKltNsLypkWy",
+        "f6V9zzgbJB4KKSSFCbeWrO"
+    ],
+    "scenes": {
+        "db://assets/scene/mainScene.fire": "2dL3kvpAxJu6GJ7RdqJG5J"
+    },
+    "redirect": [
+        "7a/QZLET9IDreTiBfRn2PD",
+        0,
+        "85kxTcyVJI/ISnu6d04fhz",
+        1,
+        "affgMGUylN7Le5DK5PA1JS",
+        1,
+        "c2POTv4kRFz6iRcg7aMTxq",
+        1,
+        "c5btXSL1JFVreRGaLKzG8U",
+        1,
+        "ecpdLyjvZBwrvm+cedCcQy",
+        0,
+        "f2WTyMLE9EEKltNsLypkWy",
+        1
+    ],
+    "deps": [
+        "internal",
+        "resources"
+    ],
+    "packs": {
+        "018dcefe1": [
+            "2dL3kvpAxJu6GJ7RdqJG5J",
+            "ddhA03wjxIpolr44kBJIFs"
+        ]
+    },
+    "name": "main",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}

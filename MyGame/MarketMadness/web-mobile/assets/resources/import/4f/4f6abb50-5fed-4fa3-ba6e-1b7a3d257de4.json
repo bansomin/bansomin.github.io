@@ -1,0 +1,222 @@
+[
+  1,
+  [
+    "edjdcAE2FOKJGM4PMCrMpU"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Ultra_2007_Blast",
+      "\r\nUltra_2007_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBLAST/BLAST_00000\r\n  rotate: false\r\n  xy: 348, 28\r\n  size: 53, 59\r\n  orig: 240, 189\r\n  offset: 93, 62\r\n  index: -1\r\nBLAST/BLAST_00001\r\n  rotate: false\r\n  xy: 177, 18\r\n  size: 169, 143\r\n  orig: 240, 189\r\n  offset: 38, 20\r\n  index: -1\r\nBLAST/BLAST_00002\r\n  rotate: true\r\n  xy: 230, 163\r\n  size: 203, 172\r\n  orig: 240, 189\r\n  offset: 21, 5\r\n  index: -1\r\nBLAST/BLAST_00003\r\n  rotate: false\r\n  xy: 2, 163\r\n  size: 226, 168\r\n  orig: 240, 189\r\n  offset: 6, 13\r\n  index: -1\r\nBLAST/BLAST_00004\r\n  rotate: false\r\n  xy: 2, 333\r\n  size: 226, 171\r\n  orig: 240, 189\r\n  offset: 6, 13\r\n  index: -1\r\nBLAST/BLAST_00005\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 173, 159\r\n  orig: 240, 189\r\n  offset: 31, 26\r\n  index: -1\r\nBLAST/BLAST_00006\r\n  rotate: false\r\n  xy: 230, 409\r\n  size: 117, 95\r\n  orig: 240, 189\r\n  offset: 49, 38\r\n  index: -1\r\nBLAST/BLAST_00007\r\n  rotate: true\r\n  xy: 348, 89\r\n  size: 72, 68\r\n  orig: 240, 189\r\n  offset: 68, 53\r\n  index: -1\r\n",
+      [
+        "Ultra_2007_Blast.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "qvYCz2xJqwGpk/3gd57YI69bzKg",
+          "spine": "3.8.99",
+          "x": -207.13,
+          "y": -83.97,
+          "width": 1063.99,
+          "height": 644.27,
+          "images": "./Image/",
+          "audio": "E:/BIGBIG/键盘侠/敌人总/Boss7"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "BLAST_ZONG",
+            "parent": "root"
+          },
+          {
+            "name": "BLAST",
+            "parent": "BLAST_ZONG"
+          }
+        ],
+        "slots": [
+          {
+            "name": "BLAST/BLAST_00000",
+            "bone": "BLAST"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "BLAST/BLAST_00000": {
+                "BLAST/BLAST_00000": {
+                  "width": 320,
+                  "height": 252
+                },
+                "BLAST/BLAST_00001": {
+                  "width": 320,
+                  "height": 252
+                },
+                "BLAST/BLAST_00002": {
+                  "width": 320,
+                  "height": 252
+                },
+                "BLAST/BLAST_00003": {
+                  "width": 320,
+                  "height": 252
+                },
+                "BLAST/BLAST_00004": {
+                  "width": 320,
+                  "height": 252
+                },
+                "BLAST/BLAST_00005": {
+                  "width": 320,
+                  "height": 252
+                },
+                "BLAST/BLAST_00006": {
+                  "width": 320,
+                  "height": 252
+                },
+                "BLAST/BLAST_00007": {
+                  "width": 320,
+                  "height": 252
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Ultra": {
+            "slots": {
+              "BLAST/BLAST_00000": {
+                "color": [
+                  {
+                    "time": 0.1333,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.2667,
+                    "color": "f4b82e92"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "BLAST/BLAST_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "BLAST/BLAST_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "BLAST/BLAST_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "BLAST/BLAST_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "BLAST/BLAST_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "BLAST/BLAST_00005"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "BLAST/BLAST_00006"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "BLAST/BLAST_00007"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": null
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "BLAST": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.0333,
+                    "angle": -3.6
+                  },
+                  {
+                    "time": 0.2333,
+                    "angle": -6
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": 9.69,
+                    "y": 8.21
+                  },
+                  {
+                    "time": 0.0333,
+                    "x": 20.17,
+                    "y": 7.55
+                  }
+                ],
+                "scale": [
+                  {},
+                  {
+                    "time": 0.0333,
+                    "x": 1.18,
+                    "y": 1.08
+                  },
+                  {
+                    "time": 0.2667,
+                    "x": 1.06,
+                    "y": 0.98
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

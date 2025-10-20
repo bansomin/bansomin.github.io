@@ -1,0 +1,195 @@
+[
+  1,
+  [
+    "dakSGmzKNNoZpeGU1v48+r"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Ultra_3020_Blast",
+      "\r\nUltra_3020_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nWATERBLAST/WaterBlast_00000\r\n  rotate: true\r\n  xy: 2, 201\r\n  size: 131, 133\r\n  orig: 153, 153\r\n  offset: 11, 10\r\n  index: -1\r\nWATERBLAST/WaterBlast_00001\r\n  rotate: true\r\n  xy: 281, 201\r\n  size: 131, 133\r\n  orig: 153, 153\r\n  offset: 11, 10\r\n  index: -1\r\nWATERBLAST/WaterBlast_00002\r\n  rotate: true\r\n  xy: 146, 204\r\n  size: 132, 133\r\n  orig: 153, 153\r\n  offset: 11, 10\r\n  index: -1\r\nWATERBLAST/WaterBlast_00003\r\n  rotate: false\r\n  xy: 294, 334\r\n  size: 136, 132\r\n  orig: 153, 153\r\n  offset: 10, 10\r\n  index: -1\r\nWATERBLAST/WaterBlast_00004\r\n  rotate: false\r\n  xy: 2, 334\r\n  size: 142, 132\r\n  orig: 153, 153\r\n  offset: 8, 11\r\n  index: -1\r\nWATERBLAST/WaterBlast_00005\r\n  rotate: false\r\n  xy: 146, 338\r\n  size: 146, 128\r\n  orig: 153, 153\r\n  offset: 4, 14\r\n  index: -1\r\nWATERBLAST/WaterBlast_00006\r\n  rotate: false\r\n  xy: 137, 88\r\n  size: 134, 114\r\n  orig: 153, 153\r\n  offset: 10, 25\r\n  index: -1\r\nWATERBLAST/WaterBlast_00007\r\n  rotate: false\r\n  xy: 2, 100\r\n  size: 105, 99\r\n  orig: 153, 153\r\n  offset: 26, 25\r\n  index: -1\r\nWATERBLAST/WaterBlast_00008\r\n  rotate: false\r\n  xy: 273, 99\r\n  size: 96, 100\r\n  orig: 153, 153\r\n  offset: 28, 24\r\n  index: -1\r\nWATERBLAST/WaterBlast_00009\r\n  rotate: false\r\n  xy: 371, 100\r\n  size: 95, 99\r\n  orig: 153, 153\r\n  offset: 28, 25\r\n  index: -1\r\n",
+      [
+        "Ultra_3020_Blast.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "F88IlxhaMqE7YGKuEVI2aM44zqw",
+          "spine": "3.8.99",
+          "images": "./images/",
+          "audio": "E:/BIGBIG/键盘侠/敌人总/敌人20_粉红皮带蟹/images"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Blast_zong",
+            "parent": "root"
+          },
+          {
+            "name": "a",
+            "parent": "Blast_zong"
+          }
+        ],
+        "slots": [
+          {
+            "name": "WATERBLAST/WaterBlast_00000",
+            "bone": "a"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "WATERBLAST/WaterBlast_00000": {
+                "WATERBLAST/WaterBlast_00000": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00001": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00002": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00003": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00004": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00005": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00006": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00007": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00008": {
+                  "width": 170,
+                  "height": 170
+                },
+                "WATERBLAST/WaterBlast_00009": {
+                  "width": 170,
+                  "height": 170
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Ultra": {
+            "slots": {
+              "WATERBLAST/WaterBlast_00000": {
+                "attachment": [
+                  {
+                    "name": "WATERBLAST/WaterBlast_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "WATERBLAST/WaterBlast_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "WATERBLAST/WaterBlast_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "WATERBLAST/WaterBlast_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "WATERBLAST/WaterBlast_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "WATERBLAST/WaterBlast_00005"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "WATERBLAST/WaterBlast_00006"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "WATERBLAST/WaterBlast_00007"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "WATERBLAST/WaterBlast_00008"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "WATERBLAST/WaterBlast_00009"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": null
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "a": {
+                "scale": [
+                  {
+                    "x": 2.2,
+                    "y": 2.2
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,76 @@
+
+Ultra_3020_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+WATERBLAST/WaterBlast_00000
+  rotate: true
+  xy: 2, 201
+  size: 131, 133
+  orig: 153, 153
+  offset: 11, 10
+  index: -1
+WATERBLAST/WaterBlast_00001
+  rotate: true
+  xy: 281, 201
+  size: 131, 133
+  orig: 153, 153
+  offset: 11, 10
+  index: -1
+WATERBLAST/WaterBlast_00002
+  rotate: true
+  xy: 146, 204
+  size: 132, 133
+  orig: 153, 153
+  offset: 11, 10
+  index: -1
+WATERBLAST/WaterBlast_00003
+  rotate: false
+  xy: 294, 334
+  size: 136, 132
+  orig: 153, 153
+  offset: 10, 10
+  index: -1
+WATERBLAST/WaterBlast_00004
+  rotate: false
+  xy: 2, 334
+  size: 142, 132
+  orig: 153, 153
+  offset: 8, 11
+  index: -1
+WATERBLAST/WaterBlast_00005
+  rotate: false
+  xy: 146, 338
+  size: 146, 128
+  orig: 153, 153
+  offset: 4, 14
+  index: -1
+WATERBLAST/WaterBlast_00006
+  rotate: false
+  xy: 137, 88
+  size: 134, 114
+  orig: 153, 153
+  offset: 10, 25
+  index: -1
+WATERBLAST/WaterBlast_00007
+  rotate: false
+  xy: 2, 100
+  size: 105, 99
+  orig: 153, 153
+  offset: 26, 25
+  index: -1
+WATERBLAST/WaterBlast_00008
+  rotate: false
+  xy: 273, 99
+  size: 96, 100
+  orig: 153, 153
+  offset: 28, 24
+  index: -1
+WATERBLAST/WaterBlast_00009
+  rotate: false
+  xy: 371, 100
+  size: 95, 99
+  orig: 153, 153
+  offset: 28, 25
+  index: -1

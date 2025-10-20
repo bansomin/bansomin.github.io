@@ -1,0 +1,55 @@
+
+Ultra_3003.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Toxic_Loop 2/1
+  rotate: false
+  xy: 2, 2
+  size: 137, 105
+  orig: 166, 172
+  offset: 13, 36
+  index: -1
+Image/Toxic_Loop 2/2
+  rotate: false
+  xy: 152, 4
+  size: 160, 126
+  orig: 166, 172
+  offset: 6, 30
+  index: -1
+Image/Toxic_Loop 2/3
+  rotate: false
+  xy: 2, 109
+  size: 148, 137
+  orig: 166, 172
+  offset: 8, 15
+  index: -1
+Image/Toxic_Loop 2/4
+  rotate: false
+  xy: 215, 286
+  size: 165, 165
+  orig: 166, 172
+  offset: 0, 2
+  index: -1
+Image/Toxic_Loop 2/5
+  rotate: true
+  xy: 215, 132
+  size: 152, 172
+  orig: 166, 172
+  offset: 2, 0
+  index: -1
+Image/Toxic_Loop 2/6
+  rotate: true
+  xy: 314, 10
+  size: 120, 102
+  orig: 166, 172
+  offset: 14, 37
+  index: -1
+Image/Weapin
+  rotate: false
+  xy: 2, 248
+  size: 211, 203
+  orig: 212, 203
+  offset: 1, 0
+  index: -1

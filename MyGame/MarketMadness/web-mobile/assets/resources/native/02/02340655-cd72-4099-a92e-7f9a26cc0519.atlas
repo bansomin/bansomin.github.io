@@ -1,0 +1,174 @@
+
+Ultra_1007_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/1
+  rotate: false
+  xy: 171, 222
+  size: 102, 95
+  orig: 103, 95
+  offset: 0, 0
+  index: -1
+Image/2
+  rotate: false
+  xy: 63, 138
+  size: 33, 48
+  orig: 33, 48
+  offset: 0, 0
+  index: -1
+Image/3
+  rotate: true
+  xy: 304, 366
+  size: 138, 103
+  orig: 138, 103
+  offset: 0, 0
+  index: -1
+Image/Blast/Blast_00000
+  rotate: false
+  xy: 107, 232
+  size: 59, 50
+  orig: 64, 64
+  offset: 3, 3
+  index: -1
+Image/Blast/Blast_00001
+  rotate: false
+  xy: 60, 97
+  size: 52, 35
+  orig: 64, 64
+  offset: 5, 6
+  index: -1
+Image/Blast/Blast_00002
+  rotate: false
+  xy: 2, 92
+  size: 56, 43
+  orig: 64, 64
+  offset: 4, 6
+  index: -1
+Image/Blast/Blast_00003
+  rotate: false
+  xy: 418, 157
+  size: 62, 54
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+Image/Blast/Blast_00004
+  rotate: false
+  xy: 410, 262
+  size: 60, 48
+  orig: 64, 64
+  offset: 2, 7
+  index: -1
+Image/Blast/Blast_00005
+  rotate: false
+  xy: 2, 137
+  size: 59, 49
+  orig: 64, 64
+  offset: 1, 7
+  index: -1
+Image/Blast/Blast_00006
+  rotate: false
+  xy: 418, 107
+  size: 59, 48
+  orig: 64, 64
+  offset: 3, 9
+  index: -1
+Image/Blast/Blast_00007
+  rotate: false
+  xy: 292, 93
+  size: 56, 40
+  orig: 64, 64
+  offset: 0, 24
+  index: -1
+Image/Center/Impact_00000
+  rotate: false
+  xy: 304, 261
+  size: 104, 103
+  orig: 175, 232
+  offset: 9, 59
+  index: -1
+Image/Center/Impact_00001
+  rotate: false
+  xy: 2, 284
+  size: 167, 220
+  orig: 175, 232
+  offset: 4, 6
+  index: -1
+Image/Center/Impact_00002
+  rotate: false
+  xy: 171, 319
+  size: 131, 185
+  orig: 175, 232
+  offset: 10, 23
+  index: -1
+Image/Center/Impact_00003
+  rotate: false
+  xy: 361, 146
+  size: 55, 65
+  orig: 175, 232
+  offset: 26, 65
+  index: -1
+Image/Liz/Lizi_00000
+  rotate: true
+  xy: 361, 101
+  size: 43, 54
+  orig: 106, 111
+  offset: 25, 33
+  index: -1
+Image/Liz/Lizi_00001
+  rotate: false
+  xy: 292, 135
+  size: 67, 76
+  orig: 106, 111
+  offset: 14, 21
+  index: -1
+Image/Liz/Lizi_00002
+  rotate: true
+  xy: 107, 134
+  size: 86, 91
+  orig: 106, 111
+  offset: 4, 17
+  index: -1
+Image/Liz/Lizi_00003
+  rotate: true
+  xy: 2, 188
+  size: 94, 103
+  orig: 106, 111
+  offset: 4, 6
+  index: -1
+Image/Liz/Lizi_00004
+  rotate: false
+  xy: 409, 406
+  size: 95, 98
+  orig: 106, 111
+  offset: 9, 3
+  index: -1
+Image/Liz/Lizi_00005
+  rotate: false
+  xy: 472, 231
+  size: 31, 79
+  orig: 106, 111
+  offset: 23, 3
+  index: -1
+Image/Yan_00000
+  rotate: false
+  xy: 275, 213
+  size: 179, 46
+  orig: 179, 46
+  offset: 0, 0
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 410, 312
+  size: 92, 92
+  orig: 98, 98
+  offset: 3, 3
+  index: -1
+Image/kuo_00000
+  rotate: true
+  xy: 200, 128
+  size: 83, 90
+  orig: 88, 96
+  offset: 1, 4
+  index: -1

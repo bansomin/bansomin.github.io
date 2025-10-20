@@ -1,0 +1,96 @@
+[
+  1,
+  [
+    "27wBd760dMuJl8rKHdWWZK",
+    "eaMdJQmyZFTbAzM5sgAJ6d"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "company_bg_floor",
+          "rect": [
+            0,
+            0,
+            408,
+            154
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            408,
+            154
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "company_bg_factopry",
+          "rect": [
+            0,
+            0,
+            520,
+            82
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            520,
+            82
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

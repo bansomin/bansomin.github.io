@@ -1,0 +1,69 @@
+
+Ultra_1006_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Ring_00000
+  rotate: false
+  xy: 385, 23
+  size: 38, 95
+  orig: 38, 95
+  offset: 0, 0
+  index: -1
+Image/Smoke/Smoke_00000
+  rotate: false
+  xy: 2, 196
+  size: 298, 132
+  orig: 298, 188
+  offset: 0, 4
+  index: -1
+Image/Smoke/Smoke_00001
+  rotate: false
+  xy: 2, 330
+  size: 297, 135
+  orig: 298, 188
+  offset: 1, 0
+  index: -1
+Image/Smoke/Smoke_00002
+  rotate: true
+  xy: 302, 196
+  size: 235, 163
+  orig: 298, 188
+  offset: 63, 3
+  index: -1
+Image/Smoke/Smoke_00003
+  rotate: false
+  xy: 2, 25
+  size: 181, 169
+  orig: 298, 188
+  offset: 117, 11
+  index: -1
+Image/Smoke/Smoke_00004
+  rotate: false
+  xy: 185, 51
+  size: 113, 143
+  orig: 298, 188
+  offset: 180, 44
+  index: -1
+Image/Smoke/Smoke_00005
+  rotate: false
+  xy: 300, 63
+  size: 83, 131
+  orig: 298, 188
+  offset: 207, 57
+  index: -1
+Image/Smoke/Smoke_00006
+  rotate: false
+  xy: 425, 58
+  size: 27, 60
+  orig: 298, 188
+  offset: 255, 73
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 385, 120
+  size: 74, 74
+  orig: 78, 78
+  offset: 2, 2
+  index: -1

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "43OMlPyQBORoPJ1+TTllVZ"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Boss01",
+      "rect": [
+        2,
+        38,
+        508,
+        472
+      ],
+      "offset": [
+        0,
+        -18
+      ],
+      "originalSize": [
+        512,
+        512
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

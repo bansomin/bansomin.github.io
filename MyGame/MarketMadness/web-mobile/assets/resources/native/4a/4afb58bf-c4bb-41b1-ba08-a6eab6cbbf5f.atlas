@@ -1,0 +1,27 @@
+
+Ultra_3011.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/BX1
+  rotate: false
+  xy: 2, 162
+  size: 202, 290
+  orig: 202, 290
+  offset: 0, 0
+  index: -1
+Image/BXN
+  rotate: false
+  xy: 206, 162
+  size: 202, 290
+  orig: 202, 290
+  offset: 0, 0
+  index: -1
+Image/Dppr
+  rotate: true
+  xy: 2, 2
+  size: 158, 290
+  orig: 158, 290
+  offset: 0, 0
+  index: -1

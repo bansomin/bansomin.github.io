@@ -1,0 +1,20 @@
+
+Ultra_3005_Blast.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/dg1
+  rotate: false
+  xy: 96, 95
+  size: 66, 67
+  orig: 66, 67
+  offset: 0, 0
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 2, 70
+  size: 92, 92
+  orig: 98, 98
+  offset: 3, 3
+  index: -1

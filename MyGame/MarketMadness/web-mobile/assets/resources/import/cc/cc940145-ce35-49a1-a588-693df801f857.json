@@ -1,0 +1,342 @@
+[
+  1,
+  [
+    "75i7Y+H9hIbLXKAkua2+Bn"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Ultra_2008_Blast",
+      "\r\nUltra_2008_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Ice_Blast_00000\r\n  rotate: false\r\n  xy: 219, 333\r\n  size: 101, 81\r\n  orig: 115, 93\r\n  offset: 4, 6\r\n  index: -1\r\nImage/Ice_Blast_00001\r\n  rotate: false\r\n  xy: 413, 327\r\n  size: 84, 86\r\n  orig: 115, 93\r\n  offset: 12, 4\r\n  index: -1\r\nImage/Ice_Blast_00002\r\n  rotate: false\r\n  xy: 322, 330\r\n  size: 89, 83\r\n  orig: 115, 93\r\n  offset: 9, 6\r\n  index: -1\r\nImage/Ice_Blast_00003\r\n  rotate: false\r\n  xy: 111, 333\r\n  size: 106, 81\r\n  orig: 115, 93\r\n  offset: 4, 7\r\n  index: -1\r\nImage/Ice_Blast_00004\r\n  rotate: false\r\n  xy: 220, 416\r\n  size: 106, 87\r\n  orig: 115, 93\r\n  offset: 4, 4\r\n  index: -1\r\nImage/Ice_Blast_00005\r\n  rotate: false\r\n  xy: 2, 415\r\n  size: 107, 88\r\n  orig: 115, 93\r\n  offset: 4, 3\r\n  index: -1\r\nImage/Ice_Blast_00006\r\n  rotate: false\r\n  xy: 111, 416\r\n  size: 107, 87\r\n  orig: 115, 93\r\n  offset: 4, 4\r\n  index: -1\r\nImage/Ice_Blast_00007\r\n  rotate: false\r\n  xy: 328, 415\r\n  size: 103, 88\r\n  orig: 115, 93\r\n  offset: 7, 3\r\n  index: -1\r\nImage/Ice_Blast_00008\r\n  rotate: false\r\n  xy: 2, 326\r\n  size: 92, 87\r\n  orig: 115, 93\r\n  offset: 10, 4\r\n  index: -1\r\nImage/Ice_Blast_00009\r\n  rotate: false\r\n  xy: 96, 251\r\n  size: 87, 80\r\n  orig: 115, 93\r\n  offset: 12, 7\r\n  index: -1\r\nImage/Ice_Blast_00010\r\n  rotate: false\r\n  xy: 185, 258\r\n  size: 78, 73\r\n  orig: 115, 93\r\n  offset: 15, 12\r\n  index: -1\r\nImage/Ice_Blast_00011\r\n  rotate: true\r\n  xy: 433, 430\r\n  size: 73, 70\r\n  orig: 115, 93\r\n  offset: 19, 12\r\n  index: -1\r\nImage/Ice_Blast_00012\r\n  rotate: false\r\n  xy: 265, 258\r\n  size: 72, 70\r\n  orig: 115, 93\r\n  offset: 19, 12\r\n  index: -1\r\nImage/Ice_Blast_00013\r\n  rotate: false\r\n  xy: 339, 255\r\n  size: 72, 70\r\n  orig: 115, 93\r\n  offset: 19, 12\r\n  index: -1\r\nImage/Ice_Blast_00014\r\n  rotate: false\r\n  xy: 2, 255\r\n  size: 72, 69\r\n  orig: 115, 93\r\n  offset: 19, 12\r\n  index: -1\r\nImage/Ice_Blast_00015\r\n  rotate: false\r\n  xy: 185, 187\r\n  size: 72, 69\r\n  orig: 115, 93\r\n  offset: 19, 12\r\n  index: -1\r\nImage/Ice_Blast_00016\r\n  rotate: false\r\n  xy: 259, 187\r\n  size: 72, 69\r\n  orig: 115, 93\r\n  offset: 19, 12\r\n  index: -1\r\nImage/Ice_Blast_00017\r\n  rotate: false\r\n  xy: 413, 255\r\n  size: 72, 70\r\n  orig: 115, 93\r\n  offset: 19, 11\r\n  index: -1\r\nImage/Ice_Blast_00018\r\n  rotate: true\r\n  xy: 2, 185\r\n  size: 68, 69\r\n  orig: 115, 93\r\n  offset: 22, 11\r\n  index: -1\r\nImage/Ice_Blast_00019\r\n  rotate: false\r\n  xy: 333, 185\r\n  size: 68, 68\r\n  orig: 115, 93\r\n  offset: 22, 11\r\n  index: -1\r\nImage/Ice_Blast_00020\r\n  rotate: false\r\n  xy: 403, 186\r\n  size: 68, 67\r\n  orig: 115, 93\r\n  offset: 22, 11\r\n  index: -1\r\nImage/Ice_Blast_00021\r\n  rotate: false\r\n  xy: 73, 183\r\n  size: 68, 66\r\n  orig: 115, 93\r\n  offset: 22, 11\r\n  index: -1\r\nImage/Ice_Blast_00022\r\n  rotate: true\r\n  xy: 143, 135\r\n  size: 50, 62\r\n  orig: 115, 93\r\n  offset: 29, 11\r\n  index: -1\r\n",
+      [
+        "Ultra_2008_Blast.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "UuU9TywjLmW+JCAf6cuUYfS+WAU",
+          "spine": "3.8.99",
+          "images": "",
+          "audio": ""
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Zong",
+            "parent": "root"
+          }
+        ],
+        "slots": [
+          {
+            "name": "Image/Ice_Blast_00000",
+            "bone": "Zong"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Image/Ice_Blast_00000": {
+                "Image/Ice_Blast_00000": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00001": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00002": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00003": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00004": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00005": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00006": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00007": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00008": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00009": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00010": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00011": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00012": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00013": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00014": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00015": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00016": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00017": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00018": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00019": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00020": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00021": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                },
+                "Image/Ice_Blast_00022": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 287,
+                  "height": 233
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Ultra": {
+            "slots": {
+              "Image/Ice_Blast_00000": {
+                "color": [
+                  {
+                    "time": 0.5333,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.7333,
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "Image/Ice_Blast_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Image/Ice_Blast_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/Ice_Blast_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/Ice_Blast_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/Ice_Blast_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/Ice_Blast_00005"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Image/Ice_Blast_00006"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Image/Ice_Blast_00007"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Image/Ice_Blast_00008"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "Image/Ice_Blast_00009"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "Image/Ice_Blast_00010"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "Image/Ice_Blast_00012"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "Image/Ice_Blast_00013"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "Image/Ice_Blast_00014"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "Image/Ice_Blast_00015"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "Image/Ice_Blast_00016"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "Image/Ice_Blast_00017"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "Image/Ice_Blast_00018"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "Image/Ice_Blast_00019"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "Image/Ice_Blast_00020"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "Image/Ice_Blast_00021"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "Image/Ice_Blast_00022"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "Zong": {
+                "translate": [
+                  {
+                    "x": 7.94
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

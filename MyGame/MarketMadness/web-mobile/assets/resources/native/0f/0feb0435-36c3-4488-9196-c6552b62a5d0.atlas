@@ -1,0 +1,48 @@
+
+Ultra_1014_Blast.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Ice/ICE_00000
+  rotate: false
+  xy: 96, 115
+  size: 48, 44
+  orig: 52, 48
+  offset: 4, 3
+  index: -1
+Image/Ice/ICE_00001
+  rotate: false
+  xy: 193, 120
+  size: 35, 39
+  orig: 52, 48
+  offset: 9, 5
+  index: -1
+Image/Ice/ICE_00002
+  rotate: false
+  xy: 146, 115
+  size: 45, 44
+  orig: 52, 48
+  offset: 5, 2
+  index: -1
+Image/Ice/ICE_00003
+  rotate: true
+  xy: 164, 161
+  size: 46, 39
+  orig: 52, 48
+  offset: 4, 6
+  index: -1
+Image/dg1
+  rotate: false
+  xy: 96, 161
+  size: 66, 67
+  orig: 66, 67
+  offset: 0, 0
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 2, 136
+  size: 92, 92
+  orig: 98, 98
+  offset: 3, 3
+  index: -1

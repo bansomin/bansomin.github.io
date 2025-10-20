@@ -1,0 +1,378 @@
+[
+  1,
+  [
+    "eaUCsvYTJGZbvKquXKM1j8"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Ultra_3015_Blast",
+      "\r\nUltra_3015_Blast.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nImage/Balst/Blast_00036\r\n  rotate: false\r\n  xy: 2, 4\r\n  size: 160, 151\r\n  orig: 241, 186\r\n  offset: 32, 5\r\n  index: -1\r\nImage/Balst/Blast_00037\r\n  rotate: false\r\n  xy: 242, 131\r\n  size: 194, 150\r\n  orig: 241, 186\r\n  offset: 16, 13\r\n  index: -1\r\nImage/Balst/Blast_00038\r\n  rotate: false\r\n  xy: 242, 283\r\n  size: 226, 185\r\n  orig: 241, 186\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Balst/Blast_00039\r\n  rotate: false\r\n  xy: 2, 282\r\n  size: 238, 186\r\n  orig: 241, 186\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Balst/Blast_00040\r\n  rotate: false\r\n  xy: 2, 282\r\n  size: 238, 186\r\n  orig: 241, 186\r\n  offset: 0, 0\r\n  index: -1\r\nImage/Balst/Blast_00041\r\n  rotate: false\r\n  xy: 164, 12\r\n  size: 186, 117\r\n  orig: 241, 186\r\n  offset: 55, 22\r\n  index: -1\r\nImage/ShoeBlast\r\n  rotate: true\r\n  xy: 2, 157\r\n  size: 123, 227\r\n  orig: 124, 232\r\n  offset: 0, 3\r\n  index: -1\r\nImage/glow1\r\n  rotate: false\r\n  xy: 352, 64\r\n  size: 65, 65\r\n  orig: 69, 69\r\n  offset: 2, 2\r\n  index: -1\r\n",
+      [
+        "Ultra_3015_Blast.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "9cS2tueqD7AqDc2dM9JOs8a18ng",
+          "spine": "3.8.99",
+          "x": -49,
+          "y": -49,
+          "width": 98,
+          "height": 98,
+          "images": "",
+          "audio": ""
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "B_Zong",
+            "parent": "root"
+          },
+          {
+            "name": "1",
+            "parent": "B_Zong"
+          },
+          {
+            "name": "2",
+            "parent": "B_Zong"
+          },
+          {
+            "name": "Glow",
+            "parent": "B_Zong"
+          },
+          {
+            "name": "NIke",
+            "parent": "B_Zong"
+          }
+        ],
+        "slots": [
+          {
+            "name": "Image/ShoeBlast",
+            "bone": "NIke"
+          },
+          {
+            "name": "Image/Balst/Blast_36",
+            "bone": "2"
+          },
+          {
+            "name": "Image/Balst/Blast_00036",
+            "bone": "1"
+          },
+          {
+            "name": "Image/glow1",
+            "bone": "Glow",
+            "attachment": "Image/glow1",
+            "blend": "additive"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Image/Balst/Blast_00036": {
+                "Image/Balst/Blast_00036": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00037": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00038": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00039": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00040": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00041": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                }
+              },
+              "Image/Balst/Blast_36": {
+                "Image/Balst/Blast_00036": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00037": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00038": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00039": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00040": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                },
+                "Image/Balst/Blast_00041": {
+                  "y": 0.5,
+                  "width": 344,
+                  "height": 265
+                }
+              },
+              "Image/ShoeBlast": {
+                "Image/ShoeBlast": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 177,
+                  "height": 331
+                }
+              },
+              "Image/glow1": {
+                "Image/glow1": {
+                  "width": 98,
+                  "height": 98
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Ultra": {
+            "slots": {
+              "Image/Balst/Blast_00036": {
+                "color": [
+                  {
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.0333,
+                    "color": "ffe181ff"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "Image/Balst/Blast_00036"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Image/Balst/Blast_00037"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/Balst/Blast_00038"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/Balst/Blast_00039"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/Balst/Blast_00040"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/Balst/Blast_00041"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": null
+                  }
+                ]
+              },
+              "Image/Balst/Blast_36": {
+                "color": [
+                  {
+                    "time": 0.0333,
+                    "color": "fa8300ff"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.0333,
+                    "name": "Image/Balst/Blast_00036"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Image/Balst/Blast_00037"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Image/Balst/Blast_00038"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Image/Balst/Blast_00039"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Image/Balst/Blast_00040"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Image/Balst/Blast_00041"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": null
+                  }
+                ]
+              },
+              "Image/ShoeBlast": {
+                "color": [
+                  {
+                    "time": 0.1,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.3,
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "Image/ShoeBlast"
+                  }
+                ]
+              },
+              "Image/glow1": {
+                "color": [
+                  {
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.0333,
+                    "color": "ffe86393"
+                  },
+                  {
+                    "time": 0.2,
+                    "color": "fb8d2c00"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "2": {
+                "rotate": [
+                  {
+                    "time": 0.0333,
+                    "angle": 43.2
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.0333,
+                    "y": 17.36
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.0333,
+                    "x": -0.712,
+                    "y": 1.093
+                  }
+                ],
+                "shear": [
+                  {
+                    "time": 0.0333,
+                    "y": -24
+                  }
+                ]
+              },
+              "B_Zong": {
+                "translate": [
+                  {
+                    "x": -6.48,
+                    "y": 22.02
+                  }
+                ]
+              },
+              "Glow": {
+                "scale": [
+                  {
+                    "x": 3.027,
+                    "y": 2.105
+                  }
+                ]
+              },
+              "NIke": {
+                "scale": [
+                  {
+                    "x": 0.6,
+                    "y": 0.6,
+                    "curve": 0.096,
+                    "c2": 0.5,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1
+                  },
+                  {
+                    "time": 0.1333,
+                    "x": 0.8,
+                    "y": 0.8
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

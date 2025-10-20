@@ -1,0 +1,69 @@
+
+Enemy19.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Death_Eye
+  rotate: true
+  xy: 227, 299
+  size: 127, 57
+  orig: 128, 59
+  offset: 0, 1
+  index: -1
+Eye
+  rotate: true
+  xy: 406, 269
+  size: 96, 19
+  orig: 96, 19
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: 270
+  xy: 227, 235
+  size: 95, 89
+  orig: 95, 89
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: true
+  xy: 374, 367
+  size: 55, 45
+  orig: 55, 45
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 286, 332
+  size: 86, 89
+  orig: 86, 89
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: true
+  xy: 318, 212
+  size: 55, 45
+  orig: 55, 45
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 367, 239
+  size: 126, 37
+  orig: 126, 37
+  offset: 0, 0
+  index: -1
+Tougue
+  rotate: true
+  xy: 318, 269
+  size: 61, 45
+  orig: 61, 45
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 226
+  size: 223, 200
+  orig: 223, 200
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+Ultra_1004.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Ring/Fork_00000
+  rotate: true
+  xy: 2, 224
+  size: 127, 140
+  orig: 138, 141
+  offset: 6, 0
+  index: -1
+Image/Ring/Fork_00001
+  rotate: false
+  xy: 2, 353
+  size: 136, 133
+  orig: 138, 141
+  offset: 1, 6
+  index: -1
+Image/Ring/Fork_00002
+  rotate: false
+  xy: 2, 107
+  size: 136, 115
+  orig: 138, 141
+  offset: 2, 17
+  index: -1
+Image/Ring/Fork_00003
+  rotate: false
+  xy: 2, 2
+  size: 132, 103
+  orig: 138, 141
+  offset: 5, 24
+  index: -1
+Image/Trail_00000
+  rotate: true
+  xy: 136, 6
+  size: 99, 38
+  orig: 99, 38
+  offset: 0, 0
+  index: -1

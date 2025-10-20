@@ -1,0 +1,1325 @@
+[
+  1,
+  [
+    "b2QqvJfuRNWK/mnAG1Qy7u"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Enemy20",
+      "\r\nEnemy20.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBody\r\n  rotate: false\r\n  xy: 2, 263\r\n  size: 263, 247\r\n  orig: 263, 247\r\n  offset: 0, 0\r\n  index: -1\r\nDeathEyes\r\n  rotate: false\r\n  xy: 439, 216\r\n  size: 71, 36\r\n  orig: 72, 37\r\n  offset: 1, 0\r\n  index: -1\r\nEye\r\n  rotate: false\r\n  xy: 213, 220\r\n  size: 101, 28\r\n  orig: 101, 28\r\n  offset: 0, 0\r\n  index: -1\r\nL_Arm\r\n  rotate: false\r\n  xy: 267, 288\r\n  size: 81, 102\r\n  orig: 81, 102\r\n  offset: 0, 0\r\n  index: -1\r\nL_Hand\r\n  rotate: true\r\n  xy: 267, 392\r\n  size: 118, 93\r\n  orig: 118, 93\r\n  offset: 0, 0\r\n  index: -1\r\nL_Leg\r\n  rotate: true\r\n  xy: 316, 203\r\n  size: 45, 53\r\n  orig: 45, 53\r\n  offset: 0, 0\r\n  index: -1\r\nL_M_Arm\r\n  rotate: true\r\n  xy: 446, 319\r\n  size: 63, 58\r\n  orig: 63, 58\r\n  offset: 0, 0\r\n  index: -1\r\nLine\r\n  rotate: false\r\n  xy: 2, 230\r\n  size: 145, 31\r\n  orig: 145, 31\r\n  offset: 0, 0\r\n  index: -1\r\nMouth\r\n  rotate: false\r\n  xy: 350, 296\r\n  size: 48, 14\r\n  orig: 48, 14\r\n  offset: 0, 0\r\n  index: -1\r\nPidai\r\n  rotate: 180\r\n  xy: 267, 250\r\n  size: 221, 58\r\n  orig: 221, 58\r\n  offset: 0, 0\r\n  index: -1\r\nR_Arm\r\n  rotate: false\r\n  xy: 362, 312\r\n  size: 82, 102\r\n  orig: 82, 102\r\n  offset: 0, 0\r\n  index: -1\r\nR_Hand\r\n  rotate: true\r\n  xy: 362, 416\r\n  size: 94, 93\r\n  orig: 94, 93\r\n  offset: 0, 0\r\n  index: -1\r\nR_Leg\r\n  rotate: true\r\n  xy: 371, 203\r\n  size: 45, 53\r\n  orig: 45, 53\r\n  offset: 0, 0\r\n  index: -1\r\nR_M_Arm\r\n  rotate: false\r\n  xy: 149, 203\r\n  size: 62, 58\r\n  orig: 62, 58\r\n  offset: 0, 0\r\n  index: -1\r\nShadow\r\n  rotate: true\r\n  xy: 457, 384\r\n  size: 126, 37\r\n  orig: 126, 37\r\n  offset: 0, 0\r\n  index: -1\r\n",
+      [
+        "Enemy20.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "UloPZ/mVFQwCgdcSBjuAVv/Id3E",
+          "spine": "3.8.99",
+          "x": -210.82,
+          "y": -20.44,
+          "width": 432.65,
+          "height": 242.03,
+          "images": "./images/",
+          "audio": "E:/BIGBIG/键盘侠/敌人总/敌人20_粉红皮带蟹/images"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "Zong",
+            "parent": "root",
+            "x": 2.52,
+            "scaleX": -0.85,
+            "scaleY": 0.85
+          },
+          {
+            "name": "Zong2",
+            "parent": "Zong",
+            "length": 95.42,
+            "rotation": 100.82,
+            "x": -5.71,
+            "y": 23.93
+          },
+          {
+            "name": "Zong3",
+            "parent": "Zong2",
+            "length": 106.94,
+            "rotation": -10.26,
+            "x": 109.64,
+            "y": -3.99
+          },
+          {
+            "name": "Zong4",
+            "parent": "Zong3",
+            "x": 76.67,
+            "y": -3.11
+          },
+          {
+            "name": "Zong5",
+            "parent": "Zong3",
+            "x": 60.72,
+            "y": -4.38
+          },
+          {
+            "name": "Zong6",
+            "parent": "Zong3",
+            "x": 78.49,
+            "y": -0.51
+          },
+          {
+            "name": "Zong7",
+            "parent": "Zong3",
+            "length": 42.67,
+            "rotation": 115.08,
+            "x": 3.78,
+            "y": 59.82
+          },
+          {
+            "name": "Zong8",
+            "parent": "Zong7",
+            "length": 25.84,
+            "rotation": 30.91,
+            "x": 51.34,
+            "y": 0.97
+          },
+          {
+            "name": "Zong9",
+            "parent": "Zong8",
+            "length": 91.7,
+            "rotation": -58.71,
+            "x": 37.83,
+            "y": 7
+          },
+          {
+            "name": "Zong10",
+            "parent": "Zong3",
+            "length": 46.43,
+            "rotation": -136.63,
+            "x": 12.01,
+            "y": -125.4
+          },
+          {
+            "name": "Zong11",
+            "parent": "Zong10",
+            "length": 30.19,
+            "rotation": 8.33,
+            "x": 48.42,
+            "y": 2.54
+          },
+          {
+            "name": "Zong12",
+            "parent": "Zong11",
+            "length": 69.57,
+            "rotation": 32.67,
+            "x": 37.69,
+            "y": -12.21
+          },
+          {
+            "name": "Zong13",
+            "parent": "Zong",
+            "length": 39.69,
+            "rotation": -70.35,
+            "x": 60.95,
+            "y": 42.41
+          },
+          {
+            "name": "Zong14",
+            "parent": "Zong",
+            "length": 41.11,
+            "rotation": -110.59,
+            "x": -58.01,
+            "y": 42.8
+          },
+          {
+            "name": "Zong15",
+            "parent": "Zong2",
+            "x": 46.46,
+            "y": -9.36
+          },
+          {
+            "name": "Zong16",
+            "parent": "Zong15",
+            "x": 7.11,
+            "y": 16.45
+          },
+          {
+            "name": "Shadow",
+            "parent": "root",
+            "scaleX": 1.5367,
+            "scaleY": 1.1128
+          }
+        ],
+        "slots": [
+          {
+            "name": "Shadow",
+            "bone": "Shadow",
+            "attachment": "Shadow"
+          },
+          {
+            "name": "L_Arm",
+            "bone": "Zong7",
+            "attachment": "L_Arm"
+          },
+          {
+            "name": "L_M_Arm",
+            "bone": "Zong8",
+            "attachment": "L_M_Arm"
+          },
+          {
+            "name": "L_Hand",
+            "bone": "Zong9",
+            "attachment": "L_Hand"
+          },
+          {
+            "name": "L_Leg",
+            "bone": "Zong14",
+            "attachment": "L_Leg"
+          },
+          {
+            "name": "R_Leg",
+            "bone": "Zong13",
+            "attachment": "R_Leg"
+          },
+          {
+            "name": "Body",
+            "bone": "Zong2",
+            "attachment": "Body"
+          },
+          {
+            "name": "Pidai",
+            "bone": "Zong15",
+            "attachment": "Pidai"
+          },
+          {
+            "name": "Mouth",
+            "bone": "Zong5",
+            "attachment": "Mouth"
+          },
+          {
+            "name": "Eye",
+            "bone": "Zong4",
+            "attachment": "Eye"
+          },
+          {
+            "name": "Line",
+            "bone": "Zong6",
+            "attachment": "Line"
+          },
+          {
+            "name": "R_Arm",
+            "bone": "Zong10",
+            "attachment": "R_Arm"
+          },
+          {
+            "name": "R_M_Arm",
+            "bone": "Zong11",
+            "attachment": "R_M_Arm"
+          },
+          {
+            "name": "R_Hand",
+            "bone": "Zong12",
+            "attachment": "R_Hand"
+          },
+          {
+            "name": "Zong4",
+            "bone": "Zong4"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Body": {
+                "Body": {
+                  "type": "mesh",
+                  "hull": 6,
+                  "width": 263,
+                  "height": 247,
+                  "uvs": [
+                    1,
+                    0.54621,
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0.56917,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "triangles": [
+                    4,
+                    5,
+                    0,
+                    3,
+                    4,
+                    0,
+                    1,
+                    2,
+                    3,
+                    1,
+                    3,
+                    0
+                  ],
+                  "vertices": [
+                    2,
+                    2,
+                    73.26,
+                    -159.28,
+                    0.46042,
+                    3,
+                    -8.13,
+                    -159.28,
+                    0.53958,
+                    2,
+                    2,
+                    -36.83,
+                    -138.24,
+                    0.86261,
+                    3,
+                    -120.21,
+                    -158.19,
+                    0.13739,
+                    1,
+                    2,
+                    12.53,
+                    120.09,
+                    1,
+                    2,
+                    2,
+                    117.05,
+                    100.11,
+                    0.78778,
+                    3,
+                    -11.25,
+                    103.76,
+                    0.21222,
+                    2,
+                    2,
+                    255.14,
+                    73.73,
+                    0.07801,
+                    3,
+                    129.32,
+                    102.4,
+                    0.92199,
+                    2,
+                    2,
+                    205.78,
+                    -184.6,
+                    0.02495,
+                    3,
+                    126.78,
+                    -160.58,
+                    0.97505
+                  ],
+                  "edges": [
+                    2,
+                    4,
+                    8,
+                    10,
+                    2,
+                    0,
+                    0,
+                    10,
+                    4,
+                    6,
+                    6,
+                    8
+                  ]
+                }
+              },
+              "Eye": {
+                "Eye": {
+                  "x": 1.6,
+                  "y": -2.5,
+                  "rotation": -90.55,
+                  "width": 101,
+                  "height": 28
+                }
+              },
+              "L_Arm": {
+                "L_Arm": {
+                  "x": 31.37,
+                  "y": -18.52,
+                  "rotation": 154.37,
+                  "width": 81,
+                  "height": 102
+                }
+              },
+              "L_Hand": {
+                "L_Hand": {
+                  "x": 55.88,
+                  "y": 1.98,
+                  "rotation": -177.83,
+                  "width": 118,
+                  "height": 93
+                }
+              },
+              "L_Leg": {
+                "L_Leg": {
+                  "x": 20.43,
+                  "y": -0.91,
+                  "rotation": 112,
+                  "width": 45,
+                  "height": 53
+                }
+              },
+              "L_M_Arm": {
+                "L_M_Arm": {
+                  "x": 21.41,
+                  "y": -1.95,
+                  "rotation": 123.45,
+                  "width": 63,
+                  "height": 58
+                }
+              },
+              "Line": {
+                "Line": {
+                  "x": 11.2,
+                  "y": -14.21,
+                  "rotation": -90.55,
+                  "width": 145,
+                  "height": 31
+                }
+              },
+              "Mouth": {
+                "Mouth": {
+                  "x": -3.42,
+                  "y": 0.48,
+                  "rotation": -90.55,
+                  "width": 48,
+                  "height": 14
+                }
+              },
+              "Pidai": {
+                "Pidai": {
+                  "type": "mesh",
+                  "hull": 9,
+                  "width": 221,
+                  "height": 58,
+                  "uvs": [
+                    0.31857,
+                    0.34758,
+                    0.5341,
+                    0.48182,
+                    0.74548,
+                    0.48972,
+                    1,
+                    0.37127,
+                    1,
+                    1,
+                    0.2709,
+                    1,
+                    0,
+                    0.51341,
+                    0,
+                    0,
+                    0.11755,
+                    0
+                  ],
+                  "triangles": [
+                    5,
+                    0,
+                    1,
+                    5,
+                    8,
+                    0,
+                    6,
+                    8,
+                    5,
+                    2,
+                    4,
+                    5,
+                    2,
+                    3,
+                    4,
+                    5,
+                    1,
+                    2,
+                    6,
+                    7,
+                    8
+                  ],
+                  "vertices": [
+                    2,
+                    16,
+                    26.64,
+                    15.15,
+                    0.424,
+                    15,
+                    33.75,
+                    31.6,
+                    0.576,
+                    2,
+                    16,
+                    10.05,
+                    -30.18,
+                    0.408,
+                    15,
+                    17.16,
+                    -13.73,
+                    0.592,
+                    2,
+                    16,
+                    0.83,
+                    -75.98,
+                    0.224,
+                    15,
+                    7.95,
+                    -59.53,
+                    0.776,
+                    2,
+                    16,
+                    -2.98,
+                    -132.51,
+                    0.136,
+                    15,
+                    4.14,
+                    -116.07,
+                    0.864,
+                    1,
+                    15,
+                    -31.68,
+                    -109.22,
+                    1,
+                    2,
+                    16,
+                    -8.55,
+                    32.6,
+                    0.272,
+                    15,
+                    -1.44,
+                    49.05,
+                    0.728,
+                    2,
+                    16,
+                    30.4,
+                    86.11,
+                    0.2,
+                    15,
+                    37.52,
+                    102.55,
+                    0.8,
+                    2,
+                    16,
+                    59.65,
+                    80.52,
+                    0.096,
+                    15,
+                    66.77,
+                    96.97,
+                    0.904,
+                    2,
+                    16,
+                    54.78,
+                    55,
+                    0.2,
+                    15,
+                    61.89,
+                    71.45,
+                    0.8
+                  ],
+                  "edges": [
+                    14,
+                    16,
+                    16,
+                    0,
+                    0,
+                    2,
+                    2,
+                    4,
+                    8,
+                    6,
+                    4,
+                    6,
+                    12,
+                    14,
+                    8,
+                    10,
+                    12,
+                    10
+                  ]
+                }
+              },
+              "R_Arm": {
+                "R_Arm": {
+                  "x": 27.91,
+                  "y": 19.03,
+                  "rotation": 46.08,
+                  "width": 82,
+                  "height": 102
+                }
+              },
+              "R_Hand": {
+                "R_Hand": {
+                  "x": 43.55,
+                  "y": -0.71,
+                  "rotation": 5.08,
+                  "width": 94,
+                  "height": 93
+                }
+              },
+              "R_Leg": {
+                "R_Leg": {
+                  "x": 20.9,
+                  "y": 5.31,
+                  "rotation": 71.92,
+                  "width": 45,
+                  "height": 53
+                }
+              },
+              "R_M_Arm": {
+                "R_M_Arm": {
+                  "x": 26.61,
+                  "y": -0.63,
+                  "rotation": 37.75,
+                  "width": 62,
+                  "height": 58
+                }
+              },
+              "Shadow": {
+                "Shadow": {
+                  "y": 0.5,
+                  "scaleX": 1.0199,
+                  "scaleY": 1.0199,
+                  "width": 126,
+                  "height": 37
+                }
+              },
+              "Zong4": {
+                "DeathEyes": {
+                  "x": 6.74,
+                  "y": -2.5,
+                  "scaleY": -0.8792,
+                  "rotation": 89.45,
+                  "width": 72,
+                  "height": 37
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "Atk": {
+            "bones": {
+              "Zong2": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.4667,
+                    "angle": -2.51
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": 3.41
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": 6.53
+                  },
+                  {
+                    "time": 0.6333
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.4667
+                  },
+                  {
+                    "time": 0.6,
+                    "x": 0.75,
+                    "y": -8.26
+                  },
+                  {
+                    "time": 0.6333
+                  }
+                ]
+              },
+              "Zong3": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.4667,
+                    "angle": -11.55
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": 16.79,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": 16.79
+                  },
+                  {
+                    "time": 0.6333
+                  }
+                ],
+                "translate": [
+                  {},
+                  {
+                    "time": 0.4667,
+                    "x": 9.93,
+                    "y": -3.4
+                  },
+                  {
+                    "time": 0.5,
+                    "x": -13.44,
+                    "y": -8.96,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.6,
+                    "x": -13.44,
+                    "y": -8.96
+                  },
+                  {
+                    "time": 0.6333
+                  }
+                ]
+              },
+              "Zong7": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.4667,
+                    "angle": -118.92
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": -24.35
+                  },
+                  {
+                    "time": 0.6333,
+                    "angle": 20.22
+                  }
+                ]
+              },
+              "Zong9": {
+                "scale": [
+                  {
+                    "time": 0.4667
+                  },
+                  {
+                    "time": 0.5,
+                    "x": 1.24
+                  },
+                  {
+                    "time": 0.5333
+                  }
+                ]
+              },
+              "Zong10": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.4667,
+                    "angle": -11.54
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": -0.59
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": -20.03
+                  }
+                ]
+              },
+              "Zong11": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.4667,
+                    "angle": 31.57
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": 45.55
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": 57.15
+                  }
+                ]
+              },
+              "Zong12": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.4667,
+                    "angle": 8.36
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": -21.16
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": -25.81
+                  }
+                ]
+              }
+            }
+          },
+          "Death": {
+            "slots": {
+              "Zong4": {
+                "attachment": [
+                  {
+                    "name": "DeathEyes"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "Zong2": {
+                "translate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "x": 3.11,
+                    "y": -16.26
+                  }
+                ]
+              },
+              "Zong3": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "angle": 11.5
+                  }
+                ],
+                "translate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "x": -48.87,
+                    "y": 3.54
+                  }
+                ]
+              },
+              "Zong7": {
+                "translate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "x": -0.27,
+                    "y": -1.76
+                  }
+                ]
+              },
+              "Zong8": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "angle": -5.63
+                  }
+                ]
+              },
+              "Zong9": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "angle": -5.29
+                  }
+                ]
+              },
+              "Zong10": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.2333,
+                    "angle": -21.55
+                  }
+                ],
+                "translate": [
+                  {},
+                  {
+                    "time": 0.2333,
+                    "x": 2.13,
+                    "y": 5.06
+                  }
+                ]
+              },
+              "Zong11": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.2333,
+                    "angle": 10.97
+                  }
+                ]
+              },
+              "Zong12": {
+                "rotate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "angle": 8.6
+                  }
+                ]
+              },
+              "Zong16": {
+                "translate": [
+                  {},
+                  {
+                    "time": 0.3,
+                    "x": -13.16,
+                    "y": 2.51
+                  }
+                ]
+              }
+            }
+          },
+          "Idle": {
+            "bones": {
+              "Zong10": {
+                "rotate": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.0667,
+                    "angle": -2.48,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 2.1333
+                  }
+                ]
+              },
+              "Zong3": {
+                "rotate": [
+                  {
+                    "angle": 6.57,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.0667,
+                    "angle": -4.54,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 2.1333,
+                    "angle": 6.57
+                  }
+                ],
+                "translate": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.625,
+                    "c4": 0.5
+                  },
+                  {
+                    "time": 1.0667,
+                    "x": 11.43,
+                    "y": -3.02,
+                    "curve": 0.375,
+                    "c2": 0.5,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 2.1333
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.98,
+                    "y": 0.98,
+                    "curve": 0.25,
+                    "c3": 0.625,
+                    "c4": 0.5
+                  },
+                  {
+                    "time": 1.0667,
+                    "x": 1.02,
+                    "y": 1.02,
+                    "curve": 0.375,
+                    "c2": 0.5,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 2.1333,
+                    "x": 0.98,
+                    "y": 0.98
+                  }
+                ]
+              },
+              "Zong7": {
+                "rotate": [
+                  {
+                    "angle": -2.18
+                  },
+                  {
+                    "time": 0.3333
+                  },
+                  {
+                    "time": 1.4,
+                    "angle": -6.97
+                  },
+                  {
+                    "time": 2.1333,
+                    "angle": -2.18
+                  }
+                ]
+              },
+              "Zong8": {
+                "rotate": [
+                  {
+                    "angle": -9.83
+                  },
+                  {
+                    "time": 0.5
+                  },
+                  {
+                    "time": 1.5667,
+                    "angle": -20.98
+                  },
+                  {
+                    "time": 2.1333,
+                    "angle": -9.83
+                  }
+                ]
+              },
+              "Zong9": {
+                "rotate": [
+                  {
+                    "angle": -9.12
+                  },
+                  {
+                    "time": 0.6667
+                  },
+                  {
+                    "time": 1.7333,
+                    "angle": -14.59
+                  },
+                  {
+                    "time": 2.1333,
+                    "angle": -9.12
+                  }
+                ]
+              },
+              "Zong16": {
+                "translate": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.1,
+                    "x": -9.15,
+                    "y": 6.99,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 2.1333
+                  }
+                ]
+              },
+              "Zong11": {
+                "rotate": [
+                  {
+                    "angle": 35.16,
+                    "curve": 0.37,
+                    "c2": 0.63,
+                    "c3": 0.708
+                  },
+                  {
+                    "time": 0.1667,
+                    "angle": 34.36,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.2333,
+                    "angle": 43.42,
+                    "curve": 0.243,
+                    "c3": 0.692,
+                    "c4": 0.76
+                  },
+                  {
+                    "time": 2.1333,
+                    "angle": 35.16
+                  }
+                ]
+              },
+              "Zong12": {
+                "rotate": [
+                  {
+                    "angle": 2.32,
+                    "curve": 0.382,
+                    "c2": 0.58,
+                    "c3": 0.733
+                  },
+                  {
+                    "time": 0.3333,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1.4,
+                    "angle": 9.02,
+                    "curve": 0.243,
+                    "c3": 0.653,
+                    "c4": 0.62
+                  },
+                  {
+                    "time": 2.1333,
+                    "angle": 2.32
+                  }
+                ]
+              }
+            }
+          },
+          "Run": {
+            "bones": {
+              "Zong14": {
+                "rotate": [
+                  {
+                    "angle": -4.71,
+                    "curve": 0.375,
+                    "c2": 0.5,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1667,
+                    "angle": -68.55,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": 59.12,
+                    "curve": 0.25,
+                    "c3": 0.625,
+                    "c4": 0.5
+                  },
+                  {
+                    "time": 0.6667,
+                    "angle": -4.71
+                  }
+                ]
+              },
+              "Zong13": {
+                "rotate": [
+                  {
+                    "angle": 44.2,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3333,
+                    "angle": -67.02,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6667,
+                    "angle": 44.2
+                  }
+                ]
+              },
+              "Zong3": {
+                "rotate": [
+                  {
+                    "angle": -2.42,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3333,
+                    "angle": 6.92,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6667,
+                    "angle": -2.42
+                  }
+                ]
+              },
+              "Zong16": {
+                "translate": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3333,
+                    "x": -21.68,
+                    "y": 9.66,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6667
+                  }
+                ]
+              },
+              "Zong10": {
+                "rotate": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3333,
+                    "angle": 3.8,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6667
+                  }
+                ]
+              },
+              "Zong11": {
+                "rotate": [
+                  {
+                    "angle": 2.93
+                  },
+                  {
+                    "time": 0.0667
+                  },
+                  {
+                    "time": 0.4,
+                    "angle": 14.63
+                  },
+                  {
+                    "time": 0.6667,
+                    "angle": 2.93
+                  }
+                ]
+              },
+              "Zong12": {
+                "rotate": [
+                  {
+                    "angle": 2.74
+                  },
+                  {
+                    "time": 0.1333
+                  },
+                  {
+                    "time": 0.4667,
+                    "angle": 6.85
+                  },
+                  {
+                    "time": 0.6667,
+                    "angle": 2.74
+                  }
+                ]
+              },
+              "Zong9": {
+                "rotate": [
+                  {
+                    "angle": -7.05
+                  },
+                  {
+                    "time": 0.2667
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": -8.82
+                  },
+                  {
+                    "time": 0.6667,
+                    "angle": -7.05
+                  }
+                ]
+              },
+              "Zong8": {
+                "rotate": [
+                  {
+                    "angle": -9.9
+                  },
+                  {
+                    "time": 0.2
+                  },
+                  {
+                    "time": 0.5333,
+                    "angle": -16.5
+                  },
+                  {
+                    "time": 0.6667,
+                    "angle": -9.9
+                  }
+                ]
+              },
+              "Zong7": {
+                "rotate": [
+                  {
+                    "angle": -4.26
+                  },
+                  {
+                    "time": 0.1333
+                  },
+                  {
+                    "time": 0.4667,
+                    "angle": -10.66
+                  },
+                  {
+                    "time": 0.6667,
+                    "angle": -4.26
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

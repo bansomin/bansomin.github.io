@@ -1,0 +1,83 @@
+
+Enemy17.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Back
+  rotate: false
+  xy: 249, 229
+  size: 155, 95
+  orig: 155, 95
+  offset: 0, 0
+  index: -1
+Hair
+  rotate: false
+  xy: 356, 392
+  size: 103, 106
+  orig: 103, 106
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 123, 307
+  size: 191, 124
+  orig: 191, 125
+  offset: 0, 1
+  index: -1
+Head_Down
+  rotate: true
+  xy: 249, 326
+  size: 172, 105
+  orig: 172, 105
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: false
+  xy: 406, 269
+  size: 78, 56
+  orig: 78, 56
+  offset: 0, 0
+  index: -1
+L_Leg
+  rotate: true
+  xy: 406, 214
+  size: 53, 74
+  orig: 53, 74
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 181, 227
+  size: 58, 78
+  orig: 58, 78
+  offset: 0, 0
+  index: -1
+R_Leg
+  rotate: false
+  xy: 123, 230
+  size: 56, 75
+  orig: 56, 75
+  offset: 0, 0
+  index: -1
+R_Ring
+  rotate: true
+  xy: 356, 327
+  size: 63, 78
+  orig: 63, 78
+  offset: 0, 0
+  index: -1
+R_Weapon
+  rotate: false
+  xy: 2, 218
+  size: 119, 280
+  orig: 119, 280
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 461, 372
+  size: 126, 37
+  orig: 126, 37
+  offset: 0, 0
+  index: -1

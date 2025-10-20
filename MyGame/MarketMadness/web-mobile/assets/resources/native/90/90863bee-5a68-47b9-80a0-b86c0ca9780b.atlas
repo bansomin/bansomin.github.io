@@ -1,0 +1,62 @@
+
+Ultra_1015_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Blast/Pem_00000
+  rotate: false
+  xy: 2, 156
+  size: 198, 164
+  orig: 246, 220
+  offset: 0, 0
+  index: -1
+Image/Blast/Pem_00001
+  rotate: false
+  xy: 2, 12
+  size: 198, 142
+  orig: 246, 220
+  offset: 11, 34
+  index: -1
+Image/Blast/Pem_00002
+  rotate: false
+  xy: 2, 322
+  size: 199, 184
+  orig: 246, 220
+  offset: 35, 36
+  index: -1
+Image/Blast/Pem_00003
+  rotate: true
+  xy: 202, 137
+  size: 183, 144
+  orig: 246, 220
+  offset: 56, 44
+  index: -1
+Image/Blast/Pem_00004
+  rotate: false
+  xy: 203, 361
+  size: 134, 145
+  orig: 246, 220
+  offset: 108, 51
+  index: -1
+Image/Blast/Pem_00005
+  rotate: true
+  xy: 202, 2
+  size: 133, 140
+  orig: 246, 220
+  offset: 113, 59
+  index: -1
+Image/Blast/Pem_00006
+  rotate: false
+  xy: 339, 369
+  size: 98, 137
+  orig: 246, 220
+  offset: 148, 64
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 344, 61
+  size: 74, 74
+  orig: 78, 78
+  offset: 2, 2
+  index: -1

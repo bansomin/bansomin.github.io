@@ -1,0 +1,76 @@
+
+Ultra_1006.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Big/big_00000
+  rotate: false
+  xy: 260, 148
+  size: 32, 33
+  orig: 126, 150
+  offset: 45, 58
+  index: -1
+Image/Big/big_00001
+  rotate: false
+  xy: 260, 183
+  size: 72, 73
+  orig: 126, 150
+  offset: 25, 38
+  index: -1
+Image/Big/big_00002
+  rotate: false
+  xy: 166, 294
+  size: 90, 91
+  orig: 126, 150
+  offset: 16, 29
+  index: -1
+Image/Big/big_00003
+  rotate: false
+  xy: 166, 387
+  size: 103, 120
+  orig: 126, 150
+  offset: 10, 12
+  index: -1
+Image/Big/big_00004
+  rotate: false
+  xy: 145, 2
+  size: 113, 126
+  orig: 126, 150
+  offset: 6, 10
+  index: -1
+Image/Big/big_00005
+  rotate: true
+  xy: 2, 151
+  size: 120, 140
+  orig: 126, 150
+  offset: 3, 3
+  index: -1
+Image/Big/big_00006
+  rotate: true
+  xy: 2, 31
+  size: 118, 141
+  orig: 126, 150
+  offset: 3, 5
+  index: -1
+Image/Big/big_00007
+  rotate: false
+  xy: 145, 130
+  size: 113, 141
+  orig: 126, 150
+  offset: 5, 5
+  index: -1
+Image/Big/big_00008
+  rotate: false
+  xy: 260, 258
+  size: 64, 127
+  orig: 126, 150
+  offset: 51, 6
+  index: -1
+Image/Weapon_18
+  rotate: false
+  xy: 2, 273
+  size: 162, 234
+  orig: 162, 234
+  offset: 0, 0
+  index: -1

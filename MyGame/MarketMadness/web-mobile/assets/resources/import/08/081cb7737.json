@@ -1,0 +1,137 @@
+[
+  1,
+  [
+    "daWQs0PdpB1ZxIBckS15AN",
+    "d4tTzXGl9J+6ZMA1jHiwGJ",
+    "1e+cYze/VKsYgBO2Ja1eVp"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "company_bg_skybg",
+          "rect": [
+            0,
+            0,
+            1080,
+            2340
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            1080,
+            2340
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "company_img_cloudup",
+          "rect": [
+            0,
+            0,
+            1080,
+            463
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            1080,
+            463
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "company_img_clouddown",
+          "rect": [
+            0,
+            0,
+            1080,
+            524
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            1080,
+            524
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ]
+  ]
+]

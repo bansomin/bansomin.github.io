@@ -1,0 +1,20 @@
+
+Ultra_3016_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Lie_00000
+  rotate: false
+  xy: 2, 291
+  size: 243, 48
+  orig: 243, 48
+  offset: 0, 0
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 247, 247
+  size: 92, 92
+  orig: 98, 98
+  offset: 3, 3
+  index: -1

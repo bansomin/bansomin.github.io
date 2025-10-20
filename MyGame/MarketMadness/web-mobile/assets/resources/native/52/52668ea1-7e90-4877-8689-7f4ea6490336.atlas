@@ -1,0 +1,27 @@
+
+Ultra_3017.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SSS_00000
+  rotate: false
+  xy: 123, 145
+  size: 126, 200
+  orig: 145, 230
+  offset: 9, 15
+  index: -1
+SSword
+  rotate: false
+  xy: 2, 65
+  size: 119, 280
+  orig: 119, 280
+  offset: 0, 0
+  index: -1
+UUp_00000
+  rotate: true
+  xy: 251, 116
+  size: 229, 94
+  orig: 232, 110
+  offset: 3, 16
+  index: -1

@@ -1,0 +1,55 @@
+
+Ultra_3002.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Hamberger
+  rotate: false
+  xy: 2, 337
+  size: 136, 125
+  orig: 136, 125
+  offset: 0, 0
+  index: -1
+Image/Smoke/1
+  rotate: false
+  xy: 2, 203
+  size: 183, 66
+  orig: 191, 94
+  offset: 6, 2
+  index: -1
+Image/Smoke/2
+  rotate: false
+  xy: 291, 215
+  size: 171, 71
+  orig: 191, 94
+  offset: 13, 1
+  index: -1
+Image/Smoke/3
+  rotate: true
+  xy: 291, 289
+  size: 173, 78
+  orig: 191, 94
+  offset: 14, 0
+  index: -1
+Image/Smoke/4
+  rotate: true
+  xy: 371, 288
+  size: 174, 73
+  orig: 191, 94
+  offset: 10, 0
+  index: -1
+Image/Smoke/5
+  rotate: true
+  xy: 216, 276
+  size: 186, 73
+  orig: 191, 94
+  offset: 1, 0
+  index: -1
+Image/Smoke/6
+  rotate: true
+  xy: 140, 271
+  size: 191, 74
+  orig: 191, 94
+  offset: 0, 1
+  index: -1

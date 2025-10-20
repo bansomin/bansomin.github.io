@@ -1,0 +1,76 @@
+
+Ultra_2006_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Blast/Blast_00000
+  rotate: false
+  xy: 301, 72
+  size: 95, 115
+  orig: 159, 162
+  offset: 35, 24
+  index: -1
+Image/Blast/Blast_00001
+  rotate: false
+  xy: 301, 355
+  size: 130, 127
+  orig: 159, 162
+  offset: 18, 17
+  index: -1
+Image/Blast/Blast_00002
+  rotate: false
+  xy: 154, 333
+  size: 145, 149
+  orig: 159, 162
+  offset: 9, 5
+  index: -1
+Image/Blast/Blast_00003
+  rotate: false
+  xy: 2, 168
+  size: 150, 154
+  orig: 159, 162
+  offset: 6, 4
+  index: -1
+Image/Blast/Blast_00004
+  rotate: false
+  xy: 2, 324
+  size: 150, 158
+  orig: 159, 162
+  offset: 3, 0
+  index: -1
+Image/Blast/Blast_00005
+  rotate: true
+  xy: 2, 18
+  size: 148, 150
+  orig: 159, 162
+  offset: 7, 8
+  index: -1
+Image/Blast/Blast_00006
+  rotate: true
+  xy: 154, 184
+  size: 147, 144
+  orig: 159, 162
+  offset: 7, 11
+  index: -1
+Image/Blast/Blast_00007
+  rotate: false
+  xy: 154, 40
+  size: 145, 142
+  orig: 159, 162
+  offset: 6, 13
+  index: -1
+Image/Blast/Blast_00008
+  rotate: true
+  xy: 300, 189
+  size: 142, 138
+  orig: 159, 162
+  offset: 12, 18
+  index: -1
+Image/Blast/Blast_00009
+  rotate: false
+  xy: 301, 2
+  size: 112, 68
+  orig: 159, 162
+  offset: 35, 92
+  index: -1

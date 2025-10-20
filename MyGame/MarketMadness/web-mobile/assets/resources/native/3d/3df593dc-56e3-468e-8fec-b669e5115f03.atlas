@@ -1,0 +1,153 @@
+
+Ultra_1005.png
+size: 501,389
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Ball_00000
+  rotate: false
+  xy: 397, 260
+  size: 102, 103
+  orig: 102, 103
+  offset: 0, 0
+  index: -1
+Image/Elc/Electric_00000
+  rotate: false
+  xy: 394, 76
+  size: 75, 72
+  orig: 160, 150
+  offset: 40, 21
+  index: -1
+Image/Elc/Electric_00001
+  rotate: true
+  xy: 404, 151
+  size: 107, 90
+  orig: 160, 150
+  offset: 18, 9
+  index: -1
+Image/Elc/Electric_00002
+  rotate: true
+  xy: 144, 243
+  size: 144, 126
+  orig: 160, 150
+  offset: 0, 2
+  index: -1
+Image/Elc/Electric_00003
+  rotate: false
+  xy: 2, 241
+  size: 140, 146
+  orig: 160, 150
+  offset: 14, 0
+  index: -1
+Image/Elc/Electric_00004
+  rotate: true
+  xy: 272, 260
+  size: 127, 123
+  orig: 160, 150
+  offset: 12, 9
+  index: -1
+Image/Elc/Electric_00005
+  rotate: false
+  xy: 272, 150
+  size: 130, 108
+  orig: 160, 150
+  offset: 30, 28
+  index: -1
+Image/Elc/Electric_00006
+  rotate: true
+  xy: 2, 76
+  size: 82, 110
+  orig: 160, 150
+  offset: 37, 40
+  index: -1
+Image/Pen/Pen_00000
+  rotate: false
+  xy: 214, 187
+  size: 52, 54
+  orig: 153, 80
+  offset: 5, 8
+  index: -1
+Image/Pen/Pen_00001
+  rotate: false
+  xy: 208, 7
+  size: 77, 69
+  orig: 153, 80
+  offset: 4, 2
+  index: -1
+Image/Pen/Pen_00002
+  rotate: false
+  xy: 208, 78
+  size: 97, 70
+  orig: 153, 80
+  offset: 0, 1
+  index: -1
+Image/Pen/Pen_00003
+  rotate: true
+  xy: 287, 10
+  size: 63, 73
+  orig: 153, 80
+  offset: 48, 1
+  index: -1
+Image/Pen/Pen_00004
+  rotate: false
+  xy: 2, 2
+  size: 73, 72
+  orig: 153, 80
+  offset: 62, 4
+  index: -1
+Image/Pen/Pen_00005
+  rotate: false
+  xy: 307, 75
+  size: 85, 73
+  orig: 153, 80
+  offset: 68, 7
+  index: -1
+Image/Razer_00000
+  rotate: false
+  xy: 2, 160
+  size: 210, 79
+  orig: 210, 79
+  offset: 0, 0
+  index: -1
+Image/RedLine_00003
+  rotate: false
+  xy: 214, 166
+  size: 46, 19
+  orig: 46, 20
+  offset: 0, 1
+  index: -1
+Image/Ring/Ring_00000
+  rotate: false
+  xy: 77, 15
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+Image/Ring/Ring_00001
+  rotate: false
+  xy: 127, 15
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+Image/Ring/Ring_00002
+  rotate: false
+  xy: 362, 24
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+Image/Ring/Ring_00003
+  rotate: false
+  xy: 412, 25
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 114, 66
+  size: 92, 92
+  orig: 98, 98
+  offset: 3, 3
+  index: -1

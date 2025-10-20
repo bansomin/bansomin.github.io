@@ -1,0 +1,260 @@
+[
+  1,
+  [
+    "bcrpW/PtJBQZofpmfjbmXB",
+    "fcJRmq0thBTLbMtPc+T0Eq",
+    "d8pcss5clKzqS39uXSmsXx",
+    "a7amOQk6lFKqFptIRcauAz",
+    "80CuCLoIxMRJTieUnA99Ah",
+    "da9Y+EvjtH14nj+/nuSojR"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "battle_bg_itemdes3",
+          "rect": [
+            0,
+            0,
+            582,
+            333
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            582,
+            333
+          ],
+          "capInsets": [
+            75,
+            180,
+            75,
+            120
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bg_itemdes5",
+          "rect": [
+            0,
+            0,
+            582,
+            333
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            582,
+            333
+          ],
+          "capInsets": [
+            75,
+            180,
+            75,
+            120
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bg_itemdes2",
+          "rect": [
+            0,
+            0,
+            582,
+            333
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            582,
+            333
+          ],
+          "capInsets": [
+            75,
+            180,
+            75,
+            120
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bg_itemdesdes",
+          "rect": [
+            0,
+            0,
+            540,
+            90
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            540,
+            90
+          ],
+          "capInsets": [
+            25,
+            25,
+            25,
+            25
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bg_itemdes1",
+          "rect": [
+            0,
+            0,
+            582,
+            333
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            582,
+            333
+          ],
+          "capInsets": [
+            75,
+            180,
+            75,
+            120
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bg_itemdes4",
+          "rect": [
+            0,
+            0,
+            582,
+            333
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            582,
+            333
+          ],
+          "capInsets": [
+            75,
+            180,
+            75,
+            120
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        5
+      ]
+    ]
+  ]
+]

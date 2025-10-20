@@ -1,0 +1,2508 @@
+[
+  1,
+  [
+    "ecpdLyjvZBwrvm+cedCcQy",
+    "d0b8yR2vdPc5xvhAVPSM9c",
+    "05v70I0dJLGIHeKHIXrCIU",
+    "a8VMCvXA1OIahZhGvEKWwz",
+    "ad6BIWRpdFcLm/7xGvFAnp",
+    "e2LlW0pIRJcqx68joKyPAv",
+    "50SPMnHPZFNK626t52VrlS",
+    "7a/QZLET9IDreTiBfRn2PD",
+    "baF7AXsURAkbNmf4FCo3rV",
+    "e97GVMl6JHh5Ml5qEDdSGa",
+    "f0BIwQ8D5Ml7nTNQbh1YlS",
+    "29FYIk+N1GYaeWH/q1NxQO",
+    "a90pTw9IpJe5uH1FVVFESE",
+    "ca981682-247e-4628-8d41-cf2158cf81d2@6c48a",
+    "8cXHJdB65J75Hhd7PNfIUr",
+    "1cTPFKrLpNWr63mMD9K4QJ",
+    "62AJw0g/ZB6qJku/Fw+Qx2",
+    "1a/vRoRgZOL4yVYouMjojT"
+  ],
+  [
+    "node",
+    "_spriteFrame",
+    "root",
+    "richText",
+    "_N$font",
+    "_N$imageAtlas",
+    "_N$normalSprite",
+    "_textureSetter",
+    "adsPriceLab",
+    "replenishNode",
+    "layoutRootNode",
+    "content",
+    "shopSpine",
+    "_N$target",
+    "data",
+    "_parent",
+    "_N$pressedSprite",
+    "_N$hoverSprite",
+    "_N$disabledSprite",
+    "marketItemPreb",
+    "_N$skeletonData",
+    "_N$file"
+  ],
+  [
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_components",
+        "_prefab",
+        "_children",
+        "_contentSize",
+        "_trs",
+        "_parent"
+      ],
+      2,
+      9,
+      4,
+      2,
+      5,
+      7,
+      1
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_trs",
+        "_color"
+      ],
+      2,
+      1,
+      2,
+      4,
+      5,
+      7,
+      5
+    ],
+    [
+      "cc.Widget",
+      [
+        "_alignFlags",
+        "_top",
+        "_bottom",
+        "_originalWidth",
+        "_originalHeight",
+        "node"
+      ],
+      -2,
+      1
+    ],
+    [
+      "cc.PrefabInfo",
+      [
+        "fileId",
+        "root",
+        "asset"
+      ],
+      2,
+      1,
+      1
+    ],
+    [
+      "cc.Sprite",
+      [
+        "_type",
+        "_sizeMode",
+        "node",
+        "_materials",
+        "_spriteFrame"
+      ],
+      1,
+      1,
+      3,
+      6
+    ],
+    [
+      "cc.Button",
+      [
+        "zoomScale",
+        "_N$transition",
+        "node",
+        "clickEvents",
+        "_N$normalColor",
+        "_N$pressedColor",
+        "_N$disabledColor",
+        "_N$normalSprite",
+        "_N$target",
+        "_N$pressedSprite",
+        "_N$hoverSprite",
+        "_N$disabledSprite"
+      ],
+      1,
+      1,
+      9,
+      5,
+      5,
+      5,
+      6,
+      1,
+      6,
+      6,
+      6
+    ],
+    [
+      "cc.RichText",
+      [
+        "_isSystemFontUsed",
+        "_N$string",
+        "_N$horizontalAlign",
+        "_N$fontSize",
+        "node"
+      ],
+      -1,
+      1
+    ],
+    "cc.SpriteFrame",
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ],
+    [
+      "cc.Prefab",
+      [
+        "_name"
+      ],
+      2
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_contentSize",
+        "_trs"
+      ],
+      2,
+      1,
+      12,
+      4,
+      5,
+      7
+    ],
+    [
+      "cc.BlockInputEvents",
+      [
+        "node"
+      ],
+      3,
+      1
+    ],
+    [
+      "5ad7cd2QU5DlIlvOC+uIoLI",
+      [
+        "_replenishTimes",
+        "node",
+        "shopSpine",
+        "content",
+        "layoutRootNode",
+        "replenishNode",
+        "adsPriceLab",
+        "marketItemPreb"
+      ],
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      6
+    ],
+    [
+      "cc.ClickEvent",
+      [
+        "_componentId",
+        "handler",
+        "target"
+      ],
+      1,
+      1
+    ],
+    [
+      "c6b65CoEUZGPY1KwOiJVjoc",
+      [
+        "node",
+        "richText"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.Layout",
+      [
+        "_resize",
+        "_N$layoutType",
+        "_N$spacingX",
+        "node",
+        "_layoutSize"
+      ],
+      0,
+      1,
+      5
+    ],
+    [
+      "cc.LabelOutline",
+      [
+        "_width",
+        "node",
+        "_color"
+      ],
+      2,
+      1,
+      5
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "defaultAnimation",
+        "_preCacheMode",
+        "premultipliedAlpha",
+        "_animationName",
+        "node",
+        "_materials"
+      ],
+      -2,
+      1,
+      3
+    ],
+    [
+      "ce0a5yyUcJJToaOFQaYCUXy",
+      [
+        "node",
+        "spine"
+      ],
+      3,
+      1,
+      1
+    ],
+    [
+      "cc.Label",
+      [
+        "_fontSize",
+        "_lineHeight",
+        "_isSystemFontUsed",
+        "_N$horizontalAlign",
+        "_N$verticalAlign",
+        "node",
+        "_materials"
+      ],
+      -2,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      3,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      3,
+      0,
+      1,
+      2
+    ],
+    [
+      4,
+      2,
+      3,
+      4,
+      1
+    ],
+    [
+      0,
+      0,
+      6,
+      3,
+      1,
+      2,
+      4,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      1,
+      2,
+      4,
+      5,
+      2
+    ],
+    [
+      14,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      6,
+      3,
+      1,
+      2,
+      5,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
+      13,
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      15,
+      0,
+      1,
+      2,
+      3,
+      4,
+      4
+    ],
+    [
+      6,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      8,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      9,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      3,
+      1,
+      2,
+      4,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      3,
+      1,
+      2,
+      5,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      3,
+      1,
+      2,
+      4,
+      2
+    ],
+    [
+      0,
+      0,
+      6,
+      1,
+      2,
+      4,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      6,
+      4,
+      2
+    ],
+    [
+      10,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      2,
+      0,
+      5,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      5,
+      4
+    ],
+    [
+      2,
+      0,
+      3,
+      4,
+      5,
+      4
+    ],
+    [
+      11,
+      0,
+      1
+    ],
+    [
+      12,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      2
+    ],
+    [
+      3,
+      1,
+      2,
+      1
+    ],
+    [
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      3
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      7,
+      3
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      3
+    ],
+    [
+      6,
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    [
+      16,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      17,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      6
+    ],
+    [
+      18,
+      0,
+      1,
+      1
+    ],
+    [
+      19,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      6
+    ]
+  ],
+  [
+    [
+      [
+        [
+          11,
+          "Shop",
+          "\r\nShop.png\r\nsize: 2048,2048\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nDoor\r\n  rotate: true\r\n  xy: 1009, 1028\r\n  size: 918, 751\r\n  orig: 918, 751\r\n  offset: 0, 0\r\n  index: -1\r\nPENGZI\r\n  rotate: true\r\n  xy: 1762, 898\r\n  size: 1048, 184\r\n  orig: 1048, 184\r\n  offset: 0, 0\r\n  index: -1\r\nShop\r\n  rotate: false\r\n  xy: 2, 608\r\n  size: 1005, 1338\r\n  orig: 1005, 1357\r\n  offset: 0, 19\r\n  index: -1\r\nbanzi\r\n  rotate: false\r\n  xy: 1009, 740\r\n  size: 819, 156\r\n  orig: 819, 156\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "Shop.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "yBEee/PBbms55NNiour5L9HOtKg",
+              "spine": "3.8.99",
+              "x": -522.51,
+              "y": -441.89,
+              "width": 1048,
+              "height": 1357,
+              "images": "./images/",
+              "audio": "E:/BIGBIG/键盘侠/商店/images"
+            },
+            "bones": [
+              {
+                "name": "root",
+                "x": -2.6,
+                "y": 2.6
+              },
+              {
+                "name": "Zong",
+                "parent": "root"
+              },
+              {
+                "name": "Shop",
+                "parent": "Zong",
+                "length": 1112.06,
+                "rotation": 90.13,
+                "x": -15.96,
+                "y": -386.16
+              },
+              {
+                "name": "PENGZI",
+                "parent": "Shop",
+                "length": 49.53,
+                "rotation": -165.66,
+                "x": 1112.07,
+                "y": -39.65
+              },
+              {
+                "name": "Zong4",
+                "parent": "PENGZI",
+                "x": 133.85,
+                "y": -13.77
+              },
+              {
+                "name": "Zong5",
+                "parent": "PENGZI",
+                "x": 23.24,
+                "y": -498.08
+              },
+              {
+                "name": "Zong6",
+                "parent": "PENGZI",
+                "x": 260.78,
+                "y": 397.63
+              },
+              {
+                "name": "Zong10",
+                "parent": "Shop",
+                "length": 739.24,
+                "rotation": -179.99,
+                "x": 1037.89,
+                "y": -21.19
+              },
+              {
+                "name": "Zong11",
+                "parent": "Shop",
+                "length": 94.13,
+                "rotation": -179.2,
+                "x": 991.98,
+                "y": -76.17
+              }
+            ],
+            "slots": [
+              {
+                "name": "Shop",
+                "bone": "Shop",
+                "attachment": "Shop"
+              },
+              {
+                "name": "banzi",
+                "bone": "Zong11",
+                "attachment": "banzi"
+              },
+              {
+                "name": "Door",
+                "bone": "Zong10",
+                "attachment": "Door"
+              },
+              {
+                "name": "PENGZI",
+                "bone": "PENGZI",
+                "attachment": "PENGZI"
+              }
+            ],
+            "skins": [
+              {
+                "name": "default",
+                "attachments": {
+                  "Door": {
+                    "Door": {
+                      "x": 376.77,
+                      "y": -2.72,
+                      "rotation": 89.86,
+                      "width": 918,
+                      "height": 751
+                    }
+                  },
+                  "PENGZI": {
+                    "PENGZI": {
+                      "type": "mesh",
+                      "hull": 4,
+                      "width": 1048,
+                      "height": 184,
+                      "uvs": [
+                        1,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.07786,
+                        0.30607,
+                        0.28172,
+                        0.24112,
+                        0.50696,
+                        0.20864,
+                        0.72027,
+                        0.22488,
+                        0.92698,
+                        0.28577
+                      ],
+                      "triangles": [
+                        1,
+                        2,
+                        4,
+                        6,
+                        7,
+                        0,
+                        8,
+                        7,
+                        3,
+                        6,
+                        2,
+                        3,
+                        8,
+                        3,
+                        0,
+                        7,
+                        6,
+                        3,
+                        7,
+                        8,
+                        0,
+                        5,
+                        2,
+                        6,
+                        4,
+                        2,
+                        5,
+                        6,
+                        0,
+                        1,
+                        1,
+                        4,
+                        5,
+                        1,
+                        5,
+                        6
+                      ],
+                      "vertices": [
+                        1,
+                        6,
+                        37.74,
+                        48.83,
+                        1,
+                        1,
+                        5,
+                        13.41,
+                        -70.21,
+                        1,
+                        1,
+                        3,
+                        -141.51,
+                        -522.32,
+                        1,
+                        1,
+                        3,
+                        120.36,
+                        492.44,
+                        1,
+                        3,
+                        4,
+                        -200.44,
+                        -443.61,
+                        0.01244,
+                        5,
+                        -89.83,
+                        40.71,
+                        0.31556,
+                        3,
+                        -66.59,
+                        -457.38,
+                        0.672,
+                        3,
+                        4,
+                        -158.62,
+                        -233.75,
+                        0.19843,
+                        5,
+                        -48.02,
+                        250.56,
+                        0.20957,
+                        3,
+                        -24.78,
+                        -247.53,
+                        0.592,
+                        4,
+                        6,
+                        -232.36,
+                        -415.09,
+                        0.00415,
+                        4,
+                        -105.43,
+                        -3.7,
+                        0.37793,
+                        5,
+                        5.18,
+                        480.62,
+                        0.01792,
+                        3,
+                        28.42,
+                        -17.47,
+                        0.6,
+                        3,
+                        6,
+                        -173.61,
+                        -199.38,
+                        0.1227,
+                        4,
+                        -46.67,
+                        212.02,
+                        0.1653,
+                        3,
+                        87.17,
+                        198.24,
+                        0.712,
+                        3,
+                        6,
+                        -108.63,
+                        7.57,
+                        0.26664,
+                        4,
+                        18.31,
+                        418.97,
+                        0.01336,
+                        3,
+                        152.15,
+                        405.2,
+                        0.72
+                      ],
+                      "edges": [
+                        0,
+                        2,
+                        2,
+                        4,
+                        4,
+                        6,
+                        0,
+                        6
+                      ]
+                    }
+                  },
+                  "Shop": {
+                    "Shop": {
+                      "x": 620.12,
+                      "y": -18.94,
+                      "rotation": -90.13,
+                      "width": 1005,
+                      "height": 1357
+                    }
+                  },
+                  "banzi": {
+                    "banzi": {
+                      "x": 49.56,
+                      "y": -58.2,
+                      "rotation": 89.08,
+                      "width": 819,
+                      "height": 156
+                    }
+                  }
+                }
+              }
+            ],
+            "events": {
+              "Start": {}
+            },
+            "animations": {
+              "Close": {
+                "slots": {
+                  "Door": {
+                    "attachment": [
+                      {
+                        "name": null
+                      },
+                      {
+                        "time": 0.1667,
+                        "name": "Door"
+                      }
+                    ]
+                  },
+                  "banzi": {
+                    "attachment": [
+                      {
+                        "time": 0.1667,
+                        "name": null
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Shop": {
+                    "scale": [
+                      {
+                        "time": 0.4
+                      },
+                      {
+                        "time": 0.4333,
+                        "y": 1.043
+                      },
+                      {
+                        "time": 0.4667,
+                        "x": 1.01,
+                        "y": 0.984
+                      },
+                      {
+                        "time": 0.5
+                      }
+                    ]
+                  },
+                  "Zong10": {
+                    "scale": [
+                      {
+                        "time": 0.1667,
+                        "x": 0.012,
+                        "curve": 0.464,
+                        "c3": 0.964,
+                        "c4": 0.6
+                      },
+                      {
+                        "time": 0.4333,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.5667
+                      }
+                    ]
+                  },
+                  "Zong11": {
+                    "rotate": [
+                      {
+                        "angle": -0.34
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 99.36,
+                        "y": 0.79
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "curve": 0.25,
+                        "c3": 0.75
+                      },
+                      {
+                        "time": 0.1333,
+                        "x": 0.746
+                      }
+                    ]
+                  }
+                }
+              },
+              "Open": {
+                "slots": {
+                  "Shop": {
+                    "color": [
+                      {
+                        "time": 1.7,
+                        "color": "ffffffff"
+                      }
+                    ]
+                  },
+                  "banzi": {
+                    "color": [
+                      {
+                        "time": 0.0333,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.1,
+                        "color": "ffffffff"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Zong10": {
+                    "scale": [
+                      {
+                        "time": 0.0667,
+                        "curve": 0.302,
+                        "c2": 0.01,
+                        "c3": 0.891,
+                        "c4": 0.57
+                      },
+                      {
+                        "time": 0.3,
+                        "x": 0.012
+                      }
+                    ]
+                  },
+                  "Zong4": {
+                    "translate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -90.88,
+                        "y": -20.94
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": -7.08,
+                        "y": -32.28
+                      },
+                      {
+                        "time": 1
+                      }
+                    ]
+                  },
+                  "Zong5": {
+                    "translate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": -2.54,
+                        "y": -34.44
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": 0.54,
+                        "y": -18.52
+                      },
+                      {
+                        "time": 1
+                      }
+                    ]
+                  },
+                  "Zong6": {
+                    "rotate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.4333,
+                        "angle": -3.6
+                      },
+                      {
+                        "time": 0.6667,
+                        "angle": -1.2
+                      },
+                      {
+                        "time": 0.9667
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3
+                      },
+                      {
+                        "time": 0.4333,
+                        "x": 5.57,
+                        "y": 27.85
+                      },
+                      {
+                        "time": 0.6667,
+                        "x": -4.79,
+                        "y": 23.67
+                      },
+                      {
+                        "time": 1.0333
+                      }
+                    ]
+                  },
+                  "Zong11": {
+                    "rotate": [
+                      {
+                        "time": 0.0333,
+                        "angle": -1.2
+                      },
+                      {
+                        "time": 0.4333
+                      },
+                      {
+                        "time": 0.6,
+                        "angle": -1.79
+                      },
+                      {
+                        "time": 0.8,
+                        "angle": -0.34
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.3,
+                        "x": 58.66,
+                        "y": 0.81
+                      },
+                      {
+                        "time": 0.4333
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.3,
+                        "x": 0.54
+                      },
+                      {
+                        "time": 0.4333
+                      }
+                    ]
+                  }
+                }
+              },
+              "Start": {
+                "slots": {
+                  "Door": {
+                    "color": [
+                      {
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ffffffff"
+                      }
+                    ]
+                  },
+                  "PENGZI": {
+                    "color": [
+                      {
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.1333,
+                        "color": "ffffffff"
+                      }
+                    ]
+                  },
+                  "Shop": {
+                    "color": [
+                      {
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.0667,
+                        "color": "ffffffff",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 2.0333,
+                        "color": "ffffffff"
+                      }
+                    ]
+                  },
+                  "banzi": {
+                    "color": [
+                      {
+                        "color": "ffffff00",
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.3667,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 0.4333,
+                        "color": "ffffffff"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "Shop": {
+                    "scale": [
+                      {
+                        "x": 0.799,
+                        "y": 1.293,
+                        "curve": 0.304,
+                        "c2": 0.35,
+                        "c3": 0.65,
+                        "c4": 0.69
+                      },
+                      {
+                        "time": 0.0333,
+                        "x": 0.651,
+                        "y": 0.965,
+                        "curve": 0.381,
+                        "c2": 0.57,
+                        "c3": 0.77
+                      },
+                      {
+                        "time": 0.1,
+                        "x": 1.186,
+                        "y": 0.957
+                      },
+                      {
+                        "time": 0.1667,
+                        "x": 0.933,
+                        "y": 1.1
+                      },
+                      {
+                        "time": 0.2333
+                      }
+                    ]
+                  },
+                  "Zong10": {
+                    "scale": [
+                      {
+                        "time": 0.4,
+                        "curve": 0.302,
+                        "c2": 0.01,
+                        "c3": 0.891,
+                        "c4": 0.57
+                      },
+                      {
+                        "time": 0.6333,
+                        "x": 0.012
+                      }
+                    ]
+                  },
+                  "Zong4": {
+                    "translate": [
+                      {
+                        "time": 0.0667
+                      },
+                      {
+                        "time": 0.2,
+                        "x": 62.14,
+                        "y": -6.4
+                      },
+                      {
+                        "time": 0.4,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6333
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": -90.88,
+                        "y": -20.94
+                      },
+                      {
+                        "time": 1,
+                        "x": -7.08,
+                        "y": -32.28
+                      },
+                      {
+                        "time": 1.3333
+                      }
+                    ]
+                  },
+                  "Zong5": {
+                    "translate": [
+                      {
+                        "time": 0.1
+                      },
+                      {
+                        "time": 0.2,
+                        "y": -17.5
+                      },
+                      {
+                        "time": 0.4333,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6333
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": -2.54,
+                        "y": -34.44
+                      },
+                      {
+                        "time": 1,
+                        "x": 0.54,
+                        "y": -18.52
+                      },
+                      {
+                        "time": 1.3333
+                      }
+                    ]
+                  },
+                  "Zong6": {
+                    "rotate": [
+                      {
+                        "time": 0.6333
+                      },
+                      {
+                        "time": 0.7667,
+                        "angle": -3.6
+                      },
+                      {
+                        "time": 1,
+                        "angle": -1.2
+                      },
+                      {
+                        "time": 1.3
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.1
+                      },
+                      {
+                        "time": 0.1667,
+                        "y": 14.34
+                      },
+                      {
+                        "time": 0.3333,
+                        "curve": "stepped"
+                      },
+                      {
+                        "time": 0.6333
+                      },
+                      {
+                        "time": 0.7667,
+                        "x": 5.57,
+                        "y": 27.85
+                      },
+                      {
+                        "time": 1,
+                        "x": -4.79,
+                        "y": 23.67
+                      },
+                      {
+                        "time": 1.3667
+                      }
+                    ]
+                  },
+                  "Zong11": {
+                    "rotate": [
+                      {
+                        "time": 0.3667,
+                        "angle": -1.2
+                      },
+                      {
+                        "time": 0.7667
+                      },
+                      {
+                        "time": 0.9333,
+                        "angle": -1.79
+                      },
+                      {
+                        "time": 1.1333,
+                        "angle": -0.34
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0.6333,
+                        "x": 58.66,
+                        "y": 0.81
+                      },
+                      {
+                        "time": 0.7667
+                      }
+                    ],
+                    "scale": [
+                      {
+                        "time": 0.6333,
+                        "x": 0.54
+                      },
+                      {
+                        "time": 0.7667
+                      }
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "time": 0.7667,
+                    "name": "Start"
+                  }
+                ]
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        {
+          "name": "battle_bg_shopexit",
+          "rect": [
+            0,
+            0,
+            328,
+            106
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            328,
+            106
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        7
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        7
+      ],
+      [
+        5
+      ]
+    ],
+    [
+      [
+        [
+          12,
+          "marketPanel"
+        ],
+        [
+          13,
+          "marketPanel",
+          [
+            -10,
+            -11,
+            -12
+          ],
+          [
+            [
+              20,
+              45,
+              -2
+            ],
+            [
+              23,
+              -3
+            ],
+            [
+              24,
+              1,
+              -9,
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              19
+            ]
+          ],
+          [
+            25,
+            -1,
+            0
+          ],
+          [
+            5,
+            1080,
+            1920
+          ],
+          [
+            540,
+            960,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "content",
+          1,
+          [
+            -14,
+            -15,
+            -16,
+            -17
+          ],
+          [
+            [
+              21,
+              45,
+              19.99999999999999,
+              -19.99999999999999,
+              -13
+            ]
+          ],
+          [
+            0,
+            "fb2E8Fq2hGooOdL76iikCs",
+            1,
+            0
+          ],
+          [
+            5,
+            1080,
+            1920
+          ],
+          [
+            0,
+            -20,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "adsBtn",
+          2,
+          [
+            -21,
+            -22,
+            -23
+          ],
+          [
+            [
+              2,
+              -18,
+              [
+                16
+              ],
+              17
+            ],
+            [
+              27,
+              0.9,
+              3,
+              -20,
+              [
+                [
+                  8,
+                  "5ad7cd2QU5DlIlvOC+uIoLI",
+                  "onClickAdsBtn",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              -19,
+              18
+            ]
+          ],
+          [
+            0,
+            "4dqwJ94ihIO5mJR2UVDoll",
+            1,
+            0
+          ],
+          [
+            5,
+            340,
+            146
+          ],
+          [
+            320,
+            -530,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          6,
+          "leftNode",
+          2,
+          [
+            -27
+          ],
+          [
+            [
+              5,
+              -26,
+              -25
+            ]
+          ],
+          [
+            1,
+            "4ahZlB2IVP1bagk/26ZpB5",
+            -24
+          ],
+          [
+            0,
+            450,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          14,
+          "exitNode",
+          [
+            -31
+          ],
+          [
+            [
+              5,
+              -30,
+              -29
+            ]
+          ],
+          [
+            1,
+            "38n/PJsQRGh7as5V2a0KBy",
+            -28
+          ],
+          [
+            -10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          6,
+          "exitNode",
+          3,
+          [
+            -35
+          ],
+          [
+            [
+              5,
+              -34,
+              -33
+            ]
+          ],
+          [
+            1,
+            "2751feQ6ROW5BGVpUus3r2",
+            -32
+          ],
+          [
+            0,
+            -100,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "closeBtn",
+          2,
+          [
+            -38
+          ],
+          [
+            [
+              28,
+              0.9,
+              3,
+              -36,
+              [
+                [
+                  8,
+                  "5ad7cd2QU5DlIlvOC+uIoLI",
+                  "onCloseUI",
+                  1
+                ]
+              ],
+              [
+                4,
+                4293322470
+              ],
+              [
+                4,
+                4291348680
+              ],
+              [
+                4,
+                3363338360
+              ],
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              2,
+              -37,
+              [
+                9
+              ],
+              10
+            ]
+          ],
+          [
+            0,
+            "58ExZwp2dJOpnIIBIaQC7+",
+            1,
+            0
+          ],
+          [
+            5,
+            188,
+            134
+          ],
+          [
+            -400,
+            -530,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          15,
+          "layout",
+          3,
+          [
+            -40,
+            -41
+          ],
+          [
+            [
+              9,
+              1,
+              1,
+              10,
+              -39,
+              [
+                5,
+                91,
+                100
+              ]
+            ]
+          ],
+          [
+            0,
+            "44gekmB35I2LSUtJllnv4N",
+            1,
+            0
+          ],
+          [
+            5,
+            91,
+            100
+          ]
+        ],
+        [
+          16,
+          "bg",
+          1,
+          [
+            [
+              26,
+              1,
+              0,
+              -42,
+              [
+                0
+              ],
+              1
+            ],
+            [
+              22,
+              45,
+              40,
+              36,
+              -43
+            ]
+          ],
+          [
+            0,
+            "12a6XCUkBA959Ugv0BEv6O",
+            1,
+            0
+          ],
+          [
+            5,
+            1080,
+            1920
+          ]
+        ],
+        [
+          17,
+          "shopSpine",
+          1,
+          [
+            -44,
+            -45
+          ],
+          [
+            0,
+            "5d1myFwaJLW7jTMm0oRGWx",
+            1,
+            0
+          ],
+          [
+            5,
+            1048,
+            1357
+          ],
+          [
+            0,
+            -90,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          29,
+          false,
+          "REPLENISH TIMES:0",
+          1,
+          36
+        ],
+        [
+          4,
+          "layout",
+          2,
+          [
+            [
+              9,
+              1,
+              1,
+              45,
+              -46,
+              [
+                5,
+                -45,
+                750
+              ]
+            ]
+          ],
+          [
+            0,
+            "79khiGO8xAeaXVAogT1de2",
+            1,
+            0
+          ],
+          [
+            5,
+            -45,
+            750
+          ],
+          [
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          3,
+          "battle_bg_shopexit",
+          7,
+          [
+            5
+          ],
+          [
+            [
+              2,
+              -47,
+              [
+                3
+              ],
+              4
+            ]
+          ],
+          [
+            0,
+            "5atRgNPLFFX6wDwUb8OgDM",
+            1,
+            0
+          ],
+          [
+            5,
+            328,
+            106
+          ],
+          [
+            254,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          19,
+          "adsPriceLab",
+          8,
+          [
+            [
+              -48,
+              [
+                30,
+                2,
+                -49,
+                [
+                  4,
+                  4278190080
+                ]
+              ]
+            ],
+            1,
+            4
+          ],
+          [
+            0,
+            "09/hSLI2FIA518HqSsmFMf",
+            1,
+            0
+          ],
+          [
+            5,
+            4,
+            104.8
+          ],
+          [
+            43.5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          31,
+          "default",
+          "Close",
+          0,
+          false,
+          "Close",
+          10,
+          [
+            2
+          ]
+        ],
+        [
+          32,
+          10,
+          15
+        ],
+        [
+          18,
+          "richText",
+          4,
+          [
+            11
+          ],
+          [
+            1,
+            "cebj++qxRIRJinZrT6V1XS",
+            4
+          ],
+          [
+            4,
+            4278190080
+          ],
+          [
+            5,
+            340.34,
+            50.4
+          ]
+        ],
+        [
+          7,
+          "richText",
+          5,
+          [
+            -50
+          ],
+          [
+            1,
+            "cebj++qxRIRJinZrT6V1XS",
+            5
+          ],
+          [
+            5,
+            225.58,
+            50.4
+          ]
+        ],
+        [
+          10,
+          false,
+          "Exit the shop",
+          1,
+          36,
+          18
+        ],
+        [
+          4,
+          "icon",
+          8,
+          [
+            [
+              2,
+              -51,
+              [
+                11
+              ],
+              12
+            ]
+          ],
+          [
+            0,
+            "8aB9yUswlO9pTjZdecL5Ot",
+            1,
+            0
+          ],
+          [
+            5,
+            77,
+            59
+          ],
+          [
+            -7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          33,
+          48,
+          80,
+          false,
+          1,
+          1,
+          14,
+          [
+            13
+          ]
+        ],
+        [
+          4,
+          "adsIcon",
+          3,
+          [
+            [
+              2,
+              -52,
+              [
+                14
+              ],
+              15
+            ]
+          ],
+          [
+            0,
+            "1bBRbyjvND7YmJlLZBkN4W",
+            1,
+            0
+          ],
+          [
+            5,
+            56,
+            48
+          ],
+          [
+            150,
+            60,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          7,
+          "richText",
+          6,
+          [
+            -53
+          ],
+          [
+            1,
+            "cebj++qxRIRJinZrT6V1XS",
+            6
+          ],
+          [
+            5,
+            160.5,
+            50.4
+          ]
+        ],
+        [
+          10,
+          false,
+          "<color=#d0cfcd>Times </c><color=#7fef3c>0</color><color=#d0cfcd>/10</c>",
+          1,
+          30,
+          23
+        ]
+      ],
+      0,
+      [
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        8,
+        21,
+        0,
+        9,
+        11,
+        0,
+        10,
+        12,
+        0,
+        11,
+        2,
+        0,
+        12,
+        16,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        9,
+        0,
+        -2,
+        10,
+        0,
+        -3,
+        2,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        4,
+        0,
+        -2,
+        12,
+        0,
+        -3,
+        7,
+        0,
+        -4,
+        3,
+        0,
+        0,
+        3,
+        0,
+        13,
+        3,
+        0,
+        0,
+        3,
+        0,
+        -1,
+        8,
+        0,
+        -2,
+        22,
+        0,
+        -3,
+        6,
+        0,
+        2,
+        4,
+        0,
+        3,
+        11,
+        0,
+        0,
+        4,
+        0,
+        -1,
+        17,
+        0,
+        2,
+        5,
+        0,
+        3,
+        19,
+        0,
+        0,
+        5,
+        0,
+        -1,
+        18,
+        0,
+        2,
+        6,
+        0,
+        3,
+        24,
+        0,
+        0,
+        6,
+        0,
+        -1,
+        23,
+        0,
+        0,
+        7,
+        0,
+        0,
+        7,
+        0,
+        -1,
+        13,
+        0,
+        0,
+        8,
+        0,
+        -1,
+        20,
+        0,
+        -2,
+        14,
+        0,
+        0,
+        9,
+        0,
+        0,
+        9,
+        0,
+        -1,
+        15,
+        0,
+        -2,
+        16,
+        0,
+        0,
+        12,
+        0,
+        0,
+        13,
+        0,
+        -1,
+        21,
+        0,
+        0,
+        14,
+        0,
+        -1,
+        19,
+        0,
+        0,
+        20,
+        0,
+        0,
+        22,
+        0,
+        -1,
+        24,
+        0,
+        14,
+        1,
+        5,
+        15,
+        13,
+        11,
+        0,
+        17,
+        53
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        11,
+        11,
+        19,
+        19,
+        21,
+        24,
+        24
+      ],
+      [
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        6,
+        16,
+        17,
+        18,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        6,
+        19,
+        20,
+        4,
+        5,
+        4,
+        5,
+        21,
+        4,
+        5
+      ],
+      [
+        0,
+        6,
+        7,
+        0,
+        8,
+        3,
+        9,
+        10,
+        11,
+        0,
+        12,
+        0,
+        13,
+        0,
+        0,
+        14,
+        0,
+        3,
+        15,
+        16,
+        17,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2
+      ]
+    ]
+  ]
+]

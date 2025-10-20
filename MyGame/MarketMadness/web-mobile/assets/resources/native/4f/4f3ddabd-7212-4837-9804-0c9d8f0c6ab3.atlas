@@ -1,0 +1,48 @@
+
+Ultra_1010.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Dg/Dg_00000
+  rotate: false
+  xy: 227, 62
+  size: 99, 54
+  orig: 315, 303
+  offset: 61, 179
+  index: -1
+Image/Dg/Dg_00001
+  rotate: false
+  xy: 2, 314
+  size: 257, 186
+  orig: 315, 303
+  offset: 0, 117
+  index: -1
+Image/Dg/Dg_00002
+  rotate: true
+  xy: 2, 2
+  size: 152, 223
+  orig: 315, 303
+  offset: 138, 49
+  index: -1
+Image/Dg/Dg_00003
+  rotate: true
+  xy: 2, 156
+  size: 156, 235
+  orig: 315, 303
+  offset: 159, 8
+  index: -1
+Image/Dg/Dg_00004
+  rotate: false
+  xy: 239, 118
+  size: 151, 194
+  orig: 315, 303
+  offset: 152, 0
+  index: -1
+Image/Weapon_18
+  rotate: false
+  xy: 261, 380
+  size: 129, 120
+  orig: 129, 120
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,96 @@
+[
+  1,
+  [
+    "6dpmwOW6xNq5N1DGI4x1tQ",
+    "735uAuQVBHQK9G2LhVvXzW"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "common_bgn_checkbox0",
+          "rect": [
+            0,
+            0,
+            68,
+            68
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            68,
+            68
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "common_bgn_checkbox1",
+          "rect": [
+            0,
+            0,
+            68,
+            68
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            68,
+            68
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

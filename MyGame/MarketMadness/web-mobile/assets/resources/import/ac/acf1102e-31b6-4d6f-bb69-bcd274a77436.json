@@ -1,0 +1,1142 @@
+[
+  1,
+  [
+    "efE7I7TilAN6361AnV4/zJ"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "Ultra_2008",
+      "\r\nUltra_2008.png\r\nsize: 512,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nIce/Ice_00000\r\n  rotate: false\r\n  xy: 398, 88\r\n  size: 83, 24\r\n  orig: 163, 73\r\n  offset: 14, 23\r\n  index: -1\r\nIce/Ice_00001\r\n  rotate: false\r\n  xy: 314, 435\r\n  size: 122, 72\r\n  orig: 163, 73\r\n  offset: 2, 1\r\n  index: -1\r\nIce/Ice_00002\r\n  rotate: false\r\n  xy: 243, 226\r\n  size: 133, 47\r\n  orig: 163, 73\r\n  offset: 5, 12\r\n  index: -1\r\nIce/Ice_00003\r\n  rotate: false\r\n  xy: 2, 440\r\n  size: 162, 67\r\n  orig: 163, 73\r\n  offset: 0, 0\r\n  index: -1\r\nIce/Ice_00004\r\n  rotate: false\r\n  xy: 166, 446\r\n  size: 146, 61\r\n  orig: 163, 73\r\n  offset: 8, 2\r\n  index: -1\r\nSmoke/Smoke_00000\r\n  rotate: true\r\n  xy: 114, 365\r\n  size: 73, 48\r\n  orig: 142, 97\r\n  offset: 15, 17\r\n  index: -1\r\nSmoke/Smoke_00001\r\n  rotate: true\r\n  xy: 446, 249\r\n  size: 108, 59\r\n  orig: 142, 97\r\n  offset: 5, 18\r\n  index: -1\r\nSmoke/Smoke_00002\r\n  rotate: false\r\n  xy: 127, 241\r\n  size: 114, 56\r\n  orig: 142, 97\r\n  offset: 6, 19\r\n  index: -1\r\nSmoke/Smoke_00003\r\n  rotate: false\r\n  xy: 2, 293\r\n  size: 123, 65\r\n  orig: 142, 97\r\n  offset: 8, 11\r\n  index: -1\r\nSmoke/Smoke_00004\r\n  rotate: false\r\n  xy: 127, 299\r\n  size: 121, 58\r\n  orig: 142, 97\r\n  offset: 15, 11\r\n  index: -1\r\nSmoke/Smoke_00005\r\n  rotate: false\r\n  xy: 384, 359\r\n  size: 109, 74\r\n  orig: 142, 97\r\n  offset: 26, 19\r\n  index: -1\r\nSmoke/Smoke_00006\r\n  rotate: false\r\n  xy: 166, 359\r\n  size: 102, 85\r\n  orig: 142, 97\r\n  offset: 29, 9\r\n  index: -1\r\nSmoke/Smoke_00007\r\n  rotate: false\r\n  xy: 2, 360\r\n  size: 110, 78\r\n  orig: 142, 97\r\n  offset: 30, 9\r\n  index: -1\r\nSmoke/Smoke_00008\r\n  rotate: false\r\n  xy: 270, 360\r\n  size: 112, 73\r\n  orig: 142, 97\r\n  offset: 29, 9\r\n  index: -1\r\nTiao/Tiao_00000\r\n  rotate: true\r\n  xy: 2, 156\r\n  size: 65, 79\r\n  orig: 104, 89\r\n  offset: 2, 8\r\n  index: -1\r\nTiao/Tiao_00001\r\n  rotate: false\r\n  xy: 270, 279\r\n  size: 90, 79\r\n  orig: 104, 89\r\n  offset: 6, 4\r\n  index: -1\r\nTiao/Tiao_00002\r\n  rotate: false\r\n  xy: 2, 223\r\n  size: 88, 68\r\n  orig: 104, 89\r\n  offset: 10, 3\r\n  index: -1\r\nTiao/Tiao_00003\r\n  rotate: false\r\n  xy: 92, 177\r\n  size: 85, 62\r\n  orig: 104, 89\r\n  offset: 14, 2\r\n  index: -1\r\nTiao/Tiao_00004\r\n  rotate: false\r\n  xy: 401, 148\r\n  size: 83, 52\r\n  orig: 104, 89\r\n  offset: 18, 2\r\n  index: -1\r\nTiao/Tiao_00005\r\n  rotate: false\r\n  xy: 83, 131\r\n  size: 80, 44\r\n  orig: 104, 89\r\n  offset: 22, 2\r\n  index: -1\r\nTiao/Tiao_00006\r\n  rotate: false\r\n  xy: 2, 116\r\n  size: 77, 38\r\n  orig: 104, 89\r\n  offset: 25, 3\r\n  index: -1\r\nTiao/Tiao_00007\r\n  rotate: false\r\n  xy: 398, 114\r\n  size: 68, 32\r\n  orig: 104, 89\r\n  offset: 34, 3\r\n  index: -1\r\nTiao/Tiao_00008\r\n  rotate: false\r\n  xy: 81, 95\r\n  size: 60, 34\r\n  orig: 104, 89\r\n  offset: 42, 2\r\n  index: -1\r\nTiao/Tiao_00009\r\n  rotate: false\r\n  xy: 215, 98\r\n  size: 54, 35\r\n  orig: 104, 89\r\n  offset: 47, 3\r\n  index: -1\r\nTiao/Tiao_00010\r\n  rotate: false\r\n  xy: 2, 81\r\n  size: 50, 33\r\n  orig: 104, 89\r\n  offset: 52, 6\r\n  index: -1\r\nTiao/Tiao_00011\r\n  rotate: true\r\n  xy: 92, 247\r\n  size: 44, 30\r\n  orig: 104, 89\r\n  offset: 58, 9\r\n  index: -1\r\nTiao/Tiao_00012\r\n  rotate: false\r\n  xy: 468, 115\r\n  size: 39, 31\r\n  orig: 104, 89\r\n  offset: 63, 9\r\n  index: -1\r\nTiao/Tiao_00013\r\n  rotate: true\r\n  xy: 438, 442\r\n  size: 13, 29\r\n  orig: 104, 89\r\n  offset: 86, 11\r\n  index: -1\r\nWeirao/WR_Wind_00000\r\n  rotate: false\r\n  xy: 486, 164\r\n  size: 21, 36\r\n  orig: 133, 54\r\n  offset: 2, 15\r\n  index: -1\r\nWeirao/WR_Wind_00001\r\n  rotate: true\r\n  xy: 215, 70\r\n  size: 26, 41\r\n  orig: 133, 54\r\n  offset: 2, 10\r\n  index: -1\r\nWeirao/WR_Wind_00002\r\n  rotate: true\r\n  xy: 333, 74\r\n  size: 34, 45\r\n  orig: 133, 54\r\n  offset: 2, 7\r\n  index: -1\r\nWeirao/WR_Wind_00003\r\n  rotate: true\r\n  xy: 165, 88\r\n  size: 45, 48\r\n  orig: 133, 54\r\n  offset: 2, 4\r\n  index: -1\r\nWeirao/WR_Wind_00004\r\n  rotate: false\r\n  xy: 276, 101\r\n  size: 55, 49\r\n  orig: 133, 54\r\n  offset: 1, 3\r\n  index: -1\r\nWeirao/WR_Wind_00005\r\n  rotate: false\r\n  xy: 438, 457\r\n  size: 65, 50\r\n  orig: 133, 54\r\n  offset: 1, 2\r\n  index: -1\r\nWeirao/WR_Wind_00006\r\n  rotate: false\r\n  xy: 300, 152\r\n  size: 99, 48\r\n  orig: 133, 54\r\n  offset: 3, 2\r\n  index: -1\r\nWeirao/WR_Wind_00007\r\n  rotate: false\r\n  xy: 378, 202\r\n  size: 121, 45\r\n  orig: 133, 54\r\n  offset: 4, 1\r\n  index: -1\r\nWeirao/WR_Wind_00008\r\n  rotate: false\r\n  xy: 179, 181\r\n  size: 119, 43\r\n  orig: 133, 54\r\n  offset: 11, 3\r\n  index: -1\r\nWeirao/WR_Wind_00009\r\n  rotate: false\r\n  xy: 179, 135\r\n  size: 95, 44\r\n  orig: 133, 54\r\n  offset: 36, 4\r\n  index: -1\r\nWeirao/WR_Wind_00010\r\n  rotate: false\r\n  xy: 333, 110\r\n  size: 63, 40\r\n  orig: 133, 54\r\n  offset: 68, 3\r\n  index: -1\r\nWeirao/WR_Wind_00011\r\n  rotate: true\r\n  xy: 271, 66\r\n  size: 33, 36\r\n  orig: 133, 54\r\n  offset: 96, 5\r\n  index: -1\r\nglow1\r\n  rotate: false\r\n  xy: 362, 275\r\n  size: 82, 82\r\n  orig: 88, 88\r\n  offset: 3, 3\r\n  index: -1\r\n",
+      [
+        "Ultra_2008.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "9LVOTkMSobBxvAwQZCmRxEmTfbI",
+          "spine": "3.8.99",
+          "x": -225.61,
+          "y": -82.13,
+          "width": 1051.23,
+          "height": 644.27,
+          "images": "./Image/",
+          "audio": "E:/BIGBIG/键盘侠/敌人总/Boss8"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "TX_Zong",
+            "parent": "root"
+          },
+          {
+            "name": "Ice",
+            "parent": "TX_Zong",
+            "x": 3.63
+          },
+          {
+            "name": "Smoke",
+            "parent": "Ice",
+            "x": -3.63
+          },
+          {
+            "name": "Tiao",
+            "parent": "TX_Zong"
+          },
+          {
+            "name": "WRW",
+            "parent": "TX_Zong"
+          },
+          {
+            "name": "WRW2",
+            "parent": "TX_Zong"
+          },
+          {
+            "name": "WRW3",
+            "parent": "TX_Zong"
+          },
+          {
+            "name": "WRW4",
+            "parent": "TX_Zong"
+          },
+          {
+            "name": "Glow",
+            "parent": "Ice",
+            "x": -3.63
+          }
+        ],
+        "slots": [
+          {
+            "name": "glow1",
+            "bone": "Glow",
+            "attachment": "glow1"
+          },
+          {
+            "name": "Ice/Ice_00000",
+            "bone": "Ice"
+          },
+          {
+            "name": "Smoke/Smoke_00000",
+            "bone": "Smoke",
+            "attachment": "Smoke/Smoke_00008",
+            "blend": "additive"
+          },
+          {
+            "name": "Tiao/Tiao_00000",
+            "bone": "Tiao",
+            "blend": "additive"
+          },
+          {
+            "name": "Weirao/WR_Wind_00000",
+            "bone": "WRW"
+          },
+          {
+            "name": "Weirao/WR_Wind_1",
+            "bone": "WRW3"
+          },
+          {
+            "name": "Weirao/WR_Wind_2",
+            "bone": "WRW4"
+          },
+          {
+            "name": "Weirao/WR_Wind_0",
+            "bone": "WRW2"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "Ice/Ice_00000": {
+                "Ice/Ice_00000": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 181,
+                  "height": 81
+                },
+                "Ice/Ice_00001": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 181,
+                  "height": 81
+                },
+                "Ice/Ice_00002": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 181,
+                  "height": 81
+                },
+                "Ice/Ice_00003": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 181,
+                  "height": 81
+                },
+                "Ice/Ice_00004": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 181,
+                  "height": 81
+                }
+              },
+              "Smoke/Smoke_00000": {
+                "Smoke/Smoke_00000": {
+                  "width": 158,
+                  "height": 108
+                },
+                "Smoke/Smoke_00001": {
+                  "width": 158,
+                  "height": 108
+                },
+                "Smoke/Smoke_00002": {
+                  "width": 158,
+                  "height": 108
+                },
+                "Smoke/Smoke_00003": {
+                  "width": 158,
+                  "height": 108
+                },
+                "Smoke/Smoke_00004": {
+                  "width": 158,
+                  "height": 108
+                },
+                "Smoke/Smoke_00005": {
+                  "width": 158,
+                  "height": 108
+                },
+                "Smoke/Smoke_00006": {
+                  "width": 158,
+                  "height": 108
+                },
+                "Smoke/Smoke_00007": {
+                  "width": 158,
+                  "height": 108
+                },
+                "Smoke/Smoke_00008": {
+                  "width": 158,
+                  "height": 108
+                }
+              },
+              "Tiao/Tiao_00000": {
+                "Tiao/Tiao_00000": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00001": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00002": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00003": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00004": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00005": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00006": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00007": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00008": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00009": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00010": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00011": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00012": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                },
+                "Tiao/Tiao_00013": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "width": 115,
+                  "height": 99
+                }
+              },
+              "Weirao/WR_Wind_0": {
+                "Weirao/WR_Wind_00000": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00001": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00002": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00003": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00004": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00005": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00006": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00007": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00008": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00009": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00010": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00011": {
+                  "width": 148,
+                  "height": 60
+                }
+              },
+              "Weirao/WR_Wind_00000": {
+                "Weirao/WR_Wind_00000": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00001": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00002": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00003": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00004": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00005": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00006": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00007": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00008": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00009": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00010": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00011": {
+                  "width": 148,
+                  "height": 60
+                }
+              },
+              "Weirao/WR_Wind_1": {
+                "Weirao/WR_Wind_00000": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00001": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00002": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00003": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00004": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00005": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00006": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00007": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00008": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00009": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00010": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00011": {
+                  "width": 148,
+                  "height": 60
+                }
+              },
+              "Weirao/WR_Wind_2": {
+                "Weirao/WR_Wind_00000": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00001": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00002": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00003": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00004": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00005": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00006": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00007": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00008": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00009": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00010": {
+                  "width": 148,
+                  "height": 60
+                },
+                "Weirao/WR_Wind_00011": {
+                  "width": 148,
+                  "height": 60
+                }
+              },
+              "glow1": {
+                "glow1": {
+                  "width": 98,
+                  "height": 98
+                }
+              }
+            }
+          }
+        ],
+        "events": {
+          "Hit": {}
+        },
+        "animations": {
+          "Ultra": {
+            "slots": {
+              "Ice/Ice_00000": {
+                "attachment": [
+                  {
+                    "name": "Ice/Ice_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "Ice/Ice_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Ice/Ice_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Ice/Ice_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Ice/Ice_00004"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": null
+                  }
+                ]
+              },
+              "Smoke/Smoke_00000": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Smoke/Smoke_00000"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Smoke/Smoke_00001"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Smoke/Smoke_00002"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Smoke/Smoke_00003"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Smoke/Smoke_00004"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "Smoke/Smoke_00005"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "Smoke/Smoke_00006"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "Smoke/Smoke_00007"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "Smoke/Smoke_00008"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "Smoke/Smoke_00000"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "Smoke/Smoke_00001"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "Smoke/Smoke_00002"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "Smoke/Smoke_00003"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "Smoke/Smoke_00004"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "Smoke/Smoke_00005"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "Smoke/Smoke_00006"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "Smoke/Smoke_00007"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "Smoke/Smoke_00008"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "Smoke/Smoke_00000"
+                  },
+                  {
+                    "time": 0.7667,
+                    "name": "Smoke/Smoke_00001"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "Smoke/Smoke_00002"
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "Smoke/Smoke_00003"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": null
+                  }
+                ]
+              },
+              "Tiao/Tiao_00000": {
+                "attachment": [
+                  {
+                    "time": 0.0333,
+                    "name": "Tiao/Tiao_00000"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "Tiao/Tiao_00001"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "Tiao/Tiao_00002"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Tiao/Tiao_00003"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Tiao/Tiao_00004"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Tiao/Tiao_00005"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Tiao/Tiao_00006"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Tiao/Tiao_00007"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "Tiao/Tiao_00008"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "Tiao/Tiao_00009"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "Tiao/Tiao_00010"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "Tiao/Tiao_00011"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "Tiao/Tiao_00012"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "Tiao/Tiao_00013"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": null
+                  }
+                ]
+              },
+              "Weirao/WR_Wind_0": {
+                "attachment": [
+                  {
+                    "time": 0.3333,
+                    "name": "Weirao/WR_Wind_00000"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "Weirao/WR_Wind_00001"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "Weirao/WR_Wind_00002"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "Weirao/WR_Wind_00003"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "Weirao/WR_Wind_00004"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "Weirao/WR_Wind_00005"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "Weirao/WR_Wind_00006"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "Weirao/WR_Wind_00007"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "Weirao/WR_Wind_00008"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "Weirao/WR_Wind_00009"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "Weirao/WR_Wind_00010"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "Weirao/WR_Wind_00011"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": null
+                  }
+                ]
+              },
+              "Weirao/WR_Wind_00000": {
+                "attachment": [
+                  {
+                    "time": 0.1,
+                    "name": "Weirao/WR_Wind_00000"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "Weirao/WR_Wind_00001"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "Weirao/WR_Wind_00002"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "Weirao/WR_Wind_00003"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "Weirao/WR_Wind_00004"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "Weirao/WR_Wind_00005"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "Weirao/WR_Wind_00006"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "Weirao/WR_Wind_00007"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "Weirao/WR_Wind_00008"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "Weirao/WR_Wind_00009"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "Weirao/WR_Wind_00010"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "Weirao/WR_Wind_00011"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": null
+                  }
+                ]
+              },
+              "Weirao/WR_Wind_1": {
+                "attachment": [
+                  {
+                    "time": 0.6,
+                    "name": "Weirao/WR_Wind_00000"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "Weirao/WR_Wind_00001"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "Weirao/WR_Wind_00002"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "Weirao/WR_Wind_00003"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "Weirao/WR_Wind_00004"
+                  },
+                  {
+                    "time": 0.7667,
+                    "name": "Weirao/WR_Wind_00005"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "Weirao/WR_Wind_00006"
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "Weirao/WR_Wind_00007"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": null
+                  }
+                ]
+              },
+              "Weirao/WR_Wind_2": {
+                "attachment": [
+                  {
+                    "time": 0.7667,
+                    "name": "Weirao/WR_Wind_00000"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "Weirao/WR_Wind_00001"
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "Weirao/WR_Wind_00002"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": null
+                  }
+                ]
+              },
+              "glow1": {
+                "color": [
+                  {
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "170e9dff",
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.8333,
+                    "color": "170e9dff"
+                  },
+                  {
+                    "time": 0.8667,
+                    "color": "170d9d61"
+                  },
+                  {
+                    "time": 0.9333,
+                    "color": "170c9d00"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "Ice": {
+                "rotate": [
+                  {
+                    "angle": -28.8
+                  }
+                ],
+                "translate": [
+                  {
+                    "x": 215.98,
+                    "y": 446.49,
+                    "curve": 0,
+                    "c2": 0.37,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.7333,
+                    "x": 197.36,
+                    "y": 456.73
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": 621.27,
+                    "y": 186.84
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 1.523,
+                    "y": 1.857
+                  }
+                ]
+              },
+              "Smoke": {
+                "translate": [
+                  {
+                    "time": 0.1333,
+                    "x": -5.14,
+                    "y": 6.14
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.1333,
+                    "x": 2,
+                    "y": 2
+                  }
+                ]
+              },
+              "Tiao": {
+                "translate": [
+                  {
+                    "time": 0.0333,
+                    "x": 181.81,
+                    "y": 433.68
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.0333,
+                    "x": 2,
+                    "y": 2
+                  }
+                ]
+              },
+              "WRW": {
+                "rotate": [
+                  {
+                    "time": 0.1,
+                    "angle": -16.8
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.1,
+                    "x": 194.82,
+                    "y": 451.83
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.1,
+                    "x": 2,
+                    "y": 2
+                  }
+                ]
+              },
+              "WRW2": {
+                "rotate": [
+                  {
+                    "time": 0.3333,
+                    "angle": -19.2
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.3333,
+                    "x": 163.75,
+                    "y": 404.07
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.3333,
+                    "x": 2,
+                    "y": -2.191
+                  }
+                ],
+                "shear": [
+                  {
+                    "time": 0.3333,
+                    "y": -37.2
+                  }
+                ]
+              },
+              "WRW3": {
+                "rotate": [
+                  {
+                    "time": 0.6,
+                    "angle": -16.8
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.6,
+                    "x": 194.82,
+                    "y": 451.83
+                  },
+                  {
+                    "time": 0.7667,
+                    "x": 335.49,
+                    "y": 340.64
+                  },
+                  {
+                    "time": 0.8,
+                    "x": 465.53,
+                    "y": 281.74
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": 595.6,
+                    "y": 202.6
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.6,
+                    "x": 2,
+                    "y": 2
+                  }
+                ]
+              },
+              "WRW4": {
+                "rotate": [
+                  {
+                    "time": 0.7667,
+                    "angle": -16.8
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.7667,
+                    "x": 328.61,
+                    "y": 345.73
+                  },
+                  {
+                    "time": 0.8,
+                    "x": 520.75,
+                    "y": 227.57
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": 631.17,
+                    "y": 156.12
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.7667,
+                    "x": 2,
+                    "y": 2
+                  }
+                ]
+              },
+              "Glow": {
+                "rotate": [
+                  {
+                    "time": 0.0667,
+                    "angle": 78
+                  },
+                  {
+                    "time": 0.1667,
+                    "angle": 88.8
+                  }
+                ],
+                "translate": [
+                  {
+                    "time": 0.0667,
+                    "x": 22.8,
+                    "y": -26.12,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.7333,
+                    "x": 22.8,
+                    "y": -26.12
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": -9.93,
+                    "y": -25.43
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.0667,
+                    "x": 2.756,
+                    "y": 5.382
+                  }
+                ]
+              }
+            },
+            "events": [
+              {
+                "time": 0.8333,
+                "name": "Hit"
+              }
+            ]
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

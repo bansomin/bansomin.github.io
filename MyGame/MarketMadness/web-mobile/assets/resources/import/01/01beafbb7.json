@@ -1,0 +1,96 @@
+[
+  1,
+  [
+    "39Nrbd5fpNzrRmQtdGCyGZ",
+    "aeZoQvxklEw7Tb0AGxgaDk"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "home_btn_equip",
+          "rect": [
+            0,
+            0,
+            134,
+            123
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            134,
+            123
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "home_btn_train",
+          "rect": [
+            0,
+            0,
+            107,
+            129
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            107,
+            129
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

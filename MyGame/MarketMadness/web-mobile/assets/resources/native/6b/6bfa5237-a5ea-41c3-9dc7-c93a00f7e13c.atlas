@@ -1,0 +1,132 @@
+
+Ultra_1021_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Fire/Liz_00001
+  rotate: false
+  xy: 204, 121
+  size: 85, 74
+  orig: 137, 151
+  offset: 28, 31
+  index: -1
+Image/Fire/Liz_00002
+  rotate: true
+  xy: 2, 79
+  size: 116, 120
+  orig: 137, 151
+  offset: 19, 12
+  index: -1
+Image/Fire/Liz_00003
+  rotate: false
+  xy: 336, 400
+  size: 77, 87
+  orig: 137, 151
+  offset: 44, 27
+  index: -1
+Image/Fire/Liz_00004
+  rotate: false
+  xy: 124, 111
+  size: 78, 84
+  orig: 137, 151
+  offset: 47, 32
+  index: -1
+Image/Fire/Liz_00005
+  rotate: false
+  xy: 291, 115
+  size: 73, 80
+  orig: 137, 151
+  offset: 50, 38
+  index: -1
+Image/Fire/Liz_00006
+  rotate: false
+  xy: 366, 118
+  size: 74, 75
+  orig: 137, 151
+  offset: 52, 44
+  index: -1
+Image/Fire/Liz_00007
+  rotate: false
+  xy: 280, 48
+  size: 74, 65
+  orig: 137, 151
+  offset: 55, 55
+  index: -1
+Image/Fire/Liz_00008
+  rotate: false
+  xy: 124, 45
+  size: 74, 64
+  orig: 137, 151
+  offset: 57, 56
+  index: -1
+Image/Fire/Liz_00009
+  rotate: false
+  xy: 366, 51
+  size: 75, 65
+  orig: 137, 151
+  offset: 58, 56
+  index: -1
+Image/Fire/Liz_00010
+  rotate: true
+  xy: 342, 324
+  size: 74, 65
+  orig: 137, 151
+  offset: 60, 56
+  index: -1
+Image/Fire/Liz_00011
+  rotate: false
+  xy: 442, 123
+  size: 39, 65
+  orig: 137, 151
+  offset: 61, 56
+  index: -1
+Image/Fire/Liz_00012
+  rotate: true
+  xy: 485, 484
+  size: 3, 2
+  orig: 137, 151
+  offset: 98, 56
+  index: -1
+Image/U_Dg/Z_Blast_00001
+  rotate: true
+  xy: 416, 195
+  size: 292, 49
+  orig: 414, 126
+  offset: 77, 43
+  index: -1
+Image/U_Dg/Z_Blast_00002
+  rotate: false
+  xy: 2, 197
+  size: 412, 61
+  orig: 414, 126
+  offset: 1, 38
+  index: -1
+Image/U_Dg/Z_Blast_00003
+  rotate: false
+  xy: 2, 361
+  size: 332, 126
+  orig: 414, 126
+  offset: 38, 0
+  index: -1
+Image/U_Dg/Z_Blast_00004
+  rotate: false
+  xy: 2, 260
+  size: 338, 99
+  orig: 414, 126
+  offset: 52, 16
+  index: -1
+Image/U_Dg/Z_Blast_00005
+  rotate: true
+  xy: 467, 190
+  size: 297, 16
+  orig: 414, 126
+  offset: 84, 57
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 204, 45
+  size: 74, 74
+  orig: 78, 78
+  offset: 2, 2
+  index: -1

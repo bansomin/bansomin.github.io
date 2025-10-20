@@ -1,0 +1,293 @@
+
+Ultra_2008.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ice/Ice_00000
+  rotate: false
+  xy: 398, 88
+  size: 83, 24
+  orig: 163, 73
+  offset: 14, 23
+  index: -1
+Ice/Ice_00001
+  rotate: false
+  xy: 314, 435
+  size: 122, 72
+  orig: 163, 73
+  offset: 2, 1
+  index: -1
+Ice/Ice_00002
+  rotate: false
+  xy: 243, 226
+  size: 133, 47
+  orig: 163, 73
+  offset: 5, 12
+  index: -1
+Ice/Ice_00003
+  rotate: false
+  xy: 2, 440
+  size: 162, 67
+  orig: 163, 73
+  offset: 0, 0
+  index: -1
+Ice/Ice_00004
+  rotate: false
+  xy: 166, 446
+  size: 146, 61
+  orig: 163, 73
+  offset: 8, 2
+  index: -1
+Smoke/Smoke_00000
+  rotate: true
+  xy: 114, 365
+  size: 73, 48
+  orig: 142, 97
+  offset: 15, 17
+  index: -1
+Smoke/Smoke_00001
+  rotate: true
+  xy: 446, 249
+  size: 108, 59
+  orig: 142, 97
+  offset: 5, 18
+  index: -1
+Smoke/Smoke_00002
+  rotate: false
+  xy: 127, 241
+  size: 114, 56
+  orig: 142, 97
+  offset: 6, 19
+  index: -1
+Smoke/Smoke_00003
+  rotate: false
+  xy: 2, 293
+  size: 123, 65
+  orig: 142, 97
+  offset: 8, 11
+  index: -1
+Smoke/Smoke_00004
+  rotate: false
+  xy: 127, 299
+  size: 121, 58
+  orig: 142, 97
+  offset: 15, 11
+  index: -1
+Smoke/Smoke_00005
+  rotate: false
+  xy: 384, 359
+  size: 109, 74
+  orig: 142, 97
+  offset: 26, 19
+  index: -1
+Smoke/Smoke_00006
+  rotate: false
+  xy: 166, 359
+  size: 102, 85
+  orig: 142, 97
+  offset: 29, 9
+  index: -1
+Smoke/Smoke_00007
+  rotate: false
+  xy: 2, 360
+  size: 110, 78
+  orig: 142, 97
+  offset: 30, 9
+  index: -1
+Smoke/Smoke_00008
+  rotate: false
+  xy: 270, 360
+  size: 112, 73
+  orig: 142, 97
+  offset: 29, 9
+  index: -1
+Tiao/Tiao_00000
+  rotate: true
+  xy: 2, 156
+  size: 65, 79
+  orig: 104, 89
+  offset: 2, 8
+  index: -1
+Tiao/Tiao_00001
+  rotate: false
+  xy: 270, 279
+  size: 90, 79
+  orig: 104, 89
+  offset: 6, 4
+  index: -1
+Tiao/Tiao_00002
+  rotate: false
+  xy: 2, 223
+  size: 88, 68
+  orig: 104, 89
+  offset: 10, 3
+  index: -1
+Tiao/Tiao_00003
+  rotate: false
+  xy: 92, 177
+  size: 85, 62
+  orig: 104, 89
+  offset: 14, 2
+  index: -1
+Tiao/Tiao_00004
+  rotate: false
+  xy: 401, 148
+  size: 83, 52
+  orig: 104, 89
+  offset: 18, 2
+  index: -1
+Tiao/Tiao_00005
+  rotate: false
+  xy: 83, 131
+  size: 80, 44
+  orig: 104, 89
+  offset: 22, 2
+  index: -1
+Tiao/Tiao_00006
+  rotate: false
+  xy: 2, 116
+  size: 77, 38
+  orig: 104, 89
+  offset: 25, 3
+  index: -1
+Tiao/Tiao_00007
+  rotate: false
+  xy: 398, 114
+  size: 68, 32
+  orig: 104, 89
+  offset: 34, 3
+  index: -1
+Tiao/Tiao_00008
+  rotate: false
+  xy: 81, 95
+  size: 60, 34
+  orig: 104, 89
+  offset: 42, 2
+  index: -1
+Tiao/Tiao_00009
+  rotate: false
+  xy: 215, 98
+  size: 54, 35
+  orig: 104, 89
+  offset: 47, 3
+  index: -1
+Tiao/Tiao_00010
+  rotate: false
+  xy: 2, 81
+  size: 50, 33
+  orig: 104, 89
+  offset: 52, 6
+  index: -1
+Tiao/Tiao_00011
+  rotate: true
+  xy: 92, 247
+  size: 44, 30
+  orig: 104, 89
+  offset: 58, 9
+  index: -1
+Tiao/Tiao_00012
+  rotate: false
+  xy: 468, 115
+  size: 39, 31
+  orig: 104, 89
+  offset: 63, 9
+  index: -1
+Tiao/Tiao_00013
+  rotate: true
+  xy: 438, 442
+  size: 13, 29
+  orig: 104, 89
+  offset: 86, 11
+  index: -1
+Weirao/WR_Wind_00000
+  rotate: false
+  xy: 486, 164
+  size: 21, 36
+  orig: 133, 54
+  offset: 2, 15
+  index: -1
+Weirao/WR_Wind_00001
+  rotate: true
+  xy: 215, 70
+  size: 26, 41
+  orig: 133, 54
+  offset: 2, 10
+  index: -1
+Weirao/WR_Wind_00002
+  rotate: true
+  xy: 333, 74
+  size: 34, 45
+  orig: 133, 54
+  offset: 2, 7
+  index: -1
+Weirao/WR_Wind_00003
+  rotate: true
+  xy: 165, 88
+  size: 45, 48
+  orig: 133, 54
+  offset: 2, 4
+  index: -1
+Weirao/WR_Wind_00004
+  rotate: false
+  xy: 276, 101
+  size: 55, 49
+  orig: 133, 54
+  offset: 1, 3
+  index: -1
+Weirao/WR_Wind_00005
+  rotate: false
+  xy: 438, 457
+  size: 65, 50
+  orig: 133, 54
+  offset: 1, 2
+  index: -1
+Weirao/WR_Wind_00006
+  rotate: false
+  xy: 300, 152
+  size: 99, 48
+  orig: 133, 54
+  offset: 3, 2
+  index: -1
+Weirao/WR_Wind_00007
+  rotate: false
+  xy: 378, 202
+  size: 121, 45
+  orig: 133, 54
+  offset: 4, 1
+  index: -1
+Weirao/WR_Wind_00008
+  rotate: false
+  xy: 179, 181
+  size: 119, 43
+  orig: 133, 54
+  offset: 11, 3
+  index: -1
+Weirao/WR_Wind_00009
+  rotate: false
+  xy: 179, 135
+  size: 95, 44
+  orig: 133, 54
+  offset: 36, 4
+  index: -1
+Weirao/WR_Wind_00010
+  rotate: false
+  xy: 333, 110
+  size: 63, 40
+  orig: 133, 54
+  offset: 68, 3
+  index: -1
+Weirao/WR_Wind_00011
+  rotate: true
+  xy: 271, 66
+  size: 33, 36
+  orig: 133, 54
+  offset: 96, 5
+  index: -1
+glow1
+  rotate: false
+  xy: 362, 275
+  size: 82, 82
+  orig: 88, 88
+  offset: 3, 3
+  index: -1

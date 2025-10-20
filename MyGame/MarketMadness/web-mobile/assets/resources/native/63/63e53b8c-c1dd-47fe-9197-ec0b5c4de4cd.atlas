@@ -1,0 +1,55 @@
+
+Ultra_3009_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/b/O1_00000
+  rotate: true
+  xy: 195, 187
+  size: 143, 118
+  orig: 193, 172
+  offset: 13, 29
+  index: -1
+Image/b/O1_00001
+  rotate: true
+  xy: 190, 332
+  size: 166, 139
+  orig: 193, 172
+  offset: 10, 21
+  index: -1
+Image/b/O1_00002
+  rotate: false
+  xy: 2, 2
+  size: 174, 161
+  orig: 193, 172
+  offset: 8, 2
+  index: -1
+Image/b/O1_00003
+  rotate: false
+  xy: 2, 329
+  size: 186, 169
+  orig: 193, 172
+  offset: 4, 0
+  index: -1
+Image/b/O1_00004
+  rotate: false
+  xy: 2, 165
+  size: 191, 162
+  orig: 193, 172
+  offset: 2, 10
+  index: -1
+Image/b/O1_00005
+  rotate: true
+  xy: 178, 2
+  size: 161, 147
+  orig: 193, 172
+  offset: 0, 11
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 315, 283
+  size: 47, 47
+  orig: 49, 49
+  offset: 1, 1
+  index: -1

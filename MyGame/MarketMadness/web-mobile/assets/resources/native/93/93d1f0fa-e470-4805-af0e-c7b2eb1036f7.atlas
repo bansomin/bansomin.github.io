@@ -1,0 +1,69 @@
+
+Ultra_3002_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/glow1
+  rotate: false
+  xy: 127, 180
+  size: 92, 92
+  orig: 98, 98
+  offset: 3, 3
+  index: -1
+Image/xulie/BBB_00000
+  rotate: false
+  xy: 2, 133
+  size: 115, 63
+  orig: 126, 82
+  offset: 0, 3
+  index: -1
+Image/xulie/BBB_00001
+  rotate: false
+  xy: 2, 198
+  size: 123, 74
+  orig: 126, 82
+  offset: 3, 0
+  index: -1
+Image/xulie/BBB_00002
+  rotate: false
+  xy: 119, 108
+  size: 102, 70
+  orig: 126, 82
+  offset: 10, 2
+  index: -1
+Image/xulie/BBB_00003
+  rotate: false
+  xy: 2, 62
+  size: 103, 69
+  orig: 126, 82
+  offset: 7, 8
+  index: -1
+Image/xulie/BBB_00004
+  rotate: false
+  xy: 107, 45
+  size: 83, 61
+  orig: 126, 82
+  offset: 9, 20
+  index: -1
+Image/xulie/BBB_00005
+  rotate: false
+  xy: 2, 2
+  size: 80, 58
+  orig: 126, 82
+  offset: 10, 24
+  index: -1
+Image/xulie/BBB_00006
+  rotate: false
+  xy: 84, 13
+  size: 70, 30
+  orig: 126, 82
+  offset: 12, 29
+  index: -1
+Image/xulie/BBB_00007
+  rotate: false
+  xy: 156, 26
+  size: 63, 17
+  orig: 126, 82
+  offset: 15, 36
+  index: -1

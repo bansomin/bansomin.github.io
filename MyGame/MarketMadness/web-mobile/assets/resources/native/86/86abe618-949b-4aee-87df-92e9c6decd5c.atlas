@@ -1,0 +1,90 @@
+
+Ultra_1003_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/F/Fire_00000
+  rotate: true
+  xy: 2, 74
+  size: 67, 94
+  orig: 202, 139
+  offset: 4, 23
+  index: -1
+Image/F/Fire_00001
+  rotate: true
+  xy: 382, 253
+  size: 126, 124
+  orig: 202, 139
+  offset: 4, 7
+  index: -1
+Image/F/Fire_00002
+  rotate: false
+  xy: 198, 246
+  size: 182, 133
+  orig: 202, 139
+  offset: 2, 4
+  index: -1
+Image/F/Fire_00003
+  rotate: false
+  xy: 2, 243
+  size: 183, 132
+  orig: 202, 139
+  offset: 4, 4
+  index: -1
+Image/F/Fire_00005
+  rotate: false
+  xy: 2, 377
+  size: 194, 129
+  orig: 202, 139
+  offset: 4, 5
+  index: -1
+Image/F/Fire_00007
+  rotate: false
+  xy: 198, 381
+  size: 195, 125
+  orig: 202, 139
+  offset: 4, 5
+  index: -1
+Image/F/Fire_00009
+  rotate: false
+  xy: 187, 127
+  size: 194, 117
+  orig: 202, 139
+  offset: 5, 12
+  index: -1
+Image/F/Fire_00013
+  rotate: false
+  xy: 2, 143
+  size: 177, 98
+  orig: 202, 139
+  offset: 14, 22
+  index: -1
+Image/F/Fire_00015
+  rotate: true
+  xy: 383, 110
+  size: 141, 91
+  orig: 202, 139
+  offset: 26, 25
+  index: -1
+Image/F/Fire_00020
+  rotate: false
+  xy: 98, 80
+  size: 77, 61
+  orig: 202, 139
+  offset: 56, 38
+  index: -1
+Image/dg1
+  rotate: true
+  xy: 177, 66
+  size: 59, 60
+  orig: 59, 60
+  offset: 0, 0
+  index: -1
+Image/glow1
+  rotate: false
+  xy: 395, 424
+  size: 82, 82
+  orig: 88, 88
+  offset: 3, 3
+  index: -1

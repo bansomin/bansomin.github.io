@@ -1,0 +1,55 @@
+
+Ultra_3007_Blast.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/glow1
+  rotate: false
+  xy: 316, 286
+  size: 47, 47
+  orig: 49, 49
+  offset: 1, 1
+  index: -1
+Image/oo/BBBO_00000
+  rotate: true
+  xy: 195, 190
+  size: 143, 119
+  orig: 193, 173
+  offset: 13, 29
+  index: -1
+Image/oo/BBBO_00001
+  rotate: true
+  xy: 190, 335
+  size: 166, 140
+  orig: 193, 173
+  offset: 10, 21
+  index: -1
+Image/oo/BBBO_00002
+  rotate: false
+  xy: 2, 2
+  size: 174, 162
+  orig: 193, 173
+  offset: 8, 2
+  index: -1
+Image/oo/BBBO_00003
+  rotate: false
+  xy: 2, 331
+  size: 186, 170
+  orig: 193, 173
+  offset: 4, 0
+  index: -1
+Image/oo/BBBO_00004
+  rotate: false
+  xy: 2, 166
+  size: 191, 163
+  orig: 193, 173
+  offset: 2, 10
+  index: -1
+Image/oo/BBBO_00005
+  rotate: true
+  xy: 178, 3
+  size: 161, 148
+  orig: 193, 173
+  offset: 0, 11
+  index: -1

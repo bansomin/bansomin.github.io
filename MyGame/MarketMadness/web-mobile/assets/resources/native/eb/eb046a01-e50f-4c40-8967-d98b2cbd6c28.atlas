@@ -1,0 +1,41 @@
+
+Ultra_1018.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Image/Weapon_13
+  rotate: true
+  xy: 2, 59
+  size: 62, 73
+  orig: 88, 104
+  offset: 13, 15
+  index: -1
+Image/Xb/XB_00000
+  rotate: true
+  xy: 2, 2
+  size: 55, 59
+  orig: 113, 118
+  offset: 30, 34
+  index: -1
+Image/Xb/XB_00001
+  rotate: true
+  xy: 2, 123
+  size: 82, 86
+  orig: 113, 118
+  offset: 16, 15
+  index: -1
+Image/Xb/XB_00002
+  rotate: false
+  xy: 2, 207
+  size: 102, 102
+  orig: 113, 118
+  offset: 6, 10
+  index: -1
+Image/Xb/XB_00003
+  rotate: false
+  xy: 2, 311
+  size: 111, 118
+  orig: 113, 118
+  offset: 1, 0
+  index: -1
